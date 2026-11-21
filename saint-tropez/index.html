@@ -2,229 +2,302 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Saint Tropez Supermarket · Downtown Punta Cana</title>
-  <meta name="description" content="Saint Tropez Supermarket en Downtown Punta Cana: delicatessen, vinos, bebidas frías, comida lista y entrega a tu hotel o villa.">
-  <meta property="og:title" content="Saint Tropez Supermarket · Downtown Punta Cana">
-  <meta property="og:description" content="Supermercado gourmet en Downtown Punta Cana. Abierto hasta tarde, entrega a hoteles y villas.">
-  <meta property="og:image" content="images/exterior-night.jpg">
-  <meta name="theme-color" content="#0b0b0c">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Saint Tropez Market 24/7 · Punta Cana</title>
+  <meta name="description" content="Pide en línea en Saint Tropez Market 24/7, Downtown Punta Cana. Abierto siempre. Entrega a hoteles, villas y yates, o recoge en tienda.">
+  <meta property="og:title" content="Saint Tropez Market 24/7 · Punta Cana">
+  <meta property="og:description" content="More than a Market… A Lifestyle. Pide en línea 24/7 con entrega en Punta Cana.">
+  <meta property="og:image" content="images/container-front.jpg">
+  <meta name="theme-color" content="#0c1a17">
+  <link rel="icon" href="images/emblem.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images/exterior-night.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="#top" class="logo" aria-label="Saint Tropez Supermarket">
-        <span class="logo-mark">ST</span>
-        <span class="logo-text">Saint Tropez<small>Supermarket</small></span>
+  <a class="skip" href="#shop">Saltar a los productos</a>
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="topbar-row container">
+      <a href="#top" class="brand" aria-label="Saint Tropez Market 24/7">
+        <img src="images/emblem.svg" alt="" width="58" height="27">
+        <span class="wordmark"><span class="wm-name">Saint Tropez</span><span class="wm-sub">Market 24/7</span></span>
       </a>
-      <div class="nav-right">
-        <nav id="menu" class="menu">
-          <a href="#experience" data-i18n="nav.experience">Experiencia</a>
-          <a href="#offers" data-i18n="nav.offers">Ofertas</a>
-          <a href="#delivery" data-i18n="nav.delivery">Entregas</a>
-          <a href="#visit" data-i18n="nav.visit">Visítanos</a>
-          <a href="#contact" class="btn btn-small" data-i18n="nav.contact">Contacto</a>
-        </nav>
-        <button class="lang" id="lang-toggle" type="button" aria-label="Switch to English">EN</button>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">
-          <span></span><span></span><span></span>
+
+      <div class="seg" role="radiogroup" aria-label="Modo">
+        <button type="button" role="radio" aria-checked="true" data-mode="delivery" data-i18n="top.delivery">Entrega</button>
+        <button type="button" role="radio" aria-checked="false" data-mode="pickup" data-i18n="top.pickup">Recoger</button>
+      </div>
+
+      <button type="button" class="addr" data-addr>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="addr-text"><small class="addr-label">Entregar en</small><strong class="addr-value">Elige tu zona</strong></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="search" placeholder="Buscar productos…" data-i18n-ph="top.search" autocomplete="off">
+      </label>
+
+      <div class="top-actions">
+        <button type="button" class="pill-btn hidden" id="active-order-btn" data-i18n="top.activeOrder">Mi pedido</button>
+        <button type="button" class="lang" id="lang-toggle">EN</button>
+        <button type="button" class="cart-btn" id="cart-btn" aria-label="Carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
         </button>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <picture>
-        <source media="(max-width: 700px)" srcset="images/exterior-night-sm.webp">
-        <img class="hero-bg" src="images/exterior-night.webp" alt="" fetchpriority="high">
-      </picture>
-      <div class="container hero-inner">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Downtown Punta Cana · República Dominicana</p>
-        <h1 data-i18n="hero.title">Lujo gourmet, a pasos de la noche de Punta Cana.</h1>
-        <p class="lead" data-i18n="hero.lead">Delicatessen, vinos, bebidas frías y comida lista para llevar, en el corazón de Downtown. Abierto hasta tarde, con entrega a tu hotel o villa.</p>
-        <div class="hero-actions">
-          <a href="#delivery" class="btn" data-i18n="hero.cta1">Pedir por WhatsApp</a>
-          <a href="#visit" class="btn btn-ghost" data-i18n="hero.cta2">Cómo llegar</a>
+    <!-- ===== Store header ===== -->
+    <section class="store">
+      <div class="store-banner">
+        <picture>
+          <source media="(max-width: 700px)" srcset="images/container-front-sm.webp">
+          <img src="images/container-front.webp" alt="Fachada de Saint Tropez Market 24/7 al atardecer con palmeras" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="container store-info">
+        <img class="store-avatar" src="images/emblem.svg" alt="" width="96" height="96">
+        <div class="store-text">
+          <h1>Saint Tropez Market 24/7</h1>
+          <p class="store-meta" data-i18n="hero.meta">Abierto 24/7 · Supermercado gourmet · Downtown Punta Cana</p>
+          <p class="store-tag" data-i18n="hero.tag">Más que un market… un estilo de vida.</p>
         </div>
-        <ul class="hero-facts">
-          <li><strong id="today-status">—</strong><span data-i18n="hero.fact1">horario de hoy</span></li>
-          <li><strong data-i18n="hero.fact2a">Entrega</strong><span data-i18n="hero.fact2b">a hoteles y villas</span></li>
-          <li><strong>RD$ · US$</strong><span data-i18n="hero.fact3">efectivo y tarjeta</span></li>
-        </ul>
+        <ul class="store-stats" id="store-stats"></ul>
+      </div>
+      <div class="container mobile-mode">
+        <div class="seg" role="radiogroup" aria-label="Modo">
+          <button type="button" role="radio" data-mode="delivery" data-i18n="top.delivery">Entrega</button>
+          <button type="button" role="radio" data-mode="pickup" data-i18n="top.pickup">Recoger</button>
+        </div>
+        <button type="button" class="addr" data-addr>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span class="addr-text"><small class="addr-label">Entregar en</small><strong class="addr-value">Elige tu zona</strong></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <!-- ===== Category bar ===== -->
+    <nav class="catbar" aria-label="Categorías">
+      <div class="container catbar-inner" id="catbar"></div>
+    </nav>
+
+    <!-- ===== Shop ===== -->
+    <div class="container" id="shop">
+      <section class="shelf" id="popular-shelf" aria-labelledby="popular-h">
+        <h2 id="popular-h" data-i18n="shop.popular">Lo más pedido</h2>
+        <div class="rail" id="popular"></div>
+      </section>
+      <section class="shelf hidden" id="results-shelf" aria-labelledby="results-h">
+        <h2 id="results-h" data-i18n="shop.results">Resultados</h2>
+        <div class="grid" id="results"></div>
+      </section>
+      <div id="categories"></div>
+    </div>
+
+    <!-- ===== How delivery works ===== -->
+    <section class="band" id="how">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="exp.eyebrow">La experiencia Saint Tropez</p>
-          <h2 data-i18n="exp.title">Un supermercado que se siente como una boutique</h2>
-          <p class="muted" data-i18n="exp.lead">Candelabros de cristal, vitrinas frescas y todo lo que necesitas para la playa, la villa o la noche.</p>
-        </div>
-        <div class="exp-grid">
-          <article class="exp exp-wide">
-            <img src="images/deli-sm.webp" srcset="images/deli-sm.webp 768w, images/deli.webp 1536w" sizes="(max-width: 900px) 100vw, 60vw" alt="Vitrina de delicatessen con quesos, jamones, frutas y candelabros de cristal" loading="lazy" data-i18n-alt="exp.deli.alt">
-            <div class="exp-body">
-              <h3 data-i18n="exp.deli.t">Delicatessen &amp; Charcutería</h3>
-              <p data-i18n="exp.deli.d">Quesos importados, embutidos, frutas y vegetales frescos cada mañana.</p>
-            </div>
-          </article>
-          <article class="exp">
-            <img src="images/wine-sm.webp" alt="Cava de vinos y licores con estantes negros y dorados" loading="lazy" data-i18n-alt="exp.wine.alt">
-            <div class="exp-body">
-              <h3 data-i18n="exp.wine.t">Vinos, Champán &amp; Ron</h3>
-              <p data-i18n="exp.wine.d">Selección premium y rones dominicanos para cada celebración.</p>
-            </div>
-          </article>
-          <article class="exp">
-            <img src="images/drinks-sm.webp" alt="Pared de neveras con bebidas frías" loading="lazy" data-i18n-alt="exp.drinks.alt">
-            <div class="exp-body">
-              <h3 data-i18n="exp.drinks.t">Bebidas bien frías</h3>
-              <p data-i18n="exp.drinks.d">Cervezas, agua, jugos, energizantes y hielo para la playa o la fiesta.</p>
-            </div>
-          </article>
-          <article class="exp exp-wide">
-            <img src="images/ready-to-eat-sm.webp" srcset="images/ready-to-eat-sm.webp 768w, images/ready-to-eat.webp 1536w" sizes="(max-width: 900px) 100vw, 60vw" alt="Pasillo de comida lista para comer y snacks" loading="lazy" data-i18n-alt="exp.ready.alt">
-            <div class="exp-body">
-              <h3 data-i18n="exp.ready.t">Listo para comer</h3>
-              <p data-i18n="exp.ready.d">Sándwiches, ensaladas, sushi, panadería y snacks: comida rápida, de calidad.</p>
-            </div>
-          </article>
-        </div>
-        <ul class="more-depts" aria-label="Otros departamentos" data-i18n-aria="exp.more">
-          <li data-i18n="d.1">Frutas y vegetales</li>
-          <li data-i18n="d.2">Panadería</li>
-          <li data-i18n="d.3">Carnes y mariscos</li>
-          <li data-i18n="d.4">Despensa</li>
-          <li data-i18n="d.5">Protector solar y playa</li>
-          <li data-i18n="d.6">Cuidado personal</li>
-          <li data-i18n="d.7">Hogar y limpieza</li>
+        <h2 data-i18n="how.title">Así funciona la entrega</h2>
+        <ol class="how">
+          <li><span>1</span><strong data-i18n="how.1t">Elige tus productos</strong><p data-i18n="how.1">Agrégalos al carrito, a cualquier hora del día o de la noche.</p></li>
+          <li><span>2</span><strong data-i18n="how.2t">Dinos dónde</strong><p data-i18n="how.2">Hotel, villa, Airbnb o yate. Comparte tu ubicación con un toque.</p></li>
+          <li><span>3</span><strong data-i18n="how.3t">Confirmamos por WhatsApp</strong><p data-i18n="how.3">La tienda confirma tu pedido, el total y la hora de llegada.</p></li>
+          <li><span>4</span><strong data-i18n="how.4t">Recibe y paga</strong><p data-i18n="how.4">Paga en efectivo, tarjeta o transferencia al recibir.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== About + visit ===== -->
+    <section class="container about" id="visit">
+      <figure class="about-img">
+        <img src="images/container-night-sm.webp" srcset="images/container-night-sm.webp 768w, images/container-night.webp 1536w" sizes="(max-width: 900px) 100vw, 50vw" alt="" data-i18n-alt="about.alt" loading="lazy">
+      </figure>
+      <div class="about-text">
+        <h2 data-i18n="about.title">90 m² pensados para comprar rápido</h2>
+        <p class="muted" data-i18n="about.lead">Fresh · Gourmet · Essentials · Beverages · Local &amp; Imported.</p>
+        <div class="always"><strong>24/7</strong><span data-i18n="visit.always">24 horas · 7 días · 365 días</span></div>
+        <address>
+          <strong>Saint Tropez Market 24/7</strong><br>
+          <span data-i18n="visit.addr">Downtown Punta Cana, cerca de Coco Bongo</span><br>
+          [Calle / local], Punta Cana 23000, República Dominicana
+        </address>
+        <ul class="contact-list">
+          <li><span data-i18n="contact.phone">Teléfono</span><a href="tel:+18090000000">[+1 809 000 0000]</a></li>
+          <li><span>WhatsApp</span><a id="wa-link" href="#" target="_blank" rel="noopener">[+1 809 000 0000]</a></li>
+          <li><span data-i18n="contact.social">Redes</span><span><a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Facebook</a></span></li>
         </ul>
-      </div>
-    </section>
-
-    <!-- OFFERS -->
-    <section id="offers" class="section section-alt">
-      <div class="container">
-        <div class="section-head with-filter">
-          <div>
-            <p class="eyebrow"><span data-i18n="off.valid">Válidas</span> <span id="offer-dates"></span></p>
-            <h2 data-i18n="off.title">Ofertas de la semana</h2>
-          </div>
-          <div class="filters" role="tablist" aria-label="Filtrar ofertas">
-            <button class="chip active" data-filter="all" role="tab" aria-selected="true" data-i18n="off.all">Todo</button>
-            <button class="chip" data-filter="fresh" role="tab" aria-selected="false" data-i18n="off.fresh">Fresco</button>
-            <button class="chip" data-filter="pantry" role="tab" aria-selected="false" data-i18n="off.pantry">Despensa</button>
-            <button class="chip" data-filter="drinks" role="tab" aria-selected="false" data-i18n="off.drinks">Bebidas</button>
-          </div>
-        </div>
-        <div class="offer-grid" id="offer-grid"></div>
-        <p class="fine" data-i18n="off.fine">Precios de ejemplo. Ofertas válidas hasta agotar existencias.</p>
-      </div>
-    </section>
-
-    <!-- DELIVERY -->
-    <section id="delivery" class="section">
-      <div class="container delivery">
-        <div>
-          <p class="eyebrow" data-i18n="del.eyebrow">Entregas y recogida</p>
-          <h2 data-i18n="del.title">Te lo llevamos a tu hotel, villa o yate</h2>
-          <p class="muted" data-i18n="del.lead">Envíanos tu lista por WhatsApp y la preparamos con el mismo cuidado que si la escogieras tú.</p>
-          <ol class="steps">
-            <li><span>1</span><div><strong data-i18n="del.s1t">Envía tu lista</strong><p data-i18n="del.s1">Por WhatsApp o llamada, en español o inglés.</p></div></li>
-            <li><span>2</span><div><strong data-i18n="del.s2t">Confirmamos</strong><p data-i18n="del.s2">Disponibilidad, total y hora de entrega.</p></div></li>
-            <li><span>3</span><div><strong data-i18n="del.s3t">Recibe o recoge</strong><p data-i18n="del.s3">El mismo día, en recepción o en tu puerta.</p></div></li>
-          </ol>
-          <a class="btn" id="whatsapp-link" href="#" target="_blank" rel="noopener" data-i18n="del.cta">Pedir por WhatsApp</a>
-        </div>
-        <div class="card">
-          <h3 data-i18n="del.card">Detalles de entrega</h3>
-          <dl>
-            <div><dt data-i18n="del.k1">Zona</dt><dd data-i18n="del.v1">Bávaro · Punta Cana · Cap Cana</dd></div>
-            <div><dt data-i18n="del.k2">Horario</dt><dd data-i18n="del.v2">[Horario de entregas]</dd></div>
-            <div><dt data-i18n="del.k3">Pedido mínimo</dt><dd data-i18n="del.v3">[Monto]</dd></div>
-            <div><dt data-i18n="del.k4">Pago</dt><dd data-i18n="del.v4">Efectivo, tarjeta, transferencia</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- DAY & NIGHT -->
-    <section class="daynight" aria-label="Saint Tropez de día y de noche" data-i18n-aria="dn.aria">
-      <figure>
-        <img src="images/exterior-day-sm.webp" srcset="images/exterior-day-sm.webp 768w, images/exterior-day.webp 1536w" sizes="(max-width: 800px) 100vw, 50vw" alt="Fachada de Saint Tropez de día en una plaza con palmeras" loading="lazy" data-i18n-alt="dn.dayalt">
-        <figcaption><strong data-i18n="dn.day">De día</strong><span data-i18n="dn.dayd">Todo para la playa y la villa</span></figcaption>
-      </figure>
-      <figure>
-        <img src="images/exterior-dusk-sm.webp" srcset="images/exterior-dusk-sm.webp 768w, images/exterior-dusk.webp 1536w" sizes="(max-width: 800px) 100vw, 50vw" alt="Fachada de Saint Tropez al atardecer con letrero dorado" loading="lazy" data-i18n-alt="dn.nightalt">
-        <figcaption><strong data-i18n="dn.night">De noche</strong><span data-i18n="dn.nightd">Abierto mientras Downtown cobra vida</span></figcaption>
-      </figure>
-    </section>
-
-    <!-- VISIT -->
-    <section id="visit" class="section">
-      <div class="container visit">
-        <div>
-          <p class="eyebrow" data-i18n="vis.eyebrow">Visítanos</p>
-          <h2 data-i18n="vis.title">Horario y ubicación</h2>
-          <table class="hours" id="hours-table"><tbody></tbody></table>
-          <address>
-            <strong>Saint Tropez Supermarket</strong><br>
-            <span data-i18n="vis.addr1">Downtown Punta Cana, cerca de Coco Bongo</span><br>
-            [Calle / local], Punta Cana 23000, República Dominicana
-          </address>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Downtown+Punta+Cana" target="_blank" rel="noopener" data-i18n="vis.dir">Abrir en Google Maps</a>
-        </div>
-        <div class="map-wrap">
-          <iframe title="Mapa de Downtown Punta Cana" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Downtown+Punta+Cana&output=embed"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="container contact">
-        <div>
-          <p class="eyebrow" data-i18n="con.eyebrow">Contacto</p>
-          <h2 data-i18n="con.title">¿Pedidos especiales, eventos o preguntas?</h2>
-          <ul class="contact-list">
-            <li><span data-i18n="con.phone">Teléfono</span><a href="tel:+18090000000">[+1 809 000 0000]</a></li>
-            <li><span>WhatsApp</span><a id="whatsapp-link-2" href="#" target="_blank" rel="noopener">[+1 809 000 0000]</a></li>
-            <li><span>Email</span><a href="mailto:hola@example.com">[correo]</a></li>
-            <li><span data-i18n="con.social">Redes</span><span><a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Facebook</a></span></li>
-          </ul>
-        </div>
-        <form class="contact-form" id="contact-form" novalidate>
-          <label><span data-i18n="form.name">Nombre</span><input name="name" required autocomplete="name"></label>
-          <label><span data-i18n="form.reach">Teléfono o email</span><input name="reach" required></label>
-          <label><span data-i18n="form.msg">Mensaje</span><textarea name="message" rows="4" required></textarea></label>
-          <button class="btn" type="submit" data-i18n="form.send">Enviar mensaje</button>
-          <p class="form-note" id="form-note" role="status"></p>
-        </form>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Downtown+Punta+Cana" target="_blank" rel="noopener" data-i18n="visit.dir">Abrir en Google Maps</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer">
-      <a href="#top" class="logo">
-        <span class="logo-mark">ST</span>
-        <span class="logo-text">Saint Tropez<small>Supermarket</small></span>
-      </a>
-      <p>© <span id="year"></span> Saint Tropez Supermarket · Downtown Punta Cana</p>
+      <div class="footer-brand">
+        <img src="images/emblem.svg" alt="" width="110" height="51">
+        <p class="wordmark"><span class="wm-name">Saint Tropez</span><span class="wm-sub">Market 24/7 · Group</span></p>
+      </div>
+      <p class="signature">More than a Market… A Lifestyle</p>
+      <p class="copy">© <span id="year"></span> Saint Tropez Market 24/7 Group. <span data-i18n="foot.rights">Todos los derechos reservados.</span></p>
     </div>
   </footer>
 
+  <!-- ===== Mobile cart bar ===== -->
+  <button type="button" class="cartbar hidden" id="cartbar">
+    <span class="cartbar-count" id="cartbar-count">0</span>
+    <span data-i18n="cart.view">Ver carrito</span>
+    <strong id="cartbar-total">RD$ 0</strong>
+  </button>
+
+  <!-- ===== Product dialog ===== -->
+  <dialog class="sheet product-sheet" id="product-dialog" aria-labelledby="pd-name">
+    <form method="dialog" class="sheet-inner" id="product-form">
+      <button class="x" value="cancel" aria-label="Cerrar" data-i18n-aria="close">×</button>
+      <div class="pd-media" id="pd-media"></div>
+      <div class="pd-body">
+        <h2 id="pd-name"></h2>
+        <p class="pd-unit" id="pd-unit"></p>
+        <p class="pd-price" id="pd-price"></p>
+        <p class="pd-alcohol hidden" id="pd-alcohol" data-i18n="pm.alcohol"></p>
+        <label class="field"><span data-i18n="pm.notes">Instrucciones especiales</span>
+          <textarea id="pd-notes" rows="2" maxlength="140" data-i18n-ph="pm.notesPh"></textarea>
+        </label>
+      </div>
+      <div class="pd-foot">
+        <div class="qty qty-lg">
+          <button type="button" id="pd-minus" aria-label="Quitar uno">−</button>
+          <output id="pd-qty">1</output>
+          <button type="button" id="pd-plus" aria-label="Agregar uno">+</button>
+        </div>
+        <button type="submit" class="btn btn-block" id="pd-add" value="add"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ===== Zone dialog ===== -->
+  <dialog class="sheet small-sheet" id="zone-dialog" aria-labelledby="zone-h">
+    <form method="dialog" class="sheet-inner pad">
+      <button class="x" value="cancel" aria-label="Cerrar">×</button>
+      <h2 id="zone-h" data-i18n="top.chooseZone">Elige tu zona</h2>
+      <div class="zone-list" id="zone-list"></div>
+    </form>
+  </dialog>
+
+  <!-- ===== Cart drawer ===== -->
+  <dialog class="drawer" id="cart-dialog" aria-labelledby="cart-h">
+    <div class="drawer-inner">
+      <header class="drawer-head">
+        <h2 id="cart-h" data-i18n="cart.title">Tu carrito</h2>
+        <button type="button" class="x" id="cart-close" aria-label="Cerrar">×</button>
+      </header>
+      <div class="drawer-body" id="cart-body"></div>
+      <footer class="drawer-foot" id="cart-foot"></footer>
+    </div>
+  </dialog>
+
+  <!-- ===== Checkout ===== -->
+  <dialog class="fullsheet" id="checkout-dialog" aria-labelledby="co-h">
+    <form class="checkout" id="checkout-form" novalidate>
+      <header class="co-head">
+        <button type="button" class="back" id="co-back" aria-label="Volver al carrito">←</button>
+        <h2 id="co-h" data-i18n="co.title">Finalizar pedido</h2>
+      </header>
+      <div class="co-grid">
+        <div class="co-main">
+          <section class="co-sec">
+            <h3><span>1</span><span data-i18n="co.s1">Entrega</span></h3>
+            <div class="seg seg-wide" role="radiogroup" aria-label="Modo">
+              <button type="button" role="radio" data-mode="delivery" data-i18n="top.delivery">Entrega</button>
+              <button type="button" role="radio" data-mode="pickup" data-i18n="top.pickup">Recoger</button>
+            </div>
+            <div id="co-delivery-fields">
+              <label class="field"><span data-i18n="co.zone">Zona de entrega</span>
+                <select id="co-zone" name="zone"></select>
+              </label>
+              <label class="field"><span data-i18n="co.place">Hotel, villa o dirección</span>
+                <input id="co-place" name="place" autocomplete="street-address" data-i18n-ph="co.placePh">
+              </label>
+              <div class="field-row">
+                <label class="field"><span data-i18n="co.room">Habitación / unidad</span>
+                  <input id="co-room" name="room" data-i18n-ph="co.roomPh">
+                </label>
+                <div class="field">
+                  <span aria-hidden="true">&nbsp;</span>
+                  <button type="button" class="btn btn-ghost btn-block" id="co-loc">
+                    <span data-i18n="co.loc">Compartir mi ubicación</span>
+                  </button>
+                </div>
+              </div>
+              <label class="field"><span data-i18n="co.notes">Instrucciones para el repartidor</span>
+                <input id="co-dnotes" name="dnotes" maxlength="160" data-i18n-ph="co.notesPh">
+              </label>
+            </div>
+            <p class="info hidden" id="co-pickup-info" data-i18n="co.pickupInfo">Recoge en Saint Tropez Market 24/7, Downtown Punta Cana.</p>
+          </section>
+
+          <section class="co-sec">
+            <h3><span>2</span><span data-i18n="co.s2">¿Cuándo?</span></h3>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="when" value="asap" checked><span><strong data-i18n="co.asap">Lo antes posible</strong><small id="co-asap-eta"></small></span></label>
+              <label class="choice"><input type="radio" name="when" value="later"><span><strong data-i18n="co.schedule">Programar</strong><small>&nbsp;</small></span></label>
+            </div>
+            <select id="co-slot" class="hidden" aria-label="Hora"></select>
+          </section>
+
+          <section class="co-sec">
+            <h3><span>3</span><span data-i18n="co.s3">Tus datos</span></h3>
+            <div class="field-row">
+              <label class="field"><span data-i18n="co.name">Nombre</span><input id="co-name" name="name" autocomplete="name"></label>
+              <label class="field"><span data-i18n="co.phone">WhatsApp / teléfono</span><input id="co-phone" name="phone" type="tel" autocomplete="tel" data-i18n-ph="co.phonePh"></label>
+            </div>
+          </section>
+
+          <section class="co-sec">
+            <h3><span>4</span><span data-i18n="co.s4">Pago</span></h3>
+            <div class="choice-col" id="co-pay"></div>
+            <label class="field hidden" id="co-cash-wrap"><span data-i18n="co.cashFor">¿Con cuánto pagas?</span>
+              <input id="co-cash" name="cash" data-i18n-ph="co.cashForPh">
+            </label>
+          </section>
+
+          <section class="co-sec" id="co-tip-sec">
+            <h3><span>5</span><span data-i18n="co.s5">Propina para el repartidor</span></h3>
+            <div class="tips" id="co-tips"></div>
+          </section>
+        </div>
+
+        <aside class="co-side">
+          <div class="co-summary">
+            <h3 data-i18n="co.summary">Resumen</h3>
+            <ul class="co-items" id="co-items"></ul>
+            <dl class="totals" id="co-totals"></dl>
+            <label class="age hidden" id="co-age-wrap"><input type="checkbox" id="co-age"> <span data-i18n="co.age">Confirmo que soy mayor de 18 años.</span></label>
+            <p class="co-error" id="co-error" role="alert"></p>
+            <button type="submit" class="btn btn-block btn-lg" id="co-submit"></button>
+            <p class="fine" data-i18n="co.sendNote">Al confirmar, tu pedido se envía a la tienda por WhatsApp.</p>
+          </div>
+        </aside>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ===== Order status ===== -->
+  <dialog class="fullsheet" id="track-dialog" aria-labelledby="tr-h">
+    <div class="track" id="track"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="catalog.js"></script>
   <script src="i18n.js"></script>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
