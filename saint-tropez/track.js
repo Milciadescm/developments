@@ -130,13 +130,15 @@
     $("#lt-call").href = `tel:${STORE.phone}`;
     $("#lt-wa").href = `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(`${t("lt.order")} ${order.code}`)}`;
     $("#lt-code").textContent = order.code;
-    const nameOf = (i) => (lang === "en" ? i.name_en : i.name_es) || i.name_es;
+    const nameOf = (i) => [i.brand, (lang === "en" ? i.name_en : i.name_es) || i.name_es].filter(Boolean).join(" · ");
+    $("#lt-invoice").href = `invoice.html?t=${encodeURIComponent(token)}`;
     $("#lt-items").innerHTML = (order.items || []).map((i) =>
       `<li><span class="ci-q">${i.qty}×</span><span class="ci-n">${esc(nameOf(i))}${i.notes ? `<small>“${esc(i.notes)}”</small>` : ""}</span><span>${money(i.price * i.qty)}</span></li>`).join("");
     $("#lt-totals").innerHTML = `
       <div><dt>${t("cart.subtotal")}</dt><dd>${money(order.subtotal)}</dd></div>
       ${del ? `<div><dt>${t("co.delivery")}</dt><dd>${money(order.delivery_fee)}</dd></div><div><dt>${t("co.tip")}</dt><dd>${money(order.tip)}</dd></div>` : ""}
-      <div class="grand"><dt>${t("co.total")}</dt><dd>${money(order.total)}</dd></div>`;
+      <div class="grand"><dt>${t("co.total")}</dt><dd>${money(order.total)}</dd></div>
+      ${+order.itbis_total ? `<div class="itbis-row"><dt>${t("tax.of")}</dt><dd>${STORE.currency} ${(+order.itbis_total).toFixed(2)}</dd></div>` : ""}`;
     renderMap();
   }
   function renderSeen() {

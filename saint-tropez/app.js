@@ -22,6 +22,8 @@
     zone: ls.get("st-zone", null),
     cart: ls.get("st-cart", []).filter((l) => byId[l.id]), // [{id, qty, notes}]
     tipPct: ls.get("st-tip", 10),
+    origin: "all",                 // all | DO | INT  (shop filter)
+    invoice: "consumo",            // consumo (B02) | credito_fiscal (B01)
     pay: "cash",
     when: "asap",
     coords: null,
@@ -33,6 +35,7 @@
 
   const t = (k, ...a) => { const v = T[lang][k] ?? T.es[k] ?? k; return typeof v === "function" ? v(...a) : v; };
   const money = (n) => `${STORE.currency} ${Math.round(n).toLocaleString(t("locale"))}`;
+  const money2 = (n) => `${STORE.currency} ${(+n).toLocaleString(t("locale"), { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   const usd = (n) => `≈ US$ ${(n / STORE.usdRate).toFixed(2)}`;
   const nm = (o) => o[lang] || o.es;
   const zoneObj = () => STORE.zones.find((z) => z.id === state.zone) || null;
@@ -44,7 +47,11 @@
     const subtotal = state.cart.reduce((n, l) => n + byId[l.id].price * l.qty, 0);
     const delivery = state.mode === "delivery" ? (zoneObj()?.fee ?? 0) : 0;
     const tip = state.mode === "delivery" ? Math.round((subtotal * state.tipPct) / 100) : 0;
-    return { items, subtotal, delivery, tip, total: subtotal + delivery + tip };
+    // prices already include ITBIS: extract it for display (tips carry no ITBIS)
+    const rate = (p) => (p.itbis ?? STORE.itbisRate ?? 18);
+    const itbis = state.cart.reduce((n, l) => { const p = byId[l.id]; const r = rate(p); return n + (p.price * l.qty * r) / (100 + r); }, 0)
+      + (delivery * (STORE.itbisRate ?? 18)) / (100 + (STORE.itbisRate ?? 18));
+    return { items, subtotal, delivery, tip, itbis, total: subtotal + delivery + tip };
   }
   const hasAlcohol = () => state.cart.some((l) => byId[l.id].alcohol);
 
@@ -111,6 +118,11 @@
   const tile = (p, big) => p.img
     ? `<img src="${esc(p.img)}" alt="" loading="lazy">`
     : `<span class="emoji${big ? " big" : ""}" aria-hidden="true">${p.emoji}</span>`;
+  const fullName = (p) => (p.brand ? `${p.brand} · ${nm(p)}` : nm(p));
+  const origin = (p) => (typeof ORIGINS !== "undefined" && ORIGINS[p.origin]) || null;
+  const isLocal = (p) => p.origin === "DO";
+  const flag = (p) => { const o = origin(p); return o ? `<span class="flag" title="${esc(nm(o))}" aria-label="${esc(nm(o))}">${o.flag}</span>` : ""; };
+  const byOrigin = (p) => state.origin === "all" || (state.origin === "DO" ? isLocal(p) : !isLocal(p));
 
   function qtyOf(id) { return state.cart.filter((l) => l.id === id).reduce((n, l) => n + l.qty, 0); }
 
@@ -118,12 +130,14 @@
     const q = qtyOf(p.id);
     const pct = p.was ? Math.round((1 - p.price / p.was) * 100) : 0;
     return `<article class="pcard${rail ? " rail-card" : ""}" data-id="${p.id}">
-      <button type="button" class="pcard-open" data-open="${p.id}" aria-label="${esc(nm(p))}, ${money(p.price)}">
-        <div class="pcard-media cat-${p.cat}">${tile(p)}
+      <button type="button" class="pcard-open" data-open="${p.id}" aria-label="${esc(fullName(p))}, ${money(p.price)}">
+        <div class="pcard-media cat-${p.cat}">${tile(p, false, p)}
           ${pct ? `<span class="badge">-${pct}%</span>` : ""}${p.alcohol ? `<span class="badge age-badge">${t("shop.age")}</span>` : ""}
+          ${flag(p)}
         </div>
         <div class="pcard-body">
           <p class="pcard-price"><strong>${money(p.price)}</strong>${p.was ? `<s>${money(p.was)}</s>` : ""}</p>
+          ${p.brand ? `<p class="pcard-brand">${esc(p.brand)}</p>` : ""}
           <h3>${esc(nm(p))}</h3>
           <p class="pcard-unit">${esc(p.unit)}</p>
         </div>
@@ -147,7 +161,7 @@
     const q = $("#search").value.trim().toLowerCase();
     const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
     if (q) {
-      const hits = PRODUCTS.filter((p) => norm(`${p.es} ${p.en}`).includes(norm(q)));
+      const hits = PRODUCTS.filter((p) => norm(`${p.brand || ""} ${p.es} ${p.en}`).includes(norm(q)));
       $("#results").innerHTML = hits.length ? hits.map((p) => card(p)).join("") : `<p class="empty-note">${t("shop.noResults")}</p>`;
       $("#results-shelf").classList.remove("hidden");
       $("#popular-shelf").classList.add("hidden");
@@ -157,9 +171,11 @@
     $("#results-shelf").classList.add("hidden");
     $("#popular-shelf").classList.remove("hidden");
     $("#categories").classList.remove("hidden");
-    $("#popular").innerHTML = PRODUCTS.filter((p) => p.popular).map((p) => card(p, true)).join("");
+    $("#popular").innerHTML = PRODUCTS.filter((p) => p.popular && byOrigin(p)).map((p) => card(p, true)).join("");
+    renderShowcase();
+    renderOriginFilter();
     $("#categories").innerHTML = CATEGORIES.map((c) => {
-      const items = PRODUCTS.filter((p) => p.cat === c.id);
+      const items = PRODUCTS.filter((p) => p.cat === c.id && byOrigin(p));
       if (!items.length) return "";
       return `<section class="shelf" id="cat-${c.id}" aria-labelledby="h-${c.id}">
         <h2 id="h-${c.id}"><span aria-hidden="true">${c.icon}</span> ${esc(nm(c))}</h2>
@@ -167,6 +183,64 @@
       </section>`;
     }).join("");
   }
+
+  // Dominican identity + international selection, each with a banner and a rail
+  function renderShowcase() {
+    const dom = PRODUCTS.filter((p) => isLocal(p) && p.brand).slice(0, 14);
+    const imp = PRODUCTS.filter((p) => !isLocal(p) && p.brand).sort((x, y) => (y.popular ? 1 : 0) - (x.popular ? 1 : 0)).slice(0, 14);
+    const block = (key, img, list, originKey) => `
+      <section class="showcase" aria-labelledby="sc-${key}">
+        <div class="sc-banner">
+          <picture><source media="(max-width: 700px)" srcset="images/${img}-sm.webp"><img src="images/${img}.webp" alt="" loading="lazy"></picture>
+          <div class="sc-text">
+            <h2 id="sc-${key}">${t(`sc.${key}.t`)}</h2>
+            <p>${t(`sc.${key}.d`)}</p>
+            <button type="button" class="btn btn-small" data-origin-go="${originKey}">${t("sc.seeAll")}</button>
+          </div>
+        </div>
+        <div class="rail-wrap"><div class="rail">${list.map((p) => card(p, true)).join("")}</div></div>
+      </section>`;
+    $("#showcase").innerHTML = state.origin === "INT" ? block("intl", "banner-intl", imp, "INT")
+      : state.origin === "DO" ? block("rd", "banner-rd", dom, "DO")
+      : block("rd", "banner-rd", dom, "DO") + block("intl", "banner-intl", imp, "INT");
+    enhanceRails();
+  }
+  function renderOriginFilter() {
+    const opts = [["all", t("of.all")], ["DO", `🇩🇴 ${t("of.do")}`], ["INT", `🌎 ${t("of.int")}`]];
+    $("#origin-filter").innerHTML = opts.map(([k, l]) =>
+      `<button type="button" role="radio" aria-checked="${state.origin === k}" class="${state.origin === k ? "on" : ""}" data-origin="${k}">${l}</button>`).join("");
+  }
+  document.addEventListener("click", (e) => {
+    const o = e.target.closest("[data-origin]"), go = e.target.closest("[data-origin-go]");
+    if (!o && !go) return;
+    state.origin = (o || go).dataset.origin || go.dataset.originGo;
+    renderShop(); observeShelves();
+    if (go) $("#categories").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // Horizontal rails: arrow buttons on desktop, fades at the edges, vertical wheel stays vertical
+  function enhanceRails() {
+    $$(".rail, #catbar").forEach((rail) => {
+      const wrap = rail.parentElement;
+      if (!wrap.querySelector(":scope > .rail-btn")) {
+        wrap.classList.add("has-arrows");
+        wrap.insertAdjacentHTML("afterbegin", `<button type="button" class="rail-btn prev" aria-label="${t("rail.prev")}">‹</button>`);
+        wrap.insertAdjacentHTML("beforeend", `<button type="button" class="rail-btn next" aria-label="${t("rail.next")}">›</button>`);
+        wrap.querySelector(".prev").addEventListener("click", () => rail.scrollBy({ left: -rail.clientWidth * 0.8, behavior: "smooth" }));
+        wrap.querySelector(".next").addEventListener("click", () => rail.scrollBy({ left: rail.clientWidth * 0.8, behavior: "smooth" }));
+        rail.addEventListener("scroll", () => railState(rail), { passive: true });
+      }
+      railState(rail);
+    });
+  }
+  function railState(rail) {
+    const wrap = rail.parentElement;
+    const max = rail.scrollWidth - rail.clientWidth - 2;
+    wrap.classList.toggle("at-start", rail.scrollLeft <= 2);
+    wrap.classList.toggle("at-end", rail.scrollLeft >= max);
+    wrap.classList.toggle("no-overflow", max <= 0);
+  }
+  window.addEventListener("resize", () => $$(".rail, #catbar").forEach(railState), { passive: true });
 
   // Re-render only cards of one product (keeps scroll position & focus reasonable)
   function refreshCards(id) {
@@ -186,7 +260,11 @@
       const id = en.target.id.replace("cat-", "");
       $$("#catbar a").forEach((a) => a.classList.toggle("on", a.dataset.cat === id));
       const on = $(`#catbar a[data-cat="${id}"]`);
-      if (on) on.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+      if (on) {
+        const bar = $("#catbar");
+        const left = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
+        bar.scrollTo({ left: Math.max(0, left), behavior: "smooth" });   // only the bar moves, never the page
+      }
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   const observeShelves = () => { spy.disconnect(); $$("#categories .shelf").forEach((s) => spy.observe(s)); };
@@ -235,8 +313,10 @@
     $("#pd-media").className = `pd-media cat-${p.cat}`;
     $("#pd-media").innerHTML = tile(p, true);
     $("#pd-name").textContent = nm(p);
+    $("#pd-brand").textContent = p.brand || "";
+    const o = origin(p); $("#pd-origin").textContent = o ? `${o.flag} ${nm(o)}` : "";
     $("#pd-unit").textContent = p.unit;
-    $("#pd-price").innerHTML = `<strong>${money(p.price)}</strong>${p.was ? ` <s>${money(p.was)}</s>` : ""}`;
+    $("#pd-price").innerHTML = `<strong>${money(p.price)}</strong>${p.was ? ` <s>${money(p.was)}</s>` : ""} <small class="itbis-note">${t("tax.incl")}</small>`;
     $("#pd-alcohol").classList.toggle("hidden", !p.alcohol);
     $("#pd-alcohol").textContent = t("pm.alcohol");
     $("#pd-notes").value = line?.notes || "";
@@ -278,7 +358,7 @@
         return `<li class="line">
           <button type="button" class="line-media cat-${p.cat}" data-edit="${i}" aria-label="${esc(nm(p))}">${tile(p)}</button>
           <div class="line-text">
-            <strong>${esc(nm(p))}</strong>
+            <strong>${esc(fullName(p))}</strong>
             <small>${esc(p.unit)}${l.notes ? ` · “${esc(l.notes)}”` : ""}</small>
             <span class="line-price">${money(p.price * l.qty)}</span>
           </div>
@@ -292,7 +372,7 @@
     const short = state.mode === "delivery" ? STORE.minOrder - tt.subtotal : 0;
     $("#cart-foot").innerHTML = `
       ${short > 0 ? `<div class="min-meter"><div style="width:${Math.min(100, (tt.subtotal / STORE.minOrder) * 100)}%"></div></div><p class="min-note">${t("cart.minLeft", money(short))}</p>` : ""}
-      <div class="foot-row"><span>${t("cart.subtotal")}</span><strong>${money(tt.subtotal)}</strong></div>
+      <div class="foot-row"><span>${t("cart.subtotal")} <small class="itbis-note">${t("tax.incl")}</small></span><strong>${money(tt.subtotal)}</strong></div>
       <button type="button" class="btn btn-block btn-lg" id="go-checkout" ${short > 0 ? "disabled" : ""}>${t("cart.checkout")}</button>`;
     $("#cart-clear").addEventListener("click", () => { const ids = state.cart.map((l) => l.id); state.cart = []; save(); ids.forEach(refreshCards); renderCartBadge(); renderCart(); });
     $("#go-checkout").addEventListener("click", openCheckout);
@@ -371,18 +451,21 @@
     const z = zoneObj();
     $("#co-asap-eta").textContent = del ? (z ? `${z.eta} ${t("min")}` : "") : `${STORE.pickupMinutes} ${t("min")}`;
     $("#co-cash-wrap").classList.toggle("hidden", state.pay !== "cash");
+    $$('[name="invoice"]').forEach((r) => { r.checked = r.value === state.invoice; });
+    $("#co-fiscal-fields").classList.toggle("hidden", state.invoice !== "credito_fiscal");
     $("#co-tips").innerHTML = [0, 10, 15, 20].map((p) =>
       `<button type="button" class="tip ${p === state.tipPct ? "on" : ""}" data-tip="${p}" aria-pressed="${p === state.tipPct}">${p ? `${p}%` : t("co.noTip")}${p ? `<small>${money((totals().subtotal * p) / 100)}</small>` : ""}</button>`).join("");
     const tt = totals();
     $("#co-items").innerHTML = state.cart.map((l) => {
       const p = byId[l.id];
-      return `<li><span class="ci-q">${l.qty}×</span><span class="ci-n">${esc(nm(p))}${l.notes ? `<small>“${esc(l.notes)}”</small>` : ""}</span><span>${money(p.price * l.qty)}</span></li>`;
+      return `<li><span class="ci-q">${l.qty}×</span><span class="ci-n">${esc(fullName(p))}${l.notes ? `<small>“${esc(l.notes)}”</small>` : ""}</span><span>${money(p.price * l.qty)}</span></li>`;
     }).join("");
     $("#co-totals").innerHTML = `
       <div><dt>${t("cart.subtotal")}</dt><dd>${money(tt.subtotal)}</dd></div>
       ${del ? `<div><dt>${t("co.delivery")}</dt><dd>${z ? money(tt.delivery) : "—"}</dd></div>
                <div><dt>${t("co.tip")}</dt><dd>${money(tt.tip)}</dd></div>` : ""}
-      <div class="grand"><dt>${t("co.total")}</dt><dd>${money(tt.total)}<small>${usd(tt.total)}</small></dd></div>`;
+      <div class="grand"><dt>${t("co.total")}</dt><dd>${money(tt.total)}<small>${usd(tt.total)}</small></dd></div>
+      <div class="itbis-row"><dt>${t("tax.of")}</dt><dd>${money2(tt.itbis)}</dd></div>`;
     $("#co-age-wrap").classList.toggle("hidden", !hasAlcohol());
     $("#co-submit").textContent = t("co.place_order", money(tt.total));
   }
@@ -397,6 +480,7 @@
     if (e.target.id === "co-age" && e.target.checked) $("#co-error").textContent = "";
     if (e.target.name === "when") { state.when = e.target.value; renderCheckout(); }
     if (e.target.name === "pay") { state.pay = e.target.value; renderCheckout(); }
+    if (e.target.name === "invoice") { state.invoice = e.target.value; renderCheckout(); }
   });
   $("#co-tips").addEventListener("click", (e) => { const b = e.target.closest("[data-tip]"); if (!b) return; state.tipPct = +b.dataset.tip; save(); renderCheckout(); });
   $("#co-back").addEventListener("click", () => { $("#checkout-dialog").close(); openCart(); });
@@ -420,6 +504,11 @@
     if (del && !$("#co-place").value.trim()) return fail(t("co.err.place"), $("#co-place"));
     if (!$("#co-name").value.trim()) return fail(t("co.err.name"), $("#co-name"));
     if ($("#co-phone").value.replace(/\D/g, "").length < 7) return fail(t("co.err.phone"), $("#co-phone"));
+    if (state.invoice === "credito_fiscal") {
+      const d = $("#co-rnc").value.replace(/\D/g, "");
+      if (d.length !== 9 && d.length !== 11) return fail(t("co.err.rnc"), $("#co-rnc"));
+      if (!$("#co-legal").value.trim()) return fail(t("co.err.legal"), $("#co-legal"));
+    }
     if (hasAlcohol() && !$("#co-age").checked) return fail(t("co.err.age"), $("#co-age"));
     $("#co-error").textContent = "";
     return true;
@@ -440,8 +529,10 @@
       scheduledFor: slot,
       customer: { name: $("#co-name").value.trim(), phone: $("#co-phone").value.trim() },
       payment: state.pay, paymentName: nm(STORE.payments.find((p) => p.id === state.pay)), cashFor: state.pay === "cash" ? $("#co-cash").value.trim() : "",
-      items: state.cart.map((l) => ({ id: l.id, name: nm(byId[l.id]), unit: byId[l.id].unit, qty: l.qty, price: byId[l.id].price, notes: l.notes || "" })),
+      items: state.cart.map((l) => ({ id: l.id, name: fullName(byId[l.id]), unit: byId[l.id].unit, qty: l.qty, price: byId[l.id].price, notes: l.notes || "" })),
       ageConfirmed: hasAlcohol() ? $("#co-age").checked : null,
+      invoiceType: state.invoice, rnc: state.invoice === "credito_fiscal" ? $("#co-rnc").value.trim() : "",
+      legalName: state.invoice === "credito_fiscal" ? $("#co-legal").value.trim() : "", itbis: tt.itbis,
       itemCount: tt.items, subtotal: tt.subtotal, delivery: tt.delivery, tip: tt.tip, total: tt.total,
     };
   }
@@ -464,7 +555,8 @@
     o.items.forEach((i) => { lines.push(`• ${i.qty} × ${i.name} (${i.unit}) — ${m(i.price * i.qty)}`); if (i.notes) lines.push(`   ${L("wa.note")}: ${i.notes}`); });
     lines.push("", `${L("cart.subtotal")}: ${m(o.subtotal)}`);
     if (o.mode === "delivery") lines.push(`${L("co.delivery")}: ${m(o.delivery)}`, `${L("co.tip")}: ${m(o.tip)}`);
-    lines.push(`*${L("co.total")}: ${m(o.total)}*`, `${L("wa.pay")}: ${o.paymentName}`);
+    lines.push(`*${L("co.total")}: ${m(o.total)}* (${L("tax.incl")})`, `${L("wa.pay")}: ${o.paymentName}`);
+    lines.push(o.invoiceType === "credito_fiscal" ? `${L("wa.ncf")}: ${L("co.inv.credito")} · RNC ${o.rnc} · ${o.legalName}` : `${L("wa.ncf")}: ${L("co.inv.consumo")}`);
     if (o.cashFor) lines.push(`${L("wa.cashFor")}: ${o.cashFor}`);
     if (o.ageConfirmed) lines.push(`✔ ${L("wa.ageOk")}`);
     return lines.join("\n");
@@ -496,6 +588,7 @@
           dest_lat: o.coords?.lat ?? null, dest_lng: o.coords?.lng ?? null, scheduled_for: o.scheduledFor,
           customer_name: o.customer.name, customer_phone: o.customer.phone, payment: o.payment, cash_for: o.cashFor,
           tip_pct: o.mode === "delivery" ? state.tipPct : 0, age_confirmed: o.ageConfirmed,
+          invoice_type: o.invoiceType, customer_rnc: o.rnc, customer_legal_name: o.legalName,
           items: state.cart.map((l) => ({ id: l.id, qty: l.qty, notes: l.notes || "" })),
         });
         ls.set("st-customer", { name: o.customer.name, phone: o.customer.phone, place: o.place, room: o.room });
@@ -597,7 +690,7 @@
 
   // ---------- boot ----------
   function renderAll() {
-    applyStatic(); renderMode(); renderCatbar(); renderShop(); observeShelves(); renderCartBadge(); renderActiveOrder();
+    applyStatic(); renderMode(); renderCatbar(); renderShop(); observeShelves(); renderCartBadge(); renderActiveOrder(); enhanceRails();
     if ($("#cart-dialog").open) renderCart();
   }
   $("#wa-link").href = `https://wa.me/${STORE.whatsapp}`;
@@ -609,7 +702,8 @@
     API.catalog().then(({ products, zones }) => {
       if (!products.length || !zones.length) return;
       PRODUCTS.splice(0, PRODUCTS.length, ...products.map((p) => ({
-        id: p.id, cat: p.cat, es: p.name_es, en: p.name_en, unit: p.unit, price: +p.price, was: p.was ? +p.was : undefined,
+        id: p.id, cat: p.cat, brand: p.brand || "", origin: p.origin || "DO", itbis: p.itbis_rate != null ? +p.itbis_rate : undefined,
+        es: p.name_es, en: p.name_en, unit: p.unit, price: +p.price, was: p.was ? +p.was : undefined,
         emoji: p.emoji || "🛒", img: p.img || undefined, alcohol: p.alcohol, popular: p.popular,
       })));
       STORE.zones.splice(0, STORE.zones.length, ...zones.map((z) => ({ id: z.id, es: z.name_es, en: z.name_en, fee: +z.fee, eta: z.eta })));

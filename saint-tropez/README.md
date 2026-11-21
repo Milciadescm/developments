@@ -35,6 +35,17 @@ All objects are prefixed `st_` and kept separate from anything else in the proje
 4. **Contact** — WhatsApp/phone in `catalog.js` (`STORE.whatsapp`, `STORE.phone`) and `[…]` placeholders in `index.html`.
 5. **Supabase Auth → URL configuration** — set the site URL to the live domain.
 
+## Prices, ITBIS and fiscal invoices (NCF)
+- **All prices include ITBIS (18%)** — products, delivery fees and the minimum order. The site says "ITBIS incluido" on product, cart, checkout, tracking and invoice. Tips carry no ITBIS.
+- Per-product rate: `st_products.itbis_rate` (default 18). Set 0 for exempt items after confirming with your accountant.
+- At checkout the customer chooses **Consumidor final (B02)** or **Crédito fiscal (B01)** with RNC (9 digits) or cédula (11) and razón social.
+- `invoice.html?t=…` shows every item: quantity, description (brand + product), unit price, ITBIS, amount, delivery, taxable subtotal, ITBIS total, tip and total; printable / save as PDF. Linked from the tracking page and the staff board.
+- **NCF numbers**: load your DGII-authorised ranges with `supabase/ncf-setup.sql`. The NCF is assigned automatically when an order is marked delivered (or with "Emitir comprobante" on the staff board). Until a range is loaded the invoice shows as a pro-forma.
+- Business name, RNC and address printed on invoices: `catalog.js → STORE.legal`.
+
+## Catalogue: Dominican identity + international brands
+148 products with `brand` and `origin` (🇩🇴 made in DR or the import country): "Hecho en RD" and "Selección internacional" showcases, and a Todo / Dominicano / Importado filter. Product tiles show the brand name and an icon; add real photos with `img` (distributors usually provide them). Verify the origin of each presentation: some international brands are also made or packed locally.
+
 ## Files
 `index.html` `app.js` (shop) · `track.html` `track.js` (live tracking) · `staff.html` `staff.js` · `driver.html` `driver.js` · `ops-common.js` (login for staff/drivers)
 `api.js` (Supabase calls) · `map.js` (map, pins, ETA) · `config.js` (Supabase URL + public key, map settings) · `catalog.js` (store settings, fallback catalogue) · `i18n.js` (ES/EN text)

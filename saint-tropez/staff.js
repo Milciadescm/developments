@@ -77,12 +77,16 @@
         <span>${esc(nmPay(o.payment))}${o.cash_for ? ` · ${esc(o.cash_for)}` : ""}${o.age_confirmed ? ` · <b>${t("staff.age")}</b>` : ""}</span>
         <strong>${money(o.total)}</strong>
       </div>
+      <p class="oinv">🧾 ${o.invoice_type === "credito_fiscal" ? `<b>${t("staff.credit")}</b> · RNC ${esc(o.customer_rnc || "")} · ${esc(o.customer_legal_name || "")}` : t("inv.finalConsumer")}
+        · ${o.ncf ? `<b class="ncf">${esc(o.ncf)}</b>` : `<em>${t("staff.ncfPending")}</em>`}</p>
       ${del ? `<p class="odriver">🛵 ${t("staff.driver")}: <b>${esc(o.driver_name || t("staff.noDriver"))}</b></p>` : ""}
       <div class="olinks">
         <a href="tel:${esc(o.customer_phone)}">${t("staff.call")}</a>
         <a href="${waLink(o.customer_phone, `Saint Tropez Market · ${o.code}`)}" target="_blank" rel="noopener">WhatsApp</a>
         ${mapUrl ? `<a href="${mapUrl}" target="_blank" rel="noopener">${t("staff.map")}</a>` : ""}
         <a href="track.html?t=${encodeURIComponent(o.track_token)}" target="_blank" rel="noopener">${t("staff.track")}</a>
+        <a href="invoice.html?t=${encodeURIComponent(o.track_token)}" target="_blank" rel="noopener">${t("staff.invoice")}</a>
+        ${!o.ncf && o.status !== "cancelled" ? `<button type="button" class="link" data-issue="${o.id}">${t("staff.issue")}</button>` : ""}
       </div>
       <div class="oactions">${actions(o)}</div>
     </article>`;
@@ -103,6 +107,16 @@
   }
 
   document.addEventListener("click", async (e) => {
+    const iss = e.target.closest("[data-issue]");
+    if (iss) {
+      iss.disabled = true;
+      try {
+        const ncf = await API.issueInvoice(iss.dataset.issue);
+        if (!ncf) { toast(t("staff.noRange")); iss.disabled = false; return; }
+        orders = await API.orders({ since: new Date(Date.now() - 2 * 86400000).toISOString() }); render();
+      } catch (ex) { toast(String(ex?.message || ex)); iss.disabled = false; }
+      return;
+    }
     const b = e.target.closest("[data-status]"); if (!b) return;
     const status = b.dataset.status;
     if (status === "cancelled" && !confirm(t("staff.cancelQ"))) return;

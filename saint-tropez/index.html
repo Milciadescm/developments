@@ -87,14 +87,16 @@
 
     <!-- ===== Category bar ===== -->
     <nav class="catbar" aria-label="Categorías">
-      <div class="container catbar-inner" id="catbar"></div>
+      <div class="container catbar-wrap rail-wrap"><div class="catbar-inner" id="catbar"></div></div>
     </nav>
 
     <!-- ===== Shop ===== -->
     <div class="container" id="shop">
+      <div class="origin-filter" id="origin-filter" role="radiogroup" aria-label="Origen"></div>
+      <div id="showcase"></div>
       <section class="shelf" id="popular-shelf" aria-labelledby="popular-h">
         <h2 id="popular-h" data-i18n="shop.popular">Lo más pedido</h2>
-        <div class="rail" id="popular"></div>
+        <div class="rail-wrap"><div class="rail" id="popular"></div></div>
       </section>
       <section class="shelf hidden" id="results-shelf" aria-labelledby="results-h">
         <h2 id="results-h" data-i18n="shop.results">Resultados</h2>
@@ -164,7 +166,9 @@
       <button class="x" value="cancel" aria-label="Cerrar" data-i18n-aria="close">×</button>
       <div class="pd-media" id="pd-media"></div>
       <div class="pd-body">
+        <p class="pd-brand" id="pd-brand"></p>
         <h2 id="pd-name"></h2>
+        <p class="pd-origin" id="pd-origin"></p>
         <p class="pd-unit" id="pd-unit"></p>
         <p class="pd-price" id="pd-price"></p>
         <p class="pd-alcohol hidden" id="pd-alcohol" data-i18n="pm.alcohol"></p>
@@ -266,7 +270,20 @@
           </section>
 
           <section class="co-sec">
-            <h3><span>4</span><span data-i18n="co.s4">Pago</span></h3>
+            <h3><span>4</span><span data-i18n="co.s6">Comprobante fiscal</span></h3>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="invoice" value="consumo" checked><span><strong data-i18n="co.inv.consumo">Consumidor final</strong><small data-i18n="co.inv.consumoSub">Factura de consumo (B02)</small></span></label>
+              <label class="choice"><input type="radio" name="invoice" value="credito_fiscal"><span><strong data-i18n="co.inv.credito">Crédito fiscal</strong><small data-i18n="co.inv.creditoSub">Para empresas, con RNC (B01)</small></span></label>
+            </div>
+            <div class="field-row hidden" id="co-fiscal-fields">
+              <label class="field"><span data-i18n="co.rnc">RNC o cédula</span><input id="co-rnc" name="rnc" inputmode="numeric" autocomplete="off" data-i18n-ph="co.rncPh"></label>
+              <label class="field"><span data-i18n="co.legal">Razón social</span><input id="co-legal" name="legal" autocomplete="organization" data-i18n-ph="co.legalPh"></label>
+            </div>
+            <p class="pin-note" data-i18n="co.inv.note">Recibirás tu factura con el detalle de cada producto y el ITBIS.</p>
+          </section>
+
+          <section class="co-sec">
+            <h3><span>5</span><span data-i18n="co.s4">Pago</span></h3>
             <div class="choice-col" id="co-pay"></div>
             <label class="field hidden" id="co-cash-wrap"><span data-i18n="co.cashFor">¿Con cuánto pagas?</span>
               <input id="co-cash" name="cash" data-i18n-ph="co.cashForPh">
@@ -274,7 +291,7 @@
           </section>
 
           <section class="co-sec" id="co-tip-sec">
-            <h3><span>5</span><span data-i18n="co.s5">Propina para el repartidor</span></h3>
+            <h3><span>6</span><span data-i18n="co.s5">Propina para el repartidor</span></h3>
             <div class="tips" id="co-tips"></div>
           </section>
         </div>

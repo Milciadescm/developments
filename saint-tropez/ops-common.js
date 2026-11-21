@@ -13,7 +13,7 @@
     esc: (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])),
     money: (n) => `${STORE.currency} ${Math.round(n).toLocaleString(T[lang].locale)}`,
     time: (iso) => new Date(iso).toLocaleTimeString(T[lang].locale, { hour: "numeric", minute: "2-digit" }),
-    itemName: (i) => (lang === "en" ? i.name_en : i.name_es) || i.name_es || i.name,
+    itemName: (i) => [i.brand, (lang === "en" ? i.name_en : i.name_es) || i.name_es || i.name].filter(Boolean).join(" · "),
     waLink: (phone, text = "") => `https://wa.me/${String(phone).replace(/\D/g, "")}${text ? `?text=${encodeURIComponent(text)}` : ""}`,
     applyStatic() {
       document.documentElement.lang = lang;

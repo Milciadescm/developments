@@ -123,3 +123,8 @@
   .lt-steps { gap: 4px; }
   .lt-steps .lbl { font-size: .68rem; }
 }
+
+.oinv { font-size: .86rem; color: #d8d3c8; }
+.oinv .ncf { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--gold-2); letter-spacing: .04em; }
+.oinv em { color: #f3d9a4; font-style: normal; }
+.olinks .link { padding: 0; font: inherit; font-size: .88rem; }

@@ -46,6 +46,7 @@
       if (since) q = q.gte("created_at", since);
       return unwrap(await q);
     },
+    issueInvoice: async (id) => unwrap(await must().rpc("st_issue_invoice", { p_order: id })),
     // only succeeds while nobody else has taken the delivery
     async claimOrder(id, patch) {
       const rows = unwrap(await must().from("st_orders").update(patch).eq("id", id).is("driver_id", null).select());
