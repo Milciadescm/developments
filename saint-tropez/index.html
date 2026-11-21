@@ -1,99 +1,133 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Saint Tropez Supermarket</title>
-  <meta name="description" content="Saint Tropez Supermarket — fresh produce, bakery, butcher, deli and everyday essentials. Weekly offers, opening hours and home delivery.">
+  <title>Saint Tropez Supermarket · Downtown Punta Cana</title>
+  <meta name="description" content="Saint Tropez Supermarket en Downtown Punta Cana: delicatessen, vinos, bebidas frías, comida lista y entrega a tu hotel o villa.">
+  <meta property="og:title" content="Saint Tropez Supermarket · Downtown Punta Cana">
+  <meta property="og:description" content="Supermercado gourmet en Downtown Punta Cana. Abierto hasta tarde, entrega a hoteles y villas.">
+  <meta property="og:image" content="images/exterior-night.jpg">
+  <meta name="theme-color" content="#0b0b0c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/exterior-night.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="#top" class="logo" aria-label="Saint Tropez Supermarket home">
+      <a href="#top" class="logo" aria-label="Saint Tropez Supermarket">
         <span class="logo-mark">ST</span>
         <span class="logo-text">Saint Tropez<small>Supermarket</small></span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="menu" class="menu">
-        <a href="#departments">Departments</a>
-        <a href="#offers">Weekly offers</a>
-        <a href="#delivery">Delivery</a>
-        <a href="#about">About</a>
-        <a href="#visit">Visit us</a>
-        <a href="#contact" class="btn btn-small">Contact</a>
-      </nav>
+      <div class="nav-right">
+        <nav id="menu" class="menu">
+          <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+          <a href="#offers" data-i18n="nav.offers">Ofertas</a>
+          <a href="#delivery" data-i18n="nav.delivery">Entregas</a>
+          <a href="#visit" data-i18n="nav.visit">Visítanos</a>
+          <a href="#contact" class="btn btn-small" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <button class="lang" id="lang-toggle" type="button" aria-label="Switch to English">EN</button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Fresh every morning</p>
-          <h1>Your neighbourhood market, with a taste of the Riviera.</h1>
-          <p class="lead">Fresh produce, warm bread, quality meats and everything for the week — at fair prices, a short walk from home.</p>
-          <div class="hero-actions">
-            <a href="#offers" class="btn">See this week's offers</a>
-            <a href="#delivery" class="btn btn-ghost">Order for delivery</a>
-          </div>
-          <ul class="hero-facts">
-            <li><strong>Open 7 days</strong><span id="today-status">Checking hours…</span></li>
-            <li><strong>2,000+</strong><span>products</span></li>
-            <li><strong>Same-day</strong><span>home delivery</span></li>
-          </ul>
+      <picture>
+        <source media="(max-width: 700px)" srcset="images/exterior-night-sm.webp">
+        <img class="hero-bg" src="images/exterior-night.webp" alt="" fetchpriority="high">
+      </picture>
+      <div class="container hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Downtown Punta Cana · República Dominicana</p>
+        <h1 data-i18n="hero.title">Lujo gourmet, a pasos de la noche de Punta Cana.</h1>
+        <p class="lead" data-i18n="hero.lead">Delicatessen, vinos, bebidas frías y comida lista para llevar, en el corazón de Downtown. Abierto hasta tarde, con entrega a tu hotel o villa.</p>
+        <div class="hero-actions">
+          <a href="#delivery" class="btn" data-i18n="hero.cta1">Pedir por WhatsApp</a>
+          <a href="#visit" class="btn btn-ghost" data-i18n="hero.cta2">Cómo llegar</a>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="basket">
-            <span>🥖</span><span>🍅</span><span>🧀</span><span>🍋</span><span>🥬</span><span>🍇</span>
-          </div>
-        </div>
+        <ul class="hero-facts">
+          <li><strong id="today-status">—</strong><span data-i18n="hero.fact1">horario de hoy</span></li>
+          <li><strong data-i18n="hero.fact2a">Entrega</strong><span data-i18n="hero.fact2b">a hoteles y villas</span></li>
+          <li><strong>RD$ · US$</strong><span data-i18n="hero.fact3">efectivo y tarjeta</span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- DEPARTMENTS -->
-    <section id="departments" class="section">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Departments</p>
-          <h2>Everything for your table</h2>
+          <p class="eyebrow" data-i18n="exp.eyebrow">La experiencia Saint Tropez</p>
+          <h2 data-i18n="exp.title">Un supermercado que se siente como una boutique</h2>
+          <p class="muted" data-i18n="exp.lead">Candelabros de cristal, vitrinas frescas y todo lo que necesitas para la playa, la villa o la noche.</p>
         </div>
-        <div class="dept-grid">
-          <article class="dept"><span class="dept-icon">🥕</span><h3>Fruit &amp; Vegetables</h3><p>Seasonal produce delivered fresh from local growers every morning.</p></article>
-          <article class="dept"><span class="dept-icon">🥖</span><h3>Bakery</h3><p>Baguettes, croissants and pastries baked in-store throughout the day.</p></article>
-          <article class="dept"><span class="dept-icon">🥩</span><h3>Butcher</h3><p>Quality cuts, marinated specials and custom orders from our butchers.</p></article>
-          <article class="dept"><span class="dept-icon">🧀</span><h3>Deli &amp; Cheese</h3><p>Cured meats, cheeses, olives and ready-to-eat dishes.</p></article>
-          <article class="dept"><span class="dept-icon">🐟</span><h3>Fish &amp; Seafood</h3><p>Fresh catch and frozen selections, cleaned and cut on request.</p></article>
-          <article class="dept"><span class="dept-icon">🍷</span><h3>Wine &amp; Drinks</h3><p>Wines, beers, juices and soft drinks for every occasion.</p></article>
-          <article class="dept"><span class="dept-icon">🥫</span><h3>Pantry</h3><p>Pasta, rice, oils, sauces, canned goods and breakfast staples.</p></article>
-          <article class="dept"><span class="dept-icon">🧴</span><h3>Home &amp; Personal Care</h3><p>Cleaning supplies, toiletries and baby care essentials.</p></article>
+        <div class="exp-grid">
+          <article class="exp exp-wide">
+            <img src="images/deli-sm.webp" srcset="images/deli-sm.webp 768w, images/deli.webp 1536w" sizes="(max-width: 900px) 100vw, 60vw" alt="Vitrina de delicatessen con quesos, jamones, frutas y candelabros de cristal" loading="lazy" data-i18n-alt="exp.deli.alt">
+            <div class="exp-body">
+              <h3 data-i18n="exp.deli.t">Delicatessen &amp; Charcutería</h3>
+              <p data-i18n="exp.deli.d">Quesos importados, embutidos, frutas y vegetales frescos cada mañana.</p>
+            </div>
+          </article>
+          <article class="exp">
+            <img src="images/wine-sm.webp" alt="Cava de vinos y licores con estantes negros y dorados" loading="lazy" data-i18n-alt="exp.wine.alt">
+            <div class="exp-body">
+              <h3 data-i18n="exp.wine.t">Vinos, Champán &amp; Ron</h3>
+              <p data-i18n="exp.wine.d">Selección premium y rones dominicanos para cada celebración.</p>
+            </div>
+          </article>
+          <article class="exp">
+            <img src="images/drinks-sm.webp" alt="Pared de neveras con bebidas frías" loading="lazy" data-i18n-alt="exp.drinks.alt">
+            <div class="exp-body">
+              <h3 data-i18n="exp.drinks.t">Bebidas bien frías</h3>
+              <p data-i18n="exp.drinks.d">Cervezas, agua, jugos, energizantes y hielo para la playa o la fiesta.</p>
+            </div>
+          </article>
+          <article class="exp exp-wide">
+            <img src="images/ready-to-eat-sm.webp" srcset="images/ready-to-eat-sm.webp 768w, images/ready-to-eat.webp 1536w" sizes="(max-width: 900px) 100vw, 60vw" alt="Pasillo de comida lista para comer y snacks" loading="lazy" data-i18n-alt="exp.ready.alt">
+            <div class="exp-body">
+              <h3 data-i18n="exp.ready.t">Listo para comer</h3>
+              <p data-i18n="exp.ready.d">Sándwiches, ensaladas, sushi, panadería y snacks: comida rápida, de calidad.</p>
+            </div>
+          </article>
         </div>
+        <ul class="more-depts" aria-label="Otros departamentos" data-i18n-aria="exp.more">
+          <li data-i18n="d.1">Frutas y vegetales</li>
+          <li data-i18n="d.2">Panadería</li>
+          <li data-i18n="d.3">Carnes y mariscos</li>
+          <li data-i18n="d.4">Despensa</li>
+          <li data-i18n="d.5">Protector solar y playa</li>
+          <li data-i18n="d.6">Cuidado personal</li>
+          <li data-i18n="d.7">Hogar y limpieza</li>
+        </ul>
       </div>
     </section>
 
     <!-- OFFERS -->
-    <section id="offers" class="section section-tint">
+    <section id="offers" class="section section-alt">
       <div class="container">
         <div class="section-head with-filter">
           <div>
-            <p class="eyebrow">Valid <span id="offer-dates">this week</span></p>
-            <h2>Weekly offers</h2>
+            <p class="eyebrow"><span data-i18n="off.valid">Válidas</span> <span id="offer-dates"></span></p>
+            <h2 data-i18n="off.title">Ofertas de la semana</h2>
           </div>
-          <div class="filters" role="tablist" aria-label="Filter offers">
-            <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="chip" data-filter="fresh" role="tab" aria-selected="false">Fresh</button>
-            <button class="chip" data-filter="pantry" role="tab" aria-selected="false">Pantry</button>
-            <button class="chip" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+          <div class="filters" role="tablist" aria-label="Filtrar ofertas">
+            <button class="chip active" data-filter="all" role="tab" aria-selected="true" data-i18n="off.all">Todo</button>
+            <button class="chip" data-filter="fresh" role="tab" aria-selected="false" data-i18n="off.fresh">Fresco</button>
+            <button class="chip" data-filter="pantry" role="tab" aria-selected="false" data-i18n="off.pantry">Despensa</button>
+            <button class="chip" data-filter="drinks" role="tab" aria-selected="false" data-i18n="off.drinks">Bebidas</button>
           </div>
         </div>
-        <div class="offer-grid" id="offer-grid"><!-- filled by script.js --></div>
-        <p class="fine">Prices shown are examples. Offers while stocks last.</p>
+        <div class="offer-grid" id="offer-grid"></div>
+        <p class="fine" data-i18n="off.fine">Precios de ejemplo. Ofertas válidas hasta agotar existencias.</p>
       </div>
     </section>
 
@@ -101,83 +135,79 @@
     <section id="delivery" class="section">
       <div class="container delivery">
         <div>
-          <p class="eyebrow">Delivery &amp; pick-up</p>
-          <h2>We bring the market to you</h2>
-          <p>Send us your shopping list by WhatsApp or phone and we'll prepare it with the same care as if you picked it yourself.</p>
+          <p class="eyebrow" data-i18n="del.eyebrow">Entregas y recogida</p>
+          <h2 data-i18n="del.title">Te lo llevamos a tu hotel, villa o yate</h2>
+          <p class="muted" data-i18n="del.lead">Envíanos tu lista por WhatsApp y la preparamos con el mismo cuidado que si la escogieras tú.</p>
           <ol class="steps">
-            <li><strong>Send your list</strong> by WhatsApp or call the store.</li>
-            <li><strong>We confirm</strong> availability and the total.</li>
-            <li><strong>Pick up or receive</strong> your order the same day.</li>
+            <li><span>1</span><div><strong data-i18n="del.s1t">Envía tu lista</strong><p data-i18n="del.s1">Por WhatsApp o llamada, en español o inglés.</p></div></li>
+            <li><span>2</span><div><strong data-i18n="del.s2t">Confirmamos</strong><p data-i18n="del.s2">Disponibilidad, total y hora de entrega.</p></div></li>
+            <li><span>3</span><div><strong data-i18n="del.s3t">Recibe o recoge</strong><p data-i18n="del.s3">El mismo día, en recepción o en tu puerta.</p></div></li>
           </ol>
-          <a class="btn" id="whatsapp-link" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+          <a class="btn" id="whatsapp-link" href="#" target="_blank" rel="noopener" data-i18n="del.cta">Pedir por WhatsApp</a>
         </div>
-        <div class="delivery-card">
-          <h3>Delivery details</h3>
+        <div class="card">
+          <h3 data-i18n="del.card">Detalles de entrega</h3>
           <dl>
-            <div><dt>Orders before</dt><dd>4:00 pm → same day</dd></div>
-            <div><dt>Delivery area</dt><dd>[Neighbourhoods / radius]</dd></div>
-            <div><dt>Minimum order</dt><dd>[Amount]</dd></div>
-            <div><dt>Payment</dt><dd>Cash, card, transfer</dd></div>
+            <div><dt data-i18n="del.k1">Zona</dt><dd data-i18n="del.v1">Bávaro · Punta Cana · Cap Cana</dd></div>
+            <div><dt data-i18n="del.k2">Horario</dt><dd data-i18n="del.v2">[Horario de entregas]</dd></div>
+            <div><dt data-i18n="del.k3">Pedido mínimo</dt><dd data-i18n="del.v3">[Monto]</dd></div>
+            <div><dt data-i18n="del.k4">Pago</dt><dd data-i18n="del.v4">Efectivo, tarjeta, transferencia</dd></div>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-dark">
-      <div class="container about">
-        <div>
-          <p class="eyebrow">Our story</p>
-          <h2>A family market built on fresh food and friendly service.</h2>
-        </div>
-        <div>
-          <p>Saint Tropez Supermarket was founded to give our neighbourhood a market that feels like a summer morning on the coast: bright, fresh and welcoming. We work with local suppliers, bake every day and know many of our customers by name.</p>
-          <p>Whether you need a quick baguette or the full weekly shop, our team is here to help.</p>
-        </div>
-      </div>
+    <!-- DAY & NIGHT -->
+    <section class="daynight" aria-label="Saint Tropez de día y de noche" data-i18n-aria="dn.aria">
+      <figure>
+        <img src="images/exterior-day-sm.webp" srcset="images/exterior-day-sm.webp 768w, images/exterior-day.webp 1536w" sizes="(max-width: 800px) 100vw, 50vw" alt="Fachada de Saint Tropez de día en una plaza con palmeras" loading="lazy" data-i18n-alt="dn.dayalt">
+        <figcaption><strong data-i18n="dn.day">De día</strong><span data-i18n="dn.dayd">Todo para la playa y la villa</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/exterior-dusk-sm.webp" srcset="images/exterior-dusk-sm.webp 768w, images/exterior-dusk.webp 1536w" sizes="(max-width: 800px) 100vw, 50vw" alt="Fachada de Saint Tropez al atardecer con letrero dorado" loading="lazy" data-i18n-alt="dn.nightalt">
+        <figcaption><strong data-i18n="dn.night">De noche</strong><span data-i18n="dn.nightd">Abierto mientras Downtown cobra vida</span></figcaption>
+      </figure>
     </section>
 
     <!-- VISIT -->
     <section id="visit" class="section">
       <div class="container visit">
         <div>
-          <p class="eyebrow">Visit us</p>
-          <h2>Opening hours &amp; location</h2>
-          <table class="hours" id="hours-table">
-            <tbody></tbody>
-          </table>
+          <p class="eyebrow" data-i18n="vis.eyebrow">Visítanos</p>
+          <h2 data-i18n="vis.title">Horario y ubicación</h2>
+          <table class="hours" id="hours-table"><tbody></tbody></table>
           <address>
             <strong>Saint Tropez Supermarket</strong><br>
-            [Street address]<br>
-            [City, postal code]
+            <span data-i18n="vis.addr1">Downtown Punta Cana, cerca de Coco Bongo</span><br>
+            [Calle / local], Punta Cana 23000, República Dominicana
           </address>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Saint+Tropez+Supermarket" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Downtown+Punta+Cana" target="_blank" rel="noopener" data-i18n="vis.dir">Abrir en Google Maps</a>
         </div>
         <div class="map-wrap">
-          <iframe title="Store location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Saint+Tropez+Supermarket&output=embed"></iframe>
+          <iframe title="Mapa de Downtown Punta Cana" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Downtown+Punta+Cana&output=embed"></iframe>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section-tint">
+    <section id="contact" class="section section-alt">
       <div class="container contact">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Questions, special orders or feedback?</h2>
+          <p class="eyebrow" data-i18n="con.eyebrow">Contacto</p>
+          <h2 data-i18n="con.title">¿Pedidos especiales, eventos o preguntas?</h2>
           <ul class="contact-list">
-            <li>📞 <a href="tel:+000000000">[Phone number]</a></li>
-            <li>💬 <a id="whatsapp-link-2" href="#" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li>✉️ <a href="mailto:hello@example.com">[Email address]</a></li>
-            <li>📷 <a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><span data-i18n="con.phone">Teléfono</span><a href="tel:+18090000000">[+1 809 000 0000]</a></li>
+            <li><span>WhatsApp</span><a id="whatsapp-link-2" href="#" target="_blank" rel="noopener">[+1 809 000 0000]</a></li>
+            <li><span>Email</span><a href="mailto:hola@example.com">[correo]</a></li>
+            <li><span data-i18n="con.social">Redes</span><span><a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Facebook</a></span></li>
           </ul>
         </div>
         <form class="contact-form" id="contact-form" novalidate>
-          <label>Name<input name="name" required autocomplete="name"></label>
-          <label>Phone or email<input name="reach" required></label>
-          <label>Message<textarea name="message" rows="4" required></textarea></label>
-          <button class="btn" type="submit">Send message</button>
+          <label><span data-i18n="form.name">Nombre</span><input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="form.reach">Teléfono o email</span><input name="reach" required></label>
+          <label><span data-i18n="form.msg">Mensaje</span><textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit" data-i18n="form.send">Enviar mensaje</button>
           <p class="form-note" id="form-note" role="status"></p>
         </form>
       </div>
@@ -186,11 +216,15 @@
 
   <footer class="site-footer">
     <div class="container footer">
-      <p><strong>Saint Tropez Supermarket</strong> · Fresh every morning</p>
-      <p>© <span id="year"></span> Saint Tropez Supermarket. All rights reserved.</p>
+      <a href="#top" class="logo">
+        <span class="logo-mark">ST</span>
+        <span class="logo-text">Saint Tropez<small>Supermarket</small></span>
+      </a>
+      <p>© <span id="year"></span> Saint Tropez Supermarket · Downtown Punta Cana</p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
