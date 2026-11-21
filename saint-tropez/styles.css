@@ -114,7 +114,7 @@ input, select, textarea { font: inherit; }
 /* ===== Shelves & product cards ===== */
 #shop { padding-block: 24px 40px; }
 .shelf { padding-top: 22px; }
-.shelf h2 { font-size: 1.35rem; font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+.shelf h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
 .rail { display: grid; grid-auto-flow: column; grid-auto-columns: 200px; gap: 16px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--bg-4) transparent; }
 .rail .pcard { scroll-snap-align: start; }
@@ -369,7 +369,7 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
 }
 @media (max-width: 560px) {
   .wm-name { font-size: .98rem; }
-  .wm-sub { font-size: .62rem; letter-spacing: .24em; }
+  .wm-sub { font-size: .7rem; letter-spacing: .2em; }
   .brand img { width: 46px; height: auto; }
   .pill-btn { padding: 0 10px; font-size: .78rem; }
   .store-info { gap: 14px; margin-top: -36px; }
