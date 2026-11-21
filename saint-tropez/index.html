@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -236,6 +237,10 @@
                   </button>
                 </div>
               </div>
+              <div class="co-map-wrap hidden" id="co-map-wrap">
+                <div class="co-map" id="co-map" role="application" aria-label="Mapa de entrega" data-i18n-aria="co.mapAria"></div>
+                <p class="pin-note" id="co-pin-note"></p>
+              </div>
               <label class="field"><span data-i18n="co.notes">Instrucciones para el repartidor</span>
                 <input id="co-dnotes" name="dnotes" maxlength="160" data-i18n-ph="co.notesPh">
               </label>
@@ -296,6 +301,11 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="map.js"></script>
   <script src="catalog.js"></script>
   <script src="i18n.js"></script>
   <script src="app.js"></script>

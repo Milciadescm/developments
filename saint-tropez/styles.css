@@ -390,3 +390,25 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ===== Map pins (Leaflet) ===== */
+.st-pin { background: none; border: 0; }
+.st-pin > img, .st-pin > svg { width: 44px; height: 44px; border-radius: 50%; display: block; box-shadow: 0 6px 16px rgba(0,0,0,.45); }
+.pin-disc { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #0b1916; border: 2px solid var(--gold); box-shadow: 0 6px 16px rgba(0,0,0,.45); }
+.pin-disc img { width: 32px !important; height: auto; }
+.pin-home > svg { background: var(--gold); fill: #17120a; stroke: var(--gold); stroke-width: 0; padding: 9px; }
+.pin-home > svg circle { fill: var(--gold); }
+.pin-driver { position: relative; }
+.pin-driver > svg { position: relative; background: var(--teal); padding: 9px; fill: none; stroke: #06201c; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.pin-pulse { position: absolute; inset: 0; border-radius: 50%; background: rgba(55,179,167,.45); animation: pinpulse 1.8s ease-out infinite; }
+@keyframes pinpulse { from { transform: scale(.8); opacity: .9; } to { transform: scale(2.2); opacity: 0; } }
+.leaflet-container { background: #0e1d1a; font-family: var(--sans); }
+.leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.82) contrast(.92) saturate(.55); }
+.leaflet-control-attribution { background: rgba(11,25,22,.75) !important; color: var(--muted) !important; font-size: 11px; }
+.leaflet-control-attribution a { color: var(--gold-2) !important; }
+.leaflet-bar a { background: var(--bg-2) !important; color: var(--text) !important; border-color: var(--line-2) !important; }
+
+/* checkout pin map */
+.co-map-wrap { margin-bottom: 14px; }
+.co-map { height: 240px; border-radius: 12px; overflow: hidden; border: 1px solid var(--line-2); }
+.pin-note { font-size: .86rem; color: var(--muted); margin-top: 8px; }

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedidos · Saint Tropez Market 24/7</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c1a17">
+  <link rel="icon" href="images/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ops.css">
+</head>
+<body class="ops-page">
+  <header class="ops-top">
+    <div class="brand">
+      <img src="images/emblem.svg" alt="" width="50" height="23">
+      <span class="wordmark"><span class="wm-name">Saint Tropez</span><span class="wm-sub" data-i18n="staff.title">Pedidos</span></span>
+    </div>
+    <div class="ops-top-actions">
+      <button type="button" class="pill-btn hidden" id="sound-btn" data-i18n="staff.sound">Activar alertas</button>
+      <button type="button" class="lang" id="lang-toggle">EN</button>
+      <span class="me hidden-sm" id="me-name"></span>
+      <button type="button" class="link" id="signout" data-i18n="ops.signout">Salir</button>
+    </div>
+  </header>
+
+  <section class="login hidden" id="login">
+    <form class="login-card" id="login-form">
+      <img src="images/emblem.svg" alt="" width="110" height="51">
+      <h1 data-i18n="ops.login">Acceso del equipo</h1>
+      <label class="field"><span data-i18n="ops.email">Correo</span><input id="login-email" type="email" autocomplete="username" required></label>
+      <label class="field"><span data-i18n="ops.password">Contraseña</span><input id="login-password" type="password" autocomplete="current-password" required></label>
+      <p class="co-error" id="login-error" role="alert"></p>
+      <button class="btn btn-block btn-lg" type="submit" data-i18n="ops.signin">Entrar</button>
+    </form>
+  </section>
+
+  <main class="board hidden" id="app">
+    <section class="col" aria-labelledby="col-new-h">
+      <h2 id="col-new-h"><span data-i18n="staff.new">Nuevos</span> <em id="n-new">0</em></h2>
+      <div class="col-list" id="col-new"></div>
+    </section>
+    <section class="col" aria-labelledby="col-active-h">
+      <h2 id="col-active-h"><span data-i18n="staff.active">En proceso</span> <em id="n-active">0</em></h2>
+      <div class="col-list" id="col-active"></div>
+    </section>
+    <section class="col" aria-labelledby="col-done-h">
+      <h2 id="col-done-h"><span data-i18n="staff.done">Completados hoy</span> <em id="n-done">0</em></h2>
+      <div class="col-list" id="col-done"></div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="assertive"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="catalog.js"></script>
+  <script src="i18n.js"></script>
+  <script src="ops-common.js"></script>
+  <script src="staff.js"></script>
+</body>
+</html>

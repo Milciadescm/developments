@@ -10,7 +10,10 @@
     get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* storage unavailable */ } },
   };
-  const byId = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
+  let byId = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
+  const API = window.ST_API && window.ST_API.available ? window.ST_API : null;
+  const MAP = window.ST_MAP && window.ST_MAP.available ? window.ST_MAP : null;
+  const CFG = window.ST_CONFIG || {};
 
   // ---------- state ----------
   let lang = ls.get("st-lang", null) || ((navigator.language || "es").startsWith("en") ? "en" : "es");
@@ -33,7 +36,7 @@
   const usd = (n) => `≈ US$ ${(n / STORE.usdRate).toFixed(2)}`;
   const nm = (o) => o[lang] || o.es;
   const zoneObj = () => STORE.zones.find((z) => z.id === state.zone) || null;
-  const minFee = Math.min(...STORE.zones.map((z) => z.fee));
+  let minFee = Math.min(...STORE.zones.map((z) => z.fee));
 
   // ---------- totals ----------
   function totals() {
@@ -330,6 +333,33 @@
     $("#co-error").textContent = "";
     renderCheckout();
     $("#checkout-dialog").showModal();
+    initPinMap();
+  }
+
+  // ---------- checkout pin map ----------
+  let pinMap = null, pinMarker = null, pinTouched = false;
+  const zoneCenter = () => (CFG.zoneCenters || {})[state.zone] || CFG.storeLocation;
+  function setPin(lat, lng, pan = true) {
+    state.coords = { lat: (+lat).toFixed(6), lng: (+lng).toFixed(6) };
+    if (pinMarker) { pinMarker.setLatLng([lat, lng]); if (pan) pinMap.panTo([lat, lng]); }
+    $("#co-pin-note").textContent = t("co.pinSet");
+  }
+  function initPinMap() {
+    const wrap = $("#co-map-wrap");
+    if (!MAP || state.mode !== "delivery") { wrap.classList.toggle("hidden", !MAP || state.mode !== "delivery"); return; }
+    wrap.classList.remove("hidden");
+    const c = state.coords ? { lat: +state.coords.lat, lng: +state.coords.lng } : zoneCenter();
+    if (!pinMap) {
+      pinMap = MAP.create($("#co-map"), c, 15, { scroll: false });
+      pinMarker = L.marker([c.lat, c.lng], { draggable: true, icon: MAP.icons.home(), keyboard: true, title: t("co.pinHint") }).addTo(pinMap);
+      pinMarker.on("dragend", () => { const p = pinMarker.getLatLng(); pinTouched = true; setPin(p.lat, p.lng, false); });
+      pinMap.on("click", (e) => { pinTouched = true; setPin(e.latlng.lat, e.latlng.lng); });
+    } else {
+      pinMap.setView([c.lat, c.lng], 15);
+      pinMarker.setLatLng([c.lat, c.lng]);
+    }
+    setTimeout(() => pinMap.invalidateSize(), 60);
+    $("#co-pin-note").textContent = state.coords ? t("co.pinSet") : t("co.pinHint");
   }
   function renderCheckout() {
     const del = state.mode === "delivery";
@@ -356,7 +386,10 @@
     $("#co-age-wrap").classList.toggle("hidden", !hasAlcohol());
     $("#co-submit").textContent = t("co.place_order", money(tt.total));
   }
-  $("#co-zone").addEventListener("change", (e) => { state.zone = e.target.value || null; save(); renderCheckout(); renderMode(); });
+  $("#co-zone").addEventListener("change", (e) => {
+    state.zone = e.target.value || null; save(); renderCheckout(); renderMode();
+    if (pinMap && !pinTouched && !state.coords) { const c = zoneCenter(); pinMap.setView([c.lat, c.lng], 15); pinMarker.setLatLng([c.lat, c.lng]); }
+  });
   $("#checkout-form").addEventListener("input", (e) => {
     if ($("#co-error").textContent) { $("#co-error").textContent = ""; e.target.removeAttribute("aria-invalid"); }
   });
@@ -372,7 +405,7 @@
     if (!navigator.geolocation) { btn.textContent = t("co.locErr"); return; }
     btn.textContent = "…";
     navigator.geolocation.getCurrentPosition(
-      (pos) => { state.coords = { lat: pos.coords.latitude.toFixed(6), lng: pos.coords.longitude.toFixed(6) }; btn.textContent = t("co.locOk"); },
+      (pos) => { pinTouched = true; setPin(pos.coords.latitude, pos.coords.longitude); if (pinMap) pinMap.setZoom(17); btn.textContent = t("co.locOk"); },
       () => { btn.textContent = t("co.locErr"); },
       { enableHighAccuracy: true, timeout: 10000 });
   });
@@ -438,9 +471,45 @@
   }
   const waUrl = (text) => `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(text)}`;
 
-  $("#checkout-form").addEventListener("submit", (e) => {
+  // Server error codes → messages
+  function serverError(err) {
+    const m = String(err?.message || err || "");
+    if (/minimum/.test(m)) return t("co.err.min", money(STORE.minOrder));
+    if (/age/.test(m)) return t("co.err.age");
+    if (/zone/.test(m)) return t("co.err.zone");
+    if (/place/.test(m)) return t("co.err.place");
+    if (/contact/.test(m)) return t("co.err.phone");
+    if (/unknown product/.test(m)) return t("co.err.stale");
+    return null;
+  }
+
+  let submitting = false;
+  $("#checkout-form").addEventListener("submit", async (e) => {
     e.preventDefault();
-    if (!validate()) return;
+    if (submitting || !validate()) return;
+    if (API) {
+      const o = buildOrder();
+      const btn = $("#co-submit"); submitting = true; btn.disabled = true; btn.textContent = t("co.sending");
+      try {
+        const res = await API.placeOrder({
+          mode: o.mode, lang, zone_id: o.zone, place: o.place, room: o.room, driver_notes: o.driverNotes,
+          dest_lat: o.coords?.lat ?? null, dest_lng: o.coords?.lng ?? null, scheduled_for: o.scheduledFor,
+          customer_name: o.customer.name, customer_phone: o.customer.phone, payment: o.payment, cash_for: o.cashFor,
+          tip_pct: o.mode === "delivery" ? state.tipPct : 0, age_confirmed: o.ageConfirmed,
+          items: state.cart.map((l) => ({ id: l.id, qty: l.qty, notes: l.notes || "" })),
+        });
+        ls.set("st-customer", { name: o.customer.name, phone: o.customer.phone, place: o.place, room: o.room });
+        state.lastOrder = { ...o, id: res.code, token: res.track_token, total: res.total }; ls.set("st-last-order", state.lastOrder);
+        state.cart = []; save();
+        location.href = `track.html?t=${encodeURIComponent(res.track_token)}`;
+        return;
+      } catch (err) {
+        const known = serverError(err);
+        submitting = false; btn.disabled = false; renderCheckout();
+        if (known) { $("#co-error").textContent = known; return; }
+        // backend unreachable → continue with WhatsApp ordering below
+      }
+    }
     const order = buildOrder();
     // open WhatsApp synchronously (inside the click) so pop-up blockers allow it
     window.open(waUrl(waText(order)), "_blank", "noopener");
@@ -507,7 +576,10 @@
     const recent = o && Date.now() - new Date(o.createdAt).getTime() < 6 * 3600 * 1000;
     $("#active-order-btn").classList.toggle("hidden", !recent);
   }
-  $("#active-order-btn").addEventListener("click", openTrack);
+  $("#active-order-btn").addEventListener("click", () => {
+    if (state.lastOrder?.token) location.href = `track.html?t=${encodeURIComponent(state.lastOrder.token)}`;
+    else openTrack();
+  });
 
   // ---------- toast ----------
   let toastTimer;
@@ -531,4 +603,20 @@
   $("#wa-link").href = `https://wa.me/${STORE.whatsapp}`;
   $("#year").textContent = new Date().getFullYear();
   renderAll();
+
+  // Live catalogue: prices, products and zones come from the database when it's reachable
+  if (API) {
+    API.catalog().then(({ products, zones }) => {
+      if (!products.length || !zones.length) return;
+      PRODUCTS.splice(0, PRODUCTS.length, ...products.map((p) => ({
+        id: p.id, cat: p.cat, es: p.name_es, en: p.name_en, unit: p.unit, price: +p.price, was: p.was ? +p.was : undefined,
+        emoji: p.emoji || "🛒", img: p.img || undefined, alcohol: p.alcohol, popular: p.popular,
+      })));
+      STORE.zones.splice(0, STORE.zones.length, ...zones.map((z) => ({ id: z.id, es: z.name_es, en: z.name_en, fee: +z.fee, eta: z.eta })));
+      byId = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
+      minFee = Math.min(...STORE.zones.map((z) => z.fee));
+      state.cart = state.cart.filter((l) => byId[l.id]); save();
+      renderAll();
+    }).catch(() => { /* keep the built-in catalogue */ });
+  }
 })();

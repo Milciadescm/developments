@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Repartos · Saint Tropez Market 24/7</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c1a17">
+  <link rel="icon" href="images/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ops.css">
+</head>
+<body class="ops-page driver-page">
+  <header class="ops-top">
+    <div class="brand">
+      <img src="images/emblem.svg" alt="" width="50" height="23">
+      <span class="wordmark"><span class="wm-name">Saint Tropez</span><span class="wm-sub" data-i18n="drv.title">Repartos</span></span>
+    </div>
+    <div class="ops-top-actions">
+      <button type="button" class="lang" id="lang-toggle">EN</button>
+      <button type="button" class="link" id="signout" data-i18n="ops.signout">Salir</button>
+    </div>
+  </header>
+
+  <section class="login hidden" id="login">
+    <form class="login-card" id="login-form">
+      <img src="images/emblem.svg" alt="" width="110" height="51">
+      <h1 data-i18n="ops.login">Acceso del equipo</h1>
+      <label class="field"><span data-i18n="ops.email">Correo</span><input id="login-email" type="email" autocomplete="username" required></label>
+      <label class="field"><span data-i18n="ops.password">Contraseña</span><input id="login-password" type="password" autocomplete="current-password" required></label>
+      <p class="co-error" id="login-error" role="alert"></p>
+      <button class="btn btn-block btn-lg" type="submit" data-i18n="ops.signin">Entrar</button>
+    </form>
+  </section>
+
+  <main class="drv hidden" id="app">
+    <p class="drv-hello">👋 <span id="me-name"></span></p>
+
+    <section class="drv-active hidden" id="drv-active" aria-labelledby="drv-active-h">
+      <div class="drv-map" id="drv-map"></div>
+      <div class="drv-gps" id="drv-gps"><i></i><span></span></div>
+      <div class="drv-active-body" id="drv-active-body"></div>
+    </section>
+
+    <section aria-labelledby="drv-avail-h">
+      <h2 id="drv-avail-h" data-i18n="drv.available">Disponibles</h2>
+      <div class="drv-list" id="drv-list"></div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="assertive"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="map.js"></script>
+  <script src="catalog.js"></script>
+  <script src="i18n.js"></script>
+  <script src="ops-common.js"></script>
+  <script src="driver.js"></script>
+</body>
+</html>
