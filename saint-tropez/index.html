@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saint Tropez Supermarket</title>
+  <meta name="description" content="Saint Tropez Supermarket — fresh produce, bakery, butcher, deli and everyday essentials. Weekly offers, opening hours and home delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="logo" aria-label="Saint Tropez Supermarket home">
+        <span class="logo-mark">ST</span>
+        <span class="logo-text">Saint Tropez<small>Supermarket</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu">
+        <a href="#departments">Departments</a>
+        <a href="#offers">Weekly offers</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit us</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fresh every morning</p>
+          <h1>Your neighbourhood market, with a taste of the Riviera.</h1>
+          <p class="lead">Fresh produce, warm bread, quality meats and everything for the week — at fair prices, a short walk from home.</p>
+          <div class="hero-actions">
+            <a href="#offers" class="btn">See this week's offers</a>
+            <a href="#delivery" class="btn btn-ghost">Order for delivery</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>Open 7 days</strong><span id="today-status">Checking hours…</span></li>
+            <li><strong>2,000+</strong><span>products</span></li>
+            <li><strong>Same-day</strong><span>home delivery</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="basket">
+            <span>🥖</span><span>🍅</span><span>🧀</span><span>🍋</span><span>🥬</span><span>🍇</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPARTMENTS -->
+    <section id="departments" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Departments</p>
+          <h2>Everything for your table</h2>
+        </div>
+        <div class="dept-grid">
+          <article class="dept"><span class="dept-icon">🥕</span><h3>Fruit &amp; Vegetables</h3><p>Seasonal produce delivered fresh from local growers every morning.</p></article>
+          <article class="dept"><span class="dept-icon">🥖</span><h3>Bakery</h3><p>Baguettes, croissants and pastries baked in-store throughout the day.</p></article>
+          <article class="dept"><span class="dept-icon">🥩</span><h3>Butcher</h3><p>Quality cuts, marinated specials and custom orders from our butchers.</p></article>
+          <article class="dept"><span class="dept-icon">🧀</span><h3>Deli &amp; Cheese</h3><p>Cured meats, cheeses, olives and ready-to-eat dishes.</p></article>
+          <article class="dept"><span class="dept-icon">🐟</span><h3>Fish &amp; Seafood</h3><p>Fresh catch and frozen selections, cleaned and cut on request.</p></article>
+          <article class="dept"><span class="dept-icon">🍷</span><h3>Wine &amp; Drinks</h3><p>Wines, beers, juices and soft drinks for every occasion.</p></article>
+          <article class="dept"><span class="dept-icon">🥫</span><h3>Pantry</h3><p>Pasta, rice, oils, sauces, canned goods and breakfast staples.</p></article>
+          <article class="dept"><span class="dept-icon">🧴</span><h3>Home &amp; Personal Care</h3><p>Cleaning supplies, toiletries and baby care essentials.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers" class="section section-tint">
+      <div class="container">
+        <div class="section-head with-filter">
+          <div>
+            <p class="eyebrow">Valid <span id="offer-dates">this week</span></p>
+            <h2>Weekly offers</h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Filter offers">
+            <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-filter="fresh" role="tab" aria-selected="false">Fresh</button>
+            <button class="chip" data-filter="pantry" role="tab" aria-selected="false">Pantry</button>
+            <button class="chip" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+          </div>
+        </div>
+        <div class="offer-grid" id="offer-grid"><!-- filled by script.js --></div>
+        <p class="fine">Prices shown are examples. Offers while stocks last.</p>
+      </div>
+    </section>
+
+    <!-- DELIVERY -->
+    <section id="delivery" class="section">
+      <div class="container delivery">
+        <div>
+          <p class="eyebrow">Delivery &amp; pick-up</p>
+          <h2>We bring the market to you</h2>
+          <p>Send us your shopping list by WhatsApp or phone and we'll prepare it with the same care as if you picked it yourself.</p>
+          <ol class="steps">
+            <li><strong>Send your list</strong> by WhatsApp or call the store.</li>
+            <li><strong>We confirm</strong> availability and the total.</li>
+            <li><strong>Pick up or receive</strong> your order the same day.</li>
+          </ol>
+          <a class="btn" id="whatsapp-link" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+        <div class="delivery-card">
+          <h3>Delivery details</h3>
+          <dl>
+            <div><dt>Orders before</dt><dd>4:00 pm → same day</dd></div>
+            <div><dt>Delivery area</dt><dd>[Neighbourhoods / radius]</dd></div>
+            <div><dt>Minimum order</dt><dd>[Amount]</dd></div>
+            <div><dt>Payment</dt><dd>Cash, card, transfer</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-dark">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <h2>A family market built on fresh food and friendly service.</h2>
+        </div>
+        <div>
+          <p>Saint Tropez Supermarket was founded to give our neighbourhood a market that feels like a summer morning on the coast: bright, fresh and welcoming. We work with local suppliers, bake every day and know many of our customers by name.</p>
+          <p>Whether you need a quick baguette or the full weekly shop, our team is here to help.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="section">
+      <div class="container visit">
+        <div>
+          <p class="eyebrow">Visit us</p>
+          <h2>Opening hours &amp; location</h2>
+          <table class="hours" id="hours-table">
+            <tbody></tbody>
+          </table>
+          <address>
+            <strong>Saint Tropez Supermarket</strong><br>
+            [Street address]<br>
+            [City, postal code]
+          </address>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Saint+Tropez+Supermarket" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="map-wrap">
+          <iframe title="Store location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Saint+Tropez+Supermarket&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-tint">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Questions, special orders or feedback?</h2>
+          <ul class="contact-list">
+            <li>📞 <a href="tel:+000000000">[Phone number]</a></li>
+            <li>💬 <a id="whatsapp-link-2" href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li>✉️ <a href="mailto:hello@example.com">[Email address]</a></li>
+            <li>📷 <a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Phone or email<input name="reach" required></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <p><strong>Saint Tropez Supermarket</strong> · Fresh every morning</p>
+      <p>© <span id="year"></span> Saint Tropez Supermarket. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
