@@ -4,7 +4,7 @@
   background: linear-gradient(180deg, rgba(11,25,22,.92), rgba(11,25,22,0)); pointer-events: none; }
 .lt-top > * { pointer-events: auto; }
 .lt-map { position: fixed; inset: 0; height: 100dvh; z-index: 1; }
-.lt-map.no-map { background: radial-gradient(circle at 50% 40%, var(--bg-4), var(--bg)); }
+.lt-map.no-map { background: var(--bg-3); }
 .lt-sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 900; max-height: 60dvh; overflow-y: auto; background: var(--bg-2);
   border-radius: 22px 22px 0 0; border-top: 1px solid var(--line); box-shadow: 0 -12px 40px rgba(0,0,0,.45);
   padding: 10px 20px max(24px, env(safe-area-inset-bottom)); }
