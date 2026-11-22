@@ -1,0 +1,57 @@
+{
+ "All 5 markets": {
+  "n": 1755,
+  "mean": 0.162,
+  "first": 0.096,
+  "second": 0.224,
+  "win": 33.2,
+  "t": 4.32,
+  "by_sym": {
+   "BTCUSD": 0.007,
+   "NAS100": 0.067,
+   "US500": 0.12,
+   "XAGUSD": 0.221,
+   "XAUUSD": 0.338
+  },
+  "Normal": {
+   "paid": 24500.84,
+   "dd": 4.65,
+   "breach": null,
+   "trades": 1427,
+   "rewards": 14
+  },
+  "Aggressive": {
+   "paid": 8184.49,
+   "dd": 4.94,
+   "breach": null,
+   "trades": 1009,
+   "rewards": 6
+  }
+ },
+ "BTC + Nasdaq only": {
+  "n": 585,
+  "mean": 0.039,
+  "first": 0.074,
+  "second": 0.012,
+  "win": 33.3,
+  "t": 0.74,
+  "by_sym": {
+   "BTCUSD": 0.007,
+   "NAS100": 0.067
+  },
+  "Normal": {
+   "paid": 2176.22,
+   "dd": 4.61,
+   "breach": null,
+   "trades": 584,
+   "rewards": 5
+  },
+  "Aggressive": {
+   "paid": 3645.3,
+   "dd": 4.99,
+   "breach": null,
+   "trades": 504,
+   "rewards": 3
+  }
+ }
+}
