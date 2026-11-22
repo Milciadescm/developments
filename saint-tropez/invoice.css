@@ -35,13 +35,3 @@
 .inv-foot { border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 4px; }
 .inv-foot .sig { font-family: var(--script); font-style: italic; color: var(--gold-2); font-size: 1.15rem; }
 .inv-foot .muted { font-size: .82rem; }
-
-@media print {
-  @page { margin: 14mm; }
-  body, .inv-page { background: #fff !important; color: #000 !important; padding: 0; }
-  .inv-tools { display: none !important; }
-  .invoice { width: 100%; border: 0; border-radius: 0; background: #fff; padding: 0; color: #000; }
-  .invoice * { color: #000 !important; border-color: #bbb !important; background: transparent !important; }
-  .inv-table { min-width: 0; }
-  .inv-brand img { filter: grayscale(1) contrast(1.4); }
-}

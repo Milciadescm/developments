@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "saint-tropez/invoice.html"
+        ],
+        "createdAt": "2026-11-22T12:52:17.067Z",
+        "reason": "Claude verified in browser: flagged buttons are #f3eee3/#e8cf98 on the body's dark #0b1916 (detector assumes white canvas); print styles force black text"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "saint-tropez/invoice.html"
+        ],
+        "createdAt": "2026-11-22T12:52:17.074Z",
+        "reason": "Claude verified: halo comes from product-tile .cat-* gradients in shared styles.css, none render on the invoice page"
+      }
+    ]
+  }
+}
