@@ -18,7 +18,8 @@ Anything that fails is logged as rejected or optional and stays out of the defau
 ## Two kinds of money
 - Market rule: a market stays in a wallet only if it is profitable in both halves of the data.
 - Prop accounts (Wallet 1): no trade held over 24 hours or over the weekend. Markets BTC, US500, NAS100 at 0.75%. Setups: `fibfvg/prop24.py`
-  (daily + 4-hour setups at 0.705, stop at leg origin, flat within 24 h, 0.5% per trade): +0.23R, t = 1.8.
+  (daily + 4-hour setups at 0.705, stop at leg origin, flat within 24 h): 3 markets +0.35R, t = 1.8, RR 1.42.
+- Calendar (dates, milestones, review gates): `fibfvg/calendar3y.py`; 6%-a-month test: `fibfvg/walletbook.py`.
 - Cueto & Co. real money (Wallet 2): holds allowed. Gold and silver only (+2.15R, t 6.4). Bot v3 position plan, 0.5% per unit, chandelier exit
   (+0.71R after swaps, t = 4.0). Starts when Wallet 2 >= $100K, half in the bot, 10% hard stop (`fibfvg/livefund.py`).
 - Wallets (`fibfvg/wallets3.py`): one prop firm at a time up to 50 accounts; below 50: 50% buys accounts,
