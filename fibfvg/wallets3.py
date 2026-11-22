@@ -5,6 +5,7 @@ Wallet 1  Prop firms   : one firm at a time, $100K instant accounts ($740), 24-h
                          Below 50 accounts: 50% of every reward buys accounts, 25% to Wallet 2, 25% to Wallet 3.
                          At 50 accounts : 70% Wallet 2, 25% Wallet 3, 5% kept as the burn reserve until it holds
                          5 account fees ($3,700); after that the 5% goes to Wallet 2.
+                         v2 (22 Nov 2026): prop trades BTC, S&P, Nasdaq at 0.75%; live bot trades gold and silver only.
                          Burned accounts: assumed 2% chance per account per year (none in the backtest); replaced
                          from the reserve (or the buying pot).
 Wallet 2  Cueto & Co.  : real funds. The live bot starts once Wallet 2 holds $100K: half goes into the live
@@ -34,12 +35,15 @@ CAP = 50
 LIVE_START = 100_000.0
 RESERVE_FULL = 5 * FEE
 BURN_P = 0.02 / 26
+PROP_MARKETS = ("BTCUSD", "US500", "NAS100")     # markets positive in both halves on the 24-hour plan
+PROP_RISK = 0.0075
+LIVE_MARKETS = ("XAUUSD", "XAGUSD")              # markets positive in both halves on the holding plan
 
 
-def prop_sequences():
+def prop_sequences(symbols=PROP_MARKETS, risk=PROP_RISK):
     a, b = build()
-    T = sorted(a + b, key=lambda t: t.entry_time)
-    propsim.MODES["X"] = dict(p1=0.005, p3=0.005)
+    T = sorted([t for t in a + b if t.symbol in symbols], key=lambda t: t.entry_time)
+    propsim.MODES["X"] = dict(p1=risk, p3=risk)
     seqs = []
     for s0 in pd.date_range("2024-03-01", "2025-11-01", freq="MS", tz="UTC"):
         end = min(s0 + pd.Timedelta(days=365), pd.Timestamp("2026-11-20", tz="UTC"))
@@ -54,9 +58,9 @@ def prop_sequences():
     return seqs
 
 
-def live_returns():
+def live_returns(symbols=LIVE_MARKETS):
     propsim.MODES["X"] = dict(p1=0.005, p3=0.005)
-    o = run(live_trades(), Account("Live", 100_000, 0.0, None, None, real=True), "X", start=pd.Timestamp("2024-01-01", tz="UTC"))
+    o = run([t for t in live_trades() if t.symbol in symbols], Account("Live", 100_000, 0.0, None, None, real=True), "X", start=pd.Timestamp("2024-01-01", tz="UTC"))
     return monthly(o["curve"], 100_000)
 
 
@@ -90,7 +94,7 @@ def simulate(seqs, lrets, years=10, paths=2000, crypto_growth=0.0, stop_after=No
                 pot += 0.5 * pay; to2 = 0.25 * pay; crypto += 0.25 * pay
                 buy = min(int(pot // FEE), CAP - acc); acc += buy; pot -= buy * FEE
                 if acc >= CAP:
-                    reached = y; res += pot; pot = 0.0
+                    reached = y; add = min(pot, RESERVE_FULL - res); res += add; cash += pot - add; paid_in += pot - add; pot = 0.0
             else:
                 to2 = 0.70 * pay; crypto += 0.25 * pay
                 if res < RESERVE_FULL:

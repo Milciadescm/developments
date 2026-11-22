@@ -1,0 +1,329 @@
+{
+ "wallet1": {
+  "by_market": {
+   "XAUUSD": {
+    "trades": 23,
+    "win_rate": 60.9,
+    "avg_win": 0.74,
+    "avg_loss": -0.91,
+    "rr": 0.81,
+    "net": 0.092,
+    "first": 0.307,
+    "second": -0.142,
+    "losing_streak": 3,
+    "worst": -1.05,
+    "best": 2.07,
+    "both_halves_positive": false
+   },
+   "XAGUSD": {
+    "trades": 26,
+    "win_rate": 50.0,
+    "avg_win": 0.7,
+    "avg_loss": -0.72,
+    "rr": 0.97,
+    "net": -0.01,
+    "first": -0.153,
+    "second": 0.112,
+    "losing_streak": 3,
+    "worst": -1.13,
+    "best": 1.76,
+    "both_halves_positive": false
+   },
+   "BTCUSD": {
+    "trades": 29,
+    "win_rate": 69.0,
+    "avg_win": 0.82,
+    "avg_loss": -0.88,
+    "rr": 0.92,
+    "net": 0.288,
+    "first": 0.211,
+    "second": 0.329,
+    "losing_streak": 2,
+    "worst": -1.12,
+    "best": 2.75,
+    "both_halves_positive": true
+   },
+   "US500": {
+    "trades": 29,
+    "win_rate": 48.3,
+    "avg_win": 1.43,
+    "avg_loss": -0.78,
+    "rr": 1.84,
+    "net": 0.288,
+    "first": 0.43,
+    "second": 0.113,
+    "losing_streak": 3,
+    "worst": -1.08,
+    "best": 7.88,
+    "both_halves_positive": true
+   },
+   "NAS100": {
+    "trades": 24,
+    "win_rate": 58.3,
+    "avg_win": 1.5,
+    "avg_loss": -0.91,
+    "rr": 1.66,
+    "net": 0.498,
+    "first": 0.635,
+    "second": 0.307,
+    "losing_streak": 2,
+    "worst": -1.04,
+    "best": 9.81,
+    "both_halves_positive": true
+   },
+   "All": {
+    "trades": 131,
+    "win_rate": 57.3,
+    "avg_win": 1.02,
+    "avg_loss": -0.83,
+    "rr": 1.24,
+    "net": 0.233,
+    "first": 0.308,
+    "second": 0.161,
+    "losing_streak": 8,
+    "worst": -1.13,
+    "best": 9.81,
+    "both_halves_positive": true
+   }
+  }
+ },
+ "wallet2": {
+  "by_market": {
+   "XAUUSD": {
+    "trades": 25,
+    "win_rate": 80.0,
+    "avg_win": 2.94,
+    "avg_loss": -0.4,
+    "rr": 7.28,
+    "net": 2.273,
+    "first": 1.311,
+    "second": 4.317,
+    "losing_streak": 4,
+    "worst": -0.81,
+    "best": 5.37,
+    "both_halves_positive": true
+   },
+   "XAGUSD": {
+    "trades": 20,
+    "win_rate": 80.0,
+    "avg_win": 2.69,
+    "avg_loss": -0.85,
+    "rr": 3.15,
+    "net": 1.985,
+    "first": 2.713,
+    "second": 0.286,
+    "losing_streak": 2,
+    "worst": -1.06,
+    "best": 7.23,
+    "both_halves_positive": true
+   },
+   "BTCUSD": {
+    "trades": 17,
+    "win_rate": 23.5,
+    "avg_win": 1.46,
+    "avg_loss": -0.87,
+    "rr": 1.68,
+    "net": -0.322,
+    "first": -0.686,
+    "second": 0.001,
+    "losing_streak": 8,
+    "worst": -1.34,
+    "best": 2.14,
+    "both_halves_positive": false
+   },
+   "US500": {
+    "trades": 25,
+    "win_rate": 44.0,
+    "avg_win": 1.29,
+    "avg_loss": -0.62,
+    "rr": 2.06,
+    "net": 0.217,
+    "first": 0.642,
+    "second": -0.175,
+    "losing_streak": 5,
+    "worst": -1.07,
+    "best": 3.4,
+    "both_halves_positive": false
+   },
+   "NAS100": {
+    "trades": 32,
+    "win_rate": 25.0,
+    "avg_win": 0.51,
+    "avg_loss": -0.65,
+    "rr": 0.78,
+    "net": -0.358,
+    "first": -0.179,
+    "second": -0.562,
+    "losing_streak": 8,
+    "worst": -1.23,
+    "best": 1.18,
+    "both_halves_positive": false
+   },
+   "All": {
+    "trades": 119,
+    "win_rate": 49.6,
+    "avg_win": 2.14,
+    "avg_loss": -0.68,
+    "rr": 3.13,
+    "net": 0.714,
+    "first": 0.874,
+    "second": 0.501,
+    "losing_streak": 15,
+    "worst": -1.34,
+    "best": 7.23,
+    "both_halves_positive": true
+   }
+  }
+ },
+ "six_pct": {
+  "prop": [
+   {
+    "risk": 0.5,
+    "with_6pct_line": {
+     "breach": null,
+     "profit": 14859
+    },
+    "no_line": {
+     "avg_month": 0.51,
+     "median_month": 0.18,
+     "worst_month": -1.43,
+     "best_month": 8.42,
+     "months_ge_6": 1,
+     "months": 29,
+     "months_down": 13,
+     "max_dd": 3.0
+    }
+   },
+   {
+    "risk": 1.0,
+    "with_6pct_line": {
+     "breach": null,
+     "profit": 29581
+    },
+    "no_line": {
+     "avg_month": 0.98,
+     "median_month": 0.31,
+     "worst_month": -2.84,
+     "best_month": 16.71,
+     "months_ge_6": 1,
+     "months": 29,
+     "months_down": 13,
+     "max_dd": 5.3
+    }
+   },
+   {
+    "risk": 1.5,
+    "with_6pct_line": {
+     "breach": null,
+     "profit": 23849
+    },
+    "no_line": {
+     "avg_month": 1.43,
+     "median_month": 0.43,
+     "worst_month": -3.79,
+     "best_month": 24.87,
+     "months_ge_6": 3,
+     "months": 29,
+     "months_down": 13,
+     "max_dd": 6.9
+    }
+   },
+   {
+    "risk": 2.0,
+    "with_6pct_line": {
+     "breach": null,
+     "profit": 23147
+    },
+    "no_line": {
+     "avg_month": 1.85,
+     "median_month": 0.51,
+     "worst_month": -4.66,
+     "best_month": 32.88,
+     "months_ge_6": 3,
+     "months": 29,
+     "months_down": 13,
+     "max_dd": 8.3
+    }
+   },
+   {
+    "risk": 3.0,
+    "with_6pct_line": {
+     "breach": null,
+     "profit": 19362
+    },
+    "no_line": {
+     "avg_month": 2.65,
+     "median_month": 0.64,
+     "worst_month": -6.87,
+     "best_month": 48.53,
+     "months_ge_6": 4,
+     "months": 29,
+     "months_down": 13,
+     "max_dd": 10.2
+    }
+   }
+  ],
+  "live": [
+   {
+    "risk": 0.5,
+    "end": 143638,
+    "avg_month": 1.35,
+    "median_month": 0.0,
+    "worst_month": -1.91,
+    "best_month": 19.34,
+    "months_ge_6": 3,
+    "months": 29,
+    "months_down": 13,
+    "max_dd": 5.1
+   },
+   {
+    "risk": 1.0,
+    "end": 205544,
+    "avg_month": 2.87,
+    "median_month": 0.0,
+    "worst_month": -3.8,
+    "best_month": 39.86,
+    "months_ge_6": 6,
+    "months": 29,
+    "months_down": 13,
+    "max_dd": 10.2
+   },
+   {
+    "risk": 1.5,
+    "end": 283967,
+    "avg_month": 4.43,
+    "median_month": 0.0,
+    "worst_month": -5.53,
+    "best_month": 59.64,
+    "months_ge_6": 6,
+    "months": 29,
+    "months_down": 13,
+    "max_dd": 14.9
+   },
+   {
+    "risk": 2.0,
+    "end": 379768,
+    "avg_month": 6.01,
+    "median_month": 0.0,
+    "worst_month": -7.38,
+    "best_month": 79.64,
+    "months_ge_6": 6,
+    "months": 29,
+    "months_down": 13,
+    "max_dd": 19.2
+   },
+   {
+    "risk": 3.0,
+    "end": 638181,
+    "avg_month": 9.3,
+    "median_month": 0.0,
+    "worst_month": -11.19,
+    "best_month": 118.71,
+    "months_ge_6": 7,
+    "months": 29,
+    "months_down": 13,
+    "max_dd": 27.1
+   }
+  ]
+ }
+}

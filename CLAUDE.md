@@ -16,9 +16,10 @@ The bot changes only if a new rule beats the current best on all four checks:
 Anything that fails is logged as rejected or optional and stays out of the default preset.
 
 ## Two kinds of money
-- Prop accounts (Wallet 1): no trade held over 24 hours or over the weekend. Current best: `fibfvg/prop24.py`
+- Market rule: a market stays in a wallet only if it is profitable in both halves of the data.
+- Prop accounts (Wallet 1): no trade held over 24 hours or over the weekend. Markets BTC, US500, NAS100 at 0.75%. Setups: `fibfvg/prop24.py`
   (daily + 4-hour setups at 0.705, stop at leg origin, flat within 24 h, 0.5% per trade): +0.23R, t = 1.8.
-- Cueto & Co. real money (Wallet 2): holds allowed. Bot v3 position plan, 0.5% per unit, chandelier exit
+- Cueto & Co. real money (Wallet 2): holds allowed. Gold and silver only (+2.15R, t 6.4). Bot v3 position plan, 0.5% per unit, chandelier exit
   (+0.71R after swaps, t = 4.0). Starts when Wallet 2 >= $100K, half in the bot, 10% hard stop (`fibfvg/livefund.py`).
 - Wallets (`fibfvg/wallets3.py`): one prop firm at a time up to 50 accounts; below 50: 50% buys accounts,
   25% Wallet 2, 25% Wallet 3 crypto; at 50: 70% Wallet 2, 25% crypto, 5% burn reserve (5 accounts), then to Wallet 2.

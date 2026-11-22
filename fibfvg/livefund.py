@@ -38,7 +38,9 @@ def monthly(curve, cap):
     s = pd.Series([b for _, b in curve], index=pd.to_datetime([a for a, _ in curve], unit="s", utc=True))
     s = pd.concat([pd.Series([cap], index=[START]), s]).groupby(level=0).last()
     m = s.resample("ME").last().ffill()
-    return m.pct_change().fillna(m.iloc[0] / cap - 1).values
+    r = m.pct_change().fillna(m.iloc[0] / cap - 1).values
+    first = int(np.argmax(r != 0)) if (r != 0).any() else 0   # skip the warm-up months before the first closed trade
+    return r[first:]
 
 
 def max_dd(path):
