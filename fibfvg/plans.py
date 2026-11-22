@@ -48,6 +48,8 @@ def position_engine(symbol, daily, mode, start="2005-01-01", L=20, max_units=4):
                 pos["hh"] = max(pos["hh"], h[i - 1]) if i - 1 >= pos["bar"] else pos["hh"]
                 if P["trail"] == "d20":
                     trail = l[i - 20:i].min()
+                elif P["trail"] == "d120":
+                    trail = l[max(0, i - 120):i].min()      # long holds: the 120-day low (about 6 months)
                 elif P["trail"] == "d55":
                     trail = l[i - 55:i].min() if pos["tp1_done"] else -np.inf
                 else:
