@@ -47,6 +47,8 @@ input double MicroDispATR        = 0.8;
 input int    MicroExpiryBars     = 6;
 input int    MicroMaxHoldBars    = 30;
 input double MicroMinRR          = 1.0;
+input bool   MicroMonWedOnly     = true;    // plan v2 time rule: micro fills Mon-Wed (UTC) only
+input bool   MicroReverse        = false;   // plan v2: true ONLY on the XAUUSD chart (mirror reverse)
 //--- seconds scalper
 input int    ScalpSeconds        = 30;      // 15, 30 or 45
 input double ScalpRR             = 1.618;
@@ -285,6 +287,10 @@ void MicroNewBar()
       if(PositionGetString(POSITION_SYMBOL) != _Symbol || PositionGetInteger(POSITION_MAGIC) != MM) continue;
       if(TimeCurrent() - (datetime)PositionGetInteger(POSITION_TIME) >= MicroMaxHoldBars * 4 * 3600) trade.PositionClose(tk);
    }
+   // plan v2 time rule: cancel / skip micro orders on Thu-Sun (UTC)
+   MqlDateTime g; TimeToStruct(TimeGMT(), g);
+   bool dayOK = !MicroMonWedOnly || (g.day_of_week >= 1 && g.day_of_week <= 3);
+   if(!dayOK) { DeleteOrders(MM); return; }
    if(CountPositions(MM) > 0 || CountOrders(MM) > 0) return;
    int dir = WeeklyBias(); if(dir == 0) return;
    double a = WilderATR(PERIOD_H4, 14, 2);
@@ -301,10 +307,21 @@ void MicroNewBar()
    double tp = extreme + dir * Ext_TP2 * rng;
    double risk = MathAbs(entry - sl);
    if(risk <= 0 || MathAbs(tp - entry) / risk < MicroMinRR) return;
-   double lots = LotsForRisk(MicroRiskPct, risk);
-   if(lots <= 0 || !RiskAllows(lots, risk)) return;
    trade.SetExpertMagicNumber(MM);
    datetime exp = TimeCurrent() + MicroExpiryBars * 4 * 3600;
+   if(MicroReverse)
+   {
+      // mirror reverse: opposite side at the same price, stop at the original
+      // target, target at the original stop (stop order, since price must come to it)
+      double rrisk = MathAbs(tp - entry);
+      double rl = LotsForRisk(MicroRiskPct, rrisk);
+      if(rl <= 0 || !RiskAllows(rl, rrisk)) return;
+      if(dir == 1) trade.SellStop(rl, NormPrice(entry), _Symbol, NormPrice(tp), NormPrice(sl), ORDER_TIME_SPECIFIED, exp, "FibM-R");
+      else         trade.BuyStop(rl, NormPrice(entry), _Symbol, NormPrice(tp), NormPrice(sl), ORDER_TIME_SPECIFIED, exp, "FibM-R");
+      return;
+   }
+   double lots = LotsForRisk(MicroRiskPct, risk);
+   if(lots <= 0 || !RiskAllows(lots, risk)) return;
    if(dir == 1) trade.BuyLimit(lots, NormPrice(entry), _Symbol, NormPrice(sl), NormPrice(tp), ORDER_TIME_SPECIFIED, exp, "FibM");
    else         trade.SellLimit(lots, NormPrice(entry), _Symbol, NormPrice(sl), NormPrice(tp), ORDER_TIME_SPECIFIED, exp, "FibM");
 }

@@ -85,7 +85,7 @@ def _mirror(o, h, l, c, direction):
 
 
 # ----------------------------------------------------- weekly swing engine
-def weekly_engine(symbol: str, daily: pd.DataFrame, cfg: EngineConfig) -> list[Trade]:
+def weekly_engine(symbol: str, daily: pd.DataFrame, cfg: EngineConfig, log: list | None = None) -> list[Trade]:
     """Monthly+Weekly bias -> Daily Turtle breakout defines the impulse leg ->
     limit order in the Fibonacci OTE zone (0.705) of that leg, only if the leg
     contains a daily FVG (displacement). Stop beyond the leg origin (1.0).
@@ -150,6 +150,9 @@ def weekly_engine(symbol: str, daily: pd.DataFrame, cfg: EngineConfig) -> list[T
             # ---------------- try to fill pending OTE limit on bar i
             if setup is not None:
                 if i - setup["born"] > cfg.setup_expiry_bars or o[i] <= setup["stop"]:
+                    if log is not None:
+                        log.append(dict(ev="cancel", eng="weekly", t=str(times[i]), dir=direction,
+                                        why="expired" if o[i] > setup["stop"] else "gapped through stop"))
                     setup = None
                 elif l[i] <= setup["entry"]:
                     px = min(o[i], setup["entry"])
@@ -157,6 +160,9 @@ def weekly_engine(symbol: str, daily: pd.DataFrame, cfg: EngineConfig) -> list[T
                     t = Trade(symbol, "weekly", direction, times[i], direction * px,
                               direction * setup["stop"], pos_id=pid)
                     t._entry_m, t._stop_m = px, setup["stop"]
+                    t.bar, t.tf, t.tp_final = i, "D1", direction * setup["tp2"]
+                    t.tp1 = direction * setup["tp1"]
+                    t.setup_bar, t.fill_delay = setup["born"], i - setup["born"]
                     trades.append(t)
                     if l[i] <= setup["stop"]:        # same-bar stop-out (conservative)
                         t.exits.append((times[i], direction * setup["stop"], 1.0))
@@ -181,6 +187,12 @@ def weekly_engine(symbol: str, daily: pd.DataFrame, cfg: EngineConfig) -> list[T
                 stop = leg_low - 0.25 * N
                 setup = dict(entry=entry, stop=stop, born=i,
                              tp1=leg_high + FIB_EXT_1 * rng, tp2=leg_high + FIB_EXT_2 * rng)
+                if log is not None:
+                    d_ = direction
+                    log.append(dict(ev="setup", eng="weekly", t=str(times[i]), dir=d_,
+                                    leg_from=str(times[j0]), leg_lo=d_ * leg_low, leg_hi=d_ * leg_high,
+                                    entry=d_ * entry, stop=d_ * stop, tp1=d_ * setup["tp1"], tp2=d_ * setup["tp2"],
+                                    N=float(N)))
     for t in trades:
         if not t.exits:   # still open at end of data -> mark at last close
             t.exits.append((daily.index[-1] + pd.Timedelta(hours=12), float(daily.Close.iloc[-1]), 1.0))
@@ -196,7 +208,7 @@ def to_4h(h1: pd.DataFrame) -> pd.DataFrame:
     return h1.resample("4h").agg(agg).dropna()
 
 
-def micro_engine(symbol: str, h4: pd.DataFrame, daily: pd.DataFrame, cfg: EngineConfig) -> list[Trade]:
+def micro_engine(symbol: str, h4: pd.DataFrame, daily: pd.DataFrame, cfg: EngineConfig, log: list | None = None) -> list[Trade]:
     """Weekly bias -> 4H FVG with a displacement candle -> limit in the OTE zone
     (0.705) of the displacement leg, capped at the FVG top. Stop beyond the leg
     origin. TP = -0.618 Fibonacci extension of the leg. Min 1.0R.
@@ -226,12 +238,19 @@ def micro_engine(symbol: str, h4: pd.DataFrame, daily: pd.DataFrame, cfg: Engine
                 continue
             if order is not None:
                 if i - order["born"] > cfg.micro_expiry_bars or o[i] <= order["stop"] or h[i] >= order["tp"]:
+                    if log is not None:
+                        log.append(dict(ev="cancel", eng="micro", t=str(times[i]), dir=direction,
+                                        why="expired" if i - order["born"] > cfg.micro_expiry_bars else
+                                        ("gapped through stop" if o[i] <= order["stop"] else "target hit before fill")))
                     order = None
                 elif l[i] <= order["entry"]:
                     px = min(o[i], order["entry"])
                     t = Trade(symbol, "micro", direction, times[i] - pd.Timedelta(hours=2),
                               direction * px, direction * order["stop"])
                     t._entry_m, t._stop_m = px, order["stop"]
+                    t.bar, t.tf, t.tp_final = i, "H4", direction * order["tp"]
+                    t.tp1 = None
+                    t.setup_bar, t.fill_delay = order["born"], i - order["born"]
                     trades.append(t)
                     if l[i] <= order["stop"]:
                         t.exits.append((times[i], direction * order["stop"], 1.0))
@@ -252,6 +271,12 @@ def micro_engine(symbol: str, h4: pd.DataFrame, daily: pd.DataFrame, cfg: Engine
                 tp = leg_high + FIB_EXT_2 * (leg_high - leg_low)
                 if entry - stop > 0 and (tp - entry) / (entry - stop) >= cfg.micro_min_rr:
                     order = dict(entry=entry, stop=stop, tp=tp, born=i)
+                    if log is not None:
+                        d_ = direction
+                        log.append(dict(ev="setup", eng="micro", t=str(times[i]), dir=d_,
+                                        leg_from=str(times[i - 5]), leg_lo=d_ * leg_low, leg_hi=d_ * leg_high,
+                                        fvg_lo=d_ * (h[i - 2] if d_ == 1 else l[i]), fvg_hi=d_ * (l[i] if d_ == 1 else h[i - 2]),
+                                        entry=d_ * entry, stop=d_ * stop, tp2=d_ * tp))
     for t in trades:
         if not t.exits:
             t.exits.append((h4.index[-1], float(h4.Close.iloc[-1]), 1.0))

@@ -36,6 +36,20 @@ Run it again: `pip install pandas numpy yfinance` then `python -m fibfvg.run_bac
 - Funded $50k (0.25% risk, Jul 2024 → now): +21% in 1.8 years, 5.6% max DD, then a 6% trailing limit was hit.
 - Recommended: 0.5% per Turtle unit + 0.25% per micro trade (personal), 0.10–0.25% (funded).
 
+## Plan v2 (reverse test + time study)
+
+`python -m fibfvg.experiments` tests two ideas, deciding on early data and checking on later data
+(weekly: 2005-15 vs 2016-26; micro: before vs after June 2025):
+
+- **Reversing losers:** reversing every trade loses (mirror −0.06R, 1:1 −0.52R per trade on later data).
+  Only gold 4H micro passed (−0.19R → +0.03R, roughly breakeven). `MicroReverse=true` on the XAUUSD chart only;
+  switching gold micro off is an equally valid choice.
+- **Time rules:** Fibonacci bar counts to fill, London/NY sessions and Mon–Wed weekly entries all failed.
+  **Micro fills Monday–Wednesday only** held up (+0.25R vs −0.38R on later data) and is on by default (`MicroMonWedOnly`).
+- 2016–26 at $50k: 3.0%/yr → 4.0%/yr, max drawdown 28.9% → 26.2%, profit factor 1.21 → 1.39.
+
+`python -m fibfvg.export_replay` writes the data for `results/lab.html`, the trade-by-trade replay page.
+
 ## Limits
 
 - The S&P 15s/30s/45s FVG idea is in the EA as an experimental module (`UseSecondsScalper`, off by default). It is **not backtested**: no second-level history was available.
