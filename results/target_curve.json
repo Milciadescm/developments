@@ -1,0 +1,98 @@
+{
+ "tight stop (reaction wick)": {
+  "n": 3276,
+  "avg_cost_R": 0.079,
+  "rows": [
+   {
+    "target_R": 1,
+    "hit_pct": 45.39,
+    "breakeven_pct": 50.0,
+    "expectancy_R": -0.171
+   },
+   {
+    "target_R": 2,
+    "hit_pct": 31.78,
+    "breakeven_pct": 33.33,
+    "expectancy_R": -0.125
+   },
+   {
+    "target_R": 3,
+    "hit_pct": 24.39,
+    "breakeven_pct": 25.0,
+    "expectancy_R": -0.103
+   },
+   {
+    "target_R": 5,
+    "hit_pct": 17.19,
+    "breakeven_pct": 16.67,
+    "expectancy_R": -0.048
+   },
+   {
+    "target_R": 10,
+    "hit_pct": 9.31,
+    "breakeven_pct": 9.09,
+    "expectancy_R": -0.055
+   },
+   {
+    "target_R": 20,
+    "hit_pct": 5.25,
+    "breakeven_pct": 4.76,
+    "expectancy_R": 0.024
+   },
+   {
+    "target_R": 50,
+    "hit_pct": 2.14,
+    "breakeven_pct": 1.96,
+    "expectancy_R": 0.011
+   }
+  ]
+ },
+ "daily-range stop (Plan 3 entries)": {
+  "n": 604,
+  "avg_cost_R": 0.017,
+  "rows": [
+   {
+    "target_R": 1,
+    "hit_pct": 49.5,
+    "breakeven_pct": 50.0,
+    "expectancy_R": -0.026
+   },
+   {
+    "target_R": 2,
+    "hit_pct": 36.59,
+    "breakeven_pct": 33.33,
+    "expectancy_R": 0.081
+   },
+   {
+    "target_R": 3,
+    "hit_pct": 29.3,
+    "breakeven_pct": 25.0,
+    "expectancy_R": 0.156
+   },
+   {
+    "target_R": 5,
+    "hit_pct": 18.54,
+    "breakeven_pct": 16.67,
+    "expectancy_R": 0.096
+   },
+   {
+    "target_R": 10,
+    "hit_pct": 5.96,
+    "breakeven_pct": 9.09,
+    "expectancy_R": -0.361
+   },
+   {
+    "target_R": 20,
+    "hit_pct": 0.83,
+    "breakeven_pct": 4.76,
+    "expectancy_R": -0.843
+   },
+   {
+    "target_R": 50,
+    "hit_pct": 0.33,
+    "breakeven_pct": 1.96,
+    "expectancy_R": -0.848
+   }
+  ]
+ }
+}

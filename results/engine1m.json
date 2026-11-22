@@ -1,0 +1,5332 @@
+{
+ "promo fee $740, no cap": [
+  {
+   "start": "2024-08-01",
+   "private": 0.0,
+   "company_cash": 12003.69,
+   "fees": 4440.0,
+   "accounts": 6,
+   "breaches": 0,
+   "gross": 15703.69,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 1,
+     "earned": 883.39,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 1,
+     "earned": 1787.42,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 1,
+     "earned": 1324.11,
+     "bought": 5
+    },
+    {
+     "month": 10,
+     "accounts": 6,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 6,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 6,
+     "earned": 10817.72,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-09-01",
+   "private": 0.0,
+   "company_cash": 38319.57,
+   "fees": 19980.0,
+   "accounts": 27,
+   "breaches": 0,
+   "gross": 57559.57,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1633.02,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 2
+    },
+    {
+     "month": 4,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 3,
+     "earned": 3896.1,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 8,
+     "earned": 5681.47,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 8,
+     "earned": 4684.44,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 8,
+     "earned": 3855.59,
+     "bought": 19
+    },
+    {
+     "month": 10,
+     "accounts": 27,
+     "earned": 2435.76,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 27,
+     "earned": 34376.35,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 27,
+     "earned": 996.84,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-10-01",
+   "private": 390.79,
+   "company_cash": 19197.84,
+   "fees": 8880.0,
+   "accounts": 12,
+   "breaches": 0,
+   "gross": 27728.63,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 390.79,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 2029.21,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1550.09,
+     "bought": 4
+    },
+    {
+     "month": 7,
+     "accounts": 5,
+     "earned": 1561.43,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 5,
+     "earned": 1670.34,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 5,
+     "earned": 1522.35,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 12,
+     "earned": 9079.9,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 12,
+     "earned": 9924.52,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-11-01",
+   "private": 0.0,
+   "company_cash": 122330.36,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 136390.36,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 826.02,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1652.43,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 6,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 6,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 6,
+     "earned": 9289.88,
+     "bought": 14
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 221.52,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 18586.7,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 103361.28,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-12-01",
+   "private": 0.0,
+   "company_cash": 118923.54,
+   "fees": 17760.0,
+   "accounts": 24,
+   "breaches": 0,
+   "gross": 135943.54,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 941.85,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 1724.72,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 1005.75,
+     "bought": 6
+    },
+    {
+     "month": 7,
+     "accounts": 8,
+     "earned": 608.94,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 8,
+     "earned": 11278.64,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 8,
+     "earned": 0.0,
+     "bought": 16
+    },
+    {
+     "month": 10,
+     "accounts": 24,
+     "earned": 20671.12,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 24,
+     "earned": 79816.24,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 24,
+     "earned": 18334.8,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-01-01",
+   "private": 0.0,
+   "company_cash": 46244.68,
+   "fees": 8140.0,
+   "accounts": 11,
+   "breaches": 0,
+   "gross": 53644.68,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 311.52,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 304.47,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 1646.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 36.92,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 3170.2,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 11,
+     "earned": 28202.44,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 11,
+     "earned": 2825.04,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 11,
+     "earned": 14999.7,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-02-01",
+   "private": 0.0,
+   "company_cash": 338285.58,
+   "fees": 95460.0,
+   "accounts": 129,
+   "breaches": 0,
+   "gross": 433005.58,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 724.68,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1991.12,
+     "bought": 3
+    },
+    {
+     "month": 4,
+     "accounts": 4,
+     "earned": 698.54,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 4,
+     "earned": 192.51,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 4,
+     "earned": 6232.46,
+     "bought": 10
+    },
+    {
+     "month": 7,
+     "accounts": 14,
+     "earned": 147.68,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 14,
+     "earned": 26746.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 14,
+     "earned": 58004.18,
+     "bought": 115
+    },
+    {
+     "month": 10,
+     "accounts": 129,
+     "earned": 9887.64,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 129,
+     "earned": 201469.6,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 129,
+     "earned": 126911.17,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-03-01",
+   "private": 334.53,
+   "company_cash": 23669.07,
+   "fees": 20720.0,
+   "accounts": 28,
+   "breaches": 0,
+   "gross": 43983.6,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 334.53,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 140.84,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 288.95,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 355.97,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1749.78,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 3384.7,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 11180.51,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 3485.44,
+     "bought": 24
+    },
+    {
+     "month": 10,
+     "accounts": 28,
+     "earned": 1134.6,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 28,
+     "earned": 18238.36,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 28,
+     "earned": 3689.92,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-04-01",
+   "private": 0.0,
+   "company_cash": 25630.0,
+   "fees": 11840.0,
+   "accounts": 16,
+   "breaches": 0,
+   "gross": 36730.0,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 270.94,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 305.03,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 2164.81,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 732.78,
+     "bought": 4
+    },
+    {
+     "month": 7,
+     "accounts": 5,
+     "earned": 7031.96,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 5,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 5,
+     "earned": 283.65,
+     "bought": 11
+    },
+    {
+     "month": 10,
+     "accounts": 16,
+     "earned": 25127.77,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 16,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 16,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-05-01",
+   "private": 0.0,
+   "company_cash": 15902.28,
+   "fees": 55500.0,
+   "accounts": 75,
+   "breaches": 0,
+   "gross": 70662.28,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1211.57,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 2172.43,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 13946.74,
+     "bought": 22
+    },
+    {
+     "month": 7,
+     "accounts": 24,
+     "earned": 1742.72,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 24,
+     "earned": 3037.46,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 24,
+     "earned": 33019.54,
+     "bought": 51
+    },
+    {
+     "month": 10,
+     "accounts": 75,
+     "earned": 15531.82,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 75,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 75,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-06-01",
+   "private": 0.0,
+   "company_cash": 98493.71,
+   "fees": 38480.0,
+   "accounts": 52,
+   "breaches": 0,
+   "gross": 136233.71,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1634.12,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 2
+    },
+    {
+     "month": 4,
+     "accounts": 3,
+     "earned": 2569.4,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 3,
+     "earned": 9642.71,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 3,
+     "earned": 2439.18,
+     "bought": 20
+    },
+    {
+     "month": 7,
+     "accounts": 23,
+     "earned": 897.99,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 23,
+     "earned": 20647.31,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 23,
+     "earned": 0.0,
+     "bought": 29
+    },
+    {
+     "month": 10,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 52,
+     "earned": 98403.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-07-01",
+   "private": 0.0,
+   "company_cash": 32135.0,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 46195.0,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 628.35,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 7031.66,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 283.65,
+     "bought": 11
+    },
+    {
+     "month": 7,
+     "accounts": 12,
+     "earned": 4634.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 12,
+     "earned": 847.74,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 8
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 31956.21,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-08-01",
+   "private": 0.0,
+   "company_cash": 60649.77,
+   "fees": 38480.0,
+   "accounts": 52,
+   "breaches": 0,
+   "gross": 98389.77,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1155.81,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 7031.97,
+     "bought": 11
+    },
+    {
+     "month": 4,
+     "accounts": 12,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 12,
+     "earned": 1701.61,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 12,
+     "earned": 27612.53,
+     "bought": 40
+    },
+    {
+     "month": 7,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 10,
+     "accounts": 52,
+     "earned": 60074.79,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-09-01",
+   "private": 756.95,
+   "company_cash": 490.45,
+   "fees": 38480.0,
+   "accounts": 52,
+   "breaches": 0,
+   "gross": 38987.4,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 756.95,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1463.55,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 763.95,
+     "bought": 3
+    },
+    {
+     "month": 4,
+     "accounts": 4,
+     "earned": 334.62,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 4,
+     "earned": 7326.13,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 10
+    },
+    {
+     "month": 7,
+     "accounts": 14,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 14,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 14,
+     "earned": 28342.2,
+     "bought": 38
+    },
+    {
+     "month": 10,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 52,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-10-01",
+   "private": 0.0,
+   "company_cash": 581.63,
+   "fees": 23680.0,
+   "accounts": 32,
+   "breaches": 0,
+   "gross": 23521.63,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 4906.93,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 6
+    },
+    {
+     "month": 7,
+     "accounts": 7,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 7,
+     "earned": 18614.7,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 7,
+     "earned": 0.0,
+     "bought": 25
+    },
+    {
+     "month": 10,
+     "accounts": 32,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 32,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 32,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-11-01",
+   "private": 0.0,
+   "company_cash": 127.08,
+   "fees": 6660.0,
+   "accounts": 9,
+   "breaches": 0,
+   "gross": 6047.08,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1531.3,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 607.83,
+     "bought": 2
+    },
+    {
+     "month": 4,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 3907.95,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 6
+    },
+    {
+     "month": 10,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  }
+ ],
+ "promo fee $740, cap 20 accounts": [
+  {
+   "start": "2024-08-01",
+   "private": 0.0,
+   "company_cash": 12003.69,
+   "fees": 4440.0,
+   "accounts": 6,
+   "breaches": 0,
+   "gross": 15703.69,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 1,
+     "earned": 883.39,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 1,
+     "earned": 1787.42,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 1,
+     "earned": 1324.11,
+     "bought": 5
+    },
+    {
+     "month": 10,
+     "accounts": 6,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 6,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 6,
+     "earned": 10817.72,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-09-01",
+   "private": 0.0,
+   "company_cash": 35428.5,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 49488.5,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1633.02,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 2
+    },
+    {
+     "month": 4,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 3,
+     "earned": 3896.1,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 8,
+     "earned": 5681.47,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 8,
+     "earned": 4684.44,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 8,
+     "earned": 3855.59,
+     "bought": 12
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 2435.76,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 26563.72,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 738.4,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-10-01",
+   "private": 390.79,
+   "company_cash": 19197.84,
+   "fees": 8880.0,
+   "accounts": 12,
+   "breaches": 0,
+   "gross": 27728.63,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 390.79,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 2029.21,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1550.09,
+     "bought": 4
+    },
+    {
+     "month": 7,
+     "accounts": 5,
+     "earned": 1561.43,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 5,
+     "earned": 1670.34,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 5,
+     "earned": 1522.35,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 12,
+     "earned": 9079.9,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 12,
+     "earned": 9924.52,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-11-01",
+   "private": 0.0,
+   "company_cash": 122330.36,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 136390.36,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 826.02,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1652.43,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 6,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 6,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 6,
+     "earned": 9289.88,
+     "bought": 14
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 221.52,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 18586.7,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 103361.28,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-12-01",
+   "private": 0.0,
+   "company_cash": 109945.74,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 124005.74,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 941.85,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 1724.72,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 1005.75,
+     "bought": 6
+    },
+    {
+     "month": 7,
+     "accounts": 8,
+     "earned": 608.94,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 8,
+     "earned": 11278.64,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 8,
+     "earned": 0.0,
+     "bought": 12
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 17643.32,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 73962.04,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 15279.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-01-01",
+   "private": 0.0,
+   "company_cash": 46244.68,
+   "fees": 8140.0,
+   "accounts": 11,
+   "breaches": 0,
+   "gross": 53644.68,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 311.52,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 304.47,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 1646.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 36.92,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 3170.2,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 11,
+     "earned": 28202.44,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 11,
+     "earned": 2825.04,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 11,
+     "earned": 14999.7,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-02-01",
+   "private": 0.0,
+   "company_cash": 185885.05,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 199945.05,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 724.68,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1991.12,
+     "bought": 3
+    },
+    {
+     "month": 4,
+     "accounts": 4,
+     "earned": 698.54,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 4,
+     "earned": 192.51,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 4,
+     "earned": 6232.46,
+     "bought": 10
+    },
+    {
+     "month": 7,
+     "accounts": 14,
+     "earned": 147.68,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 14,
+     "earned": 26746.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 14,
+     "earned": 58004.18,
+     "bought": 6
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 9887.64,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 34557.9,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 60762.34,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-03-01",
+   "private": 334.53,
+   "company_cash": 29589.07,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 43983.6,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 334.53,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 140.84,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 288.95,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 355.97,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1749.78,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 3384.7,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 11180.51,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 3485.44,
+     "bought": 16
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 1134.6,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 18238.36,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 3689.92,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-04-01",
+   "private": 0.0,
+   "company_cash": 25630.0,
+   "fees": 11840.0,
+   "accounts": 16,
+   "breaches": 0,
+   "gross": 36730.0,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 270.94,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 305.03,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 2164.81,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 732.78,
+     "bought": 4
+    },
+    {
+     "month": 7,
+     "accounts": 5,
+     "earned": 7031.96,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 5,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 5,
+     "earned": 283.65,
+     "bought": 11
+    },
+    {
+     "month": 10,
+     "accounts": 16,
+     "earned": 25127.77,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 16,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 16,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-05-01",
+   "private": 0.0,
+   "company_cash": 49319.12,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 63379.12,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1211.57,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 2172.43,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 13946.74,
+     "bought": 18
+    },
+    {
+     "month": 7,
+     "accounts": 20,
+     "earned": 1742.72,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 20,
+     "earned": 2588.34,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 20,
+     "earned": 28674.02,
+     "bought": 0
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 13043.3,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-06-01",
+   "private": 0.0,
+   "company_cash": 58088.03,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 72148.03,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1634.12,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 2
+    },
+    {
+     "month": 4,
+     "accounts": 3,
+     "earned": 2569.4,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 3,
+     "earned": 9642.71,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 3,
+     "earned": 2439.18,
+     "bought": 17
+    },
+    {
+     "month": 7,
+     "accounts": 20,
+     "earned": 897.99,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 20,
+     "earned": 20018.18,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 34946.45,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-07-01",
+   "private": 0.0,
+   "company_cash": 32135.0,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 46195.0,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 628.35,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 7031.66,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 283.65,
+     "bought": 11
+    },
+    {
+     "month": 7,
+     "accounts": 12,
+     "earned": 4634.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 12,
+     "earned": 847.74,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 8
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 31956.21,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-08-01",
+   "private": 0.0,
+   "company_cash": 52852.01,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 66912.01,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1155.81,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 7031.97,
+     "bought": 11
+    },
+    {
+     "month": 4,
+     "accounts": 12,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 12,
+     "earned": 1701.61,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 12,
+     "earned": 27612.53,
+     "bought": 8
+    },
+    {
+     "month": 7,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 28597.03,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-09-01",
+   "private": 756.95,
+   "company_cash": 24170.45,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 38987.4,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 756.95,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1463.55,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 763.95,
+     "bought": 3
+    },
+    {
+     "month": 4,
+     "accounts": 4,
+     "earned": 334.62,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 4,
+     "earned": 7326.13,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 10
+    },
+    {
+     "month": 7,
+     "accounts": 14,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 14,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 14,
+     "earned": 28342.2,
+     "bought": 6
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-10-01",
+   "private": 0.0,
+   "company_cash": 9461.63,
+   "fees": 14800.0,
+   "accounts": 20,
+   "breaches": 0,
+   "gross": 23521.63,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 4906.93,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 6
+    },
+    {
+     "month": 7,
+     "accounts": 7,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 7,
+     "earned": 18614.7,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 7,
+     "earned": 0.0,
+     "bought": 13
+    },
+    {
+     "month": 10,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-11-01",
+   "private": 0.0,
+   "company_cash": 127.08,
+   "fees": 6660.0,
+   "accounts": 9,
+   "breaches": 0,
+   "gross": 6047.08,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1531.3,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 607.83,
+     "bought": 2
+    },
+    {
+     "month": 4,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 3907.95,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 0.0,
+     "bought": 6
+    },
+    {
+     "month": 10,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  }
+ ],
+ "regular fee $1,480, no cap": [
+  {
+   "start": "2024-08-01",
+   "private": 0.0,
+   "company_cash": 7393.64,
+   "fees": 4440.0,
+   "accounts": 3,
+   "breaches": 0,
+   "gross": 10353.64,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 1,
+     "earned": 883.39,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 1,
+     "earned": 1787.42,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 1,
+     "earned": 1324.11,
+     "bought": 2
+    },
+    {
+     "month": 10,
+     "accounts": 3,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 3,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 3,
+     "earned": 5467.67,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-09-01",
+   "private": 0.0,
+   "company_cash": 14878.06,
+   "fees": 14800.0,
+   "accounts": 10,
+   "breaches": 0,
+   "gross": 28198.06,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1633.02,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 3006.9,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 3554.74,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 3122.96,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 2011.5,
+     "bought": 6
+    },
+    {
+     "month": 10,
+     "accounts": 10,
+     "earned": 1217.88,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 10,
+     "earned": 13281.86,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 10,
+     "earned": 369.2,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-10-01",
+   "private": 390.79,
+   "company_cash": 11214.22,
+   "fees": 7400.0,
+   "accounts": 5,
+   "breaches": 0,
+   "gross": 17525.01,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 390.79,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 2029.21,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1550.09,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 1561.43,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 1128.46,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 913.41,
+     "bought": 2
+    },
+    {
+     "month": 10,
+     "accounts": 5,
+     "earned": 5447.94,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 5,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 5,
+     "earned": 4503.68,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-11-01",
+   "private": 0.0,
+   "company_cash": 46307.43,
+   "fees": 10360.0,
+   "accounts": 7,
+   "breaches": 0,
+   "gross": 55187.43,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 826.02,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1652.43,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 4703.75,
+     "bought": 4
+    },
+    {
+     "month": 10,
+     "accounts": 7,
+     "earned": 110.76,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 7,
+     "earned": 6845.95,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 7,
+     "earned": 38595.99,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-12-01",
+   "private": 0.0,
+   "company_cash": 47697.02,
+   "fees": 11840.0,
+   "accounts": 8,
+   "breaches": 0,
+   "gross": 58057.02,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 941.85,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 1550.04,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 586.58,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 5639.32,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 4
+    },
+    {
+     "month": 10,
+     "accounts": 8,
+     "earned": 7307.76,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 8,
+     "earned": 34053.92,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 8,
+     "earned": 6111.6,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-01-01",
+   "private": 0.0,
+   "company_cash": 22839.68,
+   "fees": 7400.0,
+   "accounts": 5,
+   "breaches": 0,
+   "gross": 28759.68,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 311.52,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 304.47,
+     "bought": 1
+    },
+    {
+     "month": 7,
+     "accounts": 2,
+     "earned": 1646.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 2,
+     "earned": 36.92,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 2,
+     "earned": 1852.44,
+     "bought": 3
+    },
+    {
+     "month": 10,
+     "accounts": 5,
+     "earned": 14101.22,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 5,
+     "earned": 1412.52,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 5,
+     "earned": 6946.2,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-02-01",
+   "private": 0.0,
+   "company_cash": 80428.31,
+   "fees": 39960.0,
+   "accounts": 27,
+   "breaches": 0,
+   "gross": 118908.31,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 724.68,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1991.12,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 698.54,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 192.51,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 3175.04,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 5,
+     "earned": 73.84,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 5,
+     "earned": 11745.12,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 5,
+     "earned": 20275.27,
+     "bought": 22
+    },
+    {
+     "month": 10,
+     "accounts": 27,
+     "earned": 3531.3,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 27,
+     "earned": 42749.35,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 27,
+     "earned": 33751.54,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-03-01",
+   "private": 334.53,
+   "company_cash": 12725.13,
+   "fees": 14800.0,
+   "accounts": 10,
+   "breaches": 0,
+   "gross": 26379.66,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 334.53,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 140.84,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 288.95,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 355.97,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1749.78,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 1
+    },
+    {
+     "month": 7,
+     "accounts": 2,
+     "earned": 1859.68,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 2,
+     "earned": 8375.75,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 2,
+     "earned": 1742.72,
+     "bought": 8
+    },
+    {
+     "month": 10,
+     "accounts": 10,
+     "earned": 567.3,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 10,
+     "earned": 9119.18,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 10,
+     "earned": 1844.96,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-04-01",
+   "private": 0.0,
+   "company_cash": 16556.14,
+   "fees": 11840.0,
+   "accounts": 8,
+   "breaches": 0,
+   "gross": 26916.14,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 270.94,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 305.03,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 2164.81,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 732.78,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 7031.96,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 283.65,
+     "bought": 5
+    },
+    {
+     "month": 10,
+     "accounts": 8,
+     "earned": 15313.91,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 8,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 8,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-05-01",
+   "private": 0.0,
+   "company_cash": 6123.93,
+   "fees": 22200.0,
+   "accounts": 15,
+   "breaches": 0,
+   "gross": 26843.93,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1211.57,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1097.17,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 6973.37,
+     "bought": 6
+    },
+    {
+     "month": 7,
+     "accounts": 7,
+     "earned": 871.36,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 7,
+     "earned": 957.33,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 7,
+     "earned": 11077.87,
+     "bought": 8
+    },
+    {
+     "month": 10,
+     "accounts": 15,
+     "earned": 4655.26,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 15,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 15,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-06-01",
+   "private": 0.0,
+   "company_cash": 35154.21,
+   "fees": 26640.0,
+   "accounts": 18,
+   "breaches": 0,
+   "gross": 60314.21,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1634.12,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 1651.59,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 8337.34,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 1626.12,
+     "bought": 7
+    },
+    {
+     "month": 7,
+     "accounts": 9,
+     "earned": 598.66,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 9,
+     "earned": 12436.71,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 9
+    },
+    {
+     "month": 10,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 18,
+     "earned": 34029.67,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-07-01",
+   "private": 0.0,
+   "company_cash": 17524.1,
+   "fees": 14800.0,
+   "accounts": 10,
+   "breaches": 0,
+   "gross": 30844.1,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 628.35,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 7031.66,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 283.65,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 6,
+     "earned": 4634.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 6,
+     "earned": 847.74,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 6,
+     "earned": 0.0,
+     "bought": 4
+    },
+    {
+     "month": 10,
+     "accounts": 10,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 10,
+     "earned": 16605.31,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 10,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-08-01",
+   "private": 0.0,
+   "company_cash": 22638.33,
+   "fees": 26640.0,
+   "accounts": 18,
+   "breaches": 0,
+   "gross": 47798.33,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1155.81,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 7031.97,
+     "bought": 5
+    },
+    {
+     "month": 4,
+     "accounts": 6,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 6,
+     "earned": 936.49,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 6,
+     "earned": 15542.87,
+     "bought": 12
+    },
+    {
+     "month": 7,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 10,
+     "accounts": 18,
+     "earned": 22318.13,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-09-01",
+   "private": 756.95,
+   "company_cash": 181.19,
+   "fees": 22200.0,
+   "accounts": 15,
+   "breaches": 0,
+   "gross": 21658.14,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 756.95,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1463.55,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 763.95,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 333.44,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 6110.47,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 4
+    },
+    {
+     "month": 7,
+     "accounts": 6,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 6,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 6,
+     "earned": 12229.78,
+     "bought": 9
+    },
+    {
+     "month": 10,
+     "accounts": 15,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 15,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 15,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-10-01",
+   "private": 0.0,
+   "company_cash": 415.59,
+   "fees": 16280.0,
+   "accounts": 11,
+   "breaches": 0,
+   "gross": 15215.59,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 4906.93,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 10308.66,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 11,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 11,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 11,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-11-01",
+   "private": 0.0,
+   "company_cash": 543.96,
+   "fees": 5920.0,
+   "accounts": 4,
+   "breaches": 0,
+   "gross": 4983.96,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1531.3,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 607.83,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 2,
+     "earned": 2844.83,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 2
+    },
+    {
+     "month": 10,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  }
+ ],
+ "promo $740, reinvest 50%": [
+  {
+   "start": "2024-08-01",
+   "private": 0.0,
+   "company_cash": 8873.64,
+   "fees": 2220.0,
+   "accounts": 3,
+   "breaches": 0,
+   "gross": 10353.64,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 1,
+     "earned": 883.39,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 1,
+     "earned": 1787.42,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 1,
+     "earned": 1324.11,
+     "bought": 2
+    },
+    {
+     "month": 10,
+     "accounts": 3,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 3,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 3,
+     "earned": 5467.67,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-09-01",
+   "private": 0.0,
+   "company_cash": 21951.07,
+   "fees": 8140.0,
+   "accounts": 11,
+   "breaches": 0,
+   "gross": 29351.07,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1633.02,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 3006.9,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 3554.74,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 3122.96,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 2011.5,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 11,
+     "earned": 1217.88,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 11,
+     "earned": 14397.95,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 11,
+     "earned": 406.12,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-10-01",
+   "private": 390.79,
+   "company_cash": 14093.78,
+   "fees": 4440.0,
+   "accounts": 6,
+   "breaches": 0,
+   "gross": 18184.57,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 390.79,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 2029.21,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1550.09,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 1561.43,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 1128.46,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 913.41,
+     "bought": 3
+    },
+    {
+     "month": 10,
+     "accounts": 6,
+     "earned": 5447.94,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 6,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 6,
+     "earned": 5163.24,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-11-01",
+   "private": 0.0,
+   "company_cash": 55184.78,
+   "fees": 5920.0,
+   "accounts": 8,
+   "breaches": 0,
+   "gross": 60364.78,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 826.02,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1652.43,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 4703.75,
+     "bought": 5
+    },
+    {
+     "month": 10,
+     "accounts": 8,
+     "earned": 110.76,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 8,
+     "earned": 7661.75,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 8,
+     "earned": 42957.54,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2024-12-01",
+   "private": 0.0,
+   "company_cash": 55121.47,
+   "fees": 6660.0,
+   "accounts": 9,
+   "breaches": 0,
+   "gross": 61041.47,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 941.85,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 1550.04,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 586.58,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 304.47,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 5639.32,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 5
+    },
+    {
+     "month": 10,
+     "accounts": 9,
+     "earned": 8064.71,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 9,
+     "earned": 35517.47,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 9,
+     "earned": 6875.55,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-01-01",
+   "private": 0.0,
+   "company_cash": 25799.68,
+   "fees": 3700.0,
+   "accounts": 5,
+   "breaches": 0,
+   "gross": 28759.68,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 311.52,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 1561.48,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 586.58,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 304.47,
+     "bought": 1
+    },
+    {
+     "month": 7,
+     "accounts": 2,
+     "earned": 1646.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 2,
+     "earned": 36.92,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 2,
+     "earned": 1852.44,
+     "bought": 3
+    },
+    {
+     "month": 10,
+     "accounts": 5,
+     "earned": 14101.22,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 5,
+     "earned": 1412.52,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 5,
+     "earned": 6946.2,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-02-01",
+   "private": 0.0,
+   "company_cash": 117695.0,
+   "fees": 24420.0,
+   "accounts": 33,
+   "breaches": 0,
+   "gross": 141375.0,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 724.68,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1991.12,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 698.54,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 192.51,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 3175.04,
+     "bought": 4
+    },
+    {
+     "month": 7,
+     "accounts": 6,
+     "earned": 73.84,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 6,
+     "earned": 12559.06,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 6,
+     "earned": 24638.68,
+     "bought": 27
+    },
+    {
+     "month": 10,
+     "accounts": 33,
+     "earned": 4237.56,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 33,
+     "earned": 52218.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 33,
+     "earned": 40865.97,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-03-01",
+   "private": 334.53,
+   "company_cash": 18645.13,
+   "fees": 8140.0,
+   "accounts": 11,
+   "breaches": 0,
+   "gross": 26379.66,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 334.53,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 140.84,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 288.95,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 355.97,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1749.78,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 1
+    },
+    {
+     "month": 7,
+     "accounts": 2,
+     "earned": 1859.68,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 2,
+     "earned": 8375.75,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 2,
+     "earned": 1742.72,
+     "bought": 9
+    },
+    {
+     "month": 10,
+     "accounts": 11,
+     "earned": 567.3,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 11,
+     "earned": 9119.18,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 11,
+     "earned": 1844.96,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-04-01",
+   "private": 0.0,
+   "company_cash": 20996.14,
+   "fees": 6660.0,
+   "accounts": 9,
+   "breaches": 0,
+   "gross": 26916.14,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 270.94,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 305.03,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 2164.81,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 732.78,
+     "bought": 2
+    },
+    {
+     "month": 7,
+     "accounts": 3,
+     "earned": 7031.96,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 3,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 3,
+     "earned": 283.65,
+     "bought": 6
+    },
+    {
+     "month": 10,
+     "accounts": 9,
+     "earned": 15313.91,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 9,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-05-01",
+   "private": 0.0,
+   "company_cash": 14263.93,
+   "fees": 13320.0,
+   "accounts": 18,
+   "breaches": 0,
+   "gross": 26843.93,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 1211.57,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 1097.17,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 6973.37,
+     "bought": 6
+    },
+    {
+     "month": 7,
+     "accounts": 7,
+     "earned": 871.36,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 7,
+     "earned": 957.33,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 7,
+     "earned": 11077.87,
+     "bought": 11
+    },
+    {
+     "month": 10,
+     "accounts": 18,
+     "earned": 4655.26,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 18,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-06-01",
+   "private": 0.0,
+   "company_cash": 53994.43,
+   "fees": 17020.0,
+   "accounts": 23,
+   "breaches": 0,
+   "gross": 70274.43,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1634.12,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 1651.59,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 8337.34,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 1626.12,
+     "bought": 8
+    },
+    {
+     "month": 7,
+     "accounts": 10,
+     "earned": 598.66,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 10,
+     "earned": 12646.42,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 10,
+     "earned": 0.0,
+     "bought": 13
+    },
+    {
+     "month": 10,
+     "accounts": 23,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 23,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 23,
+     "earned": 43780.18,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-07-01",
+   "private": 0.0,
+   "company_cash": 30029.42,
+   "fees": 9620.0,
+   "accounts": 13,
+   "breaches": 0,
+   "gross": 38909.42,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 628.35,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 7031.66,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 283.65,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 6,
+     "earned": 4634.33,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 6,
+     "earned": 847.74,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 6,
+     "earned": 0.0,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 13,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 13,
+     "earned": 24670.63,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 13,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-08-01",
+   "private": 0.0,
+   "company_cash": 34057.68,
+   "fees": 19980.0,
+   "accounts": 27,
+   "breaches": 0,
+   "gross": 53297.68,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1155.81,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 7031.97,
+     "bought": 5
+    },
+    {
+     "month": 4,
+     "accounts": 6,
+     "earned": 813.06,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 6,
+     "earned": 936.49,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 6,
+     "earned": 15542.87,
+     "bought": 14
+    },
+    {
+     "month": 7,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 20,
+     "earned": 0.0,
+     "bought": 7
+    },
+    {
+     "month": 10,
+     "accounts": 27,
+     "earned": 27817.48,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 27,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 27,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-09-01",
+   "private": 756.95,
+   "company_cash": 9672.69,
+   "fees": 14060.0,
+   "accounts": 19,
+   "breaches": 0,
+   "gross": 23749.64,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 756.95,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1463.55,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 763.95,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 333.44,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 6110.47,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 5
+    },
+    {
+     "month": 7,
+     "accounts": 7,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 7,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 7,
+     "earned": 14321.28,
+     "bought": 12
+    },
+    {
+     "month": 10,
+     "accounts": 19,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 19,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 19,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-10-01",
+   "private": 0.0,
+   "company_cash": 7075.59,
+   "fees": 8880.0,
+   "accounts": 12,
+   "breaches": 0,
+   "gross": 15215.59,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 4,
+     "accounts": 1,
+     "earned": 4906.93,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 3
+    },
+    {
+     "month": 7,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 4,
+     "earned": 10308.66,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 8
+    },
+    {
+     "month": 10,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 12,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  },
+  {
+   "start": "2025-11-01",
+   "private": 0.0,
+   "company_cash": 2763.96,
+   "fees": 2960.0,
+   "accounts": 4,
+   "breaches": 0,
+   "gross": 4983.96,
+   "monthly": [
+    {
+     "month": 1,
+     "accounts": 1,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 2,
+     "accounts": 1,
+     "earned": 1531.3,
+     "bought": 0
+    },
+    {
+     "month": 3,
+     "accounts": 1,
+     "earned": 607.83,
+     "bought": 1
+    },
+    {
+     "month": 4,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 5,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 6,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 7,
+     "accounts": 2,
+     "earned": 2844.83,
+     "bought": 0
+    },
+    {
+     "month": 8,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 9,
+     "accounts": 2,
+     "earned": 0.0,
+     "bought": 2
+    },
+    {
+     "month": 10,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 11,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    },
+    {
+     "month": 12,
+     "accounts": 4,
+     "earned": 0.0,
+     "bought": 0
+    }
+   ]
+  }
+ ],
+ "one_account_year": {
+  "median": 15422.84,
+  "mean": 13424.401249999999,
+  "min": 3920.84,
+  "max": 20132.76
+ },
+ "accounts_for_1M": {
+  "at_median": 65,
+  "at_mean": 75
+ }
+}

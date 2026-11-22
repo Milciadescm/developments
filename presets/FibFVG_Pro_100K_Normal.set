@@ -1,0 +1,19 @@
+; FibFVG Pro - $100K instant prop account, Normal mode (recommended)
+; MT5: copy to MQL5/Presets, then in the EA's Inputs tab click Load. MT4: same, MQL4/Presets.
+; Rules: no profit target, no consistency rule, 6% max loss; 3% daily guard kept as a safety margin.
+Preset=1
+RiskMode=1
+SymbolsToTrade=AUTO
+UsePlan1=true
+UsePlan3=true
+Plan1Exit=0
+KillZonesOnly=false
+Plan3Bank2R=true
+StartBalance=100000
+ShowPayoutPlan=true
+AccountFee=740
+CustomDailyLossPct=0
+CustomMaxLossPct=6
+CustomTrailing=true
+ShowPanel=true
+Magic=7706180

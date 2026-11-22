@@ -29,6 +29,8 @@ namespace cAlgo.Robots
         [Parameter("Custom max loss %", DefaultValue = 6)] public double CustomMax { get; set; }
         [Parameter("Custom trailing", DefaultValue = true)] public bool CustomTrailing { get; set; }
         [Parameter("Label", DefaultValue = "FibPro")] public string Tag { get; set; }
+        [Parameter("Show payout plan", DefaultValue = true)] public bool ShowPayoutPlan { get; set; }
+        [Parameter("New account fee", DefaultValue = 740)] public double AccountFee { get; set; }
 
         const double OTE = 0.705, EXT1 = 0.272; const int BRK = 20;
         static readonly int[] KZ = { 20, 0, 2, 6, 7, 9, 10, 15 };
@@ -153,9 +155,28 @@ namespace cAlgo.Robots
             {
                 double moved = Account.Balance - lastBal;
                 Set("peak", Math.Max(startBal, Peak + moved)); Set("day", DayStart + moved);
+                Set("mbal", Get("mbal", Account.Balance) + moved);
+                if (moved < 0) Set("qpaid", Get("qpaid") - moved);
                 Print($"FibFVG Pro: balance operation {moved:F2} - peak and day start adjusted");
             }
             lastBal = Account.Balance; lastHist = h;
+        }
+        string PayoutPlanText()
+        {
+            if (Get("plan0") <= 0) Set("plan0", Server.Time.ToOADate());
+            var p0 = DateTime.FromOADate(Get("plan0"));
+            int m = (int)((Server.Time - p0).TotalDays / 30.44) + 1;
+            if ((int)Get("pmonth") != m)
+            {
+                int q = (m - 1) / 3, qOld = ((int)Get("pmonth") - 1) / 3;
+                Set("pmonth", m); Set("mbal", Account.Balance);
+                if (q != qOld) Set("qpaid", 0);
+            }
+            double mtd = Account.Balance - Get("mbal", Account.Balance), qtd = Get("qpaid") + Math.Max(0, mtd);
+            int qEnd = ((m - 1) / 3 + 1) * 3;
+            string dest = m == 1 ? "founder's private account" : $"quarter pot -> Cueto & Co at end of month {qEnd}";
+            int buy = AccountFee > 0 ? (int)Math.Floor(qtd * 0.8 / AccountFee) : 0;
+            return $"PLAN month {m} | month-to-date {mtd:F2} -> withdraw at month end (restarts at {startBal:F0}) -> {dest}\nquarter-to-date {qtd:F2} -> buys {buy} new $100K account(s) at {AccountFee:F0}\n";
         }
         double Withdrawable() => Math.Max(0, Account.Balance - startBal - OpenRisk());
         bool Guard()
@@ -340,6 +361,7 @@ namespace cAlgo.Robots
             }
             var m = EdgeMode(); double room = Room();
             string t = $"FibFVG Pro | {PresetSel} | mode {m} | start {startBal:F2} equity {Account.Equity:F2} peak {Peak:F2} | open risk {OpenRisk():F2} | room {(room == double.MaxValue ? "no limit" : room.ToString("F2"))}{(halted ? " | HALTED" : "")}\nwithdrawable now {Withdrawable():F2} (balance - start - open stop-risk)\n";
+            if (ShowPayoutPlan) t += PayoutPlanText();
             foreach (var (s, fam) in markets)
             {
                 var d1 = MarketData.GetBars(TimeFrame.Daily, s.Name);

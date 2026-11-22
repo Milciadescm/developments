@@ -39,6 +39,8 @@ input ENUM_P1EXIT   Plan1Exit       = P1_CHANDELIER;  // chandelier for prop, mo
 input bool          KillZonesOnly   = false;    // tested: no gain 2024-26, fewer trades
 input bool          Plan3Bank2R     = true;     // Plan 3B: close half of each levels unit at +2R (steadier rewards)
 input double        StartBalance    = 0;        // 0 = balance when first attached (remembered)
+input bool          ShowPayoutPlan  = true;     // monthly reset + quarterly reinvest plan on the panel
+input double        AccountFee      = 740;      // price of one new $100K account, for the "accounts to buy" line
 input double        CustomDailyLossPct = 0;     // PRESET_CUSTOM only (0 = none)
 input double        CustomMaxLossPct   = 6;
 input bool          CustomTrailing     = true;
@@ -239,6 +241,8 @@ void SyncBalanceOps()
    {
       GlobalVariableSet(GV("peak"), MathMax(startBal, Peak() + moved));
       GlobalVariableSet(GV("day"), DayStart() + moved);
+      if(GlobalVariableCheck(GV("mbal"))) GlobalVariableSet(GV("mbal"), GlobalVariableGet(GV("mbal")) + moved);
+      if(moved < 0) GlobalVariableSet(GV("qpaid"), GlobalVariableGet(GV("qpaid")) - moved);   // rewards taken this quarter
       PrintFormat("FibFVG Pro: balance operation %.2f - peak and day start adjusted", moved);
    }
    GlobalVariableSet(GV("opsync"), (double)last);
@@ -511,6 +515,29 @@ void OnTimer()
 }
 void OnTick() {}
 
+// Payout plan: plan month n counts 30.44-day periods from the first attach. Month-to-date P&L is measured
+// from the balance at the start of the plan month (withdrawals adjusted), so "withdraw at month end" restarts
+// the account at its starting size. Quarter = plan months 1-3, 4-6, 7-9, 10-12.
+string PayoutPlanText()
+{
+   if(!GlobalVariableCheck(GV("plan0"))) GlobalVariableSet(GV("plan0"), (double)TimeCurrent());
+   datetime p0 = (datetime)GlobalVariableGet(GV("plan0"));
+   int m = (int)((TimeCurrent() - p0) / (30.44 * 86400)) + 1;
+   if((int)GlobalVariableGet(GV("pmonth")) != m)
+   {
+      int q = (m - 1) / 3, qOld = ((int)GlobalVariableGet(GV("pmonth")) - 1) / 3;
+      GlobalVariableSet(GV("pmonth"), m);
+      GlobalVariableSet(GV("mbal"), AccountInfoDouble(ACCOUNT_BALANCE));
+      if(q != qOld) GlobalVariableSet(GV("qpaid"), 0);
+   }
+   double mtd = AccountInfoDouble(ACCOUNT_BALANCE) - GlobalVariableGet(GV("mbal"));
+   double qtd = GlobalVariableGet(GV("qpaid")) + MathMax(0, mtd);
+   int qEnd = ((m - 1) / 3 + 1) * 3;
+   string dest = m == 1 ? "founder's private account" : StringFormat("quarter pot -> Cueto & Co at end of month %d", qEnd);
+   return StringFormat("PLAN month %d | month-to-date closed P&L %.2f -> at month end withdraw it (account restarts at %.0f) -> %s\n"
+                       "quarter-to-date rewards %.2f -> buys %d new $100K account(s) at %.0f each\n",
+                       m, mtd, startBal, dest, qtd, AccountFee > 0 ? (int)MathFloor(qtd * 0.8 / AccountFee) : 0, AccountFee);
+}
 void Panel()
 {
    int m = EdgeMode();
@@ -521,6 +548,7 @@ void Panel()
       mn, RiskMode == MODE_EDGE_GATE ? " (edge gate)" : "", startBal, AccountInfoDouble(ACCOUNT_EQUITY), Peak(), OpenRisk(),
       room == DBL_MAX ? "no limit" : DoubleToString(room, 2), halted ? "\nHALTED by guard" : "");
    t += StringFormat("withdrawable now %.2f (balance - start - open stop-risk). Request only this; positions can stay open.\n", Withdrawable());
+   if(ShowPayoutPlan) t += PayoutPlanText();
    t += "symbol      | P1 lots (rec) | P3 lots (rec) | open lots\n";
    for(int k = 0; k < NS; k++)
    {

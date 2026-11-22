@@ -1,0 +1,30 @@
+{
+ "Plan 1 Position": {
+  "n": 119,
+  "mean": 0.824,
+  "std": 2.0,
+  "t": 4.49,
+  "trades_for_t2": 24
+ },
+ "Plan 3 Levels": {
+  "n": 1636,
+  "mean": 0.158,
+  "std": 2.04,
+  "t": 3.13,
+  "trades_for_t2": 667
+ },
+ "Plan 3B Levels 2R bank": {
+  "n": 1636,
+  "mean": 0.114,
+  "std": 1.53,
+  "t": 3.02,
+  "trades_for_t2": 716
+ },
+ "Core + 2R bank": {
+  "n": 1755,
+  "mean": 0.162,
+  "std": 1.57,
+  "t": 4.32,
+  "trades_for_t2": 376
+ }
+}

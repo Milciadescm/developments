@@ -1,0 +1,23 @@
+{
+  "Chart": {
+    "Symbol": "XAUUSD",
+    "Period": "h1"
+  },
+  "Parameters": {
+    "Preset": "InstantPremium",
+    "Mode": "Aggressive",
+    "SymbolsToTrade": "AUTO",
+    "UsePlan1": true,
+    "UsePlan3": true,
+    "Plan1Exit": "Chandelier",
+    "KillZonesOnly": false,
+    "Plan3Bank2R": true,
+    "StartBalance": 100000,
+    "CustomDaily": 0,
+    "CustomMax": 6,
+    "CustomTrailing": true,
+    "Tag": "FibProA",
+    "ShowPayoutPlan": true,
+    "AccountFee": 740
+  }
+}

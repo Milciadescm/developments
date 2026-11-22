@@ -20,6 +20,8 @@ input ENUM_P1EXIT   Plan1Exit       = P1_CHANDELIER;
 input bool          KillZonesOnly   = false;
 input bool          Plan3Bank2R     = true;     // Plan 3B: close half of each levels unit at +2R
 input double        StartBalance    = 0;
+input bool          ShowPayoutPlan  = true;
+input double        AccountFee      = 740;
 input double        CustomDailyLossPct = 0;
 input double        CustomMaxLossPct   = 6;
 input bool          CustomTrailing     = true;
@@ -174,8 +176,30 @@ void SyncBalanceOps()
       if(OrderOpenTime() <= from) continue;
       moved += OrderProfit(); if(OrderOpenTime() > last) last = OrderOpenTime();
    }
-   if(moved != 0) { GlobalVariableSet(GV("peak"), MathMax(startBal, Peak() + moved)); GlobalVariableSet(GV("day"), DayStart() + moved); }
+   if(moved != 0)
+   {
+      GlobalVariableSet(GV("peak"), MathMax(startBal, Peak() + moved)); GlobalVariableSet(GV("day"), DayStart() + moved);
+      if(GlobalVariableCheck(GV("mbal"))) GlobalVariableSet(GV("mbal"), GlobalVariableGet(GV("mbal")) + moved);
+      if(moved < 0) GlobalVariableSet(GV("qpaid"), GlobalVariableGet(GV("qpaid")) - moved);
+   }
    GlobalVariableSet(GV("opsync"), (double)last);
+}
+string PayoutPlanText()
+{
+   if(!GlobalVariableCheck(GV("plan0"))) GlobalVariableSet(GV("plan0"), (double)TimeCurrent());
+   datetime p0 = (datetime)GlobalVariableGet(GV("plan0"));
+   int m = (int)((TimeCurrent() - p0) / (30.44 * 86400)) + 1;
+   if((int)GlobalVariableGet(GV("pmonth")) != m)
+   {
+      int q = (m - 1) / 3, qOld = ((int)GlobalVariableGet(GV("pmonth")) - 1) / 3;
+      GlobalVariableSet(GV("pmonth"), m); GlobalVariableSet(GV("mbal"), AccountBalance());
+      if(q != qOld) GlobalVariableSet(GV("qpaid"), 0);
+   }
+   double mtd = AccountBalance() - GlobalVariableGet(GV("mbal")), qtd = GlobalVariableGet(GV("qpaid")) + MathMax(0, mtd);
+   int qEnd = ((m - 1) / 3 + 1) * 3;
+   string dest = m == 1 ? "founder's private account" : StringFormat("quarter pot -> Cueto & Co at end of month %d", qEnd);
+   return StringFormat("PLAN month %d | month-to-date %.2f -> withdraw at month end (restarts at %.0f) -> %s\nquarter-to-date %.2f -> buys %d new $100K account(s) at %.0f\n",
+                       m, mtd, startBal, dest, qtd, AccountFee > 0 ? (int)MathFloor(qtd * 0.8 / AccountFee) : 0, AccountFee);
 }
 double Withdrawable() { return MathMax(0, AccountBalance() - startBal - OpenRisk()); }
 bool Guard()
@@ -385,6 +409,7 @@ void OnTimer()
       string t = StringFormat("FibFVG Pro (MT4) | mode %s | start %.2f equity %.2f peak %.2f | open risk %.2f | room %.2f%s\n",
          m == 0 ? "Conservative" : m == 1 ? "Normal" : "Aggressive", startBal, AccountEquity(), Peak(), OpenRisk(), Room(), halted ? " | HALTED" : "");
       t += StringFormat("withdrawable now %.2f (balance - start - open stop-risk)\n", Withdrawable());
+      if(ShowPayoutPlan) t += PayoutPlanText();
       for(int k = 0; k < NS; k++)
       {
          double l1 = SizeTrade(Sym[k], P1Risk(m), 1.2 * ATRw(Sym[k], PERIOD_D1, 20, 1)), l3 = SizeTrade(Sym[k], P3Risk(m), ATRw(Sym[k], PERIOD_D1, 14, 1));
