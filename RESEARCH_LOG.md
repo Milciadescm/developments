@@ -17,3 +17,15 @@ Kept so nobody re-tests them. Numbers are net R per trade after spread unless st
 | NY sweep of the previous day's high/low + 2R | −0.105R (both halves negative) | No edge |
 | Half at +2R with a half-day-range stop | −0.03R | Stop too tight |
 | Skipping CPI days | No measurable change (7 trades) | Not needed |
+
+## Risk gates (Core + 2R bank, Instant Premium $100K, Jul 2024 → Nov 2026) — `results/gates.json`
+
+| Gate | Paid | Worst DD | Paid per 1% DD | 12-month median (worst) |
+|---|---|---|---|---|
+| Fixed Normal (kept: prop default) | $24,501 | 4.65% | $5,269 | $15,809 (+$3,827) |
+| Market gate + Normal (kept: company/fund money; not yet in the bots) | $17,424 | 2.55% | $6,833 | $12,432 (+$1,371) |
+| Normal-first gate | $21,855 | 3.98% | $5,491 | $10,770 (−$427) |
+| Edge gate (20/40-trade rule) | $16,138 | 4.47% | $3,610 | $9,214 (−$113) |
+| Fixed Aggressive | $8,184 | 4.94% | $1,657 | $20,023 (−$740) |
+
+No gate produced a larger edge; the market gate trades pay for half the drawdown.

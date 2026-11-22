@@ -72,6 +72,22 @@ PROP_ACCOUNTS = [
 ]
 
 
+def edge_mode_v2(hist, dd):
+    """Normal-first gate: start at Normal; Aggressive only on STRONG_EDGE; drop to Conservative when
+    drawdown from peak >= 2% or the last 20 closed positions sum below 0; back to Normal once
+    drawdown < 1% and the last 10 sum >= 0."""
+    def pf(x):
+        x = np.asarray(x); g = x[x > 0].sum(); l = -x[x < 0].sum()
+        return g / l if l > 0 else 9.9
+    if dd >= 0.02 or (len(hist) >= 20 and sum(hist[-20:]) < 0):
+        return "Conservative"
+    if len(hist) >= 40 and sum(hist[-40:]) >= 8 and pf(hist[-40:]) >= 1.5 and dd <= 0.015:
+        return "Aggressive"
+    if dd < 0.01 or sum(hist[-10:]) >= 0:
+        return "Normal"
+    return "Conservative"
+
+
 def edge_mode(hist, dd):
     if dd >= 0.03 or len(hist) < 20:
         return "Conservative"
@@ -87,7 +103,9 @@ def edge_mode(hist, dd):
 
 
 def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, schedule=None,
-        min_payout=100.0, max_payout=None, first_amount=None):
+        min_payout=100.0, max_payout=None, first_amount=None, sym_gate=None):
+    """sym_gate: None, or N -> a market only trades while the last N setups of that market
+    (taken or not, by exit time) sum to >= 0R. A shadow record, so a paused market can resume."""
     """schedule: optional list of (timestamp, kind) with kind in
          "first"   - small first reward: min(first_amount, available) if available >= min_payout
          "all"     - withdraw every dollar of realized profit not needed to cover open risk
@@ -117,6 +135,15 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, sche
     curve = []
     worst_dd = 0.0
     breach_info = None
+
+    shadow = {}
+    if sym_gate:
+        from .engines import net_r as _nr
+        for t in tr:
+            if t.engine in ("position", "levels"):
+                shadow.setdefault(t.symbol, []).append((t.exit_time, _nr(t)))
+        for k in shadow:
+            shadow[k].sort()
 
     def orisk():
         return sum(p["risk"] for p in open_.values())
@@ -166,7 +193,12 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, sche
         if kind == "in":
             t = x
             spec = SYMBOLS[t.symbol]
-            m = mode if mode != "Edge gate" else edge_mode(hist, (peak - bal) / peak)
+            m = mode if mode not in ("Edge gate", "Edge gate v2") else (
+                edge_mode(hist, (peak - bal) / peak) if mode == "Edge gate" else edge_mode_v2(hist, (peak - bal) / peak))
+            if sym_gate and t.engine in ("position", "levels"):
+                sh = [r for (xt, r) in shadow.get(t.symbol, []) if xt < t.entry_time][-sym_gate:]
+                if len(sh) >= sym_gate and sum(sh) < 0:
+                    skipped["guard"] += 0; continue
             plan = getattr(t, "plan", "Plan 1")
             r = MODES[m]["p3" if plan == "Plan 3" else "p1"]
             if t.engine in ("pos_add", "levels_add") and not any(p["t"].pos_id == t.pos_id for p in open_.values()):
