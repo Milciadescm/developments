@@ -70,7 +70,9 @@ def load_sym(s):
 
 
 def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick", kz=True, ts_bars=8,
-           half_at=None, stop_k=1.0, skip_days=None):
+           half_at=None, stop_k=1.0, skip_days=None, flat="none"):
+    """flat: "none" (hold for days), "daily" (flat at the 16:00 NY close every day; entries only from
+    signals 00:00-13:59 NY), "weekly" (flat at the Friday 16:00 NY close; no Friday entries after 12:00)."""
     unit = UNIT[symbol]
     spread = SYMBOLS[symbol].spread
     b = htf_bias(daily)
@@ -78,6 +80,7 @@ def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick"
     ny = h1.index.tz_convert("America/New_York")
     bias = wb.reindex(h1.index.normalize(), method="ffill").fillna(0).values
     hours = ny.hour.values
+    dows = ny.dayofweek.values
     a = atr(h1, 14).values
     # previous NY-day low/high per bar
     nyday = ny.normalize()
@@ -159,6 +162,10 @@ def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick"
                     for u in units:
                         if u not in closed:
                             u.exits.append((times[i], d * c[i], 1.0 - sum(f for _, _, f in u.exits))); closed.append(u)
+                if (flat == "daily" and hours[i] == 15) or (flat == "weekly" and dows[i] == 4 and hours[i] == 15):
+                    for u in units:          # flat at the 16:00 NY close (daily, or Friday only)
+                        if u not in closed:
+                            u.exits.append((times[i] + pd.Timedelta(hours=1), d * c[i], 1.0 - sum(f for _, _, f in u.exits))); closed.append(u)
                 if first in closed:      # adds never outlive the first unit
                     xt, xp, _ = first.exits[-1]
                     for u in units:
@@ -170,6 +177,10 @@ def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick"
             # ---- look for a reaction on bar i (signal for bar i+1)
             hr = hours[i]
             if (kz and hr not in KZ_HOURS) or hr in LUNCH or bias[i] != d or np.isnan(a[i]) or np.isnan(datr_h[i]):
+                continue
+            if flat == "daily" and not (0 <= hr <= 13):
+                continue
+            if flat == "weekly" and ((dows[i] == 4 and hr >= 12) or dows[i] == 5):
                 continue
             if skip_days is not None and str(ny[i].date()) in skip_days:
                 continue

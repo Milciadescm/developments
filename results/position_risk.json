@@ -1,0 +1,74 @@
+[
+ {
+  "risk_pct": 0.25,
+  "full_paid": 14843,
+  "full_dd": 1.83,
+  "full_breach": null,
+  "year_paid_median": 10498,
+  "year_paid_min": 0,
+  "year_paid_max": 12689,
+  "year_breaches": 0,
+  "worst_dd_any": 4.1,
+  "guard_skips": 0
+ },
+ {
+  "risk_pct": 0.5,
+  "full_paid": 23541,
+  "full_dd": 3.65,
+  "full_breach": null,
+  "year_paid_median": 13902,
+  "year_paid_min": 0,
+  "year_paid_max": 17862,
+  "year_breaches": 0,
+  "worst_dd_any": 4.97,
+  "guard_skips": 6
+ },
+ {
+  "risk_pct": 0.75,
+  "full_paid": 25788,
+  "full_dd": 4.94,
+  "full_breach": null,
+  "year_paid_median": 14323,
+  "year_paid_min": 0,
+  "year_paid_max": 20452,
+  "year_breaches": 0,
+  "worst_dd_any": 5.09,
+  "guard_skips": 10
+ },
+ {
+  "risk_pct": 1.0,
+  "full_paid": 26194,
+  "full_dd": 5.14,
+  "full_breach": null,
+  "year_paid_median": 14590,
+  "year_paid_min": 0,
+  "year_paid_max": 22101,
+  "year_breaches": 0,
+  "worst_dd_any": 5.18,
+  "guard_skips": 16
+ },
+ {
+  "risk_pct": 1.25,
+  "full_paid": 26997,
+  "full_dd": 5.24,
+  "full_breach": null,
+  "year_paid_median": 15495,
+  "year_paid_min": 0,
+  "year_paid_max": 23248,
+  "year_breaches": 0,
+  "worst_dd_any": 5.24,
+  "guard_skips": 17
+ },
+ {
+  "risk_pct": 1.5,
+  "full_paid": 26997,
+  "full_dd": 5.24,
+  "full_breach": null,
+  "year_paid_median": 15495,
+  "year_paid_min": 0,
+  "year_paid_max": 23248,
+  "year_breaches": 0,
+  "worst_dd_any": 5.24,
+  "guard_skips": 17
+ }
+]

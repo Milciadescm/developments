@@ -15,7 +15,8 @@ input ENUM_PRESET   Preset          = PRESET_FUNDEDNEXT_STELLAR_INSTANT;
 input ENUM_RISKMODE RiskMode        = MODE_NORMAL;
 input string        SymbolsToTrade  = "AUTO";
 input bool          UsePlan1        = true;
-input bool          UsePlan3        = true;
+input bool          UsePlan3        = false;
+input double        Plan1RiskPct    = 0.5;
 input ENUM_P1EXIT   Plan1Exit       = P1_CHANDELIER;
 input bool          KillZonesOnly   = false;
 input bool          Plan3Bank2R     = true;     // Plan 3B: close half of each levels unit at +2R
@@ -36,7 +37,24 @@ string Sym[MAXS]; int Fam[MAXS]; int NS = 0;
 datetime lastD1[MAXS], lastH1[MAXS];
 double dailyLim = 0, maxLim = 0; bool trailingDD = true; double startBal = 0; bool halted = false;
 string GV(string k) { return "FibPro4_" + IntegerToString(Magic) + "_" + k; }
-double P1Risk(int m) { return m == MODE_CONSERVATIVE ? 0.0015 : m == MODE_NORMAL ? 0.0025 : 0.0050; }
+double P1Risk(int m) { if(Plan1RiskPct > 0) return Plan1RiskPct / 100.0; return m == MODE_CONSERVATIVE ? 0.0015 : m == MODE_NORMAL ? 0.0025 : 0.0050; }
+bool MarketOpen(string s)
+{
+   if(!IsConnected() || !IsTradeAllowed()) return false;
+   if(MarketInfo(s, MODE_TRADEALLOWED) == 0) return false;
+   datetime now = TimeCurrent();
+   if(now - (datetime)MarketInfo(s, MODE_TIME) > 600) return false;
+   int sec = TimeHour(now) * 3600 + TimeMinute(now) * 60 + TimeSeconds(now);
+   datetime from, to;
+   for(int i = 0; i < 10; i++)
+   {
+      if(!SymbolInfoSessionTrade(s, (ENUM_DAY_OF_WEEK)TimeDayOfWeek(now), i, from, to)) break;
+      int f = (int)((long)from % 86400), e = (int)((long)to % 86400);
+      if(e == 0) e = 86400;
+      if(sec >= f && sec < e) return true;
+   }
+   return false;
+}
 double P3Risk(int m) { return m == MODE_CONSERVATIVE ? 0.0005 : m == MODE_NORMAL ? 0.0010 : 0.0025; }
 double LevelUnit(int f) { return f == 0 ? 100 : f == 1 ? 1 : f == 2 ? 10000 : f == 3 ? 100 : 1000; }
 
@@ -396,6 +414,7 @@ void OnTimer()
    for(int k = 0; k < NS; k++)
    {
       RefreshRates();
+      if(!MarketOpen(Sym[k])) continue;
       if(UsePlan1) Plan1Manage(k);
       if(UsePlan3) Plan3Manage(k);
       if(!ok) continue;

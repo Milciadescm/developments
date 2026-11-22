@@ -34,7 +34,8 @@ input ENUM_PRESET   Preset          = PRESET_FUNDEDNEXT_STELLAR_INSTANT;
 input ENUM_RISKMODE RiskMode        = MODE_NORMAL;
 input string        SymbolsToTrade  = "AUTO";   // AUTO or a comma list of your broker's names
 input bool          UsePlan1        = true;
-input bool          UsePlan3        = true;
+input bool          UsePlan3        = false;    // v3: off. After swap fees the levels plan added drawdown and little profit
+input double        Plan1RiskPct    = 0.5;      // v3: % of start balance per position-plan unit (0 = use RiskMode table)
 input ENUM_P1EXIT   Plan1Exit       = P1_CHANDELIER;  // chandelier for prop, monthly for personal
 input bool          KillZonesOnly   = false;    // tested: no gain 2024-26, fewer trades
 input bool          Plan3Bank2R     = true;     // Plan 3B: close half of each levels unit at +2R (steadier rewards)
@@ -61,7 +62,29 @@ bool    halted = false;
 string  GV(string k) { return "FibPro_" + IntegerToString(Magic) + "_" + k; }
 
 //--------------------------------------------------------------- risk modes (fraction of start balance)
-double P1Risk(int m) { return m == MODE_CONSERVATIVE ? 0.0015 : m == MODE_NORMAL ? 0.0025 : 0.0050; }
+double P1Risk(int m) { if(Plan1RiskPct > 0) return Plan1RiskPct / 100.0; return m == MODE_CONSERVATIVE ? 0.0015 : m == MODE_NORMAL ? 0.0025 : 0.0050; }
+// Market open check: weekends, holidays and daily breaks. A market counts as open only when the broker's
+// trading session says so AND a fresh quote arrived in the last 10 minutes. Closed markets are skipped,
+// so Friday close / Sunday open never trigger failed orders or error loops.
+bool MarketOpen(string s)
+{
+   if(!TerminalInfoInteger(TERMINAL_CONNECTED) || !TerminalInfoInteger(TERMINAL_TRADE_ALLOWED) || !MQLInfoInteger(MQL_TRADE_ALLOWED)) return false;
+   long mode = SymbolInfoInteger(s, SYMBOL_TRADE_MODE);
+   if(mode == SYMBOL_TRADE_MODE_DISABLED || mode == SYMBOL_TRADE_MODE_CLOSEONLY) return false;
+   datetime now = TimeTradeServer();
+   if(now - (datetime)SymbolInfoInteger(s, SYMBOL_TIME) > 600) return false;
+   MqlDateTime t; TimeToStruct(now, t);
+   int sec = t.hour * 3600 + t.min * 60 + t.sec;
+   datetime from, to;
+   for(int i = 0; i < 10; i++)
+   {
+      if(!SymbolInfoSessionTrade(s, (ENUM_DAY_OF_WEEK)t.day_of_week, i, from, to)) break;
+      int f = (int)((long)from % 86400), e = (int)((long)to % 86400);
+      if(e == 0) e = 86400;
+      if(sec >= f && sec < e) return true;
+   }
+   return false;
+}
 double P3Risk(int m) { return m == MODE_CONSERVATIVE ? 0.0005 : m == MODE_NORMAL ? 0.0010 : 0.0025; }
 double LevelUnit(int f) { return f == 0 ? 100 : f == 1 ? 1 : f == 2 ? 10000 : f == 3 ? 100 : 1000; }
 
@@ -504,10 +527,12 @@ void OnTimer()
    bool ok = Guard();
    for(int k = 0; k < NS; k++)
    {
+      if(!MarketOpen(Sym[k])) continue;          // closed (weekend, holiday, daily break): try again next timer tick
       if(UsePlan1) Plan1Manage(k);
       if(UsePlan3) Plan3Manage(k);
       if(!ok) continue;
       datetime d1 = iTime(Sym[k], PERIOD_D1, 0), h1 = iTime(Sym[k], PERIOD_H1, 0);
+      if(d1 == 0 || h1 == 0) continue;           // history still loading after a reconnect
       if(d1 != lastD1[k]) { lastD1[k] = d1; if(UsePlan1) Plan1NewDay(k); }
       if(h1 != lastH1[k]) { lastH1[k] = h1; if(UsePlan3 && lastH1[k] != 0) Plan3NewHour(k); }
    }

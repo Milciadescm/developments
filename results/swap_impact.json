@@ -1,0 +1,54 @@
+{
+ "Position plan only | no swaps": {
+  "prop_normal_paid": 16627.04,
+  "prop_normal_dd": 1.49,
+  "prop_aggr_paid": 26008.71,
+  "trades": 118,
+  "breach": null,
+  "own_Growth_per_year": 16.6,
+  "own_Growth_first12": 12.5,
+  "own_Growth_dd": 4.2,
+  "own_Strong_per_year": 30.7,
+  "own_Strong_first12": 20.9,
+  "own_Strong_dd": 6.3
+ },
+ "Position plan only | with swaps": {
+  "prop_normal_paid": 14843.17,
+  "prop_normal_dd": 1.83,
+  "prop_aggr_paid": 23540.66,
+  "trades": 118,
+  "breach": null,
+  "own_Growth_per_year": 14.1,
+  "own_Growth_first12": 10.8,
+  "own_Growth_dd": 5.1,
+  "own_Strong_per_year": 23.9,
+  "own_Strong_first12": 17.6,
+  "own_Strong_dd": 7.7
+ },
+ "Position + levels (3B) | no swaps": {
+  "prop_normal_paid": 24500.84,
+  "prop_normal_dd": 4.65,
+  "prop_aggr_paid": 8184.49,
+  "trades": 1427,
+  "breach": null,
+  "own_Growth_per_year": 34.8,
+  "own_Growth_first12": 13.6,
+  "own_Growth_dd": 16.7,
+  "own_Strong_per_year": 56.5,
+  "own_Strong_first12": 20.8,
+  "own_Strong_dd": 23.5
+ },
+ "Position + levels (3B) | with swaps": {
+  "prop_normal_paid": 16858.8,
+  "prop_normal_dd": 4.79,
+  "prop_aggr_paid": 0.0,
+  "trades": 1341,
+  "breach": null,
+  "own_Growth_per_year": 22.6,
+  "own_Growth_first12": 4.1,
+  "own_Growth_dd": 20.1,
+  "own_Strong_per_year": 33.7,
+  "own_Strong_first12": 6.5,
+  "own_Strong_dd": 28.0
+ }
+}

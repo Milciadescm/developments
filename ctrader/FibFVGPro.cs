@@ -20,7 +20,8 @@ namespace cAlgo.Robots
         [Parameter("Risk mode", DefaultValue = RiskModeE.Normal)] public RiskModeE Mode { get; set; }
         [Parameter("Symbols (AUTO or list)", DefaultValue = "AUTO")] public string SymbolsToTrade { get; set; }
         [Parameter("Use Plan 1", DefaultValue = true)] public bool UsePlan1 { get; set; }
-        [Parameter("Use Plan 3", DefaultValue = true)] public bool UsePlan3 { get; set; }
+        [Parameter("Use Plan 3", DefaultValue = false)] public bool UsePlan3 { get; set; }
+        [Parameter("Plan 1 risk % per unit (0 = mode)", DefaultValue = 0.5)] public double Plan1RiskPct { get; set; }
         [Parameter("Plan 1 exit", DefaultValue = P1Exit.Chandelier)] public P1Exit Plan1Exit { get; set; }
         [Parameter("Kill zones only", DefaultValue = false)] public bool KillZonesOnly { get; set; }
         [Parameter("Plan 3B: bank half at +2R", DefaultValue = true)] public bool Plan3Bank2R { get; set; }
@@ -42,7 +43,8 @@ namespace cAlgo.Robots
         string K(string k) => Tag + "_" + k;
         double Get(string k, double def = 0) { var v = LocalStorage.GetString(K(k)); return v == null ? def : double.Parse(v, System.Globalization.CultureInfo.InvariantCulture); }
         void Set(string k, double v) => LocalStorage.SetString(K(k), v.ToString(System.Globalization.CultureInfo.InvariantCulture));
-        static double P1Risk(RiskModeE m) => m == RiskModeE.Conservative ? 0.0015 : m == RiskModeE.Normal ? 0.0025 : 0.0050;
+        double P1Risk(RiskModeE m) => Plan1RiskPct > 0 ? Plan1RiskPct / 100.0 : m == RiskModeE.Conservative ? 0.0015 : m == RiskModeE.Normal ? 0.0025 : 0.0050;
+        static bool MarketOpen(Symbol s) => s.MarketHours.IsOpened();
         static double P3Risk(RiskModeE m) => m == RiskModeE.Conservative ? 0.0005 : m == RiskModeE.Normal ? 0.0010 : 0.0025;
         static double Unit(int f) => f == 0 ? 100 : f == 1 ? 1 : f == 2 ? 10000 : f == 3 ? 100 : 1000;
         string L1 => Tag + "P1"; string L1A => Tag + "P1+"; string L3 => Tag + "P3"; string L3A => Tag + "P3+";
@@ -350,6 +352,7 @@ namespace cAlgo.Robots
             bool ok = Guard();
             foreach (var (s, fam) in markets)
             {
+                if (!MarketOpen(s)) continue;           // weekend / holiday / daily break
                 if (UsePlan1) Plan1Manage(s);
                 if (UsePlan3) Plan3Manage(s);
                 if (!ok) continue;

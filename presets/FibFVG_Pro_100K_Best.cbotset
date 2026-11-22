@@ -1,0 +1,24 @@
+{
+  "Chart": {
+    "Symbol": "XAUUSD",
+    "Period": "h1"
+  },
+  "Parameters": {
+    "Preset": "FundedNextStellarInstant",
+    "Mode": "Normal",
+    "Plan1RiskPct": 0.5,
+    "SymbolsToTrade": "AUTO",
+    "UsePlan1": true,
+    "UsePlan3": false,
+    "Plan1Exit": "Chandelier",
+    "KillZonesOnly": false,
+    "Plan3Bank2R": true,
+    "StartBalance": 100000,
+    "CustomDaily": 0,
+    "CustomMax": 6,
+    "CustomTrailing": true,
+    "Tag": "FibPro",
+    "ShowPayoutPlan": true,
+    "AccountFee": 740
+  }
+}
