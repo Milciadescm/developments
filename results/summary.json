@@ -1,0 +1,1207 @@
+{
+ "candidates": 1129,
+ "tiers": [
+  {
+   "trades": 71,
+   "final": 56.63,
+   "ret_pct": 13.3,
+   "cagr_pct": 0.6,
+   "years": 21.8,
+   "win_rate": 19.7,
+   "pf": 1.41,
+   "avg_r": 0.302,
+   "max_dd": 10.4,
+   "min_lot": 628,
+   "caps": 0,
+   "halted": 0,
+   "breach": null,
+   "capital": 50
+  },
+  {
+   "trades": 197,
+   "final": 126.61,
+   "ret_pct": 26.6,
+   "cagr_pct": 1.1,
+   "years": 21.8,
+   "win_rate": 25.9,
+   "pf": 1.4,
+   "avg_r": 0.269,
+   "max_dd": 11.2,
+   "min_lot": 580,
+   "caps": 2,
+   "halted": 0,
+   "breach": null,
+   "capital": 100
+  },
+  {
+   "trades": 316,
+   "final": 218.96,
+   "ret_pct": 46.0,
+   "cagr_pct": 1.7,
+   "years": 21.8,
+   "win_rate": 30.1,
+   "pf": 1.39,
+   "avg_r": 0.325,
+   "max_dd": 11.4,
+   "min_lot": 510,
+   "caps": 8,
+   "halted": 0,
+   "breach": null,
+   "capital": 150
+  },
+  {
+   "trades": 371,
+   "final": 280.85,
+   "ret_pct": 40.4,
+   "cagr_pct": 1.6,
+   "years": 21.8,
+   "win_rate": 28.8,
+   "pf": 1.32,
+   "avg_r": 0.259,
+   "max_dd": 12.3,
+   "min_lot": 471,
+   "caps": 14,
+   "halted": 0,
+   "breach": null,
+   "capital": 200
+  },
+  {
+   "trades": 407,
+   "final": 420.14,
+   "ret_pct": 40.0,
+   "cagr_pct": 1.6,
+   "years": 21.8,
+   "win_rate": 28.0,
+   "pf": 1.26,
+   "avg_r": 0.245,
+   "max_dd": 13.1,
+   "min_lot": 448,
+   "caps": 16,
+   "halted": 0,
+   "breach": null,
+   "capital": 300
+  },
+  {
+   "trades": 448,
+   "final": 668.99,
+   "ret_pct": 33.8,
+   "cagr_pct": 1.3,
+   "years": 21.9,
+   "win_rate": 27.9,
+   "pf": 1.18,
+   "avg_r": 0.213,
+   "max_dd": 20.5,
+   "min_lot": 410,
+   "caps": 16,
+   "halted": 0,
+   "breach": null,
+   "capital": 500
+  },
+  {
+   "trades": 566,
+   "final": 1511.64,
+   "ret_pct": 51.2,
+   "cagr_pct": 1.9,
+   "years": 21.9,
+   "win_rate": 27.7,
+   "pf": 1.19,
+   "avg_r": 0.218,
+   "max_dd": 19.3,
+   "min_lot": 320,
+   "caps": 24,
+   "halted": 0,
+   "breach": null,
+   "capital": 1000
+  },
+  {
+   "trades": 716,
+   "final": 3320.93,
+   "ret_pct": 32.8,
+   "cagr_pct": 1.3,
+   "years": 21.9,
+   "win_rate": 25.7,
+   "pf": 1.09,
+   "avg_r": 0.159,
+   "max_dd": 31.4,
+   "min_lot": 207,
+   "caps": 26,
+   "halted": 0,
+   "breach": null,
+   "capital": 2500
+  },
+  {
+   "trades": 316,
+   "final": 60599.63,
+   "ret_pct": 21.2,
+   "cagr_pct": 11.3,
+   "years": 1.8,
+   "win_rate": 28.5,
+   "pf": 1.36,
+   "avg_r": 0.317,
+   "max_dd": 5.6,
+   "min_lot": 7,
+   "caps": 12,
+   "halted": 108,
+   "breach": "max loss breached 2026-04-28",
+   "capital": 50000
+  },
+  {
+   "trades": 1081,
+   "final": 80608.26,
+   "ret_pct": 61.2,
+   "cagr_pct": 2.2,
+   "years": 21.9,
+   "win_rate": 25.3,
+   "pf": 1.11,
+   "avg_r": 0.168,
+   "max_dd": 41.0,
+   "min_lot": 1,
+   "caps": 46,
+   "halted": 0,
+   "breach": null,
+   "capital": "50000 (no prop guard)"
+  }
+ ],
+ "by_engine": [
+  {
+   "engine": "micro",
+   "count": 331,
+   "mean": 0.058,
+   "sum": 19.168
+  },
+  {
+   "engine": "weekly",
+   "count": 327,
+   "mean": 0.102,
+   "sum": 33.337
+  },
+  {
+   "engine": "weekly_add",
+   "count": 423,
+   "mean": 0.172,
+   "sum": 72.713
+  }
+ ],
+ "by_symbol": [
+  {
+   "symbol": "BTCUSD",
+   "engine": "micro",
+   "count": 86,
+   "mean": -0.116,
+   "sum": -9.961
+  },
+  {
+   "symbol": "BTCUSD",
+   "engine": "weekly",
+   "count": 37,
+   "mean": -0.302,
+   "sum": -11.163
+  },
+  {
+   "symbol": "BTCUSD",
+   "engine": "weekly_add",
+   "count": 49,
+   "mean": 0.036,
+   "sum": 1.78
+  },
+  {
+   "symbol": "NAS100",
+   "engine": "micro",
+   "count": 42,
+   "mean": 0.374,
+   "sum": 15.702
+  },
+  {
+   "symbol": "NAS100",
+   "engine": "weekly",
+   "count": 77,
+   "mean": 0.172,
+   "sum": 13.229
+  },
+  {
+   "symbol": "NAS100",
+   "engine": "weekly_add",
+   "count": 102,
+   "mean": 0.171,
+   "sum": 17.454
+  },
+  {
+   "symbol": "US500",
+   "engine": "micro",
+   "count": 37,
+   "mean": 0.425,
+   "sum": 15.73
+  },
+  {
+   "symbol": "US500",
+   "engine": "weekly",
+   "count": 82,
+   "mean": 0.203,
+   "sum": 16.65
+  },
+  {
+   "symbol": "US500",
+   "engine": "weekly_add",
+   "count": 101,
+   "mean": 0.159,
+   "sum": 16.099
+  },
+  {
+   "symbol": "XAGUSD",
+   "engine": "micro",
+   "count": 87,
+   "mean": 0.128,
+   "sum": 11.155
+  },
+  {
+   "symbol": "XAGUSD",
+   "engine": "weekly",
+   "count": 64,
+   "mean": 0.233,
+   "sum": 14.898
+  },
+  {
+   "symbol": "XAGUSD",
+   "engine": "weekly_add",
+   "count": 83,
+   "mean": 0.514,
+   "sum": 42.664
+  },
+  {
+   "symbol": "XAUUSD",
+   "engine": "micro",
+   "count": 79,
+   "mean": -0.17,
+   "sum": -13.458
+  },
+  {
+   "symbol": "XAUUSD",
+   "engine": "weekly",
+   "count": 67,
+   "mean": -0.004,
+   "sum": -0.277
+  },
+  {
+   "symbol": "XAUUSD",
+   "engine": "weekly_add",
+   "count": 88,
+   "mean": -0.06,
+   "sum": -5.284
+  }
+ ],
+ "by_year": [
+  {
+   "year": 2005,
+   "count": 35,
+   "sum": -10.35
+  },
+  {
+   "year": 2006,
+   "count": 31,
+   "sum": -5.64
+  },
+  {
+   "year": 2007,
+   "count": 26,
+   "sum": -6.61
+  },
+  {
+   "year": 2008,
+   "count": 19,
+   "sum": 15.59
+  },
+  {
+   "year": 2009,
+   "count": 42,
+   "sum": 41.82
+  },
+  {
+   "year": 2010,
+   "count": 34,
+   "sum": 0.74
+  },
+  {
+   "year": 2011,
+   "count": 23,
+   "sum": -9.5
+  },
+  {
+   "year": 2012,
+   "count": 25,
+   "sum": 4.1
+  },
+  {
+   "year": 2013,
+   "count": 29,
+   "sum": 22.72
+  },
+  {
+   "year": 2014,
+   "count": 31,
+   "sum": -2.46
+  },
+  {
+   "year": 2015,
+   "count": 39,
+   "sum": -26.25
+  },
+  {
+   "year": 2016,
+   "count": 22,
+   "sum": -13.52
+  },
+  {
+   "year": 2017,
+   "count": 61,
+   "sum": 38.97
+  },
+  {
+   "year": 2018,
+   "count": 47,
+   "sum": -8.58
+  },
+  {
+   "year": 2019,
+   "count": 29,
+   "sum": 2.41
+  },
+  {
+   "year": 2020,
+   "count": 37,
+   "sum": -24.17
+  },
+  {
+   "year": 2021,
+   "count": 34,
+   "sum": 9.87
+  },
+  {
+   "year": 2022,
+   "count": 39,
+   "sum": -17.14
+  },
+  {
+   "year": 2023,
+   "count": 22,
+   "sum": -15.05
+  },
+  {
+   "year": 2024,
+   "count": 103,
+   "sum": 10.44
+  },
+  {
+   "year": 2025,
+   "count": 187,
+   "sum": 122.98
+  },
+  {
+   "year": 2026,
+   "count": 166,
+   "sum": -5.15
+  }
+ ],
+ "win_rate_by_engine": {
+  "micro": 23.0,
+  "weekly": 19.9,
+  "weekly_add": 31.4
+ },
+ "sweep": [
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.0,
+   "trades": 302,
+   "final": 544.7,
+   "cagr_pct": 0.4,
+   "max_dd": 6.8,
+   "pf": 1.29,
+   "min_lot": 205,
+   "mar": 0.06
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.0,
+   "trades": 735,
+   "final": 59183.63,
+   "cagr_pct": 0.8,
+   "max_dd": 12.6,
+   "pf": 1.2,
+   "min_lot": 9,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.0025,
+   "trades": 363,
+   "final": 562.76,
+   "cagr_pct": 0.5,
+   "max_dd": 6.8,
+   "pf": 1.29,
+   "min_lot": 483,
+   "mar": 0.07
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.0025,
+   "trades": 1071,
+   "final": 59259.04,
+   "cagr_pct": 0.8,
+   "max_dd": 17.2,
+   "pf": 1.11,
+   "min_lot": 12,
+   "mar": 0.05
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.005,
+   "trades": 381,
+   "final": 580.57,
+   "cagr_pct": 0.7,
+   "max_dd": 6.8,
+   "pf": 1.26,
+   "min_lot": 465,
+   "mar": 0.1
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.005,
+   "trades": 1074,
+   "final": 60453.71,
+   "cagr_pct": 0.9,
+   "max_dd": 21.8,
+   "pf": 1.08,
+   "min_lot": 9,
+   "mar": 0.04
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.01,
+   "trades": 410,
+   "final": 601.3,
+   "cagr_pct": 0.8,
+   "max_dd": 18.5,
+   "pf": 1.16,
+   "min_lot": 436,
+   "mar": 0.04
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.01,
+   "trades": 1075,
+   "final": 60036.6,
+   "cagr_pct": 0.8,
+   "max_dd": 34.3,
+   "pf": 1.05,
+   "min_lot": 8,
+   "mar": 0.02
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.02,
+   "trades": 489,
+   "final": 633.85,
+   "cagr_pct": 1.1,
+   "max_dd": 44.6,
+   "pf": 1.07,
+   "min_lot": 357,
+   "mar": 0.02
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0025,
+   "micro_risk": 0.02,
+   "trades": 1048,
+   "final": 55549.88,
+   "cagr_pct": 0.5,
+   "max_dd": 60.4,
+   "pf": 1.01,
+   "min_lot": 6,
+   "mar": 0.01
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.0,
+   "trades": 334,
+   "final": 625.57,
+   "cagr_pct": 1.0,
+   "max_dd": 14.3,
+   "pf": 1.34,
+   "min_lot": 185,
+   "mar": 0.07
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.0,
+   "trades": 746,
+   "final": 71916.36,
+   "cagr_pct": 1.7,
+   "max_dd": 26.3,
+   "pf": 1.23,
+   "min_lot": 2,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.0025,
+   "trades": 396,
+   "final": 651.5,
+   "cagr_pct": 1.2,
+   "max_dd": 14.3,
+   "pf": 1.35,
+   "min_lot": 462,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.0025,
+   "trades": 1085,
+   "final": 73816.82,
+   "cagr_pct": 1.8,
+   "max_dd": 30.0,
+   "pf": 1.17,
+   "min_lot": 2,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.005,
+   "trades": 415,
+   "final": 693.44,
+   "cagr_pct": 1.5,
+   "max_dd": 14.3,
+   "pf": 1.34,
+   "min_lot": 443,
+   "mar": 0.1
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.005,
+   "trades": 1085,
+   "final": 73558.83,
+   "cagr_pct": 1.8,
+   "max_dd": 33.8,
+   "pf": 1.13,
+   "min_lot": 2,
+   "mar": 0.05
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.01,
+   "trades": 448,
+   "final": 668.99,
+   "cagr_pct": 1.3,
+   "max_dd": 20.5,
+   "pf": 1.18,
+   "min_lot": 410,
+   "mar": 0.06
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.01,
+   "trades": 1081,
+   "final": 80608.26,
+   "cagr_pct": 2.2,
+   "max_dd": 41.0,
+   "pf": 1.11,
+   "min_lot": 1,
+   "mar": 0.05
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.02,
+   "trades": 538,
+   "final": 1000.55,
+   "cagr_pct": 3.2,
+   "max_dd": 36.4,
+   "pf": 1.18,
+   "min_lot": 324,
+   "mar": 0.09
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.005,
+   "micro_risk": 0.02,
+   "trades": 1036,
+   "final": 49541.27,
+   "cagr_pct": -0.0,
+   "max_dd": 68.1,
+   "pf": 1.0,
+   "min_lot": 1,
+   "mar": -0.0
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.0,
+   "trades": 361,
+   "final": 770.21,
+   "cagr_pct": 2.0,
+   "max_dd": 21.2,
+   "pf": 1.42,
+   "min_lot": 177,
+   "mar": 0.09
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.0,
+   "trades": 722,
+   "final": 94242.02,
+   "cagr_pct": 2.9,
+   "max_dd": 33.9,
+   "pf": 1.3,
+   "min_lot": 1,
+   "mar": 0.09
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.0025,
+   "trades": 428,
+   "final": 800.27,
+   "cagr_pct": 2.2,
+   "max_dd": 21.2,
+   "pf": 1.41,
+   "min_lot": 449,
+   "mar": 0.1
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.0025,
+   "trades": 1055,
+   "final": 95718.95,
+   "cagr_pct": 3.0,
+   "max_dd": 37.5,
+   "pf": 1.23,
+   "min_lot": 1,
+   "mar": 0.08
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.005,
+   "trades": 446,
+   "final": 830.02,
+   "cagr_pct": 2.3,
+   "max_dd": 21.2,
+   "pf": 1.37,
+   "min_lot": 431,
+   "mar": 0.11
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.005,
+   "trades": 1050,
+   "final": 93293.08,
+   "cagr_pct": 2.9,
+   "max_dd": 40.9,
+   "pf": 1.18,
+   "min_lot": 1,
+   "mar": 0.07
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.01,
+   "trades": 487,
+   "final": 816.03,
+   "cagr_pct": 2.3,
+   "max_dd": 21.2,
+   "pf": 1.23,
+   "min_lot": 390,
+   "mar": 0.11
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.01,
+   "trades": 1035,
+   "final": 93084.29,
+   "cagr_pct": 2.9,
+   "max_dd": 47.3,
+   "pf": 1.12,
+   "min_lot": 0,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.02,
+   "trades": 568,
+   "final": 1061.65,
+   "cagr_pct": 3.5,
+   "max_dd": 37.5,
+   "pf": 1.17,
+   "min_lot": 300,
+   "mar": 0.09
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.0075,
+   "micro_risk": 0.02,
+   "trades": 975,
+   "final": 53567.34,
+   "cagr_pct": 0.3,
+   "max_dd": 69.6,
+   "pf": 1.01,
+   "min_lot": 0,
+   "mar": 0.0
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.0,
+   "trades": 386,
+   "final": 743.95,
+   "cagr_pct": 1.9,
+   "max_dd": 27.9,
+   "pf": 1.26,
+   "min_lot": 165,
+   "mar": 0.07
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.0,
+   "trades": 725,
+   "final": 108835.63,
+   "cagr_pct": 3.6,
+   "max_dd": 43.5,
+   "pf": 1.29,
+   "min_lot": 0,
+   "mar": 0.08
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.0025,
+   "trades": 451,
+   "final": 769.27,
+   "cagr_pct": 2.0,
+   "max_dd": 27.9,
+   "pf": 1.26,
+   "min_lot": 439,
+   "mar": 0.07
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.0025,
+   "trades": 1057,
+   "final": 108861.78,
+   "cagr_pct": 3.6,
+   "max_dd": 46.6,
+   "pf": 1.23,
+   "min_lot": 0,
+   "mar": 0.08
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.005,
+   "trades": 471,
+   "final": 808.28,
+   "cagr_pct": 2.2,
+   "max_dd": 27.9,
+   "pf": 1.26,
+   "min_lot": 419,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.005,
+   "trades": 1055,
+   "final": 102630.04,
+   "cagr_pct": 3.3,
+   "max_dd": 49.5,
+   "pf": 1.17,
+   "min_lot": 0,
+   "mar": 0.07
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.01,
+   "trades": 514,
+   "final": 802.87,
+   "cagr_pct": 2.2,
+   "max_dd": 27.9,
+   "pf": 1.18,
+   "min_lot": 377,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.01,
+   "trades": 1037,
+   "final": 117086.03,
+   "cagr_pct": 4.0,
+   "max_dd": 54.9,
+   "pf": 1.15,
+   "min_lot": 0,
+   "mar": 0.07
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.02,
+   "trades": 590,
+   "final": 1062.47,
+   "cagr_pct": 3.5,
+   "max_dd": 41.5,
+   "pf": 1.15,
+   "min_lot": 296,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.01,
+   "micro_risk": 0.02,
+   "trades": 1009,
+   "final": 78624.27,
+   "cagr_pct": 2.1,
+   "max_dd": 66.8,
+   "pf": 1.05,
+   "min_lot": 0,
+   "mar": 0.03
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.0,
+   "trades": 409,
+   "final": 984.41,
+   "cagr_pct": 3.2,
+   "max_dd": 39.3,
+   "pf": 1.29,
+   "min_lot": 157,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.0,
+   "trades": 722,
+   "final": 129960.44,
+   "cagr_pct": 4.5,
+   "max_dd": 59.7,
+   "pf": 1.27,
+   "min_lot": 0,
+   "mar": 0.08
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.0025,
+   "trades": 483,
+   "final": 1023.55,
+   "cagr_pct": 3.3,
+   "max_dd": 39.3,
+   "pf": 1.3,
+   "min_lot": 422,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.0025,
+   "trades": 1056,
+   "final": 130274.08,
+   "cagr_pct": 4.5,
+   "max_dd": 61.6,
+   "pf": 1.23,
+   "min_lot": 0,
+   "mar": 0.07
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.005,
+   "trades": 502,
+   "final": 1047.95,
+   "cagr_pct": 3.4,
+   "max_dd": 39.3,
+   "pf": 1.27,
+   "min_lot": 403,
+   "mar": 0.09
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.005,
+   "trades": 1056,
+   "final": 117143.9,
+   "cagr_pct": 4.0,
+   "max_dd": 63.7,
+   "pf": 1.17,
+   "min_lot": 0,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.01,
+   "trades": 566,
+   "final": 1156.62,
+   "cagr_pct": 3.9,
+   "max_dd": 39.3,
+   "pf": 1.23,
+   "min_lot": 342,
+   "mar": 0.1
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.01,
+   "trades": 1047,
+   "final": 123089.54,
+   "cagr_pct": 4.2,
+   "max_dd": 67.7,
+   "pf": 1.14,
+   "min_lot": 0,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.02,
+   "trades": 662,
+   "final": 1282.7,
+   "cagr_pct": 4.4,
+   "max_dd": 53.6,
+   "pf": 1.12,
+   "min_lot": 245,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.015,
+   "micro_risk": 0.02,
+   "trades": 1035,
+   "final": 96330.38,
+   "cagr_pct": 3.0,
+   "max_dd": 74.5,
+   "pf": 1.06,
+   "min_lot": 0,
+   "mar": 0.04
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.0,
+   "trades": 423,
+   "final": 906.34,
+   "cagr_pct": 2.8,
+   "max_dd": 48.5,
+   "pf": 1.19,
+   "min_lot": 148,
+   "mar": 0.06
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.0,
+   "trades": 722,
+   "final": 137752.63,
+   "cagr_pct": 4.7,
+   "max_dd": 72.0,
+   "pf": 1.24,
+   "min_lot": 0,
+   "mar": 0.07
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.0025,
+   "trades": 493,
+   "final": 950.07,
+   "cagr_pct": 3.0,
+   "max_dd": 48.5,
+   "pf": 1.2,
+   "min_lot": 417,
+   "mar": 0.06
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.0025,
+   "trades": 1055,
+   "final": 135132.51,
+   "cagr_pct": 4.6,
+   "max_dd": 73.5,
+   "pf": 1.2,
+   "min_lot": 0,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.005,
+   "trades": 515,
+   "final": 1028.66,
+   "cagr_pct": 3.4,
+   "max_dd": 48.5,
+   "pf": 1.21,
+   "min_lot": 395,
+   "mar": 0.07
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.005,
+   "trades": 1054,
+   "final": 143706.3,
+   "cagr_pct": 4.9,
+   "max_dd": 74.7,
+   "pf": 1.19,
+   "min_lot": 0,
+   "mar": 0.07
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.01,
+   "trades": 573,
+   "final": 1149.13,
+   "cagr_pct": 3.9,
+   "max_dd": 48.5,
+   "pf": 1.19,
+   "min_lot": 337,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.01,
+   "trades": 1052,
+   "final": 130732.49,
+   "cagr_pct": 4.5,
+   "max_dd": 77.6,
+   "pf": 1.14,
+   "min_lot": 0,
+   "mar": 0.06
+  },
+  {
+   "capital": 500,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.02,
+   "trades": 672,
+   "final": 1295.64,
+   "cagr_pct": 4.4,
+   "max_dd": 55.7,
+   "pf": 1.11,
+   "min_lot": 238,
+   "mar": 0.08
+  },
+  {
+   "capital": 50000,
+   "weekly_unit_risk": 0.02,
+   "micro_risk": 0.02,
+   "trades": 1038,
+   "final": 115910.01,
+   "cagr_pct": 3.9,
+   "max_dd": 82.2,
+   "pf": 1.08,
+   "min_lot": 0,
+   "mar": 0.05
+  }
+ ],
+ "montecarlo": {
+  "default (0.5% unit / 1% micro)": {
+   "median_multiple": 279.42450081832584,
+   "p5_multiple": 27.312318302780177,
+   "p95_multiple": 2674.9619353013304,
+   "median_maxdd": 0.4557559453463278,
+   "p95_maxdd": 0.6233684354388284,
+   "p_dd_over_20": 1.0,
+   "p_dd_over_50": 0.3415,
+   "p_loss_after_1000": 0.1045
+  },
+  "conservative (0.25% / 0.25%)": {
+   "median_multiple": 16.21404852923256,
+   "p5_multiple": 8.024805964279288,
+   "p95_multiple": 34.82960403099573,
+   "median_maxdd": 0.14382898715385856,
+   "p95_maxdd": 0.21035947085635473,
+   "p_dd_over_20": 0.0845,
+   "p_dd_over_50": 0.0,
+   "p_loss_after_1000": 0.026
+  },
+  "prop $50k (0.25% / 0.25%)": {
+   "median_multiple": 16.44398648231469,
+   "p5_multiple": 7.848184623616085,
+   "p95_multiple": 35.525843522927865,
+   "median_maxdd": 0.14359587975604887,
+   "p95_maxdd": 0.21099924315320967,
+   "p_dd_over_20": 0.069,
+   "p_dd_over_50": 0.0,
+   "p_loss_after_1000": 0.0225,
+   "p_breach_6pct_trailing": 1.0,
+   "median_trades_to_breach": 376.5,
+   "p_breach_within_100": 0.087,
+   "p_breach_within_250": 0.346,
+   "p_breach_within_500": 0.6185
+  },
+  "prop $50k (0.10% / 0.10%)": {
+   "median_multiple": 3.144134324725439,
+   "p5_multiple": 2.3481870652629375,
+   "p95_multiple": 4.204804495037178,
+   "median_maxdd": 0.0595890097851135,
+   "p95_maxdd": 0.08843793720089034,
+   "p_dd_over_20": 0.0,
+   "p_dd_over_50": 0.0,
+   "p_loss_after_1000": 0.0225,
+   "p_breach_6pct_trailing": 0.4895,
+   "median_trades_to_breach": 10000.0,
+   "p_breach_within_100": 0.0,
+   "p_breach_within_250": 0.0025,
+   "p_breach_within_500": 0.0145
+  },
+  "aggressive (1.5% / 2%)": {
+   "median_multiple": 692233.1914771841,
+   "p5_multiple": 4058.530418437023,
+   "p95_multiple": 117470115.2750227,
+   "median_maxdd": 0.73417489340294,
+   "p95_maxdd": 0.890557615786684,
+   "p_dd_over_20": 1.0,
+   "p_dd_over_50": 0.9975,
+   "p_loss_after_1000": 0.091
+  },
+  "reckless (3% / 5%)": {
+   "median_multiple": 1022615.4164272262,
+   "p5_multiple": 7.689032021500777,
+   "p95_multiple": 51824676616.98261,
+   "median_maxdd": 0.9885482570693008,
+   "p95_maxdd": 0.999659198677143,
+   "p_dd_over_20": 1.0,
+   "p_dd_over_50": 1.0,
+   "p_loss_after_1000": 0.2555
+  }
+ },
+ "trades_per_year_all_history": 49.4,
+ "trades_per_year_recent_with_micro": 179.7,
+ "net_r_mean": 0.11583536719960551,
+ "kelly_fraction_per_R": 0.0349838599779663
+}

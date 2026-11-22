@@ -1,0 +1,157 @@
+//@version=6
+// Fib-FVG Dual Engine -- forward-test version for TradingView.
+// Mode "Weekly swing"  -> put on a 1D chart.  Mode "Micro 4H" -> put on a 4H chart.
+// Same rules as the Python backtest and the MT5 EA (see README.md).
+strategy("Fib-FVG Dual Engine", overlay = true, pyramiding = 4, initial_capital = 50000,
+     default_qty_type = strategy.fixed, commission_type = strategy.commission.percent, commission_value = 0.01,
+     process_orders_on_close = false, calc_on_every_tick = false)
+
+mode        = input.string("Weekly swing", "Engine", options = ["Weekly swing", "Micro 4H"])
+unitRisk    = input.float(0.50, "Weekly risk % per Turtle unit", step = 0.05)
+microRisk   = input.float(0.25, "Micro risk % per trade", step = 0.05)
+oteLvl      = input.float(0.705, "OTE entry level")
+ext1        = input.float(0.272, "TP1 extension")
+ext2        = input.float(0.618, "TP2 extension")
+brkLen      = input.int(20, "Turtle breakout length")
+exitLen     = input.int(20, "Turtle exit length")
+atrLen      = input.int(20, "Turtle N (ATR) length")
+expiryBars  = input.int(15, "Setup expiry (bars)")
+dispK       = input.float(0.8, "Micro displacement x ATR")
+microExpiry = input.int(6, "Micro order expiry (bars)")
+microHold   = input.int(30, "Micro max hold (bars)")
+
+// ---------- higher-timeframe bias (completed bars only, no repaint)
+wMid  = request.security(syminfo.tickerid, "W", (ta.highest(high, 4)[1] + ta.lowest(low, 4)[1]) / 2, lookahead = barmerge.lookahead_on)
+wCl   = request.security(syminfo.tickerid, "W", close[1], lookahead = barmerge.lookahead_on)
+mMid  = request.security(syminfo.tickerid, "M", (ta.highest(high, 6)[1] + ta.lowest(low, 6)[1]) / 2, lookahead = barmerge.lookahead_on)
+mCl   = request.security(syminfo.tickerid, "M", close[1], lookahead = barmerge.lookahead_on)
+wBias = wCl > wMid ? 1 : wCl < wMid ? -1 : 0
+mBias = mCl > mMid ? 1 : mCl < mMid ? -1 : 0
+
+qtyFor(riskPct, dist) =>
+    dist > 0 ? math.floor(strategy.equity * riskPct / 100 / (dist * syminfo.pointvalue) / 0.01) * 0.01 : 0.0
+
+N = ta.rma(ta.tr(true), atrLen)
+
+// =====================================================================
+// WEEKLY SWING ENGINE (1D chart)
+// =====================================================================
+var float sEntry = na
+var float sStop = na
+var float sTP1 = na
+var float sTP2 = na
+var int   sBorn = na
+var int   sDir = 0
+var bool  tp1Done = false
+var float lastAdd = na
+var float posN = na
+var int   units = 0
+
+isWeekly = mode == "Weekly swing"
+bullFVG = low > high[2]
+bearFVG = high < low[2]
+lowIdx  = -ta.lowestbars(low, brkLen)       // bars back to leg origin (long)
+highIdx = -ta.highestbars(high, brkLen)     // bars back to leg origin (short)
+fvgL = ta.barssince(bullFVG) <= lowIdx - 2
+fvgS = ta.barssince(bearFVG) <= highIdx - 2
+brkL = high >= ta.highest(high, brkLen)[1]
+brkS = low  <= ta.lowest(low, brkLen)[1]
+legLoAll = ta.lowest(low, brkLen)
+legHiAll = ta.highest(high, brkLen)
+trailL = ta.lowest(low, exitLen)[1]
+trailH = ta.highest(high, exitLen)[1]
+
+if isWeekly and strategy.position_size == 0
+    if wBias == 1 and mBias == 1 and brkL and fvgL
+        legLo = legLoAll
+        rng = high - legLo
+        if rng >= 1.5 * N[1]
+            sDir := 1, sEntry := high - oteLvl * rng, sStop := legLo - 0.25 * N[1]
+            sTP1 := high + ext1 * rng, sTP2 := high + ext2 * rng, sBorn := bar_index
+    if wBias == -1 and mBias == -1 and brkS and fvgS
+        legHi = legHiAll
+        rng = legHi - low
+        if rng >= 1.5 * N[1]
+            sDir := -1, sEntry := low + oteLvl * rng, sStop := legHi + 0.25 * N[1]
+            sTP1 := low - ext1 * rng, sTP2 := low - ext2 * rng, sBorn := bar_index
+    if not na(sBorn) and bar_index - sBorn > expiryBars
+        strategy.cancel("W"), sBorn := na, sDir := 0
+    if sDir != 0 and not na(sBorn)
+        q = qtyFor(unitRisk, math.abs(sEntry - sStop))
+        if q > 0
+            strategy.entry("W", sDir == 1 ? strategy.long : strategy.short, qty = q, limit = sEntry)
+            tp1Done := false, units := 1, lastAdd := sEntry, posN := N[1]
+
+if isWeekly and strategy.position_size != 0
+    sBorn := na
+    d = strategy.position_size > 0 ? 1 : -1
+    if (d == 1 and high >= sTP1) or (d == -1 and low <= sTP1)
+        tp1Done := true
+    baseStop = d == 1 ? math.max(sStop, trailL) : math.min(sStop, trailH)
+    mainStop = tp1Done ? (d == 1 ? math.max(baseStop, sEntry) : math.min(baseStop, sEntry)) : baseStop
+    strategy.exit("W-TP1", "W", qty_percent = 50, limit = sTP1, stop = mainStop)
+    strategy.exit("W-TP2", "W", limit = sTP2, stop = mainStop)
+    // Turtle pyramid: +1 unit every 0.5N, max 4 units, 2N stop on each add
+    nxt = lastAdd + d * 0.5 * posN
+    if units < 4 and ((d == 1 and close >= nxt and close < sTP2) or (d == -1 and close <= nxt and close > sTP2))
+        units += 1
+        lastAdd := nxt
+        strategy.entry("A" + str.tostring(units), d == 1 ? strategy.long : strategy.short, qty = qtyFor(unitRisk, 2 * posN))
+    for k = 2 to 4
+        addStop = d == 1 ? math.max(lastAdd - 2 * posN, trailL) : math.min(lastAdd + 2 * posN, trailH)
+        strategy.exit("A" + str.tostring(k) + "-X", "A" + str.tostring(k), limit = sTP2, stop = addStop)
+
+if isWeekly and strategy.position_size == 0 and strategy.position_size[1] != 0
+    sDir := 0, units := 0
+
+// =====================================================================
+// MICRO ENGINE (4H chart)
+// =====================================================================
+var float mEntry = na
+var float mStop = na
+var float mTP = na
+var int   mBorn = na
+var int   mEntryBar = na
+a14 = ta.rma(ta.tr(true), 14)
+lo5 = ta.lowest(low, 5)[1]
+hi5 = ta.highest(high, 5)[1]
+isMicro = mode == "Micro 4H"
+dispL = (high[1] - low[1]) > dispK * a14[1] and close[1] > open[1]
+dispS = (high[1] - low[1]) > dispK * a14[1] and close[1] < open[1]
+
+if isMicro and strategy.position_size == 0
+    if not na(mBorn) and bar_index - mBorn > microExpiry
+        strategy.cancel("M"), mBorn := na
+    if na(mBorn)
+        if wBias == 1 and low > high[2] and dispL
+            lo = lo5
+            hi = high
+            rng = hi - lo
+            e = math.min(hi - oteLvl * rng, low), s = lo - 0.1 * a14[1], t = hi + ext2 * rng
+            if e - s > 0 and (t - e) / (e - s) >= 1.0
+                mEntry := e, mStop := s, mTP := t, mBorn := bar_index
+                strategy.entry("M", strategy.long, qty = qtyFor(microRisk, e - s), limit = e)
+        else if wBias == -1 and high < low[2] and dispS
+            hi = hi5
+            lo = low
+            rng = hi - lo
+            e = math.max(lo + oteLvl * rng, high), s = hi + 0.1 * a14[1], t = lo - ext2 * rng
+            if s - e > 0 and (e - t) / (s - e) >= 1.0
+                mEntry := e, mStop := s, mTP := t, mBorn := bar_index
+                strategy.entry("M", strategy.short, qty = qtyFor(microRisk, s - e), limit = e)
+
+if isMicro and strategy.position_size != 0
+    if na(mEntryBar)
+        mEntryBar := bar_index
+    mBorn := na
+    strategy.exit("M-X", "M", stop = mStop, limit = mTP)
+    if bar_index - mEntryBar >= microHold
+        strategy.close("M", comment = "time")
+if isMicro and strategy.position_size == 0
+    mEntryBar := na
+
+// ---------- visuals
+plot(isWeekly and not na(sBorn) ? sEntry : na, "OTE entry", color.orange, 1, plot.style_linebr)
+plot(isWeekly and strategy.position_size != 0 ? sTP1 : na, "TP1 -0.272", color.teal, 1, plot.style_linebr)
+plot(isWeekly and strategy.position_size != 0 ? sTP2 : na, "TP2 -0.618", color.green, 1, plot.style_linebr)
+bgcolor(wBias == 1 and (isMicro or mBias == 1) ? color.new(color.green, 94) : wBias == -1 and (isMicro or mBias == -1) ? color.new(color.red, 94) : na)
