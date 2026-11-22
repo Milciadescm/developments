@@ -1,0 +1,1333 @@
+{
+ "A": {
+  "P0 v1": {
+   "trades": 765,
+   "skipped": 2,
+   "end": 61626,
+   "max_dd": 38.9,
+   "cagr": 1.0,
+   "win": 26.2,
+   "rr": 3.33,
+   "net": 0.097,
+   "since2024": 0.815
+  },
+  "P1 run20": {
+   "trades": 675,
+   "skipped": 0,
+   "end": 116518,
+   "max_dd": 27.2,
+   "cagr": 4.0,
+   "win": 20.9,
+   "rr": 6.68,
+   "net": 0.373,
+   "since2024": 1.641
+  },
+  "P2 chandelier": {
+   "trades": 809,
+   "skipped": 1,
+   "end": 98807,
+   "max_dd": 23.7,
+   "cagr": 3.2,
+   "win": 32.3,
+   "rr": 3.02,
+   "net": 0.217,
+   "since2024": 0.663
+  },
+  "P3 monthly": {
+   "trades": 628,
+   "skipped": 0,
+   "end": 237269,
+   "max_dd": 45.5,
+   "cagr": 7.5,
+   "win": 31.2,
+   "rr": 4.33,
+   "net": 0.755,
+   "since2024": 1.114
+  },
+  "Y1 year": {
+   "trades": 551,
+   "skipped": 0,
+   "end": 804611,
+   "max_dd": 28.9,
+   "cagr": 13.9,
+   "win": 15.2,
+   "rr": 19.3,
+   "net": 1.752,
+   "since2024": 2.034
+  }
+ },
+ "B": {
+  "prop entries (daily + 4-hour) | TP 3R | max 1 d": {
+   "n": 131,
+   "win": 32.1,
+   "avg_win": 2.59,
+   "avg_loss": -1.09,
+   "rr": 2.38,
+   "net": 0.091,
+   "first": -0.175,
+   "second": 0.345,
+   "t": 0.59,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 30.4,
+     "avg_win": 2.27,
+     "avg_loss": -1.04,
+     "rr": 2.19,
+     "net": -0.03,
+     "first": 0.284,
+     "second": -0.374,
+     "t": -0.09
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 26.9,
+     "avg_win": 2.82,
+     "avg_loss": -1.22,
+     "rr": 2.3,
+     "net": -0.135,
+     "first": -0.292,
+     "second": -0.001,
+     "t": -0.38
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 37.9,
+     "avg_win": 2.75,
+     "avg_loss": -1.09,
+     "rr": 2.52,
+     "net": 0.366,
+     "first": -0.285,
+     "second": 0.708,
+     "t": 1.03
+    },
+    "US500": {
+     "n": 29,
+     "win": 37.9,
+     "avg_win": 2.48,
+     "avg_loss": -1.04,
+     "rr": 2.38,
+     "net": 0.293,
+     "first": 0.02,
+     "second": 0.629,
+     "t": 0.86
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 25.0,
+     "avg_win": 2.61,
+     "avg_loss": -1.03,
+     "rr": 2.52,
+     "net": -0.123,
+     "first": -0.612,
+     "second": 0.561,
+     "t": -0.36
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 3R | max 5 d": {
+   "n": 131,
+   "win": 29.8,
+   "avg_win": 2.89,
+   "avg_loss": -1.1,
+   "rr": 2.64,
+   "net": 0.09,
+   "first": -0.169,
+   "second": 0.338,
+   "t": 0.56,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 30.4,
+     "avg_win": 2.91,
+     "avg_loss": -1.04,
+     "rr": 2.8,
+     "net": 0.163,
+     "first": 0.608,
+     "second": -0.322,
+     "t": 0.42
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 26.9,
+     "avg_win": 2.82,
+     "avg_loss": -1.22,
+     "rr": 2.3,
+     "net": -0.135,
+     "first": -0.292,
+     "second": -0.001,
+     "t": -0.38
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 37.9,
+     "avg_win": 2.88,
+     "avg_loss": -1.09,
+     "rr": 2.63,
+     "net": 0.413,
+     "first": -0.285,
+     "second": 0.781,
+     "t": 1.14
+    },
+    "US500": {
+     "n": 29,
+     "win": 31.0,
+     "avg_win": 2.91,
+     "avg_loss": -1.08,
+     "rr": 2.69,
+     "net": 0.158,
+     "first": -0.074,
+     "second": 0.444,
+     "t": 0.45
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 20.8,
+     "avg_win": 2.95,
+     "avg_loss": -1.04,
+     "rr": 2.84,
+     "net": -0.207,
+     "first": -0.756,
+     "second": 0.561,
+     "t": -0.61
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 3R | max 20 d": {
+   "n": 131,
+   "win": 29.8,
+   "avg_win": 2.89,
+   "avg_loss": -1.1,
+   "rr": 2.64,
+   "net": 0.09,
+   "first": -0.169,
+   "second": 0.338,
+   "t": 0.56,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 30.4,
+     "avg_win": 2.91,
+     "avg_loss": -1.04,
+     "rr": 2.8,
+     "net": 0.163,
+     "first": 0.608,
+     "second": -0.322,
+     "t": 0.42
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 26.9,
+     "avg_win": 2.82,
+     "avg_loss": -1.22,
+     "rr": 2.3,
+     "net": -0.135,
+     "first": -0.292,
+     "second": -0.001,
+     "t": -0.38
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 37.9,
+     "avg_win": 2.88,
+     "avg_loss": -1.09,
+     "rr": 2.63,
+     "net": 0.413,
+     "first": -0.285,
+     "second": 0.781,
+     "t": 1.14
+    },
+    "US500": {
+     "n": 29,
+     "win": 31.0,
+     "avg_win": 2.91,
+     "avg_loss": -1.08,
+     "rr": 2.69,
+     "net": 0.158,
+     "first": -0.074,
+     "second": 0.444,
+     "t": 0.45
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 20.8,
+     "avg_win": 2.95,
+     "avg_loss": -1.04,
+     "rr": 2.84,
+     "net": -0.207,
+     "first": -0.756,
+     "second": 0.561,
+     "t": -0.61
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 4R | max 1 d": {
+   "n": 131,
+   "win": 27.5,
+   "avg_win": 3.08,
+   "avg_loss": -1.08,
+   "rr": 2.85,
+   "net": 0.063,
+   "first": -0.293,
+   "second": 0.403,
+   "t": 0.36,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 30.4,
+     "avg_win": 1.89,
+     "avg_loss": -1.04,
+     "rr": 1.82,
+     "net": -0.148,
+     "first": -0.021,
+     "second": -0.286,
+     "t": -0.47
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 19.2,
+     "avg_win": 3.83,
+     "avg_loss": -1.22,
+     "rr": 3.13,
+     "net": -0.251,
+     "first": -0.459,
+     "second": -0.073,
+     "t": -0.63
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 34.5,
+     "avg_win": 3.34,
+     "avg_loss": -1.04,
+     "rr": 3.23,
+     "net": 0.474,
+     "first": -0.472,
+     "second": 0.972,
+     "t": 1.17
+    },
+    "US500": {
+     "n": 29,
+     "win": 27.6,
+     "avg_win": 3.07,
+     "avg_loss": -1.05,
+     "rr": 2.91,
+     "net": 0.083,
+     "first": -0.045,
+     "second": 0.241,
+     "t": 0.22
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 25.0,
+     "avg_win": 3.44,
+     "avg_loss": -1.03,
+     "rr": 3.33,
+     "net": 0.084,
+     "first": -0.541,
+     "second": 0.96,
+     "t": 0.2
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 4R | max 5 d": {
+   "n": 131,
+   "win": 23.7,
+   "avg_win": 3.83,
+   "avg_loss": -1.09,
+   "rr": 3.5,
+   "net": 0.071,
+   "first": -0.268,
+   "second": 0.394,
+   "t": 0.38,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 26.1,
+     "avg_win": 3.6,
+     "avg_loss": -1.01,
+     "rr": 3.57,
+     "net": 0.194,
+     "first": 0.504,
+     "second": -0.144,
+     "t": 0.44
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 19.2,
+     "avg_win": 3.83,
+     "avg_loss": -1.22,
+     "rr": 3.13,
+     "net": -0.251,
+     "first": -0.459,
+     "second": -0.073,
+     "t": -0.63
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 31.0,
+     "avg_win": 3.87,
+     "avg_loss": -1.1,
+     "rr": 3.52,
+     "net": 0.443,
+     "first": -0.586,
+     "second": 0.984,
+     "t": 1.02
+    },
+    "US500": {
+     "n": 29,
+     "win": 20.7,
+     "avg_win": 3.91,
+     "avg_loss": -1.08,
+     "rr": 3.6,
+     "net": -0.052,
+     "first": -0.139,
+     "second": 0.055,
+     "t": -0.13
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 20.8,
+     "avg_win": 3.94,
+     "avg_loss": -1.04,
+     "rr": 3.8,
+     "net": 0.0,
+     "first": -0.685,
+     "second": 0.96,
+     "t": 0.0
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 4R | max 20 d": {
+   "n": 131,
+   "win": 23.7,
+   "avg_win": 3.88,
+   "avg_loss": -1.1,
+   "rr": 3.52,
+   "net": 0.077,
+   "first": -0.254,
+   "second": 0.394,
+   "t": 0.42,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 26.1,
+     "avg_win": 3.86,
+     "avg_loss": -1.05,
+     "rr": 3.68,
+     "net": 0.232,
+     "first": 0.577,
+     "second": -0.144,
+     "t": 0.5
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 19.2,
+     "avg_win": 3.83,
+     "avg_loss": -1.22,
+     "rr": 3.13,
+     "net": -0.251,
+     "first": -0.459,
+     "second": -0.073,
+     "t": -0.63
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 31.0,
+     "avg_win": 3.87,
+     "avg_loss": -1.1,
+     "rr": 3.52,
+     "net": 0.443,
+     "first": -0.586,
+     "second": 0.984,
+     "t": 1.02
+    },
+    "US500": {
+     "n": 29,
+     "win": 20.7,
+     "avg_win": 3.91,
+     "avg_loss": -1.08,
+     "rr": 3.6,
+     "net": -0.052,
+     "first": -0.139,
+     "second": 0.055,
+     "t": -0.13
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 20.8,
+     "avg_win": 3.94,
+     "avg_loss": -1.04,
+     "rr": 3.8,
+     "net": 0.0,
+     "first": -0.685,
+     "second": 0.96,
+     "t": 0.0
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 5R | max 1 d": {
+   "n": 131,
+   "win": 27.5,
+   "avg_win": 3.23,
+   "avg_loss": -1.08,
+   "rr": 2.99,
+   "net": 0.103,
+   "first": -0.234,
+   "second": 0.426,
+   "t": 0.56,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 30.4,
+     "avg_win": 2.03,
+     "avg_loss": -1.04,
+     "rr": 1.95,
+     "net": -0.105,
+     "first": -0.021,
+     "second": -0.196,
+     "t": -0.31
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 19.2,
+     "avg_win": 4.54,
+     "avg_loss": -1.22,
+     "rr": 3.71,
+     "net": -0.114,
+     "first": -0.293,
+     "second": 0.039,
+     "t": -0.25
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 34.5,
+     "avg_win": 2.86,
+     "avg_loss": -1.04,
+     "rr": 2.76,
+     "net": 0.307,
+     "first": -0.372,
+     "second": 0.664,
+     "t": 0.82
+    },
+    "US500": {
+     "n": 29,
+     "win": 27.6,
+     "avg_win": 3.35,
+     "avg_loss": -1.05,
+     "rr": 3.18,
+     "net": 0.161,
+     "first": -0.058,
+     "second": 0.431,
+     "t": 0.39
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 25.0,
+     "avg_win": 3.99,
+     "avg_loss": -1.03,
+     "rr": 3.86,
+     "net": 0.223,
+     "first": -0.47,
+     "second": 1.192,
+     "t": 0.46
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 5R | max 5 d": {
+   "n": 131,
+   "win": 20.6,
+   "avg_win": 4.56,
+   "avg_loss": -1.1,
+   "rr": 4.15,
+   "net": 0.068,
+   "first": -0.2,
+   "second": 0.325,
+   "t": 0.33,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 26.1,
+     "avg_win": 3.89,
+     "avg_loss": -1.01,
+     "rr": 3.85,
+     "net": 0.269,
+     "first": 0.494,
+     "second": 0.023,
+     "t": 0.56
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 19.2,
+     "avg_win": 4.82,
+     "avg_loss": -1.22,
+     "rr": 3.95,
+     "net": -0.06,
+     "first": -0.293,
+     "second": 0.14,
+     "t": -0.13
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 17.2,
+     "avg_win": 4.83,
+     "avg_loss": -1.12,
+     "rr": 4.33,
+     "net": -0.09,
+     "first": -0.486,
+     "second": 0.119,
+     "t": -0.21
+    },
+    "US500": {
+     "n": 29,
+     "win": 20.7,
+     "avg_win": 4.48,
+     "avg_loss": -1.08,
+     "rr": 4.13,
+     "net": 0.067,
+     "first": -0.11,
+     "second": 0.284,
+     "t": 0.15
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 20.8,
+     "avg_win": 4.94,
+     "avg_loss": -1.04,
+     "rr": 4.76,
+     "net": 0.207,
+     "first": -0.614,
+     "second": 1.357,
+     "t": 0.41
+    }
+   }
+  },
+  "prop entries (daily + 4-hour) | TP 5R | max 20 d": {
+   "n": 131,
+   "win": 19.8,
+   "avg_win": 4.85,
+   "avg_loss": -1.11,
+   "rr": 4.38,
+   "net": 0.074,
+   "first": -0.188,
+   "second": 0.325,
+   "t": 0.36,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 26.1,
+     "avg_win": 4.75,
+     "avg_loss": -1.05,
+     "rr": 4.53,
+     "net": 0.464,
+     "first": 0.869,
+     "second": 0.023,
+     "t": 0.85
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 19.2,
+     "avg_win": 4.82,
+     "avg_loss": -1.22,
+     "rr": 3.95,
+     "net": -0.06,
+     "first": -0.293,
+     "second": 0.14,
+     "t": -0.13
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 17.2,
+     "avg_win": 4.83,
+     "avg_loss": -1.12,
+     "rr": 4.33,
+     "net": -0.09,
+     "first": -0.486,
+     "second": 0.119,
+     "t": -0.21
+    },
+    "US500": {
+     "n": 29,
+     "win": 17.2,
+     "avg_win": 4.9,
+     "avg_loss": -1.1,
+     "rr": 4.47,
+     "net": -0.062,
+     "first": -0.342,
+     "second": 0.284,
+     "t": -0.14
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 20.8,
+     "avg_win": 4.94,
+     "avg_loss": -1.04,
+     "rr": 4.76,
+     "net": 0.207,
+     "first": -0.614,
+     "second": 1.357,
+     "t": 0.41
+    }
+   }
+  },
+  "position entries (daily) | TP 3R | max 1 d": {
+   "n": 40,
+   "win": 32.5,
+   "avg_win": 2.84,
+   "avg_loss": -1.02,
+   "rr": 2.77,
+   "net": 0.232,
+   "first": 0.191,
+   "second": 0.281,
+   "t": 0.8,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 2.51,
+     "avg_loss": -1.04,
+     "rr": 2.43,
+     "net": -0.022,
+     "first": 0.384,
+     "second": -1.037,
+     "t": -0.03
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 50.0,
+     "avg_win": 2.77,
+     "avg_loss": -1.13,
+     "rr": 2.45,
+     "net": 0.819,
+     "first": 1.387,
+     "second": 0.252,
+     "t": 0.94
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 2.9,
+     "avg_loss": -1.06,
+     "rr": 2.73,
+     "net": 0.522,
+     "first": -1.05,
+     "second": 1.57,
+     "t": 0.54
+    },
+    "US500": {
+     "n": 10,
+     "win": 20.0,
+     "avg_win": 2.95,
+     "avg_loss": -0.96,
+     "rr": 3.08,
+     "net": -0.175,
+     "first": -0.262,
+     "second": -0.044,
+     "t": -0.33
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 2.97,
+     "avg_loss": -1.03,
+     "rr": 2.88,
+     "net": 0.303,
+     "first": 0.3,
+     "second": 0.307,
+     "t": 0.53
+    }
+   }
+  },
+  "position entries (daily) | TP 3R | max 5 d": {
+   "n": 40,
+   "win": 32.5,
+   "avg_win": 2.9,
+   "avg_loss": -1.05,
+   "rr": 2.75,
+   "net": 0.232,
+   "first": 0.192,
+   "second": 0.281,
+   "t": 0.78,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 2.94,
+     "avg_loss": -1.04,
+     "rr": 2.83,
+     "net": 0.099,
+     "first": 0.554,
+     "second": -1.037,
+     "t": 0.14
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 50.0,
+     "avg_win": 2.77,
+     "avg_loss": -1.13,
+     "rr": 2.45,
+     "net": 0.819,
+     "first": 1.387,
+     "second": 0.252,
+     "t": 0.94
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 2.9,
+     "avg_loss": -1.06,
+     "rr": 2.73,
+     "net": 0.522,
+     "first": -1.05,
+     "second": 1.57,
+     "t": 0.54
+    },
+    "US500": {
+     "n": 10,
+     "win": 20.0,
+     "avg_win": 2.95,
+     "avg_loss": -1.06,
+     "rr": 2.78,
+     "net": -0.258,
+     "first": -0.401,
+     "second": -0.044,
+     "t": -0.48
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 2.97,
+     "avg_loss": -1.03,
+     "rr": 2.88,
+     "net": 0.303,
+     "first": 0.3,
+     "second": 0.307,
+     "t": 0.53
+    }
+   }
+  },
+  "position entries (daily) | TP 3R | max 20 d": {
+   "n": 40,
+   "win": 32.5,
+   "avg_win": 2.9,
+   "avg_loss": -1.05,
+   "rr": 2.75,
+   "net": 0.232,
+   "first": 0.192,
+   "second": 0.281,
+   "t": 0.78,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 2.94,
+     "avg_loss": -1.04,
+     "rr": 2.83,
+     "net": 0.099,
+     "first": 0.554,
+     "second": -1.037,
+     "t": 0.14
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 50.0,
+     "avg_win": 2.77,
+     "avg_loss": -1.13,
+     "rr": 2.45,
+     "net": 0.819,
+     "first": 1.387,
+     "second": 0.252,
+     "t": 0.94
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 2.9,
+     "avg_loss": -1.06,
+     "rr": 2.73,
+     "net": 0.522,
+     "first": -1.05,
+     "second": 1.57,
+     "t": 0.54
+    },
+    "US500": {
+     "n": 10,
+     "win": 20.0,
+     "avg_win": 2.95,
+     "avg_loss": -1.06,
+     "rr": 2.78,
+     "net": -0.258,
+     "first": -0.401,
+     "second": -0.044,
+     "t": -0.48
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 2.97,
+     "avg_loss": -1.03,
+     "rr": 2.88,
+     "net": 0.303,
+     "first": 0.3,
+     "second": 0.307,
+     "t": 0.53
+    }
+   }
+  },
+  "position entries (daily) | TP 4R | max 1 d": {
+   "n": 40,
+   "win": 25.0,
+   "avg_win": 3.39,
+   "avg_loss": -1.04,
+   "rr": 3.26,
+   "net": 0.067,
+   "first": -0.152,
+   "second": 0.335,
+   "t": 0.21,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 1.26,
+     "avg_loss": -1.04,
+     "rr": 1.21,
+     "net": -0.381,
+     "first": -0.118,
+     "second": -1.037,
+     "t": -0.83
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 16.7,
+     "avg_win": 3.72,
+     "avg_loss": -1.16,
+     "rr": 3.2,
+     "net": -0.349,
+     "first": 0.385,
+     "second": -1.083,
+     "t": -0.43
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 3.9,
+     "avg_loss": -1.06,
+     "rr": 3.67,
+     "net": 0.921,
+     "first": -1.05,
+     "second": 2.235,
+     "t": 0.76
+    },
+    "US500": {
+     "n": 10,
+     "win": 10.0,
+     "avg_win": 3.95,
+     "avg_loss": -0.97,
+     "rr": 4.07,
+     "net": -0.478,
+     "first": -0.935,
+     "second": 0.206,
+     "t": -0.96
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 3.97,
+     "avg_loss": -1.03,
+     "rr": 3.85,
+     "net": 0.635,
+     "first": 0.633,
+     "second": 0.637,
+     "t": 0.89
+    }
+   }
+  },
+  "position entries (daily) | TP 4R | max 5 d": {
+   "n": 40,
+   "win": 25.0,
+   "avg_win": 3.91,
+   "avg_loss": -1.07,
+   "rr": 3.66,
+   "net": 0.177,
+   "first": 0.048,
+   "second": 0.335,
+   "t": 0.51,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 3.88,
+     "avg_loss": -1.04,
+     "rr": 3.74,
+     "net": 0.368,
+     "first": 0.93,
+     "second": -1.037,
+     "t": 0.41
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 16.7,
+     "avg_win": 3.72,
+     "avg_loss": -1.16,
+     "rr": 3.2,
+     "net": -0.349,
+     "first": 0.385,
+     "second": -1.083,
+     "t": -0.43
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 3.9,
+     "avg_loss": -1.06,
+     "rr": 3.67,
+     "net": 0.921,
+     "first": -1.05,
+     "second": 2.235,
+     "t": 0.76
+    },
+    "US500": {
+     "n": 10,
+     "win": 10.0,
+     "avg_win": 3.95,
+     "avg_loss": -1.06,
+     "rr": 3.72,
+     "net": -0.562,
+     "first": -1.074,
+     "second": 0.206,
+     "t": -1.12
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 3.97,
+     "avg_loss": -1.03,
+     "rr": 3.85,
+     "net": 0.635,
+     "first": 0.633,
+     "second": 0.637,
+     "t": 0.89
+    }
+   }
+  },
+  "position entries (daily) | TP 4R | max 20 d": {
+   "n": 40,
+   "win": 25.0,
+   "avg_win": 3.91,
+   "avg_loss": -1.07,
+   "rr": 3.66,
+   "net": 0.177,
+   "first": 0.048,
+   "second": 0.335,
+   "t": 0.51,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 3.88,
+     "avg_loss": -1.04,
+     "rr": 3.74,
+     "net": 0.368,
+     "first": 0.93,
+     "second": -1.037,
+     "t": 0.41
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 16.7,
+     "avg_win": 3.72,
+     "avg_loss": -1.16,
+     "rr": 3.2,
+     "net": -0.349,
+     "first": 0.385,
+     "second": -1.083,
+     "t": -0.43
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 3.9,
+     "avg_loss": -1.06,
+     "rr": 3.67,
+     "net": 0.921,
+     "first": -1.05,
+     "second": 2.235,
+     "t": 0.76
+    },
+    "US500": {
+     "n": 10,
+     "win": 10.0,
+     "avg_win": 3.95,
+     "avg_loss": -1.06,
+     "rr": 3.72,
+     "net": -0.562,
+     "first": -1.074,
+     "second": 0.206,
+     "t": -1.12
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 3.97,
+     "avg_loss": -1.03,
+     "rr": 3.85,
+     "net": 0.635,
+     "first": 0.633,
+     "second": 0.637,
+     "t": 0.89
+    }
+   }
+  },
+  "position entries (daily) | TP 5R | max 1 d": {
+   "n": 40,
+   "win": 25.0,
+   "avg_win": 3.65,
+   "avg_loss": -1.04,
+   "rr": 3.51,
+   "net": 0.133,
+   "first": -0.016,
+   "second": 0.316,
+   "t": 0.38,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 1.26,
+     "avg_loss": -1.04,
+     "rr": 1.21,
+     "net": -0.381,
+     "first": -0.118,
+     "second": -1.037,
+     "t": -0.83
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 16.7,
+     "avg_win": 4.72,
+     "avg_loss": -1.16,
+     "rr": 4.06,
+     "net": -0.183,
+     "first": 0.718,
+     "second": -1.083,
+     "t": -0.19
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 40.0,
+     "avg_win": 2.36,
+     "avg_loss": -1.06,
+     "rr": 2.22,
+     "net": 0.308,
+     "first": -1.05,
+     "second": 1.213,
+     "t": 0.36
+    },
+    "US500": {
+     "n": 10,
+     "win": 10.0,
+     "avg_win": 4.95,
+     "avg_loss": -0.97,
+     "rr": 5.1,
+     "net": -0.378,
+     "first": -0.935,
+     "second": 0.456,
+     "t": -0.63
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 4.9,
+     "avg_loss": -1.03,
+     "rr": 4.75,
+     "net": 0.945,
+     "first": 0.966,
+     "second": 0.925,
+     "t": 1.12
+    }
+   }
+  },
+  "position entries (daily) | TP 5R | max 5 d": {
+   "n": 40,
+   "win": 22.5,
+   "avg_win": 4.55,
+   "avg_loss": -1.07,
+   "rr": 4.25,
+   "net": 0.194,
+   "first": 0.134,
+   "second": 0.268,
+   "t": 0.51,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 3.32,
+     "avg_loss": -1.04,
+     "rr": 3.21,
+     "net": 0.209,
+     "first": 0.707,
+     "second": -1.037,
+     "t": 0.24
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 16.7,
+     "avg_win": 4.72,
+     "avg_loss": -1.16,
+     "rr": 4.06,
+     "net": -0.183,
+     "first": 0.718,
+     "second": -1.083,
+     "t": -0.19
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 20.0,
+     "avg_win": 4.81,
+     "avg_loss": -1.1,
+     "rr": 4.37,
+     "net": 0.081,
+     "first": -1.05,
+     "second": 0.834,
+     "t": 0.07
+    },
+    "US500": {
+     "n": 10,
+     "win": 10.0,
+     "avg_win": 4.95,
+     "avg_loss": -1.06,
+     "rr": 4.66,
+     "net": -0.462,
+     "first": -1.074,
+     "second": 0.456,
+     "t": -0.77
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 4.96,
+     "avg_loss": -1.03,
+     "rr": 4.82,
+     "net": 0.968,
+     "first": 0.966,
+     "second": 0.97,
+     "t": 1.14
+    }
+   }
+  },
+  "position entries (daily) | TP 5R | max 20 d": {
+   "n": 40,
+   "win": 22.5,
+   "avg_win": 4.84,
+   "avg_loss": -1.07,
+   "rr": 4.52,
+   "net": 0.259,
+   "first": 0.253,
+   "second": 0.268,
+   "t": 0.66,
+   "by_market": {
+    "XAUUSD": {
+     "n": 7,
+     "win": 28.6,
+     "avg_win": 4.63,
+     "avg_loss": -1.04,
+     "rr": 4.47,
+     "net": 0.582,
+     "first": 1.23,
+     "second": -1.037,
+     "t": 0.56
+    },
+    "XAGUSD": {
+     "n": 6,
+     "win": 16.7,
+     "avg_win": 4.72,
+     "avg_loss": -1.16,
+     "rr": 4.06,
+     "net": -0.183,
+     "first": 0.718,
+     "second": -1.083,
+     "t": -0.19
+    },
+    "BTCUSD": {
+     "n": 5,
+     "win": 20.0,
+     "avg_win": 4.81,
+     "avg_loss": -1.1,
+     "rr": 4.37,
+     "net": 0.081,
+     "first": -1.05,
+     "second": 0.834,
+     "t": 0.07
+    },
+    "US500": {
+     "n": 10,
+     "win": 10.0,
+     "avg_win": 4.95,
+     "avg_loss": -1.06,
+     "rr": 4.66,
+     "net": -0.462,
+     "first": -1.074,
+     "second": 0.456,
+     "t": -0.77
+    },
+    "NAS100": {
+     "n": 12,
+     "win": 33.3,
+     "avg_win": 4.96,
+     "avg_loss": -1.03,
+     "rr": 4.82,
+     "net": 0.968,
+     "first": 0.966,
+     "second": 0.97,
+     "t": 1.14
+    }
+   }
+  }
+ },
+ "B_best": "position entries (daily) | TP 5R | max 20 d",
+ "k": 0.18637884024142096,
+ "C": {
+  "static limit 10% | 0.5% per unit": {
+   "by_year": {
+    "2024": 2093,
+    "2025": 21668,
+    "2026": 4164
+   },
+   "total": 27925,
+   "dd": 4.01,
+   "breach": null,
+   "last12": 0
+  },
+  "static limit 10% | 1.0% per unit": {
+   "by_year": {
+    "2024": 3662,
+    "2025": 35082,
+    "2026": 12376
+   },
+   "total": 51120,
+   "dd": 7.52,
+   "breach": null,
+   "last12": 0
+  },
+  "static limit none | 0.5% per unit": {
+   "by_year": {
+    "2024": 2093,
+    "2025": 21668,
+    "2026": 4164
+   },
+   "total": 27925,
+   "dd": 4.01,
+   "breach": null,
+   "last12": 0
+  },
+  "static limit none | 1.0% per unit": {
+   "by_year": {
+    "2024": 4538,
+    "2025": 45508,
+    "2026": 10593
+   },
+   "total": 60639,
+   "dd": 8.22,
+   "breach": null,
+   "last12": 0
+  }
+ }
+}

@@ -1,0 +1,16 @@
+; FibFVG Hold - prop account WITHOUT a trailing loss limit (static limit or none), $100K
+; Bot v3 position plan on all 5 markets, chandelier exit (holds days to weeks), 1% per unit.
+; 2024-2026 backtest: first units 44% wins, RR 3.61, +0.63R per trade, both halves positive (t 2.1);
+; $100K at 1%: about $60,600 paid Jul 2024 - Nov 2026, worst drawdown 8.2%. Not for 6% TRAILING accounts.
+RiskProfile=StaticProp
+RiskPctPerUnit=1.0
+StartBalance=100000
+ExitMode=1
+MaxUnits=4
+HardStopPct=15
+AllFiveMarkets=true
+SymbolsToTrade=AUTO
+WriteLog=true
+ShowPanel=true
+ResetHalt=false
+Magic=7712600

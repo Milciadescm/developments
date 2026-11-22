@@ -35,18 +35,19 @@ input double    StartBalance   = 50000;       // the virtual account (plan: 20% 
 input ENUM_EXIT ExitMode       = EXIT_YEAR;
 input int       MaxUnits       = 4;
 input double    HardStopPct    = 30;          // halt if equity falls this % below its peak
+input bool      AllFiveMarkets = false;       // true = also BTC, S&P 500, Nasdaq 100 (static-limit prop: 44% wins, RR 3.6 in 2024-26)
 input string    SymbolsToTrade = "AUTO";      // AUTO or your broker's names, e.g. XAUUSDm,XAGUSDm
 input bool      WriteLog       = true;
 input bool      ShowPanel      = true;
 input bool      ResetHalt      = false;       // set true once to clear a halt after review
 input long      Magic          = 7712500;     // first unit = Magic, adds = Magic + 1
 
-#define MAXS 4
+#define MAXS 6
 const string BOT = "Hold";
 const double OTE = 0.705;
 const int    BRK = 20;
 
-string   Sym[MAXS]; int Fam[MAXS]; int NS = 0;        // family 0 gold, 1 silver
+string   Sym[MAXS]; int Fam[MAXS]; int NS = 0;        // family 0 gold, 1 silver, 2 BTC, 3 S&P 500, 4 Nasdaq 100
 datetime lastD1[MAXS];
 double   startBal = 0, closedPnL = 0;
 datetime t0 = 0;
@@ -123,6 +124,12 @@ int FamilyOf(string n)
 {
    if(Match(n, "XAUUSD")) return 0;
    if(Match(n, "XAGUSD")) return 1;
+   if(!AllFiveMarkets) return -1;
+   if(Match(n, "BTCUSD")) return 2;
+   string p3[] = {"US500", "SPX500", "SP500", "USA500", "US.500"};
+   string p4[] = {"NAS100", "USTEC", "US100", "NDX100", "USTECH"};
+   for(int i = 0; i < ArraySize(p3); i++) if(Match(n, p3[i])) return 3;
+   for(int i = 0; i < ArraySize(p4); i++) if(Match(n, p4[i])) return 4;
    return -1;
 }
 void AddSym(string n)
@@ -143,8 +150,8 @@ void ResolveSymbols()
       return;
    }
    AddSym(_Symbol);
-   for(int i = 0; i < SymbolsTotal(true) && NS < 2; i++) AddSym(SymbolName(i, true));
-   for(int i = 0; i < SymbolsTotal(false) && NS < 2; i++) AddSym(SymbolName(i, false));
+   for(int i = 0; i < SymbolsTotal(true) && NS < (AllFiveMarkets ? 5 : 2); i++) AddSym(SymbolName(i, true));
+   for(int i = 0; i < SymbolsTotal(false) && NS < (AllFiveMarkets ? 5 : 2); i++) AddSym(SymbolName(i, false));
 }
 
 //=============================================================== the bot's own (virtual) account
@@ -398,7 +405,7 @@ int OnInit()
    string list = ""; for(int k = 0; k < NS; k++) list += (k ? " " : "") + Sym[k];
    Log("START", "", StringFormat("profile=%s; risk_per_unit=%.2f%%; start=%.0f; exit=%s; hard_stop=%.0f%%; symbols=%s", RiskProfile, RiskPctPerUnit, startBal,
                                  ExitMode == EXIT_YEAR ? "year" : "chandelier", HardStopPct, list));
-   if(NS < 2) Print("FibFVG Hold: only ", NS, " of 2 markets found. Set SymbolsToTrade to your broker's names.");
+   if(NS < (AllFiveMarkets ? 5 : 2)) Print("FibFVG Hold: only ", NS, " markets found. Set SymbolsToTrade to your broker's names.");
    return INIT_SUCCEEDED;
 }
 void OnDeinit(const int r) { EventKillTimer(); Comment(""); Log("STOP", "", StringFormat("reason=%d; %s", r, Stats())); }
