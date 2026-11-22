@@ -1,0 +1,98 @@
+[
+ {
+  "setup": "All 5 markets",
+  "risk": "Normal (0.25% / 0.10%)",
+  "end": 63400,
+  "per_year": 10.6,
+  "first12": 9.0,
+  "maxdd": 6.9,
+  "months_up": 46,
+  "avg_month": 1.0,
+  "worst_month": -3.1,
+  "best_month": 14.5
+ },
+ {
+  "setup": "All 5 markets",
+  "risk": "Growth (0.50% / 0.25%)",
+  "end": 101362,
+  "per_year": 34.8,
+  "first12": 13.6,
+  "maxdd": 16.7,
+  "months_up": 57,
+  "avg_month": 3.0,
+  "worst_month": -6.6,
+  "best_month": 26.7
+ },
+ {
+  "setup": "All 5 markets",
+  "risk": "Strong (0.75% / 0.35%)",
+  "end": 144305,
+  "per_year": 56.5,
+  "first12": 20.8,
+  "maxdd": 23.5,
+  "months_up": 61,
+  "avg_month": 4.7,
+  "worst_month": -9.3,
+  "best_month": 40.0
+ },
+ {
+  "setup": "All 5 markets",
+  "risk": "Max (1.0% / 0.5%)",
+  "end": 193749,
+  "per_year": 77.3,
+  "first12": 25.9,
+  "maxdd": 31.9,
+  "months_up": 61,
+  "avg_month": 6.5,
+  "worst_month": -13.1,
+  "best_month": 54.4
+ },
+ {
+  "setup": "BTC + Nasdaq",
+  "risk": "Normal (0.25% / 0.10%)",
+  "end": 49897,
+  "per_year": -0.1,
+  "first12": -0.6,
+  "maxdd": 5.1,
+  "months_up": 46,
+  "avg_month": 0.0,
+  "worst_month": -2.5,
+  "best_month": 2.8
+ },
+ {
+  "setup": "BTC + Nasdaq",
+  "risk": "Growth (0.50% / 0.25%)",
+  "end": 50536,
+  "per_year": 0.5,
+  "first12": 0.0,
+  "maxdd": 12.4,
+  "months_up": 39,
+  "avg_month": 0.1,
+  "worst_month": -6.2,
+  "best_month": 7.3
+ },
+ {
+  "setup": "BTC + Nasdaq",
+  "risk": "Strong (0.75% / 0.35%)",
+  "end": 50360,
+  "per_year": 0.3,
+  "first12": -0.8,
+  "maxdd": 17.1,
+  "months_up": 39,
+  "avg_month": 0.2,
+  "worst_month": -8.7,
+  "best_month": 10.8
+ },
+ {
+  "setup": "BTC + Nasdaq",
+  "risk": "Max (1.0% / 0.5%)",
+  "end": 50520,
+  "per_year": 0.4,
+  "first12": -0.4,
+  "maxdd": 23.6,
+  "months_up": 39,
+  "avg_month": 0.3,
+  "worst_month": -12.2,
+  "best_month": 15.9
+ }
+]

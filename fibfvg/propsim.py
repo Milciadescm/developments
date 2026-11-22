@@ -226,7 +226,7 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, sche
                 risk = lots * dist * spec.contract
             cost = spec.spread * lots * spec.contract
             bal -= cost
-            mode_log[m] += 1
+            mode_log[m] = mode_log.get(m, 0) + 1
             open_[id(t)] = dict(t=t, lots=lots, risk=risk, risk0=risk, pnl=-cost, f=0.0, mode=m, eq=bal + cost)
             for (xt, px, fr) in t.exits:
                 heapq.heappush(ev, (xt, 1, seq, "out", (id(t), px, fr))); seq += 1
