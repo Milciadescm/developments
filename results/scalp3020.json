@@ -1,0 +1,269 @@
+{
+ "by_case": {
+  "conservative": {
+   "n": 131,
+   "win": 13.0,
+   "avg_win": 1.31,
+   "avg_loss": -1.81,
+   "rr": 0.73,
+   "net": -1.402,
+   "first": -1.286,
+   "second": -1.514,
+   "t": -12.72,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 21.7,
+     "avg_win": 1.32,
+     "avg_loss": -1.18,
+     "rr": 1.13,
+     "net": -0.632,
+     "first": -0.758,
+     "second": -0.493,
+     "t": -2.87
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 42.3,
+     "avg_win": 1.32,
+     "avg_loss": -1.14,
+     "rr": 1.16,
+     "net": -0.098,
+     "first": 0.326,
+     "second": -0.461,
+     "t": -0.4
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 0.0,
+     "avg_win": 0,
+     "avg_loss": -2.83,
+     "rr": null,
+     "net": -2.828,
+     "first": -3.0,
+     "second": -2.737,
+     "t": -23.62
+    },
+    "US500": {
+     "n": 29,
+     "win": 3.4,
+     "avg_win": 1.15,
+     "avg_loss": -1.35,
+     "rr": 0.85,
+     "net": -1.264,
+     "first": -1.194,
+     "second": -1.35,
+     "t": -14.66
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 0.0,
+     "avg_win": 0,
+     "avg_loss": -2.0,
+     "rr": null,
+     "net": -2.0,
+     "first": -2.0,
+     "second": -2.0,
+     "t": -Infinity
+    }
+   }
+  },
+  "optimistic": {
+   "n": 131,
+   "win": 17.6,
+   "avg_win": 1.27,
+   "avg_loss": -1.83,
+   "rr": 0.69,
+   "net": -1.288,
+   "first": -1.286,
+   "second": -1.29,
+   "t": -10.77,
+   "by_market": {
+    "XAUUSD": {
+     "n": 23,
+     "win": 21.7,
+     "avg_win": 1.32,
+     "avg_loss": -1.18,
+     "rr": 1.13,
+     "net": -0.632,
+     "first": -0.758,
+     "second": -0.493,
+     "t": -2.87
+    },
+    "XAGUSD": {
+     "n": 26,
+     "win": 53.8,
+     "avg_win": 1.32,
+     "avg_loss": -1.13,
+     "rr": 1.17,
+     "net": 0.191,
+     "first": 0.326,
+     "second": 0.075,
+     "t": 0.78
+    },
+    "BTCUSD": {
+     "n": 29,
+     "win": 0.0,
+     "avg_win": 0,
+     "avg_loss": -2.83,
+     "rr": null,
+     "net": -2.828,
+     "first": -3.0,
+     "second": -2.737,
+     "t": -23.62
+    },
+    "US500": {
+     "n": 29,
+     "win": 10.3,
+     "avg_win": 1.15,
+     "avg_loss": -1.35,
+     "rr": 0.85,
+     "net": -1.091,
+     "first": -1.194,
+     "second": -0.965,
+     "t": -7.59
+    },
+    "NAS100": {
+     "n": 24,
+     "win": 4.2,
+     "avg_win": 0.5,
+     "avg_loss": -2.0,
+     "rr": 0.25,
+     "net": -1.896,
+     "first": -2.0,
+     "second": -1.75,
+     "t": -18.2
+    }
+   }
+  }
+ },
+ "prop": {
+  "conservative": {
+   "0.5%": {
+    "risk": 0.5,
+    "paid": 0,
+    "breach": null,
+    "dd": 5.37,
+    "trades": 5,
+    "monthly": [],
+    "windows": {
+     "median": 0,
+     "worst": 0,
+     "breaches": 0,
+     "n": 17,
+     "worst_dd": 5.36
+    }
+   },
+   "1.0%": {
+    "risk": 1.0,
+    "paid": 0,
+    "breach": null,
+    "dd": 5.41,
+    "trades": 3,
+    "monthly": [],
+    "windows": {
+     "median": 0,
+     "worst": 0,
+     "breaches": 1,
+     "n": 17,
+     "worst_dd": 6.0
+    }
+   },
+   "2.0%": {
+    "risk": 2.0,
+    "paid": 0,
+    "breach": null,
+    "dd": 5.41,
+    "trades": 3,
+    "monthly": [],
+    "windows": {
+     "median": 0,
+     "worst": 0,
+     "breaches": 1,
+     "n": 17,
+     "worst_dd": 6.0
+    }
+   }
+  },
+  "optimistic": {
+   "0.5%": {
+    "risk": 0.5,
+    "paid": 0,
+    "breach": null,
+    "dd": 5.37,
+    "trades": 5,
+    "monthly": [],
+    "windows": {
+     "median": 0,
+     "worst": 0,
+     "breaches": 0,
+     "n": 17,
+     "worst_dd": 5.36
+    }
+   },
+   "1.0%": {
+    "risk": 1.0,
+    "paid": 0,
+    "breach": null,
+    "dd": 5.41,
+    "trades": 3,
+    "monthly": [],
+    "windows": {
+     "median": 0,
+     "worst": 0,
+     "breaches": 1,
+     "n": 17,
+     "worst_dd": 6.0
+    }
+   },
+   "2.0%": {
+    "risk": 2.0,
+    "paid": 0,
+    "breach": null,
+    "dd": 5.41,
+    "trades": 3,
+    "monthly": [],
+    "windows": {
+     "median": 0,
+     "worst": 0,
+     "breaches": 1,
+     "n": 17,
+     "worst_dd": 6.0
+    }
+   }
+  }
+ },
+ "cost": {
+  "XAUUSD": {
+   "spread_pips": 3.5,
+   "breakeven_win_rate": 47.0
+  },
+  "XAGUSD": {
+   "spread_pips": 3.5,
+   "breakeven_win_rate": 47.0
+  },
+  "BTCUSD": {
+   "spread_pips": 40.0,
+   "breakeven_win_rate": 120.0
+  },
+  "US500": {
+   "spread_pips": 7.0,
+   "breakeven_win_rate": 54.0
+  },
+  "NAS100": {
+   "spread_pips": 20.0,
+   "breakeven_win_rate": 80.0
+  }
+ },
+ "btc_5min": {
+  "n": 29,
+  "win": 0.0,
+  "avg_win": 0,
+  "avg_loss": -2.91,
+  "rr": null,
+  "net": -2.914,
+  "first": -3.0,
+  "second": -2.868,
+  "t": -33.8
+ }
+}
