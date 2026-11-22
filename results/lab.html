@@ -76,7 +76,7 @@ figure{margin:0;padding:12px}figcaption{color:var(--muted);font-size:12.5px;padd
     <p class="lede">Watch the bot work through each trade: time first (monthly, weekly and weekday bias, bars to fill), then price (breakout, FVG, Fibonacci OTE entry, extension targets). Then see the reverse test and the time study that produced plan v2.</p>
   </header>
   <nav aria-label="Sections">
-    <a href="#replay">Replay</a><a href="#reverse">Reverse test</a><a href="#time">Time study</a><a href="#plan">Plan v2</a><a href="#plans">Two plans</a>
+    <a href="#replay">Replay</a><a href="#reverse">Reverse test</a><a href="#time">Time study</a><a href="#plan">Plan v2</a><a href="#plans">Two plans</a><a href="#since2024">Since 2024</a><a href="#prop">Prop vs real</a>
   </nav>
 
   <!-- ===================== REPLAY ===================== -->
@@ -84,7 +84,7 @@ figure{margin:0;padding:12px}figcaption{color:var(--muted);font-size:12.5px;padd
     <div class="panel bar">
       <label for="sym" class="note">Market</label><select id="sym"></select>
       <label for="eng" class="note">Engine</label>
-      <select id="eng"><optgroup label="Plan 1 · position"><option value="position">Position · D1 (weeks–months)</option><option value="weekly">Weekly swing v2 · D1</option></optgroup><optgroup label="Plan 2 · micro"><option value="p2_1m">Micro · 1m</option><option value="p2_5m">Micro · 5m</option><option value="p2_15m">Micro · 15m</option><option value="p2_30m">Micro · 30m</option><option value="p2_1H">Micro · 1H</option><option value="micro">Micro v2 · 4H</option></optgroup></select>
+      <select id="eng"><optgroup label="Plan 1 · position"><option value="position">Position · D1 (weeks–months)</option><option value="weekly">Weekly swing v2 · D1</option></optgroup><optgroup label="Plan 2 · micro"><option value="p2_1m">Micro · 1m</option><option value="p2_5m">Micro · 5m</option><option value="p2_15m">Micro · 15m</option><option value="p2_30m">Micro · 30m</option><option value="p2_1H">Micro · 1H</option><option value="micro">Micro v2 · 4H</option></optgroup><optgroup label="Since 2024 (2024+ data only)"><option value="levels">Levels · 1H (all hours)</option><option value="levels_kz">Levels · 1H (kill zones)</option><option value="pos24">Position · D1 (2024+)</option></optgroup></select>
       <label for="stat" class="note">Show</label>
       <select id="stat"><option value="all">All trades</option><option value="taken">Taken</option><option value="reversed">Reversed</option><option value="filtered (Thu/Fri)">Filtered by time</option><option value="win">Winners</option><option value="loss">Losers</option></select>
       <span style="flex:1"></span>
@@ -164,6 +164,47 @@ figure{margin:0;padding:12px}figcaption{color:var(--muted);font-size:12.5px;padd
     <p>Same 4H micro entry, run on each timeframe. Three exit styles, chosen on the first half of each sample and checked on the second half. Net R is after spread. Gross R is before spread, to show how much the costs take.</p>
     <div class="panel"><div class="tw" style="max-height:none"><table class="static" id="p2tab"><thead><tr><th>Timeframe</th><th>History</th><th>Exit style</th><th>Trades</th><th>Gross R</th><th>Net R first half</th><th>Net R second half</th><th>Avg loss</th><th>Avg win</th><th>Median hold</th><th>Decision</th></tr></thead><tbody></tbody></table></div></div>
   </section>
+
+  <!-- ===================== SINCE 2024 ===================== -->
+  <section id="v-since2024" hidden style="display:grid;grid-template-columns:minmax(0,1fr);gap:14px">
+    <h2>Since 2024: levels, kill zones and adding to winners</h2>
+    <p>Only data from January 2024 on is used. Hourly history is available from July 2024 (BTC from November 2024). Daily bias is built from 2024 bars only. The index plan uses 24-hour S&amp;P and Nasdaq futures so that the 20:00, 02:00 and 06:00 NY hours exist.</p>
+    <div class="panel verdict"><b>What the test says</b><ul>
+      <li><b>Your rule as written loses.</b> A tight stop beyond the reaction wick loses before costs on every exit style. A handful of trades did run 10R and two ran 50R+, but the stop is inside normal noise, so about 92% of trades lose or break even.</li>
+      <li><b>Why:</b> over the next 3 days price drifts with the weekly bias. Level reactions add a little to that, kill-zone hours add nothing, and over the first 4 hours the drift is roughly zero.</li>
+      <li><b>The fix that works:</b> same level reactions, stop at 1 daily ATR, breakeven at +1R, trail the 5-day low from +2R, add units only while the first trade is at least +1R. +0.12R per trade on the first half, +0.20R on the second half.</li>
+      <li><b>Kill zones:</b> limiting entries to them gave fewer trades and no improvement, so the default is all hours except NY lunch. You can switch kill zones on in the bot.</li>
+      <li><b>10R and 50R:</b> with a stop that survives noise, 6 trades passed 10R and the best was 19.5R. Plan 1 had 8 trades over 10R since 2024 (best 26.6R). No trade reached 50R.</li></ul></div>
+    <h3>Your rule: tight stop past the reaction wick</h3>
+    <div class="panel"><div class="tw" style="max-height:none"><table class="static" id="s24v1"><thead><tr><th>Exit style</th><th>Trades</th><th>Gross R</th><th>Net R first half</th><th>Net R second half</th><th>Win rate</th><th>≥10R</th><th>≥50R</th><th>Best</th></tr></thead><tbody></tbody></table></div></div>
+    <h3>Fixed: stop at 1 daily ATR, hold for days</h3>
+    <div class="panel"><div class="tw" style="max-height:none"><table class="static" id="s24v2"><thead><tr><th>Version</th><th>Trades</th><th>Of which adds</th><th>Net R first half</th><th>Net R second half</th><th>Win rate</th><th>≥10R</th><th>Best</th><th>Median hold</th><th>Decision</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="two">
+      <div class="panel"><div class="bar"><h3>$50,000 · July 2024 → now</h3></div><div class="tw" style="max-height:none"><table class="static" id="s24plans"><thead><tr><th>Plan</th><th>Trades</th><th>End</th><th>Return</th><th>Per year</th><th>Max DD</th><th>PF</th><th>Win rate</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel"><div class="bar"><h3>First entries by NY hour and by level</h3></div><div class="tw"><table class="static" id="s24hour"><thead><tr><th>Hour / level</th><th>Trades</th><th>Net R</th></tr></thead><tbody></tbody></table></div><p class="note" style="padding:8px 12px">Small samples. 00:00 and 06:00 look best and 09:00 and 20:00 worst, but picking hours from this table would be fitting to the past. Forward-test before using.</p></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROP VS REAL ===================== -->
+  <section id="v-prop" hidden style="display:grid;grid-template-columns:minmax(0,1fr);gap:14px">
+    <h2>Prop accounts vs the same cash in a real account</h2>
+    <div class="panel verdict"><b>What the test says (July 2024 → now, Plan 1 chandelier + Plan 3 levels)</b><ul>
+      <li><b>No account breached</b> in any mode, over the full period or over 23 different start months. The guard refuses or shrinks any trade that could take drawdown plus open stop-risk past 5% (the firm line is 6%), and 2.5% daily where the firm has a 3% daily limit. Only a price gap past the stop could breach it.</li>
+      <li><b>Normal mode pays best on most accounts.</b> Aggressive hits the guard's ceiling, gets its trades shrunk and often pays less.</li>
+      <li><b>The same cash in a real account does nothing.</b> $60–$740 cannot open even 0.01 lot on these stops, so the real accounts took 0–10 trades in most modes.</li>
+      <li><b>Small prop accounts only trade the indices.</b> Below $50K, gold, silver and BTC need less than 0.01 lot at prop-safe risk, so those signals are skipped.</li>
+      <li>Assumptions: FundedNext's profit split is not in your screenshot, so 80% is used. Instant Premium's max loss is treated as trailing (the stricter reading). Rewards every 14 days, keeping enough back to cover open risk. The fee refund is paid with the first reward. Check each firm's current terms.</li></ul></div>
+    <div class="panel bar"><label for="pmode" class="note">Risk mode</label><select id="pmode"><option>Conservative</option><option selected>Normal</option><option>Aggressive</option><option>Edge gate</option></select>
+      <span class="note">Conservative 0.15% / 0.05% · Normal 0.25% / 0.10% · Aggressive 0.50% / 0.25% (Plan 1 per unit / Plan 3 per unit, of the starting balance)</span></div>
+    <div class="panel"><div class="tw" style="max-height:none"><table class="static" id="proptab"><thead><tr><th>Account</th><th>Fee</th><th>Trades</th><th>Skipped: below 0.01 lot</th><th>Rewards</th><th>Paid to you</th><th>Net after fee</th><th>Worst DD</th><th>Breach</th><th>Breached / 23 starts</th><th>Median paid in 6 months</th><th>Same cash, real account</th><th>Lots used (median/max)</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel"><div class="bar"><h3>Recommended lots per trade</h3><label for="psize" class="note">Account size</label><select id="psize"><option value="2000">$2K</option><option value="5000">$5K</option><option value="10000">$10K</option><option value="15000">$15K</option><option value="20000" selected>$20K</option><option value="25000">$25K</option><option value="50000">$50K</option><option value="100000">$100K</option></select></div>
+      <div class="tw" style="max-height:none"><table class="static" id="lottab"><thead><tr><th>Mode</th><th>Plan</th><th>Risk</th><th>XAUUSD</th><th>XAGUSD</th><th>BTCUSD</th><th>US500</th><th>NAS100</th></tr></thead><tbody></tbody></table></div>
+      <p class="note" style="padding:8px 12px">Based on the median stop distance since 2024 and typical contract sizes (gold 100 oz, silver 5,000 oz, BTC 1, US500 and NAS100 $1 per point per lot). Your broker's sizes may differ. The bot computes lots live from the broker's own tick value and shows them on the chart.</p></div>
+    <div class="panel verdict"><b>The edge rule in code (Edge gate mode)</b><ul>
+      <li><b>EDGE_CONFIRMED → Normal:</b> the last 20 closed positions sum to at least +3R, profit factor at least 1.3, and drawdown from peak at most 2%.</li>
+      <li><b>STRONG_EDGE → Aggressive:</b> the last 40 closed positions sum to at least +8R, profit factor at least 1.5, and drawdown at most 1.5%.</li>
+      <li><b>Otherwise, or drawdown 3% or more → Conservative.</b> Checked again after every closed trade. Here it did not beat fixed Normal on most accounts, because it spends the first 20 trades at Conservative size.</li></ul></div>
+  </section>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
@@ -175,13 +216,13 @@ const DAYS=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 const FIB=new Set([1,2,3,5,8,13,21]);
 let META=null,BARS={},cur=[],idx=0,chart=null,series=null,lines=[],timer=null,eqData=[];
 const fmtD=t=>new Date(t*1000).toISOString().slice(0,10);
-const fmtT=(t,tf)=>(tf==="D1"||tf==="weekly")?fmtD(t):new Date(t*1000).toISOString().slice(0,16).replace("T"," ");
+const fmtT=(t,tf)=>(tf==="D1"||tf==="D24"||tf==="weekly")?fmtD(t):new Date(t*1000).toISOString().slice(0,16).replace("T"," ");
 const px=v=>v==null?"–":(Math.abs(v)>=1000?v.toLocaleString("en-US",{maximumFractionDigits:2}):(+v).toPrecision(6).replace(/0+$/,"").replace(/\.$/,""));
 const sgn=v=>(v>0?"+":"")+v.toFixed(2);
 const money=v=>v==null?"–":(v<0?"−$":"$")+Math.abs(v).toLocaleString("en-US",{maximumFractionDigits:0});
 
 /* ---------- routing ---------- */
-const VIEWS=["replay","reverse","time","plan","plans"];
+const VIEWS=["replay","reverse","time","plan","plans","since2024","prop"];
 function route(){const h=(location.hash||"#replay").slice(1);const v=VIEWS.includes(h)?h:"replay";
   VIEWS.forEach(x=>{$("#v-"+x).hidden=x!==v;});
   document.querySelectorAll("nav a").forEach(a=>a.toggleAttribute("aria-current",a.getAttribute("href")==="#"+v)||a.setAttribute("aria-current","page"));
@@ -208,10 +249,10 @@ function clearLines(){lines.forEach(l=>series.removePriceLine(l));lines=[];}
 async function loadSym(s,tf){const key=s+"|"+tf;if(BARS[key])return BARS[key];
   if(tf==="D1"||tf==="H4"){if(!BARS[s])BARS[s]=await (await fetch("replay/"+s+".json")).json();BARS[key]=BARS[s].bars[tf];}
   else BARS[key]=await (await fetch("replay/"+s+"_"+tf+".json")).json();return BARS[key];}
-const PER={D1:86400,H4:14400,"1H":3600,"30m":1800,"15m":900,"5m":300,"1m":60};
+const PER={D24:86400,L1H:3600,D1:86400,H4:14400,"1H":3600,"30m":1800,"15m":900,"5m":300,"1m":60};
 const P2MODE=tf=>META.plans?META.plans.plan2[tf].pick:"";
 const usesTP2=t=>t.eng==="weekly"||t.eng==="micro"||(t.eng.startsWith("p2_")&&P2MODE(t.tf).startsWith("M0"));
-const usesTP1=t=>t.eng==="weekly"||t.eng==="position"||(t.eng.startsWith("p2_")&&P2MODE(t.tf).startsWith("M2"));
+const usesTP1=t=>t.eng==="weekly"||t.eng==="position"||t.eng==="pos24"||(t.eng.startsWith("p2_")&&P2MODE(t.tf).startsWith("M2"));
 function filterTrades(){const s=$("#sym").value,e=$("#eng").value,st=$("#stat").value;
   cur=META.trades.filter(t=>t.sym===s&&t.eng===e&&(st==="all"||(st==="win"?eff(t)>0:st==="loss"?eff(t)<=0:t.status===st)));}
 const eff=t=>t.status==="reversed"&&t.rev?t.rev.net_r:t.net_r;
@@ -230,7 +271,8 @@ function stepsFor(t){const L=t.leg||{},d=t.dir,side=d>0?"Long":"Short",tfName=t.
   const ote=(f)=>rng==null?null:(d>0?L.hi-f*rng:L.lo+f*rng);
   const risk=Math.abs(t.entry-t.stop);const rr=Math.abs(t.tp2-t.entry)/risk;
   const S=[];
-  const daily=t.eng==="weekly"||t.eng==="position";
+  if(t.eng.startsWith("levels"))return levelSteps(t);
+  const daily=t.eng==="weekly"||t.eng==="position"||t.eng==="pos24";
   if(daily){
     S.push({at:t.setup_t,k:"Time · Monthly bias",v:`${bias(t.mbias)}: last month closed in the ${t.mbias>0?"upper":"lower"} half of its 6-month range`});
     S.push({at:t.setup_t,k:"Time · Weekly bias",v:`${bias(t.wbias)}: last week closed in the ${t.wbias>0?"upper":"lower"} half of its 4-week range. Both agree, so only ${side.toLowerCase()}s are allowed`});
@@ -240,13 +282,13 @@ function stepsFor(t){const L=t.leg||{},d=t.dir,side=d>0?"Long":"Short",tfName=t.
     S.push({at:t.setup_t,k:`Price · ${t.eng==="micro"?"4H":t.tf} FVG + displacement`,v:`${fmtT(t.setup_t,t.tf)}: a ${d>0?"bullish":"bearish"} gap ${px(L.fvg_lo)}–${px(L.fvg_hi)} after a candle larger than 0.8 × ATR`});
   }
   S.push({at:t.setup_t,k:"Price · Fibonacci leg",v:`${px(d>0?L.lo:L.hi)} → ${px(d>0?L.hi:L.lo)}. OTE zone 0.618–0.786 = ${px(ote(.618))} – ${px(ote(.786))}. Limit at 0.705 = ${px(t.entry)}`});
-  const exitPlan=t.eng==="position"?`Half off at TP1 ${px(t.tp1)} (−0.272), then breakeven and a 55-day trailing stop with no fixed target. Out after 10 days if it never reaches +0.5R`
+  const exitPlan=(t.eng==="position"||t.eng==="pos24")?`Half off at TP1 ${px(t.tp1)} (−0.272), then breakeven and a 55-day trailing stop with no fixed target. Out after 10 days if it never reaches +0.5R`
     :t.eng.startsWith("p2_")?({M0:`Fixed target ${px(t.tp2)} (−0.618 = ${rr.toFixed(1)}R)`,M1:"No fixed target: breakeven at +1R, then trail the 3-bar low. Out after 6 bars if it never reaches +0.5R",M2:`Half off at TP1 ${px(t.tp1)}, then breakeven and trail the 3-bar low. Out after 6 bars if never +0.5R`})[P2MODE(t.tf).slice(0,2)]
     :`Target ${px(t.tp2)} at the −0.618 extension = ${rr.toFixed(1)}R`;
   S.push({at:t.setup_t,k:"Risk · Stop, size and exit plan",v:`Stop ${px(t.stop)} beyond the leg origin (1R = ${px(risk)}). ${exitPlan}${t.lots!=null?`. Size ${t.lots} lots on ${money(t.eq)} equity`:""}`});
   S.push({at:t.fill_t,k:"Time · Fill",v:`Filled ${fmtT(t.fill_t,t.tf)}, ${t.delay} bar${t.delay===1?"":"s"} after the setup${FIB.has(t.delay)?" (a Fibonacci count)":""}`});
   if(t.tp1!=null&&usesTP1(t)){const hit=t.exits.find(x=>Math.abs(x[2]-0.5)<1e-6&&((d>0&&x[1]>=t.tp1-1e-9)||(d<0&&x[1]<=t.tp1+1e-9)));
-    S.push({at:hit?hit[0]:t.exit_t,k:"Manage · TP1 and Turtle adds",v:(hit?`TP1 ${px(t.tp1)} hit ${fmtT(hit[0],t.tf)}: half closed, stop to breakeven${t.eng==="position"?", runner on the 55-day trail":""}. `:"TP1 not reached. ")+(t.adds.length?`${t.adds.length} Turtle unit${t.adds.length>1?"s":""} added every 0.5N`:"No Turtle adds")});}
+    S.push({at:hit?hit[0]:t.exit_t,k:"Manage · TP1 and Turtle adds",v:(hit?`TP1 ${px(t.tp1)} hit ${fmtT(hit[0],t.tf)}: half closed, stop to breakeven${(t.eng==="position"||t.eng==="pos24")?", runner on the 55-day trail":""}. `:"TP1 not reached. ")+(t.adds.length?`${t.adds.length} Turtle unit${t.adds.length>1?"s":""} added every 0.5N`:"No Turtle adds")});}
   const last=t.exits[t.exits.length-1];
   const held=(t.exit_t-t.fill_t)/86400;
   S.push({at:t.exit_t,k:"Result",v:`Closed ${fmtT(last[0],t.tf)} at ${px(last[1])} after ${held>=1?held.toFixed(0)+" days":Math.round(held*1440)+" minutes"}: ${sgn(t.net_r)}R after spread`});
@@ -256,7 +298,7 @@ function setResult(t){const el=$("#result");const r=eff(t);let tag="",extra="";
   if(t.status==="reversed"&&t.rev){tag='<span class="pill rev">Reversed in plan v2</span>';extra=`<span class="note">Original ${sgn(t.net_r)}R → reversed ${sgn(t.rev.net_r)}R (stop ${px(t.rev.stop)}, target ${px(t.rev.tp)})</span>`;}
   else if(t.status.startsWith("filtered")){tag='<span class="pill">Skipped in plan v2 (Thu/Fri)</span>';extra=`<span class="note">Would have made ${sgn(t.net_r)}R</span>`;}
   else tag=`<span class="pill ${r>0?"win":"loss"}">${r>0?"Winner":"Loser"}</span>`;
-  el.innerHTML=`<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">${tag}${t.adds.length?`<span class="pill">+${t.adds.length} adds</span>`:""}</div><b class="${r>0?"g":"r"}">${sgn(r)}R</b><span class="note">${t.pnl!=null?`P&amp;L ${money(t.pnl)} at $50k ${t.eng==="position"?"plan 1":"plan v2"}`:(t.eng.startsWith("p2_")?"Plan 2 is tested in R only":"Not executed in plan v2")}</span>${extra}`;}
+  el.innerHTML=`<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">${tag}${t.adds.length?`<span class="pill">+${t.adds.length} adds</span>`:""}</div><b class="${r>0?"g":"r"}">${sgn(r)}R</b><span class="note">${t.pnl!=null?`P&amp;L ${money(t.pnl)} at $50k ${t.eng==="position"?"plan 1":(t.eng==="pos24"||t.eng.startsWith("levels"))?"2024 portfolio":"plan v2"}`:(t.eng.startsWith("p2_")?"Plan 2 is tested in R only":"Not executed in plan v2")}</span>${extra}`;}
 
 function renderSteps(t,upto){const S=stepsFor(t);$("#steps").innerHTML=S.map((s,i)=>`<div class="step${s.at<=upto?" on":""}"><div class="dot">${i+1}</div><div><div class="k">${s.k}</div><div class="v">${s.v}</div></div></div>`).join("");}
 
@@ -268,14 +310,15 @@ function windowBars(t){const B=BARS[t.sym+"|"+t.tf];const per=PER[t.tf];
 function draw(t,bars,upto){if(!series)return;series.setData(bars.filter(b=>b.time<=upto));clearLines();
   const d=t.dir,L=t.leg;const M=[];
   if(upto>=t.setup_t){const rng=L?Math.abs(L.hi-L.lo):0;
-    if(L){addLine(d>0?L.hi-.618*rng:L.lo+.618*rng,css("--gold"),"0.618","dash");addLine(d>0?L.hi-.786*rng:L.lo+.786*rng,css("--gold"),"0.786","dash");
+    if(t.level!=null)addLine(t.level,css("--gold"),"level "+t.level_name);
+    if(L&&t.level==null){addLine(d>0?L.hi-.618*rng:L.lo+.618*rng,css("--gold"),"0.618","dash");addLine(d>0?L.hi-.786*rng:L.lo+.786*rng,css("--gold"),"0.786","dash");
       if(L.fvg_lo!=null){addLine(L.fvg_lo,css("--accent"),"FVG","dot");addLine(L.fvg_hi,css("--accent"),"FVG","dot");}}
-    addLine(t.entry,css("--blue"),"0.705 entry");addLine(t.stop,css("--down"),"stop");
+    addLine(t.entry,css("--blue"),t.level!=null?"entry":"0.705 entry");addLine(t.stop,css("--down"),"stop");
     if(t.tp1!=null&&usesTP1(t))addLine(t.tp1,css("--up"),"TP1","dash");if(usesTP2(t))addLine(t.tp2,css("--up"),"TP2");
-    M.push({time:t.setup_t,position:d>0?"aboveBar":"belowBar",color:css("--gold"),shape:"circle",text:"setup"});}
-  if(L&&upto>=L.frm)M.push({time:L.frm,position:d>0?"belowBar":"aboveBar",color:css("--muted"),shape:"square",text:"leg 1.0"});
+    M.push({time:t.setup_t,position:d>0?"belowBar":"aboveBar",color:css("--gold"),shape:"circle",text:t.level!=null?"reaction "+t.level_name:"setup"});}
+  if(L&&t.level==null&&upto>=L.frm)M.push({time:L.frm,position:d>0?"belowBar":"aboveBar",color:css("--muted"),shape:"square",text:"leg 1.0"});
   if(upto>=t.fill_t)M.push({time:t.fill_t,position:d>0?"belowBar":"aboveBar",color:css("--blue"),shape:d>0?"arrowUp":"arrowDown",text:(d>0?"buy ":"sell ")+px(t.entry)});
-  t.adds.forEach(a=>{if(upto>=a.t)M.push({time:snap(bars,a.t),position:d>0?"belowBar":"aboveBar",color:css("--blue"),shape:"arrowUp",text:"add"});});
+  t.adds.forEach((a,j)=>{if(upto>=a.t)M.push({time:snap(bars,a.t),position:d>0?"belowBar":"aboveBar",color:css("--blue"),shape:d>0?"arrowUp":"arrowDown",text:"add "+(j+2)+(a.name?" @"+a.name:"")});});
   t.exits.forEach(x=>{const tt=snap(bars,x[0]);if(upto>=tt)M.push({time:tt,position:d>0?"aboveBar":"belowBar",color:x[1]*d>=t.entry*d?css("--up"):css("--down"),shape:d>0?"arrowDown":"arrowUp",text:(x[2]<0.999?"½ ":"exit ")+px(x[1])});});
   if(t.status==="reversed"&&t.rev&&upto>=t.fill_t){addLine(t.rev.stop,css("--down"),"rev stop","thin");}
   M.sort((a,b)=>a.time-b.time);series.setMarkers(M);}
@@ -287,8 +330,8 @@ async function show(animate){stop();if(!cur.length){$("#cnt").textContent="0 / 0
   document.querySelectorAll("#log tbody tr").forEach(r=>r.classList.toggle("sel",+r.dataset.i===idx));
   const sel=document.querySelector("#log tr.sel");if(sel)sel.scrollIntoView({block:"nearest"});
   await loadSym(t.sym,t.tf);const bars=windowBars(t);setResult(t);
-  const pos=t.eng==="position";eqData=pos?META.plan1_curve:META.curve;
-  $("#eqtitle").textContent=pos?"Plan 1 equity · $50,000 · 0.5% per Turtle unit · 2005–2026":"Plan v2 equity · $50,000 · 0.5% per Turtle unit, 0.25% per micro trade";drawEq(t);
+  const pos=t.eng==="position",y24=t.eng==="pos24"||t.eng.startsWith("levels");eqData=y24?META.curve2024:pos?META.plan1_curve:META.curve;
+  $("#eqtitle").textContent=y24?"Plan 1 + Plan 3 equity · $50,000 · 2024 → now · 0.5% per Plan 1 unit, 0.25% per Plan 3 unit":pos?"Plan 1 equity · $50,000 · 0.5% per Turtle unit · 2005–2026":"Plan v2 equity · $50,000 · 0.5% per Turtle unit, 0.25% per micro trade";drawEq(t);
   $("#lgfvg").hidden=!(t.leg&&t.leg.fvg_lo!=null);
   if(!animate){renderSteps(t,Infinity);draw(t,bars,Infinity);if(chart)chart.timeScale().fitContent();return;}
   const start=Math.max(0,bars.findIndex(b=>b.time>=(t.leg?t.leg.frm:t.setup_t))-3);let k=start;
@@ -305,7 +348,8 @@ function drawEq(t){const c=$("#eq");if(!c||!eqData.length)return;const dpr=devic
   g.strokeStyle=css("--line");g.setLineDash([3,3]);g.beginPath();g.moveTo(pad,Y(50000));g.lineTo(w-pad,Y(50000));g.stroke();g.setLineDash([]);
   g.strokeStyle=css("--accent");g.lineWidth=1.5;g.beginPath();eqData.forEach((p,i)=>i?g.lineTo(X(p[0]),Y(p[1])):g.moveTo(X(p[0]),Y(p[1])));g.stroke();
   g.fillStyle=css("--muted");g.font="11px IBM Plex Mono, monospace";
-  [2006,2010,2014,2018,2022,2026].forEach(y=>{const ts=Date.UTC(y,0,1)/1000;if(ts>x0&&ts<x1)g.fillText(String(y),X(ts)-14,h-2);});
+  const y0=new Date(x0*1000).getUTCFullYear(),y1=new Date(x1*1000).getUTCFullYear(),stp=Math.max(1,Math.ceil((y1-y0)/6));
+  for(let y=y0;y<=y1;y+=stp){const ts=Date.UTC(y,0,1)/1000;if(ts>x0&&ts<x1)g.fillText(String(y),X(ts)-14,h-2);}
   const last=eqData[eqData.length-1];$("#eqlab").textContent=`$50,000 → ${money(last[1])}`;
   const tt=t||cur[idx];if(tt){const xm=X(tt.fill_t);g.strokeStyle=css("--gold");g.lineWidth=2;g.beginPath();g.moveTo(xm,pad);g.lineTo(xm,h-14);g.stroke();}}
 addEventListener("resize",()=>drawEq());
@@ -374,11 +418,37 @@ function buildPlans(){const P=META.plans,p1=P.plan1,pick=P.plan1_pick;
    <li><b>Plan 2 has no edge after costs on any timeframe.</b> Before spread the entries make +0.01 to +0.17R per trade. After spread every timeframe is negative or inconsistent between halves. Letting winners run did cut the average loss from about −1.2R to −0.7R, but it also cut the wins.</li>
    <li>The micro samples are short: 1m covers ${p2["1m"]["M0 fixed"].days} days and 5–30m about ${p2["15m"]["M0 fixed"].days} days. Run Plan 2 on a demo account only until it shows a profit there.</li></ul>`;}
 
+function levelSteps(t){const d=t.dir,risk=Math.abs(t.entry-t.stop),bias=b=>b>0?"bullish":b<0?"bearish":"neutral";
+  const ny=new Date(t.setup_t*1000).toLocaleString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit",hour12:false,weekday:"short"});
+  const kz=[20,0,2,6,7,9,10,15].includes(t.kz_hour);const last=t.exits[t.exits.length-1];const held=(t.exit_t-t.fill_t)/86400;
+  const adds=t.adds.length?`${t.adds.length} unit${t.adds.length>1?"s":""} added on new level reactions while the first trade was at least +1R (${t.adds.map(a=>a.name).join(", ")} levels). Add results: ${t.adds.map(a=>sgn(a.r)+"R").join(", ")}`:"No adds: the first trade never reached +1R with a fresh reaction";
+  return [
+   {at:t.setup_t,k:"Time · Weekly bias",v:`${bias(t.wbias)}: only ${d>0?"longs":"shorts"} allowed`},
+   {at:t.setup_t,k:"Time · Hour (New York)",v:`${ny} NY. ${kz?"Inside an ICT kill zone":"Outside the kill zones"}${t.eng==="levels_kz"?"":" (all-hours version)"}. Never 12:00–13:30`},
+   {at:t.setup_t,k:"Price · Level reaction",v:`Candle ${d>0?"opened above":"opened below"} the ${t.level_name} level ${px(t.level)}, ${d>0?"wicked down to":"wicked up to"} it and closed back ${d>0?"above":"below"}`},
+   {at:t.fill_t,k:"Risk · Entry and stop",v:`Entered at the next open ${px(t.entry)}. Stop ${px(t.stop)} = 1 daily ATR (1R = ${px(risk)})${t.lots!=null?`. Size ${t.lots} lots on ${money(t.eq)} equity`:""}`},
+   {at:t.exit_t,k:"Cut losses short",v:"Breakeven once +1R. Out after 120 hours if it never reached +0.5R"},
+   {at:t.exit_t,k:"Let winners run · Pyramid",v:`From +2R the stop trails the 5-day low. ${adds}`},
+   {at:t.exit_t,k:"Result",v:`Closed ${fmtT(last[0],"L1H")} at ${px(last[1])} after ${held>=1?held.toFixed(1)+" days":Math.round(held*24)+" hours"}: ${sgn(t.net_r)}R on the first unit`}];}
+function buildSince(){const S=META.since2024;if(!S)return;const v2=S.v2,ch="D-week · all hours",kz="D-week · kill zones";
+  const pc=v=>v==null?"–":`<span class="${v>0?"g":"r"}">${sgn(v)}</span>`;
+  $("#s24v1 tbody").innerHTML=Object.entries(S.tight_stop_v1).map(([k,r])=>`<tr><td>${k.slice(3)}</td><td>${r.ALL.n}</td><td>${pc(r.gross.avg)}</td><td>${pc(r.IS.avg)}</td><td>${pc(r.OOS.avg)}</td><td>${r.ALL.win}%</td><td>${r.ALL.r10}</td><td>${r.ALL.r50}</td><td>${r.ALL.best}R</td></tr>`).join("");
+  $("#s24v2 tbody").innerHTML=Object.entries(v2).map(([k,r])=>`<tr><td>${k}</td><td>${r.ALL.n}</td><td>${r.adds.n}</td><td>${pc(r.IS.avg)}</td><td>${pc(r.OOS.avg)}</td><td>${r.ALL.win}%</td><td>${r.ALL.r10}</td><td>${r.ALL.best}R</td><td>${r.hold_days} d</td><td>${k===ch?'<span class="chip ok">Chosen</span>':k===kz?'<span class="chip warn">Your kill-zone rule</span>':"–"}</td></tr>`).join("");
+  $("#s24plans tbody").innerHTML=S.plans_50k.map(r=>`<tr><td>${r.plan}</td><td>${r.trades}</td><td>${money(r.final)}</td><td class="g">+${r.ret_pct}%</td><td>${r.cagr_pct}%</td><td>${r.max_dd}%</td><td>${r.pf}</td><td>${r.win_rate}%</td></tr>`).join("");
+  $("#s24hour tbody").innerHTML=Object.entries(v2[kz].by_hour).map(([h,r])=>`<tr><td>${String(h).padStart(2,"0")}:00</td><td>${r.n}</td><td>${pc(r.avg)}</td></tr>`).join("")+Object.entries(v2[ch].by_level).map(([n,r])=>`<tr><td>level ${n}</td><td>${r.n}</td><td>${pc(r.avg)}</td></tr>`).join("");}
+let PROP=null;
+async function buildProp(){if(!PROP){try{PROP=await (await fetch("replay/prop.json")).json();}catch(e){$("#proptab tbody").innerHTML='<tr><td>Could not load the prop study.</td></tr>';return;}}
+  const m=$("#pmode").value;const roll={};PROP.rolling.forEach(r=>roll[r.account+"|"+r.mode]=r);
+  $("#proptab tbody").innerHTML=PROP.results.filter(r=>r.mode===m).map(r=>{const rr=roll[r.account+"|"+m];const lots=r.lots.map(x=>`${x.symbol} ${x.median}/${x.max}`).join(" · ")||"none";
+    return `<tr><td>${r.account}</td><td>${money(r.fee)}</td><td>${r.trades}</td><td>${r.skipped_min_lot}</td><td>${r.payouts}</td><td class="${r.paid_to_trader>0?"g":""}">${money(r.paid_to_trader)}</td><td class="${r.net_profit>0?"g":"r"}">${money(r.net_profit)}</td><td>${r.worst_dd_pct}%</td><td>${r.breach?'<span class="chip bad">'+r.breach+'</span>':'<span class="chip ok">none</span>'}</td><td>${rr.breached}/${rr.starts}</td><td>${money(rr.median_paid_6m)}</td><td>${money(r.vs_real.end_balance)} · ${r.vs_real.trades} trades</td><td style="white-space:normal;min-width:240px;text-align:left">${lots}</td></tr>`;}).join("");
+  const sz=+$("#psize").value;
+  $("#lottab tbody").innerHTML=PROP.lots_recommended.filter(r=>r.account===sz).map(r=>`<tr><td>${r.mode}</td><td>${r.plan==="Plan 1"?"Plan 1 position":"Plan 3 levels"}</td><td>${r.risk_pct}%</td>${["XAUUSD","XAGUSD","BTCUSD","US500","NAS100"].map(k=>`<td>${r[k]>0?r[k].toFixed(2):'<span class="note">below 0.01</span>'}</td>`).join("")}</tr>`).join("");}
+
 /* ---------- boot ---------- */
 async function boot(){route();
   try{META=await (await fetch("replay/meta.json")).json();}catch(e){$("#chart").innerHTML='<div class="loading">Could not load the backtest data.</div>';return;}
   eqData=META.curve;$("#sym").innerHTML=META.symbols.map(s=>`<option>${s}</option>`).join("");$("#sym").value="US500";
-  makeChart();buildReverse();buildTime();buildPlan();buildPlans();$("#eng").value="position";
+  makeChart();buildReverse();buildTime();buildPlan();buildPlans();buildSince();buildProp();$("#pmode").onchange=buildProp;$("#psize").onchange=buildProp;$("#eng").value="position";
   const pick=()=>{filterTrades();idx=Math.max(0,cur.findIndex(t=>t.status==="taken"&&t.adds.length>1&&t.net_r>0));renderLog();show(false);};
   ["#sym","#eng","#stat"].forEach(s=>$(s).addEventListener("change",pick));
   $("#prev").onclick=()=>{idx--;show(false);};$("#next").onclick=()=>{idx++;show(false);};

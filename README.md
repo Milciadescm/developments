@@ -72,6 +72,19 @@ negative or inconsistent between halves; 1m only 26 days and 5–30m about 81 da
 loss from ~−1.2R to ~−0.7R but also cut the wins. `UseMicroEngine` now defaults to false; use `MicroTF` + `MicroLetRun`
 on a demo account only.
 
+## Since 2024 and prop accounts (`python -m fibfvg.since2024`, `python -m fibfvg.prop_study`)
+
+Only 2024+ data. Plan 3 = reaction at 00/20/50/60/80 levels (1H), stop 1 daily ATR, breakeven at +1R, 5-day-low trail
+from +2R, adds only while the first trade is >= +1R. A tight wick stop (the rule as first written) lost on every exit style.
+Kill-zone-only entries were no better than all hours (NY lunch always blocked).
+
+$50k, Jul 2024 → Nov 2026: Plan 1 +60% (DD 6%), Plan 3 +57% (DD 20%), both +110% (37%/yr, DD 22%).
+
+Prop study (FundedNext Stellar Instant $2K–$20K, Instant Premium $15K–$100K): no breach in any mode or in 23 rolling
+start months, thanks to the drawdown-budget guard. Normal mode paid the most on most accounts. The same cash in a real
+account ($60–$740) can't open even 0.01 lot on these stops. Under $50K only US500/NAS100 can be sized.
+Install and settings: `INSTALL.md`. Bots: `mql5/FibFVG_Pro.mq5`, `mql4/FibFVG_Pro.mq4`, `ctrader/FibFVGPro.cs`.
+
 ## Limits
 
 - The S&P 15s/30s/45s FVG idea is in the EA as an experimental module (`UseSecondsScalper`, off by default). It is **not backtested**: no second-level history was available.

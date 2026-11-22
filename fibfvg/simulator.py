@@ -131,7 +131,7 @@ def simulate(trades, capital: float, risk: RiskConfig, record=True):
 def stats(res, capital):
     f = res["fills"]
     if not f:
-        return dict(trades=0, final=res["final"], ret_pct=0, win_rate=0, pf=0, avg_r=0,
+        return dict(trades=0, final=res["final"], ret_pct=0, cagr_pct=0, years=0, win_rate=0, pf=0, avg_r=0,
                     max_dd=res["max_dd"], **res["skipped"], breach=res["breach"])
     pnl = np.array([x.pnl_usd for x in f])
     wins, losses = pnl[pnl > 0].sum(), -pnl[pnl < 0].sum()

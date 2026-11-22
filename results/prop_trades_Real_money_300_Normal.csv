@@ -1,0 +1,2 @@
+symbol,plan,engine,entry_time,exit_time,dir,entry,stop,lots,risk_usd,pnl,net_r,mode,equity
+US500,Plan 3,levels,2025-12-17 17:00:00+00:00,2025-12-17 17:00:00+00:00,1,6753.25,6723.802071685762,0.01,0.29,-0.01,-0.024,Normal,299.99
