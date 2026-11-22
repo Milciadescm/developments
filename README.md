@@ -50,6 +50,28 @@ Run it again: `pip install pandas numpy yfinance` then `python -m fibfvg.run_bac
 
 `python -m fibfvg.export_replay` writes the data for `results/lab.html`, the trade-by-trade replay page.
 
+## Two plans: cut losses short, let winners run
+
+`python -m fibfvg.plans_study` (results in `results/plans.json`, replay in `results/lab.html` → "Two plans").
+
+**Plan 1 · Position (weeks to months).** Same entry as the weekly engine. Exit styles chosen on 2005–15, checked on 2016–26:
+
+| Exit style | Net R/trade 2005–15 | 2016–26 | Median hold | $50k 2005–26 |
+|---|---|---|---|---|
+| V1 (fixed targets) | +0.08 | +0.21 | 6 d | 1.7%/yr, DD 26% |
+| Run, 20-day trail | +0.34 | +0.60 | 4 d | 5.6%/yr, DD 25% |
+| Chandelier + time stop | +0.18 | +0.44 | 10 d | 4.7%/yr, DD 18% |
+| **Monthly (default)** | **+0.38** | **+1.66** | 18 d (top 10%: 7+ months) | **10.7%/yr, DD 36%** |
+
+Monthly = half off at −0.272, breakeven, runner trails the 55-day low, out after 10 days if never +0.5R.
+Adds close with the first unit. Chandelier is the funded-account choice (0.25% risk since 2016: 3.2%/yr, 3.6% max DD, no breach).
+EA: `PositionExit`, `TimeStopDays`, `TimeStopMinR`. Pine: "Plan 1 exit style".
+
+**Plan 2 · Micro (1m, 5m, 15m, 30m, 1H).** No timeframe has an edge after spread (gross +0.01 to +0.17R, net
+negative or inconsistent between halves; 1m only 26 days and 5–30m about 81 days of data). Letting winners run cut the average
+loss from ~−1.2R to ~−0.7R but also cut the wins. `UseMicroEngine` now defaults to false; use `MicroTF` + `MicroLetRun`
+on a demo account only.
+
 ## Limits
 
 - The S&P 15s/30s/45s FVG idea is in the EA as an experimental module (`UseSecondsScalper`, off by default). It is **not backtested**: no second-level history was available.

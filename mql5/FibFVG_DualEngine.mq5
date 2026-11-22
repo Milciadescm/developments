@@ -1,6 +1,6 @@
 //+------------------------------------------------------------------+
 //|                                          FibFVG_DualEngine.mq5   |
-//|  Weekly swing engine  : MN1+W1 bias -> D1 Turtle breakout leg ->  |
+//|  Plan 1 (position)    : MN1+W1 bias -> D1 Turtle breakout leg ->  |
 //|                         OTE (0.705) limit, needs a D1 FVG in leg, |
 //|                         TP1 -0.272 ext (50% off + BE),            |
 //|                         TP2 -0.618 ext, runner trails Turtle 20d, |
@@ -20,9 +20,17 @@ CTrade trade;
 
 //--- engines
 input bool   UseWeeklyEngine     = true;
-input bool   UseMicroEngine      = true;
+input bool   UseMicroEngine      = false;   // Plan 2: no edge after costs in testing -> demo only
 input bool   UseSecondsScalper   = false;   // EXPERIMENTAL, forward-test on demo only
 //--- money management (fraction of equity at risk per trade / unit)
+enum ENUM_POS_EXIT { EXIT_MONTHLY = 0,      // Plan 1 default: half at TP1, runner trails 55-day low, 10-day time stop
+                     EXIT_CHANDELIER = 1,   // prop accounts: no target, HH - 3N trail, BE at +1R, 10-day time stop
+                     EXIT_V1 = 2 };         // old: TP1 half + TP2, 20-day trail
+input ENUM_POS_EXIT PositionExit = EXIT_MONTHLY;
+input int    TimeStopDays        = 10;      // cut losers: exit if not +0.5R after this many days
+input double TimeStopMinR        = 0.5;
+input ENUM_TIMEFRAMES MicroTF    = PERIOD_H4; // Plan 2 timeframe: M1, M5, M15, M30, H1 or H4
+input bool   MicroLetRun         = true;    // no target: BE at +1R, trail 3-bar extreme, 6-bar time stop
 input double WeeklyUnitRiskPct   = 0.50;    // % per Turtle unit (personal acct). Prop: 0.10-0.25
 input double MicroRiskPct        = 0.25;    // % per 4H micro trade.              Prop: 0.10
 input double ScalpRiskPct        = 0.10;    // % per seconds scalp
@@ -58,6 +66,7 @@ input long   MagicBase           = 7705618;
 
 long MW, MWA, MM, MS;                       // magics: weekly, weekly add, micro, scalp
 datetime lastD1 = 0, lastH4 = 0;
+double   g_risk = 0; double m_risk = 0;
 double   g_tp1 = 0, g_entryW = 0, g_lastAdd = 0, g_N = 0;  bool g_tp1Done = false;
 double   dayStartEq = 0, peakEq = 0, startBal = 0; int curDay = -1; bool halted = false;
 
@@ -220,6 +229,8 @@ void WeeklyNewBar()
    double sl    = origin - dir * 0.25 * N;
    double tp2   = extreme + dir * Ext_TP2 * rng;
    g_tp1 = extreme + dir * Ext_TP1 * rng; g_entryW = entry; g_N = N; g_tp1Done = false; g_lastAdd = entry;
+   g_risk = MathAbs(entry - sl);
+   if(PositionExit != EXIT_V1) tp2 = 0;   // let winners run: no fixed final target
    double lots = LotsForRisk(WeeklyUnitRiskPct, MathAbs(entry - sl));
    if(lots <= 0 || !RiskAllows(lots, MathAbs(entry - sl))) return;
    DeleteOrders(MW);   // a fresh breakout replaces the older setup (leg extended)
@@ -231,8 +242,43 @@ void WeeklyNewBar()
 
 void WeeklyManage()
 {
-   double trailL = LowestL(PERIOD_D1, 1, ExitLen), trailH = HighestH(PERIOD_D1, 1, ExitLen);
-   int mainDir = 0; double mainTP = 0;
+   int nMain = CountPositions(MW), nAdd = CountPositions(MWA);
+   // one idea, one position: adds never outlive the first unit
+   if(nMain == 0 && nAdd > 0)
+   {
+      for(int i = PositionsTotal() - 1; i >= 0; i--)
+      { ulong tk = PositionGetTicket(i); if(PositionSelectByTicket(tk) && PositionGetString(POSITION_SYMBOL) == _Symbol && PositionGetInteger(POSITION_MAGIC) == MWA) trade.PositionClose(tk); }
+      return;
+   }
+   if(nMain == 0) return;
+   int mainDir = 0; double mainTP = 0, mfeR = 0; bool timeOut = false;
+   datetime openT = 0;
+   // locate the main unit, measure its best excursion in R since entry
+   for(int i = PositionsTotal() - 1; i >= 0; i--)
+   {
+      ulong tk = PositionGetTicket(i); if(!PositionSelectByTicket(tk)) continue;
+      if(PositionGetString(POSITION_SYMBOL) != _Symbol || PositionGetInteger(POSITION_MAGIC) != MW) continue;
+      mainDir = PositionGetInteger(POSITION_TYPE) == POSITION_TYPE_BUY ? 1 : -1;
+      mainTP = PositionGetDouble(POSITION_TP);
+      openT = (datetime)PositionGetInteger(POSITION_TIME);
+      double op = PositionGetDouble(POSITION_PRICE_OPEN);
+      int sh = iBarShift(_Symbol, PERIOD_D1, openT);
+      double best = mainDir == 1 ? HighestH(PERIOD_D1, 0, sh + 1) : LowestL(PERIOD_D1, 0, sh + 1);
+      if(g_risk <= 0) g_risk = MathAbs(op - PositionGetDouble(POSITION_SL));
+      mfeR = g_risk > 0 ? (best - op) * mainDir / g_risk : 0;
+      if(PositionExit != EXIT_V1 && sh >= TimeStopDays && mfeR < TimeStopMinR) timeOut = true;
+   }
+   if(timeOut) { for(long m = MW; m <= MWA; m++) for(int i = PositionsTotal() - 1; i >= 0; i--) { ulong tk = PositionGetTicket(i); if(PositionSelectByTicket(tk) && PositionGetString(POSITION_SYMBOL) == _Symbol && PositionGetInteger(POSITION_MAGIC) == m) trade.PositionClose(tk); } Print("Time stop: trade never reached +", TimeStopMinR, "R"); return; }
+
+   double trail = 0;   // 0 = no trail yet
+   if(PositionExit == EXIT_V1) trail = mainDir == 1 ? LowestL(PERIOD_D1, 1, ExitLen) : HighestH(PERIOD_D1, 1, ExitLen);
+   else if(PositionExit == EXIT_MONTHLY && g_tp1Done) trail = mainDir == 1 ? LowestL(PERIOD_D1, 1, 55) : HighestH(PERIOD_D1, 1, 55);
+   else if(PositionExit == EXIT_CHANDELIER && g_N > 0)
+   {
+      int sh = iBarShift(_Symbol, PERIOD_D1, openT);
+      double ext = mainDir == 1 ? HighestH(PERIOD_D1, 1, MathMax(sh, 1)) : LowestL(PERIOD_D1, 1, MathMax(sh, 1));
+      trail = ext - mainDir * 3.0 * g_N;
+   }
    for(int i = PositionsTotal() - 1; i >= 0; i--)
    {
       ulong tk = PositionGetTicket(i); if(!PositionSelectByTicket(tk)) continue;
@@ -241,27 +287,31 @@ void WeeklyManage()
       int d = PositionGetInteger(POSITION_TYPE) == POSITION_TYPE_BUY ? 1 : -1;
       double sl = PositionGetDouble(POSITION_SL), tp = PositionGetDouble(POSITION_TP), op = PositionGetDouble(POSITION_PRICE_OPEN);
       double px = d == 1 ? SymbolInfoDouble(_Symbol, SYMBOL_BID) : SymbolInfoDouble(_Symbol, SYMBOL_ASK);
+      bool be = false;
       if(mg == MW)
       {
-         mainDir = d; mainTP = tp;
-         if(!g_tp1Done && g_tp1 > 0 && (d == 1 ? px >= g_tp1 : px <= g_tp1))
+         if(PositionExit != EXIT_CHANDELIER && !g_tp1Done && g_tp1 > 0 && (d == 1 ? px >= g_tp1 : px <= g_tp1))
          {
-            double half = MathFloor(PositionGetDouble(POSITION_VOLUME) / 2 / SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_STEP)) * SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_STEP);
+            double step = SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_STEP);
+            double half = MathFloor(PositionGetDouble(POSITION_VOLUME) / 2 / step) * step;
             if(half >= SymbolInfoDouble(_Symbol, SYMBOL_VOLUME_MIN)) trade.PositionClosePartial(tk, half);
             g_tp1Done = true;
-            sl = d == 1 ? MathMax(sl, op) : MathMin(sl, op);
          }
+         be = g_tp1Done || (PositionExit == EXIT_CHANDELIER && mfeR >= 1.0);
       }
-      double nsl = d == 1 ? MathMax(sl, trailL) : MathMin(sl == 0 ? DBL_MAX : sl, trailH);  // Turtle 20-day exit
+      double nsl = sl;
+      if(be) nsl = d == 1 ? MathMax(nsl, op) : (nsl == 0 ? op : MathMin(nsl, op));
+      if(trail > 0) nsl = d == 1 ? MathMax(nsl, trail) : (nsl == 0 ? trail : MathMin(nsl, trail));
       if(MathAbs(nsl - sl) > _Point && (d == 1 ? nsl < px : nsl > px)) trade.PositionModify(tk, NormPrice(nsl), tp);
    }
-   // Turtle pyramid: +1 unit every 0.5N, max units, adds use 2N stop and share TP2
+   // Turtle pyramid: +1 unit every 0.5N, max units, adds use a 2N stop
    if(mainDir != 0 && g_N > 0)
    {
       int units = CountPositions(MW) + CountPositions(MWA);
       double px = mainDir == 1 ? SymbolInfoDouble(_Symbol, SYMBOL_ASK) : SymbolInfoDouble(_Symbol, SYMBOL_BID);
       double nxt = g_lastAdd + mainDir * PyramidStepN * g_N;
-      if(units < MaxUnitsPerSymbol && (mainDir == 1 ? px >= nxt : px <= nxt) && (mainDir == 1 ? px < mainTP : px > mainTP))
+      bool belowTP = mainTP == 0 || (mainDir == 1 ? px < mainTP : px > mainTP);
+      if(units < MaxUnitsPerSymbol && (mainDir == 1 ? px >= nxt : px <= nxt) && belowTP)
       {
          double sl = px - mainDir * AddStopN * g_N;
          double lots = LotsForRisk(WeeklyUnitRiskPct, AddStopN * g_N);
@@ -274,31 +324,50 @@ void WeeklyManage()
          }
       }
    }
-   else if(CountPositions(MWA) > 0 && CountPositions(MW) == 0) { /* adds keep their own 2N / 20d stops */ }
 }
 
-//------------------------------------------------------------------ micro engine (H4)
-void MicroNewBar()
+//------------------------------------------------------------------ micro engine (MicroTF)
+void MicroManage()
 {
-   // time exit
+   int per = PeriodSeconds(MicroTF);
    for(int i = PositionsTotal() - 1; i >= 0; i--)
    {
       ulong tk = PositionGetTicket(i); if(!PositionSelectByTicket(tk)) continue;
       if(PositionGetString(POSITION_SYMBOL) != _Symbol || PositionGetInteger(POSITION_MAGIC) != MM) continue;
-      if(TimeCurrent() - (datetime)PositionGetInteger(POSITION_TIME) >= MicroMaxHoldBars * 4 * 3600) trade.PositionClose(tk);
+      datetime ot = (datetime)PositionGetInteger(POSITION_TIME);
+      int held = (int)((TimeCurrent() - ot) / per);
+      if(!MicroLetRun) { if(held >= MicroMaxHoldBars) trade.PositionClose(tk); continue; }
+      int d = PositionGetInteger(POSITION_TYPE) == POSITION_TYPE_BUY ? 1 : -1;
+      double op = PositionGetDouble(POSITION_PRICE_OPEN), sl = PositionGetDouble(POSITION_SL), tp = PositionGetDouble(POSITION_TP);
+      int sh = iBarShift(_Symbol, MicroTF, ot);
+      double best = d == 1 ? HighestH(MicroTF, 0, sh + 1) : LowestL(MicroTF, 0, sh + 1);
+      double risk = m_risk > 0 ? m_risk : MathAbs(op - sl);
+      double mfe = risk > 0 ? (best - op) * d / risk : 0;
+      if((held >= 6 && mfe < 0.5) || held >= 120) { trade.PositionClose(tk); continue; }   // cut losers short
+      if(mfe >= 1.0)                                                                         // let winners run
+      {
+         double tr = d == 1 ? LowestL(MicroTF, 1, 3) : HighestH(MicroTF, 1, 3);
+         double nsl = d == 1 ? MathMax(MathMax(sl, op), tr) : MathMin(sl == 0 ? op : MathMin(sl, op), tr);
+         double px = d == 1 ? SymbolInfoDouble(_Symbol, SYMBOL_BID) : SymbolInfoDouble(_Symbol, SYMBOL_ASK);
+         if(MathAbs(nsl - sl) > _Point && (d == 1 ? nsl < px : nsl > px)) trade.PositionModify(tk, NormPrice(nsl), tp);
+      }
    }
+}
+
+void MicroNewBar()
+{
    // plan v2 time rule: cancel / skip micro orders on Thu-Sun (UTC)
    MqlDateTime g; TimeToStruct(TimeGMT(), g);
    bool dayOK = !MicroMonWedOnly || (g.day_of_week >= 1 && g.day_of_week <= 3);
    if(!dayOK) { DeleteOrders(MM); return; }
    if(CountPositions(MM) > 0 || CountOrders(MM) > 0) return;
    int dir = WeeklyBias(); if(dir == 0) return;
-   double a = WilderATR(PERIOD_H4, 14, 2);
-   double h1 = Hi(PERIOD_H4, 1), l1 = Lo(PERIOD_H4, 1), h3 = Hi(PERIOD_H4, 3), l3 = Lo(PERIOD_H4, 3);
-   bool disp = (Hi(PERIOD_H4, 2) - Lo(PERIOD_H4, 2)) > MicroDispATR * a && (Cl(PERIOD_H4, 2) - Op(PERIOD_H4, 2)) * dir > 0;
+   double a = WilderATR(MicroTF, 14, 2);
+   double h1 = Hi(MicroTF, 1), l1 = Lo(MicroTF, 1), h3 = Hi(MicroTF, 3), l3 = Lo(MicroTF, 3);
+   bool disp = (Hi(MicroTF, 2) - Lo(MicroTF, 2)) > MicroDispATR * a && (Cl(MicroTF, 2) - Op(MicroTF, 2)) * dir > 0;
    bool fvg = dir == 1 ? l1 > h3 : h1 < l3;
    if(!disp || !fvg) return;
-   double origin = dir == 1 ? LowestL(PERIOD_H4, 2, 5) : HighestH(PERIOD_H4, 2, 5);
+   double origin = dir == 1 ? LowestL(MicroTF, 2, 5) : HighestH(MicroTF, 2, 5);
    double extreme = dir == 1 ? h1 : l1;
    double rng = MathAbs(extreme - origin);
    double entry = extreme - dir * OTE_Entry * rng;
@@ -306,13 +375,17 @@ void MicroNewBar()
    double sl = origin - dir * 0.1 * a;
    double tp = extreme + dir * Ext_TP2 * rng;
    double risk = MathAbs(entry - sl);
-   if(risk <= 0 || MathAbs(tp - entry) / risk < MicroMinRR) return;
+   double spr = SymbolInfoDouble(_Symbol, SYMBOL_ASK) - SymbolInfoDouble(_Symbol, SYMBOL_BID);
+   if(risk < 3 * spr || MathAbs(tp - entry) / risk < MicroMinRR) return;   // stop must be >= 3x spread
+   m_risk = risk;
+   if(MicroLetRun) tp = 0;   // let winners run: no fixed target
    trade.SetExpertMagicNumber(MM);
-   datetime exp = TimeCurrent() + MicroExpiryBars * 4 * 3600;
+   datetime exp = TimeCurrent() + MicroExpiryBars * PeriodSeconds(MicroTF);
    if(MicroReverse)
    {
       // mirror reverse: opposite side at the same price, stop at the original
       // target, target at the original stop (stop order, since price must come to it)
+      if(tp == 0) tp = extreme + dir * Ext_TP2 * rng;
       double rrisk = MathAbs(tp - entry);
       double rl = LotsForRisk(MicroRiskPct, rrisk);
       if(rl <= 0 || !RiskAllows(rl, rrisk)) return;
@@ -374,8 +447,9 @@ void OnTick()
    if(UseWeeklyEngine) WeeklyManage();
    datetime d1 = iTime(_Symbol, PERIOD_D1, 0);
    if(d1 != lastD1) { lastD1 = d1; if(UseWeeklyEngine) WeeklyNewBar(); }
-   datetime h4 = iTime(_Symbol, PERIOD_H4, 0);
-   if(h4 != lastH4) { lastH4 = h4; if(UseMicroEngine) MicroNewBar(); }
+   if(UseMicroEngine) MicroManage();
+   datetime mb = iTime(_Symbol, MicroTF, 0);
+   if(mb != lastH4) { lastH4 = mb; if(UseMicroEngine) MicroNewBar(); }
    if(UseSecondsScalper) ScalperTick();
 }
 //+------------------------------------------------------------------+

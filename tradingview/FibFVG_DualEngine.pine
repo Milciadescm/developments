@@ -1,12 +1,16 @@
 //@version=6
 // Fib-FVG Dual Engine -- forward-test version for TradingView.
-// Mode "Weekly swing"  -> put on a 1D chart.  Mode "Micro 4H" -> put on a 4H chart.
+// Mode "Weekly swing" = Plan 1 (position) -> 1D chart.
+// Mode "Micro 4H"     = Plan 2 micro engine -> any intraday chart (1m..4H); demo only, no edge after costs in testing.
 // Same rules as the Python backtest and the MT5 EA (see README.md).
 strategy("Fib-FVG Dual Engine", overlay = true, pyramiding = 4, initial_capital = 50000,
      default_qty_type = strategy.fixed, commission_type = strategy.commission.percent, commission_value = 0.01,
      process_orders_on_close = false, calc_on_every_tick = false)
 
 mode        = input.string("Weekly swing", "Engine", options = ["Weekly swing", "Micro 4H"])
+posExit     = input.string("Monthly", "Plan 1 exit style", options = ["Monthly", "Chandelier", "V1"])
+timeStopD   = input.int(10, "Plan 1 time stop (days without +0.5R)")
+microRun    = input.bool(true, "Plan 2: let winners run (BE at +1R, 3-bar trail, 6-bar time stop)")
 unitRisk    = input.float(0.50, "Weekly risk % per Turtle unit", step = 0.05)
 microRisk   = input.float(0.25, "Micro risk % per trade", step = 0.05)
 oteLvl      = input.float(0.705, "OTE entry level")
@@ -84,27 +88,53 @@ if isWeekly and strategy.position_size == 0
             strategy.entry("W", sDir == 1 ? strategy.long : strategy.short, qty = q, limit = sEntry)
             tp1Done := false, units := 1, lastAdd := sEntry, posN := N[1]
 
+var int   wEntryBar = na
+var float wBest = na
+trail55L = ta.lowest(low, 55)[1]
+trail55H = ta.highest(high, 55)[1]
 if isWeekly and strategy.position_size != 0
     sBorn := na
     d = strategy.position_size > 0 ? 1 : -1
-    if (d == 1 and high >= sTP1) or (d == -1 and low <= sTP1)
+    if na(wEntryBar)
+        wEntryBar := bar_index
+        wBest := d == 1 ? high : low
+    wBest := d == 1 ? math.max(wBest, high[1]) : math.min(wBest, low[1])
+    risk1 = math.abs(sEntry - sStop)
+    mfe = risk1 > 0 ? (wBest - sEntry) * d / risk1 : 0.0
+    if posExit != "Chandelier" and ((d == 1 and high >= sTP1) or (d == -1 and low <= sTP1))
         tp1Done := true
-    baseStop = d == 1 ? math.max(sStop, trailL) : math.min(sStop, trailH)
-    mainStop = tp1Done ? (d == 1 ? math.max(baseStop, sEntry) : math.min(baseStop, sEntry)) : baseStop
-    strategy.exit("W-TP1", "W", qty_percent = 50, limit = sTP1, stop = mainStop)
-    strategy.exit("W-TP2", "W", limit = sTP2, stop = mainStop)
-    // Turtle pyramid: +1 unit every 0.5N, max 4 units, 2N stop on each add
+    // cut losses short: time stop
+    if posExit != "V1" and bar_index - wEntryBar >= timeStopD and mfe < 0.5
+        strategy.close_all(comment = "time stop")
+    float mainStop = sStop
+    if posExit == "V1"
+        mainStop := d == 1 ? math.max(sStop, trailL) : math.min(sStop, trailH)
+    else if posExit == "Monthly"
+        mainStop := tp1Done ? (d == 1 ? math.max(sEntry, trail55L) : math.min(sEntry, trail55H)) : sStop
+    else
+        chand = wBest - d * 3 * posN
+        mainStop := d == 1 ? math.max(sStop, chand) : math.min(sStop, chand)
+        if mfe >= 1.0
+            mainStop := d == 1 ? math.max(mainStop, sEntry) : math.min(mainStop, sEntry)
+    if posExit == "V1" and tp1Done
+        mainStop := d == 1 ? math.max(mainStop, sEntry) : math.min(mainStop, sEntry)
+    useTP2 = posExit == "V1"
+    if posExit != "Chandelier"
+        strategy.exit("W-TP1", "W", qty_percent = 50, limit = sTP1, stop = mainStop)
+    strategy.exit("W-RUN", "W", limit = useTP2 ? sTP2 : na, stop = mainStop)
+    // Turtle pyramid: +1 unit every 0.5N, max 4 units; adds exit with the main stop (one idea, one position)
     nxt = lastAdd + d * 0.5 * posN
-    if units < 4 and ((d == 1 and close >= nxt and close < sTP2) or (d == -1 and close <= nxt and close > sTP2))
+    capOK = not useTP2 or (d == 1 ? close < sTP2 : close > sTP2)
+    if units < 4 and capOK and ((d == 1 and close >= nxt) or (d == -1 and close <= nxt))
         units += 1
         lastAdd := nxt
         strategy.entry("A" + str.tostring(units), d == 1 ? strategy.long : strategy.short, qty = qtyFor(unitRisk, 2 * posN))
     for k = 2 to 4
-        addStop = d == 1 ? math.max(lastAdd - 2 * posN, trailL) : math.min(lastAdd + 2 * posN, trailH)
-        strategy.exit("A" + str.tostring(k) + "-X", "A" + str.tostring(k), limit = sTP2, stop = addStop)
+        addStop = d == 1 ? math.max(lastAdd - 2 * posN, mainStop) : math.min(lastAdd + 2 * posN, mainStop)
+        strategy.exit("A" + str.tostring(k) + "-X", "A" + str.tostring(k), limit = useTP2 ? sTP2 : na, stop = addStop)
 
 if isWeekly and strategy.position_size == 0 and strategy.position_size[1] != 0
-    sDir := 0, units := 0
+    sDir := 0, units := 0, wEntryBar := na
 
 // =====================================================================
 // MICRO ENGINE (4H chart)
@@ -152,18 +182,35 @@ if isMicro and strategy.position_size == 0
                 else
                     strategy.entry("M", strategy.short, qty = qtyFor(microRisk, s - e), limit = e)
 
+var float mBest = na
+low3 = ta.lowest(low, 3)[1]
+high3 = ta.highest(high, 3)[1]
 if isMicro and strategy.position_size != 0
+    md = strategy.position_size > 0 ? 1 : -1
     if na(mEntryBar)
         mEntryBar := bar_index
+        mBest := md == 1 ? high : low
+    mBest := md == 1 ? math.max(mBest, high[1]) : math.min(mBest, low[1])
     mBorn := na
-    strategy.exit("M-X", "M", stop = mStop, limit = mTP)
-    if bar_index - mEntryBar >= microHold
-        strategy.close("M", comment = "time")
+    held = bar_index - mEntryBar
+    if microRun and not microRev
+        mr = math.abs(mEntry - mStop)
+        mfeM = mr > 0 ? (mBest - mEntry) * md / mr : 0.0
+        float ms = mStop
+        if mfeM >= 1.0
+            ms := md == 1 ? math.max(mEntry, low3) : math.min(mEntry, high3)   // breakeven, then 3-bar trail
+        strategy.exit("M-X", "M", stop = ms)
+        if (held >= 6 and mfeM < 0.5) or held >= 120
+            strategy.close("M", comment = "time stop")
+    else
+        strategy.exit("M-X", "M", stop = mStop, limit = mTP)
+        if held >= microHold
+            strategy.close("M", comment = "time")
 if isMicro and strategy.position_size == 0
     mEntryBar := na
 
 // ---------- visuals
 plot(isWeekly and not na(sBorn) ? sEntry : na, "OTE entry", color.orange, 1, plot.style_linebr)
 plot(isWeekly and strategy.position_size != 0 ? sTP1 : na, "TP1 -0.272", color.teal, 1, plot.style_linebr)
-plot(isWeekly and strategy.position_size != 0 ? sTP2 : na, "TP2 -0.618", color.green, 1, plot.style_linebr)
+plot(isWeekly and posExit == "V1" and strategy.position_size != 0 ? sTP2 : na, "TP2 -0.618", color.green, 1, plot.style_linebr)
 bgcolor(wBias == 1 and (isMicro or mBias == 1) ? color.new(color.green, 94) : wBias == -1 and (isMicro or mBias == -1) ? color.new(color.red, 94) : na)
