@@ -69,7 +69,8 @@ def load_sym(s):
     return d, h
 
 
-def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick", kz=True, ts_bars=8):
+def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick", kz=True, ts_bars=8,
+           half_at=None, stop_k=1.0, skip_days=None):
     unit = UNIT[symbol]
     spread = SYMBOLS[symbol].spread
     b = htf_bias(daily)
@@ -146,26 +147,31 @@ def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick"
                         if (hh - u._e) / u._r >= 1.0 or (u is not first and mfe1 >= 1.0):
                             st = max(st, u._e if u is first else max(u._s, first._e))
                         st = max(st, trail)
+                    rem = 1.0 - sum(f for _, _, f in u.exits)
                     if l[i] <= st:
-                        u.exits.append((times[i], d * min(o[i], st), 1.0)); closed.append(u); continue
+                        u.exits.append((times[i], d * min(o[i], st), rem)); closed.append(u); continue
+                    if half_at is not None and not getattr(u, "_half", False) and h[i] >= u._e + half_at * u._r:
+                        u.exits.append((times[i], d * max(o[i], u._e + half_at * u._r), 0.5)); u._half = True
                     if exit_mode == "X0 fixed3R" and h[i] >= u._e + 3 * u._r:
                         u.exits.append((times[i], d * max(o[i], u._e + 3 * u._r), 1.0)); closed.append(u); continue
                 # cut losers short: time stop on the first unit
                 if first not in closed and (i - first.bar) >= ts_bars and mfe1 < 0.5:
                     for u in units:
                         if u not in closed:
-                            u.exits.append((times[i], d * c[i], 1.0)); closed.append(u)
+                            u.exits.append((times[i], d * c[i], 1.0 - sum(f for _, _, f in u.exits))); closed.append(u)
                 if first in closed:      # adds never outlive the first unit
                     xt, xp, _ = first.exits[-1]
                     for u in units:
                         if u not in closed:
-                            u.exits.append((xt, xp, 1.0)); closed.append(u)
+                            u.exits.append((xt, xp, 1.0 - sum(f for _, _, f in u.exits))); closed.append(u)
                 units = [u for u in units if u not in closed]
                 if not units:
                     first = None; hh = None
             # ---- look for a reaction on bar i (signal for bar i+1)
             hr = hours[i]
             if (kz and hr not in KZ_HOURS) or hr in LUNCH or bias[i] != d or np.isnan(a[i]) or np.isnan(datr_h[i]):
+                continue
+            if skip_days is not None and str(ny[i].date()) in skip_days:
                 continue
             if units and (len(units) >= max_units or (hh - first._e) / first._r < 1.0):
                 continue
@@ -175,12 +181,13 @@ def engine(symbol, daily, h1, exit_mode, max_units=5, log=None, stop_mode="wick"
             if not hit:
                 continue
             L = max(hit)
-            stp = l[i] - 0.1 * a[i] if stop_mode == "wick" else c[i] - datr_h[i]
+            stp = l[i] - 0.1 * a[i] if stop_mode == "wick" else c[i] - stop_k * datr_h[i]
             pending = dict(stop=stp, L=L, name=level_name(d * L, unit), hour=int(hr))
             if log is not None:
                 log.append(dict(t=str(times[i]), dir=d, level=d * L, name=pending["name"], hour=int(hr)))
     end = times[-1]
     for t in trades:
-        if not t.exits:
-            t.exits.append((end, float(h1.Close.iloc[-1]), 1.0))
+        rem = 1.0 - sum(f for _, _, f in t.exits)
+        if rem > 1e-6:
+            t.exits.append((end, float(h1.Close.iloc[-1]), rem))
     return trades

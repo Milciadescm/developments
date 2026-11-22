@@ -86,7 +86,13 @@ def edge_mode(hist, dd):
     return "Conservative"
 
 
-def run(trades, acct: Account, mode: str, start=None, end=None, guard=True):
+def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, schedule=None,
+        min_payout=100.0, max_payout=None, first_amount=None):
+    """schedule: optional list of (timestamp, kind) with kind in
+         "first"   - small first reward: min(first_amount, available) if available >= min_payout
+         "all"     - withdraw every dollar of realized profit not needed to cover open risk
+         "monthly" - withdraw available clipped to [min_payout, max_payout]; skipped if below min_payout
+       When given it replaces the fixed payout_days cycle."""
     """mode: Conservative | Normal | Aggressive | Edge gate"""
     tr = sorted([t for t in trades if (start is None or t.entry_time >= start) and (end is None or t.entry_time < end)],
                 key=lambda t: t.entry_time)
@@ -103,7 +109,9 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True):
     fills = []
     paid, refunded, breach = 0.0, False, None
     payouts = []
-    next_pay = tr[0].entry_time + pd.Timedelta(days=acct.payout_days) if (tr and acct.payout_days and not acct.real) else None
+    next_pay = tr[0].entry_time + pd.Timedelta(days=acct.payout_days) if (tr and acct.payout_days and not acct.real and schedule is None) else None
+    sched = sorted(schedule) if schedule else []
+    sk = 0
     skipped = dict(min_lot=0, guard=0)
     mode_log = {"Conservative": 0, "Normal": 0, "Aggressive": 0}
     curve = []
@@ -130,6 +138,28 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True):
                 day_bal -= prof                  # a withdrawal is not a trading loss
                 peak = bal                       # trailing high-water mark restarts from the post-payout balance
                 payouts.append((tm, round(prof * acct.split, 2)))
+        while sk < len(sched) and tm >= sched[sk][0]:
+            kind_p = sched[sk][1]; sk += 1
+            # closed profit above the base. Safe to take in full: after a reward the trailing line restarts
+            # from the new balance and the guard keeps open stop-risk inside 5%, so the 6% line stays out of reach.
+            avail = bal - cap
+            if breach or avail <= 0:
+                continue
+            if kind_p == "first":
+                amt = min(avail, first_amount or avail) if avail >= min_payout else 0
+            elif kind_p == "monthly":
+                amt = avail if avail >= min_payout else 0
+                if max_payout:
+                    amt = min(amt, max_payout)
+            else:
+                amt = avail
+            if amt <= 0:
+                continue
+            paid += amt * acct.split
+            if acct.refundable and not refunded:
+                paid += acct.fee; refunded = True
+            bal -= amt; day_bal -= amt; peak = bal
+            payouts.append((tm, round(amt * acct.split, 2)))
         if breach:
             if kind == "in":
                 continue

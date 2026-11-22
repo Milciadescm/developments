@@ -1,0 +1,1612 @@
+[
+ {
+  "start": "2024-08-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-04-01",
+   1379.92
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 6364.77,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 5624.77,
+  "by_month": {
+   "8": 1379.92,
+   "10": 1508.9,
+   "11": 464.67,
+   "12": 3011.28
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-09-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2024-12-02",
+   1168.29
+  ],
+  "month1_paid": 0,
+  "month3_major": 1168.29,
+  "accounts_bought_m3": 1,
+  "month9_major": 929.34,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 3,
+  "rewards_total": 16682.21,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 14462.21,
+  "by_month": {
+   "4": 1168.29,
+   "6": 1879.84,
+   "7": 3388.15,
+   "9": 2888.28,
+   "10": 929.34,
+   "12": 5513.28,
+   "13": 915.03
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-10-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2024-10-31",
+   322.37
+  ],
+  "month1_paid": 322.37,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 8245.45,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 7505.45,
+  "by_month": {
+   "1": 322.37,
+   "5": 691.55,
+   "6": 1644.85,
+   "8": 1464.97,
+   "9": 279.67,
+   "10": 2926.29,
+   "13": 915.75
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-11-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-04-02",
+   290.3
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 2756.64,
+  "accounts_bought_m9": 3,
+  "accounts_at_end": 4,
+  "rewards_total": 38736.48,
+  "spent_on_accounts": 2960.0,
+  "net_to_you": 35776.48,
+  "by_month": {
+   "5": 290.3,
+   "7": 1423.04,
+   "10": 2756.64,
+   "11": 1085.39,
+   "13": 33181.11
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-12-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-04-02",
+   1635.78
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 15209.18,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 14469.18,
+  "by_month": {
+   "5": 1635.78,
+   "6": 1444.14,
+   "7": 464.67,
+   "8": 2917.81,
+   "10": 924.22,
+   "12": 7822.56
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-01-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-05-05",
+   587.75
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 1084.18,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 2,
+  "rewards_total": 15767.15,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 14287.15,
+  "by_month": {
+   "5": 867.42,
+   "7": 2756.64,
+   "10": 1084.18,
+   "11": 7823.77,
+   "13": 3235.14
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-02-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-05-05",
+   2006.54
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 4365.68,
+  "accounts_bought_m9": 5,
+  "accounts_at_end": 6,
+  "rewards_total": 27678.88,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 23238.88,
+  "by_month": {
+   "4": 2006.54,
+   "5": 463.82,
+   "6": 2757.49,
+   "8": 4542.27,
+   "10": 4365.68,
+   "12": 3235.14,
+   "13": 10307.94
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-03-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-07-31",
+   652.31
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 26.02,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 17314.48,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 16574.48,
+  "by_month": {
+   "5": 652.31,
+   "7": 1540.09,
+   "9": 7732.99,
+   "10": 26.02,
+   "11": 234.9,
+   "12": 7128.17
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-04-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-07-31",
+   2886.88
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 260.92,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 18805.48,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 18065.48,
+  "by_month": {
+   "4": 2886.88,
+   "6": 655.67,
+   "7": 7734.52,
+   "10": 7528.41
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-05-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-07-31",
+   1144.5
+  ],
+  "month1_paid": 0,
+  "month3_major": 1144.5,
+  "accounts_bought_m3": 1,
+  "month9_major": 11072.1,
+  "accounts_bought_m9": 6,
+  "accounts_at_end": 8,
+  "rewards_total": 33928.14,
+  "spent_on_accounts": 5920.0,
+  "net_to_you": 28008.14,
+  "by_month": {
+   "3": 1144.5,
+   "5": 1540.09,
+   "7": 16465.37,
+   "9": 521.84,
+   "10": 14256.34
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-06-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-09-02",
+   1118.42
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 19736.64,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 18996.64,
+  "by_month": {
+   "4": 1118.42,
+   "5": 9036.9,
+   "7": 329.32,
+   "9": 7199.09,
+   "13": 2052.91
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-07-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-09-30",
+   519.29
+  ],
+  "month1_paid": 0,
+  "month3_major": 519.29,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 18214.56,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 17474.56,
+  "by_month": {
+   "3": 519.29,
+   "5": 7732.99,
+   "7": 5796.97,
+   "8": 1592.12,
+   "12": 2573.19
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-08-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-10-31",
+   8813.24
+  ],
+  "month1_paid": 0,
+  "month3_major": 8813.24,
+  "accounts_bought_m3": 5,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 6,
+  "rewards_total": 44035.34,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 39595.34,
+  "by_month": {
+   "3": 8813.24,
+   "5": 328.87,
+   "7": 20481.54,
+   "11": 14411.69
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-09-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-10-01",
+   420.29
+  ],
+  "month1_paid": 420.29,
+  "month3_major": 2413.55,
+  "accounts_bought_m3": 3,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 4,
+  "rewards_total": 22757.71,
+  "spent_on_accounts": 2960.0,
+  "net_to_you": 19797.71,
+  "by_month": {
+   "1": 420.29,
+   "3": 2413.55,
+   "4": 494.42,
+   "5": 7137.75,
+   "6": 386.01,
+   "10": 11905.69
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-10-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2026-06-03",
+   173.18
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 558.87,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 732.05,
+  "spent_on_accounts": 740.0,
+  "net_to_you": -7.95,
+  "by_month": {
+   "9": 173.18,
+   "10": 558.87
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-11-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2026-01-31",
+   2656.4
+  ],
+  "month1_paid": 0,
+  "month3_major": 2656.4,
+  "accounts_bought_m3": 3,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 4,
+  "rewards_total": 11392.33,
+  "spent_on_accounts": 2960.0,
+  "net_to_you": 8432.33,
+  "by_month": {
+   "3": 2656.4,
+   "8": 8735.93
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-08-01",
+  "mode": "Aggressive",
+  "first_reward": null,
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 0,
+  "spent_on_accounts": 740.0,
+  "net_to_you": -740.0,
+  "by_month": {},
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-09-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2024-12-02",
+   459.07
+  ],
+  "month1_paid": 0,
+  "month3_major": 459.07,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 4384.2,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 3644.2,
+  "by_month": {
+   "4": 459.07,
+   "6": 773.12,
+   "7": 3152.01
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-10-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2024-10-31",
+   800.0
+  ],
+  "month1_paid": 800.0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 5617.64,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 4877.64,
+  "by_month": {
+   "1": 800.0,
+   "5": 1226.86,
+   "6": 3014.69,
+   "10": 212.55,
+   "13": 363.54
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-11-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-04-02",
+   2072.86
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 11885.46,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 11145.46,
+  "by_month": {
+   "5": 2072.86,
+   "11": 675.22,
+   "13": 9137.38
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-12-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-11-02",
+   8363.14
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 8363.14,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 7623.14,
+  "by_month": {
+   "12": 8363.14
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-01-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-04-02",
+   169.35
+  ],
+  "month1_paid": 0,
+  "month3_major": 169.35,
+  "accounts_bought_m3": 0,
+  "month9_major": 649.77,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 9588.97,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 8848.97,
+  "by_month": {
+   "3": 169.35,
+   "7": 210.67,
+   "10": 649.77,
+   "11": 8559.18
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-02-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-05-05",
+   256.51
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 3284.22,
+  "accounts_bought_m9": 4,
+  "accounts_at_end": 5,
+  "rewards_total": 13321.59,
+  "spent_on_accounts": 3700.0,
+  "net_to_you": 9621.59,
+  "by_month": {
+   "4": 256.51,
+   "5": 938.5,
+   "6": 3515.27,
+   "8": 5327.09,
+   "10": 3284.22
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-03-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-31",
+   8704.32
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 8704.32,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 7964.32,
+  "by_month": {
+   "9": 8704.32
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-04-01",
+  "mode": "Aggressive",
+  "first_reward": null,
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 0,
+  "spent_on_accounts": 740.0,
+  "net_to_you": -740.0,
+  "by_month": {},
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-05-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-07-31",
+   1790.6
+  ],
+  "month1_paid": 0,
+  "month3_major": 1790.6,
+  "accounts_bought_m3": 2,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 3,
+  "rewards_total": 28932.71,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 26712.71,
+  "by_month": {
+   "3": 1790.6,
+   "5": 1893.53,
+   "7": 25248.58
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-06-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-09-02",
+   3600.18
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 13266.39,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 12526.39,
+  "by_month": {
+   "4": 3600.18,
+   "5": 9666.21
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-07-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-31",
+   8529.36
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 8529.36,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 7789.36,
+  "by_month": {
+   "5": 8529.36
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-08-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-31",
+   10307.85
+  ],
+  "month1_paid": 0,
+  "month3_major": 10307.85,
+  "accounts_bought_m3": 5,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 6,
+  "rewards_total": 10307.85,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 5867.85,
+  "by_month": {
+   "3": 10307.85
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-09-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-01",
+   800.0
+  ],
+  "month1_paid": 800.0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 800.0,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 60.0,
+  "by_month": {
+   "1": 800.0
+  },
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-10-01",
+  "mode": "Aggressive",
+  "first_reward": null,
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 0,
+  "spent_on_accounts": 740.0,
+  "net_to_you": -740.0,
+  "by_month": {},
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2025-11-01",
+  "mode": "Aggressive",
+  "first_reward": null,
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 0,
+  "spent_on_accounts": 740.0,
+  "net_to_you": -740.0,
+  "by_month": {},
+  "breaches": [],
+  "portfolio": "Core (Plan 1 + Plan 3)"
+ },
+ {
+  "start": "2024-08-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-03-02",
+   883.39
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 6786.94,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 6046.94,
+  "by_month": {
+   "7": 883.39,
+   "8": 1787.42,
+   "10": 1324.11,
+   "11": 586.58,
+   "12": 2205.44
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-09-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2024-12-02",
+   1254.73
+  ],
+  "month1_paid": 0,
+  "month3_major": 1254.73,
+  "accounts_bought_m3": 1,
+  "month9_major": 1173.16,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 3,
+  "rewards_total": 17047.07,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 14827.07,
+  "by_month": {
+   "4": 1254.73,
+   "5": 334.06,
+   "6": 3037.41,
+   "7": 3205.38,
+   "9": 3122.96,
+   "10": 1173.16,
+   "11": 608.94,
+   "12": 3292.66,
+   "13": 1017.77
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-10-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2024-10-31",
+   390.79
+  ],
+  "month1_paid": 390.79,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 9300.07,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 8560.07,
+  "by_month": {
+   "1": 390.79,
+   "5": 2029.21,
+   "6": 1550.09,
+   "8": 1561.43,
+   "9": 586.58,
+   "10": 2120.45,
+   "13": 1061.52
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-11-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-03-03",
+   826.02
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 1646.33,
+  "accounts_bought_m9": 2,
+  "accounts_at_end": 3,
+  "rewards_total": 25213.11,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 22993.11,
+  "by_month": {
+   "5": 2478.45,
+   "7": 2148.06,
+   "9": 304.47,
+   "10": 1646.33,
+   "11": 1231.17,
+   "13": 17404.63
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-12-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-03-02",
+   941.85
+  ],
+  "month1_paid": 0,
+  "month3_major": 941.85,
+  "accounts_bought_m3": 1,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 2,
+  "rewards_total": 27225.5,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 25745.5,
+  "by_month": {
+   "3": 941.85,
+   "5": 1724.72,
+   "6": 1561.48,
+   "7": 1005.75,
+   "8": 4223.96,
+   "10": 2139.98,
+   "12": 15627.76
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-01-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-04-02",
+   311.52
+  ],
+  "month1_paid": 0,
+  "month3_major": 311.52,
+  "accounts_bought_m3": 0,
+  "month9_major": 1230.48,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 2,
+  "rewards_total": 15975.1,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 14495.1,
+  "by_month": {
+   "3": 311.52,
+   "5": 2148.06,
+   "7": 1950.8,
+   "10": 1230.48,
+   "11": 7050.61,
+   "12": 706.26,
+   "13": 2577.37
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-02-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-05-05",
+   2715.81
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 3592.52,
+  "accounts_bought_m9": 4,
+  "accounts_at_end": 5,
+  "rewards_total": 27998.38,
+  "spent_on_accounts": 3700.0,
+  "net_to_you": 24298.38,
+  "by_month": {
+   "4": 2715.81,
+   "5": 891.05,
+   "6": 1646.33,
+   "8": 4688.58,
+   "10": 4298.78,
+   "12": 1812.15,
+   "13": 11945.68
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-03-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-03-31",
+   334.53
+  ],
+  "month1_paid": 334.53,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 871.36,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 2,
+  "rewards_total": 17577.69,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 16097.69,
+  "by_month": {
+   "1": 334.53,
+   "4": 429.79,
+   "5": 2105.75,
+   "7": 1097.17,
+   "8": 6973.37,
+   "10": 871.36,
+   "11": 283.65,
+   "12": 5482.07
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-04-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-07-01",
+   575.97
+  ],
+  "month1_paid": 0,
+  "month3_major": 575.97,
+  "accounts_bought_m3": 0,
+  "month9_major": 283.65,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 17102.28,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 16362.28,
+  "by_month": {
+   "3": 575.97,
+   "4": 2164.81,
+   "6": 732.78,
+   "7": 7031.96,
+   "8": 813.06,
+   "10": 5783.7
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-05-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-07-31",
+   1211.57
+  ],
+  "month1_paid": 0,
+  "month3_major": 1211.57,
+  "accounts_bought_m3": 1,
+  "month9_major": 9119.18,
+  "accounts_bought_m9": 6,
+  "accounts_at_end": 8,
+  "rewards_total": 30604.9,
+  "spent_on_accounts": 5920.0,
+  "net_to_you": 24684.9,
+  "by_month": {
+   "3": 1211.57,
+   "5": 1097.17,
+   "6": 15022.0,
+   "7": 1742.72,
+   "9": 567.3,
+   "10": 10964.14
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-06-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-09-02",
+   1153.01
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 17999.24,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 17259.24,
+  "by_month": {
+   "4": 1153.01,
+   "5": 8246.85,
+   "6": 813.06,
+   "7": 299.33,
+   "9": 5484.37,
+   "12": 2002.62
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-07-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-09-30",
+   628.35
+  ],
+  "month1_paid": 0,
+  "month3_major": 628.35,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 16259.39,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 15519.39,
+  "by_month": {
+   "3": 628.35,
+   "5": 7844.72,
+   "7": 4917.98,
+   "8": 847.74,
+   "12": 2020.6
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-08-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-10-31",
+   8187.78
+  ],
+  "month1_paid": 0,
+  "month3_major": 8187.78,
+  "accounts_bought_m3": 5,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 6,
+  "rewards_total": 35994.12,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 31554.12,
+  "by_month": {
+   "3": 8187.78,
+   "4": 813.06,
+   "5": 298.89,
+   "7": 16180.42,
+   "10": 10513.97
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-09-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2025-10-01",
+   756.95
+  ],
+  "month1_paid": 756.95,
+  "month3_major": 2227.51,
+  "accounts_bought_m3": 3,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 4,
+  "rewards_total": 18072.41,
+  "spent_on_accounts": 2960.0,
+  "net_to_you": 15112.41,
+  "by_month": {
+   "1": 756.95,
+   "3": 2227.51,
+   "4": 332.85,
+   "5": 5502.64,
+   "10": 9252.46
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-10-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2026-01-31",
+   4906.93
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 6909.55,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 6169.55,
+  "by_month": {
+   "5": 4906.93,
+   "8": 2002.62
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-11-01",
+  "mode": "Normal",
+  "first_reward": [
+   "2026-01-31",
+   2139.12
+  ],
+  "month1_paid": 0,
+  "month3_major": 2139.12,
+  "accounts_bought_m3": 2,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 3,
+  "rewards_total": 6047.07,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 3827.07,
+  "by_month": {
+   "3": 2139.12,
+   "8": 3907.95
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-08-01",
+  "mode": "Aggressive",
+  "first_reward": null,
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 0,
+  "spent_on_accounts": 740.0,
+  "net_to_you": -740.0,
+  "by_month": {},
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-09-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-03-02",
+   120.66
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 82.89,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 7595.58,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 6855.58,
+  "by_month": {
+   "6": 120.66,
+   "7": 3507.13,
+   "10": 82.89,
+   "11": 580.79,
+   "12": 3304.11
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-10-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2024-10-31",
+   596.5
+  ],
+  "month1_paid": 596.5,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 10049.34,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 9309.34,
+  "by_month": {
+   "1": 596.5,
+   "5": 393.68,
+   "6": 3480.81,
+   "9": 82.89,
+   "10": 4095.27,
+   "13": 1400.19
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-11-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-04-02",
+   1496.98
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 3305.28,
+  "accounts_bought_m9": 4,
+  "accounts_at_end": 5,
+  "rewards_total": 22036.08,
+  "spent_on_accounts": 3700.0,
+  "net_to_you": 18336.08,
+  "by_month": {
+   "5": 1496.98,
+   "9": 438.31,
+   "10": 3305.28,
+   "11": 1610.56,
+   "13": 15184.95
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2024-12-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-04-02",
+   1480.45
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 15000.18,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 14260.18,
+  "by_month": {
+   "5": 1480.45,
+   "8": 3943.88,
+   "10": 1410.27,
+   "12": 8165.58
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-01-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-04-02",
+   530.12
+  ],
+  "month1_paid": 0,
+  "month3_major": 530.12,
+  "accounts_bought_m3": 0,
+  "month9_major": 1609.93,
+  "accounts_bought_m9": 2,
+  "accounts_at_end": 3,
+  "rewards_total": 18442.01,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 16222.01,
+  "by_month": {
+   "3": 530.12,
+   "5": 1580.4,
+   "7": 2732.97,
+   "10": 1609.93,
+   "11": 7047.78,
+   "12": 947.26,
+   "13": 3993.55
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-02-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-05-05",
+   2046.7
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 1512.91,
+  "accounts_bought_m9": 2,
+  "accounts_at_end": 3,
+  "rewards_total": 41331.36,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 39111.36,
+  "by_month": {
+   "4": 2046.7,
+   "5": 1962.7,
+   "6": 2563.15,
+   "8": 7144.81,
+   "10": 2460.17,
+   "12": 3993.55,
+   "13": 21160.28
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-03-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-03-31",
+   800.0
+  ],
+  "month1_paid": 800.0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 1578.1,
+  "accounts_bought_m9": 2,
+  "accounts_at_end": 3,
+  "rewards_total": 22545.26,
+  "spent_on_accounts": 2220.0,
+  "net_to_you": 20325.26,
+  "by_month": {
+   "1": 800.0,
+   "5": 229.94,
+   "7": 1660.71,
+   "8": 6982.15,
+   "10": 1578.1,
+   "11": 837.94,
+   "12": 10456.42
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-04-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-07-31",
+   3435.42
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 954.12,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 2,
+  "rewards_total": 21200.17,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 19720.17,
+  "by_month": {
+   "4": 3435.42,
+   "6": 578.15,
+   "7": 7040.77,
+   "8": 1333.5,
+   "10": 7775.16,
+   "12": 1037.17
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-05-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-07-31",
+   1290.52
+  ],
+  "month1_paid": 0,
+  "month3_major": 1290.52,
+  "accounts_bought_m3": 1,
+  "month9_major": 4444.21,
+  "accounts_bought_m9": 6,
+  "accounts_at_end": 8,
+  "rewards_total": 35212.46,
+  "spent_on_accounts": 5920.0,
+  "net_to_you": 29292.46,
+  "by_month": {
+   "3": 1290.52,
+   "5": 1427.53,
+   "6": 15127.56,
+   "7": 2926.68,
+   "9": 1792.06,
+   "10": 10720.91,
+   "12": 1927.2
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-06-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-09-02",
+   2937.17
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 1,
+  "rewards_total": 22883.12,
+  "spent_on_accounts": 740.0,
+  "net_to_you": 22143.12,
+  "by_month": {
+   "4": 2937.17,
+   "5": 9189.18,
+   "6": 1333.5,
+   "7": 1049.59,
+   "9": 5925.29,
+   "10": 125.12,
+   "12": 2323.27
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-07-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-31",
+   5317.35
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 963.6,
+  "accounts_bought_m9": 1,
+  "accounts_at_end": 2,
+  "rewards_total": 24711.82,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 23231.82,
+  "by_month": {
+   "5": 6912.65,
+   "7": 3190.52,
+   "8": 3007.55,
+   "10": 963.6,
+   "12": 10637.5
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-08-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-31",
+   9308.4
+  ],
+  "month1_paid": 0,
+  "month3_major": 9308.4,
+  "accounts_bought_m3": 5,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 6,
+  "rewards_total": 89726.8,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 85286.8,
+  "by_month": {
+   "3": 9308.4,
+   "4": 1243.4,
+   "5": 937.56,
+   "7": 38518.76,
+   "10": 15794.04,
+   "11": 23924.64
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-09-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2025-10-01",
+   800.0
+  ],
+  "month1_paid": 800.0,
+  "month3_major": 1269.85,
+  "accounts_bought_m3": 1,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 2,
+  "rewards_total": 25862.77,
+  "spent_on_accounts": 1480.0,
+  "net_to_you": 24382.77,
+  "by_month": {
+   "1": 800.0,
+   "3": 1269.85,
+   "4": 1330.67,
+   "5": 5863.12,
+   "6": 2250.11,
+   "7": 768.2,
+   "10": 13580.82
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-10-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2026-06-01",
+   2256.82
+  ],
+  "month1_paid": 0,
+  "month3_major": 0,
+  "accounts_bought_m3": 0,
+  "month9_major": 4032.08,
+  "accounts_bought_m9": 5,
+  "accounts_at_end": 6,
+  "rewards_total": 6288.9,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 1848.9,
+  "by_month": {
+   "8": 2256.82,
+   "10": 4032.08
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ },
+ {
+  "start": "2025-11-01",
+  "mode": "Aggressive",
+  "first_reward": [
+   "2026-01-31",
+   6519.65
+  ],
+  "month1_paid": 0,
+  "month3_major": 6519.65,
+  "accounts_bought_m3": 5,
+  "month9_major": 0.0,
+  "accounts_bought_m9": 0,
+  "accounts_at_end": 6,
+  "rewards_total": 44934.59,
+  "spent_on_accounts": 4440.0,
+  "net_to_you": 40494.59,
+  "by_month": {
+   "3": 6519.65,
+   "8": 38414.94
+  },
+  "breaches": [],
+  "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)"
+ }
+]

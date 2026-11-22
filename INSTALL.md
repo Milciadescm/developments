@@ -18,6 +18,7 @@ None of the three files has been compiled yet. Fix any compile messages, then ru
 | Preset | FundedNext Stellar Instant | FundedNext Stellar Instant (6% trailing, no daily), Instant Premium (3% daily, 6% max), Personal, Custom |
 | RiskMode | Normal | Conservative 0.15% / 0.05% · Normal 0.25% / 0.10% · Aggressive 0.50% / 0.25% · Edge gate |
 | Plan1Exit | Chandelier | Chandelier for prop accounts, Monthly for personal money |
+| Plan3Bank2R | true | close half of each levels unit at +2R (Plan 3B, the default plan) |
 | KillZonesOnly | false | true limits entries to 20, 00, 02, 06, 07, 09, 10, 15 NY (tested: fewer trades, no gain) |
 | StartBalance | 0 (auto) | set it to the account's starting size on a funded account |
 
@@ -42,15 +43,12 @@ STRONG_EDGE    -> Aggressive : last 40 closed positions  sum >= +8R  and PF >= 1
 otherwise (or drawdown >= 3%) -> Conservative
 ```
 
-## Bi-weekly withdrawals ($1,000–$2,000)
+## Rewards and the 12-month roadmap
 
-1. Every 14 days, on each account, request only the **"withdrawable now"** amount on the chart panel
-   (balance − start − open stop-risk). Open trades can stay open. The bot detects the withdrawal and moves its
-   high-water mark down by the same amount, so the guard does not treat it as a loss.
-2. Put every reward into a separate reserve. Pay yourself from the reserve, never straight from rewards:
-   start $1,000 at a $13,000 reserve, $1,500 at $19,500, $2,000 at $26,000; drop one level if the reserve is
-   under 6 payments of the current level.
-3. Backtest (Jul 2024 → now): 3 × $100K Instant Premium, Normal → first salary Oct 2025, $2,000 for 28 fortnights,
-   $58,500 paid, no missed payment. Rewards are lumpy (9 of 63 fortnights per account). Never raise risk to meet a payment.
-4. Same trades on every account: income and drawdowns scale together. Check each firm's maximum allocation and
-   multi-account rules.
+1. Month 1: request a small first reward (up to $1,000 of closed profit) if there is any. This happened in about 1 start month in 5. Expect months 2–3.
+2. Month 3: withdraw all closed profit and buy more of the biggest instant accounts with it. The median month-3 withdrawal was about $444, so usually 0–1 accounts.
+3. Months 4–8: monthly rewards, between the firm's minimum and maximum per reward.
+4. Month 9: withdraw everything from every account and buy as many accounts as it covers. Repeat through 2027.
+5. Request only the "withdrawable now" amount on the chart panel. The bot sees the withdrawal and resets its high-water mark.
+6. Never raise the risk mode to reach a payout. Check each firm's maximum allocation and its rules on running the same bot on several accounts.
+   Lucid Trading is a futures firm (CME futures on NinjaTrader/Tradovate/Rithmic): this bot needs a futures version before it can run there.

@@ -18,6 +18,7 @@ input bool          UsePlan1        = true;
 input bool          UsePlan3        = true;
 input ENUM_P1EXIT   Plan1Exit       = P1_CHANDELIER;
 input bool          KillZonesOnly   = false;
+input bool          Plan3Bank2R     = true;     // Plan 3B: close half of each levels unit at +2R
 input double        StartBalance    = 0;
 input double        CustomDailyLossPct = 0;
 input double        CustomMaxLossPct   = 6;
@@ -337,6 +338,21 @@ void Plan3NewHour(int k)
    if(tk > 0 && n2 == 0) GlobalVariableSet(GV(s + "_p3r"), datr);
    if(tk > 0 && n2 > 0) ModifySL(s, Magic + 2, fo, dir);
 }
+void BankHalf(string s, int mg, int d, double r)
+{
+   if(r <= 0) return;
+   double px = d == 1 ? MarketInfo(s, MODE_BID) : MarketInfo(s, MODE_ASK);
+   for(int i = OrdersTotal() - 1; i >= 0; i--)
+   {
+      if(!OrderSelect(i, SELECT_BY_POS, MODE_TRADES) || OrderSymbol() != s || OrderMagicNumber() != mg || OrderType() > OP_SELL) continue;
+      if(StringFind(OrderComment(), "from #") >= 0) continue;        // remainder of an already-split order
+      string key = GV("bank_" + IntegerToString(OrderTicket()));
+      if(GlobalVariableCheck(key) || (px - OrderOpenPrice()) * d < 2.0 * r) continue;
+      double st = MarketInfo(s, MODE_LOTSTEP), half = MathFloor(OrderLots() / 2 / st) * st;
+      GlobalVariableSet(key, 1);
+      if(half >= MarketInfo(s, MODE_MINLOT)) { bool ok = OrderClose(OrderTicket(), half, px, 50); }
+   }
+}
 void Plan3Manage(int k)
 {
    string s = Sym[k]; int d = 0, d2; double op = 0, sl = 0, o2, s2; datetime ot = 0, t2;
@@ -346,6 +362,7 @@ void Plan3Manage(int k)
    int sh = iBarShift(s, PERIOD_H1, ot);
    double best = d == 1 ? HH(s, PERIOD_H1, 0, sh + 1) : LL(s, PERIOD_H1, 0, sh + 1), mfe = r > 0 ? (best - op) * d / r : 0;
    if(sh >= 120 && mfe < 0.5) { CloseMagic(s, Magic + 2); CloseMagic(s, Magic + 3); return; }
+   if(Plan3Bank2R) { BankHalf(s, Magic + 2, d, r); BankHalf(s, Magic + 3, d, r); }
    if(mfe >= 1.0) { ModifySL(s, Magic + 2, op, d); ModifySL(s, Magic + 3, op, d); }
    if(mfe >= 2.0) { double tr = d == 1 ? LL(s, PERIOD_D1, 1, 5) : HH(s, PERIOD_D1, 1, 5); ModifySL(s, Magic + 2, tr, d); ModifySL(s, Magic + 3, tr, d); }
 }

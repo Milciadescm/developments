@@ -37,6 +37,7 @@ input bool          UsePlan1        = true;
 input bool          UsePlan3        = true;
 input ENUM_P1EXIT   Plan1Exit       = P1_CHANDELIER;  // chandelier for prop, monthly for personal
 input bool          KillZonesOnly   = false;    // tested: no gain 2024-26, fewer trades
+input bool          Plan3Bank2R     = true;     // Plan 3B: close half of each levels unit at +2R (steadier rewards)
 input double        StartBalance    = 0;        // 0 = balance when first attached (remembered)
 input double        CustomDailyLossPct = 0;     // PRESET_CUSTOM only (0 = none)
 input double        CustomMaxLossPct   = 6;
@@ -457,6 +458,22 @@ void Plan3NewHour(int k)
    if(ok && n2 == 0) GlobalVariableSet(GV(s + "_p3r"), datr);
    if(ok && n2 > 0) ModifySL(s, M2, fo, dir);
 }
+void BankHalf(string s, long mg, int d, double r)
+{
+   if(r <= 0) return;
+   double px = d == 1 ? SymbolInfoDouble(s, SYMBOL_BID) : SymbolInfoDouble(s, SYMBOL_ASK);
+   for(int i = PositionsTotal() - 1; i >= 0; i--)
+   {
+      ulong tk = PositionGetTicket(i); if(!PositionSelectByTicket(tk)) continue;
+      if(PositionGetString(POSITION_SYMBOL) != s || PositionGetInteger(POSITION_MAGIC) != mg) continue;
+      string key = GV("bank_" + IntegerToString((long)PositionGetInteger(POSITION_IDENTIFIER)));
+      if(GlobalVariableCheck(key)) continue;
+      if((px - PositionGetDouble(POSITION_PRICE_OPEN)) * d < 2.0 * r) continue;
+      double st = SymbolInfoDouble(s, SYMBOL_VOLUME_STEP), half = MathFloor(PositionGetDouble(POSITION_VOLUME) / 2 / st) * st;
+      if(half < SymbolInfoDouble(s, SYMBOL_VOLUME_MIN)) { GlobalVariableSet(key, 1); continue; }   // too small to split
+      if(trade.PositionClosePartial(tk, half)) GlobalVariableSet(key, 1);                          // retry next pass on failure
+   }
+}
 void Plan3Manage(int k)
 {
    string s = Sym[k]; long M2 = Magic + 2, M3 = Magic + 3;
@@ -468,6 +485,7 @@ void Plan3Manage(int k)
    double best = d == 1 ? HH(s, PERIOD_H1, 0, sh + 1) : LL(s, PERIOD_H1, 0, sh + 1);
    double mfe = r > 0 ? (best - op) * d / r : 0;
    if(sh >= 120 && mfe < 0.5) { CloseMagic(s, M2); CloseMagic(s, M3); return; }   // cut losers short
+   if(Plan3Bank2R) { BankHalf(s, M2, d, r); BankHalf(s, M3, d, r); }             // Plan 3B: bank half at +2R
    if(mfe >= 1.0) { ModifySL(s, M2, op, d); ModifySL(s, M3, op, d); }             // breakeven
    if(mfe >= 2.0)                                                                 // let winners run: 5-day low
    {

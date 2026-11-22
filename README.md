@@ -1,93 +1,36 @@
-# Fib-FVG Dual Engine
+# FibFVG Pro
 
-A trading bot with two engines that share one Fibonacci model:
+Trading bot for XAUUSD, XAGUSD, BTCUSD, US500 and NAS100 on instant prop accounts (no profit target,
+no consistency rule, 6% max loss). Only the plans that made money on 2024 → now data are kept.
 
-| Engine | Bias | Execution | Entry | Stop | Targets |
-|---|---|---|---|---|---|
-| **Weekly swing** (holds days to weeks) | Monthly + Weekly dealing range (close vs range midpoint) | Daily Turtle 20-day breakout defines the impulse leg; the leg must contain a daily FVG | Limit at **0.705** of the leg (OTE zone 0.618–0.786) | Beyond leg origin (1.0) − 0.25N | TP1 **−0.272** ext (50% off, stop to BE), TP2 **−0.618** ext; runner trails the Turtle 20-day opposite extreme |
-| **Micro** (intraday, 4H) | Weekly dealing range | 4H FVG with a displacement candle (≥ 0.8 × ATR14) | OTE 0.705 of the displacement leg, capped at the FVG top | Beyond leg origin − 0.1 ATR | **−0.618** ext; time exit after 30 bars |
+| Plan | What it does | 2024 → now (net R per trade, after spread) |
+|---|---|---|
+| Plan 1 Position | Monthly + weekly bias, daily Turtle breakout leg with a fair value gap, limit at the 0.705 Fibonacci OTE, Turtle adds, chandelier exit, breakeven at +1R, 10-day time stop | +0.82R · 52% wins · realized R:R 3.3 |
+| Plan 3 Levels | Weekly bias, 1H reaction at the 00/20/50/60/80 levels (no NY lunch), stop = 1 daily ATR, breakeven at +1R, 5-day-low trail from +2R, adds only while the first unit is ≥ +1R | +0.16R · 28% wins · realized R:R 3.4 |
+| Plan 3B Levels · 2R bank (default) | Plan 3 plus half of every unit closed at +2R | +0.11R · 32% wins · realized R:R 2.6, earlier rewards |
 
-Turtle rules on the weekly engine: N = 20-day Wilder ATR, +1 unit every 0.5N in favour (max 4 per market), adds carry a 2N stop, max 6 units per correlated group, total open risk capped at 6%.
+Default portfolio: **Core + 2R bank** (Plan 1 + Plan 3B) in **Normal** mode.
+Instant Premium $100K, Jul 2024 → now: $24,501 paid to the trader, 14 rewards, worst drawdown 4.65%, no breach.
+12-month roadmap from 16 start months: first reward within 90 days in 69% of starts, median net $15,809 (worst +$3,827).
 
-Why Fibonacci: the 1s-and-2s video shows the recursion F(n) = F(n−1) + F(n−2) (13 = 8 + 5, "21212212" = "21212" + "212"). The ratio F(n−1)/F(n) converges to 0.618, which sets the OTE entry zone and the extension targets.
-
-## Layout
+## Files
 
 ```
-data/                  Yahoo Finance daily + hourly OHLC used for the backtest
-fibfvg/config.py       Fibonacci levels, symbol specs, risk + engine settings
-fibfvg/engines.py      Weekly swing engine and 4H micro engine (signal generation)
-fibfvg/simulator.py    Portfolio replay: sizing, min-lot rules, Turtle caps, prop guard
-fibfvg/run_backtest.py Capital tiers, money-management sweep, 10,000-trade Monte Carlo
-fibfvg/report.py       Builds results/report.html
-mql5/FibFVG_DualEngine.mq5        MT5 Expert Advisor (FundedNext / any MT5 broker)
-tradingview/FibFVG_DualEngine.pine TradingView strategy for forward testing
-results/               summary.json, per-tier trade logs, MM sweep, Monte Carlo path, report
+fibfvg/edgebook.py   all results (plans, pips, weak spots, prop, roadmap)  -> results/edge_book.json, trades_*.csv
+fibfvg/playbook.py   builds results/playbook.html from those results
+fibfvg/plans.py      Plan 1 engine          fibfvg/levels.py   Plan 3 / 3B engine
+fibfvg/propsim.py    prop-account simulator (guard, rewards, edge gate)
+fibfvg/roadmap.py    12-month payout roadmap    fibfvg/calendar.py  CPI / NFP / FOMC dates
+mql5/FibFVG_Pro.mq5  mql4/FibFVG_Pro.mq4  ctrader/FibFVGPro.cs   the bots (see INSTALL.md)
+data/                Yahoo Finance daily (2024+) and hourly bars used by the plans
 ```
 
-Run it again: `pip install pandas numpy yfinance` then `python -m fibfvg.run_backtest && python -m fibfvg.report`.
-
-## Headline results (real data, after spread)
-
-- Average net R per trade: weekly entries +0.10, Turtle adds +0.17, 4H micro +0.06.
-- $50k, 2005–2026, 0.5% per unit: +61% total (~2.2%/yr), 41% max drawdown, 1,081 trades.
-- US500, NAS100 and XAGUSD are profitable. XAUUSD and BTCUSD are net negative on these rules.
-- Accounts under $1,000 skip most signals because 0.01 lot would exceed the risk budget.
-- Funded $50k (0.25% risk, Jul 2024 → now): +21% in 1.8 years, 5.6% max DD, then a 6% trailing limit was hit.
-- Recommended: 0.5% per Turtle unit + 0.25% per micro trade (personal), 0.10–0.25% (funded).
-
-## Plan v2 (reverse test + time study)
-
-`python -m fibfvg.experiments` tests two ideas, deciding on early data and checking on later data
-(weekly: 2005-15 vs 2016-26; micro: before vs after June 2025):
-
-- **Reversing losers:** reversing every trade loses (mirror −0.06R, 1:1 −0.52R per trade on later data).
-  Only gold 4H micro passed (−0.19R → +0.03R, roughly breakeven). `MicroReverse=true` on the XAUUSD chart only;
-  switching gold micro off is an equally valid choice.
-- **Time rules:** Fibonacci bar counts to fill, London/NY sessions and Mon–Wed weekly entries all failed.
-  **Micro fills Monday–Wednesday only** held up (+0.25R vs −0.38R on later data) and is on by default (`MicroMonWedOnly`).
-- 2016–26 at $50k: 3.0%/yr → 4.0%/yr, max drawdown 28.9% → 26.2%, profit factor 1.21 → 1.39.
-
-`python -m fibfvg.export_replay` writes the data for `results/lab.html`, the trade-by-trade replay page.
-
-## Two plans: cut losses short, let winners run
-
-`python -m fibfvg.plans_study` (results in `results/plans.json`, replay in `results/lab.html` → "Two plans").
-
-**Plan 1 · Position (weeks to months).** Same entry as the weekly engine. Exit styles chosen on 2005–15, checked on 2016–26:
-
-| Exit style | Net R/trade 2005–15 | 2016–26 | Median hold | $50k 2005–26 |
-|---|---|---|---|---|
-| V1 (fixed targets) | +0.08 | +0.21 | 6 d | 1.7%/yr, DD 26% |
-| Run, 20-day trail | +0.34 | +0.60 | 4 d | 5.6%/yr, DD 25% |
-| Chandelier + time stop | +0.18 | +0.44 | 10 d | 4.7%/yr, DD 18% |
-| **Monthly (default)** | **+0.38** | **+1.66** | 18 d (top 10%: 7+ months) | **10.7%/yr, DD 36%** |
-
-Monthly = half off at −0.272, breakeven, runner trails the 55-day low, out after 10 days if never +0.5R.
-Adds close with the first unit. Chandelier is the funded-account choice (0.25% risk since 2016: 3.2%/yr, 3.6% max DD, no breach).
-EA: `PositionExit`, `TimeStopDays`, `TimeStopMinR`. Pine: "Plan 1 exit style".
-
-**Plan 2 · Micro (1m, 5m, 15m, 30m, 1H).** No timeframe has an edge after spread (gross +0.01 to +0.17R, net
-negative or inconsistent between halves; 1m only 26 days and 5–30m about 81 days of data). Letting winners run cut the average
-loss from ~−1.2R to ~−0.7R but also cut the wins. `UseMicroEngine` now defaults to false; use `MicroTF` + `MicroLetRun`
-on a demo account only.
-
-## Since 2024 and prop accounts (`python -m fibfvg.since2024`, `python -m fibfvg.prop_study`)
-
-Only 2024+ data. Plan 3 = reaction at 00/20/50/60/80 levels (1H), stop 1 daily ATR, breakeven at +1R, 5-day-low trail
-from +2R, adds only while the first trade is >= +1R. A tight wick stop (the rule as first written) lost on every exit style.
-Kill-zone-only entries were no better than all hours (NY lunch always blocked).
-
-$50k, Jul 2024 → Nov 2026: Plan 1 +60% (DD 6%), Plan 3 +57% (DD 20%), both +110% (37%/yr, DD 22%).
-
-Prop study (FundedNext Stellar Instant $2K–$20K, Instant Premium $15K–$100K): no breach in any mode or in 23 rolling
-start months, thanks to the drawdown-budget guard. Normal mode paid the most on most accounts. The same cash in a real
-account ($60–$740) can't open even 0.01 lot on these stops. Under $50K only US500/NAS100 can be sized.
-Install and settings: `INSTALL.md`. Bots: `mql5/FibFVG_Pro.mq5`, `mql4/FibFVG_Pro.mq4`, `ctrader/FibFVGPro.cs`.
+Rebuild everything: `pip install pandas numpy yfinance && python -m fibfvg.edgebook && python -m fibfvg.playbook`.
+Rejected ideas and their numbers are in `RESEARCH_LOG.md`.
 
 ## Limits
 
-- The S&P 15s/30s/45s FVG idea is in the EA as an experimental module (`UseSecondsScalper`, off by default). It is **not backtested**: no second-level history was available.
-- MT5 contract specs in `config.py` are typical values. Check your broker's symbol specification.
-- The EA keeps TP1 state in memory. After a terminal restart, TP1 partials for open weekly trades are not re-armed (TP2, stops and trailing still work).
-- The EA and Pine script were written to match the Python rules but were not compiled here. Compile in MetaEditor and the Pine editor, then run them on a demo before going live.
+- Hourly history from Yahoo starts July 2024 (BTC November 2024). Gold/silver use futures prices; indices use cash (daily) and futures (hourly).
+- Contract sizes and spreads in `fibfvg/config.py` are typical MT5 CFD values; the bots read the broker's real values.
+- None of the bots has been compiled here (no MetaEditor or cTrader in this environment). Compile, then run on a demo first.
+- July 2024 → now was a strong trend for gold and silver; longer history earned less per year.

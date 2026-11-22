@@ -23,6 +23,7 @@ namespace cAlgo.Robots
         [Parameter("Use Plan 3", DefaultValue = true)] public bool UsePlan3 { get; set; }
         [Parameter("Plan 1 exit", DefaultValue = P1Exit.Chandelier)] public P1Exit Plan1Exit { get; set; }
         [Parameter("Kill zones only", DefaultValue = false)] public bool KillZonesOnly { get; set; }
+        [Parameter("Plan 3B: bank half at +2R", DefaultValue = true)] public bool Plan3Bank2R { get; set; }
         [Parameter("Start balance (0 = auto)", DefaultValue = 0)] public double StartBalance { get; set; }
         [Parameter("Custom daily loss %", DefaultValue = 0)] public double CustomDaily { get; set; }
         [Parameter("Custom max loss %", DefaultValue = 6)] public double CustomMax { get; set; }
@@ -295,6 +296,19 @@ namespace cAlgo.Robots
             if (!res.IsSuccessful) return;
             if (first == null) Set(s.Name + "_p3r", datr); else ModifySL(s, L3, first.EntryPrice, dir);
         }
+        void BankHalf(Symbol s, string label, int d, double r)
+        {
+            if (r <= 0) return;
+            double px = d == 1 ? s.Bid : s.Ask;
+            foreach (var p in Mine(s, label).ToList())
+            {
+                string key = "bank_" + p.Id;
+                if (Get(key) > 0 || (px - p.EntryPrice) * d < 2.0 * r) continue;
+                Set(key, 1);
+                double half = s.NormalizeVolumeInUnits(p.VolumeInUnits / 2, RoundingMode.Down);
+                if (half >= s.VolumeInUnitsMin) ModifyPosition(p, p.VolumeInUnits - half);
+            }
+        }
         void Plan3Manage(Symbol s)
         {
             var first = Mine(s, L3).FirstOrDefault();
@@ -305,6 +319,7 @@ namespace cAlgo.Robots
             int sh = 0; for (int i = h1.Count - 1; i >= 0 && h1.OpenTimes[i] > first.EntryTime; i--) sh++;
             double best = d == 1 ? HH(h1, 0, sh + 1) : LL(h1, 0, sh + 1), mfe = r > 0 ? (best - first.EntryPrice) * d / r : 0;
             if (sh >= 120 && mfe < 0.5) { CloseLabel(s, L3); CloseLabel(s, L3A); return; }
+            if (Plan3Bank2R) { BankHalf(s, L3, d, r); BankHalf(s, L3A, d, r); }
             if (mfe >= 1.0) { ModifySL(s, L3, first.EntryPrice, d); ModifySL(s, L3A, first.EntryPrice, d); }
             if (mfe >= 2.0) { double tr = d == 1 ? LL(d1, 1, 5) : HH(d1, 1, 5); ModifySL(s, L3, tr, d); ModifySL(s, L3A, tr, d); }
         }

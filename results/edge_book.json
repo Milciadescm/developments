@@ -1,0 +1,426 @@
+{
+ "period": [
+  "2024-07-03",
+  "2026-11-22"
+ ],
+ "pips": {
+  "XAUUSD": {
+   "pip": 0.1,
+   "median_day": 531,
+   "mean_day": 717,
+   "p25": 341,
+   "p75": 902,
+   "atr14_now": 1012
+  },
+  "XAGUSD": {
+   "pip": 0.01,
+   "median_day": 56,
+   "mean_day": 116,
+   "p25": 20,
+   "p75": 127,
+   "atr14_now": 167
+  },
+  "BTCUSD": {
+   "pip": 1.0,
+   "median_day": 2391,
+   "mean_day": 2804,
+   "p25": 1628,
+   "p75": 3493,
+   "atr14_now": 2944
+  },
+  "US500": {
+   "pip": 0.1,
+   "median_day": 689,
+   "mean_day": 818,
+   "p25": 492,
+   "p75": 978,
+   "atr14_now": 1574
+  },
+  "NAS100": {
+   "pip": 0.1,
+   "median_day": 3605,
+   "mean_day": 4257,
+   "p25": 2536,
+   "p75": 5196,
+   "atr14_now": 9174
+  }
+ },
+ "plans": {
+  "Plan 1 Position": {
+   "trades": 119,
+   "net_r": 0.824,
+   "first_half": 0.989,
+   "second_half": 0.604,
+   "win_rate": 52.1,
+   "avg_win_r": 2.2,
+   "avg_loss_r": -0.67,
+   "realized_rr": 3.28,
+   "r10": 0,
+   "best_r": 7.5,
+   "avg_win_pips": 2637.0,
+   "avg_loss_pips": -2951.0,
+   "by_symbol": {
+    "XAUUSD": 2.4,
+    "XAGUSD": 2.089,
+    "BTCUSD": -0.236,
+    "US500": 0.411,
+    "NAS100": -0.313
+   }
+  },
+  "Plan 3 Levels": {
+   "trades": 1636,
+   "net_r": 0.158,
+   "first_half": -0.013,
+   "second_half": 0.313,
+   "win_rate": 27.9,
+   "avg_win_r": 2.45,
+   "avg_loss_r": -0.73,
+   "realized_rr": 3.37,
+   "r10": 6,
+   "best_r": 19.5,
+   "avg_win_pips": 3383.0,
+   "avg_loss_pips": -1129.0,
+   "by_symbol": {
+    "XAUUSD": 0.26,
+    "XAGUSD": 0.315,
+    "BTCUSD": -0.019,
+    "US500": 0.082,
+    "NAS100": 0.048
+   }
+  },
+  "Plan 3B Levels 2R bank": {
+   "trades": 1636,
+   "net_r": 0.114,
+   "first_half": 0.017,
+   "second_half": 0.202,
+   "win_rate": 31.8,
+   "avg_win_r": 1.96,
+   "avg_loss_r": -0.75,
+   "realized_rr": 2.62,
+   "r10": 1,
+   "best_r": 10.7,
+   "avg_win_pips": 3098.0,
+   "avg_loss_pips": -1150.0,
+   "by_symbol": {
+    "XAUUSD": 0.176,
+    "XAGUSD": 0.137,
+    "BTCUSD": 0.023,
+    "US500": 0.098,
+    "NAS100": 0.111
+   }
+  }
+ },
+ "prop": [
+  {
+   "portfolio": "Core (Plan 1 + Plan 3)",
+   "mode": "Normal",
+   "trades": 1302,
+   "paid": 24335.42,
+   "net": 23595.42,
+   "rewards": 10,
+   "worst_dd": 4.58,
+   "breach": null,
+   "first_reward": [
+    "2025-04-23",
+    1484.23
+   ],
+   "lots": [
+    {
+     "symbol": "BTCUSD",
+     "median": 0.03,
+     "max": 0.08
+    },
+    {
+     "symbol": "NAS100",
+     "median": 0.2,
+     "max": 0.7
+    },
+    {
+     "symbol": "US500",
+     "median": 1.08,
+     "max": 3.39
+    },
+    {
+     "symbol": "XAGUSD",
+     "median": 0.02,
+     "max": 0.09
+    },
+    {
+     "symbol": "XAUUSD",
+     "median": 0.01,
+     "max": 0.05
+    }
+   ]
+  },
+  {
+   "portfolio": "Core (Plan 1 + Plan 3)",
+   "mode": "Aggressive",
+   "trades": 771,
+   "paid": 13088.18,
+   "net": 12348.18,
+   "rewards": 7,
+   "worst_dd": 4.98,
+   "breach": null,
+   "first_reward": [
+    "2025-10-24",
+    1127.19
+   ],
+   "lots": [
+    {
+     "symbol": "BTCUSD",
+     "median": 0.05,
+     "max": 0.2
+    },
+    {
+     "symbol": "NAS100",
+     "median": 0.16,
+     "max": 1.15
+    },
+    {
+     "symbol": "US500",
+     "median": 0.72,
+     "max": 5.33
+    },
+    {
+     "symbol": "XAGUSD",
+     "median": 0.03,
+     "max": 0.09
+    },
+    {
+     "symbol": "XAUUSD",
+     "median": 0.02,
+     "max": 0.07
+    }
+   ]
+  },
+  {
+   "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)",
+   "mode": "Normal",
+   "trades": 1427,
+   "paid": 24500.84,
+   "net": 23760.84,
+   "rewards": 14,
+   "worst_dd": 4.65,
+   "breach": null,
+   "first_reward": [
+    "2025-03-27",
+    1170.1
+   ],
+   "lots": [
+    {
+     "symbol": "BTCUSD",
+     "median": 0.03,
+     "max": 0.08
+    },
+    {
+     "symbol": "NAS100",
+     "median": 0.21,
+     "max": 2.12
+    },
+    {
+     "symbol": "US500",
+     "median": 1.14,
+     "max": 3.39
+    },
+    {
+     "symbol": "XAGUSD",
+     "median": 0.02,
+     "max": 0.09
+    },
+    {
+     "symbol": "XAUUSD",
+     "median": 0.01,
+     "max": 0.05
+    }
+   ]
+  },
+  {
+   "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)",
+   "mode": "Aggressive",
+   "trades": 1009,
+   "paid": 8184.49,
+   "net": 7444.49,
+   "rewards": 6,
+   "worst_dd": 4.94,
+   "breach": null,
+   "first_reward": [
+    "2026-02-12",
+    504.23
+   ],
+   "lots": [
+    {
+     "symbol": "BTCUSD",
+     "median": 0.05,
+     "max": 0.2
+    },
+    {
+     "symbol": "NAS100",
+     "median": 0.08,
+     "max": 1.88
+    },
+    {
+     "symbol": "US500",
+     "median": 0.57,
+     "max": 5.31
+    },
+    {
+     "symbol": "XAGUSD",
+     "median": 0.02,
+     "max": 0.09
+    },
+    {
+     "symbol": "XAUUSD",
+     "median": 0.01,
+     "max": 0.07
+    }
+   ]
+  }
+ ],
+ "weak_spots": {
+  "by_weekday": [
+   {
+    "dow": 0,
+    "first": 0.098,
+    "second": 0.736
+   },
+   {
+    "dow": 1,
+    "first": 0.106,
+    "second": 0.193
+   },
+   {
+    "dow": 2,
+    "first": -0.112,
+    "second": 0.588
+   },
+   {
+    "dow": 3,
+    "first": -0.034,
+    "second": -0.16
+   },
+   {
+    "dow": 4,
+    "first": 0.147,
+    "second": 0.164
+   },
+   {
+    "dow": 5,
+    "first": -1.014,
+    "second": -0.92
+   },
+   {
+    "dow": 6,
+    "first": -0.33,
+    "second": 0.197
+   }
+  ],
+  "by_news": [
+   {
+    "news": "CPI",
+    "half": "first",
+    "count": 10,
+    "mean": -0.531
+   },
+   {
+    "news": "CPI",
+    "half": "second",
+    "count": 4,
+    "mean": -0.333
+   },
+   {
+    "news": "FOMC",
+    "half": "first",
+    "count": 14,
+    "mean": 0.705
+   },
+   {
+    "news": "FOMC",
+    "half": "second",
+    "count": 9,
+    "mean": 0.966
+   },
+   {
+    "news": "NFP",
+    "half": "first",
+    "count": 17,
+    "mean": 0.687
+   },
+   {
+    "news": "NFP",
+    "half": "second",
+    "count": 13,
+    "mean": 0.074
+   },
+   {
+    "news": "none",
+    "half": "first",
+    "count": 261,
+    "mean": -0.091
+   },
+   {
+    "news": "none",
+    "half": "second",
+    "count": 276,
+    "mean": 0.277
+   }
+  ]
+ },
+ "roadmap": [
+  {
+   "portfolio": "Core (Plan 1 + Plan 3)",
+   "mode": "Aggressive",
+   "starts": 16,
+   "month1_reward_pct": 12.0,
+   "first_reward_within_90d_pct": 38.0,
+   "month3_major_median": 0.0,
+   "accounts_end_median": 1.0,
+   "accounts_end_max": 6,
+   "net_12m_median": 6745.5,
+   "net_12m_min": -740.0,
+   "net_12m_max": 26712.71,
+   "breaches": 0
+  },
+  {
+   "portfolio": "Core (Plan 1 + Plan 3)",
+   "mode": "Normal",
+   "starts": 16,
+   "month1_reward_pct": 12.0,
+   "first_reward_within_90d_pct": 44.0,
+   "month3_major_median": 0.0,
+   "accounts_end_median": 1.5,
+   "accounts_end_max": 8,
+   "net_12m_median": 17024.52,
+   "net_12m_min": -7.95,
+   "net_12m_max": 39595.34,
+   "breaches": 0
+  },
+  {
+   "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)",
+   "mode": "Aggressive",
+   "starts": 16,
+   "month1_reward_pct": 19.0,
+   "first_reward_within_90d_pct": 44.0,
+   "month3_major_median": 0.0,
+   "accounts_end_median": 2.5,
+   "accounts_end_max": 8,
+   "net_12m_median": 20022.71,
+   "net_12m_min": -740.0,
+   "net_12m_max": 85286.8,
+   "breaches": 0
+  },
+  {
+   "portfolio": "New: Core + 2R bank (Plan 1 + Plan 3B)",
+   "mode": "Normal",
+   "starts": 16,
+   "month1_reward_pct": 19.0,
+   "first_reward_within_90d_pct": 69.0,
+   "month3_major_median": 443.75,
+   "accounts_end_median": 2.0,
+   "accounts_end_max": 8,
+   "net_12m_median": 15808.54,
+   "net_12m_min": 3827.07,
+   "net_12m_max": 31554.12,
+   "breaches": 0
+  }
+ ]
+}
