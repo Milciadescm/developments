@@ -101,7 +101,7 @@ def main():
         "Expansion: 3 firms, 150 accounts": dict(cap=150),
         "Edge halves after year 2 (150 cap)": dict(cap=150, decay_after=2, decay=0.5),
         "Prop income stops after year 3 (150 cap)": dict(cap=150, stop_after=3),
-        "Crypto falls 50% a year for 2 years, then flat": dict(cap=150, crypto_growth=-0.5),
+        "Crypto falls 50% every year (150 cap)": dict(cap=150, crypto_growth=-0.5),
     }
     out = {"one_account_first_year": dict(median=float(np.median(yr)), min=float(min(yr)), max=float(max(yr)),
                                           zero_years=int(sum(1 for v in yr if v == 0)), starts=len(yr))}

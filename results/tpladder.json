@@ -1,0 +1,170 @@
+{
+ "Position plan entries | BE after TP1=False | max 5 days": {
+  "n": 43,
+  "mean": 0.158,
+  "first": 0.203,
+  "second": 0.09,
+  "win": 88.4,
+  "by_sym": {
+   "XAUUSD": 0.286,
+   "XAGUSD": 0.19,
+   "BTCUSD": -0.036,
+   "US500": 0.295,
+   "NAS100": 0.053
+  },
+  "median_stop_pips": {
+   "XAUUSD": 975,
+   "XAGUSD": 138,
+   "BTCUSD": 3972,
+   "US500": 895,
+   "NAS100": 5620
+  }
+ },
+ "Position plan entries | BE after TP1=False | max 10 days": {
+  "n": 43,
+  "mean": 0.166,
+  "first": 0.215,
+  "second": 0.092,
+  "win": 88.4,
+  "by_sym": {
+   "XAUUSD": 0.271,
+   "XAGUSD": 0.248,
+   "BTCUSD": -0.036,
+   "US500": 0.294,
+   "NAS100": 0.053
+  },
+  "median_stop_pips": {
+   "XAUUSD": 975,
+   "XAGUSD": 138,
+   "BTCUSD": 3972,
+   "US500": 895,
+   "NAS100": 5620
+  }
+ },
+ "Position plan entries | BE after TP1=True | max 5 days": {
+  "n": 43,
+  "mean": 0.126,
+  "first": 0.177,
+  "second": 0.048,
+  "win": 88.4,
+  "by_sym": {
+   "XAUUSD": 0.168,
+   "XAGUSD": 0.134,
+   "BTCUSD": -0.038,
+   "US500": 0.285,
+   "NAS100": 0.053
+  },
+  "median_stop_pips": {
+   "XAUUSD": 975,
+   "XAGUSD": 138,
+   "BTCUSD": 3972,
+   "US500": 895,
+   "NAS100": 5620
+  }
+ },
+ "Position plan entries | BE after TP1=True | max 10 days": {
+  "n": 43,
+  "mean": 0.136,
+  "first": 0.193,
+  "second": 0.048,
+  "win": 88.4,
+  "by_sym": {
+   "XAUUSD": 0.168,
+   "XAGUSD": 0.187,
+   "BTCUSD": -0.038,
+   "US500": 0.285,
+   "NAS100": 0.053
+  },
+  "median_stop_pips": {
+   "XAUUSD": 975,
+   "XAGUSD": 138,
+   "BTCUSD": 3972,
+   "US500": 895,
+   "NAS100": 5620
+  }
+ },
+ "Levels plan entries | BE after TP1=False | max 5 days": {
+  "n": 604,
+  "mean": 0.006,
+  "first": -0.07,
+  "second": 0.083,
+  "win": 68.0,
+  "by_sym": {
+   "XAUUSD": -0.01,
+   "XAGUSD": 0.049,
+   "BTCUSD": -0.007,
+   "US500": -0.02,
+   "NAS100": 0.005
+  },
+  "median_stop_pips": {
+   "XAUUSD": 689,
+   "XAGUSD": 71,
+   "BTCUSD": 2837,
+   "US500": 797,
+   "NAS100": 4268
+  }
+ },
+ "Levels plan entries | BE after TP1=False | max 10 days": {
+  "n": 604,
+  "mean": 0.01,
+  "first": -0.075,
+  "second": 0.094,
+  "win": 66.6,
+  "by_sym": {
+   "XAUUSD": -0.026,
+   "XAGUSD": 0.078,
+   "BTCUSD": -0.007,
+   "US500": -0.026,
+   "NAS100": 0.005
+  },
+  "median_stop_pips": {
+   "XAUUSD": 689,
+   "XAGUSD": 71,
+   "BTCUSD": 2837,
+   "US500": 797,
+   "NAS100": 4268
+  }
+ },
+ "Levels plan entries | BE after TP1=True | max 5 days": {
+  "n": 604,
+  "mean": 0.01,
+  "first": -0.057,
+  "second": 0.077,
+  "win": 74.3,
+  "by_sym": {
+   "XAUUSD": 0.015,
+   "XAGUSD": 0.027,
+   "BTCUSD": 0.016,
+   "US500": -0.035,
+   "NAS100": 0.024
+  },
+  "median_stop_pips": {
+   "XAUUSD": 689,
+   "XAGUSD": 71,
+   "BTCUSD": 2837,
+   "US500": 797,
+   "NAS100": 4268
+  }
+ },
+ "Levels plan entries | BE after TP1=True | max 10 days": {
+  "n": 604,
+  "mean": 0.013,
+  "first": -0.062,
+  "second": 0.087,
+  "win": 73.8,
+  "by_sym": {
+   "XAUUSD": 0.014,
+   "XAGUSD": 0.04,
+   "BTCUSD": 0.016,
+   "US500": -0.038,
+   "NAS100": 0.024
+  },
+  "median_stop_pips": {
+   "XAUUSD": 689,
+   "XAGUSD": 71,
+   "BTCUSD": 2837,
+   "US500": 797,
+   "NAS100": 4268
+  }
+ }
+}

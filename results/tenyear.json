@@ -2006,7 +2006,7 @@
   "p_100M_by_y3": 0.0,
   "p_100M_by_y10": 0.0
  },
- "Crypto falls 50% a year for 2 years, then flat": {
+ "Crypto falls 50% every year (150 cap)": {
   "accounts": [
    {
     "year": 1,
