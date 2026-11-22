@@ -1,0 +1,310 @@
+{
+ "grid": [
+  {
+   "risk": 0.25,
+   "cap": 5000,
+   "end": 4978.89,
+   "cagr": -0.1,
+   "max_dd": 1.9,
+   "taken": 57,
+   "skipped_min_lot": 22,
+   "months_up": 12,
+   "worst_month": -1.2
+  },
+  {
+   "risk": 0.25,
+   "cap": 10000,
+   "end": 9890.56,
+   "cagr": -0.4,
+   "max_dd": 2.3,
+   "taken": 57,
+   "skipped_min_lot": 22,
+   "months_up": 12,
+   "worst_month": -1.5
+  },
+  {
+   "risk": 0.25,
+   "cap": 25000,
+   "end": 25370.23,
+   "cagr": 0.5,
+   "max_dd": 3.5,
+   "taken": 78,
+   "skipped_min_lot": 15,
+   "months_up": 15,
+   "worst_month": -1.6
+  },
+  {
+   "risk": 0.25,
+   "cap": 50000,
+   "end": 55663.4,
+   "cagr": 3.7,
+   "max_dd": 3.8,
+   "taken": 106,
+   "skipped_min_lot": 7,
+   "months_up": 26,
+   "worst_month": -1.6
+  },
+  {
+   "risk": 0.25,
+   "cap": 100000,
+   "end": 118121.06,
+   "cagr": 5.9,
+   "max_dd": 2.4,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -1.2
+  },
+  {
+   "risk": 0.25,
+   "cap": 250000,
+   "end": 301276.74,
+   "cagr": 6.6,
+   "max_dd": 2.6,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -1.0
+  },
+  {
+   "risk": 0.5,
+   "cap": 5000,
+   "end": 4899.51,
+   "cagr": -0.7,
+   "max_dd": 4.4,
+   "taken": 57,
+   "skipped_min_lot": 22,
+   "months_up": 12,
+   "worst_month": -2.9
+  },
+  {
+   "risk": 0.5,
+   "cap": 10000,
+   "end": 9695.66,
+   "cagr": -1.1,
+   "max_dd": 6.7,
+   "taken": 67,
+   "skipped_min_lot": 20,
+   "months_up": 12,
+   "worst_month": -3.2
+  },
+  {
+   "risk": 0.5,
+   "cap": 25000,
+   "end": 30492.63,
+   "cagr": 7.0,
+   "max_dd": 7.5,
+   "taken": 106,
+   "skipped_min_lot": 7,
+   "months_up": 26,
+   "worst_month": -3.3
+  },
+  {
+   "risk": 0.5,
+   "cap": 50000,
+   "end": 67929.28,
+   "cagr": 11.1,
+   "max_dd": 5.0,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -1.9
+  },
+  {
+   "risk": 0.5,
+   "cap": 100000,
+   "end": 143637.54,
+   "cagr": 13.2,
+   "max_dd": 5.1,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -1.9
+  },
+  {
+   "risk": 0.5,
+   "cap": 250000,
+   "end": 367757.02,
+   "cagr": 14.1,
+   "max_dd": 5.3,
+   "taken": 119,
+   "skipped_min_lot": 0,
+   "months_up": 29,
+   "worst_month": -1.9
+  },
+  {
+   "risk": 0.75,
+   "cap": 5000,
+   "end": 4753.28,
+   "cagr": -1.8,
+   "max_dd": 8.1,
+   "taken": 58,
+   "skipped_min_lot": 23,
+   "months_up": 12,
+   "worst_month": -4.7
+  },
+  {
+   "risk": 0.75,
+   "cap": 10000,
+   "end": 11718.16,
+   "cagr": 5.8,
+   "max_dd": 11.0,
+   "taken": 92,
+   "skipped_min_lot": 12,
+   "months_up": 24,
+   "worst_month": -4.9
+  },
+  {
+   "risk": 0.75,
+   "cap": 25000,
+   "end": 39849.56,
+   "cagr": 17.3,
+   "max_dd": 7.0,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -3.7
+  },
+  {
+   "risk": 0.75,
+   "cap": 50000,
+   "end": 82260.83,
+   "cagr": 18.6,
+   "max_dd": 7.5,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -3.1
+  },
+  {
+   "risk": 0.75,
+   "cap": 100000,
+   "end": 170929.53,
+   "cagr": 20.2,
+   "max_dd": 7.7,
+   "taken": 119,
+   "skipped_min_lot": 0,
+   "months_up": 29,
+   "worst_month": -3.0
+  },
+  {
+   "risk": 0.75,
+   "cap": 250000,
+   "end": 439484.2,
+   "cagr": 21.3,
+   "max_dd": 7.8,
+   "taken": 119,
+   "skipped_min_lot": 0,
+   "months_up": 29,
+   "worst_month": -2.8
+  },
+  {
+   "risk": 1.0,
+   "cap": 5000,
+   "end": 4664.97,
+   "cagr": -2.4,
+   "max_dd": 13.3,
+   "taken": 67,
+   "skipped_min_lot": 20,
+   "months_up": 12,
+   "worst_month": -6.3
+  },
+  {
+   "risk": 1.0,
+   "cap": 10000,
+   "end": 13662.73,
+   "cagr": 11.3,
+   "max_dd": 14.9,
+   "taken": 103,
+   "skipped_min_lot": 10,
+   "months_up": 26,
+   "worst_month": -6.4
+  },
+  {
+   "risk": 1.0,
+   "cap": 25000,
+   "end": 47057.77,
+   "cagr": 24.2,
+   "max_dd": 9.6,
+   "taken": 118,
+   "skipped_min_lot": 1,
+   "months_up": 29,
+   "worst_month": -4.3
+  },
+  {
+   "risk": 1.0,
+   "cap": 50000,
+   "end": 101189.82,
+   "cagr": 27.3,
+   "max_dd": 10.0,
+   "taken": 119,
+   "skipped_min_lot": 0,
+   "months_up": 29,
+   "worst_month": -3.9
+  },
+  {
+   "risk": 1.0,
+   "cap": 100000,
+   "end": 205543.57,
+   "cagr": 28.0,
+   "max_dd": 10.2,
+   "taken": 119,
+   "skipped_min_lot": 0,
+   "months_up": 29,
+   "worst_month": -3.8
+  },
+  {
+   "risk": 1.0,
+   "cap": 250000,
+   "end": 525446.89,
+   "cagr": 29.0,
+   "max_dd": 10.3,
+   "taken": 119,
+   "skipped_min_lot": 0,
+   "months_up": 29,
+   "worst_month": -3.7
+  }
+ ],
+ "risk": [
+  {
+   "p_loss_12m": 14.8,
+   "p_loss_over_10": 0.0,
+   "median_12m": 4.8,
+   "p5_12m": -1.9,
+   "p1_12m": -3.1,
+   "dd_p95": 2.8,
+   "dd_p99": 3.5,
+   "risk": 0.25
+  },
+  {
+   "p_loss_12m": 14.6,
+   "p_loss_over_10": 0.0,
+   "median_12m": 11.7,
+   "p5_12m": -4.1,
+   "p1_12m": -6.5,
+   "dd_p95": 5.8,
+   "dd_p99": 7.2,
+   "risk": 0.5
+  },
+  {
+   "p_loss_12m": 14.6,
+   "p_loss_over_10": 0.81,
+   "median_12m": 17.6,
+   "p5_12m": -6.2,
+   "p1_12m": -9.6,
+   "dd_p95": 8.6,
+   "dd_p99": 10.7,
+   "risk": 0.75
+  },
+  {
+   "p_loss_12m": 14.4,
+   "p_loss_over_10": 2.96,
+   "median_12m": 24.5,
+   "p5_12m": -8.2,
+   "p1_12m": -12.7,
+   "dd_p95": 11.3,
+   "dd_p99": 14.1,
+   "risk": 1.0
+  }
+ ]
+}

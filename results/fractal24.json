@@ -1,0 +1,308 @@
+{
+ "variants": {
+  "H1 | S0 origin-0.25ATR | X1 TP 1R": {
+   "n": 709,
+   "per_month": 20.6,
+   "mean": -0.103,
+   "first": -0.106,
+   "second": -0.1,
+   "t": -2.73,
+   "win": 47.0,
+   "hold_h": 3.0,
+   "by_sym": {
+    "XAUUSD": 0.119,
+    "XAGUSD": -0.033,
+    "BTCUSD": -0.254,
+    "US500": -0.118,
+    "NAS100": -0.224
+   }
+  },
+  "H1 | S0 origin-0.25ATR | X2 TP 2R": {
+   "n": 684,
+   "per_month": 19.8,
+   "mean": -0.1,
+   "first": -0.076,
+   "second": -0.121,
+   "t": -2.05,
+   "win": 36.3,
+   "hold_h": 5.0,
+   "by_sym": {
+    "XAUUSD": 0.22,
+    "XAGUSD": -0.005,
+    "BTCUSD": -0.343,
+    "US500": -0.138,
+    "NAS100": -0.219
+   }
+  },
+  "H1 | S0 origin-0.25ATR | X3 TP leg extreme": {
+   "n": 685,
+   "per_month": 19.9,
+   "mean": -0.103,
+   "first": -0.086,
+   "second": -0.118,
+   "t": -2.1,
+   "win": 36.2,
+   "hold_h": 5.0,
+   "by_sym": {
+    "XAUUSD": 0.218,
+    "XAGUSD": 0.008,
+    "BTCUSD": -0.346,
+    "US500": -0.149,
+    "NAS100": -0.228
+   }
+  },
+  "H1 | S0 origin-0.25ATR | X4 time only": {
+   "n": 641,
+   "per_month": 18.6,
+   "mean": -0.054,
+   "first": -0.115,
+   "second": -0.001,
+   "t": -0.81,
+   "win": 32.9,
+   "hold_h": 6.0,
+   "by_sym": {
+    "XAUUSD": 0.211,
+    "XAGUSD": 0.287,
+    "BTCUSD": -0.295,
+    "US500": -0.261,
+    "NAS100": -0.187
+   }
+  },
+  "H1 | S1 Fib 1.0 | X1 TP 1R": {
+   "n": 711,
+   "per_month": 20.6,
+   "mean": -0.095,
+   "first": -0.088,
+   "second": -0.102,
+   "t": -2.43,
+   "win": 46.7,
+   "hold_h": 2.0,
+   "by_sym": {
+    "XAUUSD": 0.133,
+    "XAGUSD": -0.039,
+    "BTCUSD": -0.251,
+    "US500": -0.119,
+    "NAS100": -0.194
+   }
+  },
+  "H1 | S1 Fib 1.0 | X2 TP 2R": {
+   "n": 695,
+   "per_month": 20.1,
+   "mean": -0.099,
+   "first": -0.059,
+   "second": -0.134,
+   "t": -1.97,
+   "win": 35.4,
+   "hold_h": 4.0,
+   "by_sym": {
+    "XAUUSD": 0.256,
+    "XAGUSD": -0.103,
+    "BTCUSD": -0.333,
+    "US500": -0.103,
+    "NAS100": -0.199
+   }
+  },
+  "H1 | S1 Fib 1.0 | X3 TP leg extreme": {
+   "n": 684,
+   "per_month": 19.8,
+   "mean": -0.089,
+   "first": -0.064,
+   "second": -0.111,
+   "t": -1.64,
+   "win": 33.5,
+   "hold_h": 4.0,
+   "by_sym": {
+    "XAUUSD": 0.249,
+    "XAGUSD": -0.042,
+    "BTCUSD": -0.337,
+    "US500": -0.126,
+    "NAS100": -0.174
+   }
+  },
+  "H1 | S1 Fib 1.0 | X4 time only": {
+   "n": 642,
+   "per_month": 18.6,
+   "mean": -0.063,
+   "first": -0.122,
+   "second": -0.011,
+   "t": -0.89,
+   "win": 30.1,
+   "hold_h": 6.0,
+   "by_sym": {
+    "XAUUSD": 0.239,
+    "XAGUSD": 0.093,
+    "BTCUSD": -0.177,
+    "US500": -0.276,
+    "NAS100": -0.155
+   }
+  },
+  "H4 | S0 origin-0.25ATR | X1 TP 1R": {
+   "n": 102,
+   "per_month": 3.0,
+   "mean": 0.064,
+   "first": 0.113,
+   "second": 0.024,
+   "t": 0.73,
+   "win": 58.8,
+   "hold_h": 16.0,
+   "by_sym": {
+    "XAUUSD": 0.049,
+    "XAGUSD": 0.101,
+    "BTCUSD": 0.119,
+    "US500": 0.008,
+    "NAS100": 0.033
+   }
+  },
+  "H4 | S0 origin-0.25ATR | X2 TP 2R": {
+   "n": 102,
+   "per_month": 3.0,
+   "mean": 0.078,
+   "first": 0.131,
+   "second": 0.034,
+   "t": 0.78,
+   "win": 55.9,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.044,
+    "XAGUSD": 0.088,
+    "BTCUSD": 0.233,
+    "US500": -0.037,
+    "NAS100": 0.032
+   }
+  },
+  "H4 | S0 origin-0.25ATR | X3 TP leg extreme": {
+   "n": 102,
+   "per_month": 3.0,
+   "mean": 0.118,
+   "first": 0.212,
+   "second": 0.04,
+   "t": 1.06,
+   "win": 55.9,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.044,
+    "XAGUSD": 0.079,
+    "BTCUSD": 0.235,
+    "US500": 0.085,
+    "NAS100": 0.111
+   }
+  },
+  "H4 | S0 origin-0.25ATR | X4 time only": {
+   "n": 101,
+   "per_month": 2.9,
+   "mean": 0.173,
+   "first": 0.297,
+   "second": 0.069,
+   "t": 1.33,
+   "win": 56.4,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.044,
+    "XAGUSD": 0.13,
+    "BTCUSD": 0.218,
+    "US500": 0.141,
+    "NAS100": 0.316
+   }
+  },
+  "H4 | S1 Fib 1.0 | X1 TP 1R": {
+   "n": 102,
+   "per_month": 3.0,
+   "mean": 0.133,
+   "first": 0.182,
+   "second": 0.092,
+   "t": 1.35,
+   "win": 60.8,
+   "hold_h": 12.0,
+   "by_sym": {
+    "XAUUSD": 0.125,
+    "XAGUSD": 0.083,
+    "BTCUSD": 0.237,
+    "US500": 0.091,
+    "NAS100": 0.11
+   }
+  },
+  "H4 | S1 Fib 1.0 | X2 TP 2R": {
+   "n": 102,
+   "per_month": 3.0,
+   "mean": 0.142,
+   "first": 0.176,
+   "second": 0.114,
+   "t": 1.24,
+   "win": 55.9,
+   "hold_h": 20.0,
+   "by_sym": {
+    "XAUUSD": -0.004,
+    "XAGUSD": 0.149,
+    "BTCUSD": 0.281,
+    "US500": 0.084,
+    "NAS100": 0.149
+   }
+  },
+  "H4 | S1 Fib 1.0 | X3 TP leg extreme": {
+   "n": 102,
+   "per_month": 3.0,
+   "mean": 0.184,
+   "first": 0.282,
+   "second": 0.103,
+   "t": 1.33,
+   "win": 54.9,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.002,
+    "XAGUSD": -0.002,
+    "BTCUSD": 0.308,
+    "US500": 0.265,
+    "NAS100": 0.293
+   }
+  },
+  "H4 | S1 Fib 1.0 | X4 time only": {
+   "n": 101,
+   "per_month": 2.9,
+   "mean": 0.25,
+   "first": 0.381,
+   "second": 0.141,
+   "t": 1.5,
+   "win": 55.4,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.002,
+    "XAGUSD": -0.002,
+    "BTCUSD": 0.29,
+    "US500": 0.345,
+    "NAS100": 0.598
+   }
+  }
+ },
+ "chosen": "H4 | S1 Fib 1.0 | X4 time only",
+ "chosen_stats": {
+  "n": 101,
+  "per_month": 2.9,
+  "mean": 0.25,
+  "first": 0.381,
+  "second": 0.141,
+  "t": 1.5,
+  "win": 55.4,
+  "hold_h": 24.0,
+  "by_sym": {
+   "XAUUSD": 0.002,
+   "XAGUSD": -0.002,
+   "BTCUSD": 0.29,
+   "US500": 0.345,
+   "NAS100": 0.598
+  }
+ },
+ "prop_100k": {
+  "0.25%": {
+   "paid": 6765.03,
+   "dd": 2.24,
+   "breach": null,
+   "trades": 100
+  },
+  "0.50%": {
+   "paid": 13347.01,
+   "dd": 4.6,
+   "breach": null,
+   "trades": 101
+  }
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "A_daily": {
+  "n": 30,
+  "per_month": 0.9,
+  "mean": 0.175,
+  "first": 0.123,
+  "second": 0.254,
+  "t": 1.94,
+  "win": 63.3,
+  "hold_h": 21.0,
+  "by_sym": {
+   "XAUUSD": 0.299,
+   "XAGUSD": -0.042,
+   "BTCUSD": 0.282,
+   "US500": 0.11,
+   "NAS100": 0.198
+  }
+ },
+ "B_4h": {
+  "n": 101,
+  "per_month": 2.9,
+  "mean": 0.25,
+  "first": 0.381,
+  "second": 0.141,
+  "t": 1.5,
+  "win": 55.4,
+  "hold_h": 24.0,
+  "by_sym": {
+   "XAUUSD": 0.002,
+   "XAGUSD": -0.002,
+   "BTCUSD": 0.29,
+   "US500": 0.345,
+   "NAS100": 0.598
+  }
+ },
+ "combined": {
+  "n": 131,
+  "per_month": 3.8,
+  "mean": 0.233,
+  "first": 0.308,
+  "second": 0.161,
+  "t": 1.79,
+  "win": 57.3,
+  "hold_h": 24.0,
+  "by_sym": {
+   "XAUUSD": 0.092,
+   "XAGUSD": -0.01,
+   "BTCUSD": 0.288,
+   "US500": 0.288,
+   "NAS100": 0.498
+  }
+ },
+ "prop_100k": {
+  "0.25%": {
+   "full_paid": 7602,
+   "per_month": 221,
+   "full_dd": 2.18,
+   "breach": null,
+   "trades": 130,
+   "median_12m": 2960,
+   "worst_12m": 1042,
+   "best_12m": 4885,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 1.97
+  },
+  "0.50%": {
+   "full_paid": 15140,
+   "per_month": 441,
+   "full_dd": 4.55,
+   "breach": null,
+   "trades": 131,
+   "median_12m": 6009,
+   "worst_12m": 2163,
+   "best_12m": 9833,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 4.07
+  },
+  "0.75%": {
+   "full_paid": 22489,
+   "per_month": 655,
+   "full_dd": 4.9,
+   "breach": null,
+   "trades": 130,
+   "median_12m": 8902,
+   "worst_12m": 3156,
+   "best_12m": 14737,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 4.83
+  },
+  "1.00%": {
+   "full_paid": 27677,
+   "per_month": 806,
+   "full_dd": 4.96,
+   "breach": null,
+   "trades": 127,
+   "median_12m": 11479,
+   "worst_12m": 2563,
+   "best_12m": 19748,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 4.96
+  }
+ }
+}

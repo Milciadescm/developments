@@ -1,0 +1,369 @@
+{
+ "variants": {
+  "S0 plan stop | E1 time only": {
+   "n": 30,
+   "mean": 0.094,
+   "first": 0.01,
+   "second": 0.22,
+   "t": 1.34,
+   "win": 63.3,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.161,
+    "XAGUSD": -0.033,
+    "BTCUSD": 0.245,
+    "US500": -0.005,
+    "NAS100": 0.11
+   }
+  },
+  "S0 plan stop | E2 TP 1R": {
+   "n": 30,
+   "mean": 0.141,
+   "first": 0.088,
+   "second": 0.22,
+   "t": 1.72,
+   "win": 63.3,
+   "hold_h": 23.0,
+   "by_sym": {
+    "XAUUSD": 0.279,
+    "XAGUSD": -0.033,
+    "BTCUSD": 0.267,
+    "US500": -0.005,
+    "NAS100": 0.189
+   }
+  },
+  "S0 plan stop | E3 TP 2R": {
+   "n": 30,
+   "mean": 0.094,
+   "first": 0.01,
+   "second": 0.22,
+   "t": 1.34,
+   "win": 63.3,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.161,
+    "XAGUSD": -0.033,
+    "BTCUSD": 0.245,
+    "US500": -0.005,
+    "NAS100": 0.11
+   }
+  },
+  "S0 plan stop | E4 BE at +1R": {
+   "n": 30,
+   "mean": 0.088,
+   "first": -0.0,
+   "second": 0.22,
+   "t": 1.26,
+   "win": 60.0,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.136,
+    "XAGUSD": -0.033,
+    "BTCUSD": 0.245,
+    "US500": -0.005,
+    "NAS100": 0.11
+   }
+  },
+  "S0 plan stop | E5 TP leg extreme": {
+   "n": 30,
+   "mean": 0.094,
+   "first": 0.01,
+   "second": 0.22,
+   "t": 1.34,
+   "win": 63.3,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.161,
+    "XAGUSD": -0.033,
+    "BTCUSD": 0.245,
+    "US500": -0.005,
+    "NAS100": 0.11
+   }
+  },
+  "S0 plan stop | E6 pip ladder": {
+   "n": 30,
+   "mean": 0.106,
+   "first": 0.103,
+   "second": 0.11,
+   "t": 3.66,
+   "win": 83.3,
+   "hold_h": 7.5,
+   "by_sym": {
+    "XAUUSD": 0.186,
+    "XAGUSD": -0.033,
+    "BTCUSD": 0.059,
+    "US500": 0.232,
+    "NAS100": 0.018
+   }
+  },
+  "S1 Fib 1.0 | E1 time only": {
+   "n": 30,
+   "mean": 0.115,
+   "first": 0.022,
+   "second": 0.254,
+   "t": 1.48,
+   "win": 63.3,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.184,
+    "XAGUSD": -0.042,
+    "BTCUSD": 0.289,
+    "US500": 0.02,
+    "NAS100": 0.129
+   }
+  },
+  "S1 Fib 1.0 | E2 TP 1R": {
+   "n": 30,
+   "mean": 0.175,
+   "first": 0.123,
+   "second": 0.254,
+   "t": 1.94,
+   "win": 63.3,
+   "hold_h": 21.0,
+   "by_sym": {
+    "XAUUSD": 0.299,
+    "XAGUSD": -0.042,
+    "BTCUSD": 0.282,
+    "US500": 0.11,
+    "NAS100": 0.198
+   }
+  },
+  "S1 Fib 1.0 | E3 TP 2R": {
+   "n": 30,
+   "mean": 0.115,
+   "first": 0.022,
+   "second": 0.254,
+   "t": 1.48,
+   "win": 63.3,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.184,
+    "XAGUSD": -0.042,
+    "BTCUSD": 0.289,
+    "US500": 0.02,
+    "NAS100": 0.129
+   }
+  },
+  "S1 Fib 1.0 | E4 BE at +1R": {
+   "n": 30,
+   "mean": 0.108,
+   "first": 0.011,
+   "second": 0.254,
+   "t": 1.39,
+   "win": 60.0,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.156,
+    "XAGUSD": -0.042,
+    "BTCUSD": 0.289,
+    "US500": 0.02,
+    "NAS100": 0.129
+   }
+  },
+  "S1 Fib 1.0 | E5 TP leg extreme": {
+   "n": 30,
+   "mean": 0.115,
+   "first": 0.022,
+   "second": 0.254,
+   "t": 1.48,
+   "win": 63.3,
+   "hold_h": 24.0,
+   "by_sym": {
+    "XAUUSD": 0.184,
+    "XAGUSD": -0.042,
+    "BTCUSD": 0.289,
+    "US500": 0.02,
+    "NAS100": 0.129
+   }
+  },
+  "S1 Fib 1.0 | E6 pip ladder": {
+   "n": 30,
+   "mean": 0.123,
+   "first": 0.121,
+   "second": 0.126,
+   "t": 3.66,
+   "win": 83.3,
+   "hold_h": 7.5,
+   "by_sym": {
+    "XAUUSD": 0.213,
+    "XAGUSD": -0.042,
+    "BTCUSD": 0.071,
+    "US500": 0.274,
+    "NAS100": 0.023
+   }
+  },
+  "S2 Fib 0.886 | E1 time only": {
+   "n": 30,
+   "mean": -0.008,
+   "first": -0.185,
+   "second": 0.257,
+   "t": -0.06,
+   "win": 53.3,
+   "hold_h": 18.5,
+   "by_sym": {
+    "XAUUSD": 0.3,
+    "XAGUSD": -0.242,
+    "BTCUSD": -0.287,
+    "US500": -0.198,
+    "NAS100": 0.281
+   }
+  },
+  "S2 Fib 0.886 | E2 TP 1R": {
+   "n": 30,
+   "mean": 0.165,
+   "first": 0.083,
+   "second": 0.287,
+   "t": 1.14,
+   "win": 63.3,
+   "hold_h": 14.0,
+   "by_sym": {
+    "XAUUSD": 0.398,
+    "XAGUSD": 0.068,
+    "BTCUSD": -0.126,
+    "US500": -0.039,
+    "NAS100": 0.452
+   }
+  },
+  "S2 Fib 0.886 | E3 TP 2R": {
+   "n": 30,
+   "mean": -0.008,
+   "first": -0.185,
+   "second": 0.257,
+   "t": -0.06,
+   "win": 53.3,
+   "hold_h": 18.5,
+   "by_sym": {
+    "XAUUSD": 0.3,
+    "XAGUSD": -0.242,
+    "BTCUSD": -0.287,
+    "US500": -0.198,
+    "NAS100": 0.281
+   }
+  },
+  "S2 Fib 0.886 | E4 BE at +1R": {
+   "n": 30,
+   "mean": 0.004,
+   "first": -0.164,
+   "second": 0.257,
+   "t": 0.03,
+   "win": 50.0,
+   "hold_h": 16.5,
+   "by_sym": {
+    "XAUUSD": 0.254,
+    "XAGUSD": -0.134,
+    "BTCUSD": -0.287,
+    "US500": -0.181,
+    "NAS100": 0.286
+   }
+  },
+  "S2 Fib 0.886 | E5 TP leg extreme": {
+   "n": 30,
+   "mean": -0.008,
+   "first": -0.185,
+   "second": 0.257,
+   "t": -0.06,
+   "win": 53.3,
+   "hold_h": 18.5,
+   "by_sym": {
+    "XAUUSD": 0.3,
+    "XAGUSD": -0.242,
+    "BTCUSD": -0.287,
+    "US500": -0.198,
+    "NAS100": 0.281
+   }
+  },
+  "S2 Fib 0.886 | E6 pip ladder": {
+   "n": 30,
+   "mean": 0.073,
+   "first": 0.034,
+   "second": 0.133,
+   "t": 0.87,
+   "win": 76.7,
+   "hold_h": 7.0,
+   "by_sym": {
+    "XAUUSD": 0.347,
+    "XAGUSD": -0.242,
+    "BTCUSD": 0.115,
+    "US500": 0.015,
+    "NAS100": 0.051
+   }
+  }
+ },
+ "chosen": "S1 Fib 1.0 | E2 TP 1R",
+ "chosen_stats": {
+  "n": 30,
+  "mean": 0.175,
+  "first": 0.123,
+  "second": 0.254,
+  "t": 1.94,
+  "win": 63.3,
+  "hold_h": 21.0,
+  "by_sym": {
+   "XAUUSD": 0.299,
+   "XAGUSD": -0.042,
+   "BTCUSD": 0.282,
+   "US500": 0.11,
+   "NAS100": 0.198
+  }
+ },
+ "prop_100k": {
+  "0.25%": {
+   "full_paid": 899.64,
+   "full_dd": 0.27,
+   "full_breach": null,
+   "trades": 30,
+   "median_12m": 427,
+   "worst_12m": 40,
+   "best_12m": 581,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 0.3
+  },
+  "0.50%": {
+   "full_paid": 1923.27,
+   "full_dd": 0.56,
+   "full_breach": null,
+   "trades": 30,
+   "median_12m": 932,
+   "worst_12m": 78,
+   "best_12m": 1224,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 0.61
+  },
+  "0.75%": {
+   "full_paid": 2859.44,
+   "full_dd": 0.83,
+   "full_breach": null,
+   "trades": 30,
+   "median_12m": 1352,
+   "worst_12m": 102,
+   "best_12m": 1842,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 0.93
+  },
+  "1.00%": {
+   "full_paid": 3930.77,
+   "full_dd": 1.12,
+   "full_breach": null,
+   "trades": 30,
+   "median_12m": 1906,
+   "worst_12m": 187,
+   "best_12m": 2505,
+   "zero_years": 0,
+   "breaches": 0,
+   "starts": 21,
+   "worst_dd": 1.24
+  }
+ },
+ "reference_hold": {
+  "mean": 0.714,
+  "first": 0.874,
+  "second": 0.501,
+  "t": 4.03
+ }
+}

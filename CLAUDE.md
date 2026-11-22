@@ -15,5 +15,12 @@ The bot changes only if a new rule beats the current best on all four checks:
 4. Worst drawdown on a $100K account < 5% (firm line 6%).
 Anything that fails is logged as rejected or optional and stays out of the default preset.
 
-Current best: FibFVG Pro v3, position plan only, 0.5% per unit, chandelier exit (+0.71R after swaps, t = 4.0).
+## Two kinds of money
+- Prop accounts (Wallet 1): no trade held over 24 hours or over the weekend. Current best: `fibfvg/prop24.py`
+  (daily + 4-hour setups at 0.705, stop at leg origin, flat within 24 h, 0.5% per trade): +0.23R, t = 1.8.
+- Cueto & Co. real money (Wallet 2): holds allowed. Bot v3 position plan, 0.5% per unit, chandelier exit
+  (+0.71R after swaps, t = 4.0). Starts when Wallet 2 >= $100K, half in the bot, 10% hard stop (`fibfvg/livefund.py`).
+- Wallets (`fibfvg/wallets3.py`): one prop firm at a time up to 50 accounts; below 50: 50% buys accounts,
+  25% Wallet 2, 25% Wallet 3 crypto; at 50: 70% Wallet 2, 25% crypto, 5% burn reserve (5 accounts), then to Wallet 2.
+
 First live $100K account: 1 December 2026. All numbers before then are backtests.
