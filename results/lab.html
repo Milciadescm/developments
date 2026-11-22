@@ -76,7 +76,7 @@ figure{margin:0;padding:12px}figcaption{color:var(--muted);font-size:12.5px;padd
     <p class="lede">Watch the bot work through each trade: time first (monthly, weekly and weekday bias, bars to fill), then price (breakout, FVG, Fibonacci OTE entry, extension targets). Then see the reverse test and the time study that produced plan v2.</p>
   </header>
   <nav aria-label="Sections">
-    <a href="#replay">Replay</a><a href="#reverse">Reverse test</a><a href="#time">Time study</a><a href="#plan">Plan v2</a><a href="#plans">Two plans</a><a href="#since2024">Since 2024</a><a href="#prop">Prop vs real</a>
+    <a href="#replay">Replay</a><a href="#reverse">Reverse test</a><a href="#time">Time study</a><a href="#plan">Plan v2</a><a href="#plans">Two plans</a><a href="#since2024">Since 2024</a><a href="#prop">Prop vs real</a><a href="#payouts">Withdrawals</a>
   </nav>
 
   <!-- ===================== REPLAY ===================== -->
@@ -205,6 +205,24 @@ figure{margin:0;padding:12px}figcaption{color:var(--muted);font-size:12.5px;padd
       <li><b>STRONG_EDGE → Aggressive:</b> the last 40 closed positions sum to at least +8R, profit factor at least 1.5, and drawdown at most 1.5%.</li>
       <li><b>Otherwise, or drawdown 3% or more → Conservative.</b> Checked again after every closed trade. Here it did not beat fixed Normal on most accounts, because it spends the first 20 trades at Conservative size.</li></ul></div>
   </section>
+
+  <!-- ===================== WITHDRAWALS ===================== -->
+  <section id="v-payouts" hidden style="display:grid;grid-template-columns:minmax(0,1fr);gap:14px">
+    <h2>Withdrawing $1,000–$2,000 every two weeks</h2>
+    <div class="panel verdict"><b>The plan</b><ul>
+      <li><b>Rewards are lumpy, so don't pay yourself straight from them.</b> One Instant Premium $100K account in Normal mode paid about $375 per fortnight on average, but only 9 of 63 fortnights had a reward and the first came about 9 months in.</li>
+      <li><b>Every reward goes into a personal reserve. You pay yourself a fixed amount from the reserve.</b> Start at $1,000 once the reserve holds 13 payments ($13,000). Step up to $1,500 at $19,500 and $2,000 at $26,000. Step down a level if the reserve falls below 6 payments of the current level.</li>
+      <li><b>Account size:</b> 3 × $100K Instant Premium in Normal mode ($300K funded, $2,220 in refundable fees) reached $2,000 per fortnight and never missed a payment. With 5 accounts the salary started 3 months earlier.</li>
+      <li><b>Expect dry spells while being paid.</b> With 3 accounts the reserve peaked near $43,000 in early 2026, then fell to about $12,000 because few rewards came in during 2026. The ladder rule would have stepped the salary down to $1,500 below $12,000. That rule is what keeps the payments safe, so don't override it.</li>
+      <li><b>Never raise the risk mode to hit a withdrawal.</b> Scale income by adding accounts, not risk. The 6% line does not move when you need money.</li>
+      <li><b>Per account, every 14 days:</b> request only the "withdrawable now" amount the bot shows (balance − start − open stop-risk). Open trades can keep running. The bot detects the withdrawal and resets its high-water mark, so the payout is not counted as a loss.</li>
+      <li><b>All accounts take the same trades.</b> More accounts multiply income and drawdowns together; they do not diversify. Check each firm's maximum allocation per trader and its rules on running the same strategy on several accounts. Spreading across two firms protects against a firm refusing to pay or closing.</li>
+      <li>July 2024 → now was a strong trend for gold and silver. The 20-year history earned less per year, so expect a longer wait before the salary starts.</li></ul></div>
+    <div class="panel bar"><label for="wsc" class="note">Scenario</label><select id="wsc"></select></div>
+    <div class="panel"><figure style="padding:12px"><svg id="wsvg" viewBox="0 0 760 240" role="img" aria-label="Reserve and salary over time"></svg><figcaption>Top: the reserve that every reward goes into. Bottom: the fixed amount paid to you each fortnight.</figcaption></figure></div>
+    <div class="panel"><div class="tw" style="max-height:none"><table class="static" id="wlad"><thead><tr><th>Accounts</th><th>Mode</th><th>Funded</th><th>Fees (refundable)</th><th>First salary</th><th>Fortnights at $0 / $1k / $1.5k / $2k</th><th>Paid to you</th><th>Missed payments</th><th>Reserve at end</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel"><div class="bar"><h3>What one account pays per fortnight (July 2024 → now)</h3></div><div class="tw" style="max-height:none"><table class="static" id="wacc"><thead><tr><th>Account</th><th>Mode</th><th>Rewards to you (excl. fee refund)</th><th>Average per fortnight</th><th>Fortnights with a reward</th><th>Median reward</th><th>First reward</th></tr></thead><tbody></tbody></table></div></div>
+  </section>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
@@ -222,7 +240,7 @@ const sgn=v=>(v>0?"+":"")+v.toFixed(2);
 const money=v=>v==null?"–":(v<0?"−$":"$")+Math.abs(v).toLocaleString("en-US",{maximumFractionDigits:0});
 
 /* ---------- routing ---------- */
-const VIEWS=["replay","reverse","time","plan","plans","since2024","prop"];
+const VIEWS=["replay","reverse","time","plan","plans","since2024","prop","payouts"];
 function route(){const h=(location.hash||"#replay").slice(1);const v=VIEWS.includes(h)?h:"replay";
   VIEWS.forEach(x=>{$("#v-"+x).hidden=x!==v;});
   document.querySelectorAll("nav a").forEach(a=>a.toggleAttribute("aria-current",a.getAttribute("href")==="#"+v)||a.setAttribute("aria-current","page"));
@@ -444,11 +462,32 @@ async function buildProp(){if(!PROP){try{PROP=await (await fetch("replay/prop.js
   const sz=+$("#psize").value;
   $("#lottab tbody").innerHTML=PROP.lots_recommended.filter(r=>r.account===sz).map(r=>`<tr><td>${r.mode}</td><td>${r.plan==="Plan 1"?"Plan 1 position":"Plan 3 levels"}</td><td>${r.risk_pct}%</td>${["XAUUSD","XAGUSD","BTCUSD","US500","NAS100"].map(k=>`<td>${r[k]>0?r[k].toFixed(2):'<span class="note">below 0.01</span>'}</td>`).join("")}</tr>`).join("");}
 
+let WD=null;
+async function buildPayouts(){if(!WD){try{WD=await (await fetch("replay/withdrawals.json")).json();}catch(e){return;}
+    $("#wsc").innerHTML=WD.ladder.map((l,i)=>`<option value="${i}">${l.accounts} × ${l.account.replace("Instant Premium ","Instant Premium ")} · ${l.mode}</option>`).join("");
+    $("#wsc").value=String(WD.ladder.findIndex(l=>l.accounts===3&&l.mode==="Normal"&&l.account.includes("100K")));
+    $("#wsc").onchange=drawW;
+    $("#wlad tbody").innerHTML=WD.ladder.map(l=>`<tr><td>${l.accounts} × ${l.account.replace("Instant Premium ","")}</td><td>${l.mode}</td><td>${money(l.funded)}</td><td>${money(l.fees)}</td><td>${l.first_salary||"never"}</td><td>${["0","1000","1500","2000"].map(k=>l.fortnights_at[k]).join(" / ")}</td><td class="g">${money(l.paid_to_you)}</td><td>${l.misses}</td><td>${money(l.end_reserve)}</td></tr>`).join("");
+    $("#wacc tbody").innerHTML=WD.accounts.map(a=>`<tr><td>${a.account}</td><td>${a.mode}</td><td>${money(a.paid)}</td><td>${money(a.avg_per_fortnight)}</td><td>${a.fortnights_with_reward} of ${a.fortnights}</td><td>${money(a.median_reward)}</td><td>${a.first_reward||"none"}</td></tr>`).join("");}
+  drawW();}
+function drawW(){const l=WD.ladder[+$("#wsc").value];const P=l.path;const W=760,H=260,lp=60,rp=10;
+  const rT=10,rB=150,sT=175,sB=232;                       // reserve band and salary band
+  const maxR=Math.max(...P.map(p=>p[2]),26000);const X=i=>lp+i/(P.length-1)*(W-lp-rp);
+  const Y=v=>rT+(1-v/maxR)*(rB-rT),S=v=>sT+(1-v/2000)*(sB-sT);
+  let o="";[0,maxR/2,maxR].forEach(v=>o+=`<line x1="${lp}" x2="${W-rp}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${lp-6}" y="${Y(v)+4}" text-anchor="end">${money(v)}</text>`);
+  [0,1000,2000].forEach(v=>o+=`<line x1="${lp}" x2="${W-rp}" y1="${S(v)}" y2="${S(v)}" stroke="var(--line)"/><text x="${lp-6}" y="${S(v)+4}" text-anchor="end">${money(v)}</text>`);
+  o+=`<text x="${lp}" y="${rT+10}" dx="6">reserve</text><text x="${lp}" y="${sT-4}" dx="6">salary per fortnight</text>`;
+  o+=`<polyline fill="none" stroke="var(--accent)" stroke-width="2" points="${P.map((p,i)=>X(i).toFixed(1)+","+Y(p[2]).toFixed(1)).join(" ")}"/>`;
+  let st="";P.forEach((p,i)=>{st+=(i?` ${X(i).toFixed(1)},${S(P[i-1][1]).toFixed(1)}`:"")+` ${X(i).toFixed(1)},${S(p[1]).toFixed(1)}`;});
+  o+=`<polyline fill="none" stroke="var(--gold)" stroke-width="2" points="${st.trim()}"/>`;
+  P.forEach((p,i)=>{if(i%13===0)o+=`<text x="${X(i)}" y="${H-4}" text-anchor="middle">${p[0].slice(0,7)}</text>`;});
+  $("#wsvg").setAttribute("viewBox",`0 0 ${W} ${H}`);$("#wsvg").innerHTML=o;}
+
 /* ---------- boot ---------- */
 async function boot(){route();
   try{META=await (await fetch("replay/meta.json")).json();}catch(e){$("#chart").innerHTML='<div class="loading">Could not load the backtest data.</div>';return;}
   eqData=META.curve;$("#sym").innerHTML=META.symbols.map(s=>`<option>${s}</option>`).join("");$("#sym").value="US500";
-  makeChart();buildReverse();buildTime();buildPlan();buildPlans();buildSince();buildProp();$("#pmode").onchange=buildProp;$("#psize").onchange=buildProp;$("#eng").value="position";
+  makeChart();buildReverse();buildTime();buildPlan();buildPlans();buildSince();buildProp();buildPayouts();$("#pmode").onchange=buildProp;$("#psize").onchange=buildProp;$("#eng").value="position";
   const pick=()=>{filterTrades();idx=Math.max(0,cur.findIndex(t=>t.status==="taken"&&t.adds.length>1&&t.net_r>0));renderLog();show(false);};
   ["#sym","#eng","#stat"].forEach(s=>$(s).addEventListener("change",pick));
   $("#prev").onclick=()=>{idx--;show(false);};$("#next").onclick=()=>{idx++;show(false);};

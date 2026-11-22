@@ -41,3 +41,16 @@ EDGE_CONFIRMED -> Normal     : last 20 closed positions  sum >= +3R  and PF >= 1
 STRONG_EDGE    -> Aggressive : last 40 closed positions  sum >= +8R  and PF >= 1.5  and drawdown <= 1.5%
 otherwise (or drawdown >= 3%) -> Conservative
 ```
+
+## Bi-weekly withdrawals ($1,000–$2,000)
+
+1. Every 14 days, on each account, request only the **"withdrawable now"** amount on the chart panel
+   (balance − start − open stop-risk). Open trades can stay open. The bot detects the withdrawal and moves its
+   high-water mark down by the same amount, so the guard does not treat it as a loss.
+2. Put every reward into a separate reserve. Pay yourself from the reserve, never straight from rewards:
+   start $1,000 at a $13,000 reserve, $1,500 at $19,500, $2,000 at $26,000; drop one level if the reserve is
+   under 6 payments of the current level.
+3. Backtest (Jul 2024 → now): 3 × $100K Instant Premium, Normal → first salary Oct 2025, $2,000 for 28 fortnights,
+   $58,500 paid, no missed payment. Rewards are lumpy (9 of 63 fortnights per account). Never raise risk to meet a payment.
+4. Same trades on every account: income and drawdowns scale together. Check each firm's maximum allocation and
+   multi-account rules.

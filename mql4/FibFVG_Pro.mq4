@@ -161,8 +161,25 @@ void CloseAll(string why)
    for(int i = OrdersTotal() - 1; i >= 0; i--) if(OrderSelect(i, SELECT_BY_POS, MODE_TRADES) && Ours(OrderMagicNumber())) CloseTicket(OrderTicket());
    Print("FibFVG Pro guard: ", why);
 }
+void SyncBalanceOps()
+{
+   datetime from = (datetime)GlobalVariableGet(GV("opsync"));
+   if(from == 0) { GlobalVariableSet(GV("opsync"), (double)TimeCurrent()); return; }
+   double moved = 0; datetime last = from;
+   for(int i = 0; i < OrdersHistoryTotal(); i++)
+   {
+      if(!OrderSelect(i, SELECT_BY_POS, MODE_HISTORY)) continue;
+      if(OrderType() != 6 && OrderType() != 7) continue;          // balance / credit operations
+      if(OrderOpenTime() <= from) continue;
+      moved += OrderProfit(); if(OrderOpenTime() > last) last = OrderOpenTime();
+   }
+   if(moved != 0) { GlobalVariableSet(GV("peak"), MathMax(startBal, Peak() + moved)); GlobalVariableSet(GV("day"), DayStart() + moved); }
+   GlobalVariableSet(GV("opsync"), (double)last);
+}
+double Withdrawable() { return MathMax(0, AccountBalance() - startBal - OpenRisk()); }
 bool Guard()
 {
+   SyncBalanceOps();
    UpdateDay();
    if(AccountBalance() > Peak()) GlobalVariableSet(GV("peak"), AccountBalance());
    if(halted) return false;
@@ -350,6 +367,7 @@ void OnTimer()
       int m = EdgeMode();
       string t = StringFormat("FibFVG Pro (MT4) | mode %s | start %.2f equity %.2f peak %.2f | open risk %.2f | room %.2f%s\n",
          m == 0 ? "Conservative" : m == 1 ? "Normal" : "Aggressive", startBal, AccountEquity(), Peak(), OpenRisk(), Room(), halted ? " | HALTED" : "");
+      t += StringFormat("withdrawable now %.2f (balance - start - open stop-risk)\n", Withdrawable());
       for(int k = 0; k < NS; k++)
       {
          double l1 = SizeTrade(Sym[k], P1Risk(m), 1.2 * ATRw(Sym[k], PERIOD_D1, 20, 1)), l3 = SizeTrade(Sym[k], P3Risk(m), ATRw(Sym[k], PERIOD_D1, 14, 1));

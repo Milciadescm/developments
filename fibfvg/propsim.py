@@ -208,7 +208,8 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True):
         net = paid - acct.fee + (0 if breach else 0)
     return dict(account=acct.name, firm=acct.firm, size=acct.size, fee=acct.fee, mode=mode, real=acct.real,
                 trades=len(fills), skipped_min_lot=skipped["min_lot"], skipped_guard=skipped["guard"],
-                breach=breach, breach_info=breach_info, payouts=len(payouts), paid_to_trader=round(paid, 2), end_balance=round(bal, 2),
+                breach=breach, breach_info=breach_info, payouts=len(payouts),
+                payout_list=[[str(a.date()), b] for a, b in payouts], paid_to_trader=round(paid, 2), end_balance=round(bal, 2),
                 net_profit=round(net, 2), roi_on_cash=round(net / acct.fee * 100, 1) if acct.fee else None,
                 worst_dd_pct=round(worst_dd * 100, 2), modes_used=mode_log, fills=fills,
                 curve=[[int(a.timestamp()), round(b, 2)] for a, b in curve])

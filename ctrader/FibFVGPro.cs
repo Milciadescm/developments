@@ -143,8 +143,23 @@ namespace cAlgo.Robots
             foreach (var o in PendingOrders.Where(o => o.Label != null && o.Label.StartsWith(Tag)).ToList()) CancelPendingOrder(o);
             Print("FibFVG Pro guard: " + why);
         }
+        // Withdrawals/deposits: balance moved while no trade closed -> shift peak and day start by the same amount.
+        double lastBal = double.NaN; int lastHist = -1;
+        void SyncBalanceOps()
+        {
+            int h = History.Count;
+            if (!double.IsNaN(lastBal) && h == lastHist && Math.Abs(Account.Balance - lastBal) > 0.01)
+            {
+                double moved = Account.Balance - lastBal;
+                Set("peak", Math.Max(startBal, Peak + moved)); Set("day", DayStart + moved);
+                Print($"FibFVG Pro: balance operation {moved:F2} - peak and day start adjusted");
+            }
+            lastBal = Account.Balance; lastHist = h;
+        }
+        double Withdrawable() => Math.Max(0, Account.Balance - startBal - OpenRisk());
         bool Guard()
         {
+            SyncBalanceOps();
             UpdateDay();
             if (Account.Balance > Peak) Set("peak", Account.Balance);
             if (halted) return false;
@@ -309,7 +324,7 @@ namespace cAlgo.Robots
                 else if (ph != th) { lastH1[s.Name] = th; if (UsePlan3) Plan3NewHour(s, fam); }
             }
             var m = EdgeMode(); double room = Room();
-            string t = $"FibFVG Pro | {PresetSel} | mode {m} | start {startBal:F2} equity {Account.Equity:F2} peak {Peak:F2} | open risk {OpenRisk():F2} | room {(room == double.MaxValue ? "no limit" : room.ToString("F2"))}{(halted ? " | HALTED" : "")}\n";
+            string t = $"FibFVG Pro | {PresetSel} | mode {m} | start {startBal:F2} equity {Account.Equity:F2} peak {Peak:F2} | open risk {OpenRisk():F2} | room {(room == double.MaxValue ? "no limit" : room.ToString("F2"))}{(halted ? " | HALTED" : "")}\nwithdrawable now {Withdrawable():F2} (balance - start - open stop-risk)\n";
             foreach (var (s, fam) in markets)
             {
                 var d1 = MarketData.GetBars(TimeFrame.Daily, s.Name);

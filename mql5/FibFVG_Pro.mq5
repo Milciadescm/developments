@@ -217,8 +217,35 @@ void CloseAll(string why)
    { ulong tk = OrderGetTicket(i); if(OrderSelect(tk)) { long mg = OrderGetInteger(ORDER_MAGIC); if(mg >= Magic && mg <= Magic + 9) trade.OrderDelete(tk); } }
    Print("FibFVG Pro guard: ", why);
 }
+// Withdrawals/deposits move the balance without trading. Shift the high-water mark and the
+// day-start balance by the same amount so a reward request is never read as a drawdown.
+void SyncBalanceOps()
+{
+   datetime from = (datetime)GlobalVariableGet(GV("opsync"));
+   if(from == 0) { GlobalVariableSet(GV("opsync"), (double)TimeCurrent()); return; }
+   if(!HistorySelect(from, TimeCurrent() + 60)) return;
+   double moved = 0; datetime last = from;
+   for(int i = 0; i < HistoryDealsTotal(); i++)
+   {
+      ulong d = HistoryDealGetTicket(i);
+      datetime t = (datetime)HistoryDealGetInteger(d, DEAL_TIME);
+      if(t <= from) continue;
+      long ty = HistoryDealGetInteger(d, DEAL_TYPE);
+      if(ty == DEAL_TYPE_BALANCE || ty == DEAL_TYPE_CREDIT) moved += HistoryDealGetDouble(d, DEAL_PROFIT);
+      if(t > last) last = t;
+   }
+   if(moved != 0)
+   {
+      GlobalVariableSet(GV("peak"), MathMax(startBal, Peak() + moved));
+      GlobalVariableSet(GV("day"), DayStart() + moved);
+      PrintFormat("FibFVG Pro: balance operation %.2f - peak and day start adjusted", moved);
+   }
+   GlobalVariableSet(GV("opsync"), (double)last);
+}
+double Withdrawable() { return MathMax(0, AccountInfoDouble(ACCOUNT_BALANCE) - startBal - OpenRisk()); }
 bool Guard()
 {
+   SyncBalanceOps();
    UpdateDay();
    double eq = AccountInfoDouble(ACCOUNT_EQUITY), bal = AccountInfoDouble(ACCOUNT_BALANCE);
    if(bal > Peak()) GlobalVariableSet(GV("peak"), bal);
@@ -475,6 +502,7 @@ void Panel()
       Preset == 0 ? "FundedNext Instant" : Preset == 1 ? "Instant Premium" : Preset == 2 ? "Personal" : "Custom",
       mn, RiskMode == MODE_EDGE_GATE ? " (edge gate)" : "", startBal, AccountInfoDouble(ACCOUNT_EQUITY), Peak(), OpenRisk(),
       room == DBL_MAX ? "no limit" : DoubleToString(room, 2), halted ? "\nHALTED by guard" : "");
+   t += StringFormat("withdrawable now %.2f (balance - start - open stop-risk). Request only this; positions can stay open.\n", Withdrawable());
    t += "symbol      | P1 lots (rec) | P3 lots (rec) | open lots\n";
    for(int k = 0; k < NS; k++)
    {
