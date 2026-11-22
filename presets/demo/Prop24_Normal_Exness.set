@@ -1,0 +1,18 @@
+; FibFVG Prop24 - NORMAL - Exness demo (A/B test, side A)
+; Wallet 1 prop rules: BTC, S&P 500, Nasdaq 100; daily + 4-hour setups at 0.705; stop at the leg origin;
+; every trade closed within 24 hours or at the Friday 16:00 New York close. 0.5% of $100K per trade.
+RiskProfile=Normal
+RiskPct=0.5
+StartBalance=100000
+MaxLossPct=6
+TrailingMaxLoss=true
+GuardBufferPct=1
+DailyLossPct=0
+SymbolsToTrade=AUTO
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+WriteLog=true
+ShowPanel=true
+Magic=7712400

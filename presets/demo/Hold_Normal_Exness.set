@@ -1,0 +1,14 @@
+; FibFVG Hold - NORMAL - Exness demo (A/B test, side A)
+; Wallet 2 real-money rules: gold and silver; daily setup at 0.705; adds every 0.5N (max 4 units);
+; YEAR exit (breakeven at +1R, then trail the 120-day low): holds can last months to a year. 0.5% per unit.
+RiskProfile=Normal
+RiskPctPerUnit=0.5
+StartBalance=50000
+ExitMode=0
+MaxUnits=4
+HardStopPct=30
+SymbolsToTrade=AUTO
+WriteLog=true
+ShowPanel=true
+ResetHalt=false
+Magic=7712500
