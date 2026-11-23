@@ -72,7 +72,12 @@ $0 in its first year. These are simulations, not live results.
 | Check | Look at the Journal and Experts tabs once a day; the panel shows "HALTED" if the guard ever stops the bot |
 
 A Windows VPS in a data centre (or the MT5 built-in VPS) is more reliable than a home PC and removes the power
-and internet risks. Recommended once there are 3+ accounts.
+and internet risks. **Check the firm first:** Goat Funded Trader bans VPS, VPN, proxies and any hosting service
+on all accounts from 6 Oct 2026 (the bot must run on your own computer and connection), and FundedNext allows
+EAs and VPS only on $5K-$25K accounts, each with a paid add-on. Never use a VPN while trading a prop account.
+
+**Proof of ownership:** some firms (Goat Funded Trader) allow only EAs you built yourself and may ask for the
+source code. Keep this repository (source code and its commit history) as that proof.
 
 ### 5. Many accounts (up to 50 per firm)
 
