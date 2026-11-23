@@ -92,7 +92,7 @@ input, select, textarea { font: inherit; }
 /* ===== Store header ===== */
 .store-banner { height: clamp(200px, 32vw, 380px); overflow: hidden; position: relative; }
 .store-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
-.store-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,25,22,0) 50%, rgba(11,25,22,.9) 100%); }
+.store-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,25,22,0) 62%, rgba(11,25,22,.55) 100%); }
 .store-info { display: grid; grid-template-columns: auto 1fr auto; align-items: end; gap: 20px; margin-top: -48px; position: relative; z-index: 1; padding-bottom: 8px; }
 .store-avatar { width: 96px; height: 96px; border-radius: 50%; background: var(--bg-2); border: 2px solid var(--gold); padding: 14px 10px; object-fit: contain; }
 .store-text h1 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--gold-2); letter-spacing: .02em; }
@@ -126,7 +126,7 @@ input, select, textarea { font: inherit; }
 .pcard-media { position: relative; aspect-ratio: 1; border-radius: var(--radius); display: grid; place-items: center; overflow: hidden; transition: transform .2s; }
 .pcard-open:hover .pcard-media { transform: translateY(-2px); }
 .pcard-media img { width: 100%; height: 100%; object-fit: cover; }
-.emoji { font-size: clamp(3rem, 7vw, 4.2rem); filter: drop-shadow(0 8px 10px rgba(0,0,0,.35)); }
+.emoji { font-size: clamp(3rem, 7vw, 4.2rem); filter: drop-shadow(0 6px 8px rgba(40,50,40,.18)); }
 .emoji.big { font-size: 6rem; }
 .badge { position: absolute; top: 10px; left: 10px; background: var(--gold); color: #17120a; font-size: .74rem; font-weight: 800; padding: 3px 9px; border-radius: 999px; }
 .age-badge { left: auto; right: 10px; background: var(--bg); color: var(--text); border: 1px solid var(--line-2); }
@@ -329,16 +329,19 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
 .toast.show { opacity: 1; translate: -50% 0; }
 
 /* ===== Category tile colours (product placeholders) ===== */
-.cat-offers  { background: radial-gradient(circle at 50% 60%, #4a3a1c, #241d10); }
-.cat-fruit   { background: radial-gradient(circle at 50% 60%, #3c4a1d, #1d2610); }
-.cat-bakery  { background: radial-gradient(circle at 50% 60%, #4d3a22, #261c11); }
-.cat-drinks  { background: radial-gradient(circle at 50% 60%, #1d4747, #0f2626); }
-.cat-alcohol { background: radial-gradient(circle at 50% 60%, #45233a, #22111c); }
-.cat-chilled { background: radial-gradient(circle at 50% 60%, #26405a, #12202e); }
-.cat-snacks  { background: radial-gradient(circle at 50% 60%, #4a2c1c, #25160e); }
-.cat-pantry  { background: radial-gradient(circle at 50% 60%, #3a4224, #1d2112); }
-.cat-beach   { background: radial-gradient(circle at 50% 60%, #1f4a52, #10262a); }
-.cat-home    { background: radial-gradient(circle at 50% 60%, #33393a, #1a1e1e); }
+/* soft light tints behind product icons — calm, and the icons read clearly */
+.cat-offers  { background: #f1e6cc; }
+.cat-fruit   { background: #e4edd3; }
+.cat-bakery  { background: #f3e7d6; }
+.cat-chilled { background: #e0e8f1; }
+.cat-pantry  { background: #e8ead8; }
+.cat-snacks  { background: #f4e3d5; }
+.cat-sweets  { background: #efdfd6; }
+.cat-drinks  { background: #d9ecea; }
+.cat-alcohol { background: #eedfe5; }
+.cat-care    { background: #dbecef; }
+.cat-beach   { background: #dbecef; }
+.cat-home    { background: #e6e8e6; }
 
 /* ===== Responsive ===== */
 @media (max-width: 1100px) {
@@ -403,7 +406,7 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
 .pin-pulse { position: absolute; inset: 0; border-radius: 50%; background: rgba(55,179,167,.45); animation: pinpulse 1.8s ease-out infinite; }
 @keyframes pinpulse { from { transform: scale(.8); opacity: .9; } to { transform: scale(2.2); opacity: 0; } }
 .leaflet-container { background: #0e1d1a; font-family: var(--sans); }
-.leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.82) contrast(.92) saturate(.55); }
+.leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.98) contrast(.82) saturate(.6); }
 .leaflet-control-attribution { background: rgba(11,25,22,.75) !important; color: var(--muted) !important; font-size: 11px; }
 .leaflet-control-attribution a { color: var(--gold-2) !important; }
 .leaflet-bar a { background: var(--bg-2) !important; color: var(--text) !important; border-color: var(--line-2) !important; }
@@ -436,7 +439,8 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
 .rail-wrap { min-width: 0; }
 .sc-banner { position: relative; border-radius: var(--radius); overflow: hidden; min-height: 200px; display: flex; align-items: center; border: 1px solid var(--line); }
 .sc-banner picture, .sc-banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: right center; }
-.sc-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,25,22,.95) 0%, rgba(11,25,22,.75) 40%, rgba(11,25,22,.1) 75%); }
+.sc-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16,34,30,.82) 0%, rgba(16,34,30,.5) 38%, rgba(16,34,30,0) 66%); }
+.sc-text h2, .sc-text p { text-shadow: 0 1px 12px rgba(11,25,22,.55); }
 .sc-text { position: relative; z-index: 1; padding: 26px; max-width: 460px; display: grid; gap: 8px; justify-items: start; }
 .sc-text h2 { font-family: var(--display); color: var(--gold-2); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; }
 .sc-text p { color: #e3ddd0; }
@@ -463,5 +467,13 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
 @media (max-width: 560px) {
   .sc-banner { min-height: 180px; }
   .sc-text { padding: 18px; }
-  .sc-banner::after { background: linear-gradient(90deg, rgba(11,25,22,.95) 0%, rgba(11,25,22,.8) 60%, rgba(11,25,22,.35) 100%); }
+  .sc-banner::after { background: linear-gradient(90deg, rgba(16,34,30,.85) 0%, rgba(16,34,30,.62) 60%, rgba(16,34,30,.25) 100%); }
 }
+
+/* add / quantity controls sitting on the light tiles */
+.add-float { background: var(--bg); color: var(--text); border: 1px solid rgba(207,169,94,.5); }
+.add-float:hover { background: var(--bg-3); color: var(--gold-2); }
+.qty-float { background: var(--bg); color: var(--text); border: 1px solid rgba(207,169,94,.5); }
+.qty-float button { color: var(--text); }
+.flag { filter: none; }
+.age-badge { background: var(--bg); color: var(--text); border-color: transparent; }
