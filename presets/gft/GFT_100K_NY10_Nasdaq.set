@@ -1,0 +1,13 @@
+; NY10 - Nasdaq 10:00-14:00 NY, Goat Funded Trader Instant Premium $100K
+; 6% intraday trailing (locks at the start), 3% daily from 17:00 New York, 1% floating limit, own PC only.
+StartBalance=100000
+RiskPct=0.6
+MaxLossPct=6
+TrailOnEquity=true
+DailyLossPct=3
+MaxOpenRiskPct=1
+GuardBufferPct=1
+SymbolToTrade=AUTO
+WriteLog=true
+ShowPanel=true
+Magic=7713000
