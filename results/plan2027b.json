@@ -1,0 +1,101 @@
+{
+ "5 accounts": {
+  "may": {
+   "median": 18446,
+   "p10": 2917,
+   "p90": 50309
+  },
+  "december": {
+   "median": 26652,
+   "p10": 3108,
+   "p90": 66956
+  },
+  "total": {
+   "median": 54066,
+   "p10": 17042,
+   "p90": 101363
+  },
+  "fees_2027": 2220,
+  "paths_with_lost_accounts_pct": 9.3,
+  "lost_median_if_any": 2.0,
+  "may_covers_10_accounts_pct": 81.8,
+  "good year (Dec 2024-Dec 2025)": {
+   "may": 15733,
+   "december": 56328,
+   "total": 72060,
+   "lost_accounts": 0
+  },
+  "weak year (last 12 months)": {
+   "may": 13071,
+   "december": 4819,
+   "total": 17890,
+   "lost_accounts": 0
+  }
+ },
+ "10 accounts": {
+  "may": {
+   "median": 18446,
+   "p10": 2917,
+   "p90": 50309
+  },
+  "december": {
+   "median": 40261,
+   "p10": 4990,
+   "p90": 118264
+  },
+  "total": {
+   "median": 71352,
+   "p10": 20415,
+   "p90": 149270
+  },
+  "fees_2027": 5920,
+  "paths_with_lost_accounts_pct": 9.3,
+  "lost_median_if_any": 2.0,
+  "may_covers_10_accounts_pct": 81.8,
+  "good year (Dec 2024-Dec 2025)": {
+   "may": 15733,
+   "december": 92813,
+   "total": 108546,
+   "lost_accounts": 0
+  },
+  "weak year (last 12 months)": {
+   "may": 13071,
+   "december": 4819,
+   "total": 17890,
+   "lost_accounts": 0
+  }
+ },
+ "15 accounts": {
+  "may": {
+   "median": 18446,
+   "p10": 2917,
+   "p90": 50309
+  },
+  "december": {
+   "median": 55197,
+   "p10": 5866,
+   "p90": 177233
+  },
+  "total": {
+   "median": 86642,
+   "p10": 22115,
+   "p90": 204072
+  },
+  "fees_2027": 9620,
+  "paths_with_lost_accounts_pct": 9.3,
+  "lost_median_if_any": 2.0,
+  "may_covers_10_accounts_pct": 81.8,
+  "good year (Dec 2024-Dec 2025)": {
+   "may": 15733,
+   "december": 129299,
+   "total": 145031,
+   "lost_accounts": 0
+  },
+  "weak year (last 12 months)": {
+   "may": 13071,
+   "december": 4819,
+   "total": 17890,
+   "lost_accounts": 0
+  }
+ }
+}
