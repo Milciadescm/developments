@@ -1,0 +1,542 @@
+{
+ "A 24-hour | XAUUSD": {
+  "setups": 23,
+  "win": 61,
+  "avg_R": 0.09,
+  "t": 0.5,
+  "halves": [
+   0.31,
+   -0.14
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 4993,
+   "pct": -0.1,
+   "dd": 4.9,
+   "trades": 23,
+   "avg_risk": 1.23,
+   "max_risk": 3.72
+  },
+  "last12": {
+   "end": 4799,
+   "pct": -4.0,
+   "dd": 5.1,
+   "trades": 7,
+   "avg_risk": 1.47,
+   "max_risk": 3.85
+  }
+ },
+ "A 24-hour | XAGUSD": {
+  "setups": 26,
+  "win": 50,
+  "avg_R": -0.01,
+  "t": -0.1,
+  "halves": [
+   -0.15,
+   0.11
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 4824,
+   "pct": -3.5,
+   "dd": 5.5,
+   "trades": 26,
+   "avg_risk": 1.38,
+   "max_risk": 5.48
+  },
+  "last12": {
+   "end": 4842,
+   "pct": -3.2,
+   "dd": 5.5,
+   "trades": 8,
+   "avg_risk": 2.32,
+   "max_risk": 5.46
+  }
+ },
+ "A 24-hour | BTCUSD": {
+  "setups": 29,
+  "win": 69,
+  "avg_R": 0.29,
+  "t": 1.5,
+  "halves": [
+   0.21,
+   0.33
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 5318,
+   "pct": 6.4,
+   "dd": 1.8,
+   "trades": 29,
+   "avg_risk": 0.74,
+   "max_risk": 1.15
+  },
+  "last12": {
+   "end": 5120,
+   "pct": 2.4,
+   "dd": 1.2,
+   "trades": 16,
+   "avg_risk": 0.73,
+   "max_risk": 0.89
+  }
+ },
+ "A 24-hour | US500": {
+  "setups": 29,
+  "win": 48,
+  "avg_R": 0.29,
+  "t": 0.8,
+  "halves": [
+   0.43,
+   0.11
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 5370,
+   "pct": 7.4,
+   "dd": 3.2,
+   "trades": 29,
+   "avg_risk": 0.9,
+   "max_risk": 0.9
+  },
+  "last12": {
+   "end": 4865,
+   "pct": -2.7,
+   "dd": 2.7,
+   "trades": 8,
+   "avg_risk": 0.9,
+   "max_risk": 0.9
+  }
+ },
+ "A 24-hour | NAS100": {
+  "setups": 23,
+  "win": 57,
+  "avg_R": 0.49,
+  "t": 1.0,
+  "halves": [
+   0.63,
+   0.27
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 5505,
+   "pct": 10.1,
+   "dd": 2.6,
+   "trades": 23,
+   "avg_risk": 0.88,
+   "max_risk": 0.9
+  },
+  "last12": {
+   "end": 4900,
+   "pct": -2.0,
+   "dd": 2.6,
+   "trades": 6,
+   "avg_risk": 0.86,
+   "max_risk": 0.9
+  }
+ },
+ "B Holding | XAUUSD": {
+  "setups": 27,
+  "win": 89,
+  "avg_R": 3.0,
+  "t": 6.3,
+  "halves": [
+   2.56,
+   4.04
+  ],
+  "risk_asked": 0.5,
+  "full": {
+   "end": 15510,
+   "pct": 210.2,
+   "dd": 3.6,
+   "trades": 27,
+   "avg_risk": 1.53,
+   "max_risk": 1.87
+  },
+  "last12": {
+   "end": 10246,
+   "pct": 104.9,
+   "dd": 0.0,
+   "trades": 8,
+   "avg_risk": 2.69,
+   "max_risk": 3.54
+  }
+ },
+ "B Holding | XAGUSD": {
+  "setups": 21,
+  "win": 76,
+  "avg_R": 1.82,
+  "t": 3.2,
+  "halves": [
+   2.71,
+   0.04
+  ],
+  "risk_asked": 0.5,
+  "full": {
+   "end": 6449,
+   "pct": 29.0,
+   "dd": 17.2,
+   "trades": 21,
+   "avg_risk": 2.13,
+   "max_risk": 10.56
+  },
+  "last12": {
+   "end": 3660,
+   "pct": -26.8,
+   "dd": 26.8,
+   "trades": 3,
+   "avg_risk": 10.75,
+   "max_risk": 16.45
+  }
+ },
+ "B Holding | BTCUSD": {
+  "setups": 20,
+  "win": 20,
+  "avg_R": -0.58,
+  "t": -2.4,
+  "halves": [
+   -1.05,
+   -0.0
+  ],
+  "risk_asked": 0.5,
+  "full": {
+   "end": 4262,
+   "pct": -14.8,
+   "dd": 14.9,
+   "trades": 20,
+   "avg_risk": 1.19,
+   "max_risk": 1.8
+  },
+  "last12": {
+   "end": 4754,
+   "pct": -4.9,
+   "dd": 4.9,
+   "trades": 5,
+   "avg_risk": 0.86,
+   "max_risk": 1.07
+  }
+ },
+ "B Holding | US500": {
+  "setups": 28,
+  "win": 39,
+  "avg_R": 0.09,
+  "t": 0.4,
+  "halves": [
+   0.57,
+   -0.28
+  ],
+  "risk_asked": 0.5,
+  "full": {
+   "end": 5052,
+   "pct": 1.0,
+   "dd": 3.3,
+   "trades": 28,
+   "avg_risk": 0.49,
+   "max_risk": 0.5
+  },
+  "last12": {
+   "end": 4967,
+   "pct": -0.7,
+   "dd": 1.9,
+   "trades": 12,
+   "avg_risk": 0.49,
+   "max_risk": 0.5
+  }
+ },
+ "B Holding | NAS100": {
+  "setups": 31,
+  "win": 32,
+  "avg_R": -0.08,
+  "t": -0.5,
+  "halves": [
+   -0.28,
+   0.19
+  ],
+  "risk_asked": 0.5,
+  "full": {
+   "end": 4960,
+   "pct": -0.8,
+   "dd": 2.8,
+   "trades": 31,
+   "avg_risk": 0.44,
+   "max_risk": 0.5
+  },
+  "last12": {
+   "end": 4897,
+   "pct": -2.1,
+   "dd": 2.1,
+   "trades": 9,
+   "avg_risk": 0.42,
+   "max_risk": 0.5
+  }
+ },
+ "D Weekly Turtle | XAUUSD": {
+  "setups": 181,
+  "win": 36,
+  "avg_R": 0.41,
+  "t": 2.6,
+  "halves": [
+   -0.07,
+   0.86
+  ],
+  "risk_asked": 2.0,
+  "full": {
+   "end": 13782,
+   "pct": 175.6,
+   "dd": 18.3,
+   "trades": 181,
+   "avg_risk": 2.59,
+   "max_risk": 8.94
+  },
+  "last12": {
+   "end": 9064,
+   "pct": 81.3,
+   "dd": 14.3,
+   "trades": 70,
+   "avg_risk": 4.22,
+   "max_risk": 7.23
+  }
+ },
+ "D Weekly Turtle | XAGUSD": {
+  "setups": 170,
+  "win": 42,
+  "avg_R": 1.37,
+  "t": 3.1,
+  "halves": [
+   0.98,
+   1.65
+  ],
+  "risk_asked": 2.0,
+  "full": {
+   "end": 28157,
+   "pct": 463.1,
+   "dd": 38.6,
+   "trades": 170,
+   "avg_risk": 2.66,
+   "max_risk": 24.15
+  },
+  "last12": {
+   "end": 12909,
+   "pct": 158.2,
+   "dd": 25.1,
+   "trades": 80,
+   "avg_risk": 4.56,
+   "max_risk": 14.97
+  }
+ },
+ "D Weekly Turtle | BTCUSD": {
+  "setups": 120,
+  "win": 32,
+  "avg_R": 0.1,
+  "t": 1.0,
+  "halves": [
+   0.15,
+   0.06
+  ],
+  "risk_asked": 2.0,
+  "full": {
+   "end": 5698,
+   "pct": 14.0,
+   "dd": 9.4,
+   "trades": 120,
+   "avg_risk": 1.47,
+   "max_risk": 1.98
+  },
+  "last12": {
+   "end": 4983,
+   "pct": -0.3,
+   "dd": 7.4,
+   "trades": 51,
+   "avg_risk": 1.54,
+   "max_risk": 1.89
+  }
+ },
+ "D Weekly Turtle | US500": {
+  "setups": 169,
+  "win": 37,
+  "avg_R": -0.09,
+  "t": -1.8,
+  "halves": [
+   0.05,
+   -0.21
+  ],
+  "risk_asked": 2.0,
+  "full": {
+   "end": 3634,
+   "pct": -27.3,
+   "dd": 27.3,
+   "trades": 169,
+   "avg_risk": 1.98,
+   "max_risk": 2.0
+  },
+  "last12": {
+   "end": 3731,
+   "pct": -25.4,
+   "dd": 25.8,
+   "trades": 66,
+   "avg_risk": 1.98,
+   "max_risk": 2.0
+  }
+ },
+ "D Weekly Turtle | NAS100": {
+  "setups": 151,
+  "win": 33,
+  "avg_R": -0.03,
+  "t": -0.5,
+  "halves": [
+   -0.0,
+   -0.07
+  ],
+  "risk_asked": 2.0,
+  "full": {
+   "end": 4401,
+   "pct": -12.0,
+   "dd": 23.3,
+   "trades": 151,
+   "avg_risk": 1.92,
+   "max_risk": 2.0
+  },
+  "last12": {
+   "end": 4699,
+   "pct": -6.0,
+   "dd": 16.4,
+   "trades": 51,
+   "avg_risk": 1.89,
+   "max_risk": 2.0
+  }
+ },
+ "E Midnight | XAUUSD": {
+  "setups": 237,
+  "win": 42,
+  "avg_R": 0.04,
+  "t": 1.0,
+  "halves": [
+   0.0,
+   0.09
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 5214,
+   "pct": 4.3,
+   "dd": 8.3,
+   "trades": 237,
+   "avg_risk": 1.06,
+   "max_risk": 2.88
+  },
+  "last12": {
+   "end": 4857,
+   "pct": -2.9,
+   "dd": 8.8,
+   "trades": 92,
+   "avg_risk": 1.7,
+   "max_risk": 3.08
+  }
+ },
+ "E Midnight | XAGUSD": {
+  "setups": 223,
+  "win": 35,
+  "avg_R": 0.06,
+  "t": 1.0,
+  "halves": [
+   0.0,
+   0.1
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 4898,
+   "pct": -2.0,
+   "dd": 16.9,
+   "trades": 223,
+   "avg_risk": 1.39,
+   "max_risk": 7.15
+  },
+  "last12": {
+   "end": 4672,
+   "pct": -6.6,
+   "dd": 16.5,
+   "trades": 104,
+   "avg_risk": 2.31,
+   "max_risk": 7.49
+  }
+ },
+ "E Midnight | BTCUSD": {
+  "setups": 141,
+  "win": 43,
+  "avg_R": 0.1,
+  "t": 1.4,
+  "halves": [
+   0.03,
+   0.13
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 5472,
+   "pct": 9.4,
+   "dd": 2.3,
+   "trades": 141,
+   "avg_risk": 0.69,
+   "max_risk": 0.9
+  },
+  "last12": {
+   "end": 5286,
+   "pct": 5.7,
+   "dd": 1.5,
+   "trades": 75,
+   "avg_risk": 0.65,
+   "max_risk": 0.9
+  }
+ },
+ "E Midnight | US500": {
+  "setups": 218,
+  "win": 43,
+  "avg_R": -0.05,
+  "t": -1.1,
+  "halves": [
+   -0.03,
+   -0.07
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 4545,
+   "pct": -9.1,
+   "dd": 9.1,
+   "trades": 218,
+   "avg_risk": 0.89,
+   "max_risk": 0.9
+  },
+  "last12": {
+   "end": 4912,
+   "pct": -1.8,
+   "dd": 2.9,
+   "trades": 80,
+   "avg_risk": 0.89,
+   "max_risk": 0.9
+  }
+ },
+ "E Midnight | NAS100": {
+  "setups": 205,
+  "win": 43,
+  "avg_R": -0.03,
+  "t": -0.7,
+  "halves": [
+   -0.03,
+   -0.04
+  ],
+  "risk_asked": 0.8999999999999999,
+  "full": {
+   "end": 4711,
+   "pct": -5.8,
+   "dd": 6.1,
+   "trades": 205,
+   "avg_risk": 0.87,
+   "max_risk": 0.9
+  },
+  "last12": {
+   "end": 4909,
+   "pct": -1.8,
+   "dd": 3.4,
+   "trades": 75,
+   "avg_risk": 0.86,
+   "max_risk": 0.9
+  }
+ }
+}

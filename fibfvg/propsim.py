@@ -35,6 +35,10 @@ import pandas as pd
 
 from .config import SYMBOLS
 
+# When True, a trade whose risk-based size is below the broker minimum opens at the minimum lot instead
+# of being skipped (its real risk is then larger than the % asked). Off by default.
+BUMP_MIN_LOT = False
+
 MODES = {
     "Conservative": dict(p1=0.0015, p3=0.0005),
     "Normal": dict(p1=0.0025, p3=0.0010),
@@ -208,7 +212,9 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, sche
                 else math.floor(bal * r / (dist * spec.contract) / spec.lot_step + 1e-9) * spec.lot_step
             lots = min(round(lots, 2), spec.max_lot)
             if lots < spec.min_lot:
-                skipped["min_lot"] += 1; continue
+                if not BUMP_MIN_LOT:
+                    skipped["min_lot"] += 1; continue
+                lots = spec.min_lot
             risk = lots * dist * spec.contract
             ref = peak if acct.trailing else cap
             room = []
