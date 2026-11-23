@@ -115,8 +115,9 @@
   });
 
   // ---------- catalogue ----------
+  // Branded packshots are shown whole on the light tile; food photos fill the tile.
   const tile = (p, big) => p.img
-    ? `<img src="${esc(p.img)}" alt="" loading="lazy">`
+    ? `<img class="${p.brand ? "img-pack" : "img-photo"}" src="${esc(p.img)}" alt="" loading="lazy" decoding="async">`
     : `<span class="emoji${big ? " big" : ""}" aria-hidden="true">${p.emoji}</span>`;
   const fullName = (p) => (p.brand ? `${p.brand} · ${nm(p)}` : nm(p));
   const origin = (p) => (typeof ORIGINS !== "undefined" && ORIGINS[p.origin]) || null;

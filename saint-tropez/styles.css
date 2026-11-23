@@ -477,3 +477,8 @@ dialog::backdrop { background: rgba(3, 8, 7, .7); backdrop-filter: blur(2px); }
 .qty-float button { color: var(--text); }
 .flag { filter: none; }
 .age-badge { background: var(--bg); color: var(--text); border-color: transparent; }
+
+/* product photos: official packshots (contain, with breathing room) vs food photos (fill) */
+.pcard-media img.img-pack, .pd-media img.img-pack, .line-media img.img-pack { object-fit: contain; padding: 12%; filter: drop-shadow(0 8px 10px rgba(40,50,40,.18)); }
+.pcard-media img.img-photo, .pd-media img.img-photo, .line-media img.img-photo { object-fit: cover; }
+.line-media img { width: 100%; height: 100%; }
