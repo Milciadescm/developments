@@ -1,14 +1,14 @@
-# $100K plug-and-play presets
+# Presets listos para $100K
 
-| File | Platform | Use |
+| Archivo | Plataforma | Uso |
 |---|---|---|
-| FibFVG_Pro_100K_Normal.set | MT5 / MT4 | Instant Premium-style $100K (3% daily, 6% max). Recommended. |
-| FibFVG_Pro_100K_Normal_NoDaily.set | MT5 / MT4 | $100K with 6% trailing max loss and no daily limit (FundedNext Stellar Instant rules). |
-| FibFVG_Pro_100K_Aggressive.set | MT5 / MT4 | Same account, Aggressive mode (paid less in the backtest). |
-| *.cbotset | cTrader | Same three, as cBot parameter files. If import fails, type the values in the cBot's parameter panel. |
+| FibFVG_Pro_100K_Normal.set | MT5 / MT4 | $100K estilo Instant Premium (3 % diario, 6 % máx.). Recomendado. |
+| FibFVG_Pro_100K_Normal_NoDaily.set | MT5 / MT4 | $100K con pérdida máxima trailing del 6 % y sin límite diario (reglas de FundedNext Stellar Instant). |
+| FibFVG_Pro_100K_Aggressive.set | MT5 / MT4 | La misma cuenta, modo Agresivo (pagó menos en el backtest). |
+| *.cbotset | cTrader | Los mismos tres, como archivos de parámetros de cBot. Si la importación falla, escribe los valores en el panel de parámetros del cBot. |
 
-Steps: compile the bot (MetaEditor F7 / cTrader Build) → attach it to ONE chart (any symbol) → Inputs → Load the preset → enable algo trading.
-The bot trades XAUUSD, XAGUSD, BTCUSD, US500 and NAS100 from that one chart and shows lot sizes, the guard's room and the payout plan.
+Pasos: compila el bot (MetaEditor F7 / cTrader Build) → adjúntalo a UN gráfico (cualquier símbolo) → Parámetros → Cargar el preset → activa el trading algorítmico.
+El bot opera XAUUSD, XAGUSD, BTCUSD, US500 y NAS100 desde ese único gráfico y muestra los tamaños de lote, el margen de la protección y el plan de pagos.
 
-Payout plan on the panel: month-to-date closed profit is withdrawn at each month end so the account restarts at $100,000.
-Month 1 → founder's private account. Months 2+ collect per quarter → Cueto & Co → new $100K accounts (fee set by AccountFee).
+Plan de pagos en el panel: la ganancia cerrada del mes se retira al final de cada mes para que la cuenta vuelva a empezar en $100,000.
+Mes 1 → cuenta privada del fundador. Meses 2+ se acumulan por trimestre → Cueto & Co → nuevas cuentas de $100K (cuota fijada con AccountFee).

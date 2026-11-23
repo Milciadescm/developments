@@ -1,118 +1,118 @@
-# FibFVG Pro v3 — bot README and MT5 setup (Windows PC running 24/7)
+# FibFVG Pro v3 — README del bot e instalación en MT5 (PC con Windows encendida 24/7)
 
-## What the bot does, in one paragraph
+## Qué hace el bot, en un párrafo
 
-FibFVG Pro trades gold (XAUUSD), silver (XAGUSD), Bitcoin (BTCUSD), S&P 500 (US500) and Nasdaq 100 (NAS100)
-from **one chart**. It only trades in the direction of the monthly and weekly trend. When price breaks the
-20-day high (or low) with a fair value gap, it places a limit order at the **0.705 Fibonacci level** of that
-move (the OTE zone), with the stop just beyond the start of the move. Winners are held for days to weeks: the
-stop moves to breakeven at +1R and then trails 3 daily ranges behind the best price. Losers are cut after 10
-days if they never reached +0.5R. While a trade works, it adds up to 3 more units (Turtle rules).
-A guard keeps drawdown plus open risk under 5% so the account never touches the firm's 6% line.
+FibFVG Pro opera oro (XAUUSD), plata (XAGUSD), Bitcoin (BTCUSD), S&P 500 (US500) y Nasdaq 100 (NAS100)
+desde **un solo gráfico**. Solo opera en la dirección de la tendencia mensual y semanal. Cuando el precio rompe el
+máximo (o mínimo) de 20 días con un fair value gap, coloca una orden límite en el **nivel Fibonacci 0.705** de ese
+movimiento (la zona OTE), con el stop justo más allá del inicio del movimiento. Las ganadoras se mantienen días o semanas: el
+stop pasa a breakeven en +1R y luego sigue a 3 rangos diarios del mejor precio. Las perdedoras se cortan a los 10
+días si nunca llegaron a +0.5R. Mientras una operación funciona, añade hasta 3 unidades más (reglas Turtle).
+Una protección mantiene la caída más el riesgo abierto bajo el 5 %, para que la cuenta nunca toque la línea del 6 % de la firma.
 
-## Best rules for a $100K account (v3, file `presets/FibFVG_Pro_100K_Best.set`)
+## Mejores reglas para una cuenta de $100K (v3, archivo `presets/FibFVG_Pro_100K_Best.set`)
 
-| Setting | Value | Why |
+| Ajuste | Valor | Por qué |
 |---|---|---|
-| Position plan (Plan 1) | ON | +0.71R per trade after swap fees, proven (t = 4.0) |
-| Levels plan (Plan 3) | OFF | After swap fees only +0.06R and more drawdown |
-| Risk per unit | 0.5% of $100,000 = $500 | Best pay with worst drawdown under 5% in backtest |
-| Exit | Chandelier (3 daily ranges), breakeven at +1R, 10-day time stop | Lets winners run, cuts dead trades |
-| Guard | 5% (firm line 6%), shrinks trades near the line | No breach in any test |
-| Day trading only | NOT used | Every intraday-only version lost money (−0.02R to −0.31R per trade) |
+| Plan de posiciones (Plan 1) | ENCENDIDO | +0.71R por operación después de swaps, probado (t = 4.0) |
+| Plan de niveles (Plan 3) | APAGADO | Después de swaps solo +0.06R y más caída |
+| Riesgo por unidad | 0.5 % de $100,000 = $500 | El mejor pago con la peor caída bajo el 5 % en el backtest |
+| Salida | Chandelier (3 rangos diarios), breakeven en +1R, stop por tiempo de 10 días | Deja correr las ganadoras, corta las operaciones muertas |
+| Protección | 5 % (línea de la firma 6 %), reduce operaciones cerca de la línea | Sin incumplimiento en ninguna prueba |
+| Solo day trading | NO se usa | Todas las versiones solo intradía perdieron dinero (−0.02R a −0.31R por operación) |
 
-Backtest, July 2024 → November 2026, swaps included: **$23,541 paid** on one $100K account, worst drawdown
-under 5%, about 4 trades a month across 5 markets, median $13,900 paid per 12 months; 1 of 16 start months paid
-$0 in its first year. These are simulations, not live results.
+Backtest, julio 2024 → noviembre 2026, con swaps: **$23,541 pagados** en una cuenta de $100K, peor caída
+bajo el 5 %, unas 4 operaciones al mes entre 5 mercados, mediana $13,900 pagados por 12 meses; 1 de 16 meses de inicio pagó
+$0 en su primer año. Son simulaciones, no resultados en vivo.
 
-## Weekend and market-close behaviour
+## Comportamiento en fin de semana y cierre de mercado
 
-- The bot checks each market before doing anything: the broker's trading session must be open **and** a fresh
-  quote must have arrived in the last 10 minutes. Closed markets (Friday 17:00 NY → Sunday 18:00 NY for gold,
-  silver and indices; daily breaks; holidays) are simply skipped and retried every 5 seconds.
-- BTC trades through the weekend.
-- Positions stay open over the weekend with their stops in place at the broker. A gap can jump a stop; the guard
-  keeps a 1% buffer for this.
-- State (start balance, peak, trade progress) is saved in terminal global variables, so a restart, a reboot or
-  a weekend disconnect does not lose track of trades.
+- El bot revisa cada mercado antes de hacer nada: la sesión del broker debe estar abierta **y** debe haber llegado
+  una cotización en los últimos 10 minutos. Los mercados cerrados (viernes 17:00 NY → domingo 18:00 NY para oro,
+  plata e índices; pausas diarias; feriados) simplemente se saltan y se reintentan cada 5 segundos.
+- BTC opera durante el fin de semana.
+- Las posiciones quedan abiertas el fin de semana con sus stops puestos en el broker. Un hueco puede saltar un stop; la protección
+  guarda un margen del 1 % para esto.
+- El estado (saldo inicial, máximo, progreso de las operaciones) se guarda en variables globales del terminal, así que un reinicio,
+  un apagado o una desconexión de fin de semana no pierde el control de las operaciones.
 
-## Setup on your Windows PC (runs 24/7)
+## Instalación en tu PC con Windows (encendida 24/7)
 
-### 1. Install
+### 1. Instalar
 
-1. Download MetaTrader 5 from your prop firm's dashboard (or metatrader5.com) and log in with the $100K account.
-2. `File > Open Data Folder` → `MQL5\Experts` → copy `FibFVG_Pro.mq5` there.
-3. `MQL5\Presets` → copy `FibFVG_Pro_100K_Best.set` there.
-4. Open `FibFVG_Pro.mq5` in MetaEditor (F4) → **Compile (F7)**. Fix any message it shows before going on.
+1. Descarga MetaTrader 5 desde el panel de tu firma de fondeo (o metatrader5.com) e inicia sesión con la cuenta de $100K.
+2. `Archivo > Abrir carpeta de datos` → `MQL5\Experts` → copia allí `FibFVG_Pro.mq5`.
+3. `MQL5\Presets` → copia allí `FibFVG_Pro_100K_Best.set`.
+4. Abre `FibFVG_Pro.mq5` en MetaEditor (F4) → **Compilar (F7)**. Corrige cualquier mensaje antes de seguir.
 
-### 2. Turn on algo trading
+### 2. Activar el trading algorítmico
 
-1. `Tools > Options > Expert Advisors`: tick **Allow algorithmic trading**. Untick *Disable algorithmic trading
-   when the account has been changed* and *…when the profile has been changed*.
-2. Click the **Algo Trading** button on the toolbar (it turns green).
+1. `Herramientas > Opciones > Asesores Expertos`: marca **Permitir trading algorítmico**. Desmarca *Desactivar el trading algorítmico
+   al cambiar de cuenta* y *…al cambiar de perfil*.
+2. Pulsa el botón **Algo Trading** de la barra de herramientas (se pone en verde).
 
-### 3. Attach the bot
+### 3. Adjuntar el bot
 
-1. Open one chart (XAUUSD H1 is fine). Drag **FibFVG_Pro** from the Navigator onto it.
-2. **Common** tab: tick *Allow Algo Trading*. **Inputs** tab: **Load** → `FibFVG_Pro_100K_Best.set` → OK.
-3. Check the panel on the chart: it lists the 5 markets it found, the guard room and lots. A smiley/blue hat icon
-   in the chart's top-right corner means it is running.
-4. `File > Profiles > Save As` "FibFVG" so MT5 reopens this chart and bot after a restart.
+1. Abre un gráfico (XAUUSD H1 sirve). Arrastra **FibFVG_Pro** desde el Navegador.
+2. Pestaña **Común**: marca *Permitir Algo Trading*. Pestaña **Parámetros**: **Cargar** → `FibFVG_Pro_100K_Best.set` → Aceptar.
+3. Revisa el panel en el gráfico: lista los 5 mercados que encontró, el margen de la protección y los lotes. Un icono de carita/gorro azul
+   en la esquina superior derecha del gráfico significa que está funcionando.
+4. `Archivo > Perfiles > Guardar como` "FibFVG" para que MT5 vuelva a abrir este gráfico y el bot después de reiniciar.
 
-### 4. Keep the PC running 24/7
+### 4. Mantener la PC encendida 24/7
 
-| Item | Setting |
+| Elemento | Ajuste |
 |---|---|
-| Power | `Settings > System > Power`: sleep **Never**, screen off is fine. Disable hibernate. |
-| Windows Update | Set *active hours*, pause updates for 5 weeks at a time, and restart manually on Saturdays |
-| Auto-start | Put a shortcut to `terminal64.exe` in `shell:startup`; enable automatic sign-in |
-| BIOS | *Restore on AC power loss* = **Power On**, so the PC restarts itself after an outage |
-| Power cut | UPS (battery backup) of 600–1000 VA |
-| Internet | Backup 4G/5G router or phone hotspot; MT5 reconnects by itself |
-| Check | Look at the Journal and Experts tabs once a day; the panel shows "HALTED" if the guard ever stops the bot |
+| Energía | `Configuración > Sistema > Energía`: suspensión **Nunca**, apagar la pantalla está bien. Desactiva la hibernación. |
+| Windows Update | Configura las *horas activas*, pausa las actualizaciones 5 semanas a la vez y reinicia a mano los sábados |
+| Inicio automático | Pon un acceso directo a `terminal64.exe` en `shell:startup`; activa el inicio de sesión automático |
+| BIOS | *Restaurar al volver la corriente* = **Encender**, para que la PC se reinicie sola después de un apagón |
+| Cortes de luz | UPS (batería de respaldo) de 600–1000 VA |
+| Internet | Router 4G/5G de respaldo o el punto de acceso del teléfono; MT5 se reconecta solo |
+| Revisión | Mira las pestañas Diario y Expertos una vez al día; el panel muestra "HALTED" si la protección detiene el bot |
 
-A Windows VPS in a data centre (or the MT5 built-in VPS) is more reliable than a home PC and removes the power
-and internet risks. **Check the firm first:** Goat Funded Trader bans VPS, VPN, proxies and any hosting service
-on all accounts from 6 Oct 2026 (the bot must run on your own computer and connection), and FundedNext allows
-EAs and VPS only on $5K-$25K accounts, each with a paid add-on. Never use a VPN while trading a prop account.
+Un VPS con Windows en un centro de datos (o el VPS integrado de MT5) es más confiable que una PC en casa y elimina los riesgos de
+electricidad e internet. **Revisa primero la firma:** Goat Funded Trader prohíbe VPS, VPN, proxies y cualquier servicio de hosting
+en todas las cuentas desde el 6 oct 2026 (el bot debe correr en tu propia computadora y conexión), y FundedNext permite
+EAs y VPS solo en cuentas de $5K–$25K, cada una con un complemento pagado. Nunca uses una VPN mientras operas una cuenta de fondeo.
 
-**Proof of ownership:** some firms (Goat Funded Trader) allow only EAs you built yourself and may ask for the
-source code. Keep this repository (source code and its commit history) as that proof.
+**Prueba de autoría:** algunas firmas (Goat Funded Trader) solo permiten EAs que hayas construido tú y pueden pedir el
+código fuente. Guarda este repositorio (código fuente y su historial de commits) como esa prueba.
 
-### 5. Many accounts (up to 50 per firm)
+### 5. Muchas cuentas (hasta 50 por firma)
 
-- MT5 logs in one account per terminal. For several accounts, install MT5 once per account in separate folders
-  (or use the firm's multi-terminal installer) and attach the bot to each with the same preset.
-- Same rules + same prices = the same entries on every account, so a trade copier is optional. If you use one,
-  copy *signals*, not lots: each account sizes its own trade from its own $100K start.
-- Each terminal uses roughly 300–500 MB of RAM. 50 terminals need a VPS with about 16–32 GB RAM.
-- Example sizing: if the bot opens 0.05 lots of XAGUSD on one account, 50 accounts hold 2.5 lots in total — 50
-  times the dollar profit and 50 times the dollar loss. Check each firm's rules on identical trades across accounts.
+- MT5 inicia sesión en una cuenta por terminal. Para varias cuentas, instala MT5 una vez por cuenta en carpetas separadas
+  (o usa el instalador multiterminal de la firma) y adjunta el bot a cada una con el mismo preset.
+- Mismas reglas + mismos precios = las mismas entradas en cada cuenta, así que un copiador de operaciones es opcional. Si usas uno,
+  copia *señales*, no lotes: cada cuenta calcula su propio tamaño con sus propios $100K iniciales.
+- Cada terminal usa unos 300–500 MB de RAM. 50 terminales necesitan un VPS con unos 16–32 GB de RAM.
+- Ejemplo de tamaño: si el bot abre 0.05 lotes de XAGUSD en una cuenta, 50 cuentas tienen 2.5 lotes en total — 50
+  veces la ganancia en dólares y 50 veces la pérdida en dólares. Revisa las reglas de cada firma sobre operaciones idénticas entre cuentas.
 
-## Costs (approximate, verify before buying)
+## Costos (aproximados, verifica antes de comprar)
 
-| Item | Cost | When |
+| Artículo | Costo | Cuándo |
 |---|---|---|
-| $100K instant account | $740 (promo seen in your screenshot); about $1,480 at full price | Per account |
-| MetaTrader 5 and MetaEditor | Free | — |
-| Home PC electricity, 24/7 | about $10–20 a month | Monthly |
-| UPS 600–1000 VA | about $80–150 | Once |
-| Backup internet | about $20–40 a month | Monthly |
-| Windows VPS, 1–3 terminals | about $15–40 a month | Monthly |
-| Windows VPS, 50 terminals (16–32 GB RAM) | about $80–200 a month | Monthly |
-| Trade copier (optional) | about $20–50 a month or $100–300 once | Optional |
-| Hardware crypto wallet (cold wallet) | about $79–150 | Once |
+| Cuenta instantánea de $100K | $740 (promoción vista en tu captura); unos $1,480 a precio completo | Por cuenta |
+| MetaTrader 5 y MetaEditor | Gratis | — |
+| Electricidad de la PC en casa, 24/7 | unos $10–20 al mes | Mensual |
+| UPS 600–1000 VA | unos $80–150 | Una vez |
+| Internet de respaldo | unos $20–40 al mes | Mensual |
+| VPS con Windows, 1–3 terminales | unos $15–40 al mes | Mensual |
+| VPS con Windows, 50 terminales (16–32 GB RAM) | unos $80–200 al mes | Mensual |
+| Copiador de operaciones (opcional) | unos $20–50 al mes o $100–300 una vez | Opcional |
+| Billetera cripto física (billetera fría) | unos $79–150 | Una vez |
 
-## Files
+## Archivos
 
-| File | Use |
+| Archivo | Uso |
 |---|---|
-| `mql5/FibFVG_Pro.mq5` | MetaTrader 5 bot |
-| `mql4/FibFVG_Pro.mq4` | MetaTrader 4 version |
-| `ctrader/FibFVGPro.cs` | cTrader version |
-| `presets/FibFVG_Pro_100K_Best.set` | Best rules, $100K, 6% max loss, no daily limit |
-| `presets/FibFVG_Pro_100K_Best_3pctDaily.set` | Same, for firms with a 3% daily limit |
-| `presets/FibFVG_Pro_100K_Best.cbotset` | cTrader parameters |
+| `mql5/FibFVG_Pro.mq5` | Bot de MetaTrader 5 |
+| `mql4/FibFVG_Pro.mq4` | Versión para MetaTrader 4 |
+| `ctrader/FibFVGPro.cs` | Versión para cTrader |
+| `presets/FibFVG_Pro_100K_Best.set` | Mejores reglas, $100K, pérdida máxima 6 %, sin límite diario |
+| `presets/FibFVG_Pro_100K_Best_3pctDaily.set` | Lo mismo, para firmas con límite diario del 3 % |
+| `presets/FibFVG_Pro_100K_Best.cbotset` | Parámetros de cTrader |
 
-The bots have not been compiled or run live yet. Compile, run 4 weeks on a demo or the first account with
-close attention, and compare its trades with the backtest before adding accounts.
+Los bots todavía no se han compilado ni corrido en vivo. Compílalos, córrelos 4 semanas en demo o en la primera cuenta con
+mucha atención, y compara sus operaciones con el backtest antes de añadir cuentas.

@@ -1,28 +1,33 @@
-# Cueto & Co. / FibFVG Pro — working rules
+# Cueto & Co. / FibFVG Pro — reglas de trabajo
 
-## One master document
-Everything (tests, results, plans, bot changes, live trades, payouts, accounts, company steps) is logged in the
-**Cueto & Co. — Master Document**: https://claude.ai/artifact/6ugpp8DiUYF5Np6ESd1KeL
-- Add each new item as a row at the top of the **Log (the best result wins)** tab (date, type, what, result, decision).
-- Update the other tabs (Strategy, Tests, Plans, Setup, Company, Risks) when their content changes.
-- Do not create new artifacts for results; earlier artifacts and the white paper are archive only.
+## Idioma
+Todo se escribe en **español**: el Documento Maestro, los documentos del repositorio y las respuestas al usuario.
+Los nombres de archivos, código, parámetros de los EAs y símbolos del broker se quedan como están.
 
-## The best result wins
-The bot changes only if a new rule beats the current best on all four checks:
-1. More R per trade after spread and swap fees.
-2. Profitable in both halves of the data (split 2025-08-19).
-3. t-statistic >= 2.
-4. Worst drawdown on a $100K account < 5% (firm line 6%).
-Anything that fails is logged as rejected or optional and stays out of the default preset.
+## Un documento maestro
+Todo (pruebas, resultados, planes, cambios del bot, operaciones en vivo, pagos, cuentas, pasos de la empresa) se registra en el
+**Cueto & Co. — Documento Maestro**: https://claude.ai/artifact/6ugpp8DiUYF5Np6ESd1KeL
+- Agrega cada nuevo elemento como una fila arriba en la tabla de Entradas de la pestaña **Registro (gana el mejor resultado)** (fecha, tipo, qué, resultado, decisión).
+- Actualiza las demás pestañas (Estrategia, Pruebas, Planes, Instalación, Empresa, Riesgos) cuando cambie su contenido.
+- No crees nuevos artifacts para resultados; los artifacts anteriores y el white paper son solo archivo.
 
-## Two kinds of money
-- Market rule: a market stays in a wallet only if it is profitable in both halves of the data.
-- Prop accounts (Wallet 1): no trade held over 24 hours or over the weekend. Markets BTC, US500, NAS100 at 0.75%. Setups: `fibfvg/prop24.py`
-  (daily + 4-hour setups at 0.705, stop at leg origin, flat within 24 h): 3 markets +0.35R, t = 1.8, RR 1.42.
-- Calendar (dates, milestones, review gates): `fibfvg/calendar3y.py`; 6%-a-month test: `fibfvg/walletbook.py`.
-- Cueto & Co. real money (Wallet 2): holds allowed. Gold and silver only (+2.15R, t 6.4). Bot v3 position plan, 0.5% per unit, chandelier exit
-  (+0.71R after swaps, t = 4.0). Starts when Wallet 2 >= $100K, half in the bot, 10% hard stop (`fibfvg/livefund.py`).
-- Wallets (`fibfvg/wallets3.py`): one prop firm at a time up to 50 accounts; below 50: 50% buys accounts,
-  25% Wallet 2, 25% Wallet 3 crypto; at 50: 70% Wallet 2, 25% crypto, 5% burn reserve (5 accounts), then to Wallet 2.
+## Gana el mejor resultado
+El bot cambia solo si una regla nueva supera a la mejor actual en los cuatro controles:
+1. Más R por operación después de spread y swaps.
+2. Rentable en ambas mitades de los datos (división 2025-08-19).
+3. Estadístico t >= 2.
+4. Peor caída en una cuenta de $100K < 5 % (línea de la firma 6 %).
+Todo lo que falle se registra como rechazado u opcional y queda fuera del preset por defecto.
 
-First live $100K account: 1 December 2026. All numbers before then are backtests.
+## Dos tipos de dinero
+- Regla de mercados: un mercado se queda en una billetera solo si es rentable en ambas mitades de los datos.
+- Cuentas de fondeo (Billetera 1): ninguna operación más de 24 horas ni durante el fin de semana. Mercados BTC, US500, NAS100 al 0.75 %. Señales: `fibfvg/prop24.py`
+  (señales diarias + 4 horas en 0.705, stop en el origen del impulso, cerrado en 24 h): 3 mercados +0.35R, t = 1.8, RR 1.42.
+- Calendario (fechas, hitos, puntos de revisión): `fibfvg/calendar3y.py`; prueba del 6 % al mes: `fibfvg/walletbook.py`.
+- Dinero real de Cueto & Co. (Billetera 2): se permite mantener posiciones. Solo oro y plata (+2.15R, t 6.4). Plan de posiciones del bot v3, 0.5 % por unidad, salida chandelier
+  (+0.71R después de swaps, t = 4.0). Empieza cuando la Billetera 2 >= $100K, la mitad en el bot, stop duro del 10 % (`fibfvg/livefund.py`).
+- Cuentas pequeñas (pruebas del 23 nov, `fibfvg/onemarket.py`): por debajo de $5K solo BTC, S&P y Nasdaq; nada de oro ni plata (0.01 lote arriesga demasiado).
+- Billeteras (`fibfvg/wallets3.py`): una firma de fondeo a la vez hasta 50 cuentas; con menos de 50: 50 % compra cuentas,
+  25 % Billetera 2, 25 % Billetera 3 cripto; con 50: 70 % Billetera 2, 25 % cripto, 5 % reserva para cuentas quemadas (5 cuentas), luego a la Billetera 2.
+
+Primera cuenta de $100K en vivo: 1 de diciembre de 2026. Todos los números antes de esa fecha son backtests.

@@ -1,40 +1,41 @@
-# Goat Funded Trader: setting up the EA
+# Goat Funded Trader: instalación del EA
 
-> **23 Nov 2026: FibFVG_NY10 (Nasdaq 10am candle) is withdrawn.** Its backtest edge came from a bug (breakeven triggered by the fill candle's high, which came before the fill). Corrected, it loses on every market. Do not run it.
+> **23 nov 2026: FibFVG_NY10 (vela de las 10am de Nasdaq) está retirado.** Su ventaja en el backtest venía de un error (el breakeven se activaba con el máximo de la vela del llenado, que ocurría antes del llenado). Corregido, pierde en todos los mercados. No lo corras.
 
-| EA | Market | When it trades | Risk default | Account |
+| EA | Mercado | Cuándo opera | Riesgo por defecto | Cuenta |
 |---|---|---|---|---|
-| `mql5/FibFVG_GoldMidnight.mq5` | Gold | Market order at 00:00 New York when the trend and yesterday agree; closed at 14:00 | 0.9% (cost of the emergency stop) | **$50K and up** (on $5K the 0.01-lot minimum is too big) |
+| `mql5/FibFVG_GoldMidnight.mq5` | Oro | Orden a mercado a las 00:00 de Nueva York cuando la tendencia y el día anterior coinciden; se cierra a las 14:00 | 0.9 % (costo del stop de emergencia) | **$50K o más** (en $5K el mínimo de 0.01 lote es demasiado grande) |
 
-The EA is built for **Instant Premium**: 6% intraday trailing max loss (stops rising at the start balance),
-3% daily loss from 17:00 New York, 1% floating-loss limit for all open trades, payouts every 14 days after
-5 profitable days of at least +0.5%. It:
-- trades only one position at a time and never holds overnight;
-- sizes every trade so all open stops stay under the 1% floating limit, and stops trading 1% before the 6% line;
-- closes its trades if the account comes within 0.5% of the 6% line or 2.7% of the daily limit;
-- counts your profitable days since the last payout on its panel (5 needed per payout);
-- writes every event to `MQL5\Files\FibFVG_<EA>_<account>.csv`.
+El EA está hecho para **Instant Premium**: pérdida máxima trailing intradía del 6 % (deja de subir en el saldo inicial),
+pérdida diaria del 3 % desde las 17:00 de Nueva York, límite del 1 % de pérdida flotante para todas las operaciones abiertas, pagos cada 14 días después de
+5 días rentables de al menos +0.5 %. El EA:
+- opera solo una posición a la vez y nunca la mantiene de noche;
+- calcula el tamaño de cada operación para que todos los stops abiertos queden bajo el límite flotante del 1 %, y deja de operar a 1 % de la línea del 6 %;
+- cierra sus operaciones si la cuenta queda a menos del 0.5 % de la línea del 6 % o a 2.7 % del límite diario;
+- cuenta en su panel tus días rentables desde el último pago (se necesitan 5 por pago);
+- escribe cada evento en `MQL5\Files\FibFVG_<EA>_<cuenta>.csv`.
 
-## Before you buy
+## Antes de comprar
 
-- The gold EA needs $10K+ (0.01-lot minimum); $50K or $100K is where it was tested. Only use money that is not
-  needed for debts or bills; the fee is refunded only once the account pays.
-- Backtests (Jul 2024 - Nov 2026, hourly data) are encouraging but **not proven** (t about 1.4-1.5).
-  The first weeks are a live test.
+- El EA de oro necesita $10K+ (mínimo de 0.01 lote); se probó con $50K y $100K. Usa solo dinero que no
+  necesites para deudas o cuentas; la cuota solo se reembolsa cuando la cuenta paga.
+- Los backtests (jul 2024 – nov 2026, datos horarios) son alentadores pero **no están probados** (t de 1.4–1.5).
+  Las primeras semanas son una prueba en vivo.
+- Pruebas del 23 nov con cuentas pequeñas (ver el Registro del Documento Maestro): por debajo de $5K, usa solo BTC, S&P y Nasdaq.
 
-## Install (your own Windows PC: GFT bans VPS, VPN and proxies)
+## Instalación (en tu propia PC con Windows: GFT prohíbe VPS, VPN y proxies)
 
-1. Install GFT's MT5 and log in. Do not use a VPN or remote server at any time.
-2. `File > Open Data Folder > MQL5 > Experts`: copy `FibFVG_GoldMidnight.mq5` (or `FibFVG_Prop24.mq5` with preset `presets/GFT_InstantPremium_100K_Prop24.set`).
-   `MQL5 > Presets`: copy the files from `presets/gft/`.
-3. Open each `.mq5` in MetaEditor (F4) and press **Compile (F7)**. Send me a screenshot if the Errors tab shows anything.
-4. `Tools > Options > Expert Advisors`: tick *Allow algorithmic trading*; the **Algo Trading** button must be green.
-5. Open a **gold H1** chart, drag **FibFVG_GoldMidnight** onto it, *Inputs > Load* `GFT_50K_GoldMidnight.set`
-   (or the $100K / silver preset), OK. The panel must show the symbol, the firm line and "waiting for 00:00 New York".
-6. Keep the PC on and MetaTrader open from 23:30 to 14:30 New York on trading days.
-7. Keep this repository: GFT may ask for proof that you built the EA (source code and its history).
+1. Instala el MT5 de GFT e inicia sesión. No uses una VPN ni un servidor remoto en ningún momento.
+2. `Archivo > Abrir carpeta de datos > MQL5 > Experts`: copia `FibFVG_GoldMidnight.mq5` (o `FibFVG_Prop24.mq5` con el preset `presets/GFT_InstantPremium_100K_Prop24.set`).
+   `MQL5 > Presets`: copia los archivos de `presets/gft/`.
+3. Abre cada `.mq5` en MetaEditor (F4) y presiona **Compilar (F7)**. Envíame una captura si la pestaña Errores muestra algo.
+4. `Herramientas > Opciones > Asesores Expertos`: marca *Permitir trading algorítmico*; el botón **Algo Trading** debe estar en verde.
+5. Abre un gráfico de **oro H1**, arrastra **FibFVG_GoldMidnight**, *Parámetros > Cargar* `GFT_50K_GoldMidnight.set`
+   (o el preset de $100K / plata), Aceptar. El panel debe mostrar el símbolo, la línea de la firma y "waiting for 00:00 New York".
+6. Mantén la PC encendida y MetaTrader abierto de 23:30 a 14:30 de Nueva York los días de trading.
+7. Guarda este repositorio: GFT puede pedir prueba de que construiste el EA (código fuente y su historial).
 
-## What to send
+## Qué enviar
 
-- After each trading day or each week: a screenshot of the panel and the History tab, and the CSV log.
-- Any `ERROR` or `HALT` line in the log, straight away.
+- Después de cada día o cada semana de trading: una captura del panel y de la pestaña Historial, y el registro CSV.
+- Cualquier línea `ERROR` o `HALT` del registro, de inmediato.

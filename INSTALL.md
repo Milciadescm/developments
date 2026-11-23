@@ -1,54 +1,54 @@
-# FibFVG Pro: install and run
+# FibFVG Pro: instalar y correr
 
-One bot, three platforms, same rules. Drop it on **any one chart**. It finds your broker's names for
-gold, silver, BTC, US500 and NAS100 (GOLD, XAUUSD.r, USTEC, US100.cash and so on) and trades all of them from that chart.
+Un bot, tres plataformas, las mismas reglas. Ponlo en **un solo gráfico cualquiera**. Encuentra los nombres que usa tu broker para
+oro, plata, BTC, US500 y NAS100 (GOLD, XAUUSD.r, USTEC, US100.cash, etc.) y los opera todos desde ese gráfico.
 
-| Platform | File | Install |
+| Plataforma | Archivo | Instalación |
 |---|---|---|
-| MetaTrader 5 | `mql5/FibFVG_Pro.mq5` | File → Open Data Folder → `MQL5/Experts` → paste → open in MetaEditor → Compile (F7) → drag onto a chart → tick "Allow Algo Trading" |
-| MetaTrader 4 | `mql4/FibFVG_Pro.mq4` | Same, in `MQL4/Experts`; enable "Allow live trading" |
-| cTrader | `ctrader/FibFVGPro.cs` | Automate → New cBot → paste → Build → add instance to a chart → Start |
+| MetaTrader 5 | `mql5/FibFVG_Pro.mq5` | Archivo → Abrir carpeta de datos → `MQL5/Experts` → pegar → abrir en MetaEditor → Compilar (F7) → arrastrar a un gráfico → marcar "Permitir trading algorítmico" |
+| MetaTrader 4 | `mql4/FibFVG_Pro.mq4` | Igual, en `MQL4/Experts`; activar "Permitir trading en vivo" |
+| cTrader | `ctrader/FibFVGPro.cs` | Automate → New cBot → pegar → Build → añadir una instancia a un gráfico → Start |
 
-None of the three files has been compiled yet. Fix any compile messages, then run on a demo first.
+Ninguno de los tres archivos se ha compilado todavía. Corrige cualquier mensaje de compilación y córrelo primero en demo.
 
-## Settings that matter
+## Ajustes importantes
 
-| Setting | Default | Choose |
+| Ajuste | Por defecto | Opciones |
 |---|---|---|
-| Preset | FundedNext Stellar Instant | FundedNext Stellar Instant (6% trailing, no daily), Instant Premium (3% daily, 6% max), Personal, Custom |
-| RiskMode | Normal | Conservative 0.15% / 0.05% · Normal 0.25% / 0.10% · Aggressive 0.50% / 0.25% · Edge gate |
-| Plan1Exit | Chandelier | Chandelier for prop accounts, Monthly for personal money |
-| Plan3Bank2R | true | close half of each levels unit at +2R (Plan 3B, the default plan) |
-| KillZonesOnly | false | true limits entries to 20, 00, 02, 06, 07, 09, 10, 15 NY (tested: fewer trades, no gain) |
-| StartBalance | 0 (auto) | set it to the account's starting size on a funded account |
+| Preset | FundedNext Stellar Instant | FundedNext Stellar Instant (6 % trailing, sin diario), Instant Premium (3 % diario, 6 % máx.), Personal, Custom |
+| RiskMode | Normal | Conservador 0.15 % / 0.05 % · Normal 0.25 % / 0.10 % · Agresivo 0.50 % / 0.25 % · Compuerta de ventaja |
+| Plan1Exit | Chandelier | Chandelier para cuentas de fondeo, Mensual para dinero personal |
+| Plan3Bank2R | true | cerrar la mitad de cada unidad de niveles en +2R (Plan 3B, el plan por defecto) |
+| KillZonesOnly | false | true limita las entradas a las 20, 00, 02, 06, 07, 09, 10, 15 NY (probado: menos operaciones, sin ganancia extra) |
+| StartBalance | 0 (auto) | ponlo en el tamaño inicial de la cuenta en una cuenta fondeada |
 
-Risk is a share of the **starting balance** per unit (Plan 1 / Plan 3).
+El riesgo es una parte del **saldo inicial** por unidad (Plan 1 / Plan 3).
 
-## What protects the account
+## Qué protege la cuenta
 
-- Before every trade: drawdown from peak + open stop-risk + the new trade's risk must stay under the firm limit minus 1%
-  (5% of a 6% limit) and under the daily limit minus 0.5%. Near the line, trades are shrunk to half the room left.
-- Emergency line: equity within 0.5% of the firm's max-loss line closes everything and halts the bot (restart needed);
-  within 0.3% of the daily line closes everything until the next day.
-- State (start balance, peak, Plan 1 TP1 status, adds) is kept in terminal global variables / cTrader LocalStorage, so restarts are safe.
-- Lots below the broker's minimum are skipped, never rounded up.
+- Antes de cada operación: la caída desde el máximo + el riesgo de los stops abiertos + el riesgo de la nueva operación deben quedar bajo el límite de la firma menos 1 %
+  (5 % de un límite del 6 %) y bajo el límite diario menos 0.5 %. Cerca de la línea, las operaciones se reducen a la mitad del margen que queda.
+- Línea de emergencia: si el equity queda a menos del 0.5 % de la línea de pérdida máxima de la firma, cierra todo y detiene el bot (hay que reiniciarlo);
+  a menos del 0.3 % de la línea diaria, cierra todo hasta el día siguiente.
+- El estado (saldo inicial, máximo, estado del TP1 del Plan 1, añadidos) se guarda en variables globales del terminal / LocalStorage de cTrader, así que los reinicios son seguros.
+- Los lotes por debajo del mínimo del broker se saltan, nunca se redondean hacia arriba.
 
-The chart panel shows the mode, the room left before the bot's line, and lots per market (recommended and open).
+El panel del gráfico muestra el modo, el margen que queda antes de la línea del bot y los lotes por mercado (recomendados y abiertos).
 
-## The edge rule (RiskMode = Edge gate)
+## La regla de ventaja (RiskMode = Compuerta de ventaja)
 
 ```
-EDGE_CONFIRMED -> Normal     : last 20 closed positions  sum >= +3R  and PF >= 1.3  and drawdown <= 2%
-STRONG_EDGE    -> Aggressive : last 40 closed positions  sum >= +8R  and PF >= 1.5  and drawdown <= 1.5%
-otherwise (or drawdown >= 3%) -> Conservative
+EDGE_CONFIRMED -> Normal     : últimas 20 posiciones cerradas  suma >= +3R  y PF >= 1.3  y caída <= 2 %
+STRONG_EDGE    -> Agresivo   : últimas 40 posiciones cerradas  suma >= +8R  y PF >= 1.5  y caída <= 1.5 %
+en otro caso (o caída >= 3 %) -> Conservador
 ```
 
-## Rewards and the 12-month roadmap
+## Pagos y la hoja de ruta de 12 meses
 
-1. Month 1: request a small first reward (up to $1,000 of closed profit) if there is any. This happened in about 1 start month in 5. Expect months 2–3.
-2. Month 3: withdraw all closed profit and buy more of the biggest instant accounts with it. The median month-3 withdrawal was about $444, so usually 0–1 accounts.
-3. Months 4–8: monthly rewards, between the firm's minimum and maximum per reward.
-4. Month 9: withdraw everything from every account and buy as many accounts as it covers. Repeat through 2027.
-5. Request only the "withdrawable now" amount on the chart panel. The bot sees the withdrawal and resets its high-water mark.
-6. Never raise the risk mode to reach a payout. Check each firm's maximum allocation and its rules on running the same bot on several accounts.
-   Lucid Trading is a futures firm (CME futures on NinjaTrader/Tradovate/Rithmic): this bot needs a futures version before it can run there.
+1. Mes 1: pide un primer pago pequeño (hasta $1,000 de ganancia cerrada) si la hay. Esto pasó en cerca de 1 de cada 5 meses de inicio. Lo normal es en los meses 2–3.
+2. Mes 3: retira toda la ganancia cerrada y compra con ella más de las cuentas instantáneas más grandes. El retiro mediano del mes 3 fue de unos $444, así que normalmente 0–1 cuentas.
+3. Meses 4–8: pagos mensuales, entre el mínimo y el máximo de la firma por pago.
+4. Mes 9: retira todo de cada cuenta y compra tantas cuentas como alcance. Repetir durante 2027.
+5. Pide solo el monto "retirable ahora" que muestra el panel. El bot ve el retiro y reinicia su máximo.
+6. Nunca subas el modo de riesgo para alcanzar un pago. Revisa la asignación máxima de cada firma y sus reglas sobre correr el mismo bot en varias cuentas.
+   Lucid Trading es una firma de futuros (futuros CME en NinjaTrader/Tradovate/Rithmic): este bot necesita una versión para futuros antes de poder correr allí.
