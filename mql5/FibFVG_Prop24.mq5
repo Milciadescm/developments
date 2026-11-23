@@ -30,6 +30,8 @@ input double MaxLossPct        = 6;          // firm max loss
 input bool   TrailingMaxLoss   = true;       // FundedNext Instant: trailing, stops rising once it reaches the start balance
 input double GuardBufferPct    = 1;          // bot line = MaxLoss - buffer (5% of start)
 input double DailyLossPct      = 0;          // firm daily loss limit (0 = none)
+input double MaxOpenRiskPct    = 0;          // floating-loss limit of all open trades (0 = none). Goat Funded Instant Premium: 1
+input bool   TrailOnEquity     = false;      // true = the trailing line follows the equity peak (Goat Funded "intraday trailing")
 input string SymbolsToTrade    = "AUTO";     // AUTO or your broker's names, e.g. BTCUSDm,US500m,USTECm
 input bool   UseDailySetups    = true;       // setup A
 input bool   UseH4Setups       = true;       // setup B
@@ -289,6 +291,7 @@ bool Guard()
 {
    CalcClosed();
    if(VBal() > Peak()) GlobalVariableSet(GV("peak"), VBal());
+   if(TrailOnEquity && VEq() > Peak()) GlobalVariableSet(GV("peak"), VEq());
    MqlDateTime t; TimeToStruct(TimeTradeServer(), t);
    int key = t.year * 1000 + t.day_of_year;
    if(key != lastDayKey)
@@ -329,6 +332,11 @@ void NewBar(int k, ENUM_TIMEFRAMES tf, long mg)
    double px = dir == 1 ? ask : bid;
    if((px - sl) * dir <= 0) return;                                        // already through the stop
    double riskMoney = startBal * RiskPct / 100.0, room = Room();
+   if(MaxOpenRiskPct > 0)                                                  // floating-loss limit: all open stops together
+   {
+      double left = (MaxOpenRiskPct - 0.1) / 100.0 * startBal - OpenRisk();
+      if(riskMoney > left) { Log("SKIP", s, StringFormat("setup=%s; reason=floating-loss limit (open risk %.2f)", SetupName(mg), OpenRisk())); return; }
+   }
    if(riskMoney > 0.5 * room) riskMoney = MathMax(0, 0.5 * room);         // shrink near the line
    double lots = LotsFor(s, riskMoney, dist);
    string tag = SetupName(mg);

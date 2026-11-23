@@ -1,0 +1,22 @@
+; FibFVG Prop24 - Goat Funded Trader INSTANT PREMIUM $100K (no target, 3% daily, 6% intraday trailing,
+; 1% floating loss of all open trades, 5 profitable days of +0.5% per payout, bi-weekly, 80% split).
+; 0.9% per trade and the floating-loss limit allow ONE open trade at a time. Backtest Jul 2024 - Nov 2026:
+; $13,663 paid in 4 payouts, no breach; last 12 months $1,578. Run on your own PC: no VPS / VPN (GFT rule).
+RiskProfile=GFT-InstantPremium
+RiskPct=0.9
+StartBalance=100000
+MaxLossPct=6
+TrailingMaxLoss=true
+TrailOnEquity=true
+GuardBufferPct=1
+DailyLossPct=3
+MaxOpenRiskPct=1
+SymbolsToTrade=AUTO
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+KeepAliveDays=0
+WriteLog=true
+ShowPanel=true
+Magic=7712400
