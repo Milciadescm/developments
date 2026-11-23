@@ -1,0 +1,355 @@
+{
+ "all_markets": {
+  "D1 bias | X0 time only": {
+   "n": 1912,
+   "win": 50.4,
+   "rr": 1.0,
+   "pf_R": 1.01,
+   "pf_pips": 1.03,
+   "net_R": 0.006,
+   "avg_pips": 11.2,
+   "first": -0.053,
+   "second": 0.058,
+   "t": 0.22
+  },
+  "D1 bias | X1 stop 1R": {
+   "n": 1912,
+   "win": 46.4,
+   "rr": 1.18,
+   "pf_R": 1.02,
+   "pf_pips": 1.1,
+   "net_R": 0.009,
+   "avg_pips": 31.7,
+   "first": -0.038,
+   "second": 0.051,
+   "t": 0.38
+  },
+  "D1 bias | X2 stop + breakeven": {
+   "n": 1912,
+   "win": 31.9,
+   "rr": 2.27,
+   "pf_R": 1.06,
+   "pf_pips": 1.12,
+   "net_R": 0.02,
+   "avg_pips": 29.6,
+   "first": -0.014,
+   "second": 0.05,
+   "t": 0.92
+  },
+  "D1 bias | X3 stop + 2R target": {
+   "n": 1912,
+   "win": 46.7,
+   "rr": 1.14,
+   "pf_R": 1.0,
+   "pf_pips": 1.07,
+   "net_R": -0.001,
+   "avg_pips": 24.0,
+   "first": -0.032,
+   "second": 0.026,
+   "t": -0.05
+  },
+  "D2 daily | X0 time only": {
+   "n": 2878,
+   "win": 46.9,
+   "rr": 1.01,
+   "pf_R": 0.89,
+   "pf_pips": 0.95,
+   "net_R": -0.055,
+   "avg_pips": -21.7,
+   "first": -0.08,
+   "second": -0.035,
+   "t": -2.46
+  },
+  "D2 daily | X1 stop 1R": {
+   "n": 2878,
+   "win": 43.4,
+   "rr": 1.21,
+   "pf_R": 0.92,
+   "pf_pips": 1.01,
+   "net_R": -0.034,
+   "avg_pips": 4.9,
+   "first": -0.055,
+   "second": -0.017,
+   "t": -1.74
+  },
+  "D2 daily | X2 stop + breakeven": {
+   "n": 2878,
+   "win": 29.4,
+   "rr": 2.22,
+   "pf_R": 0.92,
+   "pf_pips": 1.0,
+   "net_R": -0.026,
+   "avg_pips": 0.7,
+   "first": -0.059,
+   "second": 0.0,
+   "t": -1.51
+  },
+  "D2 daily | X3 stop + 2R target": {
+   "n": 2878,
+   "win": 43.7,
+   "rr": 1.16,
+   "pf_R": 0.9,
+   "pf_pips": 1.0,
+   "net_R": -0.045,
+   "avg_pips": 0.2,
+   "first": -0.062,
+   "second": -0.031,
+   "t": -2.45
+  },
+  "D3 yesterday | X0 time only": {
+   "n": 2877,
+   "win": 49.0,
+   "rr": 1.04,
+   "pf_R": 1.01,
+   "pf_pips": 0.98,
+   "net_R": 0.002,
+   "avg_pips": -6.2,
+   "first": -0.031,
+   "second": 0.03,
+   "t": 0.1
+  },
+  "D3 yesterday | X1 stop 1R": {
+   "n": 2877,
+   "win": 45.3,
+   "rr": 1.23,
+   "pf_R": 1.02,
+   "pf_pips": 1.04,
+   "net_R": 0.007,
+   "avg_pips": 14.3,
+   "first": -0.033,
+   "second": 0.04,
+   "t": 0.34
+  },
+  "D3 yesterday | X2 stop + breakeven": {
+   "n": 2877,
+   "win": 30.4,
+   "rr": 2.31,
+   "pf_R": 1.01,
+   "pf_pips": 1.03,
+   "net_R": 0.002,
+   "avg_pips": 9.0,
+   "first": -0.04,
+   "second": 0.037,
+   "t": 0.13
+  },
+  "D3 yesterday | X3 stop + 2R target": {
+   "n": 2877,
+   "win": 45.7,
+   "rr": 1.19,
+   "pf_R": 1.0,
+   "pf_pips": 1.04,
+   "net_R": -0.001,
+   "avg_pips": 14.7,
+   "first": -0.027,
+   "second": 0.02,
+   "t": -0.06
+  },
+  "D4 fade | X0 time only": {
+   "n": 2877,
+   "win": 48.6,
+   "rr": 0.97,
+   "pf_R": 0.91,
+   "pf_pips": 0.99,
+   "net_R": -0.042,
+   "avg_pips": -3.1,
+   "first": -0.04,
+   "second": -0.043,
+   "t": -1.88
+  },
+  "D4 fade | X1 stop 1R": {
+   "n": 2877,
+   "win": 44.6,
+   "rr": 1.17,
+   "pf_R": 0.95,
+   "pf_pips": 1.03,
+   "net_R": -0.024,
+   "avg_pips": 12.7,
+   "first": -0.025,
+   "second": -0.024,
+   "t": -1.24
+  },
+  "D4 fade | X2 stop + breakeven": {
+   "n": 2877,
+   "win": 29.8,
+   "rr": 2.2,
+   "pf_R": 0.93,
+   "pf_pips": 1.0,
+   "net_R": -0.022,
+   "avg_pips": -1.3,
+   "first": -0.039,
+   "second": -0.009,
+   "t": -1.3
+  },
+  "D4 fade | X3 stop + 2R target": {
+   "n": 2877,
+   "win": 45.0,
+   "rr": 1.14,
+   "pf_R": 0.93,
+   "pf_pips": 0.99,
+   "net_R": -0.032,
+   "avg_pips": -4.7,
+   "first": -0.032,
+   "second": -0.032,
+   "t": -1.71
+  },
+  "D5 bias+yesterday | X0 time only": {
+   "n": 1024,
+   "win": 49.4,
+   "rr": 1.08,
+   "pf_R": 1.06,
+   "pf_pips": 1.0,
+   "net_R": 0.026,
+   "avg_pips": -0.9,
+   "first": -0.051,
+   "second": 0.089,
+   "t": 0.69
+  },
+  "D5 bias+yesterday | X1 stop 1R": {
+   "n": 1024,
+   "win": 45.5,
+   "rr": 1.28,
+   "pf_R": 1.06,
+   "pf_pips": 1.07,
+   "net_R": 0.027,
+   "avg_pips": 21.5,
+   "first": -0.024,
+   "second": 0.069,
+   "t": 0.8
+  },
+  "D5 bias+yesterday | X2 stop + breakeven": {
+   "n": 1024,
+   "win": 31.5,
+   "rr": 2.39,
+   "pf_R": 1.1,
+   "pf_pips": 1.11,
+   "net_R": 0.032,
+   "avg_pips": 27.5,
+   "first": -0.004,
+   "second": 0.062,
+   "t": 1.06
+  },
+  "D5 bias+yesterday | X3 stop + 2R target": {
+   "n": 1024,
+   "win": 45.9,
+   "rr": 1.2,
+   "pf_R": 1.02,
+   "pf_pips": 1.05,
+   "net_R": 0.009,
+   "avg_pips": 14.6,
+   "first": -0.026,
+   "second": 0.037,
+   "t": 0.28
+  }
+ },
+ "by_market": {
+  "XAUUSD": {
+   "rule": "D5 bias+yesterday | X0 time only",
+   "n": 237,
+   "win": 52.7,
+   "rr": 1.16,
+   "pf_R": 1.3,
+   "pf_pips": 1.18,
+   "net_R": 0.109,
+   "avg_pips": 23.7,
+   "first": 0.054,
+   "second": 0.161,
+   "t": 1.54
+  },
+  "XAGUSD": {
+   "rule": "D5 bias+yesterday | X2 stop + breakeven",
+   "n": 223,
+   "win": 24.2,
+   "rr": 3.39,
+   "pf_R": 1.08,
+   "pf_pips": 0.94,
+   "net_R": 0.034,
+   "avg_pips": -1.8,
+   "first": -0.035,
+   "second": 0.078,
+   "t": 0.4
+  },
+  "BTCUSD": {
+   "rule": "D2 daily | X3 stop + 2R target",
+   "n": 519,
+   "win": 45.5,
+   "rr": 1.32,
+   "pf_R": 1.1,
+   "pf_pips": 1.1,
+   "net_R": 0.042,
+   "avg_pips": 62.2,
+   "first": 0.056,
+   "second": 0.034,
+   "t": 0.95
+  },
+  "US500": {
+   "rule": "D1 bias | X2 stop + breakeven",
+   "n": 406,
+   "win": 36.2,
+   "rr": 1.92,
+   "pf_R": 1.09,
+   "pf_pips": 1.13,
+   "net_R": 0.026,
+   "avg_pips": 15.5,
+   "first": 0.056,
+   "second": -0.003,
+   "t": 0.62
+  },
+  "NAS100": {
+   "rule": "D4 fade | X1 stop 1R",
+   "n": 586,
+   "win": 46.6,
+   "rr": 1.23,
+   "pf_R": 1.07,
+   "pf_pips": 1.05,
+   "net_R": 0.029,
+   "avg_pips": 43.3,
+   "first": 0.05,
+   "second": 0.011,
+   "t": 0.68
+  }
+ },
+ "gft": {
+  "XAUUSD 0.6%": {
+   "paid": 11671,
+   "payouts": 8,
+   "breach": null,
+   "last12": 3191,
+   "profitable_days": 66
+  },
+  "XAUUSD 0.9%": {
+   "paid": 1642,
+   "payouts": 2,
+   "breach": "2024-12-12",
+   "last12": 2679,
+   "profitable_days": 77
+  },
+  "BTCUSD 0.6%": {
+   "paid": 15970,
+   "payouts": 13,
+   "breach": "2025-12-25",
+   "last12": 0,
+   "profitable_days": 120
+  },
+  "BTCUSD 0.9%": {
+   "paid": 11025,
+   "payouts": 8,
+   "breach": "2025-07-07",
+   "last12": 0,
+   "profitable_days": 159
+  },
+  "NAS100 0.6%": {
+   "paid": 9244,
+   "payouts": 6,
+   "breach": "2025-03-05",
+   "last12": 9097,
+   "profitable_days": 116
+  },
+  "NAS100 0.9%": {
+   "paid": 15196,
+   "payouts": 9,
+   "breach": "2025-03-03",
+   "last12": 3404,
+   "profitable_days": 163
+  }
+ }
+}
