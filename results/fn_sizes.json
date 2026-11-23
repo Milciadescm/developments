@@ -1,0 +1,134 @@
+{
+ "Instant $20K + Prop24 0.75%": {
+  "paid": 4104,
+  "by_year": {
+   "2024": 2259,
+   "2025": 1338,
+   "2026": 507
+  },
+  "last12": 507,
+  "breach": null,
+  "dd": 4.63,
+  "skipped_min_lot": 0,
+  "taken": 82
+ },
+ "Instant $10K + Prop24 0.75%": {
+  "paid": 1999,
+  "by_year": {
+   "2024": 1112,
+   "2025": 648,
+   "2026": 238
+  },
+  "last12": 238,
+  "breach": null,
+  "dd": 4.61,
+  "skipped_min_lot": 0,
+  "taken": 82
+ },
+ "2-Step $25K + Hold 0.75%": {
+  "paid": 6375,
+  "by_year": {
+   "2024": 855,
+   "2025": 5317,
+   "2026": 203
+  },
+  "last12": 0,
+  "breach": null,
+  "dd": 6.11,
+  "skipped_min_lot": 2,
+  "taken": 108,
+  "challenge": {
+   "pass_rate": 35,
+   "median_months": 12.5,
+   "starts": 17
+  }
+ },
+ "2-Step $15K + Hold 0.75%": {
+  "paid": 3308,
+  "by_year": {
+   "2024": 312,
+   "2025": 2996
+  },
+  "last12": 0,
+  "breach": null,
+  "dd": 8.86,
+  "skipped_min_lot": 8,
+  "taken": 98,
+  "challenge": {
+   "pass_rate": 53,
+   "median_months": 10.1,
+   "starts": 17
+  }
+ },
+ "1-Step $25K + Hold 0.75%": {
+  "paid": 4468,
+  "by_year": {
+   "2024": 232,
+   "2025": 3948,
+   "2026": 288
+  },
+  "last12": 9,
+  "breach": null,
+  "dd": 4.84,
+  "skipped_min_lot": 2,
+  "taken": 93,
+  "challenge": {
+   "pass_rate": 82,
+   "median_months": 6.9,
+   "starts": 17
+  }
+ },
+ "1-Step $25K + Hold 0.5%": {
+  "paid": 3586,
+  "by_year": {
+   "2024": 333,
+   "2025": 3253
+  },
+  "last12": 0,
+  "breach": null,
+  "dd": 4.92,
+  "skipped_min_lot": 8,
+  "taken": 92,
+  "challenge": {
+   "pass_rate": 59,
+   "median_months": 9.7,
+   "starts": 17
+  }
+ },
+ "Lite $25K + Hold 0.75%": {
+  "paid": 5856,
+  "by_year": {
+   "2024": 549,
+   "2025": 5005,
+   "2026": 302
+  },
+  "last12": 0,
+  "breach": null,
+  "dd": 5.71,
+  "skipped_min_lot": 2,
+  "taken": 100,
+  "challenge": {
+   "pass_rate": 35,
+   "median_months": 9.2,
+   "starts": 17
+  }
+ },
+ "2-Step $25K + Prop24 0.75%": {
+  "paid": 5190,
+  "by_year": {
+   "2024": 2815,
+   "2025": 1729,
+   "2026": 645
+  },
+  "last12": 645,
+  "breach": null,
+  "dd": 4.83,
+  "skipped_min_lot": 0,
+  "taken": 82,
+  "challenge": {
+   "pass_rate": 18,
+   "median_months": 13.6,
+   "starts": 17
+  }
+ }
+}
