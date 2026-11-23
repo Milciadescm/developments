@@ -1,0 +1,233 @@
+{
+ "A 24-hour prop bot": {
+  "trades_per_month": 2.8,
+  "win_rate": 58.0,
+  "avg_R": 0.346,
+  "real": {
+   "0.9%": {
+    "jul2024_to_now": {
+     "end": 6190,
+     "total_pct": 23.8,
+     "per_year_pct": 9.6,
+     "worst_drawdown_pct": 5.6,
+     "trades": 80,
+     "skipped_min_lot": 1
+    },
+    "last_12_months": {
+     "end": 4879,
+     "total_pct": -2.4,
+     "per_year_pct": -2.6,
+     "worst_drawdown_pct": 5.6,
+     "trades": 30,
+     "skipped_min_lot": 0
+    }
+   }
+  },
+  "prop_gft_5k": {
+   "fee": 74,
+   "paid_jul2024_to_now": 554,
+   "payouts": 3,
+   "breach": null,
+   "paid_last_12_months": 63
+  }
+ },
+ "B Holding bot, 5 markets": {
+  "trades_per_month": 4.4,
+  "win_rate": 51.2,
+  "avg_R": 0.847,
+  "real": {
+   "0.5%": {
+    "jul2024_to_now": {
+     "end": 5001,
+     "total_pct": 0.0,
+     "per_year_pct": 0.0,
+     "worst_drawdown_pct": 4.0,
+     "trades": 59,
+     "skipped_min_lot": 22
+    },
+    "last_12_months": {
+     "end": 4871,
+     "total_pct": -2.6,
+     "per_year_pct": -3.4,
+     "worst_drawdown_pct": 2.7,
+     "trades": 21,
+     "skipped_min_lot": 6
+    }
+   },
+   "1.0%": {
+    "jul2024_to_now": {
+     "end": 4776,
+     "total_pct": -4.5,
+     "per_year_pct": -1.9,
+     "worst_drawdown_pct": 9.7,
+     "trades": 66,
+     "skipped_min_lot": 23
+    },
+    "last_12_months": {
+     "end": 4542,
+     "total_pct": -9.2,
+     "per_year_pct": -12.0,
+     "worst_drawdown_pct": 9.7,
+     "trades": 25,
+     "skipped_min_lot": 5
+    }
+   }
+  }
+ },
+ "C Holding bot, gold + silver": {
+  "trades_per_month": 1.7,
+  "win_rate": 83.3,
+  "avg_R": 2.483,
+  "real": {
+   "0.5%": {
+    "jul2024_to_now": {
+     "end": 5000,
+     "total_pct": 0.0,
+     "per_year_pct": 0.0,
+     "worst_drawdown_pct": 0.0,
+     "trades": 0,
+     "skipped_min_lot": 15
+    },
+    "last_12_months": {
+     "end": 5000,
+     "total_pct": 0.0,
+     "per_year_pct": 0.0,
+     "worst_drawdown_pct": 0.0,
+     "trades": 0,
+     "skipped_min_lot": 4
+    }
+   },
+   "1.0%": {
+    "jul2024_to_now": {
+     "end": 5000,
+     "total_pct": 0.0,
+     "per_year_pct": 0.0,
+     "worst_drawdown_pct": 0.0,
+     "trades": 0,
+     "skipped_min_lot": 15
+    },
+    "last_12_months": {
+     "end": 5000,
+     "total_pct": 0.0,
+     "per_year_pct": 0.0,
+     "worst_drawdown_pct": 0.0,
+     "trades": 0,
+     "skipped_min_lot": 4
+    }
+   }
+  }
+ },
+ "D Weekly Turtle, silver + BTC": {
+  "trades_per_month": 10.0,
+  "win_rate": 37.9,
+  "avg_R": 0.844,
+  "real": {
+   "2.0%": {
+    "jul2024_to_now": {
+     "end": 28484,
+     "total_pct": 469.7,
+     "per_year_pct": 105.4,
+     "worst_drawdown_pct": 22.1,
+     "trades": 251,
+     "skipped_min_lot": 19
+    },
+    "last_12_months": {
+     "end": 4983,
+     "total_pct": -0.3,
+     "per_year_pct": -0.3,
+     "worst_drawdown_pct": 7.4,
+     "trades": 51,
+     "skipped_min_lot": 35
+    }
+   },
+   "5.0%": {
+    "jul2024_to_now": {
+     "end": 65182,
+     "total_pct": 1203.6,
+     "per_year_pct": 189.4,
+     "worst_drawdown_pct": 53.7,
+     "trades": 264,
+     "skipped_min_lot": 11
+    },
+    "last_12_months": {
+     "end": 20467,
+     "total_pct": 309.3,
+     "per_year_pct": 267.3,
+     "worst_drawdown_pct": 17.5,
+     "trades": 113,
+     "skipped_min_lot": 10
+    }
+   }
+  }
+ },
+ "E Gold midnight": {
+  "trades_per_month": 8.2,
+  "win_rate": 42.2,
+  "avg_R": 0.044,
+  "real": {
+   "0.9%": {
+    "jul2024_to_now": {
+     "end": 5374,
+     "total_pct": 7.5,
+     "per_year_pct": 5.6,
+     "worst_drawdown_pct": 3.1,
+     "trades": 115,
+     "skipped_min_lot": 122
+    },
+    "last_12_months": {
+     "end": 5000,
+     "total_pct": 0.0,
+     "per_year_pct": 0.0,
+     "worst_drawdown_pct": 0.0,
+     "trades": 0,
+     "skipped_min_lot": 92
+    }
+   }
+  },
+  "prop_gft_5k": {
+   "fee": 74,
+   "paid_jul2024_to_now": 423,
+   "payouts": 5,
+   "breach": null,
+   "paid_last_12_months": 68
+  }
+ },
+ "20_years_real_5k": {
+  "B Holding bot, 5 markets": {
+   "0.5%": {
+    "end": 6705,
+    "total_pct": 34.1,
+    "per_year_pct": 1.4,
+    "worst_drawdown_pct": 23.3,
+    "trades": 532,
+    "skipped_min_lot": 122
+   },
+   "1.0%": {
+    "end": 8600,
+    "total_pct": 72.0,
+    "per_year_pct": 2.6,
+    "worst_drawdown_pct": 50.7,
+    "trades": 723,
+    "skipped_min_lot": 51
+   }
+  },
+  "C Holding bot, gold + silver": {
+   "0.5%": {
+    "end": 4684,
+    "total_pct": -6.3,
+    "per_year_pct": -0.4,
+    "worst_drawdown_pct": 9.2,
+    "trades": 68,
+    "skipped_min_lot": 107
+   },
+   "1.0%": {
+    "end": 3837,
+    "total_pct": -23.3,
+    "per_year_pct": -1.5,
+    "worst_drawdown_pct": 30.7,
+    "trades": 194,
+    "skipped_min_lot": 56
+   }
+  }
+ }
+}
