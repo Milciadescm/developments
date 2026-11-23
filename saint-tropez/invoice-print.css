@@ -1,0 +1,8 @@
+/* Invoice print styles: black on white (loaded only when printing). */
+@page { margin: 14mm; }
+body, .inv-page { background: #fff !important; color: #000 !important; padding: 0; }
+.inv-tools { display: none !important; }
+.invoice { width: 100%; border: 0; border-radius: 0; background: #fff; padding: 0; color: #000; }
+.invoice * { color: #000 !important; border-color: #bbb !important; background: transparent !important; }
+.inv-table { min-width: 0; }
+.inv-brand img { filter: grayscale(1) contrast(1.4); }

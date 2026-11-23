@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sigue tu pedido · Saint Tropez Market 24/7</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c1a17">
+  <link rel="icon" href="images/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ops.css">
+</head>
+<body class="track-page">
+  <header class="lt-top">
+    <a href="index.html" class="brand" aria-label="Saint Tropez Market 24/7">
+      <img src="images/emblem.svg" alt="" width="50" height="23">
+      <span class="wordmark"><span class="wm-name">Saint Tropez</span><span class="wm-sub">Market 24/7</span></span>
+    </a>
+    <button type="button" class="lang" id="lang-toggle">EN</button>
+  </header>
+
+  <div class="lt-map" id="lt-map" role="img" aria-label="Mapa del pedido"></div>
+
+  <main class="lt-sheet" id="lt-sheet" aria-live="polite">
+    <div class="lt-handle" aria-hidden="true"></div>
+    <p class="lt-loading" id="lt-loading" data-i18n="lt.loading">Cargando tu pedido…</p>
+    <div id="lt-content" class="hidden">
+      <p class="lt-eta-label" id="lt-eta-label"></p>
+      <h1 class="lt-eta" id="lt-eta"></h1>
+      <p class="lt-status" id="lt-status"></p>
+      <ol class="lt-steps" id="lt-steps"></ol>
+      <p class="lt-offline hidden" id="lt-offline" data-i18n="lt.offline"></p>
+
+      <section class="lt-driver hidden" id="lt-driver">
+        <div class="lt-driver-avatar" aria-hidden="true">🛵</div>
+        <div class="lt-driver-text">
+          <small data-i18n="lt.driver">Tu repartidor</small>
+          <strong id="lt-driver-name"></strong>
+          <span id="lt-driver-seen"></span>
+        </div>
+        <span class="lt-live"><i></i><span data-i18n="lt.live">En vivo</span></span>
+      </section>
+
+      <section class="lt-where">
+        <small id="lt-where-label"></small>
+        <strong id="lt-where"></strong>
+        <span id="lt-where-sub"></span>
+      </section>
+
+      <div class="lt-actions">
+        <a class="btn btn-ghost" id="lt-call" href="#"><span data-i18n="lt.call">Llamar a la tienda</span></a>
+        <a class="btn btn-ghost" id="lt-wa" href="#" target="_blank" rel="noopener"><span data-i18n="lt.wa">WhatsApp</span></a>
+      </div>
+      <a class="btn btn-block" id="lt-invoice" href="#" data-i18n="lt.invoice">Ver factura</a>
+      <button type="button" class="btn btn-ghost btn-block" id="lt-share" data-i18n="lt.share">Copiar enlace de seguimiento</button>
+
+      <details class="lt-details">
+        <summary><span data-i18n="lt.details">Detalles del pedido</span> · <span id="lt-code"></span></summary>
+        <ul class="co-items" id="lt-items"></ul>
+        <dl class="totals" id="lt-totals"></dl>
+      </details>
+      <a class="lt-shop" href="index.html" data-i18n="lt.shop">Volver a la tienda</a>
+    </div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="map.js"></script>
+  <script src="catalog.js"></script>
+  <script src="i18n.js"></script>
+  <script src="track.js"></script>
+</body>
+</html>

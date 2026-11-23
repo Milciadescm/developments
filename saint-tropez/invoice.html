@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Factura · Saint Tropez Market 24/7</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c1a17">
+  <link rel="icon" href="images/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="invoice.css">
+  <link rel="stylesheet" href="invoice-print.css" media="print">
+</head>
+<body class="inv-page">
+  <div class="inv-tools">
+    <a class="btn btn-ghost" id="inv-back" href="index.html" data-i18n="inv.back">Volver al seguimiento</a>
+    <button type="button" class="lang" id="lang-toggle">EN</button>
+    <button type="button" class="btn" id="inv-print" data-i18n="inv.print">Imprimir / Guardar PDF</button>
+  </div>
+
+  <main class="invoice" id="invoice" aria-live="polite">
+    <p class="inv-loading" id="inv-loading" data-i18n="lt.loading">Cargando…</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="catalog.js"></script>
+  <script src="i18n.js"></script>
+  <script src="invoice.js"></script>
+</body>
+</html>
