@@ -336,13 +336,15 @@ GOLD = r'''//+------------------------------------------------------------------
 //|  Direction : monthly + weekly ranges agree AND yesterday's New    |
 //|              York candle closed the same way. Otherwise no trade.|
 //|  Entry     : market at 00:00 New York (Monday-Friday).           |
-//|  Stop      : 1 daily ATR(14) (an emergency stop; R = 0.5 ATR).   |
+//|  Stop      : StopATR x daily ATR(14) (default 0.75), breakeven   |
+//|              once the trade gains half the stop.                 |
 //|  Exit      : time only, at 14:00 New York.                       |
-//|  Size      : RiskPct is what the emergency stop costs; default    |
-//|              0.9% stays inside GFT's 1% floating-loss limit.     |
-//|  Backtest Jul 2024 - Nov 2026 (hourly data, not proven, t 1.5):  |
-//|  237 trades, 52.7% wins, profit factor 1.30 (R) / 1.18 (pips).   |
-//|  Needs about $50K: on $5K the 0.01-lot minimum is too big.       |
+//|  Size      : RiskPct is what the full stop costs; 0.9% stays      |
+//|              inside GFT's 1% floating-loss limit.                |
+//|  Also for silver: set SymbolToTrade (preset GFT_100K_Silver).    |
+//|  Backtest Jul 2024 - Nov 2026, gold, 0.75 ATR + breakeven, 0.9%: |
+//|  $8,451 paid on $100K in 5 payouts, no breach (not proven).      |
+//|  Needs $10K+ (gold) / $15K+ (silver) for the 0.01-lot minimum.   |
 //|  Run it on your own PC: GFT bans VPS, VPN and proxies.           |
 //+------------------------------------------------------------------+
 #property copyright "Cueto & Co."
@@ -352,8 +354,10 @@ GOLD = r'''//+------------------------------------------------------------------
 #define RISKDEFAULT 0.9
 #define MAGICDEFAULT 7713100
 #define PATTERNS {"XAUUSD", "GOLD."}
-#define RISKSTORE (risk / 2.0)
+#define RISKSTORE risk
 ''' + CORE + r'''
+input double StopATR     = 0.75;   // stop = this x daily ATR(14). Best on GFT rules 2024-26: gold 0.75, silver 0.75
+input double BreakevenAt = 0.5;    // move the stop to entry once the trade gains this x the stop (0 = off)
 datetime doneDay = 0;
 double ATRd(int len)
 {
@@ -390,13 +394,14 @@ void Setup()
    double A = ATRd(14); if(A <= 0) return;
    double ask = SymbolInfoDouble(Sym, SYMBOL_ASK), bid = SymbolInfoDouble(Sym, SYMBOL_BID), px = b == 1 ? ask : bid;
    if(0.5 * A <= 3 * (ask - bid)) { Log("SKIP", Sym, "spread too wide at midnight"); return; }
-   double sl = px - b * A;
+   double dist = StopATR * A, sl = px - b * dist;
    double riskMoney = MathMin(StartBalance * RiskPct / 100.0, RiskRoom());
-   double lots = LotsFor(riskMoney, A);
-   if(lots <= 0) { Log("SKIP", Sym, StringFormat("no room or the 0.01-lot minimum risks more than %.2f (1 ATR = %s)", riskMoney, P(A))); return; }
+   double lots = LotsFor(riskMoney, dist);
+   if(lots <= 0) { Log("SKIP", Sym, StringFormat("no room or the 0.01-lot minimum risks more than %.2f (stop = %s)", riskMoney, P(dist))); return; }
+   GlobalVariableSet(GV("r"), dist);
    trade.SetExpertMagicNumber(Magic); trade.SetTypeFillingBySymbol(Sym);
    bool ok = b == 1 ? trade.Buy(lots, Sym, 0, Norm(sl), 0, "GoldMidnight") : trade.Sell(lots, Sym, 0, Norm(sl), 0, "GoldMidnight");
-   if(ok) Log("ORDER", Sym, StringFormat("market; dir=%s; atr=%s; stop=%s; lots=%.2f; stop_risk_usd=%.2f", b == 1 ? "buy" : "sell", P(A), P(sl), lots, lots * A * MoneyPerPrice(Sym)));
+   if(ok) Log("ORDER", Sym, StringFormat("market; dir=%s; atr=%s; stop=%s; lots=%.2f; stop_risk_usd=%.2f", b == 1 ? "buy" : "sell", P(A), P(sl), lots, lots * dist * MoneyPerPrice(Sym)));
    else Log("ERROR", Sym, StringFormat("order rejected: %d %s", trade.ResultRetcode(), trade.ResultRetcodeDescription()));
 }
 int OnInit()
@@ -418,6 +423,15 @@ void OnTimer()
    {
       int h = NYHour(NYNow());
       if(h >= 14 && CountOurs() > 0) CloseTimed("14:00 New York time exit");
+      double r = GlobalVariableGet(GV("r"));
+      if(BreakevenAt > 0 && r > 0)
+         for(int i = PositionsTotal() - 1; i >= 0; i--)
+         {
+            ulong tk = PositionGetTicket(i); if(!PositionSelectByTicket(tk) || !Ours(PositionGetInteger(POSITION_MAGIC))) continue;
+            int d = PositionGetInteger(POSITION_TYPE) == POSITION_TYPE_BUY ? 1 : -1;
+            double op = PositionGetDouble(POSITION_PRICE_OPEN), sl = PositionGetDouble(POSITION_SL), px = d == 1 ? SymbolInfoDouble(Sym, SYMBOL_BID) : SymbolInfoDouble(Sym, SYMBOL_ASK);
+            if((px - op) * d >= BreakevenAt * r && (sl - op) * d < 0 && trade.PositionModify(tk, Norm(op), 0)) Log("BREAKEVEN", Sym, "stop moved to the entry");
+         }
       if(ok && h == 0) Setup();
    }
    if(ShowPanel) Comment(PanelCommon() + StringFormat("\nbias %d, yesterday %d | today: %s", TrendBias(), YesterdayDir(), doneDay == NYDate(NYNow()) ? "checked" : "waiting for 00:00 New York"));
@@ -425,20 +439,20 @@ void OnTimer()
 //+------------------------------------------------------------------+
 '''
 
-open(os.path.join(ROOT, "mql5", "FibFVG_NY10.mq5"), "w").write(NY10)
+# FibFVG_NY10 withdrawn 23 Nov 2026: its backtest edge came from a fill-candle bug (see fibfvg/falsify.py); not generated.
 open(os.path.join(ROOT, "mql5", "FibFVG_GoldMidnight.mq5"), "w").write(GOLD)
 
 PRESETS = {
-    "GFT_5K_NY10_Nasdaq.set": ("NY10 - Nasdaq 10:00-14:00 NY, Goat Funded Trader Instant Premium $5K", 5000, 0.6, 7713000),
-    "GFT_50K_NY10_Nasdaq.set": ("NY10 - Nasdaq 10:00-14:00 NY, Goat Funded Trader Instant Premium $50K", 50000, 0.6, 7713000),
-    "GFT_100K_NY10_Nasdaq.set": ("NY10 - Nasdaq 10:00-14:00 NY, Goat Funded Trader Instant Premium $100K", 100000, 0.6, 7713000),
     "GFT_50K_GoldMidnight.set": ("GoldMidnight - gold 00:00-14:00 NY, Goat Funded Trader Instant Premium $50K", 50000, 0.9, 7713100),
     "GFT_100K_GoldMidnight.set": ("GoldMidnight - gold 00:00-14:00 NY, Goat Funded Trader Instant Premium $100K", 100000, 0.9, 7713100),
+    "GFT_100K_SilverMidnight.set": ("GoldMidnight EA on SILVER 00:00-14:00 NY, Goat Funded Trader Instant Premium $100K", 100000, 0.6, 7713200),
 }
 os.makedirs(os.path.join(ROOT, "presets", "gft"), exist_ok=True)
 for name, (title, size, risk, magic) in PRESETS.items():
     lines = [f"; {title}", "; 6% intraday trailing (locks at the start), 3% daily from 17:00 New York, 1% floating limit, own PC only.",
              f"StartBalance={size}", f"RiskPct={risk}", "MaxLossPct=6", "TrailOnEquity=true", "DailyLossPct=3", "MaxOpenRiskPct=1",
-             "GuardBufferPct=1", "SymbolToTrade=AUTO", "WriteLog=true", "ShowPanel=true", f"Magic={magic}"]
+             "GuardBufferPct=1", "SymbolToTrade=" + ("XAGUSD" if "Silver" in name else "AUTO"), "WriteLog=true", "ShowPanel=true", f"Magic={magic}"]
+    if "Midnight" in name:
+        lines += ["StopATR=0.75", "BreakevenAt=0.5"]
     open(os.path.join(ROOT, "presets", "gft", name), "w").write("\n".join(lines) + "\n")
 print("written")

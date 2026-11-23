@@ -103,7 +103,7 @@ def trade(day, sym, dkind, ekind, skind, tkind, exit_hr):
         if j > jf or ekind == "E1 market":
             if hi >= d * tp and not (j == jf and ekind != "E1 market"):
                 px = tp; break
-        if not be and (hi - d * e) / r >= 0.5:
+        if not be and (j > jf or ekind == "E1 market") and (hi - d * e) / r >= 0.5:   # fill candle: its high may predate the fill
             be = True; stop_next = e
         if be:
             stop = e if d == 1 and e > stop or d == -1 and e < stop else stop

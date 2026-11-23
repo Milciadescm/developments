@@ -1,8 +1,9 @@
-# Goat Funded Trader: setting up the two EAs
+# Goat Funded Trader: setting up the EA
+
+> **23 Nov 2026: FibFVG_NY10 (Nasdaq 10am candle) is withdrawn.** Its backtest edge came from a bug (breakeven triggered by the fill candle's high, which came before the fill). Corrected, it loses on every market. Do not run it.
 
 | EA | Market | When it trades | Risk default | Account |
 |---|---|---|---|---|
-| `mql5/FibFVG_NY10.mq5` | Nasdaq 100 | Limit order at 10:00 New York, filled by 11:00 or cancelled; breakeven at +0.5R; closed at 14:00 | 0.6% of the start balance | **$5K and up** |
 | `mql5/FibFVG_GoldMidnight.mq5` | Gold | Market order at 00:00 New York when the trend and yesterday agree; closed at 14:00 | 0.9% (cost of the emergency stop) | **$50K and up** (on $5K the 0.01-lot minimum is too big) |
 
 Both EAs are built for **Instant Premium**: 6% intraday trailing max loss (stops rising at the start balance),

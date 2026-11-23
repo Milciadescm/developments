@@ -98,9 +98,9 @@ def replay(t, h1, j0, e, stop_kind, exit_kind):
         if j > j0 or True:
             if lo <= d * stop:
                 pnl += left * (stop - e) * d; left = 0; break
-        while k < len(tps) and hi >= d * tps[k]:
+        while j > j0 and k < len(tps) and hi >= d * tps[k]:   # fill candle: only the stop counts
             pnl += part * (tps[k] - e) * d; left -= part; k += 1
-        if exit_kind == "E4 BE at +1R" and hi >= d * (e + d * risk):
+        if exit_kind == "E4 BE at +1R" and j > j0 and hi >= d * (e + d * risk):
             stop = e
         if left <= 1e-9:
             break

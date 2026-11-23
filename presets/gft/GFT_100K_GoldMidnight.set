@@ -11,3 +11,5 @@ SymbolToTrade=AUTO
 WriteLog=true
 ShowPanel=true
 Magic=7713100
+StopATR=0.75
+BreakevenAt=0.5

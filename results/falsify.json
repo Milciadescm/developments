@@ -1,0 +1,44 @@
+{
+ "gold_midnight": {
+  "trades": 237,
+  "real_avg_R": 0.044,
+  "random_avg_R_median": -0.014,
+  "random_95th": 0.064,
+  "p_value": 0.1
+ },
+ "ny10_nasdaq": {
+  "trades": 182,
+  "real_avg_R": 0.085,
+  "random_avg_R_median": 0.08,
+  "random_95th": 0.157,
+  "p_value": 0.453
+ },
+ "prop24": {
+  "trades": 82,
+  "real_avg_R": 0.35,
+  "p_value_sign_flip": 0.037,
+  "note": "sign flip ignores that exits are not symmetric; a rough check only"
+ },
+ "gold_neighbourhood_avgR": {
+  "enter 00:00 exit 12:00": 0.047,
+  "enter 00:00 exit 13:00": 0.067,
+  "enter 00:00 exit 14:00": 0.059,
+  "enter 00:00 exit 15:00": 0.067,
+  "enter 01:00 exit 12:00": 0.034,
+  "enter 01:00 exit 13:00": 0.055,
+  "enter 01:00 exit 14:00": 0.047,
+  "enter 01:00 exit 15:00": 0.056,
+  "enter 02:00 exit 12:00": 0.057,
+  "enter 02:00 exit 13:00": 0.081,
+  "enter 02:00 exit 14:00": 0.072,
+  "enter 02:00 exit 15:00": 0.082,
+  "enter 03:00 exit 12:00": 0.056,
+  "enter 03:00 exit 13:00": 0.078,
+  "enter 03:00 exit 14:00": 0.067,
+  "enter 03:00 exit 15:00": 0.076
+ },
+ "multiple_testing": {
+  "rule_versions_tried_approx": 400,
+  "expected_best_t_by_luck": 3.46
+ }
+}

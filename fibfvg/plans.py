@@ -45,7 +45,7 @@ def position_engine(symbol, daily, mode, start="2005-01-01", L=20, max_units=4):
             N = n_series[i - 1]
             if pos is not None:
                 main = pos["main"]
-                pos["hh"] = max(pos["hh"], h[i - 1]) if i - 1 >= pos["bar"] else pos["hh"]
+                pos["hh"] = max(pos["hh"], h[i - 1]) if i - 1 > pos["bar"] else pos["hh"]   # the fill day high may predate the fill
                 if P["trail"] == "d20":
                     trail = l[i - 20:i].min()
                 elif P["trail"] == "d120":

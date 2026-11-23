@@ -1,0 +1,858 @@
+{
+ "XAUUSD": {
+  "reality": {
+   "days": 593,
+   "net_move_00_to_14_pips": {
+    "median": 211,
+    "p25": 100,
+    "p75": 431
+   },
+   "range_00_to_14_pips": {
+    "median": 539,
+    "p25": 346,
+    "p75": 803
+   },
+   "daily_atr_pips": {
+    "median": 767,
+    "p25": 422,
+    "p75": 1036
+   },
+   "share_net_over_100_pips": 75
+  },
+  "versions": {
+   "stop 0.25 ATR": {
+    "n": 237,
+    "win": 36.7,
+    "pf_R": 1.19,
+    "pf_pips": 1.14,
+    "net_R": 0.117,
+    "avg_pips": 15.8,
+    "avg_win_pips": 344.1,
+    "avg_loss_pips": -174.6,
+    "avg_stop_pips": 184,
+    "first": -0.006,
+    "second": 0.233,
+    "t": 1.07
+   },
+   "stop 0.25 ATR + breakeven": {
+    "n": 237,
+    "win": 16.0,
+    "pf_R": 1.06,
+    "pf_pips": 1.01,
+    "net_R": 0.025,
+    "avg_pips": 0.9,
+    "avg_win_pips": 452.3,
+    "avg_loss_pips": -85.3,
+    "avg_stop_pips": 184,
+    "first": -0.03,
+    "second": 0.076,
+    "t": 0.28
+   },
+   "stop 0.5 ATR": {
+    "n": 237,
+    "win": 47.7,
+    "pf_R": 1.16,
+    "pf_pips": 1.09,
+    "net_R": 0.062,
+    "avg_pips": 11.8,
+    "avg_win_pips": 310.2,
+    "avg_loss_pips": -260.0,
+    "avg_stop_pips": 367,
+    "first": 0.006,
+    "second": 0.115,
+    "t": 0.96
+   },
+   "stop 0.5 ATR + breakeven": {
+    "n": 237,
+    "win": 31.6,
+    "pf_R": 1.14,
+    "pf_pips": 1.02,
+    "net_R": 0.043,
+    "avg_pips": 2.7,
+    "avg_win_pips": 367.3,
+    "avg_loss_pips": -166.1,
+    "avg_stop_pips": 367,
+    "first": 0.012,
+    "second": 0.072,
+    "t": 0.73
+   },
+   "stop 0.75 ATR": {
+    "n": 237,
+    "win": 51.5,
+    "pf_R": 1.23,
+    "pf_pips": 1.14,
+    "net_R": 0.059,
+    "avg_pips": 19.0,
+    "avg_win_pips": 302.3,
+    "avg_loss_pips": -281.5,
+    "avg_stop_pips": 551,
+    "first": 0.007,
+    "second": 0.107,
+    "t": 1.27
+   },
+   "stop 0.75 ATR + breakeven": {
+    "n": 237,
+    "win": 42.2,
+    "pf_R": 1.19,
+    "pf_pips": 1.07,
+    "net_R": 0.044,
+    "avg_pips": 9.0,
+    "avg_win_pips": 319.3,
+    "avg_loss_pips": -217.4,
+    "avg_stop_pips": 551,
+    "first": 0.0,
+    "second": 0.085,
+    "t": 1.01
+   },
+   "stop 1.0 ATR": {
+    "n": 237,
+    "win": 52.7,
+    "pf_R": 1.3,
+    "pf_pips": 1.18,
+    "net_R": 0.054,
+    "avg_pips": 23.7,
+    "avg_win_pips": 298.0,
+    "avg_loss_pips": -282.4,
+    "avg_stop_pips": 735,
+    "first": 0.027,
+    "second": 0.08,
+    "t": 1.54
+   },
+   "stop 1.0 ATR + breakeven": {
+    "n": 237,
+    "win": 47.7,
+    "pf_R": 1.24,
+    "pf_pips": 1.13,
+    "net_R": 0.043,
+    "avg_pips": 16.9,
+    "avg_win_pips": 306.4,
+    "avg_loss_pips": -247.0,
+    "avg_stop_pips": 735,
+    "first": -0.001,
+    "second": 0.084,
+    "t": 1.24
+   }
+  },
+  "gft": {
+   "stop 0.25 ATR | 0.30%": {
+    "paid": 4493,
+    "payouts": 6,
+    "breach": null,
+    "last12": 566,
+    "profitable_days": 51
+   },
+   "stop 0.25 ATR | 0.45%": {
+    "paid": 1541,
+    "payouts": 1,
+    "breach": "2024-12-05",
+    "last12": 4958,
+    "profitable_days": 60
+   },
+   "stop 0.25 ATR | 0.60%": {
+    "paid": 2055,
+    "payouts": 1,
+    "breach": "2024-11-04",
+    "last12": 5716,
+    "profitable_days": 67
+   },
+   "stop 0.25 ATR | 0.90%": {
+    "paid": 4808,
+    "payouts": 1,
+    "breach": "2024-10-04",
+    "last12": 0,
+    "profitable_days": 72
+   },
+   "stop 0.25 ATR + breakeven | 0.30%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-12-10",
+    "last12": 406,
+    "profitable_days": 31
+   },
+   "stop 0.25 ATR + breakeven | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-10-31",
+    "last12": 610,
+    "profitable_days": 34
+   },
+   "stop 0.25 ATR + breakeven | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-10-03",
+    "last12": 1073,
+    "profitable_days": 35
+   },
+   "stop 0.25 ATR + breakeven | 0.90%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-09-11",
+    "last12": 1609,
+    "profitable_days": 37
+   },
+   "stop 0.5 ATR | 0.30%": {
+    "paid": 2155,
+    "payouts": 2,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 11
+   },
+   "stop 0.5 ATR | 0.45%": {
+    "paid": 5101,
+    "payouts": 6,
+    "breach": null,
+    "last12": 65,
+    "profitable_days": 47
+   },
+   "stop 0.5 ATR | 0.60%": {
+    "paid": 7514,
+    "payouts": 7,
+    "breach": null,
+    "last12": 87,
+    "profitable_days": 61
+   },
+   "stop 0.5 ATR | 0.90%": {
+    "paid": 843,
+    "payouts": 2,
+    "breach": "2024-12-12",
+    "last12": 130,
+    "profitable_days": 71
+   },
+   "stop 0.5 ATR + breakeven | 0.30%": {
+    "paid": 2727,
+    "payouts": 2,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 10
+   },
+   "stop 0.5 ATR + breakeven | 0.45%": {
+    "paid": 6053,
+    "payouts": 4,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 42
+   },
+   "stop 0.5 ATR + breakeven | 0.60%": {
+    "paid": 8071,
+    "payouts": 4,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 52
+   },
+   "stop 0.5 ATR + breakeven | 0.90%": {
+    "paid": 1333,
+    "payouts": 1,
+    "breach": "2024-12-11",
+    "last12": 0,
+    "profitable_days": 57
+   },
+   "stop 0.75 ATR | 0.30%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 2
+   },
+   "stop 0.75 ATR | 0.45%": {
+    "paid": 3916,
+    "payouts": 2,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 12
+   },
+   "stop 0.75 ATR | 0.60%": {
+    "paid": 5266,
+    "payouts": 6,
+    "breach": null,
+    "last12": 216,
+    "profitable_days": 40
+   },
+   "stop 0.75 ATR | 0.90%": {
+    "paid": 7899,
+    "payouts": 9,
+    "breach": null,
+    "last12": 2312,
+    "profitable_days": 65
+   },
+   "stop 0.75 ATR + breakeven | 0.30%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 1
+   },
+   "stop 0.75 ATR + breakeven | 0.45%": {
+    "paid": 4273,
+    "payouts": 2,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 11
+   },
+   "stop 0.75 ATR + breakeven | 0.60%": {
+    "paid": 5697,
+    "payouts": 4,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 37
+   },
+   "stop 0.75 ATR + breakeven | 0.90%": {
+    "paid": 8451,
+    "payouts": 5,
+    "breach": null,
+    "last12": 1368,
+    "profitable_days": 59
+   },
+   "stop 1.0 ATR | 0.30%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 1
+   },
+   "stop 1.0 ATR | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 2
+   },
+   "stop 1.0 ATR | 0.60%": {
+    "paid": 4781,
+    "payouts": 2,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 12
+   },
+   "stop 1.0 ATR | 0.90%": {
+    "paid": 7262,
+    "payouts": 8,
+    "breach": null,
+    "last12": 524,
+    "profitable_days": 51
+   },
+   "stop 1.0 ATR + breakeven | 0.30%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 1
+   },
+   "stop 1.0 ATR + breakeven | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 2
+   },
+   "stop 1.0 ATR + breakeven | 0.60%": {
+    "paid": 3946,
+    "payouts": 2,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 12
+   },
+   "stop 1.0 ATR + breakeven | 0.90%": {
+    "paid": 6746,
+    "payouts": 6,
+    "breach": null,
+    "last12": 147,
+    "profitable_days": 46
+   }
+  },
+  "gft_best": "stop 0.75 ATR + breakeven | 0.90%",
+  "examples": [
+   {
+    "date": "2026-10-23",
+    "dir": "sell",
+    "entry": 4029.9,
+    "exit": 4013.9,
+    "pips": 156,
+    "stop_pips": 799
+   },
+   {
+    "date": "2026-10-29",
+    "dir": "sell",
+    "entry": 4049.9,
+    "exit": 4018.2,
+    "pips": 313,
+    "stop_pips": 762
+   },
+   {
+    "date": "2026-10-30",
+    "dir": "sell",
+    "entry": 4003.8,
+    "exit": 3893.1,
+    "pips": 1103,
+    "stop_pips": 754
+   },
+   {
+    "date": "2026-11-06",
+    "dir": "sell",
+    "entry": 4053.8,
+    "exit": 4087.0,
+    "pips": -335,
+    "stop_pips": 870
+   },
+   {
+    "date": "2026-11-16",
+    "dir": "sell",
+    "entry": 3870.0,
+    "exit": 3858.4,
+    "pips": 113,
+    "stop_pips": 917
+   },
+   {
+    "date": "2026-11-18",
+    "dir": "sell",
+    "entry": 3787.9,
+    "exit": 3740.3,
+    "pips": 472,
+    "stop_pips": 876
+   },
+   {
+    "date": "2026-11-19",
+    "dir": "sell",
+    "entry": 3725.5,
+    "exit": 3682.5,
+    "pips": 426,
+    "stop_pips": 915
+   },
+   {
+    "date": "2026-11-20",
+    "dir": "sell",
+    "entry": 3533.7,
+    "exit": 3535.4,
+    "pips": -20,
+    "stop_pips": 949
+   }
+  ]
+ },
+ "XAGUSD": {
+  "reality": {
+   "days": 593,
+   "net_move_00_to_14_pips": {
+    "median": 51,
+    "p25": 19,
+    "p75": 109
+   },
+   "range_00_to_14_pips": {
+    "median": 113,
+    "p25": 74,
+    "p75": 222
+   },
+   "daily_atr_pips": {
+    "median": 76,
+    "p25": 61,
+    "p75": 194
+   },
+   "share_net_over_100_pips": 27
+  },
+  "versions": {
+   "stop 0.25 ATR": {
+    "n": 223,
+    "win": 24.2,
+    "pf_R": 0.85,
+    "pf_pips": 0.65,
+    "net_R": -0.123,
+    "avg_pips": -12.0,
+    "avg_win_pips": 92.1,
+    "avg_loss_pips": -45.2,
+    "avg_stop_pips": 43,
+    "first": -0.116,
+    "second": -0.128,
+    "t": -0.84
+   },
+   "stop 0.25 ATR + breakeven": {
+    "n": 223,
+    "win": 12.1,
+    "pf_R": 1.13,
+    "pf_pips": 0.75,
+    "net_R": 0.06,
+    "avg_pips": -4.7,
+    "avg_win_pips": 115.3,
+    "avg_loss_pips": -21.3,
+    "avg_stop_pips": 43,
+    "first": 0.068,
+    "second": 0.055,
+    "t": 0.47
+   },
+   "stop 0.5 ATR": {
+    "n": 223,
+    "win": 40.4,
+    "pf_R": 1.03,
+    "pf_pips": 0.93,
+    "net_R": 0.018,
+    "avg_pips": -2.9,
+    "avg_win_pips": 99.4,
+    "avg_loss_pips": -72.0,
+    "avg_stop_pips": 85,
+    "first": -0.088,
+    "second": 0.087,
+    "t": 0.19
+   },
+   "stop 0.5 ATR + breakeven": {
+    "n": 223,
+    "win": 24.2,
+    "pf_R": 1.08,
+    "pf_pips": 0.94,
+    "net_R": 0.034,
+    "avg_pips": -1.8,
+    "avg_win_pips": 123.1,
+    "avg_loss_pips": -41.8,
+    "avg_stop_pips": 85,
+    "first": -0.035,
+    "second": 0.078,
+    "t": 0.4
+   },
+   "stop 0.75 ATR": {
+    "n": 223,
+    "win": 47.5,
+    "pf_R": 1.17,
+    "pf_pips": 0.98,
+    "net_R": 0.063,
+    "avg_pips": -0.9,
+    "avg_win_pips": 91.8,
+    "avg_loss_pips": -84.9,
+    "avg_stop_pips": 128,
+    "first": -0.069,
+    "second": 0.148,
+    "t": 0.9
+   },
+   "stop 0.75 ATR + breakeven": {
+    "n": 223,
+    "win": 35.4,
+    "pf_R": 1.2,
+    "pf_pips": 0.93,
+    "net_R": 0.062,
+    "avg_pips": -2.5,
+    "avg_win_pips": 101.0,
+    "avg_loss_pips": -59.3,
+    "avg_stop_pips": 128,
+    "first": 0.003,
+    "second": 0.1,
+    "t": 0.95
+   },
+   "stop 1.0 ATR": {
+    "n": 223,
+    "win": 48.9,
+    "pf_R": 1.15,
+    "pf_pips": 1.0,
+    "net_R": 0.043,
+    "avg_pips": 0.1,
+    "avg_win_pips": 91.2,
+    "avg_loss_pips": -87.0,
+    "avg_stop_pips": 171,
+    "first": -0.081,
+    "second": 0.123,
+    "t": 0.78
+   },
+   "stop 1.0 ATR + breakeven": {
+    "n": 223,
+    "win": 41.7,
+    "pf_R": 1.26,
+    "pf_pips": 1.08,
+    "net_R": 0.064,
+    "avg_pips": 3.0,
+    "avg_win_pips": 98.0,
+    "avg_loss_pips": -65.0,
+    "avg_stop_pips": 171,
+    "first": -0.051,
+    "second": 0.139,
+    "t": 1.24
+   }
+  },
+  "gft": {
+   "stop 0.25 ATR | 0.30%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-01-02",
+    "last12": 0,
+    "profitable_days": 37
+   },
+   "stop 0.25 ATR | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-10-21",
+    "last12": 0,
+    "profitable_days": 41
+   },
+   "stop 0.25 ATR | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-10-04",
+    "last12": 0,
+    "profitable_days": 44
+   },
+   "stop 0.25 ATR | 0.90%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-08-30",
+    "last12": 0,
+    "profitable_days": 47
+   },
+   "stop 0.25 ATR + breakeven | 0.30%": {
+    "paid": 4188,
+    "payouts": 2,
+    "breach": "2026-05-05",
+    "last12": 788,
+    "profitable_days": 23
+   },
+   "stop 0.25 ATR + breakeven | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-02-13",
+    "last12": 0,
+    "profitable_days": 25
+   },
+   "stop 0.25 ATR + breakeven | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-12-16",
+    "last12": 0,
+    "profitable_days": 26
+   },
+   "stop 0.25 ATR + breakeven | 0.90%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-10-11",
+    "last12": 0,
+    "profitable_days": 27
+   },
+   "stop 0.5 ATR | 0.30%": {
+    "paid": 112,
+    "payouts": 1,
+    "breach": null,
+    "last12": 1654,
+    "profitable_days": 28
+   },
+   "stop 0.5 ATR | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-05-06",
+    "last12": 4469,
+    "profitable_days": 43
+   },
+   "stop 0.5 ATR | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-02-14",
+    "last12": 5162,
+    "profitable_days": 57
+   },
+   "stop 0.5 ATR | 0.90%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2024-09-25",
+    "last12": 2994,
+    "profitable_days": 66
+   },
+   "stop 0.5 ATR + breakeven | 0.30%": {
+    "paid": 1136,
+    "payouts": 3,
+    "breach": null,
+    "last12": 917,
+    "profitable_days": 20
+   },
+   "stop 0.5 ATR + breakeven | 0.45%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-05-16",
+    "last12": 1269,
+    "profitable_days": 32
+   },
+   "stop 0.5 ATR + breakeven | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-04-25",
+    "last12": 6150,
+    "profitable_days": 43
+   },
+   "stop 0.5 ATR + breakeven | 0.90%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-02-07",
+    "last12": 1011,
+    "profitable_days": 48
+   },
+   "stop 0.75 ATR | 0.30%": {
+    "paid": 1837,
+    "payouts": 2,
+    "breach": null,
+    "last12": 1412,
+    "profitable_days": 17
+   },
+   "stop 0.75 ATR | 0.45%": {
+    "paid": 3112,
+    "payouts": 4,
+    "breach": null,
+    "last12": 3121,
+    "profitable_days": 32
+   },
+   "stop 0.75 ATR | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-05-16",
+    "last12": 4692,
+    "profitable_days": 44
+   },
+   "stop 0.75 ATR | 0.90%": {
+    "paid": 750,
+    "payouts": 1,
+    "breach": "2025-02-14",
+    "last12": 6241,
+    "profitable_days": 62
+   },
+   "stop 0.75 ATR + breakeven | 0.30%": {
+    "paid": 3045,
+    "payouts": 3,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 15
+   },
+   "stop 0.75 ATR + breakeven | 0.45%": {
+    "paid": 4567,
+    "payouts": 4,
+    "breach": null,
+    "last12": 782,
+    "profitable_days": 27
+   },
+   "stop 0.75 ATR + breakeven | 0.60%": {
+    "paid": 6089,
+    "payouts": 5,
+    "breach": null,
+    "last12": 1042,
+    "profitable_days": 37
+   },
+   "stop 0.75 ATR + breakeven | 0.90%": {
+    "paid": 8788,
+    "payouts": 4,
+    "breach": "2026-05-18",
+    "last12": 4582,
+    "profitable_days": 52
+   },
+   "stop 1.0 ATR | 0.30%": {
+    "paid": 93,
+    "payouts": 1,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 12
+   },
+   "stop 1.0 ATR | 0.45%": {
+    "paid": 2437,
+    "payouts": 3,
+    "breach": null,
+    "last12": 1617,
+    "profitable_days": 21
+   },
+   "stop 1.0 ATR | 0.60%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-05-13",
+    "last12": 3676,
+    "profitable_days": 32
+   },
+   "stop 1.0 ATR | 0.90%": {
+    "paid": 0,
+    "payouts": 0,
+    "breach": "2025-02-14",
+    "last12": 6111,
+    "profitable_days": 50
+   },
+   "stop 1.0 ATR + breakeven | 0.30%": {
+    "paid": 422,
+    "payouts": 1,
+    "breach": null,
+    "last12": 0,
+    "profitable_days": 12
+   },
+   "stop 1.0 ATR + breakeven | 0.45%": {
+    "paid": 4288,
+    "payouts": 3,
+    "breach": null,
+    "last12": 746,
+    "profitable_days": 20
+   },
+   "stop 1.0 ATR + breakeven | 0.60%": {
+    "paid": 4436,
+    "payouts": 4,
+    "breach": null,
+    "last12": 2329,
+    "profitable_days": 30
+   },
+   "stop 1.0 ATR + breakeven | 0.90%": {
+    "paid": 472,
+    "payouts": 1,
+    "breach": "2025-05-12",
+    "last12": 6624,
+    "profitable_days": 48
+   }
+  },
+  "gft_best": "stop 0.75 ATR + breakeven | 0.60%",
+  "examples": [
+   {
+    "date": "2026-11-06",
+    "dir": "sell",
+    "entry": 51.555,
+    "exit": 52.23,
+    "pips": -71,
+    "stop_pips": 152
+   },
+   {
+    "date": "2026-11-11",
+    "dir": "sell",
+    "entry": 52.535,
+    "exit": 51.88,
+    "pips": 62,
+    "stop_pips": 144
+   },
+   {
+    "date": "2026-11-12",
+    "dir": "sell",
+    "entry": 51.43,
+    "exit": 50.125,
+    "pips": 127,
+    "stop_pips": 140
+   },
+   {
+    "date": "2026-11-13",
+    "dir": "sell",
+    "entry": 50.215,
+    "exit": 48.975,
+    "pips": 121,
+    "stop_pips": 145
+   },
+   {
+    "date": "2026-11-16",
+    "dir": "sell",
+    "entry": 47.33,
+    "exit": 46.91,
+    "pips": 39,
+    "stop_pips": 146
+   },
+   {
+    "date": "2026-11-18",
+    "dir": "sell",
+    "entry": 45.815,
+    "exit": 45.165,
+    "pips": 61,
+    "stop_pips": 149
+   },
+   {
+    "date": "2026-11-19",
+    "dir": "sell",
+    "entry": 45.16,
+    "exit": 44.36,
+    "pips": 76,
+    "stop_pips": 158
+   },
+   {
+    "date": "2026-11-20",
+    "dir": "sell",
+    "entry": 41.35,
+    "exit": 41.335,
+    "pips": -2,
+    "stop_pips": 151
+   }
+  ]
+ }
+}
