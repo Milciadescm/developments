@@ -3,7 +3,7 @@
 The real risk of a bumped trade is then larger than the % asked; the table shows the average and the largest
 risk actually taken per trade. Period Jul 2024 -> Nov 2026 (hourly data), last 12 months shown apart.
 Bots: A 24-hour prop setups, B holding (adds, chandelier, breakeven 2R), D weekly Turtle, E midnight -> 14:00.
-    python -m fibfvg.onemarket -> results/onemarket.json
+    python -m fibfvg.onemarket -> results/onemarket.json ; python -m fibfvg.onemarket 200 500 1000 -> results/onemarket_<cap>.json
 """
 import json
 
@@ -44,17 +44,19 @@ def midnight_trades(sym):
     return out
 
 
-def account(tr, risk, start):
+def account(tr, risk, start, cap=None):
+    CAP = cap or globals()["CAP"]
     propsim.MODES["X"] = dict(p1=risk, p3=risk)
     o = run(tr, Account("Real", CAP, 0.0, None, None, real=True, payout_days=None), "X", start=start)
     m = monthly(o["curve"], CAP) if o["curve"] else []
     rk = [f["risk_usd"] / f["equity"] * 100 for f in o["fills"] if f["equity"] > 0]
-    return dict(end=round(o["end_balance"]), pct=round((o["end_balance"] / CAP - 1) * 100, 1),
+    low = min([b for _, b in o["curve"]] + [CAP])
+    return dict(low=round(low), blown=o["breach"], end=round(o["end_balance"]), pct=round((o["end_balance"] / CAP - 1) * 100, 1),
                 dd=round(max_dd(m) * 100, 1) if len(m) else 0.0, trades=o["trades"],
                 avg_risk=round(float(np.mean(rk)), 2) if rk else 0, max_risk=round(float(np.max(rk)), 2) if rk else 0)
 
 
-def main():
+def main(cap=CAP, out_file="results/onemarket.json"):
     propsim.BUMP_MIN_LOT = True
     a, b = prop_build()
     bots = {"A 24-hour": (lambda s: [t for t in a + b if t.symbol == s], 0.009),
@@ -75,10 +77,10 @@ def main():
             row = dict(setups=len(r), win=round(float((r > 0).mean() * 100)), avg_R=round(float(r.mean()), 2),
                        t=round(float(r.mean() / (r.std(ddof=1) / np.sqrt(len(r)))), 1),
                        halves=[round(float(h1.mean()), 2) if len(h1) else None, round(float(h2.mean()), 2) if len(h2) else None],
-                       risk_asked=risk * 100, full=account(tr, risk, START), last12=account(tr, risk, Y1))
+                       risk_asked=risk * 100, full=account(tr, risk, START, cap), last12=account(tr, risk, Y1, cap))
             out[f"{bot} | {s}"] = row
             print(bot, s, json.dumps(row))
-    json.dump(out, open("results/onemarket.json", "w"), indent=1)
+    json.dump(out, open(out_file, "w"), indent=1, default=str)
 
 
 def _hold(s):
@@ -89,4 +91,9 @@ def _hold(s):
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if len(sys.argv) > 1:  # python -m fibfvg.onemarket 200 500 1000
+        for c in map(int, sys.argv[1:]):
+            main(c, f"results/onemarket_{c}.json")
+    else:
+        main()
