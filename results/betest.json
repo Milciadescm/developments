@@ -1,0 +1,232 @@
+{
+ "breakeven at 0.05R | 2024-2026": {
+  "n": 114,
+  "win": 38.6,
+  "rr": 5.18,
+  "net_R": 0.608,
+  "first": 0.721,
+  "second": 0.458,
+  "t": 3.65,
+  "$5K at 1%": {
+   "end": 4918,
+   "per_year": -0.7,
+   "max_dd": 9.1,
+   "skipped": 24,
+   "taken": 58
+  },
+  "$25K at 1%": {
+   "end": 42110,
+   "per_year": 24.1,
+   "max_dd": 9.0,
+   "skipped": 1,
+   "taken": 112
+  }
+ },
+ "breakeven at 0.05R | 2006-2026": {
+  "n": 667,
+  "win": 24.3,
+  "rr": 4.41,
+  "net_R": 0.166,
+  "first": 0.089,
+  "second": 0.218,
+  "t": 2.73,
+  "$5K at 1%": {
+   "end": 5460,
+   "per_year": 0.4,
+   "max_dd": 43.5,
+   "skipped": 36,
+   "taken": 580
+  },
+  "$25K at 1%": {
+   "end": 47484,
+   "per_year": 3.2,
+   "max_dd": 45.2,
+   "skipped": 1,
+   "taken": 665
+  }
+ },
+ "breakeven at 0.25R | 2024-2026": {
+  "n": 115,
+  "win": 38.3,
+  "rr": 4.67,
+  "net_R": 0.569,
+  "first": 0.663,
+  "second": 0.443,
+  "t": 3.4,
+  "$5K at 1%": {
+   "end": 4830,
+   "per_year": -1.5,
+   "max_dd": 10.8,
+   "skipped": 24,
+   "taken": 58
+  },
+  "$25K at 1%": {
+   "end": 41344,
+   "per_year": 23.1,
+   "max_dd": 10.8,
+   "skipped": 1,
+   "taken": 113
+  }
+ },
+ "breakeven at 0.25R | 2006-2026": {
+  "n": 736,
+  "win": 26.1,
+  "rr": 3.8,
+  "net_R": 0.143,
+  "first": 0.09,
+  "second": 0.183,
+  "t": 2.51,
+  "$5K at 1%": {
+   "end": 5512,
+   "per_year": 0.5,
+   "max_dd": 43.1,
+   "skipped": 39,
+   "taken": 638
+  },
+  "$25K at 1%": {
+   "end": 45564,
+   "per_year": 3.0,
+   "max_dd": 47.1,
+   "skipped": 1,
+   "taken": 734
+  }
+ },
+ "breakeven at 0.5R | 2024-2026": {
+  "n": 121,
+  "win": 39.7,
+  "rr": 4.31,
+  "net_R": 0.588,
+  "first": 0.787,
+  "second": 0.332,
+  "t": 3.58,
+  "$5K at 1%": {
+   "end": 4696,
+   "per_year": -2.7,
+   "max_dd": 10.8,
+   "skipped": 24,
+   "taken": 61
+  },
+  "$25K at 1%": {
+   "end": 42820,
+   "per_year": 24.9,
+   "max_dd": 10.1,
+   "skipped": 1,
+   "taken": 119
+  }
+ },
+ "breakeven at 0.5R | 2006-2026": {
+  "n": 789,
+  "win": 27.1,
+  "rr": 3.32,
+  "net_R": 0.11,
+  "first": 0.02,
+  "second": 0.178,
+  "t": 1.97,
+  "$5K at 1%": {
+   "end": 4375,
+   "per_year": -0.7,
+   "max_dd": 48.5,
+   "skipped": 73,
+   "taken": 627
+  },
+  "$25K at 1%": {
+   "end": 34238,
+   "per_year": 1.6,
+   "max_dd": 53.3,
+   "skipped": 1,
+   "taken": 787
+  }
+ },
+ "breakeven at 1.0R | 2024-2026": {
+  "n": 127,
+  "win": 48.0,
+  "rr": 2.91,
+  "net_R": 0.656,
+  "first": 0.681,
+  "second": 0.62,
+  "t": 3.83,
+  "$5K at 1%": {
+   "end": 4817,
+   "per_year": -1.6,
+   "max_dd": 9.5,
+   "skipped": 23,
+   "taken": 66
+  },
+  "$25K at 1%": {
+   "end": 46083,
+   "per_year": 28.8,
+   "max_dd": 11.6,
+   "skipped": 1,
+   "taken": 125
+  }
+ },
+ "breakeven at 1.0R | 2006-2026": {
+  "n": 817,
+  "win": 33.9,
+  "rr": 2.68,
+  "net_R": 0.19,
+  "first": 0.063,
+  "second": 0.282,
+  "t": 3.22,
+  "$5K at 1%": {
+   "end": 10248,
+   "per_year": 3.6,
+   "max_dd": 44.4,
+   "skipped": 28,
+   "taken": 745
+  },
+  "$25K at 1%": {
+   "end": 63079,
+   "per_year": 4.7,
+   "max_dd": 44.8,
+   "skipped": 1,
+   "taken": 815
+  }
+ },
+ "breakeven at 2.0R | 2024-2026": {
+  "n": 127,
+  "win": 51.2,
+  "rr": 3.0,
+  "net_R": 0.847,
+  "first": 1.04,
+  "second": 0.577,
+  "t": 4.35,
+  "$5K at 1%": {
+   "end": 4776,
+   "per_year": -1.9,
+   "max_dd": 9.7,
+   "skipped": 23,
+   "taken": 66
+  },
+  "$25K at 1%": {
+   "end": 53129,
+   "per_year": 36.6,
+   "max_dd": 12.1,
+   "skipped": 1,
+   "taken": 125
+  }
+ },
+ "breakeven at 2.0R | 2006-2026": {
+  "n": 805,
+  "win": 35.5,
+  "rr": 2.52,
+  "net_R": 0.215,
+  "first": 0.015,
+  "second": 0.364,
+  "t": 3.37,
+  "$5K at 1%": {
+   "end": 9338,
+   "per_year": 3.1,
+   "max_dd": 50.4,
+   "skipped": 35,
+   "taken": 723
+  },
+  "$25K at 1%": {
+   "end": 68998,
+   "per_year": 5.1,
+   "max_dd": 53.0,
+   "skipped": 1,
+   "taken": 803
+  }
+ }
+}
