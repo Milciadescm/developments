@@ -35,6 +35,12 @@ input double    StartBalance   = 50000;       // the virtual account (plan: 20% 
 input ENUM_EXIT ExitMode       = EXIT_YEAR;
 input int       MaxUnits       = 4;
 input double    HardStopPct    = 30;          // halt if equity falls this % below its peak
+input double    MaxLossPct     = 0;           // prop max loss (0 = none). FundedNext 2-Step: 10, Lite: 8, 1-Step: 6
+input bool      TrailingMaxLoss = false;      // false = static (2-Step, Lite, 1-Step); true = trailing, locked at the start balance (Instant)
+input double    DailyLossPct   = 0;           // prop daily loss (0 = none). FundedNext 2-Step: 5, Lite: 4, 1-Step: 3
+input double    GuardBufferPct = 1;           // bot line = MaxLoss - buffer; trades shrink near it
+input bool      SizeOnStartBalance = false;   // true on prop accounts (risk on the start balance, as the backtest)
+input int       KeepAliveDays  = 50;          // FundedNext 60-day inactivity rule: tiny open/close trade after this many idle days (0 = off)
 input bool      AllFiveMarkets = false;       // true = also BTC, S&P 500, Nasdaq 100 (static-limit prop: 44% wins, RR 3.6 in 2024-26)
 input string    SymbolsToTrade = "AUTO";      // AUTO or your broker's names, e.g. XAUUSDm,XAGUSDm
 input bool      WriteLog       = true;
@@ -55,8 +61,8 @@ bool     halted = false;
 int      lastDayKey = 0;
 
 string GV(string k) { return "FFH_" + IntegerToString(Magic) + "_" + k; }
-bool   Ours(long mg) { return mg == Magic || mg == Magic + 1; }
-string UnitName(long mg) { return mg == Magic ? "first" : "add"; }
+bool   Ours(long mg) { return mg == Magic || mg == Magic + 1 || mg == Magic + 9; }
+string UnitName(long mg) { return mg == Magic ? "first" : mg == Magic + 9 ? "keep-alive" : "add"; }
 
 //=============================================================== market data helpers
 double H(string s, ENUM_TIMEFRAMES tf, int i) { return iHigh(s, tf, i); }
@@ -272,23 +278,76 @@ void DeleteOrders(string s, long mg, string why)
    }
 }
 
-//=============================================================== hard stop
+//=============================================================== hard stop and prop limits
+double BPeak() { return GlobalVariableCheck(GV("bpeak")) ? GlobalVariableGet(GV("bpeak")) : startBal; }
+double DayStart() { return GlobalVariableCheck(GV("day")) ? GlobalVariableGet(GV("day")) : VEq(); }
+// the firm's loss line: static = start - MaxLoss; trailing = balance peak - MaxLoss, never above the start balance
+double Floor() { double f = startBal - MaxLossPct / 100.0 * startBal; if(TrailingMaxLoss) f = MathMin(BPeak() - MaxLossPct / 100.0 * startBal, startBal); return f; }
+double Room()
+{
+   double room = DBL_MAX;
+   if(MaxLossPct > 0) room = VEq() - Floor() - GuardBufferPct / 100.0 * startBal - OpenRisk();
+   if(DailyLossPct > 0) room = MathMin(room, VEq() - (DayStart() - DailyLossPct / 100.0 * startBal) - 0.5 / 100.0 * startBal - OpenRisk());
+   return room;
+}
+double UnitRisk()
+{
+   double base = SizeOnStartBalance ? startBal : VBal(), r = base * RiskPctPerUnit / 100.0, room = Room();
+   if(room < DBL_MAX && r > 0.5 * room) r = MathMax(0, 0.5 * room);     // shrink near the firm's line
+   return r;
+}
+void CloseEverything(int code, string why)
+{
+   for(int k = 0; k < NS; k++) { CloseMagic(Sym[k], Magic + 1, code); CloseMagic(Sym[k], Magic, code); CloseMagic(Sym[k], Magic + 9, code); DeleteOrders(Sym[k], Magic, why); }
+}
 bool Guard()
 {
    CalcClosed();
    if(VEq() > Peak()) GlobalVariableSet(GV("peak"), VEq());
+   if(VBal() > BPeak()) GlobalVariableSet(GV("bpeak"), VBal());
    MqlDateTime t; TimeToStruct(TimeTradeServer(), t);
    int key = t.year * 1000 + t.day_of_year;
-   if(key != lastDayKey) { if(lastDayKey != 0) Log("DAY", "", Stats()); lastDayKey = key; }
+   if(key != lastDayKey) { if(lastDayKey != 0) Log("DAY", "", Stats()); lastDayKey = key; GlobalVariableSet(GV("day"), VEq()); }
    if(halted) return false;
+   if(MaxLossPct > 0 && VEq() - Floor() <= 0.5 / 100.0 * startBal)
+   {
+      CloseEverything(4, "max-loss emergency line"); halted = true; GlobalVariableSet(GV("halt"), 1);
+      Log("HALT", "", StringFormat("equity %.2f is 0.5%% from the firm's line %.2f", VEq(), Floor())); return false;
+   }
+   if(DailyLossPct > 0 && DayStart() - VEq() >= (DailyLossPct - 0.3) / 100.0 * startBal)
+   {
+      if((int)GlobalVariableGet(GV("dayhalt")) != key) { CloseEverything(7, "daily emergency line"); GlobalVariableSet(GV("dayhalt"), key); Log("DAYSTOP", "", "daily loss line close: flat until tomorrow"); }
+      return false;
+   }
+   if((int)GlobalVariableGet(GV("dayhalt")) == key) return false;
    if(DDpct() >= HardStopPct)
    {
-      for(int k = 0; k < NS; k++) { CloseMagic(Sym[k], Magic + 1, 5); CloseMagic(Sym[k], Magic, 5); DeleteOrders(Sym[k], Magic, "hard stop"); }
+      CloseEverything(5, "hard stop");
       halted = true; GlobalVariableSet(GV("halt"), 1);
       Log("HALT", "", StringFormat("equity %.2f%% below its peak - hard stop", DDpct()));
       return false;
    }
    return true;
+}
+// FundedNext deactivates an account after 60 days without a trade: open and close the smallest position
+void KeepAlive()
+{
+   if(KeepAliveDays <= 0 || NS == 0) return;
+   for(int i = PositionsTotal() - 1; i >= 0; i--)
+   {
+      ulong tk = PositionGetTicket(i);
+      if(PositionSelectByTicket(tk) && PositionGetInteger(POSITION_MAGIC) == Magic + 9 && TimeCurrent() - (datetime)PositionGetInteger(POSITION_TIME) >= 60)
+      { GlobalVariableSet(GV("why_" + IntegerToString(PositionGetInteger(POSITION_IDENTIFIER))), 8); trade.PositionClose(tk); }
+   }
+   if(TimeCurrent() - (datetime)GlobalVariableGet(GV("last_open")) < KeepAliveDays * 86400) return;
+   for(int k = 0; k < NS; k++)
+   {
+      string s = Sym[k]; if(!MarketOpen(s)) continue;
+      trade.SetExpertMagicNumber(Magic + 9); trade.SetTypeFillingBySymbol(s);
+      if(trade.Buy(SymbolInfoDouble(s, SYMBOL_VOLUME_MIN), s, 0, 0, 0, "keep-alive"))
+      { GlobalVariableSet(GV("last_open"), (double)TimeCurrent()); Log("KEEPALIVE", s, StringFormat("no trade for %d days: minimum position opened, closed after 1 minute", KeepAliveDays)); }
+      return;
+   }
 }
 
 //=============================================================== setup and management
@@ -317,8 +376,8 @@ void NewDay(int k)
    double entry = extreme - dir * OTE * rng, sl = origin - dir * 0.25 * N, dist = MathAbs(entry - sl);
    double ask = SymbolInfoDouble(s, SYMBOL_ASK), bid = SymbolInfoDouble(s, SYMBOL_BID), px = dir == 1 ? ask : bid;
    if((px - sl) * dir <= 0) return;
-   double lots = LotsFor(s, VBal() * RiskPctPerUnit / 100.0, dist);
-   if(lots <= 0) { Log("SKIP", s, StringFormat("dir=%d; reason=lot below minimum for %.2f risk", dir, VBal() * RiskPctPerUnit / 100.0)); return; }
+   double lots = LotsFor(s, UnitRisk(), dist);
+   if(lots <= 0) { Log("SKIP", s, StringFormat("dir=%d; reason=lot below minimum or no room for %.2f risk", dir, UnitRisk())); return; }
    DeleteOrders(s, Magic, "replaced by a newer setup");
    GlobalVariableSet(GV(s + "_N"), N); GlobalVariableSet(GV(s + "_last"), entry); GlobalVariableSet(GV(s + "_risk"), dist);
    trade.SetExpertMagicNumber(Magic);
@@ -376,7 +435,7 @@ void Manage(int k)
    double px = d == 1 ? SymbolInfoDouble(s, SYMBOL_ASK) : SymbolInfoDouble(s, SYMBOL_BID);
    if(n0 + n1 < MaxUnits && N > 0 && (px - nxt) * d >= 0)
    {
-      double lots = LotsFor(s, VBal() * RiskPctPerUnit / 100.0, 2 * N);
+      double lots = LotsFor(s, UnitRisk(), 2 * N);
       if(lots > 0)
       {
          trade.SetExpertMagicNumber(M1);
@@ -401,6 +460,7 @@ int OnInit()
    trade.SetDeviationInPoints(100);
    CalcClosed();
    if(!GlobalVariableCheck(GV("peak"))) GlobalVariableSet(GV("peak"), startBal);
+   if(!GlobalVariableCheck(GV("last_open"))) GlobalVariableSet(GV("last_open"), (double)TimeCurrent());
    EventSetTimer(5);
    string list = ""; for(int k = 0; k < NS; k++) list += (k ? " " : "") + Sym[k];
    Log("START", "", StringFormat("profile=%s; risk_per_unit=%.2f%%; start=%.0f; exit=%s; hard_stop=%.0f%%; symbols=%s", RiskProfile, RiskPctPerUnit, startBal,
@@ -413,6 +473,7 @@ void OnTick() {}
 void OnTimer()
 {
    bool ok = Guard();
+   KeepAlive();
    for(int k = 0; k < NS; k++)
    {
       if(!MarketOpen(Sym[k])) continue;
@@ -437,6 +498,7 @@ void OnTradeTransaction(const MqlTradeTransaction &tr, const MqlTradeRequest &rq
       double sl = 0, risk = 0;
       if(PositionSelectByTicket((ulong)pid)) { sl = PositionGetDouble(POSITION_SL); risk = MathAbs(px - sl) * MoneyPerPrice(s) * vol; }
       GlobalVariableSet(GV("risk_" + id), risk);
+      GlobalVariableSet(GV("last_open"), (double)TimeCurrent());
       Log("FILL", s, StringFormat("unit=%s; dir=%s; price=%s; lots=%.2f; sl=%s; risk_usd=%.2f; position=%s", UnitName(mg),
                                   HistoryDealGetInteger(tr.deal, DEAL_TYPE) == DEAL_TYPE_BUY ? "buy" : "sell", DoubleToString(px, Dg(s)), vol,
                                   DoubleToString(sl, Dg(s)), risk, id));
@@ -449,6 +511,7 @@ void OnTradeTransaction(const MqlTradeTransaction &tr, const MqlTradeRequest &rq
       int code = (int)GlobalVariableGet(GV("why_" + id));
       long rsn = HistoryDealGetInteger(tr.deal, DEAL_REASON);
       string why = code == 3 ? "10-day time stop" : code == 5 ? "hard stop" : code == 6 ? "closed with the first unit" :
+                   code == 4 ? "max-loss emergency line" : code == 7 ? "daily loss line" : code == 8 ? "keep-alive" :
                    rsn == DEAL_REASON_SL ? "stop / trail" : rsn == DEAL_REASON_SO ? "stop out" : "other";
       GlobalVariableSet(GV("n"), GlobalVariableGet(GV("n")) + 1); GlobalVariableSet(GV("sr"), GlobalVariableGet(GV("sr")) + R);
       if(pnl > 0) { GlobalVariableSet(GV("w"), GlobalVariableGet(GV("w")) + 1); GlobalVariableSet(GV("sw"), GlobalVariableGet(GV("sw")) + R); }

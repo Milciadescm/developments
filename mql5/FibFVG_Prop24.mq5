@@ -27,7 +27,7 @@ input string RiskProfile       = "Normal";   // label in the log: Normal (Exness
 input double RiskPct           = 0.5;        // % of StartBalance per trade: Normal 0.5, Aggressive 0.75
 input double StartBalance      = 100000;     // the virtual account this bot trades and is judged on
 input double MaxLossPct        = 6;          // firm max loss
-input bool   TrailingMaxLoss   = true;       // FundedNext instant: trailing
+input bool   TrailingMaxLoss   = true;       // FundedNext Instant: trailing, stops rising once it reaches the start balance
 input double GuardBufferPct    = 1;          // bot line = MaxLoss - buffer (5% of start)
 input double DailyLossPct      = 0;          // firm daily loss limit (0 = none)
 input string SymbolsToTrade    = "AUTO";     // AUTO or your broker's names, e.g. BTCUSDm,US500m,USTECm
@@ -35,6 +35,7 @@ input bool   UseDailySetups    = true;       // setup A
 input bool   UseH4Setups       = true;       // setup B
 input int    MaxHoldHours      = 24;         // prop rule
 input int    FridayCloseHourNY = 16;         // flat before the weekend (New York time)
+input int    KeepAliveDays     = 50;         // FundedNext 60-day inactivity rule: tiny open/close trade after this many idle days (0 = off)
 input bool   WriteLog          = true;
 input bool   ShowPanel         = true;
 input long   Magic             = 7712400;    // A = Magic, B = Magic + 1
@@ -52,8 +53,8 @@ bool     halted = false;
 int      lastDayKey = 0;
 
 string GV(string k) { return "FFP24_" + IntegerToString(Magic) + "_" + k; }
-bool   Ours(long mg) { return mg == Magic || mg == Magic + 1; }
-string SetupName(long mg) { return mg == Magic ? "A-daily" : "B-4h"; }
+bool   Ours(long mg) { return mg == Magic || mg == Magic + 1 || mg == Magic + 9; }
+string SetupName(long mg) { return mg == Magic ? "A-daily" : mg == Magic + 9 ? "keep-alive" : "B-4h"; }
 
 //=============================================================== market data helpers
 double H(string s, ENUM_TIMEFRAMES tf, int i) { return iHigh(s, tf, i); }
@@ -219,11 +220,12 @@ double OpenRisk()
    return tot;
 }
 double DDpct() { double ref = TrailingMaxLoss ? Peak() : startBal; return startBal > 0 ? (ref - VEq()) / startBal * 100 : 0; }
+// the firm's loss line: static = start - MaxLoss; trailing = balance peak - MaxLoss, never above the start balance (FundedNext)
+double Floor() { double f = startBal - MaxLossPct / 100.0 * startBal; if(TrailingMaxLoss) f = MathMin(Peak() - MaxLossPct / 100.0 * startBal, startBal); return f; }
 double DayStart() { return GlobalVariableCheck(GV("day")) ? GlobalVariableGet(GV("day")) : VBal(); }
 double Room()
 {
-   double ref = TrailingMaxLoss ? Peak() : startBal;
-   double room = (MaxLossPct - GuardBufferPct) / 100.0 * startBal - (ref - VEq()) - OpenRisk();
+   double room = VEq() - Floor() - GuardBufferPct / 100.0 * startBal - OpenRisk();
    if(DailyLossPct > 0) room = MathMin(room, (DailyLossPct - 0.5) / 100.0 * startBal - (DayStart() - VEq()) - OpenRisk());
    return room;
 }
@@ -295,8 +297,7 @@ bool Guard()
       lastDayKey = key; GlobalVariableSet(GV("day"), VEq());
    }
    if(halted) return false;
-   double ref = TrailingMaxLoss ? Peak() : startBal;
-   if(ref - VEq() >= (MaxLossPct - 0.5) / 100.0 * startBal)
+   if(VEq() - Floor() <= 0.5 / 100.0 * startBal)
    {
       CloseAll("max-loss emergency line"); halted = true; GlobalVariableSet(GV("halt"), 1);
       Log("HALT", "", StringFormat("drawdown %.2f%% reached the emergency line", DDpct())); return false;
@@ -389,6 +390,26 @@ void Manage(int k)
    }
 }
 
+// FundedNext deactivates an account after 60 days without a trade: open and close the smallest position
+void KeepAlive()
+{
+   if(KeepAliveDays <= 0 || NS == 0) return;
+   for(int i = PositionsTotal() - 1; i >= 0; i--)
+   {
+      ulong tk = PositionGetTicket(i);
+      if(PositionSelectByTicket(tk) && PositionGetInteger(POSITION_MAGIC) == Magic + 9 && TimeCurrent() - (datetime)PositionGetInteger(POSITION_TIME) >= 60) ClosePos(tk, 8, "keep-alive");
+   }
+   if(TimeCurrent() - (datetime)GlobalVariableGet(GV("last_open")) < KeepAliveDays * 86400) return;
+   for(int k = 0; k < NS; k++)
+   {
+      string s = Sym[k]; if(!MarketOpen(s)) continue;
+      trade.SetExpertMagicNumber(Magic + 9); trade.SetTypeFillingBySymbol(s);
+      if(trade.Buy(SymbolInfoDouble(s, SYMBOL_VOLUME_MIN), s, 0, 0, 0, "keep-alive"))
+      { GlobalVariableSet(GV("last_open"), (double)TimeCurrent()); Log("KEEPALIVE", s, StringFormat("no trade for %d days: minimum position opened, closed after 1 minute", KeepAliveDays)); }
+      return;
+   }
+}
+
 //=============================================================== events
 int OnInit()
 {
@@ -400,6 +421,7 @@ int OnInit()
    trade.SetDeviationInPoints(100);
    CalcClosed();
    if(!GlobalVariableCheck(GV("peak"))) GlobalVariableSet(GV("peak"), startBal);
+   if(!GlobalVariableCheck(GV("last_open"))) GlobalVariableSet(GV("last_open"), (double)TimeCurrent());
    EventSetTimer(5);
    string list = ""; for(int k = 0; k < NS; k++) list += (k ? " " : "") + Sym[k];
    Log("START", "", StringFormat("profile=%s; risk=%.2f%%; start=%.0f; symbols=%s; server_offset_h=%.1f", RiskProfile, RiskPct, startBal, list, ServerOffset() / 3600.0));
@@ -411,6 +433,7 @@ void OnTick() {}
 void OnTimer()
 {
    bool ok = Guard();
+   KeepAlive();
    for(int k = 0; k < NS; k++)
    {
       if(!MarketOpen(Sym[k])) continue;
@@ -436,6 +459,7 @@ void OnTradeTransaction(const MqlTradeTransaction &tr, const MqlTradeRequest &rq
       double sl = 0, risk = 0;
       if(PositionSelectByTicket((ulong)pid)) { sl = PositionGetDouble(POSITION_SL); risk = MathAbs(px - sl) * MoneyPerPrice(s) * vol; }
       GlobalVariableSet(GV("risk_" + id), risk);
+      GlobalVariableSet(GV("last_open"), (double)TimeCurrent());
       Log("FILL", s, StringFormat("setup=%s; dir=%s; price=%s; lots=%.2f; sl=%s; risk_usd=%.2f; position=%s", SetupName(mg),
                                   HistoryDealGetInteger(tr.deal, DEAL_TYPE) == DEAL_TYPE_BUY ? "buy" : "sell", DoubleToString(px, (int)SymbolInfoInteger(s, SYMBOL_DIGITS)),
                                   vol, DoubleToString(sl, (int)SymbolInfoInteger(s, SYMBOL_DIGITS)), risk, id));
@@ -446,7 +470,7 @@ void OnTradeTransaction(const MqlTradeTransaction &tr, const MqlTradeRequest &rq
       double risk = GlobalVariableGet(GV("risk_" + id)), R = risk > 0 ? pnl / risk : 0;
       int code = (int)GlobalVariableGet(GV("why_" + id));
       long rsn = HistoryDealGetInteger(tr.deal, DEAL_REASON);
-      string why = code == 1 ? "24 hours" : code == 2 ? "Friday close" : code == 4 ? "guard" :
+      string why = code == 1 ? "24 hours" : code == 2 ? "Friday close" : code == 4 ? "guard" : code == 8 ? "keep-alive" :
                    rsn == DEAL_REASON_SL ? "stop loss" : rsn == DEAL_REASON_TP ? "take profit +1R" : rsn == DEAL_REASON_SO ? "stop out" : "other";
       GlobalVariableSet(GV("n"), GlobalVariableGet(GV("n")) + 1); GlobalVariableSet(GV("sr"), GlobalVariableGet(GV("sr")) + R);
       if(pnl > 0) { GlobalVariableSet(GV("w"), GlobalVariableGet(GV("w")) + 1); GlobalVariableSet(GV("sw"), GlobalVariableGet(GV("sw")) + R); }

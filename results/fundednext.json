@@ -1,0 +1,270 @@
+{
+ "inactivity": {
+  "Prop24": {
+   "max_gap_days": 48.3,
+   "gaps_over_45": 1,
+   "gaps_over_60": 0,
+   "first": "2024-07-11",
+   "last": "2026-10-12"
+  },
+  "Hold": {
+   "max_gap_days": 69.0,
+   "gaps_over_45": 7,
+   "gaps_over_60": 4,
+   "first": "2024-07-19",
+   "last": "2026-11-11"
+  }
+ },
+ "hold_funded": {
+  "2-Step funded (10% static, 5% daily) | 0.5% per unit": {
+   "paid": 27700,
+   "by_year": {
+    "2024": 2427,
+    "2025": 19078,
+    "2026": 6194
+   },
+   "breach": null,
+   "dd": 4.01,
+   "skipped_guard": 1
+  },
+  "2-Step funded (10% static, 5% daily) | 1.0% per unit": {
+   "paid": 43872,
+   "by_year": {
+    "2024": 2635,
+    "2025": 31013,
+    "2026": 10224
+   },
+   "breach": null,
+   "dd": 7.72,
+   "skipped_guard": 6
+  },
+  "Lite funded (8% static, 4% daily) | 0.5% per unit": {
+   "paid": 25865,
+   "by_year": {
+    "2024": 2613,
+    "2025": 17244,
+    "2026": 6008
+   },
+   "breach": null,
+   "dd": 3.67,
+   "skipped_guard": 3
+  },
+  "Lite funded (8% static, 4% daily) | 1.0% per unit": {
+   "paid": 35233,
+   "by_year": {
+    "2024": 1488,
+    "2025": 26136,
+    "2026": 7609
+   },
+   "breach": null,
+   "dd": 6.89,
+   "skipped_guard": 10
+  },
+  "1-Step funded (6% static, 3% daily) | 0.5% per unit": {
+   "paid": 22801,
+   "by_year": {
+    "2024": 1542,
+    "2025": 16074,
+    "2026": 5184
+   },
+   "breach": null,
+   "dd": 3.65,
+   "skipped_guard": 6
+  },
+  "1-Step funded (6% static, 3% daily) | 1.0% per unit": {
+   "paid": 25454,
+   "by_year": {
+    "2024": 453,
+    "2025": 20290,
+    "2026": 4710
+   },
+   "breach": null,
+   "dd": 5.14,
+   "skipped_guard": 16
+  }
+ },
+ "hold_2step_challenge": {
+  "0.5%": {
+   "pass_rate": 82,
+   "median_months": 11.45,
+   "starts": [
+    {
+     "start": "2024-07-01",
+     "passed": true,
+     "months": 15.1
+    },
+    {
+     "start": "2024-08-01",
+     "passed": true,
+     "months": 14.1
+    },
+    {
+     "start": "2024-09-01",
+     "passed": true,
+     "months": 13.0
+    },
+    {
+     "start": "2024-10-01",
+     "passed": true,
+     "months": 12.1
+    },
+    {
+     "start": "2024-11-01",
+     "passed": true,
+     "months": 14.9
+    },
+    {
+     "start": "2024-12-01",
+     "passed": true,
+     "months": 10.1
+    },
+    {
+     "start": "2025-01-01",
+     "passed": true,
+     "months": 12.9
+    },
+    {
+     "start": "2025-02-01",
+     "passed": true,
+     "months": 11.9
+    },
+    {
+     "start": "2025-03-01",
+     "passed": true,
+     "months": 11.0
+    },
+    {
+     "start": "2025-04-01",
+     "passed": true,
+     "months": 10.0
+    },
+    {
+     "start": "2025-05-01",
+     "passed": true,
+     "months": 9.0
+    },
+    {
+     "start": "2025-06-01",
+     "passed": true,
+     "months": 8.0
+    },
+    {
+     "start": "2025-07-01",
+     "passed": true,
+     "months": 7.0
+    },
+    {
+     "start": "2025-08-01",
+     "passed": true,
+     "months": 6.0
+    },
+    {
+     "start": "2025-09-01",
+     "passed": false,
+     "months": null
+    },
+    {
+     "start": "2025-10-01",
+     "passed": false,
+     "months": null
+    },
+    {
+     "start": "2025-11-01",
+     "passed": false,
+     "months": null
+    }
+   ]
+  },
+  "1.0%": {
+   "pass_rate": 82,
+   "median_months": 7.4,
+   "starts": [
+    {
+     "start": "2024-07-01",
+     "passed": true,
+     "months": 9.8
+    },
+    {
+     "start": "2024-08-01",
+     "passed": true,
+     "months": 8.7
+    },
+    {
+     "start": "2024-09-01",
+     "passed": true,
+     "months": 7.7
+    },
+    {
+     "start": "2024-10-01",
+     "passed": true,
+     "months": 6.7
+    },
+    {
+     "start": "2024-11-01",
+     "passed": true,
+     "months": 5.7
+    },
+    {
+     "start": "2024-12-01",
+     "passed": true,
+     "months": 4.7
+    },
+    {
+     "start": "2025-01-01",
+     "passed": true,
+     "months": 9.0
+    },
+    {
+     "start": "2025-02-01",
+     "passed": true,
+     "months": 8.0
+    },
+    {
+     "start": "2025-03-01",
+     "passed": true,
+     "months": 7.1
+    },
+    {
+     "start": "2025-04-01",
+     "passed": true,
+     "months": 6.1
+    },
+    {
+     "start": "2025-05-01",
+     "passed": true,
+     "months": 9.0
+    },
+    {
+     "start": "2025-06-01",
+     "passed": true,
+     "months": 8.0
+    },
+    {
+     "start": "2025-07-01",
+     "passed": true,
+     "months": 7.0
+    },
+    {
+     "start": "2025-08-01",
+     "passed": true,
+     "months": 6.0
+    },
+    {
+     "start": "2025-09-01",
+     "passed": false,
+     "months": null
+    },
+    {
+     "start": "2025-10-01",
+     "passed": false,
+     "months": null
+    },
+    {
+     "start": "2025-11-01",
+     "passed": false,
+     "months": null
+    }
+   ]
+  }
+ }
+}
