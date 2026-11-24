@@ -1,0 +1,326 @@
+{
+ "bandas_6_meses": {
+  "0.9 %": {
+   "media": 6.9,
+   "sd": 8.2,
+   "p5": -4.0,
+   "p50": 5.7,
+   "p95": 22.2
+  },
+  "1.5 %": {
+   "media": 11.8,
+   "sd": 14.3,
+   "p5": -6.6,
+   "p50": 9.4,
+   "p95": 38.8
+  },
+  "2.0 %": {
+   "media": 16.1,
+   "sd": 19.9,
+   "p5": -8.8,
+   "p50": 12.5,
+   "p95": 53.7
+  },
+  "2.5 %": {
+   "media": 20.5,
+   "sd": 26.0,
+   "p5": -11.0,
+   "p50": 15.5,
+   "p95": 69.6
+  },
+  "3.0 %": {
+   "media": 25.1,
+   "sd": 32.6,
+   "p5": -13.2,
+   "p50": 18.5,
+   "p95": 86.6
+  },
+  "4.0 %": {
+   "media": 34.8,
+   "sd": 47.7,
+   "p5": -17.5,
+   "p50": 24.2,
+   "p95": 124.3
+  },
+  "5.0 %": {
+   "media": 45.3,
+   "sd": 65.7,
+   "p5": -21.9,
+   "p50": 29.6,
+   "p95": 166.2
+  },
+  "6.0 %": {
+   "media": 56.7,
+   "sd": 87.4,
+   "p5": -26.1,
+   "p50": 34.6,
+   "p95": 213.0
+  },
+  "8.0 %": {
+   "media": 82.4,
+   "sd": 145.5,
+   "p5": -34.3,
+   "p50": 43.6,
+   "p95": 323.4
+  }
+ },
+ "resultados": {
+  "$100 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$100 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 13.7,
+   "a\u00f1os_rapido_10pct": 10.4,
+   "a\u00f1os_lento_90pct": 18.3,
+   "prob_1M_10_a\u00f1os": 7.4,
+   "prob_1M_20_a\u00f1os": 94.6,
+   "prob_caida_50": 0.0
+  },
+  "$500 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$500 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 13.5,
+   "a\u00f1os_rapido_10pct": 10.2,
+   "a\u00f1os_lento_90pct": 18.2,
+   "prob_1M_10_a\u00f1os": 8.3,
+   "prob_1M_20_a\u00f1os": 94.8,
+   "prob_caida_50": 0.0
+  },
+  "$1,000 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$1,000 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 13.3,
+   "a\u00f1os_rapido_10pct": 10.1,
+   "a\u00f1os_lento_90pct": 18.2,
+   "prob_1M_10_a\u00f1os": 9.9,
+   "prob_1M_20_a\u00f1os": 95.0,
+   "prob_caida_50": 0.0
+  },
+  "$2,000 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$2,000 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 13.1,
+   "a\u00f1os_rapido_10pct": 9.8,
+   "a\u00f1os_lento_90pct": 18.0,
+   "prob_1M_10_a\u00f1os": 12.4,
+   "prob_1M_20_a\u00f1os": 95.9,
+   "prob_caida_50": 0.0
+  },
+  "$5,000 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 21.8,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$5,000 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 12.3,
+   "a\u00f1os_rapido_10pct": 9.1,
+   "a\u00f1os_lento_90pct": 17.2,
+   "prob_1M_10_a\u00f1os": 19.7,
+   "prob_1M_20_a\u00f1os": 97.4,
+   "prob_caida_50": 0.0
+  },
+  "$10,000 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 21.3,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.7,
+   "prob_caida_50": 0.0
+  },
+  "$10,000 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 11.4,
+   "a\u00f1os_rapido_10pct": 8.0,
+   "a\u00f1os_lento_90pct": 16.2,
+   "prob_1M_10_a\u00f1os": 31.0,
+   "prob_1M_20_a\u00f1os": 98.3,
+   "prob_caida_50": 0.0
+  },
+  "$50,000 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 20.3,
+   "a\u00f1os_rapido_10pct": 16.9,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 39.1,
+   "prob_caida_50": 0.0
+  },
+  "$50,000 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 8.4,
+   "a\u00f1os_rapido_10pct": 5.3,
+   "a\u00f1os_lento_90pct": 12.9,
+   "prob_1M_10_a\u00f1os": 71.5,
+   "prob_1M_20_a\u00f1os": 100.0,
+   "prob_caida_50": 0.0
+  },
+  "$100,000 | Fijo 0.9 % | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 16.6,
+   "a\u00f1os_rapido_10pct": 12.9,
+   "a\u00f1os_lento_90pct": 21.0,
+   "prob_1M_10_a\u00f1os": 0.3,
+   "prob_1M_20_a\u00f1os": 83.1,
+   "prob_caida_50": 0.0
+  },
+  "$100,000 | Ascenso mes 6 por \u03c3 | ventaja completa": {
+   "a\u00f1os_a_1M_mediana": 6.6,
+   "a\u00f1os_rapido_10pct": 4.2,
+   "a\u00f1os_lento_90pct": 10.7,
+   "prob_1M_10_a\u00f1os": 86.8,
+   "prob_1M_20_a\u00f1os": 100.0,
+   "prob_caida_50": 0.0
+  },
+  "$100 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$100 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 15.7,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 10.2,
+   "prob_caida_50": 0.1
+  },
+  "$500 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$500 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 15.4,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 10.5,
+   "prob_caida_50": 0.1
+  },
+  "$1,000 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$1,000 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 15.2,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 10.9,
+   "prob_caida_50": 0.1
+  },
+  "$2,000 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$2,000 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 15.0,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 12.1,
+   "prob_caida_50": 0.1
+  },
+  "$5,000 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$5,000 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 13.7,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.2,
+   "prob_1M_20_a\u00f1os": 14.7,
+   "prob_caida_50": 0.1
+  },
+  "$10,000 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.0,
+   "prob_caida_50": 0.0
+  },
+  "$10,000 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 12.8,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.5,
+   "prob_1M_20_a\u00f1os": 18.6,
+   "prob_caida_50": 0.2
+  },
+  "$50,000 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": null,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 0.1,
+   "prob_caida_50": 0.0
+  },
+  "$50,000 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": 17.4,
+   "a\u00f1os_rapido_10pct": 9.7,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 6.8,
+   "prob_1M_20_a\u00f1os": 38.8,
+   "prob_caida_50": 0.2
+  },
+  "$100,000 | Fijo 0.9 % | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": null,
+   "a\u00f1os_rapido_10pct": 18.7,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 0.0,
+   "prob_1M_20_a\u00f1os": 2.9,
+   "prob_caida_50": 0.0
+  },
+  "$100,000 | Ascenso mes 6 por \u03c3 | ventaja a la mitad": {
+   "a\u00f1os_a_1M_mediana": 15.2,
+   "a\u00f1os_rapido_10pct": 7.2,
+   "a\u00f1os_lento_90pct": null,
+   "prob_1M_10_a\u00f1os": 14.7,
+   "prob_1M_20_a\u00f1os": 53.7,
+   "prob_caida_50": 0.3
+  }
+ },
+ "techo_de_riesgo": 0.03
+}
