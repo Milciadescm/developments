@@ -1,0 +1,1676 @@
+{
+ "Fijo 0.9 % (actual) | ventaja completa": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3377,
+    "mediana": 3594,
+    "p90": 3924
+   },
+   "a\u00f1o 2": {
+    "p10": 5900,
+    "mediana": 6531,
+    "p90": 7475
+   },
+   "a\u00f1o 3": {
+    "p10": 8701,
+    "mediana": 9975,
+    "p90": 11657
+   },
+   "a\u00f1o 5": {
+    "p10": 15347,
+    "mediana": 18348,
+    "p90": 22516
+   },
+   "a\u00f1o 7": {
+    "p10": 23505,
+    "mediana": 29211,
+    "p90": 37460
+   },
+   "a\u00f1o 10": {
+    "p10": 39664,
+    "mediana": 51939,
+    "p90": 70934
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.1,
+    "a\u00f1os_10pct_rapido": 2.7
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 29.6,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 5.3,
+    "a\u00f1os_10pct_rapido": 4.7
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 57.6,
+    "a\u00f1os_mediana": 9.2,
+    "a\u00f1os_10pct_rapido": 8.0
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 9.2
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 0.0,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 0.6
+ },
+ "Sube con el saldo hasta 5 % | ventaja completa": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3341,
+    "mediana": 3647,
+    "p90": 4150
+   },
+   "a\u00f1o 2": {
+    "p10": 5816,
+    "mediana": 7369,
+    "p90": 10050
+   },
+   "a\u00f1o 3": {
+    "p10": 9132,
+    "mediana": 13407,
+    "p90": 23479
+   },
+   "a\u00f1o 5": {
+    "p10": 19555,
+    "mediana": 48177,
+    "p90": 145382
+   },
+   "a\u00f1o 7": {
+    "p10": 49467,
+    "mediana": 166077,
+    "p90": 718315
+   },
+   "a\u00f1o 10": {
+    "p10": 199955,
+    "mediana": 1003799,
+    "p90": 6858233
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.5,
+    "a\u00f1os_10pct_rapido": 2.0
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 93.1,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.7,
+    "a\u00f1os_10pct_rapido": 2.8
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 52.3,
+    "prob_10_a\u00f1os": 99.7,
+    "a\u00f1os_mediana": 5.0,
+    "a\u00f1os_10pct_rapido": 3.8
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 20.8,
+    "prob_10_a\u00f1os": 98.0,
+    "a\u00f1os_mediana": 6.0,
+    "a\u00f1os_10pct_rapido": 4.6
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 6.3,
+    "prob_10_a\u00f1os": 92.8,
+    "a\u00f1os_mediana": 7.0,
+    "a\u00f1os_10pct_rapido": 5.2
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.7,
+    "prob_10_a\u00f1os": 73.7,
+    "a\u00f1os_mediana": 8.0,
+    "a\u00f1os_10pct_rapido": 6.2
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.1,
+    "prob_10_a\u00f1os": 53.1,
+    "a\u00f1os_mediana": 8.5,
+    "a\u00f1os_10pct_rapido": 6.8
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 15.3,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.9
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 7.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.2
+   }
+  },
+  "prob_caida_50": 8.0,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 1.0
+ },
+ "Sube con el saldo hasta 10 % | ventaja completa": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3341,
+    "mediana": 3647,
+    "p90": 4150
+   },
+   "a\u00f1o 2": {
+    "p10": 5816,
+    "mediana": 7369,
+    "p90": 10002
+   },
+   "a\u00f1o 3": {
+    "p10": 9127,
+    "mediana": 13468,
+    "p90": 24718
+   },
+   "a\u00f1o 5": {
+    "p10": 20687,
+    "mediana": 49181,
+    "p90": 272901
+   },
+   "a\u00f1o 7": {
+    "p10": 46513,
+    "mediana": 286520,
+    "p90": 3927831
+   },
+   "a\u00f1o 10": {
+    "p10": 273952,
+    "mediana": 4956529,
+    "p90": 156112552
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.5,
+    "a\u00f1os_10pct_rapido": 2.0
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 93.8,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.6,
+    "a\u00f1os_10pct_rapido": 2.8
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 55.8,
+    "prob_10_a\u00f1os": 99.7,
+    "a\u00f1os_mediana": 4.9,
+    "a\u00f1os_10pct_rapido": 3.7
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 29.7,
+    "prob_10_a\u00f1os": 98.3,
+    "a\u00f1os_mediana": 5.7,
+    "a\u00f1os_10pct_rapido": 4.2
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 16.0,
+    "prob_10_a\u00f1os": 95.6,
+    "a\u00f1os_mediana": 6.3,
+    "a\u00f1os_10pct_rapido": 4.7
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 6.1,
+    "prob_10_a\u00f1os": 87.6,
+    "a\u00f1os_mediana": 7.1,
+    "a\u00f1os_10pct_rapido": 5.2
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 2.6,
+    "prob_10_a\u00f1os": 79.4,
+    "a\u00f1os_mediana": 7.6,
+    "a\u00f1os_10pct_rapido": 5.8
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.2,
+    "prob_10_a\u00f1os": 54.2,
+    "a\u00f1os_mediana": 8.3,
+    "a\u00f1os_10pct_rapido": 6.6
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.1,
+    "prob_10_a\u00f1os": 42.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.9
+   }
+  },
+  "prob_caida_50": 66.3,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 1.2
+ },
+ "Baja con el saldo (5 % \u2192 1 %) | ventaja completa": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3197,
+    "mediana": 4466,
+    "p90": 7451
+   },
+   "a\u00f1o 2": {
+    "p10": 6042,
+    "mediana": 11320,
+    "p90": 20164
+   },
+   "a\u00f1o 3": {
+    "p10": 11248,
+    "mediana": 21113,
+    "p90": 42104
+   },
+   "a\u00f1o 5": {
+    "p10": 26394,
+    "mediana": 58785,
+    "p90": 117378
+   },
+   "a\u00f1o 7": {
+    "p10": 57600,
+    "mediana": 122374,
+    "p90": 282415
+   },
+   "a\u00f1o 10": {
+    "p10": 136508,
+    "mediana": 317979,
+    "p90": 610999
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 1.8,
+    "a\u00f1os_10pct_rapido": 1.2
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 97.5,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.9,
+    "a\u00f1os_10pct_rapido": 2.0
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 64.0,
+    "prob_10_a\u00f1os": 99.9,
+    "a\u00f1os_mediana": 4.6,
+    "a\u00f1os_10pct_rapido": 3.2
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 17.0,
+    "prob_10_a\u00f1os": 96.9,
+    "a\u00f1os_mediana": 6.3,
+    "a\u00f1os_10pct_rapido": 4.6
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 1.9,
+    "prob_10_a\u00f1os": 78.9,
+    "a\u00f1os_mediana": 7.8,
+    "a\u00f1os_10pct_rapido": 6.0
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 20.1,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.7
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 1.7,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.5
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 0.3,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 0.4
+ },
+ "Baja con el saldo (8 % \u2192 1 %) | ventaja completa": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3038,
+    "mediana": 5017,
+    "p90": 12107
+   },
+   "a\u00f1o 2": {
+    "p10": 5976,
+    "mediana": 15228,
+    "p90": 36291
+   },
+   "a\u00f1o 3": {
+    "p10": 13005,
+    "mediana": 31447,
+    "p90": 76828
+   },
+   "a\u00f1o 5": {
+    "p10": 35110,
+    "mediana": 93240,
+    "p90": 221024
+   },
+   "a\u00f1o 7": {
+    "p10": 78984,
+    "mediana": 203888,
+    "p90": 479343
+   },
+   "a\u00f1o 10": {
+    "p10": 217927,
+    "mediana": 530758,
+    "p90": 1176215
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 1.5,
+    "a\u00f1os_10pct_rapido": 0.9
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 98.7,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.3,
+    "a\u00f1os_10pct_rapido": 1.4
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 84.4,
+    "prob_10_a\u00f1os": 99.9,
+    "a\u00f1os_mediana": 3.6,
+    "a\u00f1os_10pct_rapido": 2.3
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 48.8,
+    "prob_10_a\u00f1os": 99.1,
+    "a\u00f1os_mediana": 5.1,
+    "a\u00f1os_10pct_rapido": 3.4
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 14.0,
+    "prob_10_a\u00f1os": 93.1,
+    "a\u00f1os_mediana": 6.7,
+    "a\u00f1os_10pct_rapido": 4.8
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.5,
+    "prob_10_a\u00f1os": 55.5,
+    "a\u00f1os_mediana": 8.4,
+    "a\u00f1os_10pct_rapido": 6.6
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 19.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.7
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 3.6,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 0.5
+ },
+ "Saldo + confirmaci\u00f3n trimestral hasta 5 % | ventaja completa": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3351,
+    "mediana": 3630,
+    "p90": 4126
+   },
+   "a\u00f1o 2": {
+    "p10": 5786,
+    "mediana": 7172,
+    "p90": 9888
+   },
+   "a\u00f1o 3": {
+    "p10": 8886,
+    "mediana": 12758,
+    "p90": 22848
+   },
+   "a\u00f1o 5": {
+    "p10": 17975,
+    "mediana": 39701,
+    "p90": 117685
+   },
+   "a\u00f1o 7": {
+    "p10": 35772,
+    "mediana": 112664,
+    "p90": 474265
+   },
+   "a\u00f1o 10": {
+    "p10": 98719,
+    "mediana": 466371,
+    "p90": 3285025
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.6,
+    "a\u00f1os_10pct_rapido": 2.0
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 88.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.8,
+    "a\u00f1os_10pct_rapido": 2.8
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 42.2,
+    "prob_10_a\u00f1os": 98.6,
+    "a\u00f1os_mediana": 5.3,
+    "a\u00f1os_10pct_rapido": 3.9
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 14.9,
+    "prob_10_a\u00f1os": 91.6,
+    "a\u00f1os_mediana": 6.4,
+    "a\u00f1os_10pct_rapido": 4.7
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 3.9,
+    "prob_10_a\u00f1os": 77.5,
+    "a\u00f1os_mediana": 7.3,
+    "a\u00f1os_10pct_rapido": 5.5
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.4,
+    "prob_10_a\u00f1os": 51.7,
+    "a\u00f1os_mediana": 8.2,
+    "a\u00f1os_10pct_rapido": 6.4
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.1,
+    "prob_10_a\u00f1os": 32.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.9
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 7.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.0
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 2.9,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.3
+   }
+  },
+  "prob_caida_50": 0.4,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 1.6
+ },
+ "Fijo 0.9 % (actual) | sin la mejor operaci\u00f3n": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3347,
+    "mediana": 3526,
+    "p90": 3774
+   },
+   "a\u00f1o 2": {
+    "p10": 5778,
+    "mediana": 6286,
+    "p90": 6986
+   },
+   "a\u00f1o 3": {
+    "p10": 8413,
+    "mediana": 9433,
+    "p90": 10749
+   },
+   "a\u00f1o 5": {
+    "p10": 14335,
+    "mediana": 16703,
+    "p90": 19632
+   },
+   "a\u00f1o 7": {
+    "p10": 21166,
+    "mediana": 25386,
+    "p90": 31035
+   },
+   "a\u00f1o 10": {
+    "p10": 33476,
+    "mediana": 42382,
+    "p90": 54153
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.2,
+    "a\u00f1os_10pct_rapido": 2.8
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 8.2,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 5.8,
+    "a\u00f1os_10pct_rapido": 5.1
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 20.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.8
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 0.0,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 1.3
+ },
+ "Sube con el saldo hasta 5 % | sin la mejor operaci\u00f3n": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3318,
+    "mediana": 3562,
+    "p90": 3937
+   },
+   "a\u00f1o 2": {
+    "p10": 5638,
+    "mediana": 6789,
+    "p90": 8698
+   },
+   "a\u00f1o 3": {
+    "p10": 8415,
+    "mediana": 11248,
+    "p90": 17871
+   },
+   "a\u00f1o 5": {
+    "p10": 16307,
+    "mediana": 29424,
+    "p90": 74178
+   },
+   "a\u00f1o 7": {
+    "p10": 28759,
+    "mediana": 79897,
+    "p90": 257981
+   },
+   "a\u00f1o 10": {
+    "p10": 84752,
+    "mediana": 314975,
+    "p90": 1432801
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.8,
+    "a\u00f1os_10pct_rapido": 2.2
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 82.4,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 4.2,
+    "a\u00f1os_10pct_rapido": 3.2
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 25.9,
+    "prob_10_a\u00f1os": 98.1,
+    "a\u00f1os_mediana": 5.8,
+    "a\u00f1os_10pct_rapido": 4.3
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 5.4,
+    "prob_10_a\u00f1os": 90.2,
+    "a\u00f1os_mediana": 7.1,
+    "a\u00f1os_10pct_rapido": 5.3
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 1.0,
+    "prob_10_a\u00f1os": 70.8,
+    "a\u00f1os_mediana": 8.0,
+    "a\u00f1os_10pct_rapido": 6.2
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 38.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.1
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 17.8,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.7
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 1.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.6
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.3,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.8
+   }
+  },
+  "prob_caida_50": 10.0,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 3.1
+ },
+ "Sube con el saldo hasta 10 % | sin la mejor operaci\u00f3n": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3318,
+    "mediana": 3562,
+    "p90": 3937
+   },
+   "a\u00f1o 2": {
+    "p10": 5638,
+    "mediana": 6789,
+    "p90": 8698
+   },
+   "a\u00f1o 3": {
+    "p10": 8407,
+    "mediana": 11163,
+    "p90": 18781
+   },
+   "a\u00f1o 5": {
+    "p10": 16271,
+    "mediana": 29588,
+    "p90": 91055
+   },
+   "a\u00f1o 7": {
+    "p10": 27340,
+    "mediana": 88403,
+    "p90": 700628
+   },
+   "a\u00f1o 10": {
+    "p10": 76594,
+    "mediana": 683048,
+    "p90": 11458697
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.8,
+    "a\u00f1os_10pct_rapido": 2.2
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 84.6,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 4.0,
+    "a\u00f1os_10pct_rapido": 3.1
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 29.3,
+    "prob_10_a\u00f1os": 98.1,
+    "a\u00f1os_mediana": 5.8,
+    "a\u00f1os_10pct_rapido": 4.2
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 10.4,
+    "prob_10_a\u00f1os": 91.7,
+    "a\u00f1os_mediana": 6.7,
+    "a\u00f1os_10pct_rapido": 5.0
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 3.8,
+    "prob_10_a\u00f1os": 81.7,
+    "a\u00f1os_mediana": 7.4,
+    "a\u00f1os_10pct_rapido": 5.5
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 1.1,
+    "prob_10_a\u00f1os": 63.5,
+    "a\u00f1os_mediana": 8.0,
+    "a\u00f1os_10pct_rapido": 6.1
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.3,
+    "prob_10_a\u00f1os": 48.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.5
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 20.9,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.4
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 13.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.8
+   }
+  },
+  "prob_caida_50": 61.7,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 3.7
+ },
+ "Baja con el saldo (5 % \u2192 1 %) | sin la mejor operaci\u00f3n": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3066,
+    "mediana": 4102,
+    "p90": 6018
+   },
+   "a\u00f1o 2": {
+    "p10": 5390,
+    "mediana": 9106,
+    "p90": 15482
+   },
+   "a\u00f1o 3": {
+    "p10": 9237,
+    "mediana": 16128,
+    "p90": 28716
+   },
+   "a\u00f1o 5": {
+    "p10": 19674,
+    "mediana": 37443,
+    "p90": 75457
+   },
+   "a\u00f1o 7": {
+    "p10": 35262,
+    "mediana": 74333,
+    "p90": 149637
+   },
+   "a\u00f1o 10": {
+    "p10": 76627,
+    "mediana": 165312,
+    "p90": 342986
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 99.8,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.1,
+    "a\u00f1os_10pct_rapido": 1.5
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 92.6,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.4,
+    "a\u00f1os_10pct_rapido": 2.4
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 34.6,
+    "prob_10_a\u00f1os": 98.8,
+    "a\u00f1os_mediana": 5.6,
+    "a\u00f1os_10pct_rapido": 3.9
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 4.0,
+    "prob_10_a\u00f1os": 83.0,
+    "a\u00f1os_mediana": 7.5,
+    "a\u00f1os_10pct_rapido": 5.6
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 41.9,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.0
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 1.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.8
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 0.5,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 1.7
+ },
+ "Baja con el saldo (8 % \u2192 1 %) | sin la mejor operaci\u00f3n": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 2854,
+    "mediana": 4456,
+    "p90": 8666
+   },
+   "a\u00f1o 2": {
+    "p10": 5021,
+    "mediana": 11645,
+    "p90": 23866
+   },
+   "a\u00f1o 3": {
+    "p10": 9317,
+    "mediana": 21338,
+    "p90": 52851
+   },
+   "a\u00f1o 5": {
+    "p10": 22032,
+    "mediana": 59536,
+    "p90": 122154
+   },
+   "a\u00f1o 7": {
+    "p10": 51363,
+    "mediana": 112796,
+    "p90": 269682
+   },
+   "a\u00f1o 10": {
+    "p10": 107698,
+    "mediana": 277248,
+    "p90": 572208
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 99.7,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 1.8,
+    "a\u00f1os_10pct_rapido": 1.1
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 95.3,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.8,
+    "a\u00f1os_10pct_rapido": 1.8
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 63.9,
+    "prob_10_a\u00f1os": 99.5,
+    "a\u00f1os_mediana": 4.5,
+    "a\u00f1os_10pct_rapido": 2.9
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 19.6,
+    "prob_10_a\u00f1os": 94.1,
+    "a\u00f1os_mediana": 6.3,
+    "a\u00f1os_10pct_rapido": 4.3
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 2.5,
+    "prob_10_a\u00f1os": 70.2,
+    "a\u00f1os_mediana": 7.8,
+    "a\u00f1os_10pct_rapido": 5.8
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 16.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.4
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 1.7,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.7
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 6.8,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 1.8
+ },
+ "Saldo + confirmaci\u00f3n trimestral hasta 5 % | sin la mejor operaci\u00f3n": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3320,
+    "mediana": 3544,
+    "p90": 3919
+   },
+   "a\u00f1o 2": {
+    "p10": 5639,
+    "mediana": 6604,
+    "p90": 8548
+   },
+   "a\u00f1o 3": {
+    "p10": 8235,
+    "mediana": 10819,
+    "p90": 17237
+   },
+   "a\u00f1o 5": {
+    "p10": 14801,
+    "mediana": 25970,
+    "p90": 64632
+   },
+   "a\u00f1o 7": {
+    "p10": 24783,
+    "mediana": 57194,
+    "p90": 185282
+   },
+   "a\u00f1o 10": {
+    "p10": 50410,
+    "mediana": 164185,
+    "p90": 793569
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.8,
+    "a\u00f1os_10pct_rapido": 2.2
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 74.7,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 4.2,
+    "a\u00f1os_10pct_rapido": 3.2
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 19.1,
+    "prob_10_a\u00f1os": 92.9,
+    "a\u00f1os_mediana": 6.2,
+    "a\u00f1os_10pct_rapido": 4.5
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 3.8,
+    "prob_10_a\u00f1os": 72.5,
+    "a\u00f1os_mediana": 7.4,
+    "a\u00f1os_10pct_rapido": 5.4
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.5,
+    "prob_10_a\u00f1os": 46.5,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.3
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 20.3,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.2
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 8.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.9
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.7
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.1,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.0
+   }
+  },
+  "prob_caida_50": 0.4,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 3.6
+ },
+ "Fijo 0.9 % (actual) | ventaja a la mitad": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3274,
+    "mediana": 3482,
+    "p90": 3777
+   },
+   "a\u00f1o 2": {
+    "p10": 5572,
+    "mediana": 6121,
+    "p90": 6911
+   },
+   "a\u00f1o 3": {
+    "p10": 7937,
+    "mediana": 8958,
+    "p90": 10370
+   },
+   "a\u00f1o 5": {
+    "p10": 12946,
+    "mediana": 15274,
+    "p90": 18456
+   },
+   "a\u00f1o 7": {
+    "p10": 18240,
+    "mediana": 22371,
+    "p90": 28213
+   },
+   "a\u00f1o 10": {
+    "p10": 27068,
+    "mediana": 34924,
+    "p90": 46623
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 100.0,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.4,
+    "a\u00f1os_10pct_rapido": 2.9
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 4.2,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 6.3,
+    "a\u00f1os_10pct_rapido": 5.3
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 6.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.7
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 0.0,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 10.6
+ },
+ "Sube con el saldo hasta 5 % | ventaja a la mitad": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3216,
+    "mediana": 3493,
+    "p90": 3943
+   },
+   "a\u00f1o 2": {
+    "p10": 5183,
+    "mediana": 6225,
+    "p90": 8373
+   },
+   "a\u00f1o 3": {
+    "p10": 7143,
+    "mediana": 9679,
+    "p90": 15591
+   },
+   "a\u00f1o 5": {
+    "p10": 10919,
+    "mediana": 18948,
+    "p90": 46342
+   },
+   "a\u00f1o 7": {
+    "p10": 16033,
+    "mediana": 34790,
+    "p90": 121542
+   },
+   "a\u00f1o 10": {
+    "p10": 21911,
+    "mediana": 80465,
+    "p90": 396402
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 98.5,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.0,
+    "a\u00f1os_10pct_rapido": 2.3
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 57.0,
+    "prob_10_a\u00f1os": 99.2,
+    "a\u00f1os_mediana": 4.8,
+    "a\u00f1os_10pct_rapido": 3.4
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 10.8,
+    "prob_10_a\u00f1os": 80.1,
+    "a\u00f1os_mediana": 6.8,
+    "a\u00f1os_10pct_rapido": 4.8
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 2.1,
+    "prob_10_a\u00f1os": 52.8,
+    "a\u00f1os_mediana": 7.8,
+    "a\u00f1os_10pct_rapido": 5.7
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.4,
+    "prob_10_a\u00f1os": 28.7,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.4
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.1,
+    "prob_10_a\u00f1os": 9.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.1
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 3.7,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.6
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.3
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.1,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.8
+   }
+  },
+  "prob_caida_50": 38.9,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 18.6
+ },
+ "Sube con el saldo hasta 10 % | ventaja a la mitad": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3216,
+    "mediana": 3493,
+    "p90": 3943
+   },
+   "a\u00f1o 2": {
+    "p10": 5183,
+    "mediana": 6225,
+    "p90": 8373
+   },
+   "a\u00f1o 3": {
+    "p10": 7143,
+    "mediana": 9615,
+    "p90": 15994
+   },
+   "a\u00f1o 5": {
+    "p10": 10403,
+    "mediana": 19664,
+    "p90": 46495
+   },
+   "a\u00f1o 7": {
+    "p10": 15682,
+    "mediana": 32561,
+    "p90": 146039
+   },
+   "a\u00f1o 10": {
+    "p10": 20963,
+    "mediana": 63978,
+    "p90": 775034
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 98.4,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.0,
+    "a\u00f1os_10pct_rapido": 2.3
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 59.8,
+    "prob_10_a\u00f1os": 99.2,
+    "a\u00f1os_mediana": 4.7,
+    "a\u00f1os_10pct_rapido": 3.3
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 12.4,
+    "prob_10_a\u00f1os": 79.5,
+    "a\u00f1os_mediana": 6.8,
+    "a\u00f1os_10pct_rapido": 4.7
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 3.5,
+    "prob_10_a\u00f1os": 55.8,
+    "a\u00f1os_mediana": 7.6,
+    "a\u00f1os_10pct_rapido": 5.4
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 1.2,
+    "prob_10_a\u00f1os": 36.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 5.8
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.4,
+    "prob_10_a\u00f1os": 20.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.3
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.1,
+    "prob_10_a\u00f1os": 12.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.7
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 3.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.4
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 1.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.5
+   }
+  },
+  "prob_caida_50": 73.3,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 20.8
+ },
+ "Baja con el saldo (5 % \u2192 1 %) | ventaja a la mitad": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 2690,
+    "mediana": 3737,
+    "p90": 5803
+   },
+   "a\u00f1o 2": {
+    "p10": 4450,
+    "mediana": 7277,
+    "p90": 14355
+   },
+   "a\u00f1o 3": {
+    "p10": 6092,
+    "mediana": 12418,
+    "p90": 23878
+   },
+   "a\u00f1o 5": {
+    "p10": 11942,
+    "mediana": 24192,
+    "p90": 56373
+   },
+   "a\u00f1o 7": {
+    "p10": 18244,
+    "mediana": 41416,
+    "p90": 97531
+   },
+   "a\u00f1o 10": {
+    "p10": 29803,
+    "mediana": 80211,
+    "p90": 201271
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 97.2,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.4,
+    "a\u00f1os_10pct_rapido": 1.5
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 71.3,
+    "prob_10_a\u00f1os": 99.3,
+    "a\u00f1os_mediana": 4.1,
+    "a\u00f1os_10pct_rapido": 2.6
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 15.7,
+    "prob_10_a\u00f1os": 81.7,
+    "a\u00f1os_mediana": 6.7,
+    "a\u00f1os_10pct_rapido": 4.4
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 1.4,
+    "prob_10_a\u00f1os": 43.1,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.0
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 12.6,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.0
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.8
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 11.0,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 12.8
+ },
+ "Baja con el saldo (8 % \u2192 1 %) | ventaja a la mitad": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 2351,
+    "mediana": 3900,
+    "p90": 7639
+   },
+   "a\u00f1o 2": {
+    "p10": 3695,
+    "mediana": 7707,
+    "p90": 19928
+   },
+   "a\u00f1o 3": {
+    "p10": 4716,
+    "mediana": 14252,
+    "p90": 37008
+   },
+   "a\u00f1o 5": {
+    "p10": 10738,
+    "mediana": 29829,
+    "p90": 86421
+   },
+   "a\u00f1o 7": {
+    "p10": 16072,
+    "mediana": 59401,
+    "p90": 149563
+   },
+   "a\u00f1o 10": {
+    "p10": 29953,
+    "mediana": 106131,
+    "p90": 335854
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 96.1,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 2.2,
+    "a\u00f1os_10pct_rapido": 1.2
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 78.4,
+    "prob_10_a\u00f1os": 99.1,
+    "a\u00f1os_mediana": 3.5,
+    "a\u00f1os_10pct_rapido": 1.9
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 35.4,
+    "prob_10_a\u00f1os": 87.3,
+    "a\u00f1os_mediana": 5.6,
+    "a\u00f1os_10pct_rapido": 3.2
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 8.6,
+    "prob_10_a\u00f1os": 61.4,
+    "a\u00f1os_mediana": 7.2,
+    "a\u00f1os_10pct_rapido": 4.8
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.6,
+    "prob_10_a\u00f1os": 28.3,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.2
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 3.4,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.5
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.2,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 9.3
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 47.3,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 15.7
+ },
+ "Saldo + confirmaci\u00f3n trimestral hasta 5 % | ventaja a la mitad": {
+  "por_a\u00f1o": {
+   "a\u00f1o 1": {
+    "p10": 3242,
+    "mediana": 3476,
+    "p90": 3925
+   },
+   "a\u00f1o 2": {
+    "p10": 5380,
+    "mediana": 6131,
+    "p90": 8130
+   },
+   "a\u00f1o 3": {
+    "p10": 7457,
+    "mediana": 9273,
+    "p90": 14292
+   },
+   "a\u00f1o 5": {
+    "p10": 11680,
+    "mediana": 17021,
+    "p90": 37242
+   },
+   "a\u00f1o 7": {
+    "p10": 16500,
+    "mediana": 27503,
+    "p90": 76817
+   },
+   "a\u00f1o 10": {
+    "p10": 24469,
+    "mediana": 50952,
+    "p90": 186302
+   }
+  },
+  "metas": {
+   "$10,000": {
+    "prob_5_a\u00f1os": 99.6,
+    "prob_10_a\u00f1os": 100.0,
+    "a\u00f1os_mediana": 3.2,
+    "a\u00f1os_10pct_rapido": 2.3
+   },
+   "$20,000": {
+    "prob_5_a\u00f1os": 44.4,
+    "prob_10_a\u00f1os": 99.0,
+    "a\u00f1os_mediana": 5.2,
+    "a\u00f1os_10pct_rapido": 3.6
+   },
+   "$50,000": {
+    "prob_5_a\u00f1os": 6.7,
+    "prob_10_a\u00f1os": 59.7,
+    "a\u00f1os_mediana": 7.3,
+    "a\u00f1os_10pct_rapido": 4.9
+   },
+   "$100,000": {
+    "prob_5_a\u00f1os": 1.0,
+    "prob_10_a\u00f1os": 29.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 5.7
+   },
+   "$200,000": {
+    "prob_5_a\u00f1os": 0.1,
+    "prob_10_a\u00f1os": 11.9,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.3
+   },
+   "$500,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 2.8,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 6.7
+   },
+   "$1,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.9,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 7.4
+   },
+   "$5,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.1,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": 8.4
+   },
+   "$10,000,000": {
+    "prob_5_a\u00f1os": 0.0,
+    "prob_10_a\u00f1os": 0.0,
+    "a\u00f1os_mediana": null,
+    "a\u00f1os_10pct_rapido": null
+   }
+  },
+  "prob_caida_50": 2.5,
+  "prob_quemada": 0.0,
+  "prob_bajo_aportes_a\u00f1o5": 21.3
+ }
+}
