@@ -41,6 +41,9 @@ input int    KeepAliveDays     = 50;         // FundedNext 60-day inactivity rul
 input bool   WriteLog          = true;
 input bool   ShowPanel         = true;
 input long   Magic             = 7712400;    // A = Magic, B = Magic + 1
+input bool   CompoundOnBalance = false;      // real money: risk is a % of the CURRENT account balance (deposits and profits count)
+input bool   MinLotIfBelow     = false;      // small accounts: open at the broker minimum lot when the % size is smaller...
+input double MaxRiskPctAtMinLot = 3;         // ...but only if that minimum lot risks at most this % of the balance
 
 #define MAXS 6
 const string BOT = "Prop24";
@@ -94,7 +97,12 @@ double LotsFor(string s, double riskMoney, double dist)
    double mpp = MoneyPerPrice(s), step = SymbolInfoDouble(s, SYMBOL_VOLUME_STEP), vmin = SymbolInfoDouble(s, SYMBOL_VOLUME_MIN), vmax = SymbolInfoDouble(s, SYMBOL_VOLUME_MAX);
    if(mpp <= 0 || dist <= 0 || step <= 0 || riskMoney <= 0) return 0;
    double lots = MathFloor(riskMoney / (dist * mpp) / step) * step;
-   if(lots < vmin) return 0;                      // never oversize to reach the minimum lot
+   if(lots < vmin)
+   {
+      double base = CompoundOnBalance ? AccountInfoDouble(ACCOUNT_BALANCE) : startBal;
+      if(!MinLotIfBelow || vmin * dist * mpp > MaxRiskPctAtMinLot / 100.0 * base) return 0;   // never oversize past the cap
+      lots = vmin;
+   }
    return NormalizeDouble(MathMin(lots, vmax), 2);
 }
 bool MarketOpen(string s)
@@ -331,7 +339,7 @@ void NewBar(int k, ENUM_TIMEFRAMES tf, long mg)
    if(dist < 3 * (ask - bid)) return;
    double px = dir == 1 ? ask : bid;
    if((px - sl) * dir <= 0) return;                                        // already through the stop
-   double riskMoney = startBal * RiskPct / 100.0, room = Room();
+   double riskMoney = (CompoundOnBalance ? AccountInfoDouble(ACCOUNT_BALANCE) : startBal) * RiskPct / 100.0, room = Room();
    if(MaxOpenRiskPct > 0)                                                  // floating-loss limit: all open stops together
    {
       double left = (MaxOpenRiskPct - 0.1) / 100.0 * startBal - OpenRisk();

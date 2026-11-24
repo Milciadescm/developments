@@ -1,0 +1,26 @@
+; FibFVG Prop24 - CUENTA REAL de $1,000 (Exness o cualquier broker), con aportes de $100-200 al mes.
+; Mercados: BTC, S&P 500, Nasdaq 100. Senales diarias + 4 horas en 0.705, todo cerrado en 24 h y antes del fin de semana.
+; Riesgo 0.9 % del saldo ACTUAL (los aportes y ganancias cuentan). Si el % da menos de 0.01 lote, abre 0.01
+; solo cuando eso arriesga 3 % o menos. Linea de proteccion: 12 % (el bot se detiene al 11 %).
+; Cuando el saldo pase de $5,000, se agrega el bot de oro (ver el Documento Maestro).
+RiskProfile=Real1000
+RiskPct=0.9
+StartBalance=0
+MaxLossPct=12
+TrailingMaxLoss=true
+GuardBufferPct=1
+DailyLossPct=0
+MaxOpenRiskPct=0
+TrailOnEquity=true
+SymbolsToTrade=AUTO
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+KeepAliveDays=0
+WriteLog=true
+ShowPanel=true
+Magic=7712400
+CompoundOnBalance=true
+MinLotIfBelow=true
+MaxRiskPctAtMinLot=3
