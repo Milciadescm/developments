@@ -1,0 +1,488 @@
+{
+ "ventaja completa": {
+  "A. Cuentas reales separadas de $1,000 | fijo": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7410,
+    "p10": 6942,
+    "p90": 8037,
+    "ganancia_mediana": 410
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 14732,
+    "p10": 13367,
+    "p90": 16492,
+    "ganancia_mediana": 1732
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 22429,
+    "p10": 20326,
+    "p90": 25203,
+    "ganancia_mediana": 3429
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "valor_mediana": 36870,
+    "p10": 33341,
+    "p90": 41067,
+    "ganancia_mediana": 6870
+   }
+  },
+  "B. Una sola cuenta real | fijo": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7447,
+    "p10": 6852,
+    "p90": 8398,
+    "ganancia_mediana": 447
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 15037,
+    "p10": 13388,
+    "p90": 17207,
+    "ganancia_mediana": 2037
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 23270,
+    "p10": 20475,
+    "p90": 27161,
+    "ganancia_mediana": 4270
+   },
+   "a\u00f1o 5": {
+    "invertido": 31000,
+    "valor_mediana": 42637,
+    "p10": 35485,
+    "p90": 52888,
+    "ganancia_mediana": 11637
+   }
+  },
+  "A. Cuentas reales separadas de $1,000 | ascenso": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7520,
+    "p10": 6829,
+    "p90": 8822,
+    "ganancia_mediana": 520
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 16141,
+    "p10": 13075,
+    "p90": 22000,
+    "ganancia_mediana": 3141
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 26180,
+    "p10": 20678,
+    "p90": 36300,
+    "ganancia_mediana": 7180
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "valor_mediana": 45786,
+    "p10": 35654,
+    "p90": 60987,
+    "ganancia_mediana": 15786
+   }
+  },
+  "B. Una sola cuenta real | ascenso": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7985,
+    "p10": 6546,
+    "p90": 10523,
+    "ganancia_mediana": 985
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 19057,
+    "p10": 13894,
+    "p90": 29207,
+    "ganancia_mediana": 6057
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 34744,
+    "p10": 23146,
+    "p90": 58743,
+    "ganancia_mediana": 15744
+   },
+   "a\u00f1o 5": {
+    "invertido": 31000,
+    "valor_mediana": 92566,
+    "p10": 49401,
+    "p90": 200282,
+    "ganancia_mediana": 61566
+   }
+  },
+  "C. Fondeo GFT $100K, tope $2K/14 d\u00edas por cuenta": {
+   "a\u00f1o 1": {
+    "invertido": 6000,
+    "cobrado_mediana": 4998,
+    "p10": 1000,
+    "p90": 12000,
+    "ganancia_mediana": -1001,
+    "cuentas_mediana": 10
+   },
+   "a\u00f1o 2": {
+    "invertido": 12000,
+    "cobrado_mediana": 35954,
+    "p10": 10292,
+    "p90": 145911,
+    "ganancia_mediana": 23954,
+    "cuentas_mediana": 45
+   },
+   "a\u00f1o 3": {
+    "invertido": 18000,
+    "cobrado_mediana": 210687,
+    "p10": 34557,
+    "p90": 376551,
+    "ganancia_mediana": 192687,
+    "cuentas_mediana": 50
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "cobrado_mediana": 637086,
+    "p10": 284068,
+    "p90": 866897,
+    "ganancia_mediana": 607086,
+    "cuentas_mediana": 50
+   },
+   "cuentas_perdidas_mediana": 1
+  },
+  "C. Fondeo GFT $100K, tope $2K/14 d\u00edas por persona": {
+   "a\u00f1o 1": {
+    "invertido": 6000,
+    "cobrado_mediana": 3300,
+    "p10": 1000,
+    "p90": 6772,
+    "ganancia_mediana": -2699,
+    "cuentas_mediana": 9
+   },
+   "a\u00f1o 2": {
+    "invertido": 12000,
+    "cobrado_mediana": 11214,
+    "p10": 6000,
+    "p90": 16866,
+    "ganancia_mediana": -785,
+    "cuentas_mediana": 22
+   },
+   "a\u00f1o 3": {
+    "invertido": 18000,
+    "cobrado_mediana": 20267,
+    "p10": 12754,
+    "p90": 26962,
+    "ganancia_mediana": 2267,
+    "cuentas_mediana": 36
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "cobrado_mediana": 51701,
+    "p10": 29306,
+    "p90": 71380,
+    "ganancia_mediana": 21701,
+    "cuentas_mediana": 50
+   },
+   "cuentas_perdidas_mediana": 4
+  }
+ },
+ "ventaja a la mitad": {
+  "A. Cuentas reales separadas de $1,000 | fijo": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7186,
+    "p10": 6748,
+    "p90": 7773,
+    "ganancia_mediana": 186
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 13829,
+    "p10": 12609,
+    "p90": 15475,
+    "ganancia_mediana": 829
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 20607,
+    "p10": 18705,
+    "p90": 23064,
+    "ganancia_mediana": 1607
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "valor_mediana": 33251,
+    "p10": 30097,
+    "p90": 36915,
+    "ganancia_mediana": 3251
+   }
+  },
+  "B. Una sola cuenta real | fijo": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7178,
+    "p10": 6587,
+    "p90": 8087,
+    "ganancia_mediana": 178
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 13968,
+    "p10": 12478,
+    "p90": 15920,
+    "ganancia_mediana": 968
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 20916,
+    "p10": 18525,
+    "p90": 24278,
+    "ganancia_mediana": 1916
+   },
+   "a\u00f1o 5": {
+    "invertido": 31000,
+    "valor_mediana": 35396,
+    "p10": 29695,
+    "p90": 43410,
+    "ganancia_mediana": 4396
+   }
+  },
+  "A. Cuentas reales separadas de $1,000 | ascenso": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7170,
+    "p10": 6588,
+    "p90": 8339,
+    "ganancia_mediana": 170
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 14059,
+    "p10": 11832,
+    "p90": 18691,
+    "ganancia_mediana": 1059
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 21372,
+    "p10": 17630,
+    "p90": 28882,
+    "ganancia_mediana": 2372
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "valor_mediana": 35854,
+    "p10": 28787,
+    "p90": 46286,
+    "ganancia_mediana": 5854
+   }
+  },
+  "B. Una sola cuenta real | ascenso": {
+   "a\u00f1o 1": {
+    "invertido": 7000,
+    "valor_mediana": 7284,
+    "p10": 6021,
+    "p90": 9530,
+    "ganancia_mediana": 284
+   },
+   "a\u00f1o 2": {
+    "invertido": 13000,
+    "valor_mediana": 15200,
+    "p10": 11249,
+    "p90": 22507,
+    "ganancia_mediana": 2200
+   },
+   "a\u00f1o 3": {
+    "invertido": 19000,
+    "valor_mediana": 24242,
+    "p10": 16688,
+    "p90": 38747,
+    "ganancia_mediana": 5242
+   },
+   "a\u00f1o 5": {
+    "invertido": 31000,
+    "valor_mediana": 46100,
+    "p10": 27026,
+    "p90": 91777,
+    "ganancia_mediana": 15100
+   }
+  },
+  "C. Fondeo GFT $100K, tope $2K/14 d\u00edas por cuenta": {
+   "a\u00f1o 1": {
+    "invertido": 6000,
+    "cobrado_mediana": 3000,
+    "p10": 0,
+    "p90": 8000,
+    "ganancia_mediana": -3000,
+    "cuentas_mediana": 8
+   },
+   "a\u00f1o 2": {
+    "invertido": 12000,
+    "cobrado_mediana": 14379,
+    "p10": 3110,
+    "p90": 57785,
+    "ganancia_mediana": 2379,
+    "cuentas_mediana": 19
+   },
+   "a\u00f1o 3": {
+    "invertido": 18000,
+    "cobrado_mediana": 43649,
+    "p10": 8923,
+    "p90": 228624,
+    "ganancia_mediana": 25649,
+    "cuentas_mediana": 33
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "cobrado_mediana": 229556,
+    "p10": 28985,
+    "p90": 597629,
+    "ganancia_mediana": 199556,
+    "cuentas_mediana": 50
+   },
+   "cuentas_perdidas_mediana": 36
+  },
+  "C. Fondeo GFT $100K, tope $2K/14 d\u00edas por persona": {
+   "a\u00f1o 1": {
+    "invertido": 6000,
+    "cobrado_mediana": 2180,
+    "p10": 0,
+    "p90": 5000,
+    "ganancia_mediana": -3819,
+    "cuentas_mediana": 7
+   },
+   "a\u00f1o 2": {
+    "invertido": 12000,
+    "cobrado_mediana": 7520,
+    "p10": 2672,
+    "p90": 13341,
+    "ganancia_mediana": -4479,
+    "cuentas_mediana": 14
+   },
+   "a\u00f1o 3": {
+    "invertido": 18000,
+    "cobrado_mediana": 14000,
+    "p10": 6044,
+    "p90": 21873,
+    "ganancia_mediana": -4000,
+    "cuentas_mediana": 21
+   },
+   "a\u00f1o 5": {
+    "invertido": 30000,
+    "cobrado_mediana": 28055,
+    "p10": 14394,
+    "p90": 47876,
+    "ganancia_mediana": -1944,
+    "cuentas_mediana": 33
+   },
+   "cuentas_perdidas_mediana": 23
+  }
+ },
+ "punto_optimo_24m": {
+  "$100 | fijo": {
+   "rend_2_a\u00f1os_mediana": 12.8,
+   "peor_10pct": -1.2,
+   "caida50": 0.0
+  },
+  "$100 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 33.0,
+   "peor_10pct": -7.6,
+   "caida50": 0.0
+  },
+  "$500 | fijo": {
+   "rend_2_a\u00f1os_mediana": 21.8,
+   "peor_10pct": 2.6,
+   "caida50": 0.0
+  },
+  "$500 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 43.0,
+   "peor_10pct": -5.8,
+   "caida50": 0.0
+  },
+  "$1,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 25.6,
+   "peor_10pct": 7.5,
+   "caida50": 0.0
+  },
+  "$1,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 56.6,
+   "peor_10pct": 1.7,
+   "caida50": 0.0
+  },
+  "$2,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 23.1,
+   "peor_10pct": 6.3,
+   "caida50": 0.0
+  },
+  "$2,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 56.5,
+   "peor_10pct": 4.8,
+   "caida50": 0.0
+  },
+  "$3,500 | fijo": {
+   "rend_2_a\u00f1os_mediana": 18.7,
+   "peor_10pct": 0.1,
+   "caida50": 0.0
+  },
+  "$3,500 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 59.1,
+   "peor_10pct": -2.6,
+   "caida50": 0.0
+  },
+  "$5,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 37.4,
+   "peor_10pct": 7.4,
+   "caida50": 0.0
+  },
+  "$5,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 76.3,
+   "peor_10pct": 8.1,
+   "caida50": 0.0
+  },
+  "$10,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 30.1,
+   "peor_10pct": 8.9,
+   "caida50": 0.0
+  },
+  "$10,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 75.3,
+   "peor_10pct": 7.1,
+   "caida50": 0.0
+  },
+  "$25,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 27.4,
+   "peor_10pct": 7.6,
+   "caida50": 0.0
+  },
+  "$25,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 74.2,
+   "peor_10pct": 6.0,
+   "caida50": 0.0
+  },
+  "$50,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 27.4,
+   "peor_10pct": 7.6,
+   "caida50": 0.0
+  },
+  "$50,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 74.2,
+   "peor_10pct": 6.0,
+   "caida50": 0.0
+  },
+  "$100,000 | fijo": {
+   "rend_2_a\u00f1os_mediana": 27.4,
+   "peor_10pct": 7.6,
+   "caida50": 0.0
+  },
+  "$100,000 | ascenso": {
+   "rend_2_a\u00f1os_mediana": 74.2,
+   "peor_10pct": 6.0,
+   "caida50": 0.0
+  }
+ }
+}
