@@ -1,0 +1,1210 @@
+{
+ "recent": {
+  "Hold (mantener)": {
+   "stats": {
+    "trades": 27,
+    "win": 89,
+    "avg_R": 3.0,
+    "t": 6.3,
+    "halves": [
+     2.56,
+     4.04
+    ]
+   },
+   "runs": {
+    "lot 0.01 sin proteccion": {
+     "end": 919,
+     "pct": -8.1,
+     "worst_dd": 16.7,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 919,
+     "trades": 7,
+     "avg_risk": 6.4,
+     "max_risk": 7.2
+    },
+    "lot 0.01 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "lot 0.02 sin proteccion": {
+     "end": 839,
+     "pct": -16.1,
+     "worst_dd": 30.5,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 839,
+     "trades": 7,
+     "avg_risk": 12.5,
+     "max_risk": 14.4
+    },
+    "lot 0.02 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "lot 0.05 sin proteccion": {
+     "end": 597,
+     "pct": -40.3,
+     "worst_dd": 60.7,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 597,
+     "trades": 7,
+     "avg_risk": 28.9,
+     "max_risk": 36.1
+    },
+    "lot 0.05 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "lot 0.08 sin proteccion": {
+     "end": 356,
+     "pct": -64.4,
+     "worst_dd": 80.6,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 356,
+     "trades": 7,
+     "avg_risk": 43.9,
+     "max_risk": 57.9
+    },
+    "lot 0.08 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "risk 0.005 sin proteccion": {
+     "end": 919,
+     "pct": -8.1,
+     "worst_dd": 16.7,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 919,
+     "trades": 7,
+     "avg_risk": 6.4,
+     "max_risk": 7.2
+    },
+    "risk 0.005 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "risk 0.01 sin proteccion": {
+     "end": 919,
+     "pct": -8.1,
+     "worst_dd": 16.7,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 919,
+     "trades": 7,
+     "avg_risk": 6.4,
+     "max_risk": 7.2
+    },
+    "risk 0.01 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "risk 0.02 sin proteccion": {
+     "end": 919,
+     "pct": -8.1,
+     "worst_dd": 16.7,
+     "stopped_at_12pct": "max loss 2024-11-11",
+     "low": 919,
+     "trades": 7,
+     "avg_risk": 6.4,
+     "max_risk": 7.2
+    },
+    "risk 0.02 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    }
+   }
+  },
+  "Turtle semanal": {
+   "stats": {
+    "trades": 181,
+    "win": 36,
+    "avg_R": 0.41,
+    "t": 2.6,
+    "halves": [
+     -0.07,
+     0.86
+    ]
+   },
+   "runs": {
+    "lot 0.01 sin proteccion": {
+     "end": 826,
+     "pct": -17.4,
+     "worst_dd": 17.4,
+     "stopped_at_12pct": "max loss 2024-07-26",
+     "low": 826,
+     "trades": 6,
+     "avg_risk": 7.4,
+     "max_risk": 8.4
+    },
+    "lot 0.01 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "lot 0.02 sin proteccion": {
+     "end": 764,
+     "pct": -23.6,
+     "worst_dd": 23.6,
+     "stopped_at_12pct": "max loss 2024-07-19",
+     "low": 764,
+     "trades": 4,
+     "avg_risk": 14.0,
+     "max_risk": 14.0
+    },
+    "lot 0.02 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "lot 0.05 sin proteccion": {
+     "end": 409,
+     "pct": -59.1,
+     "worst_dd": 59.1,
+     "stopped_at_12pct": "max loss 2024-07-19",
+     "low": 409,
+     "trades": 4,
+     "avg_risk": 35.0,
+     "max_risk": 35.1
+    },
+    "lot 0.05 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "lot 0.08 sin proteccion": {
+     "end": 55,
+     "pct": -94.5,
+     "worst_dd": 94.5,
+     "stopped_at_12pct": "max loss 2024-07-19",
+     "low": 55,
+     "trades": 4,
+     "avg_risk": 56.1,
+     "max_risk": 56.2
+    },
+    "lot 0.08 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "risk 0.005 sin proteccion": {
+     "end": 826,
+     "pct": -17.4,
+     "worst_dd": 17.4,
+     "stopped_at_12pct": "max loss 2024-07-26",
+     "low": 826,
+     "trades": 6,
+     "avg_risk": 7.4,
+     "max_risk": 8.4
+    },
+    "risk 0.005 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "risk 0.01 sin proteccion": {
+     "end": 826,
+     "pct": -17.4,
+     "worst_dd": 17.4,
+     "stopped_at_12pct": "max loss 2024-07-26",
+     "low": 826,
+     "trades": 6,
+     "avg_risk": 7.4,
+     "max_risk": 8.4
+    },
+    "risk 0.01 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    },
+    "risk 0.02 sin proteccion": {
+     "end": 826,
+     "pct": -17.4,
+     "worst_dd": 17.4,
+     "stopped_at_12pct": "max loss 2024-07-26",
+     "low": 826,
+     "trades": 6,
+     "avg_risk": 7.4,
+     "max_risk": 8.4
+    },
+    "risk 0.02 con proteccion": {
+     "end": 1000,
+     "pct": 0.0,
+     "worst_dd": 0.0,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 0,
+     "avg_risk": 0,
+     "max_risk": 0
+    }
+   }
+  },
+  "24 horas": {
+   "stats": {
+    "trades": 23,
+    "win": 61,
+    "avg_R": 0.09,
+    "t": 0.5,
+    "halves": [
+     0.31,
+     -0.14
+    ]
+   },
+   "runs": {
+    "lot 0.01 sin proteccion": {
+     "end": 965,
+     "pct": -3.5,
+     "worst_dd": 18.1,
+     "stopped_at_12pct": "max loss 2026-01-30",
+     "low": 965,
+     "trades": 18,
+     "avg_risk": 5.3,
+     "max_risk": 17.6
+    },
+    "lot 0.01 con proteccion": {
+     "end": 1044,
+     "pct": 4.4,
+     "worst_dd": 6.9,
+     "stopped_at_12pct": null,
+     "low": 985,
+     "trades": 12,
+     "avg_risk": 2.5,
+     "max_risk": 5.1
+    },
+    "lot 0.02 sin proteccion": {
+     "end": 1225,
+     "pct": 22.5,
+     "worst_dd": 9.8,
+     "stopped_at_12pct": "max loss 2025-04-23",
+     "low": 970,
+     "trades": 11,
+     "avg_risk": 6.9,
+     "max_risk": 16.1
+    },
+    "lot 0.02 con proteccion": {
+     "end": 1072,
+     "pct": 7.2,
+     "worst_dd": 6.8,
+     "stopped_at_12pct": null,
+     "low": 970,
+     "trades": 12,
+     "avg_risk": 3.4,
+     "max_risk": 4.9
+    },
+    "lot 0.05 sin proteccion": {
+     "end": 1562,
+     "pct": 56.2,
+     "worst_dd": 17.6,
+     "stopped_at_12pct": "max loss 2025-04-23",
+     "low": 926,
+     "trades": 11,
+     "avg_risk": 15.0,
+     "max_risk": 33.0
+    },
+    "lot 0.05 con proteccion": {
+     "end": 1083,
+     "pct": 8.3,
+     "worst_dd": 6.7,
+     "stopped_at_12pct": null,
+     "low": 956,
+     "trades": 12,
+     "avg_risk": 3.8,
+     "max_risk": 4.9
+    },
+    "lot 0.08 sin proteccion": {
+     "end": 1898,
+     "pct": 89.8,
+     "worst_dd": 21.9,
+     "stopped_at_12pct": "max loss 2025-04-23",
+     "low": 882,
+     "trades": 11,
+     "avg_risk": 21.6,
+     "max_risk": 49.2
+    },
+    "lot 0.08 con proteccion": {
+     "end": 1083,
+     "pct": 8.3,
+     "worst_dd": 6.7,
+     "stopped_at_12pct": null,
+     "low": 956,
+     "trades": 12,
+     "avg_risk": 3.8,
+     "max_risk": 4.9
+    },
+    "risk 0.005 sin proteccion": {
+     "end": 965,
+     "pct": -3.5,
+     "worst_dd": 18.1,
+     "stopped_at_12pct": "max loss 2026-01-30",
+     "low": 965,
+     "trades": 18,
+     "avg_risk": 5.3,
+     "max_risk": 17.6
+    },
+    "risk 0.005 con proteccion": {
+     "end": 1044,
+     "pct": 4.4,
+     "worst_dd": 6.9,
+     "stopped_at_12pct": null,
+     "low": 985,
+     "trades": 12,
+     "avg_risk": 2.5,
+     "max_risk": 5.1
+    },
+    "risk 0.01 sin proteccion": {
+     "end": 965,
+     "pct": -3.5,
+     "worst_dd": 18.1,
+     "stopped_at_12pct": "max loss 2026-01-30",
+     "low": 965,
+     "trades": 18,
+     "avg_risk": 5.3,
+     "max_risk": 17.6
+    },
+    "risk 0.01 con proteccion": {
+     "end": 1044,
+     "pct": 4.4,
+     "worst_dd": 6.9,
+     "stopped_at_12pct": null,
+     "low": 985,
+     "trades": 12,
+     "avg_risk": 2.5,
+     "max_risk": 5.1
+    },
+    "risk 0.02 sin proteccion": {
+     "end": 965,
+     "pct": -3.5,
+     "worst_dd": 18.1,
+     "stopped_at_12pct": "max loss 2026-01-30",
+     "low": 965,
+     "trades": 18,
+     "avg_risk": 5.3,
+     "max_risk": 17.6
+    },
+    "risk 0.02 con proteccion": {
+     "end": 1044,
+     "pct": 4.4,
+     "worst_dd": 6.9,
+     "stopped_at_12pct": null,
+     "low": 985,
+     "trades": 12,
+     "avg_risk": 2.5,
+     "max_risk": 5.1
+    }
+   }
+  },
+  "Medianoche": {
+   "stats": {
+    "trades": 237,
+    "win": 42,
+    "avg_R": 0.04,
+    "t": 1.0,
+    "halves": [
+     0.0,
+     0.09
+    ]
+   },
+   "runs": {
+    "lot 0.01 sin proteccion": {
+     "end": 969,
+     "pct": -3.1,
+     "worst_dd": 11.1,
+     "stopped_at_12pct": "max loss 2024-12-05",
+     "low": 969,
+     "trades": 45,
+     "avg_risk": 2.6,
+     "max_risk": 3.3
+    },
+    "lot 0.01 con proteccion": {
+     "end": 1012,
+     "pct": 1.2,
+     "worst_dd": 6.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 7,
+     "avg_risk": 2.6,
+     "max_risk": 3.1
+    },
+    "lot 0.02 sin proteccion": {
+     "end": 1025,
+     "pct": 2.5,
+     "worst_dd": 11.5,
+     "stopped_at_12pct": "max loss 2024-08-05",
+     "low": 1000,
+     "trades": 7,
+     "avg_risk": 5.0,
+     "max_risk": 5.9
+    },
+    "lot 0.02 con proteccion": {
+     "end": 1075,
+     "pct": 7.5,
+     "worst_dd": 7.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 8,
+     "avg_risk": 3.6,
+     "max_risk": 5.0
+    },
+    "lot 0.05 sin proteccion": {
+     "end": 1226,
+     "pct": 22.6,
+     "worst_dd": 12.1,
+     "stopped_at_12pct": "max loss 2024-07-22",
+     "low": 1000,
+     "trades": 5,
+     "avg_risk": 10.9,
+     "max_risk": 12.4
+    },
+    "lot 0.05 con proteccion": {
+     "end": 1075,
+     "pct": 7.5,
+     "worst_dd": 7.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 8,
+     "avg_risk": 3.6,
+     "max_risk": 5.0
+    },
+    "lot 0.08 sin proteccion": {
+     "end": 1470,
+     "pct": 47.0,
+     "worst_dd": 10.0,
+     "stopped_at_12pct": "max loss 2024-07-17",
+     "low": 1000,
+     "trades": 4,
+     "avg_risk": 16.1,
+     "max_risk": 19.9
+    },
+    "lot 0.08 con proteccion": {
+     "end": 1075,
+     "pct": 7.5,
+     "worst_dd": 7.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 8,
+     "avg_risk": 3.6,
+     "max_risk": 5.0
+    },
+    "risk 0.005 sin proteccion": {
+     "end": 969,
+     "pct": -3.1,
+     "worst_dd": 11.1,
+     "stopped_at_12pct": "max loss 2024-12-05",
+     "low": 969,
+     "trades": 45,
+     "avg_risk": 2.6,
+     "max_risk": 3.3
+    },
+    "risk 0.005 con proteccion": {
+     "end": 1012,
+     "pct": 1.2,
+     "worst_dd": 6.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 7,
+     "avg_risk": 2.6,
+     "max_risk": 3.1
+    },
+    "risk 0.01 sin proteccion": {
+     "end": 969,
+     "pct": -3.1,
+     "worst_dd": 11.1,
+     "stopped_at_12pct": "max loss 2024-12-05",
+     "low": 969,
+     "trades": 45,
+     "avg_risk": 2.6,
+     "max_risk": 3.3
+    },
+    "risk 0.01 con proteccion": {
+     "end": 1012,
+     "pct": 1.2,
+     "worst_dd": 6.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 7,
+     "avg_risk": 2.6,
+     "max_risk": 3.1
+    },
+    "risk 0.02 sin proteccion": {
+     "end": 969,
+     "pct": -3.1,
+     "worst_dd": 11.1,
+     "stopped_at_12pct": "max loss 2024-12-05",
+     "low": 969,
+     "trades": 45,
+     "avg_risk": 2.6,
+     "max_risk": 3.3
+    },
+    "risk 0.02 con proteccion": {
+     "end": 1012,
+     "pct": 1.2,
+     "worst_dd": 6.2,
+     "stopped_at_12pct": null,
+     "low": 1000,
+     "trades": 7,
+     "avg_risk": 2.6,
+     "max_risk": 3.1
+    }
+   }
+  }
+ },
+ "20y": {
+  "Hold (mantener)": {
+   "stats": {
+    "trades": 186,
+    "win": 37,
+    "avg_R": 0.34,
+    "t": 2.5,
+    "halves": [
+     -0.09,
+     0.71
+    ]
+   },
+   "runs": {
+    "lot 0.01 sin proteccion": {
+     "full": {
+      "end": 831,
+      "pct": -16.9,
+      "worst_dd": 16.9,
+      "stopped_at_12pct": "max loss 2006-10-27",
+      "low": 831,
+      "trades": 11,
+      "avg_risk": 2.0,
+      "max_risk": 4.2
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 860,
+      "worst_end": 710,
+      "best_end": 1296,
+      "share_stopped": 92,
+      "share_losing": 83
+     }
+    },
+    "lot 0.01 con proteccion": {
+     "full": {
+      "end": 910,
+      "pct": -9.0,
+      "worst_dd": 9.0,
+      "stopped_at_12pct": null,
+      "low": 910,
+      "trades": 8,
+      "avg_risk": 1.4,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 957,
+      "worst_end": 902,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 70
+     }
+    },
+    "lot 0.02 sin proteccion": {
+     "full": {
+      "end": 813,
+      "pct": -18.7,
+      "worst_dd": 18.7,
+      "stopped_at_12pct": "max loss 2006-06-08",
+      "low": 813,
+      "trades": 7,
+      "avg_risk": 4.3,
+      "max_risk": 8.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 813,
+      "worst_end": 420,
+      "best_end": 1808,
+      "share_stopped": 100,
+      "share_losing": 85
+     }
+    },
+    "lot 0.02 con proteccion": {
+     "full": {
+      "end": 902,
+      "pct": -9.8,
+      "worst_dd": 9.8,
+      "stopped_at_12pct": null,
+      "low": 902,
+      "trades": 7,
+      "avg_risk": 2.1,
+      "max_risk": 3.2
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 956,
+      "worst_end": 902,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 64
+     }
+    },
+    "lot 0.05 sin proteccion": {
+     "full": {
+      "end": 841,
+      "pct": -15.9,
+      "worst_dd": 15.9,
+      "stopped_at_12pct": "max loss 2006-03-08",
+      "low": 841,
+      "trades": 4,
+      "avg_risk": 7.6,
+      "max_risk": 7.9
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 735,
+      "worst_end": -449,
+      "best_end": 3057,
+      "share_stopped": 100,
+      "share_losing": 85
+     }
+    },
+    "lot 0.05 con proteccion": {
+     "full": {
+      "end": 902,
+      "pct": -9.8,
+      "worst_dd": 9.8,
+      "stopped_at_12pct": null,
+      "low": 902,
+      "trades": 7,
+      "avg_risk": 2.3,
+      "max_risk": 4.8
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 956,
+      "worst_end": 902,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 64
+     }
+    },
+    "lot 0.08 sin proteccion": {
+     "full": {
+      "end": 745,
+      "pct": -25.5,
+      "worst_dd": 25.5,
+      "stopped_at_12pct": "max loss 2006-03-08",
+      "low": 745,
+      "trades": 4,
+      "avg_risk": 12.2,
+      "max_risk": 12.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 624,
+      "worst_end": -1318,
+      "best_end": 4291,
+      "share_stopped": 100,
+      "share_losing": 84
+     }
+    },
+    "lot 0.08 con proteccion": {
+     "full": {
+      "end": 902,
+      "pct": -9.8,
+      "worst_dd": 9.8,
+      "stopped_at_12pct": null,
+      "low": 902,
+      "trades": 7,
+      "avg_risk": 2.3,
+      "max_risk": 4.8
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 956,
+      "worst_end": 902,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 64
+     }
+    },
+    "risk 0.005 sin proteccion": {
+     "full": {
+      "end": 831,
+      "pct": -16.9,
+      "worst_dd": 16.9,
+      "stopped_at_12pct": "max loss 2006-10-27",
+      "low": 831,
+      "trades": 11,
+      "avg_risk": 2.0,
+      "max_risk": 4.2
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 860,
+      "worst_end": 710,
+      "best_end": 1296,
+      "share_stopped": 92,
+      "share_losing": 83
+     }
+    },
+    "risk 0.005 con proteccion": {
+     "full": {
+      "end": 910,
+      "pct": -9.0,
+      "worst_dd": 9.0,
+      "stopped_at_12pct": null,
+      "low": 910,
+      "trades": 8,
+      "avg_risk": 1.4,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 957,
+      "worst_end": 902,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 70
+     }
+    },
+    "risk 0.01 sin proteccion": {
+     "full": {
+      "end": 831,
+      "pct": -16.9,
+      "worst_dd": 16.9,
+      "stopped_at_12pct": "max loss 2006-10-27",
+      "low": 831,
+      "trades": 11,
+      "avg_risk": 2.0,
+      "max_risk": 4.2
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 860,
+      "worst_end": 710,
+      "best_end": 1296,
+      "share_stopped": 92,
+      "share_losing": 83
+     }
+    },
+    "risk 0.01 con proteccion": {
+     "full": {
+      "end": 906,
+      "pct": -9.4,
+      "worst_dd": 9.4,
+      "stopped_at_12pct": null,
+      "low": 906,
+      "trades": 8,
+      "avg_risk": 1.5,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 957,
+      "worst_end": 900,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 70
+     }
+    },
+    "risk 0.02 sin proteccion": {
+     "full": {
+      "end": 831,
+      "pct": -16.9,
+      "worst_dd": 16.9,
+      "stopped_at_12pct": "max loss 2006-10-27",
+      "low": 831,
+      "trades": 11,
+      "avg_risk": 2.0,
+      "max_risk": 4.2
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 860,
+      "worst_end": 710,
+      "best_end": 1296,
+      "share_stopped": 93,
+      "share_losing": 83
+     }
+    },
+    "risk 0.02 con proteccion": {
+     "full": {
+      "end": 904,
+      "pct": -9.6,
+      "worst_dd": 9.6,
+      "stopped_at_12pct": null,
+      "low": 904,
+      "trades": 8,
+      "avg_risk": 1.5,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 959,
+      "worst_end": 900,
+      "best_end": 1287,
+      "share_stopped": 0,
+      "share_losing": 70
+     }
+    }
+   }
+  },
+  "Turtle semanal": {
+   "stats": {
+    "trades": 1117,
+    "win": 36,
+    "avg_R": 0.11,
+    "t": 2.8,
+    "halves": [
+     0.06,
+     0.16
+    ]
+   },
+   "runs": {
+    "lot 0.01 sin proteccion": {
+     "full": {
+      "end": 970,
+      "pct": -3.0,
+      "worst_dd": 18.9,
+      "stopped_at_12pct": "max loss 2007-05-10",
+      "low": 970,
+      "trades": 69,
+      "avg_risk": 1.3,
+      "max_risk": 1.9
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 899,
+      "worst_end": 766,
+      "best_end": 1624,
+      "share_stopped": 100,
+      "share_losing": 72
+     }
+    },
+    "lot 0.01 con proteccion": {
+     "full": {
+      "end": 1067,
+      "pct": 6.7,
+      "worst_dd": 7.9,
+      "stopped_at_12pct": null,
+      "low": 971,
+      "trades": 35,
+      "avg_risk": 1.2,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 948,
+      "worst_end": 866,
+      "best_end": 1975,
+      "share_stopped": 3,
+      "share_losing": 65
+     }
+    },
+    "lot 0.02 sin proteccion": {
+     "full": {
+      "end": 1281,
+      "pct": 28.1,
+      "worst_dd": 9.6,
+      "stopped_at_12pct": "max loss 2006-09-22",
+      "low": 943,
+      "trades": 41,
+      "avg_risk": 2.8,
+      "max_risk": 3.8
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 876,
+      "worst_end": 553,
+      "best_end": 2294,
+      "share_stopped": 100,
+      "share_losing": 73
+     }
+    },
+    "lot 0.02 con proteccion": {
+     "full": {
+      "end": 1114,
+      "pct": 11.4,
+      "worst_dd": 7.8,
+      "stopped_at_12pct": null,
+      "low": 978,
+      "trades": 26,
+      "avg_risk": 1.7,
+      "max_risk": 3.2
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 946,
+      "worst_end": 866,
+      "best_end": 1984,
+      "share_stopped": 3,
+      "share_losing": 67
+     }
+    },
+    "lot 0.05 sin proteccion": {
+     "full": {
+      "end": 930,
+      "pct": -7.0,
+      "worst_dd": 15.1,
+      "stopped_at_12pct": "max loss 2006-02-07",
+      "low": 924,
+      "trades": 10,
+      "avg_risk": 5.5,
+      "max_risk": 6.8
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 831,
+      "worst_end": -117,
+      "best_end": 4545,
+      "share_stopped": 100,
+      "share_losing": 77
+     }
+    },
+    "lot 0.05 con proteccion": {
+     "full": {
+      "end": 1190,
+      "pct": 19.0,
+      "worst_dd": 7.3,
+      "stopped_at_12pct": null,
+      "low": 984,
+      "trades": 21,
+      "avg_risk": 2.0,
+      "max_risk": 5.4
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 946,
+      "worst_end": 849,
+      "best_end": 1984,
+      "share_stopped": 2,
+      "share_losing": 69
+     }
+    },
+    "lot 0.08 sin proteccion": {
+     "full": {
+      "end": 888,
+      "pct": -11.2,
+      "worst_dd": 23.0,
+      "stopped_at_12pct": "max loss 2006-02-07",
+      "low": 878,
+      "trades": 10,
+      "avg_risk": 8.7,
+      "max_risk": 10.9
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 799,
+      "worst_end": -787,
+      "best_end": 5491,
+      "share_stopped": 100,
+      "share_losing": 77
+     }
+    },
+    "lot 0.08 con proteccion": {
+     "full": {
+      "end": 1190,
+      "pct": 19.0,
+      "worst_dd": 7.3,
+      "stopped_at_12pct": null,
+      "low": 984,
+      "trades": 21,
+      "avg_risk": 2.0,
+      "max_risk": 5.4
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 946,
+      "worst_end": 849,
+      "best_end": 1984,
+      "share_stopped": 2,
+      "share_losing": 69
+     }
+    },
+    "risk 0.005 sin proteccion": {
+     "full": {
+      "end": 970,
+      "pct": -3.0,
+      "worst_dd": 18.9,
+      "stopped_at_12pct": "max loss 2007-05-10",
+      "low": 970,
+      "trades": 69,
+      "avg_risk": 1.3,
+      "max_risk": 1.9
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 899,
+      "worst_end": 766,
+      "best_end": 1624,
+      "share_stopped": 100,
+      "share_losing": 72
+     }
+    },
+    "risk 0.005 con proteccion": {
+     "full": {
+      "end": 1067,
+      "pct": 6.7,
+      "worst_dd": 7.9,
+      "stopped_at_12pct": null,
+      "low": 971,
+      "trades": 35,
+      "avg_risk": 1.2,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 948,
+      "worst_end": 866,
+      "best_end": 1975,
+      "share_stopped": 3,
+      "share_losing": 65
+     }
+    },
+    "risk 0.01 sin proteccion": {
+     "full": {
+      "end": 970,
+      "pct": -3.0,
+      "worst_dd": 18.9,
+      "stopped_at_12pct": "max loss 2007-05-10",
+      "low": 970,
+      "trades": 69,
+      "avg_risk": 1.3,
+      "max_risk": 1.9
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 899,
+      "worst_end": 766,
+      "best_end": 1624,
+      "share_stopped": 100,
+      "share_losing": 72
+     }
+    },
+    "risk 0.01 con proteccion": {
+     "full": {
+      "end": 1067,
+      "pct": 6.7,
+      "worst_dd": 7.9,
+      "stopped_at_12pct": null,
+      "low": 971,
+      "trades": 35,
+      "avg_risk": 1.2,
+      "max_risk": 1.7
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 948,
+      "worst_end": 866,
+      "best_end": 1975,
+      "share_stopped": 3,
+      "share_losing": 65
+     }
+    },
+    "risk 0.02 sin proteccion": {
+     "full": {
+      "end": 1071,
+      "pct": 7.1,
+      "worst_dd": 10.1,
+      "stopped_at_12pct": "max loss 2007-03-02",
+      "low": 967,
+      "trades": 58,
+      "avg_risk": 1.5,
+      "max_risk": 2.0
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 899,
+      "worst_end": 766,
+      "best_end": 1624,
+      "share_stopped": 100,
+      "share_losing": 70
+     }
+    },
+    "risk 0.02 con proteccion": {
+     "full": {
+      "end": 1031,
+      "pct": 3.1,
+      "worst_dd": 8.5,
+      "stopped_at_12pct": null,
+      "low": 967,
+      "trades": 31,
+      "avg_risk": 1.4,
+      "max_risk": 2.0
+     },
+     "windows_24m": {
+      "n": 227,
+      "median_end": 948,
+      "worst_end": 870,
+      "best_end": 1975,
+      "share_stopped": 4,
+      "share_losing": 65
+     }
+    }
+   }
+  }
+ }
+}

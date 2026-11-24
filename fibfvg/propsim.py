@@ -38,6 +38,8 @@ from .config import SYMBOLS
 # When True, a trade whose risk-based size is below the broker minimum opens at the minimum lot instead
 # of being skipped (its real risk is then larger than the % asked). Off by default.
 BUMP_MIN_LOT = False
+# When set (e.g. 0.05), every trade and every add opens at this fixed lot size instead of a % of the balance.
+FIXED_LOT = None
 
 MODES = {
     "Conservative": dict(p1=0.0015, p3=0.0005),
@@ -211,6 +213,8 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, sche
             lots = math.floor(cap * r / (dist * spec.contract) / spec.lot_step + 1e-9) * spec.lot_step if acct.real is False \
                 else math.floor(bal * r / (dist * spec.contract) / spec.lot_step + 1e-9) * spec.lot_step
             lots = min(round(lots, 2), spec.max_lot)
+            if FIXED_LOT:
+                lots = FIXED_LOT
             if lots < spec.min_lot:
                 if not BUMP_MIN_LOT:
                     skipped["min_lot"] += 1; continue
