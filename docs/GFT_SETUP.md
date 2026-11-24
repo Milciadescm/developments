@@ -4,6 +4,7 @@
 
 | EA | Mercado | Cuándo opera | Riesgo por defecto | Cuenta |
 |---|---|---|---|---|
+| **`mql5/FibFVG_Prop24.mq5`** (el bot elegido, 24 nov 2026) con preset `presets/GFT_InstantPremium_100K_Prop24.set` | BTC, S&P 500, Nasdaq 100 | Señales diarias y de 4 horas en 0.705; todo cerrado en 24 h y antes del viernes 16:00 NY | **0.9 % fijo** de los $100K ($900), una operación a la vez; no sube nunca | Instant Premium $100K |
 | `mql5/FibFVG_GoldMidnight.mq5` | Oro | Orden a mercado a las 00:00 de Nueva York cuando la tendencia y el día anterior coinciden; se cierra a las 14:00 | 0.9 % (costo del stop de emergencia) | **$50K o más** (en $5K el mínimo de 0.01 lote es demasiado grande) |
 
 El EA está hecho para **Instant Premium**: pérdida máxima trailing intradía del 6 % (deja de subir en el saldo inicial),

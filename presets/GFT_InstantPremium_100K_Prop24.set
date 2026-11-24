@@ -1,7 +1,10 @@
-; FibFVG Prop24 - Goat Funded Trader INSTANT PREMIUM $100K (no target, 3% daily, 6% intraday trailing,
-; 1% floating loss of all open trades, 5 profitable days of +0.5% per payout, bi-weekly, 80% split).
-; 0.9% per trade and the floating-loss limit allow ONE open trade at a time. Backtest Jul 2024 - Nov 2026:
-; $13,663 paid in 4 payouts, no breach; last 12 months $1,578. Run on your own PC: no VPS / VPN (GFT rule).
+; FibFVG Prop24 - Goat Funded Trader INSTANT PREMIUM $100K (sin objetivo, 3 % diario, 6 % trailing intradia,
+; 1 % de perdida flotante de todas las operaciones abiertas, 5 dias rentables de +0.5 % por pago, cada 14 dias, reparto 80 %).
+; RIESGO FIJO: 0.9 % de los $100K iniciales por operacion ($900), una sola operacion abierta a la vez. No sube con el saldo,
+; no sube con el tiempo y no abre el lote minimo si el % no alcanza (CompoundOnBalance, MinLotIfBelow = false).
+; Mercados: BTC, S&P 500, Nasdaq 100 (AUTO busca los nombres de GFT). Todo cerrado en 24 h y antes del viernes 16:00 NY.
+; Backtest jul 2024 - nov 2026: $13,663 pagados en 4 pagos, sin incumplimiento; ultimos 12 meses $1,578.
+; Correr en tu propia PC con Windows: GFT prohibe VPS, VPN y proxies.
 RiskProfile=GFT-InstantPremium
 RiskPct=0.9
 StartBalance=100000
@@ -20,3 +23,6 @@ KeepAliveDays=0
 WriteLog=true
 ShowPanel=true
 Magic=7712400
+CompoundOnBalance=false
+MinLotIfBelow=false
+MaxRiskPctAtMinLot=3

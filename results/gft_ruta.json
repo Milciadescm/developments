@@ -1,0 +1,1466 @@
+{
+ "60 meses | ventaja completa | tope por cuenta | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 8000,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 16000,
+   "ganancia_neta_mediana": 3440,
+   "ganancia_neta_p10": -2560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 666
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 38464,
+   "cobrado_p10": 16557,
+   "cobrado_p90": 60000,
+   "ganancia_neta_mediana": 29344,
+   "ganancia_neta_p10": 7437,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2449
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 89857,
+   "cobrado_p10": 43277,
+   "cobrado_p90": 129973,
+   "ganancia_neta_mediana": 76177,
+   "ganancia_neta_p10": 29597,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4166
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 161561,
+   "cobrado_p10": 81888,
+   "cobrado_p90": 226660,
+   "ganancia_neta_mediana": 143321,
+   "ganancia_neta_p10": 63648,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 5814
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 254560,
+   "cobrado_p10": 137050,
+   "cobrado_p90": 350497,
+   "ganancia_neta_mediana": 231760,
+   "ganancia_neta_p10": 114250,
+   "cuentas_activas": 27,
+   "cobro_mensual_promedio_ese_a\u00f1o": 7333
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 3,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja completa | tope por cuenta | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 3993,
+   "cobrado_p10": 0,
+   "cobrado_p90": 8000,
+   "ganancia_neta_mediana": 3233,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 332
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 19515,
+   "cobrado_p10": 619,
+   "cobrado_p90": 40653,
+   "ganancia_neta_mediana": 18755,
+   "ganancia_neta_p10": -140,
+   "cuentas_activas": 8,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1261
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 55459,
+   "cobrado_p10": 826,
+   "cobrado_p90": 96405,
+   "ganancia_neta_mediana": 54699,
+   "ganancia_neta_p10": 66,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2786
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 109546,
+   "cobrado_p10": 826,
+   "cobrado_p90": 178224,
+   "ganancia_neta_mediana": 108786,
+   "ganancia_neta_p10": 66,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4255
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 183839,
+   "cobrado_p10": 826,
+   "cobrado_p90": 284526,
+   "ganancia_neta_mediana": 183079,
+   "ganancia_neta_p10": 66,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 5666
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 90.0,
+  "cuentas_perdidas_mediana": 1,
+  "cuentas_compradas_mediana": 26
+ },
+ "60 meses | ventaja completa | tope por cuenta | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 8000,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 16000,
+   "ganancia_neta_mediana": 5720,
+   "ganancia_neta_p10": -1320,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 666
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 38464,
+   "cobrado_p10": 16557,
+   "cobrado_p90": 60000,
+   "ganancia_neta_mediana": 35647,
+   "ganancia_neta_p10": 13082,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2449
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 89857,
+   "cobrado_p10": 43277,
+   "cobrado_p90": 129973,
+   "ganancia_neta_mediana": 86934,
+   "ganancia_neta_p10": 40368,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4166
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 161561,
+   "cobrado_p10": 81888,
+   "cobrado_p90": 226660,
+   "ganancia_neta_mediana": 158483,
+   "ganancia_neta_p10": 78743,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 5814
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 254560,
+   "cobrado_p10": 137050,
+   "cobrado_p90": 350497,
+   "ganancia_neta_mediana": 251654,
+   "ganancia_neta_p10": 133391,
+   "cuentas_activas": 27,
+   "cobro_mensual_promedio_ese_a\u00f1o": 7333
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 3,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja completa | tope por persona | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 6000,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 12000,
+   "ganancia_neta_mediana": 1440,
+   "ganancia_neta_p10": -2560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 500
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 22000,
+   "cobrado_p10": 11361,
+   "cobrado_p90": 32000,
+   "ganancia_neta_mediana": 12880,
+   "ganancia_neta_p10": 2241,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1271
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 39191,
+   "cobrado_p10": 24194,
+   "cobrado_p90": 52365,
+   "ganancia_neta_mediana": 25511,
+   "ganancia_neta_p10": 10514,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1499
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 57997,
+   "cobrado_p10": 39576,
+   "cobrado_p90": 73336,
+   "ganancia_neta_mediana": 39757,
+   "ganancia_neta_p10": 21336,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 76000,
+   "cobrado_p10": 55813,
+   "cobrado_p90": 93809,
+   "ganancia_neta_mediana": 53200,
+   "ganancia_neta_p10": 33013,
+   "cuentas_activas": 28,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 2,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja completa | tope por persona | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 3492,
+   "cobrado_p10": 0,
+   "cobrado_p90": 8000,
+   "ganancia_neta_mediana": 2732,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 291
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 13440,
+   "cobrado_p10": 619,
+   "cobrado_p90": 24551,
+   "ganancia_neta_mediana": 12680,
+   "ganancia_neta_p10": -140,
+   "cuentas_activas": 8,
+   "cobro_mensual_promedio_ese_a\u00f1o": 804
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 28340,
+   "cobrado_p10": 826,
+   "cobrado_p90": 44390,
+   "ganancia_neta_mediana": 27580,
+   "ganancia_neta_p10": 66,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 46000,
+   "cobrado_p10": 826,
+   "cobrado_p90": 64000,
+   "ganancia_neta_mediana": 45240,
+   "ganancia_neta_p10": 66,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1333
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 64191,
+   "cobrado_p10": 826,
+   "cobrado_p90": 84821,
+   "ganancia_neta_mediana": 63431,
+   "ganancia_neta_p10": 66,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1334
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 90.0,
+  "cuentas_perdidas_mediana": 1,
+  "cuentas_compradas_mediana": 26
+ },
+ "60 meses | ventaja completa | tope por persona | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 6000,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 12000,
+   "ganancia_neta_mediana": 3889,
+   "ganancia_neta_p10": -2347,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 500
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 22000,
+   "cobrado_p10": 11361,
+   "cobrado_p90": 32000,
+   "ganancia_neta_mediana": 18999,
+   "ganancia_neta_p10": 7282,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1271
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 39191,
+   "cobrado_p10": 24194,
+   "cobrado_p90": 52365,
+   "ganancia_neta_mediana": 36268,
+   "ganancia_neta_p10": 20397,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1499
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 57997,
+   "cobrado_p10": 39576,
+   "cobrado_p90": 73336,
+   "ganancia_neta_mediana": 54960,
+   "ganancia_neta_p10": 35222,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 76000,
+   "cobrado_p10": 55813,
+   "cobrado_p90": 93809,
+   "ganancia_neta_mediana": 73088,
+   "ganancia_neta_p10": 51908,
+   "cuentas_activas": 28,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 2,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja a la mitad | tope por cuenta | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 4920,
+   "cobrado_p10": 0,
+   "cobrado_p90": 12000,
+   "ganancia_neta_mediana": 360,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 410
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 21208,
+   "cobrado_p10": 5510,
+   "cobrado_p90": 45381,
+   "ganancia_neta_mediana": 12088,
+   "ganancia_neta_p10": -3609,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1324
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 46401,
+   "cobrado_p10": 14652,
+   "cobrado_p90": 95540,
+   "ganancia_neta_mediana": 32721,
+   "ganancia_neta_p10": 972,
+   "cuentas_activas": 11,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1986
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 76492,
+   "cobrado_p10": 26608,
+   "cobrado_p90": 160945,
+   "ganancia_neta_mediana": 58252,
+   "ganancia_neta_p10": 8368,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2464
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 115424,
+   "cobrado_p10": 45167,
+   "cobrado_p90": 238032,
+   "ganancia_neta_mediana": 92624,
+   "ganancia_neta_p10": 22367,
+   "cuentas_activas": 14,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2892
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 10,
+  "prob_recuperar_inversion": 99.4,
+  "cuentas_perdidas_mediana": 16,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja a la mitad | tope por cuenta | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 2000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 6007,
+   "ganancia_neta_mediana": 1240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 2,
+   "cobro_mensual_promedio_ese_a\u00f1o": 166
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 6000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 26587,
+   "ganancia_neta_mediana": 5240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 283
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 13187,
+   "cobrado_p10": 0,
+   "cobrado_p90": 60748,
+   "ganancia_neta_mediana": 12427,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 23983,
+   "cobrado_p10": 0,
+   "cobrado_p90": 109533,
+   "ganancia_neta_mediana": 23223,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 424
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 40258,
+   "cobrado_p10": 0,
+   "cobrado_p90": 168000,
+   "ganancia_neta_mediana": 39498,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 484
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 69.1,
+  "cuentas_perdidas_mediana": 4,
+  "cuentas_compradas_mediana": 22
+ },
+ "60 meses | ventaja a la mitad | tope por cuenta | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 4920,
+   "cobrado_p10": 0,
+   "cobrado_p90": 12000,
+   "ganancia_neta_mediana": 1969,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 410
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 21208,
+   "cobrado_p10": 5510,
+   "cobrado_p90": 45381,
+   "ganancia_neta_mediana": 17738,
+   "ganancia_neta_p10": -629,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1324
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 46401,
+   "cobrado_p10": 14652,
+   "cobrado_p90": 95540,
+   "ganancia_neta_mediana": 42615,
+   "ganancia_neta_p10": 8625,
+   "cuentas_activas": 11,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1986
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 76492,
+   "cobrado_p10": 26608,
+   "cobrado_p90": 160945,
+   "ganancia_neta_mediana": 72198,
+   "ganancia_neta_p10": 21306,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2464
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 115424,
+   "cobrado_p10": 45167,
+   "cobrado_p90": 238032,
+   "ganancia_neta_mediana": 111300,
+   "ganancia_neta_p10": 39278,
+   "cuentas_activas": 14,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2892
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 10,
+  "prob_recuperar_inversion": 99.8,
+  "cuentas_perdidas_mediana": 16,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja a la mitad | tope por persona | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 4000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 10000,
+   "ganancia_neta_mediana": -560,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 14000,
+   "cobrado_p10": 4092,
+   "cobrado_p90": 26000,
+   "ganancia_neta_mediana": 4880,
+   "ganancia_neta_p10": -5027,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 830
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 26000,
+   "cobrado_p10": 10272,
+   "cobrado_p90": 42000,
+   "ganancia_neta_mediana": 12320,
+   "ganancia_neta_p10": -3407,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1000
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 39209,
+   "cobrado_p10": 18681,
+   "cobrado_p90": 59770,
+   "ganancia_neta_mediana": 20969,
+   "ganancia_neta_p10": 441,
+   "cuentas_activas": 14,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1025
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 53421,
+   "cobrado_p10": 28295,
+   "cobrado_p90": 76513,
+   "ganancia_neta_mediana": 30621,
+   "ganancia_neta_p10": 5495,
+   "cuentas_activas": 17,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 11,
+  "prob_recuperar_inversion": 97.3,
+  "cuentas_perdidas_mediana": 13,
+  "cuentas_compradas_mediana": 30
+ },
+ "60 meses | ventaja a la mitad | tope por persona | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 2000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 6000,
+   "ganancia_neta_mediana": 1240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 2,
+   "cobro_mensual_promedio_ese_a\u00f1o": 166
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 4582,
+   "cobrado_p10": 0,
+   "cobrado_p90": 17876,
+   "ganancia_neta_mediana": 3822,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 170
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 9634,
+   "cobrado_p10": 0,
+   "cobrado_p90": 32000,
+   "ganancia_neta_mediana": 8874,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 252
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 15654,
+   "cobrado_p10": 0,
+   "cobrado_p90": 48000,
+   "ganancia_neta_mediana": 14894,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 276
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 23607,
+   "cobrado_p10": 0,
+   "cobrado_p90": 63755,
+   "ganancia_neta_mediana": 22847,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 69.1,
+  "cuentas_perdidas_mediana": 3,
+  "cuentas_compradas_mediana": 20
+ },
+ "60 meses | ventaja a la mitad | tope por persona | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 4000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 10000,
+   "ganancia_neta_mediana": 960,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 14000,
+   "cobrado_p10": 4092,
+   "cobrado_p90": 26000,
+   "ganancia_neta_mediana": 10480,
+   "ganancia_neta_p10": -2082,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 830
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 26000,
+   "cobrado_p10": 10272,
+   "cobrado_p90": 42000,
+   "ganancia_neta_mediana": 22276,
+   "ganancia_neta_p10": 3447,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1000
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 39209,
+   "cobrado_p10": 18681,
+   "cobrado_p90": 59770,
+   "ganancia_neta_mediana": 35440,
+   "ganancia_neta_p10": 11568,
+   "cuentas_activas": 14,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1025
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 53421,
+   "cobrado_p10": 28295,
+   "cobrado_p90": 76513,
+   "ganancia_neta_mediana": 49257,
+   "ganancia_neta_p10": 20991,
+   "cuentas_activas": 17,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 10,
+  "prob_recuperar_inversion": 99.5,
+  "cuentas_perdidas_mediana": 13,
+  "cuentas_compradas_mediana": 30
+ },
+ "100 meses | ventaja completa | tope por cuenta | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 8000,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 16000,
+   "ganancia_neta_mediana": 3440,
+   "ganancia_neta_p10": -2560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 666
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 38822,
+   "cobrado_p10": 15657,
+   "cobrado_p90": 59992,
+   "ganancia_neta_mediana": 29702,
+   "ganancia_neta_p10": 6537,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2483
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 89436,
+   "cobrado_p10": 42532,
+   "cobrado_p90": 130863,
+   "ganancia_neta_mediana": 75756,
+   "ganancia_neta_p10": 28852,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4094
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 161967,
+   "cobrado_p10": 83224,
+   "cobrado_p90": 228406,
+   "ganancia_neta_mediana": 143727,
+   "ganancia_neta_p10": 64984,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 5835
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 255127,
+   "cobrado_p10": 135544,
+   "cobrado_p90": 349016,
+   "ganancia_neta_mediana": 232327,
+   "ganancia_neta_p10": 112744,
+   "cuentas_activas": 27,
+   "cobro_mensual_promedio_ese_a\u00f1o": 7231
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 36480,
+   "cobrado_mediana": 655493,
+   "cobrado_p10": 377611,
+   "cobrado_p90": 864101,
+   "ganancia_neta_mediana": 619013,
+   "ganancia_neta_p10": 341131,
+   "cuentas_activas": 41,
+   "cobro_mensual_promedio_ese_a\u00f1o": 12234
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 8,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja completa | tope por cuenta | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 4000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 8722,
+   "ganancia_neta_mediana": 3240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 20000,
+   "cobrado_p10": 539,
+   "cobrado_p90": 41704,
+   "ganancia_neta_mediana": 19240,
+   "ganancia_neta_p10": -220,
+   "cuentas_activas": 8,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1323
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 55219,
+   "cobrado_p10": 924,
+   "cobrado_p90": 99573,
+   "ganancia_neta_mediana": 54459,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2689
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 111955,
+   "cobrado_p10": 924,
+   "cobrado_p90": 181630,
+   "ganancia_neta_mediana": 111195,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4380
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 186506,
+   "cobrado_p10": 924,
+   "cobrado_p90": 285216,
+   "ganancia_neta_mediana": 185746,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 5690
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 531873,
+   "cobrado_p10": 924,
+   "cobrado_p90": 754782,
+   "ganancia_neta_mediana": 531113,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 36,
+   "cobro_mensual_promedio_ese_a\u00f1o": 10351
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 90.1,
+  "cuentas_perdidas_mediana": 5,
+  "cuentas_compradas_mediana": 47
+ },
+ "100 meses | ventaja completa | tope por cuenta | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 8000,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 16000,
+   "ganancia_neta_mediana": 5733,
+   "ganancia_neta_p10": -1716,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 666
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 38822,
+   "cobrado_p10": 15657,
+   "cobrado_p90": 59992,
+   "ganancia_neta_mediana": 36200,
+   "ganancia_neta_p10": 11880,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2483
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 89436,
+   "cobrado_p10": 42532,
+   "cobrado_p90": 130863,
+   "ganancia_neta_mediana": 86652,
+   "ganancia_neta_p10": 39098,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4094
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 161967,
+   "cobrado_p10": 83224,
+   "cobrado_p90": 228406,
+   "ganancia_neta_mediana": 159205,
+   "ganancia_neta_p10": 80148,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 5835
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 255127,
+   "cobrado_p10": 135544,
+   "cobrado_p90": 349016,
+   "ganancia_neta_mediana": 252404,
+   "ganancia_neta_p10": 132234,
+   "cuentas_activas": 27,
+   "cobro_mensual_promedio_ese_a\u00f1o": 7231
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 655493,
+   "cobrado_p10": 377611,
+   "cobrado_p90": 864101,
+   "ganancia_neta_mediana": 652804,
+   "ganancia_neta_p10": 373885,
+   "cuentas_activas": 41,
+   "cobro_mensual_promedio_ese_a\u00f1o": 12234
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 7,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 8,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja completa | tope por persona | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 6237,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 12000,
+   "ganancia_neta_mediana": 1677,
+   "ganancia_neta_p10": -2560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 519
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 22000,
+   "cobrado_p10": 10634,
+   "cobrado_p90": 32000,
+   "ganancia_neta_mediana": 12880,
+   "ganancia_neta_p10": 1514,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1241
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 40000,
+   "cobrado_p10": 24000,
+   "cobrado_p90": 53465,
+   "ganancia_neta_mediana": 26320,
+   "ganancia_neta_p10": 10320,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1499
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 58000,
+   "cobrado_p10": 40000,
+   "cobrado_p90": 73951,
+   "ganancia_neta_mediana": 39760,
+   "ganancia_neta_p10": 21760,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 76000,
+   "cobrado_p10": 56000,
+   "cobrado_p90": 93567,
+   "ganancia_neta_mediana": 53200,
+   "ganancia_neta_p10": 33200,
+   "cuentas_activas": 28,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 36480,
+   "cobrado_mediana": 132154,
+   "cobrado_p10": 108074,
+   "cobrado_p90": 154159,
+   "ganancia_neta_mediana": 95674,
+   "ganancia_neta_p10": 71594,
+   "cuentas_activas": 43,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 6,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja completa | tope por persona | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 3894,
+   "cobrado_p10": 0,
+   "cobrado_p90": 8000,
+   "ganancia_neta_mediana": 3134,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 324
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 14000,
+   "cobrado_p10": 539,
+   "cobrado_p90": 24512,
+   "ganancia_neta_mediana": 13240,
+   "ganancia_neta_p10": -220,
+   "cuentas_activas": 8,
+   "cobro_mensual_promedio_ese_a\u00f1o": 833
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 29232,
+   "cobrado_p10": 924,
+   "cobrado_p90": 44737,
+   "ganancia_neta_mediana": 28472,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 46460,
+   "cobrado_p10": 924,
+   "cobrado_p90": 64328,
+   "ganancia_neta_mediana": 45700,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1333
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 64153,
+   "cobrado_p10": 924,
+   "cobrado_p90": 84000,
+   "ganancia_neta_mediana": 63393,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1333
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 120021,
+   "cobrado_p10": 924,
+   "cobrado_p90": 144959,
+   "ganancia_neta_mediana": 119261,
+   "ganancia_neta_p10": 164,
+   "cuentas_activas": 38,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 90.1,
+  "cuentas_perdidas_mediana": 4,
+  "cuentas_compradas_mediana": 46
+ },
+ "100 meses | ventaja completa | tope por persona | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 2280,
+   "cobrado_mediana": 6237,
+   "cobrado_p10": 2000,
+   "cobrado_p90": 12000,
+   "ganancia_neta_mediana": 4200,
+   "ganancia_neta_p10": -2284,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 519
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 22000,
+   "cobrado_p10": 10634,
+   "cobrado_p90": 32000,
+   "ganancia_neta_mediana": 19300,
+   "ganancia_neta_p10": 6473,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1241
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 40000,
+   "cobrado_p10": 24000,
+   "cobrado_p90": 53465,
+   "ganancia_neta_mediana": 36704,
+   "ganancia_neta_p10": 19751,
+   "cuentas_activas": 18,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1499
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 58000,
+   "cobrado_p10": 40000,
+   "cobrado_p90": 73951,
+   "ganancia_neta_mediana": 54682,
+   "ganancia_neta_p10": 35893,
+   "cuentas_activas": 23,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 76000,
+   "cobrado_p10": 56000,
+   "cobrado_p90": 93567,
+   "ganancia_neta_mediana": 73022,
+   "ganancia_neta_p10": 51978,
+   "cuentas_activas": 28,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 132154,
+   "cobrado_p10": 108074,
+   "cobrado_p90": 154159,
+   "ganancia_neta_mediana": 129486,
+   "ganancia_neta_p10": 104748,
+   "cuentas_activas": 43,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1500
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 8,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 6,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja a la mitad | tope por cuenta | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 5154,
+   "cobrado_p10": 0,
+   "cobrado_p90": 12620,
+   "ganancia_neta_mediana": 594,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 429
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 22000,
+   "cobrado_p10": 5228,
+   "cobrado_p90": 45506,
+   "ganancia_neta_mediana": 12880,
+   "ganancia_neta_p10": -3891,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1333
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 46668,
+   "cobrado_p10": 14155,
+   "cobrado_p90": 96257,
+   "ganancia_neta_mediana": 32988,
+   "ganancia_neta_p10": 475,
+   "cuentas_activas": 11,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2000
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 79625,
+   "cobrado_p10": 27604,
+   "cobrado_p90": 164268,
+   "ganancia_neta_mediana": 61385,
+   "ganancia_neta_p10": 9364,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2628
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 120157,
+   "cobrado_p10": 44200,
+   "cobrado_p90": 239407,
+   "ganancia_neta_mediana": 97357,
+   "ganancia_neta_p10": 21400,
+   "cuentas_activas": 15,
+   "cobro_mensual_promedio_ese_a\u00f1o": 3099
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 36480,
+   "cobrado_mediana": 271459,
+   "cobrado_p10": 107933,
+   "cobrado_p90": 547301,
+   "ganancia_neta_mediana": 234979,
+   "ganancia_neta_p10": 71453,
+   "cuentas_activas": 19,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4280
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 10,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 30,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja a la mitad | tope por cuenta | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 2000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 6000,
+   "ganancia_neta_mediana": 1240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 2,
+   "cobro_mensual_promedio_ese_a\u00f1o": 166
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 6047,
+   "cobrado_p10": 0,
+   "cobrado_p90": 26000,
+   "ganancia_neta_mediana": 5287,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 14504,
+   "cobrado_p10": 0,
+   "cobrado_p90": 61520,
+   "ganancia_neta_mediana": 13744,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 27270,
+   "cobrado_p10": 0,
+   "cobrado_p90": 111143,
+   "ganancia_neta_mediana": 26510,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 505
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 43248,
+   "cobrado_p10": 0,
+   "cobrado_p90": 172672,
+   "ganancia_neta_mediana": 42488,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 5,
+   "cobro_mensual_promedio_ese_a\u00f1o": 614
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 105622,
+   "cobrado_p10": 0,
+   "cobrado_p90": 415434,
+   "ganancia_neta_mediana": 104862,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 782
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 70.0,
+  "cuentas_perdidas_mediana": 11,
+  "cuentas_compradas_mediana": 42
+ },
+ "100 meses | ventaja a la mitad | tope por cuenta | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 5154,
+   "cobrado_p10": 0,
+   "cobrado_p90": 12620,
+   "ganancia_neta_mediana": 2098,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 429
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 22000,
+   "cobrado_p10": 5228,
+   "cobrado_p90": 45506,
+   "ganancia_neta_mediana": 18153,
+   "ganancia_neta_p10": -1088,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1333
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 46668,
+   "cobrado_p10": 14155,
+   "cobrado_p90": 96257,
+   "ganancia_neta_mediana": 42714,
+   "ganancia_neta_p10": 8533,
+   "cuentas_activas": 11,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2000
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 79625,
+   "cobrado_p10": 27604,
+   "cobrado_p90": 164268,
+   "ganancia_neta_mediana": 75433,
+   "ganancia_neta_p10": 21938,
+   "cuentas_activas": 13,
+   "cobro_mensual_promedio_ese_a\u00f1o": 2628
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 120157,
+   "cobrado_p10": 44200,
+   "cobrado_p90": 239407,
+   "ganancia_neta_mediana": 115905,
+   "ganancia_neta_p10": 38767,
+   "cuentas_activas": 15,
+   "cobro_mensual_promedio_ese_a\u00f1o": 3099
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 271459,
+   "cobrado_p10": 107933,
+   "cobrado_p90": 547301,
+   "ganancia_neta_mediana": 267456,
+   "ganancia_neta_p10": 102325,
+   "cuentas_activas": 19,
+   "cobro_mensual_promedio_ese_a\u00f1o": 4280
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 10,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 30,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja a la mitad | tope por persona | Fondos propios": {
+  "a\u00f1o 1": {
+   "fondos_propios": 4560,
+   "cobrado_mediana": 4000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 10000,
+   "ganancia_neta_mediana": -560,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 9120,
+   "cobrado_mediana": 14000,
+   "cobrado_p10": 4000,
+   "cobrado_p90": 26000,
+   "ganancia_neta_mediana": 4880,
+   "ganancia_neta_p10": -5120,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 833
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 13680,
+   "cobrado_mediana": 26000,
+   "cobrado_p10": 10013,
+   "cobrado_p90": 42795,
+   "ganancia_neta_mediana": 12320,
+   "ganancia_neta_p10": -3666,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1000
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 18240,
+   "cobrado_mediana": 39643,
+   "cobrado_p10": 18009,
+   "cobrado_p90": 59556,
+   "ganancia_neta_mediana": 21403,
+   "ganancia_neta_p10": -230,
+   "cuentas_activas": 14,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1165
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 22800,
+   "cobrado_mediana": 54000,
+   "cobrado_p10": 28135,
+   "cobrado_p90": 76330,
+   "ganancia_neta_mediana": 31200,
+   "ganancia_neta_p10": 5335,
+   "cuentas_activas": 17,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 36480,
+   "cobrado_mediana": 98736,
+   "cobrado_p10": 60849,
+   "cobrado_p90": 128000,
+   "ganancia_neta_mediana": 62256,
+   "ganancia_neta_p10": 24369,
+   "cuentas_activas": 25,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 11,
+  "prob_recuperar_inversion": 99.6,
+  "cuentas_perdidas_mediana": 24,
+  "cuentas_compradas_mediana": 50
+ },
+ "100 meses | ventaja a la mitad | tope por persona | Capital generado": {
+  "a\u00f1o 1": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 2000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 6000,
+   "ganancia_neta_mediana": 1240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 2,
+   "cobro_mensual_promedio_ese_a\u00f1o": 166
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 4839,
+   "cobrado_p10": 0,
+   "cobrado_p90": 17778,
+   "ganancia_neta_mediana": 4079,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 3,
+   "cobro_mensual_promedio_ese_a\u00f1o": 179
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 10000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 32000,
+   "ganancia_neta_mediana": 9240,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 303
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 16967,
+   "cobrado_p10": 0,
+   "cobrado_p90": 47971,
+   "ganancia_neta_mediana": 16207,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 4,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 25277,
+   "cobrado_p10": 0,
+   "cobrado_p90": 63160,
+   "ganancia_neta_mediana": 24517,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 5,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 760,
+   "cobrado_mediana": 56106,
+   "cobrado_p10": 0,
+   "cobrado_p90": 113280,
+   "ganancia_neta_mediana": 55346,
+   "ganancia_neta_p10": -760,
+   "cuentas_activas": 8,
+   "cobro_mensual_promedio_ese_a\u00f1o": 500
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 6,
+  "prob_recuperar_inversion": 70.0,
+  "cuentas_perdidas_mediana": 8,
+  "cuentas_compradas_mediana": 41
+ },
+ "100 meses | ventaja a la mitad | tope por persona | Mixto": {
+  "a\u00f1o 1": {
+   "fondos_propios": 3040,
+   "cobrado_mediana": 4000,
+   "cobrado_p10": 0,
+   "cobrado_p90": 10000,
+   "ganancia_neta_mediana": 960,
+   "ganancia_neta_p10": -4560,
+   "cuentas_activas": 6,
+   "cobro_mensual_promedio_ese_a\u00f1o": 333
+  },
+  "a\u00f1o 2": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 14000,
+   "cobrado_p10": 4000,
+   "cobrado_p90": 26000,
+   "ganancia_neta_mediana": 10407,
+   "ganancia_neta_p10": -2496,
+   "cuentas_activas": 9,
+   "cobro_mensual_promedio_ese_a\u00f1o": 833
+  },
+  "a\u00f1o 3": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 26000,
+   "cobrado_p10": 10013,
+   "cobrado_p90": 42795,
+   "ganancia_neta_mediana": 22227,
+   "ganancia_neta_p10": 3068,
+   "cuentas_activas": 12,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1000
+  },
+  "a\u00f1o 4": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 39643,
+   "cobrado_p10": 18009,
+   "cobrado_p90": 59556,
+   "ganancia_neta_mediana": 35335,
+   "ganancia_neta_p10": 11265,
+   "cuentas_activas": 14,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1165
+  },
+  "a\u00f1o 5": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 54000,
+   "cobrado_p10": 28135,
+   "cobrado_p90": 76330,
+   "ganancia_neta_mediana": 49775,
+   "ganancia_neta_p10": 21299,
+   "cuentas_activas": 17,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "a\u00f1o 8": {
+   "fondos_propios": 3800,
+   "cobrado_mediana": 98736,
+   "cobrado_p10": 60849,
+   "cobrado_p90": 128000,
+   "ganancia_neta_mediana": 94413,
+   "ganancia_neta_p10": 53947,
+   "cuentas_activas": 25,
+   "cobro_mensual_promedio_ese_a\u00f1o": 1166
+  },
+  "mes_en_que_lo_cobrado_supera_lo_invertido_mediana": 10,
+  "prob_recuperar_inversion": 100.0,
+  "cuentas_perdidas_mediana": 24,
+  "cuentas_compradas_mediana": 50
+ }
+}
