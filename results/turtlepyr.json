@@ -1,0 +1,627 @@
+{
+ "XAUUSD | fijo 0.01": {
+  "jul2024_hoy": {
+   "end": 1653,
+   "worst_dd": 73.5,
+   "low": 513,
+   "burned": null,
+   "positions": 16
+  },
+  "desde_2006": {
+   "end": 2475,
+   "worst_dd": 60.1,
+   "low": 832,
+   "burned": null,
+   "positions": 110
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1074,
+   "worst_end": 442,
+   "best_end": 2139,
+   "share_burned": 0,
+   "share_below_500": 4,
+   "share_losing": 41
+  }
+ },
+ "XAUUSD | fijo 0.02": {
+  "jul2024_hoy": {
+   "end": 81,
+   "worst_dd": 95.9,
+   "low": 81,
+   "burned": "2025-08-11",
+   "positions": 9
+  },
+  "desde_2006": {
+   "end": 3951,
+   "worst_dd": 67.6,
+   "low": 665,
+   "burned": null,
+   "positions": 110
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1115,
+   "worst_end": -36,
+   "best_end": 3278,
+   "share_burned": 11,
+   "share_below_500": 24,
+   "share_losing": 45
+  }
+ },
+ "XAUUSD | doble 0.01": {
+  "jul2024_hoy": {
+   "end": 36,
+   "worst_dd": 98.6,
+   "low": 36,
+   "burned": "2025-04-23",
+   "positions": 7
+  },
+  "desde_2006": {
+   "end": 97,
+   "worst_dd": 93.1,
+   "low": 97,
+   "burned": "2007-04-19",
+   "positions": 8
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 900,
+   "worst_end": -88,
+   "best_end": 5130,
+   "share_burned": 32,
+   "share_below_500": 58,
+   "share_losing": 55
+  }
+ },
+ "XAUUSD | riesgo 0.01": {
+  "jul2024_hoy": {
+   "end": 1653,
+   "worst_dd": 73.5,
+   "low": 513,
+   "burned": null,
+   "positions": 16
+  },
+  "desde_2006": {
+   "end": 2475,
+   "worst_dd": 60.1,
+   "low": 832,
+   "burned": null,
+   "positions": 110
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1074,
+   "worst_end": 442,
+   "best_end": 2139,
+   "share_burned": 0,
+   "share_below_500": 4,
+   "share_losing": 41
+  }
+ },
+ "XAUUSD | riesgo 0.02": {
+  "jul2024_hoy": {
+   "end": 1653,
+   "worst_dd": 73.5,
+   "low": 513,
+   "burned": null,
+   "positions": 16
+  },
+  "desde_2006": {
+   "end": 2423,
+   "worst_dd": 60.8,
+   "low": 830,
+   "burned": null,
+   "positions": 110
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1074,
+   "worst_end": 442,
+   "best_end": 2139,
+   "share_burned": 0,
+   "share_below_500": 4,
+   "share_losing": 41
+  }
+ },
+ "XAGUSD | fijo 0.01": {
+  "jul2024_hoy": {
+   "end": 8078,
+   "worst_dd": 67.5,
+   "low": 352,
+   "burned": null,
+   "positions": 12
+  },
+  "desde_2006": {
+   "end": 8696,
+   "worst_dd": 73.2,
+   "low": 912,
+   "burned": null,
+   "positions": 121
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1112,
+   "worst_end": 235,
+   "best_end": 5739,
+   "share_burned": 0,
+   "share_below_500": 17,
+   "share_losing": 39
+  }
+ },
+ "XAGUSD | fijo 0.02": {
+  "jul2024_hoy": {
+   "end": 90,
+   "worst_dd": 92.3,
+   "low": 90,
+   "burned": "2025-02-25",
+   "positions": 5
+  },
+  "desde_2006": {
+   "end": 16392,
+   "worst_dd": 85.3,
+   "low": 824,
+   "burned": null,
+   "positions": 121
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1111,
+   "worst_end": -31,
+   "best_end": 2565,
+   "share_burned": 24,
+   "share_below_500": 51,
+   "share_losing": 47
+  }
+ },
+ "XAGUSD | doble 0.01": {
+  "jul2024_hoy": {
+   "end": 87,
+   "worst_dd": 92.7,
+   "low": 87,
+   "burned": "2024-10-31",
+   "positions": 3
+  },
+  "desde_2006": {
+   "end": 91,
+   "worst_dd": 99.0,
+   "low": 91,
+   "burned": "2025-07-24",
+   "positions": 116
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 98,
+   "worst_end": -184,
+   "best_end": 4553,
+   "share_burned": 55,
+   "share_below_500": 71,
+   "share_losing": 66
+  }
+ },
+ "XAGUSD | riesgo 0.01": {
+  "jul2024_hoy": {
+   "end": 8078,
+   "worst_dd": 67.5,
+   "low": 352,
+   "burned": null,
+   "positions": 12
+  },
+  "desde_2006": {
+   "end": 8696,
+   "worst_dd": 73.2,
+   "low": 912,
+   "burned": null,
+   "positions": 121
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1112,
+   "worst_end": 235,
+   "best_end": 5739,
+   "share_burned": 0,
+   "share_below_500": 17,
+   "share_losing": 39
+  }
+ },
+ "XAGUSD | riesgo 0.02": {
+  "jul2024_hoy": {
+   "end": 8078,
+   "worst_dd": 67.5,
+   "low": 352,
+   "burned": null,
+   "positions": 12
+  },
+  "desde_2006": {
+   "end": 8598,
+   "worst_dd": 75.3,
+   "low": 872,
+   "burned": null,
+   "positions": 121
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1112,
+   "worst_end": 235,
+   "best_end": 5739,
+   "share_burned": 0,
+   "share_below_500": 17,
+   "share_losing": 39
+  }
+ },
+ "BTCUSD | fijo 0.01": {
+  "jul2024_hoy": {
+   "end": 1651,
+   "worst_dd": 34.7,
+   "low": 893,
+   "burned": null,
+   "positions": 10
+  },
+  "desde_2006": {
+   "end": 3754,
+   "worst_dd": 19.4,
+   "low": 987,
+   "burned": null,
+   "positions": 64
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1000,
+   "worst_end": 734,
+   "best_end": 2677,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 16
+  }
+ },
+ "BTCUSD | fijo 0.02": {
+  "jul2024_hoy": {
+   "end": 2303,
+   "worst_dd": 48.8,
+   "low": 787,
+   "burned": null,
+   "positions": 10
+  },
+  "desde_2006": {
+   "end": 6508,
+   "worst_dd": 28.8,
+   "low": 973,
+   "burned": null,
+   "positions": 64
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1000,
+   "worst_end": 468,
+   "best_end": 4354,
+   "share_burned": 0,
+   "share_below_500": 3,
+   "share_losing": 17
+  }
+ },
+ "BTCUSD | doble 0.01": {
+  "jul2024_hoy": {
+   "end": 1388,
+   "worst_dd": 82.6,
+   "low": 452,
+   "burned": null,
+   "positions": 10
+  },
+  "desde_2006": {
+   "end": 8774,
+   "worst_dd": 41.3,
+   "low": 956,
+   "burned": null,
+   "positions": 64
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1000,
+   "worst_end": 93,
+   "best_end": 7117,
+   "share_burned": 1,
+   "share_below_500": 12,
+   "share_losing": 17
+  }
+ },
+ "BTCUSD | riesgo 0.01": {
+  "jul2024_hoy": {
+   "end": 1651,
+   "worst_dd": 34.7,
+   "low": 893,
+   "burned": null,
+   "positions": 10
+  },
+  "desde_2006": {
+   "end": 5204,
+   "worst_dd": 58.8,
+   "low": 412,
+   "burned": null,
+   "positions": 64
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1000,
+   "worst_end": 451,
+   "best_end": 4421,
+   "share_burned": 0,
+   "share_below_500": 3,
+   "share_losing": 20
+  }
+ },
+ "BTCUSD | riesgo 0.02": {
+  "jul2024_hoy": {
+   "end": 1651,
+   "worst_dd": 34.7,
+   "low": 893,
+   "burned": null,
+   "positions": 10
+  },
+  "desde_2006": {
+   "end": 10369,
+   "worst_dd": 83.3,
+   "low": 167,
+   "burned": null,
+   "positions": 64
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 1000,
+   "worst_end": 200,
+   "best_end": 9476,
+   "share_burned": 0,
+   "share_below_500": 13,
+   "share_losing": 20
+  }
+ },
+ "US500 | fijo 0.01": {
+  "jul2024_hoy": {
+   "end": 987,
+   "worst_dd": 1.9,
+   "low": 983,
+   "burned": null,
+   "positions": 19
+  },
+  "desde_2006": {
+   "end": 961,
+   "worst_dd": 4.7,
+   "low": 957,
+   "burned": null,
+   "positions": 136
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 997,
+   "worst_end": 980,
+   "best_end": 1008,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 79
+  }
+ },
+ "US500 | fijo 0.02": {
+  "jul2024_hoy": {
+   "end": 973,
+   "worst_dd": 3.8,
+   "low": 966,
+   "burned": null,
+   "positions": 19
+  },
+  "desde_2006": {
+   "end": 922,
+   "worst_dd": 9.4,
+   "low": 913,
+   "burned": null,
+   "positions": 136
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 994,
+   "worst_end": 960,
+   "best_end": 1016,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 83
+  }
+ },
+ "US500 | doble 0.01": {
+  "jul2024_hoy": {
+   "end": 978,
+   "worst_dd": 5.0,
+   "low": 954,
+   "burned": null,
+   "positions": 19
+  },
+  "desde_2006": {
+   "end": 865,
+   "worst_dd": 18.7,
+   "low": 827,
+   "burned": null,
+   "positions": 136
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 989,
+   "worst_end": 942,
+   "best_end": 1046,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 86
+  }
+ },
+ "US500 | riesgo 0.01": {
+  "jul2024_hoy": {
+   "end": 846,
+   "worst_dd": 17.6,
+   "low": 845,
+   "burned": null,
+   "positions": 19
+  },
+  "desde_2006": {
+   "end": 558,
+   "worst_dd": 52.5,
+   "low": 540,
+   "burned": null,
+   "positions": 136
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 930,
+   "worst_end": 844,
+   "best_end": 1093,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 80
+  }
+ },
+ "US500 | riesgo 0.02": {
+  "jul2024_hoy": {
+   "end": 707,
+   "worst_dd": 33.4,
+   "low": 703,
+   "burned": null,
+   "positions": 19
+  },
+  "desde_2006": {
+   "end": 286,
+   "worst_dd": 78.5,
+   "low": 274,
+   "burned": null,
+   "positions": 136
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 859,
+   "worst_end": 708,
+   "best_end": 1186,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 82
+  }
+ },
+ "NAS100 | fijo 0.01": {
+  "jul2024_hoy": {
+   "end": 997,
+   "worst_dd": 8.1,
+   "low": 955,
+   "burned": null,
+   "positions": 17
+  },
+  "desde_2006": {
+   "end": 1005,
+   "worst_dd": 11.5,
+   "low": 960,
+   "burned": null,
+   "positions": 124
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 996,
+   "worst_end": 938,
+   "best_end": 1075,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 59
+  }
+ },
+ "NAS100 | fijo 0.02": {
+  "jul2024_hoy": {
+   "end": 995,
+   "worst_dd": 15.2,
+   "low": 910,
+   "burned": null,
+   "positions": 17
+  },
+  "desde_2006": {
+   "end": 1009,
+   "worst_dd": 21.2,
+   "low": 920,
+   "burned": null,
+   "positions": 124
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 993,
+   "worst_end": 875,
+   "best_end": 1151,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 62
+  }
+ },
+ "NAS100 | doble 0.01": {
+  "jul2024_hoy": {
+   "end": 1022,
+   "worst_dd": 20.5,
+   "low": 878,
+   "burned": null,
+   "positions": 17
+  },
+  "desde_2006": {
+   "end": 968,
+   "worst_dd": 37.0,
+   "low": 824,
+   "burned": null,
+   "positions": 124
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 986,
+   "worst_end": 750,
+   "best_end": 1224,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 59
+  }
+ },
+ "NAS100 | riesgo 0.01": {
+  "jul2024_hoy": {
+   "end": 970,
+   "worst_dd": 8.3,
+   "low": 948,
+   "burned": null,
+   "positions": 17
+  },
+  "desde_2006": {
+   "end": 952,
+   "worst_dd": 36.1,
+   "low": 672,
+   "burned": null,
+   "positions": 124
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 995,
+   "worst_end": 824,
+   "best_end": 1261,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 53
+  }
+ },
+ "NAS100 | riesgo 0.02": {
+  "jul2024_hoy": {
+   "end": 899,
+   "worst_dd": 16.0,
+   "low": 863,
+   "burned": null,
+   "positions": 17
+  },
+  "desde_2006": {
+   "end": 681,
+   "worst_dd": 60.8,
+   "low": 428,
+   "burned": null,
+   "positions": 124
+  },
+  "ventanas_24m_desde_2006": {
+   "n": 76,
+   "median_end": 958,
+   "worst_end": 670,
+   "best_end": 1643,
+   "share_burned": 0,
+   "share_below_500": 0,
+   "share_losing": 59
+  }
+ }
+}
