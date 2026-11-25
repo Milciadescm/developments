@@ -1,0 +1,26 @@
+; DEMO EXNESS (MT5 Standard, cuenta Hedging de $100,000) con las mismas reglas que GFT Instant Premium $100K.
+; Exness Standard usa BTCUSDm, US500m, USTECm; las cuentas Pro o Raw no llevan la m: cambialos en SymbolsToTrade si hace falta.
+; RIESGO FIJO: 0.9 % de los $100K iniciales por operacion ($900), una sola operacion abierta a la vez.
+; Mercados: BTC, S&P 500, Nasdaq 100. Todo cerrado en 24 h y antes del viernes 16:00 NY.
+; 6 % trailing intradia, 3 % diario, 1 % de perdida flotante (reglas GFT Instant Premium).
+RiskProfile=GFT-Demo-Exness
+RiskPct=0.9
+StartBalance=100000
+MaxLossPct=6
+TrailingMaxLoss=true
+TrailOnEquity=true
+GuardBufferPct=1
+DailyLossPct=3
+MaxOpenRiskPct=1
+SymbolsToTrade=BTCUSDm,US500m,USTECm
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+KeepAliveDays=0
+WriteLog=true
+ShowPanel=true
+Magic=7712400
+CompoundOnBalance=false
+MinLotIfBelow=false
+MaxRiskPctAtMinLot=3
