@@ -1,0 +1,30 @@
+; DEMO VANTAGE con las mismas reglas que GFT Instant Premium $100K (ensayo de la ruta GFT). Cuenta demo HEDGING de $100,000.
+; Si tus nombres de simbolos son distintos (p. ej. SP500m, NAS100.r), cambialos en SymbolsToTrade.
+; FibFVG Prop24 - Goat Funded Trader INSTANT PREMIUM $100K (sin objetivo, 3 % diario, 6 % trailing intradia,
+; 1 % de perdida flotante de todas las operaciones abiertas, 5 dias rentables de +0.5 % por pago, cada 14 dias, reparto 80 %).
+; RIESGO FIJO: 0.9 % de los $100K iniciales por operacion ($900), una sola operacion abierta a la vez. No sube con el saldo,
+; no sube con el tiempo y no abre el lote minimo si el % no alcanza (CompoundOnBalance, MinLotIfBelow = false).
+; Mercados: BTC, S&P 500, Nasdaq 100 (AUTO busca los nombres de GFT). Todo cerrado en 24 h y antes del viernes 16:00 NY.
+; Backtest jul 2024 - nov 2026: $13,663 pagados en 4 pagos, sin incumplimiento; ultimos 12 meses $1,578.
+; Correr en tu propia PC con Windows: GFT prohibe VPS, VPN y proxies.
+RiskProfile=GFT-Demo-Vantage
+RiskPct=0.9
+StartBalance=100000
+MaxLossPct=6
+TrailingMaxLoss=true
+TrailOnEquity=true
+GuardBufferPct=1
+DailyLossPct=3
+MaxOpenRiskPct=1
+SymbolsToTrade=BTCUSD,SP500,NAS100
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+KeepAliveDays=0
+WriteLog=true
+ShowPanel=true
+Magic=7712400
+CompoundOnBalance=false
+MinLotIfBelow=false
+MaxRiskPctAtMinLot=3
