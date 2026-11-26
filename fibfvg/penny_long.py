@@ -14,6 +14,7 @@ Cuentas:
 import itertools
 import json
 import sys
+from multiprocessing import Pool
 
 import numpy as np
 import pandas as pd
@@ -34,15 +35,26 @@ def load_flow(path, weekdays_only):
     return d
 
 
+_D = None
+WORKERS = 2
+
+
+def _one(args):
+    g, flip = args
+    a = run(_D, g["target"], g["maxloss"], g["step"], g["maxn"], g["mode"], g["flown"], 1.0, g["zones"], end=SPLIT, flip=flip)
+    b = run(_D, g["target"], g["maxloss"], g["step"], g["maxn"], g["mode"], g["flown"], 1.0, g["zones"], start=SPLIT, flip=flip)
+    return (g, flip, a, b)
+
+
+def _pmap(tasks):
+    with Pool(WORKERS) as p:
+        return p.map(_one, tasks, chunksize=4)
+
+
 def evaluate(d, grid, flip):
-    rows = []
-    for g in grid:
-        kw = dict(flip=flip)
-        a = run(d, g["target"], g["maxloss"], g["step"], g["maxn"], g["mode"], g["flown"], 1.0, g["zones"], end=SPLIT, **kw)
-        b = run(d, g["target"], g["maxloss"], g["step"], g["maxn"], g["mode"], g["flown"], 1.0, g["zones"], start=SPLIT, **kw)
-        if a and b:
-            rows.append(dict(g, mitad1=a, mitad2=b, total=a["total"] + b["total"]))
-    return rows
+    global _D
+    _D = d
+    return [dict(g, mitad1=a, mitad2=b, total=a["total"] + b["total"]) for g, _, a, b in _pmap([(g, flip) for g in grid]) if a and b]
 
 
 def summary(rows):
@@ -65,14 +77,19 @@ def big_grid(steps, targets=(300, 500, 700), losses=(900, 2_000)):
 
 def small_account(d, contract, cost, steps, zones_list):
     """cuenta de $100 con 0.01 lote por entrada; se quema si la caída llega a $100"""
+    global _D
     penny.configure(contract, 0.01, cost)
-    rows = []
+    _D = d
+    tasks = []
     for flip in (False, True):
         for t, ml, st, n, mo, z in itertools.product((3, 5, 10, 20), (10, 20, 40), steps, (1, 3, 5), ("a favor", "en contra"), zones_list):
             if n == 1 and (st != steps[0] or mo != "a favor"):
                 continue
-            a = run(d, t, ml, st, n, mo, 12, 1.0, z, end=SPLIT, flip=flip)
-            b = run(d, t, ml, st, n, mo, 12, 1.0, z, start=SPLIT, flip=flip)
+            tasks.append((dict(target=t, maxloss=ml, step=st, maxn=n, mode=mo, flown=12, zones=z), flip))
+    rows = []
+    for g, flip, a, b in _pmap(tasks):
+        t, ml, st, n, mo, z = g["target"], g["maxloss"], g["step"], g["maxn"], g["mode"], g["zones"]
+        if True:
             if a and b:
                 full_dd = max(a["peor_caida"], b["peor_caida"])
                 rows.append(dict(direccion="invertido" if flip else "sigue", objetivo=t, tope=ml, paso=st, entradas=n, modo=mo, horario=z,
