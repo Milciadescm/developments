@@ -1,0 +1,200 @@
+{
+ "H1 2024-2026": {
+  "versiones": 52,
+  "positivas_ambas_mitades": 4,
+  "elegidas_mitad1_t2": 0,
+  "sobreviven": 0,
+  "sobrevivientes": [],
+  "mejores_ambas": [
+   {
+    "par": "XAUUSD/XAGUSD",
+    "ventana": 500,
+    "entrada_z": 2.5,
+    "salida_z": 0.0,
+    "max_velas": 24,
+    "total": {
+     "n": 50,
+     "pb": 24.31,
+     "R": 0.008,
+     "aciertos": 58,
+     "t": 1.78
+    },
+    "mitad1": {
+     "n": 20,
+     "pb": 28.56,
+     "R": 0.013,
+     "aciertos": 55,
+     "t": 1.85
+    },
+    "mitad2": {
+     "n": 30,
+     "pb": 21.49,
+     "R": 0.004,
+     "aciertos": 60,
+     "t": 1.05
+    },
+    "corr_con_mercado": 0.33,
+    "velas_mediana": 24.0
+   },
+   {
+    "par": "XAUUSD/XAGUSD",
+    "ventana": 500,
+    "entrada_z": 2.5,
+    "salida_z": 0.5,
+    "max_velas": 24,
+    "total": {
+     "n": 50,
+     "pb": 24.31,
+     "R": 0.008,
+     "aciertos": 58,
+     "t": 1.78
+    },
+    "mitad1": {
+     "n": 20,
+     "pb": 28.56,
+     "R": 0.013,
+     "aciertos": 55,
+     "t": 1.85
+    },
+    "mitad2": {
+     "n": 30,
+     "pb": 21.49,
+     "R": 0.004,
+     "aciertos": 60,
+     "t": 1.05
+    },
+    "corr_con_mercado": 0.33,
+    "velas_mediana": 24.0
+   },
+   {
+    "par": "US500/NAS100",
+    "ventana": 500,
+    "entrada_z": 2.0,
+    "salida_z": 0.0,
+    "max_velas": 24,
+    "total": {
+     "n": 112,
+     "pb": 2.25,
+     "R": 0.0,
+     "aciertos": 46,
+     "t": 0.95
+    },
+    "mitad1": {
+     "n": 45,
+     "pb": 0.74,
+     "R": -0.001,
+     "aciertos": 42,
+     "t": 0.22
+    },
+    "mitad2": {
+     "n": 67,
+     "pb": 3.26,
+     "R": 0.001,
+     "aciertos": 48,
+     "t": 0.99
+    },
+    "corr_con_mercado": -0.06,
+    "velas_mediana": 24.0
+   },
+   {
+    "par": "US500/NAS100",
+    "ventana": 500,
+    "entrada_z": 2.0,
+    "salida_z": 0.5,
+    "max_velas": 24,
+    "total": {
+     "n": 112,
+     "pb": 2.25,
+     "R": 0.0,
+     "aciertos": 46,
+     "t": 0.95
+    },
+    "mitad1": {
+     "n": 45,
+     "pb": 0.74,
+     "R": -0.001,
+     "aciertos": 42,
+     "t": 0.22
+    },
+    "mitad2": {
+     "n": 67,
+     "pb": 3.26,
+     "R": 0.001,
+     "aciertos": 48,
+     "t": 0.99
+    },
+    "corr_con_mercado": -0.06,
+    "velas_mediana": 24.0
+   }
+  ]
+ },
+ "D1 2006-2026": {
+  "versiones": 66,
+  "positivas_ambas_mitades": 2,
+  "elegidas_mitad1_t2": 0,
+  "sobreviven": 0,
+  "sobrevivientes": [],
+  "mejores_ambas": [
+   {
+    "par": "XAUUSD/XAGUSD",
+    "ventana": 60,
+    "entrada_z": 3.0,
+    "salida_z": 0.0,
+    "max_velas": 20,
+    "total": {
+     "n": 33,
+     "pb": 30.49,
+     "R": 0.082,
+     "aciertos": 64,
+     "t": 0.65
+    },
+    "mitad1": {
+     "n": 16,
+     "pb": 58.27,
+     "R": 0.079,
+     "aciertos": 75,
+     "t": 0.79
+    },
+    "mitad2": {
+     "n": 17,
+     "pb": 4.34,
+     "R": 0.084,
+     "aciertos": 53,
+     "t": 0.07
+    },
+    "corr_con_mercado": 0.03,
+    "velas_mediana": 20.0
+   },
+   {
+    "par": "XAUUSD/XAGUSD",
+    "ventana": 60,
+    "entrada_z": 3.0,
+    "salida_z": 0.5,
+    "max_velas": 20,
+    "total": {
+     "n": 33,
+     "pb": 30.49,
+     "R": 0.082,
+     "aciertos": 64,
+     "t": 0.65
+    },
+    "mitad1": {
+     "n": 16,
+     "pb": 58.27,
+     "R": 0.079,
+     "aciertos": 75,
+     "t": 0.79
+    },
+    "mitad2": {
+     "n": 17,
+     "pb": 4.34,
+     "R": 0.084,
+     "aciertos": 53,
+     "t": 0.07
+    },
+    "corr_con_mercado": 0.03,
+    "velas_mediana": 20.0
+   }
+  ]
+ }
+}
