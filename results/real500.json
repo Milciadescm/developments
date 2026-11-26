@@ -1,0 +1,1128 @@
+{
+ "5 % con freno": {
+  "meses": [
+   {
+    "mes": 1,
+    "saldo_mediana": 505,
+    "saldo_p10": 468,
+    "saldo_p90": 610,
+    "pnl_mes_mediana": 4.93,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 2,
+    "saldo_mediana": 522,
+    "saldo_p10": 458,
+    "saldo_p90": 710,
+    "pnl_mes_mediana": 3.95,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 3,
+    "saldo_mediana": 541,
+    "saldo_p10": 455,
+    "saldo_p90": 774,
+    "pnl_mes_mediana": 3.67,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 4,
+    "saldo_mediana": 564,
+    "saldo_p10": 454,
+    "saldo_p90": 836,
+    "pnl_mes_mediana": 3.17,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 5,
+    "saldo_mediana": 589,
+    "saldo_p10": 453,
+    "saldo_p90": 911,
+    "pnl_mes_mediana": 3.87,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 6,
+    "saldo_mediana": 614,
+    "saldo_p10": 455,
+    "saldo_p90": 980,
+    "pnl_mes_mediana": 2.93,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 7,
+    "saldo_mediana": 639,
+    "saldo_p10": 458,
+    "saldo_p90": 1054,
+    "pnl_mes_mediana": 3.68,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 8,
+    "saldo_mediana": 666,
+    "saldo_p10": 461,
+    "saldo_p90": 1136,
+    "pnl_mes_mediana": 3.96,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 9,
+    "saldo_mediana": 695,
+    "saldo_p10": 465,
+    "saldo_p90": 1229,
+    "pnl_mes_mediana": 3.39,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 10,
+    "saldo_mediana": 724,
+    "saldo_p10": 470,
+    "saldo_p90": 1306,
+    "pnl_mes_mediana": 3.57,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 11,
+    "saldo_mediana": 754,
+    "saldo_p10": 474,
+    "saldo_p90": 1403,
+    "pnl_mes_mediana": 4.13,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 12,
+    "saldo_mediana": 787,
+    "saldo_p10": 481,
+    "saldo_p90": 1493,
+    "pnl_mes_mediana": 3.15,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 13,
+    "saldo_mediana": 821,
+    "saldo_p10": 484,
+    "saldo_p90": 1599,
+    "pnl_mes_mediana": 3.72,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 14,
+    "saldo_mediana": 852,
+    "saldo_p10": 491,
+    "saldo_p90": 1700,
+    "pnl_mes_mediana": 4.44,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 15,
+    "saldo_mediana": 893,
+    "saldo_p10": 495,
+    "saldo_p90": 1815,
+    "pnl_mes_mediana": 4.83,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 16,
+    "saldo_mediana": 930,
+    "saldo_p10": 505,
+    "saldo_p90": 1937,
+    "pnl_mes_mediana": 3.83,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 17,
+    "saldo_mediana": 969,
+    "saldo_p10": 511,
+    "saldo_p90": 2054,
+    "pnl_mes_mediana": 4.63,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 18,
+    "saldo_mediana": 1012,
+    "saldo_p10": 520,
+    "saldo_p90": 2169,
+    "pnl_mes_mediana": 3.5,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 19,
+    "saldo_mediana": 1049,
+    "saldo_p10": 530,
+    "saldo_p90": 2312,
+    "pnl_mes_mediana": 4.78,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 20,
+    "saldo_mediana": 1092,
+    "saldo_p10": 541,
+    "saldo_p90": 2453,
+    "pnl_mes_mediana": 4.97,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 21,
+    "saldo_mediana": 1132,
+    "saldo_p10": 546,
+    "saldo_p90": 2638,
+    "pnl_mes_mediana": 4.76,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 22,
+    "saldo_mediana": 1178,
+    "saldo_p10": 558,
+    "saldo_p90": 2813,
+    "pnl_mes_mediana": 4.44,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 23,
+    "saldo_mediana": 1236,
+    "saldo_p10": 566,
+    "saldo_p90": 2965,
+    "pnl_mes_mediana": 5.04,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 24,
+    "saldo_mediana": 1288,
+    "saldo_p10": 574,
+    "saldo_p90": 3183,
+    "pnl_mes_mediana": 5.35,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 25,
+    "saldo_mediana": 1333,
+    "saldo_p10": 587,
+    "saldo_p90": 3354,
+    "pnl_mes_mediana": 5.01,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 26,
+    "saldo_mediana": 1379,
+    "saldo_p10": 600,
+    "saldo_p90": 3556,
+    "pnl_mes_mediana": 4.93,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 27,
+    "saldo_mediana": 1434,
+    "saldo_p10": 608,
+    "saldo_p90": 3749,
+    "pnl_mes_mediana": 4.37,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 28,
+    "saldo_mediana": 1490,
+    "saldo_p10": 616,
+    "saldo_p90": 3958,
+    "pnl_mes_mediana": 5.24,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 29,
+    "saldo_mediana": 1547,
+    "saldo_p10": 627,
+    "saldo_p90": 4214,
+    "pnl_mes_mediana": 5.6,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 30,
+    "saldo_mediana": 1604,
+    "saldo_p10": 638,
+    "saldo_p90": 4444,
+    "pnl_mes_mediana": 5.81,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 31,
+    "saldo_mediana": 1659,
+    "saldo_p10": 654,
+    "saldo_p90": 4735,
+    "pnl_mes_mediana": 7.23,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 32,
+    "saldo_mediana": 1714,
+    "saldo_p10": 667,
+    "saldo_p90": 4926,
+    "pnl_mes_mediana": 6.26,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 33,
+    "saldo_mediana": 1788,
+    "saldo_p10": 682,
+    "saldo_p90": 5230,
+    "pnl_mes_mediana": 6.55,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 34,
+    "saldo_mediana": 1869,
+    "saldo_p10": 696,
+    "saldo_p90": 5526,
+    "pnl_mes_mediana": 6.35,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 35,
+    "saldo_mediana": 1939,
+    "saldo_p10": 713,
+    "saldo_p90": 5825,
+    "pnl_mes_mediana": 8.34,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 36,
+    "saldo_mediana": 2009,
+    "saldo_p10": 725,
+    "saldo_p90": 6191,
+    "pnl_mes_mediana": 8.0,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 37,
+    "saldo_mediana": 2088,
+    "saldo_p10": 740,
+    "saldo_p90": 6547,
+    "pnl_mes_mediana": 7.89,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 38,
+    "saldo_mediana": 2173,
+    "saldo_p10": 762,
+    "saldo_p90": 6927,
+    "pnl_mes_mediana": 8.31,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 39,
+    "saldo_mediana": 2272,
+    "saldo_p10": 787,
+    "saldo_p90": 7325,
+    "pnl_mes_mediana": 7.47,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 40,
+    "saldo_mediana": 2360,
+    "saldo_p10": 802,
+    "saldo_p90": 7752,
+    "pnl_mes_mediana": 7.56,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 41,
+    "saldo_mediana": 2466,
+    "saldo_p10": 817,
+    "saldo_p90": 8174,
+    "pnl_mes_mediana": 10.73,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 42,
+    "saldo_mediana": 2560,
+    "saldo_p10": 839,
+    "saldo_p90": 8679,
+    "pnl_mes_mediana": 10.73,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 43,
+    "saldo_mediana": 2675,
+    "saldo_p10": 863,
+    "saldo_p90": 9102,
+    "pnl_mes_mediana": 10.85,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 44,
+    "saldo_mediana": 2773,
+    "saldo_p10": 888,
+    "saldo_p90": 9716,
+    "pnl_mes_mediana": 8.46,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 45,
+    "saldo_mediana": 2871,
+    "saldo_p10": 907,
+    "saldo_p90": 10343,
+    "pnl_mes_mediana": 11.75,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 46,
+    "saldo_mediana": 2975,
+    "saldo_p10": 934,
+    "saldo_p90": 10944,
+    "pnl_mes_mediana": 9.93,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 47,
+    "saldo_mediana": 3112,
+    "saldo_p10": 956,
+    "saldo_p90": 11425,
+    "pnl_mes_mediana": 11.43,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 48,
+    "saldo_mediana": 3228,
+    "saldo_p10": 981,
+    "saldo_p90": 12069,
+    "pnl_mes_mediana": 8.95,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 49,
+    "saldo_mediana": 3361,
+    "saldo_p10": 1000,
+    "saldo_p90": 12864,
+    "pnl_mes_mediana": 10.72,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 50,
+    "saldo_mediana": 3509,
+    "saldo_p10": 1031,
+    "saldo_p90": 13654,
+    "pnl_mes_mediana": 13.0,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 51,
+    "saldo_mediana": 3648,
+    "saldo_p10": 1056,
+    "saldo_p90": 14342,
+    "pnl_mes_mediana": 15.19,
+    "meses_en_perdida_pct": 35
+   },
+   {
+    "mes": 52,
+    "saldo_mediana": 3794,
+    "saldo_p10": 1092,
+    "saldo_p90": 15109,
+    "pnl_mes_mediana": 13.78,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 53,
+    "saldo_mediana": 3921,
+    "saldo_p10": 1118,
+    "saldo_p90": 16101,
+    "pnl_mes_mediana": 13.99,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 54,
+    "saldo_mediana": 4055,
+    "saldo_p10": 1143,
+    "saldo_p90": 16975,
+    "pnl_mes_mediana": 13.83,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 55,
+    "saldo_mediana": 4237,
+    "saldo_p10": 1181,
+    "saldo_p90": 17911,
+    "pnl_mes_mediana": 18.06,
+    "meses_en_perdida_pct": 35
+   },
+   {
+    "mes": 56,
+    "saldo_mediana": 4426,
+    "saldo_p10": 1228,
+    "saldo_p90": 18763,
+    "pnl_mes_mediana": 14.58,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 57,
+    "saldo_mediana": 4574,
+    "saldo_p10": 1264,
+    "saldo_p90": 19764,
+    "pnl_mes_mediana": 17.32,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 58,
+    "saldo_mediana": 4758,
+    "saldo_p10": 1306,
+    "saldo_p90": 21012,
+    "pnl_mes_mediana": 16.74,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 59,
+    "saldo_mediana": 4930,
+    "saldo_p10": 1334,
+    "saldo_p90": 22096,
+    "pnl_mes_mediana": 15.78,
+    "meses_en_perdida_pct": 36
+   },
+   {
+    "mes": 60,
+    "saldo_mediana": 5136,
+    "saldo_p10": 1358,
+    "saldo_p90": 23133,
+    "pnl_mes_mediana": 16.49,
+    "meses_en_perdida_pct": 37
+   }
+  ],
+  "años": [
+   {
+    "año": 1,
+    "saldo_mediana": 787,
+    "p10": 481,
+    "p90": 1493,
+    "ganancia_del_año_mediana": 287
+   },
+   {
+    "año": 2,
+    "saldo_mediana": 1288,
+    "p10": 574,
+    "p90": 3183,
+    "ganancia_del_año_mediana": 501
+   },
+   {
+    "año": 3,
+    "saldo_mediana": 2009,
+    "p10": 725,
+    "p90": 6191,
+    "ganancia_del_año_mediana": 722
+   },
+   {
+    "año": 4,
+    "saldo_mediana": 3228,
+    "p10": 981,
+    "p90": 12069,
+    "ganancia_del_año_mediana": 1218
+   },
+   {
+    "año": 5,
+    "saldo_mediana": 5136,
+    "p10": 1358,
+    "p90": 23133,
+    "ganancia_del_año_mediana": 1908
+   }
+  ],
+  "operaciones_saltadas_por_lote_minimo_pct": 2.0,
+  "caida_max_mediana_pct": 21.4,
+  "caida_max_p95_pct": 26.6,
+  "termina_en_perdida_pct": 0.9,
+  "llega_a": {
+   "$1,000": 95,
+   "$5,000": 54,
+   "$10,000": 30,
+   "$50,000": 3,
+   "$100,000": 1
+  }
+ },
+ "10 % con freno": {
+  "meses": [
+   {
+    "mes": 1,
+    "saldo_mediana": 509,
+    "saldo_p10": 437,
+    "saldo_p90": 729,
+    "pnl_mes_mediana": 9.07,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 2,
+    "saldo_mediana": 539,
+    "saldo_p10": 409,
+    "saldo_p90": 927,
+    "pnl_mes_mediana": 6.16,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 3,
+    "saldo_mediana": 572,
+    "saldo_p10": 398,
+    "saldo_p90": 1087,
+    "pnl_mes_mediana": 3.39,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 4,
+    "saldo_mediana": 608,
+    "saldo_p10": 392,
+    "saldo_p90": 1250,
+    "pnl_mes_mediana": 2.2,
+    "meses_en_perdida_pct": 40
+   },
+   {
+    "mes": 5,
+    "saldo_mediana": 643,
+    "saldo_p10": 392,
+    "saldo_p90": 1438,
+    "pnl_mes_mediana": 2.04,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 6,
+    "saldo_mediana": 678,
+    "saldo_p10": 392,
+    "saldo_p90": 1616,
+    "pnl_mes_mediana": 1.17,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 7,
+    "saldo_mediana": 712,
+    "saldo_p10": 392,
+    "saldo_p90": 1811,
+    "pnl_mes_mediana": 1.52,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 8,
+    "saldo_mediana": 745,
+    "saldo_p10": 394,
+    "saldo_p90": 2024,
+    "pnl_mes_mediana": 1.98,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 9,
+    "saldo_mediana": 775,
+    "saldo_p10": 395,
+    "saldo_p90": 2285,
+    "pnl_mes_mediana": 1.35,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 10,
+    "saldo_mediana": 812,
+    "saldo_p10": 398,
+    "saldo_p90": 2519,
+    "pnl_mes_mediana": 1.78,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 11,
+    "saldo_mediana": 848,
+    "saldo_p10": 401,
+    "saldo_p90": 2797,
+    "pnl_mes_mediana": 1.61,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 12,
+    "saldo_mediana": 894,
+    "saldo_p10": 404,
+    "saldo_p90": 3086,
+    "pnl_mes_mediana": 1.63,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 13,
+    "saldo_mediana": 933,
+    "saldo_p10": 407,
+    "saldo_p90": 3438,
+    "pnl_mes_mediana": 1.98,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 14,
+    "saldo_mediana": 978,
+    "saldo_p10": 411,
+    "saldo_p90": 3789,
+    "pnl_mes_mediana": 2.48,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 15,
+    "saldo_mediana": 1021,
+    "saldo_p10": 416,
+    "saldo_p90": 4161,
+    "pnl_mes_mediana": 2.36,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 16,
+    "saldo_mediana": 1067,
+    "saldo_p10": 424,
+    "saldo_p90": 4558,
+    "pnl_mes_mediana": 2.18,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 17,
+    "saldo_mediana": 1124,
+    "saldo_p10": 428,
+    "saldo_p90": 4904,
+    "pnl_mes_mediana": 2.81,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 18,
+    "saldo_mediana": 1178,
+    "saldo_p10": 432,
+    "saldo_p90": 5437,
+    "pnl_mes_mediana": 2.06,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 19,
+    "saldo_mediana": 1241,
+    "saldo_p10": 438,
+    "saldo_p90": 5930,
+    "pnl_mes_mediana": 2.85,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 20,
+    "saldo_mediana": 1297,
+    "saldo_p10": 445,
+    "saldo_p90": 6341,
+    "pnl_mes_mediana": 2.7,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 21,
+    "saldo_mediana": 1355,
+    "saldo_p10": 452,
+    "saldo_p90": 6910,
+    "pnl_mes_mediana": 3.19,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 22,
+    "saldo_mediana": 1403,
+    "saldo_p10": 458,
+    "saldo_p90": 7620,
+    "pnl_mes_mediana": 2.84,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 23,
+    "saldo_mediana": 1479,
+    "saldo_p10": 468,
+    "saldo_p90": 8408,
+    "pnl_mes_mediana": 3.66,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 24,
+    "saldo_mediana": 1550,
+    "saldo_p10": 477,
+    "saldo_p90": 9085,
+    "pnl_mes_mediana": 3.68,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 25,
+    "saldo_mediana": 1627,
+    "saldo_p10": 485,
+    "saldo_p90": 9673,
+    "pnl_mes_mediana": 3.01,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 26,
+    "saldo_mediana": 1724,
+    "saldo_p10": 490,
+    "saldo_p90": 10714,
+    "pnl_mes_mediana": 2.75,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 27,
+    "saldo_mediana": 1814,
+    "saldo_p10": 495,
+    "saldo_p90": 11561,
+    "pnl_mes_mediana": 3.09,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 28,
+    "saldo_mediana": 1901,
+    "saldo_p10": 503,
+    "saldo_p90": 12706,
+    "pnl_mes_mediana": 4.26,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 29,
+    "saldo_mediana": 1995,
+    "saldo_p10": 515,
+    "saldo_p90": 13568,
+    "pnl_mes_mediana": 3.7,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 30,
+    "saldo_mediana": 2083,
+    "saldo_p10": 528,
+    "saldo_p90": 14381,
+    "pnl_mes_mediana": 4.98,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 31,
+    "saldo_mediana": 2172,
+    "saldo_p10": 542,
+    "saldo_p90": 15858,
+    "pnl_mes_mediana": 4.75,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 32,
+    "saldo_mediana": 2272,
+    "saldo_p10": 551,
+    "saldo_p90": 16810,
+    "pnl_mes_mediana": 4.12,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 33,
+    "saldo_mediana": 2392,
+    "saldo_p10": 566,
+    "saldo_p90": 18139,
+    "pnl_mes_mediana": 4.82,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 34,
+    "saldo_mediana": 2506,
+    "saldo_p10": 579,
+    "saldo_p90": 19369,
+    "pnl_mes_mediana": 4.39,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 35,
+    "saldo_mediana": 2644,
+    "saldo_p10": 596,
+    "saldo_p90": 20570,
+    "pnl_mes_mediana": 7.0,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 36,
+    "saldo_mediana": 2770,
+    "saldo_p10": 612,
+    "saldo_p90": 22487,
+    "pnl_mes_mediana": 6.16,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 37,
+    "saldo_mediana": 2899,
+    "saldo_p10": 626,
+    "saldo_p90": 24291,
+    "pnl_mes_mediana": 6.16,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 38,
+    "saldo_mediana": 3024,
+    "saldo_p10": 640,
+    "saldo_p90": 25942,
+    "pnl_mes_mediana": 6.27,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 39,
+    "saldo_mediana": 3227,
+    "saldo_p10": 656,
+    "saldo_p90": 27733,
+    "pnl_mes_mediana": 6.11,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 40,
+    "saldo_mediana": 3336,
+    "saldo_p10": 679,
+    "saldo_p90": 30270,
+    "pnl_mes_mediana": 5.82,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 41,
+    "saldo_mediana": 3514,
+    "saldo_p10": 698,
+    "saldo_p90": 32684,
+    "pnl_mes_mediana": 8.28,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 42,
+    "saldo_mediana": 3684,
+    "saldo_p10": 716,
+    "saldo_p90": 35377,
+    "pnl_mes_mediana": 9.58,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 43,
+    "saldo_mediana": 3844,
+    "saldo_p10": 731,
+    "saldo_p90": 38750,
+    "pnl_mes_mediana": 8.77,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 44,
+    "saldo_mediana": 4022,
+    "saldo_p10": 748,
+    "saldo_p90": 41486,
+    "pnl_mes_mediana": 8.01,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 45,
+    "saldo_mediana": 4184,
+    "saldo_p10": 776,
+    "saldo_p90": 45619,
+    "pnl_mes_mediana": 10.19,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 46,
+    "saldo_mediana": 4390,
+    "saldo_p10": 794,
+    "saldo_p90": 48475,
+    "pnl_mes_mediana": 6.76,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 47,
+    "saldo_mediana": 4642,
+    "saldo_p10": 805,
+    "saldo_p90": 51244,
+    "pnl_mes_mediana": 9.54,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 48,
+    "saldo_mediana": 4912,
+    "saldo_p10": 824,
+    "saldo_p90": 55838,
+    "pnl_mes_mediana": 7.68,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 49,
+    "saldo_mediana": 5128,
+    "saldo_p10": 850,
+    "saldo_p90": 61245,
+    "pnl_mes_mediana": 8.61,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 50,
+    "saldo_mediana": 5378,
+    "saldo_p10": 863,
+    "saldo_p90": 66575,
+    "pnl_mes_mediana": 12.53,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 51,
+    "saldo_mediana": 5589,
+    "saldo_p10": 888,
+    "saldo_p90": 73449,
+    "pnl_mes_mediana": 13.71,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 52,
+    "saldo_mediana": 5996,
+    "saldo_p10": 912,
+    "saldo_p90": 78595,
+    "pnl_mes_mediana": 12.99,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 53,
+    "saldo_mediana": 6237,
+    "saldo_p10": 938,
+    "saldo_p90": 82908,
+    "pnl_mes_mediana": 12.8,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 54,
+    "saldo_mediana": 6555,
+    "saldo_p10": 970,
+    "saldo_p90": 89738,
+    "pnl_mes_mediana": 12.39,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 55,
+    "saldo_mediana": 6989,
+    "saldo_p10": 995,
+    "saldo_p90": 93745,
+    "pnl_mes_mediana": 17.04,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 56,
+    "saldo_mediana": 7347,
+    "saldo_p10": 1015,
+    "saldo_p90": 102391,
+    "pnl_mes_mediana": 11.78,
+    "meses_en_perdida_pct": 39
+   },
+   {
+    "mes": 57,
+    "saldo_mediana": 7804,
+    "saldo_p10": 1049,
+    "saldo_p90": 110872,
+    "pnl_mes_mediana": 16.18,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 58,
+    "saldo_mediana": 8254,
+    "saldo_p10": 1089,
+    "saldo_p90": 118048,
+    "pnl_mes_mediana": 14.17,
+    "meses_en_perdida_pct": 38
+   },
+   {
+    "mes": 59,
+    "saldo_mediana": 8632,
+    "saldo_p10": 1128,
+    "saldo_p90": 128541,
+    "pnl_mes_mediana": 17.02,
+    "meses_en_perdida_pct": 37
+   },
+   {
+    "mes": 60,
+    "saldo_mediana": 9023,
+    "saldo_p10": 1144,
+    "saldo_p90": 137192,
+    "pnl_mes_mediana": 13.4,
+    "meses_en_perdida_pct": 38
+   }
+  ],
+  "años": [
+   {
+    "año": 1,
+    "saldo_mediana": 894,
+    "p10": 404,
+    "p90": 3086,
+    "ganancia_del_año_mediana": 394
+   },
+   {
+    "año": 2,
+    "saldo_mediana": 1550,
+    "p10": 477,
+    "p90": 9085,
+    "ganancia_del_año_mediana": 656
+   },
+   {
+    "año": 3,
+    "saldo_mediana": 2770,
+    "p10": 612,
+    "p90": 22487,
+    "ganancia_del_año_mediana": 1220
+   },
+   {
+    "año": 4,
+    "saldo_mediana": 4912,
+    "p10": 824,
+    "p90": 55838,
+    "ganancia_del_año_mediana": 2141
+   },
+   {
+    "año": 5,
+    "saldo_mediana": 9023,
+    "p10": 1144,
+    "p90": 137192,
+    "ganancia_del_año_mediana": 4111
+   }
+  ],
+  "operaciones_saltadas_por_lote_minimo_pct": 3.0,
+  "caida_max_mediana_pct": 28.6,
+  "caida_max_p95_pct": 36.4,
+  "termina_en_perdida_pct": 2.2,
+  "llega_a": {
+   "$1,000": 94,
+   "$5,000": 66,
+   "$10,000": 51,
+   "$50,000": 22,
+   "$100,000": 14
+  }
+ },
+ "historia_real": {
+  "5 % con freno": {
+   "2024-07": 488.85,
+   "2024-08": 523.7,
+   "2024-09": 1031.29,
+   "2024-10": 928.7,
+   "2024-11": 951.06,
+   "2024-12": 974.25,
+   "2025-01": 1010.91,
+   "2025-02": 1067.98,
+   "2025-03": 1067.98,
+   "2025-04": 1103.67,
+   "2025-05": 1055.68,
+   "2025-06": 1067.97,
+   "2025-07": 917.5,
+   "2025-08": 1027.86,
+   "2025-09": 1156.46,
+   "2025-10": 1423.38,
+   "2025-11": 1483.83,
+   "2025-12": 1598.64,
+   "2026-01": 1598.64,
+   "2026-02": 1615.64,
+   "2026-03": 1695.02,
+   "2026-04": 1722.99,
+   "2026-05": 2077.82,
+   "2026-06": 1978.59,
+   "2026-07": 1691.74,
+   "2026-08": 1683.04,
+   "2026-09": 1683.04,
+   "2026-10": 1624.95
+  },
+  "10 % con freno": {
+   "2024-07": 472.31,
+   "2024-08": 541.04,
+   "2024-09": 1716.56,
+   "2024-10": 1383.43,
+   "2024-11": 1450.5,
+   "2024-12": 1556.78,
+   "2025-01": 1776.7,
+   "2025-02": 1948.89,
+   "2025-03": 1948.89,
+   "2025-04": 2102.68,
+   "2025-05": 1896.89,
+   "2025-06": 1929.92,
+   "2025-07": 1651.8,
+   "2025-08": 1874.96,
+   "2025-09": 2313.35,
+   "2025-10": 3396.57,
+   "2025-11": 3685.8,
+   "2025-12": 4332.65,
+   "2026-01": 4332.65,
+   "2026-02": 4433.49,
+   "2026-03": 4896.5,
+   "2026-04": 5106.33,
+   "2026-05": 7319.98,
+   "2026-06": 6613.03,
+   "2026-07": 5237.96,
+   "2026-08": 5214.76,
+   "2026-09": 5214.76,
+   "2026-10": 5174.12
+  }
+ }
+}
