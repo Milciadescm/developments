@@ -1,0 +1,23 @@
+; FibFVG Hold - CUENTA REAL de $100K (Cueto & Co. Real - Live funds / Billetera 2). Solo oro y plata.
+; Plan de posiciones del bot v3: 0.5 % por unidad (hasta 4 unidades), salida chandelier (dias a semanas), stop duro del 10 %.
+; Backtest 2006-2026: +0.71R por operacion despues de swaps, t = 4.0. Mantiene posiciones de noche y fines de semana:
+; NO usar en GFT (regla de 24 horas). Poner en UN solo grafico (por ejemplo XAUUSD): opera oro y plata desde ahi.
+; Comparte cuenta con el Prop24 V2 Real sin mezclarse: cada bot lleva su propia cuenta virtual por numero magico.
+RiskProfile=Real-OroPlata
+RiskPctPerUnit=0.5
+StartBalance=100000
+ExitMode=1
+MaxUnits=4
+HardStopPct=10
+MaxLossPct=0
+TrailingMaxLoss=false
+DailyLossPct=0
+GuardBufferPct=1
+SizeOnStartBalance=false
+KeepAliveDays=0
+AllFiveMarkets=false
+SymbolsToTrade=AUTO
+WriteLog=true
+ShowPanel=true
+ResetHalt=false
+Magic=7712500

@@ -1,0 +1,1137 @@
+{
+ "kpi": {
+  "operaciones": 70,
+  "por_mes": 2.59,
+  "por_semana": 0.6,
+  "R_por_operacion": 0.464,
+  "aciertos_pct": 61.4,
+  "ganancia_media_R": 1.26,
+  "perdida_media_R": -0.81,
+  "RR": 1.56,
+  "profit_factor": 2.49,
+  "t": 2.12,
+  "mitad1_R": 0.453,
+  "mitad2_R": 0.477,
+  "horas_abierta_mediana": 24.0,
+  "peor_racha": 4
+ },
+ "escenarios": {
+  "base": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 3659,
+     "cobrado_p10": 563,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 304,
+     "sin_cobrar_nada_pct": 6.5,
+     "quema_cuenta_pct": 4.5,
+     "recupera_760_pct": 88.8,
+     "dias_al_primer_pago_mediana": 160.0,
+     "caida_max_mediana_pct": 2.89,
+     "caida_max_p95_pct": 6.08
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 7675,
+     "cobrado_p10": 563,
+     "cobrado_p90": 17622,
+     "por_mes_mediana": 639,
+     "sin_cobrar_nada_pct": 6.5,
+     "quema_cuenta_pct": 5.2,
+     "recupera_760_pct": 88.8,
+     "dias_al_primer_pago_mediana": 160.0,
+     "caida_max_mediana_pct": 2.9,
+     "caida_max_p95_pct": 6.06
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 184897,
+     "saldo_p10": 84741,
+     "saldo_p90": 606020,
+     "ganancia_mediana_pct": 84.9,
+     "pierde_dinero_pct": 18.6,
+     "caida_max_mediana_pct": 26.1,
+     "caida_max_p95_pct": 32.3,
+     "caida_30_pct": 14.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 163021,
+     "saldo_p10": 96155,
+     "saldo_p90": 308544,
+     "ganancia_mediana_pct": 63.0,
+     "pierde_dinero_pct": 11.6,
+     "caida_max_mediana_pct": 15.0,
+     "caida_max_p95_pct": 24.2,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 7646,
+     "cobrado_p10": 4000,
+     "cobrado_p90": 10000,
+     "por_mes_mediana": 318,
+     "sin_cobrar_nada_pct": 4.0,
+     "quema_cuenta_pct": 6.8,
+     "recupera_760_pct": 95.7,
+     "dias_al_primer_pago_mediana": 161.0,
+     "caida_max_mediana_pct": 3.82,
+     "caida_max_p95_pct": 6.65
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 18364,
+     "cobrado_p10": 5564,
+     "cobrado_p90": 32811,
+     "por_mes_mediana": 765,
+     "sin_cobrar_nada_pct": 4.0,
+     "quema_cuenta_pct": 11.3,
+     "recupera_760_pct": 95.7,
+     "dias_al_primer_pago_mediana": 161.0,
+     "caida_max_mediana_pct": 3.83,
+     "caida_max_p95_pct": 6.53
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 371778,
+     "saldo_p10": 111922,
+     "saldo_p90": 2121545,
+     "ganancia_mediana_pct": 271.8,
+     "pierde_dinero_pct": 7.8,
+     "caida_max_mediana_pct": 28.5,
+     "caida_max_p95_pct": 34.2,
+     "caida_30_pct": 29.4,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 281596,
+     "saldo_p10": 123633,
+     "saldo_p90": 701094,
+     "ganancia_mediana_pct": 181.6,
+     "pierde_dinero_pct": 4.8,
+     "caida_max_mediana_pct": 19.0,
+     "caida_max_p95_pct": 25.4,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "rachas": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 3991,
+     "cobrado_p10": 840,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 332,
+     "sin_cobrar_nada_pct": 5.2,
+     "quema_cuenta_pct": 3.9,
+     "recupera_760_pct": 90.3,
+     "dias_al_primer_pago_mediana": 157.5,
+     "caida_max_mediana_pct": 2.93,
+     "caida_max_p95_pct": 5.99
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 7906,
+     "cobrado_p10": 840,
+     "cobrado_p90": 19396,
+     "por_mes_mediana": 658,
+     "sin_cobrar_nada_pct": 5.2,
+     "quema_cuenta_pct": 4.5,
+     "recupera_760_pct": 90.3,
+     "dias_al_primer_pago_mediana": 157.5,
+     "caida_max_mediana_pct": 2.93,
+     "caida_max_p95_pct": 5.99
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 205060,
+     "saldo_p10": 84370,
+     "saldo_p90": 739628,
+     "ganancia_mediana_pct": 105.1,
+     "pierde_dinero_pct": 17.2,
+     "caida_max_mediana_pct": 26.8,
+     "caida_max_p95_pct": 32.1,
+     "caida_30_pct": 15.2,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 166116,
+     "saldo_p10": 96914,
+     "saldo_p90": 333993,
+     "ganancia_mediana_pct": 66.1,
+     "pierde_dinero_pct": 11.6,
+     "caida_max_mediana_pct": 15.4,
+     "caida_max_p95_pct": 24.3,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 7404,
+     "cobrado_p10": 3142,
+     "cobrado_p90": 10000,
+     "por_mes_mediana": 308,
+     "sin_cobrar_nada_pct": 4.1,
+     "quema_cuenta_pct": 7.8,
+     "recupera_760_pct": 95.5,
+     "dias_al_primer_pago_mediana": 158.0,
+     "caida_max_mediana_pct": 3.84,
+     "caida_max_p95_pct": 6.51
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 18001,
+     "cobrado_p10": 4689,
+     "cobrado_p90": 34337,
+     "por_mes_mediana": 750,
+     "sin_cobrar_nada_pct": 4.1,
+     "quema_cuenta_pct": 12.2,
+     "recupera_760_pct": 95.5,
+     "dias_al_primer_pago_mediana": 158.0,
+     "caida_max_mediana_pct": 3.84,
+     "caida_max_p95_pct": 6.44
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 397872,
+     "saldo_p10": 105203,
+     "saldo_p90": 2471896,
+     "ganancia_mediana_pct": 297.9,
+     "pierde_dinero_pct": 8.5,
+     "caida_max_mediana_pct": 28.8,
+     "caida_max_p95_pct": 34.8,
+     "caida_30_pct": 34.2,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 279061,
+     "saldo_p10": 120207,
+     "saldo_p90": 740419,
+     "ganancia_mediana_pct": 179.1,
+     "pierde_dinero_pct": 5.5,
+     "caida_max_mediana_pct": 20.2,
+     "caida_max_p95_pct": 26.0,
+     "caida_30_pct": 0.1,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "ventaja -50 %": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 2000,
+     "cobrado_p10": 0,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 166,
+     "sin_cobrar_nada_pct": 25.6,
+     "quema_cuenta_pct": 25.4,
+     "recupera_760_pct": 69.0,
+     "dias_al_primer_pago_mediana": 172.0,
+     "caida_max_mediana_pct": 4.72,
+     "caida_max_p95_pct": 7.05
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 3875,
+     "cobrado_p10": 0,
+     "cobrado_p90": 13698,
+     "por_mes_mediana": 322,
+     "sin_cobrar_nada_pct": 25.6,
+     "quema_cuenta_pct": 28.3,
+     "recupera_760_pct": 69.0,
+     "dias_al_primer_pago_mediana": 172.0,
+     "caida_max_mediana_pct": 4.72,
+     "caida_max_p95_pct": 6.93
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 104962,
+     "saldo_p10": 71013,
+     "saldo_p90": 280244,
+     "ganancia_mediana_pct": 5.0,
+     "pierde_dinero_pct": 46.7,
+     "caida_max_mediana_pct": 29.5,
+     "caida_max_p95_pct": 37.6,
+     "caida_30_pct": 45.3,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 113045,
+     "saldo_p10": 78226,
+     "saldo_p90": 215225,
+     "ganancia_mediana_pct": 13.0,
+     "pierde_dinero_pct": 38.6,
+     "caida_max_mediana_pct": 21.5,
+     "caida_max_p95_pct": 27.1,
+     "caida_30_pct": 0.8,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 4000,
+     "cobrado_p10": 0,
+     "cobrado_p90": 8000,
+     "por_mes_mediana": 166,
+     "sin_cobrar_nada_pct": 22.3,
+     "quema_cuenta_pct": 40.3,
+     "recupera_760_pct": 74.9,
+     "dias_al_primer_pago_mediana": 182.0,
+     "caida_max_mediana_pct": 6.08,
+     "caida_max_p95_pct": 8.75
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 8465,
+     "cobrado_p10": 0,
+     "cobrado_p90": 22489,
+     "por_mes_mediana": 352,
+     "sin_cobrar_nada_pct": 22.3,
+     "quema_cuenta_pct": 53.8,
+     "recupera_760_pct": 74.9,
+     "dias_al_primer_pago_mediana": 182.0,
+     "caida_max_mediana_pct": 6.08,
+     "caida_max_p95_pct": 7.12
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 121677,
+     "saldo_p10": 70607,
+     "saldo_p90": 383197,
+     "ganancia_mediana_pct": 21.7,
+     "pierde_dinero_pct": 39.0,
+     "caida_max_mediana_pct": 33.5,
+     "caida_max_p95_pct": 43.3,
+     "caida_30_pct": 78.5,
+     "bot_detenido_en_50k_pct": 0.2
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 126982,
+     "saldo_p10": 78038,
+     "saldo_p90": 287434,
+     "ganancia_mediana_pct": 27.0,
+     "pierde_dinero_pct": 30.6,
+     "caida_max_mediana_pct": 25.1,
+     "caida_max_p95_pct": 31.0,
+     "caida_30_pct": 8.2,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "sin ventaja": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 2000,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 56.2,
+     "quema_cuenta_pct": 56.9,
+     "recupera_760_pct": 40.2,
+     "dias_al_primer_pago_mediana": 195.0,
+     "caida_max_mediana_pct": 6.19,
+     "caida_max_p95_pct": 8.0
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 9582,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 56.2,
+     "quema_cuenta_pct": 60.5,
+     "recupera_760_pct": 40.2,
+     "dias_al_primer_pago_mediana": 195.0,
+     "caida_max_mediana_pct": 6.19,
+     "caida_max_p95_pct": 7.47
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 77356,
+     "saldo_p10": 61128,
+     "saldo_p90": 163948,
+     "ganancia_mediana_pct": -22.6,
+     "pierde_dinero_pct": 71.8,
+     "caida_max_mediana_pct": 34.6,
+     "caida_max_p95_pct": 44.8,
+     "caida_30_pct": 81.2,
+     "bot_detenido_en_50k_pct": 0.6
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 85603,
+     "saldo_p10": 72539,
+     "saldo_p90": 147451,
+     "ganancia_mediana_pct": -14.4,
+     "pierde_dinero_pct": 64.7,
+     "caida_max_mediana_pct": 25.3,
+     "caida_max_p95_pct": 31.3,
+     "caida_30_pct": 9.6,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 5669,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 54.8,
+     "quema_cuenta_pct": 78.9,
+     "recupera_760_pct": 42.5,
+     "dias_al_primer_pago_mediana": 200.0,
+     "caida_max_mediana_pct": 6.58,
+     "caida_max_p95_pct": 10.19
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 12593,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 54.8,
+     "quema_cuenta_pct": 89.1,
+     "recupera_760_pct": 42.5,
+     "dias_al_primer_pago_mediana": 200.0,
+     "caida_max_mediana_pct": 6.48,
+     "caida_max_p95_pct": 8.25
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 75320,
+     "saldo_p10": 52766,
+     "saldo_p90": 165441,
+     "ganancia_mediana_pct": -24.7,
+     "pierde_dinero_pct": 71.5,
+     "caida_max_mediana_pct": 40.8,
+     "caida_max_p95_pct": 52.3,
+     "caida_30_pct": 97.9,
+     "bot_detenido_en_50k_pct": 7.8
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 83966,
+     "saldo_p10": 68753,
+     "saldo_p90": 149522,
+     "ganancia_mediana_pct": -16.0,
+     "pierde_dinero_pct": 67.3,
+     "caida_max_mediana_pct": 29.5,
+     "caida_max_p95_pct": 37.9,
+     "caida_30_pct": 44.5,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "costos x3": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 3400,
+     "cobrado_p10": 231,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 283,
+     "sin_cobrar_nada_pct": 8.5,
+     "quema_cuenta_pct": 7.2,
+     "recupera_760_pct": 87.1,
+     "dias_al_primer_pago_mediana": 159.0,
+     "caida_max_mediana_pct": 3.19,
+     "caida_max_p95_pct": 6.36
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 7209,
+     "cobrado_p10": 231,
+     "cobrado_p90": 17150,
+     "por_mes_mediana": 600,
+     "sin_cobrar_nada_pct": 8.5,
+     "quema_cuenta_pct": 8.5,
+     "recupera_760_pct": 87.1,
+     "dias_al_primer_pago_mediana": 159.0,
+     "caida_max_mediana_pct": 3.19,
+     "caida_max_p95_pct": 6.35
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 162663,
+     "saldo_p10": 80308,
+     "saldo_p90": 545758,
+     "ganancia_mediana_pct": 62.7,
+     "pierde_dinero_pct": 22.9,
+     "caida_max_mediana_pct": 27.3,
+     "caida_max_p95_pct": 33.3,
+     "caida_30_pct": 20.8,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 152781,
+     "saldo_p10": 91281,
+     "saldo_p90": 290323,
+     "ganancia_mediana_pct": 52.8,
+     "pierde_dinero_pct": 15.8,
+     "caida_max_mediana_pct": 16.3,
+     "caida_max_p95_pct": 24.9,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 6454,
+     "cobrado_p10": 2000,
+     "cobrado_p90": 10000,
+     "por_mes_mediana": 268,
+     "sin_cobrar_nada_pct": 5.9,
+     "quema_cuenta_pct": 12.7,
+     "recupera_760_pct": 93.2,
+     "dias_al_primer_pago_mediana": 164.0,
+     "caida_max_mediana_pct": 4.23,
+     "caida_max_p95_pct": 6.92
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 16123,
+     "cobrado_p10": 3189,
+     "cobrado_p90": 30577,
+     "por_mes_mediana": 671,
+     "sin_cobrar_nada_pct": 5.9,
+     "quema_cuenta_pct": 19.1,
+     "recupera_760_pct": 93.2,
+     "dias_al_primer_pago_mediana": 164.0,
+     "caida_max_mediana_pct": 4.26,
+     "caida_max_p95_pct": 6.76
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 253759,
+     "saldo_p10": 91411,
+     "saldo_p90": 1298510,
+     "ganancia_mediana_pct": 153.8,
+     "pierde_dinero_pct": 13.4,
+     "caida_max_mediana_pct": 29.5,
+     "caida_max_p95_pct": 36.7,
+     "caida_30_pct": 44.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 228132,
+     "saldo_p10": 103011,
+     "saldo_p90": 565291,
+     "ganancia_mediana_pct": 128.1,
+     "pierde_dinero_pct": 8.7,
+     "caida_max_mediana_pct": 21.1,
+     "caida_max_p95_pct": 26.8,
+     "caida_30_pct": 0.7,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "menos operaciones (-40 %)": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 2000,
+     "cobrado_p10": 0,
+     "cobrado_p90": 2000,
+     "por_mes_mediana": 166,
+     "sin_cobrar_nada_pct": 25.7,
+     "quema_cuenta_pct": 2.2,
+     "recupera_760_pct": 70.4,
+     "dias_al_primer_pago_mediana": 232.0,
+     "caida_max_mediana_pct": 2.24,
+     "caida_max_p95_pct": 5.12
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 3585,
+     "cobrado_p10": 0,
+     "cobrado_p90": 11846,
+     "por_mes_mediana": 298,
+     "sin_cobrar_nada_pct": 25.7,
+     "quema_cuenta_pct": 2.2,
+     "recupera_760_pct": 70.4,
+     "dias_al_primer_pago_mediana": 232.0,
+     "caida_max_mediana_pct": 2.24,
+     "caida_max_p95_pct": 5.12
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 147091,
+     "saldo_p10": 80063,
+     "saldo_p90": 376943,
+     "ganancia_mediana_pct": 47.1,
+     "pierde_dinero_pct": 25.9,
+     "caida_max_mediana_pct": 23.1,
+     "caida_max_p95_pct": 30.3,
+     "caida_30_pct": 6.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 132296,
+     "saldo_p10": 92537,
+     "saldo_p90": 223886,
+     "ganancia_mediana_pct": 32.3,
+     "pierde_dinero_pct": 17.0,
+     "caida_max_mediana_pct": 12.3,
+     "caida_max_p95_pct": 22.6,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 4000,
+     "cobrado_p10": 1148,
+     "cobrado_p90": 6000,
+     "por_mes_mediana": 166,
+     "sin_cobrar_nada_pct": 5.2,
+     "quema_cuenta_pct": 5.5,
+     "recupera_760_pct": 91.1,
+     "dias_al_primer_pago_mediana": 268.0,
+     "caida_max_mediana_pct": 3.08,
+     "caida_max_p95_pct": 6.19
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 9915,
+     "cobrado_p10": 1148,
+     "cobrado_p90": 21754,
+     "por_mes_mediana": 413,
+     "sin_cobrar_nada_pct": 5.2,
+     "quema_cuenta_pct": 6.6,
+     "recupera_760_pct": 91.1,
+     "dias_al_primer_pago_mediana": 268.0,
+     "caida_max_mediana_pct": 3.08,
+     "caida_max_p95_pct": 6.17
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 214927,
+     "saldo_p10": 85592,
+     "saldo_p90": 811689,
+     "ganancia_mediana_pct": 114.9,
+     "pierde_dinero_pct": 16.8,
+     "caida_max_mediana_pct": 27.3,
+     "caida_max_p95_pct": 32.5,
+     "caida_30_pct": 16.8,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 182956,
+     "saldo_p10": 99795,
+     "saldo_p90": 377827,
+     "ganancia_mediana_pct": 83.0,
+     "pierde_dinero_pct": 10.2,
+     "caida_max_mediana_pct": 15.8,
+     "caida_max_p95_pct": 24.5,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "más operaciones (+40 %)": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 4000,
+     "cobrado_p10": 2000,
+     "cobrado_p90": 6000,
+     "por_mes_mediana": 333,
+     "sin_cobrar_nada_pct": 4.9,
+     "quema_cuenta_pct": 6.8,
+     "recupera_760_pct": 93.7,
+     "dias_al_primer_pago_mediana": 114.0,
+     "caida_max_mediana_pct": 3.4,
+     "caida_max_p95_pct": 6.44
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 12055,
+     "cobrado_p10": 2719,
+     "cobrado_p90": 23989,
+     "por_mes_mediana": 1004,
+     "sin_cobrar_nada_pct": 4.9,
+     "quema_cuenta_pct": 8.8,
+     "recupera_760_pct": 93.7,
+     "dias_al_primer_pago_mediana": 114.0,
+     "caida_max_mediana_pct": 3.41,
+     "caida_max_p95_pct": 6.4
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 248470,
+     "saldo_p10": 95081,
+     "saldo_p90": 1056537,
+     "ganancia_mediana_pct": 148.5,
+     "pierde_dinero_pct": 12.2,
+     "caida_max_mediana_pct": 27.6,
+     "caida_max_p95_pct": 33.6,
+     "caida_30_pct": 20.7,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 207727,
+     "saldo_p10": 107519,
+     "saldo_p90": 445339,
+     "ganancia_mediana_pct": 107.7,
+     "pierde_dinero_pct": 7.8,
+     "caida_max_mediana_pct": 16.9,
+     "caida_max_p95_pct": 24.9,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 10000,
+     "cobrado_p10": 6000,
+     "cobrado_p90": 14000,
+     "por_mes_mediana": 416,
+     "sin_cobrar_nada_pct": 4.3,
+     "quema_cuenta_pct": 8.5,
+     "recupera_760_pct": 95.4,
+     "dias_al_primer_pago_mediana": 116.0,
+     "caida_max_mediana_pct": 4.27,
+     "caida_max_p95_pct": 7.03
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 25869,
+     "cobrado_p10": 7891,
+     "cobrado_p90": 43791,
+     "por_mes_mediana": 1077,
+     "sin_cobrar_nada_pct": 4.3,
+     "quema_cuenta_pct": 17.8,
+     "recupera_760_pct": 95.4,
+     "dias_al_primer_pago_mediana": 116.0,
+     "caida_max_mediana_pct": 4.3,
+     "caida_max_p95_pct": 6.68
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 567272,
+     "saldo_p10": 132626,
+     "saldo_p90": 4033705,
+     "ganancia_mediana_pct": 467.3,
+     "pierde_dinero_pct": 4.7,
+     "caida_max_mediana_pct": 29.7,
+     "caida_max_p95_pct": 35.5,
+     "caida_30_pct": 45.5,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 406920,
+     "saldo_p10": 144179,
+     "saldo_p90": 1211733,
+     "ganancia_mediana_pct": 306.9,
+     "pierde_dinero_pct": 3.0,
+     "caida_max_mediana_pct": 21.6,
+     "caida_max_p95_pct": 26.5,
+     "caida_30_pct": 0.4,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "peor racha primero": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 0,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 100.0,
+     "quema_cuenta_pct": 100.0,
+     "recupera_760_pct": 0.0,
+     "dias_al_primer_pago_mediana": null,
+     "caida_max_mediana_pct": 6.87,
+     "caida_max_p95_pct": 6.87
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 0,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 100.0,
+     "quema_cuenta_pct": 100.0,
+     "recupera_760_pct": 0.0,
+     "dias_al_primer_pago_mediana": null,
+     "caida_max_mediana_pct": 6.87,
+     "caida_max_p95_pct": 6.87
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 77028,
+     "saldo_p10": 68553,
+     "saldo_p90": 169850,
+     "ganancia_mediana_pct": -23.0,
+     "pierde_dinero_pct": 75.3,
+     "caida_max_mediana_pct": 32.3,
+     "caida_max_p95_pct": 37.6,
+     "caida_30_pct": 100.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 85204,
+     "saldo_p10": 76045,
+     "saldo_p90": 158230,
+     "ganancia_mediana_pct": -14.8,
+     "pierde_dinero_pct": 65.2,
+     "caida_max_mediana_pct": 23.5,
+     "caida_max_p95_pct": 26.4,
+     "caida_30_pct": 0.1,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 0,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 100.0,
+     "quema_cuenta_pct": 100.0,
+     "recupera_760_pct": 0.0,
+     "dias_al_primer_pago_mediana": null,
+     "caida_max_mediana_pct": 6.87,
+     "caida_max_p95_pct": 6.87
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 0,
+     "cobrado_p10": 0,
+     "cobrado_p90": 0,
+     "por_mes_mediana": 0,
+     "sin_cobrar_nada_pct": 100.0,
+     "quema_cuenta_pct": 100.0,
+     "recupera_760_pct": 0.0,
+     "dias_al_primer_pago_mediana": null,
+     "caida_max_mediana_pct": 6.87,
+     "caida_max_p95_pct": 6.87
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 132726,
+     "saldo_p10": 72937,
+     "saldo_p90": 631389,
+     "ganancia_mediana_pct": 32.7,
+     "pierde_dinero_pct": 37.6,
+     "caida_max_mediana_pct": 32.4,
+     "caida_max_p95_pct": 38.2,
+     "caida_30_pct": 100.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 138680,
+     "saldo_p10": 77613,
+     "saldo_p90": 354523,
+     "ganancia_mediana_pct": 38.7,
+     "pierde_dinero_pct": 30.8,
+     "caida_max_mediana_pct": 24.0,
+     "caida_max_p95_pct": 27.3,
+     "caida_30_pct": 0.4,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "sin las 3 mejores": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 2000,
+     "cobrado_p10": 0,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 166,
+     "sin_cobrar_nada_pct": 13.8,
+     "quema_cuenta_pct": 9.8,
+     "recupera_760_pct": 76.7,
+     "dias_al_primer_pago_mediana": 169.0,
+     "caida_max_mediana_pct": 3.11,
+     "caida_max_p95_pct": 6.35
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 3219,
+     "cobrado_p10": 0,
+     "cobrado_p90": 8109,
+     "por_mes_mediana": 268,
+     "sin_cobrar_nada_pct": 13.8,
+     "quema_cuenta_pct": 10.1,
+     "recupera_760_pct": 76.7,
+     "dias_al_primer_pago_mediana": 169.0,
+     "caida_max_mediana_pct": 3.13,
+     "caida_max_p95_pct": 6.34
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 115729,
+     "saldo_p10": 75420,
+     "saldo_p90": 237928,
+     "ganancia_mediana_pct": 15.7,
+     "pierde_dinero_pct": 39.4,
+     "caida_max_mediana_pct": 27.2,
+     "caida_max_p95_pct": 33.4,
+     "caida_30_pct": 20.1,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 118976,
+     "saldo_p10": 83914,
+     "saldo_p90": 170060,
+     "ganancia_mediana_pct": 19.0,
+     "pierde_dinero_pct": 28.1,
+     "caida_max_mediana_pct": 16.2,
+     "caida_max_p95_pct": 24.9,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 5027,
+     "cobrado_p10": 489,
+     "cobrado_p90": 8000,
+     "por_mes_mediana": 209,
+     "sin_cobrar_nada_pct": 8.5,
+     "quema_cuenta_pct": 20.9,
+     "recupera_760_pct": 88.8,
+     "dias_al_primer_pago_mediana": 176.0,
+     "caida_max_mediana_pct": 4.41,
+     "caida_max_p95_pct": 6.67
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 6817,
+     "cobrado_p10": 489,
+     "cobrado_p90": 14339,
+     "por_mes_mediana": 284,
+     "sin_cobrar_nada_pct": 8.5,
+     "quema_cuenta_pct": 23.0,
+     "recupera_760_pct": 88.8,
+     "dias_al_primer_pago_mediana": 176.0,
+     "caida_max_mediana_pct": 4.48,
+     "caida_max_p95_pct": 6.61
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 128567,
+     "saldo_p10": 76624,
+     "saldo_p90": 350402,
+     "ganancia_mediana_pct": 28.6,
+     "pierde_dinero_pct": 31.2,
+     "caida_max_mediana_pct": 29.8,
+     "caida_max_p95_pct": 36.8,
+     "caida_30_pct": 47.9,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 133076,
+     "saldo_p10": 84530,
+     "saldo_p90": 239468,
+     "ganancia_mediana_pct": 33.1,
+     "pierde_dinero_pct": 24.3,
+     "caida_max_mediana_pct": 22.1,
+     "caida_max_p95_pct": 27.0,
+     "caida_30_pct": 0.5,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "solo mitad 1": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 2000,
+     "cobrado_p10": 0,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 166,
+     "sin_cobrar_nada_pct": 14.3,
+     "quema_cuenta_pct": 11.2,
+     "recupera_760_pct": 82.0,
+     "dias_al_primer_pago_mediana": 169.0,
+     "caida_max_mediana_pct": 3.69,
+     "caida_max_p95_pct": 6.67
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 7346,
+     "cobrado_p10": 0,
+     "cobrado_p90": 20153,
+     "por_mes_mediana": 612,
+     "sin_cobrar_nada_pct": 14.3,
+     "quema_cuenta_pct": 13.2,
+     "recupera_760_pct": 82.0,
+     "dias_al_primer_pago_mediana": 169.0,
+     "caida_max_mediana_pct": 3.69,
+     "caida_max_p95_pct": 6.61
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 156278,
+     "saldo_p10": 75769,
+     "saldo_p90": 610884,
+     "ganancia_mediana_pct": 56.3,
+     "pierde_dinero_pct": 29.0,
+     "caida_max_mediana_pct": 27.6,
+     "caida_max_p95_pct": 34.3,
+     "caida_30_pct": 24.3,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 151255,
+     "saldo_p10": 83415,
+     "saldo_p90": 329609,
+     "ganancia_mediana_pct": 51.3,
+     "pierde_dinero_pct": 20.6,
+     "caida_max_mediana_pct": 17.5,
+     "caida_max_p95_pct": 25.5,
+     "caida_30_pct": 0.1,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 6000,
+     "cobrado_p10": 842,
+     "cobrado_p90": 8000,
+     "por_mes_mediana": 250,
+     "sin_cobrar_nada_pct": 8.5,
+     "quema_cuenta_pct": 15.5,
+     "recupera_760_pct": 90.1,
+     "dias_al_primer_pago_mediana": 177.0,
+     "caida_max_mediana_pct": 4.77,
+     "caida_max_p95_pct": 7.8
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 16908,
+     "cobrado_p10": 842,
+     "cobrado_p90": 34567,
+     "por_mes_mediana": 704,
+     "sin_cobrar_nada_pct": 8.5,
+     "quema_cuenta_pct": 27.3,
+     "recupera_760_pct": 90.1,
+     "dias_al_primer_pago_mediana": 177.0,
+     "caida_max_mediana_pct": 4.82,
+     "caida_max_p95_pct": 6.79
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 243697,
+     "saldo_p10": 81492,
+     "saldo_p90": 1462076,
+     "ganancia_mediana_pct": 143.7,
+     "pierde_dinero_pct": 17.5,
+     "caida_max_mediana_pct": 30.2,
+     "caida_max_p95_pct": 37.9,
+     "caida_30_pct": 52.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 222034,
+     "saldo_p10": 94743,
+     "saldo_p90": 649497,
+     "ganancia_mediana_pct": 122.0,
+     "pierde_dinero_pct": 12.0,
+     "caida_max_mediana_pct": 22.8,
+     "caida_max_p95_pct": 27.7,
+     "caida_30_pct": 0.8,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "solo mitad 2": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 4000,
+     "cobrado_p10": 2000,
+     "cobrado_p90": 6000,
+     "por_mes_mediana": 333,
+     "sin_cobrar_nada_pct": 1.9,
+     "quema_cuenta_pct": 0.7,
+     "recupera_760_pct": 96.8,
+     "dias_al_primer_pago_mediana": 148.0,
+     "caida_max_mediana_pct": 2.22,
+     "caida_max_p95_pct": 4.73
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 8598,
+     "cobrado_p10": 2830,
+     "cobrado_p90": 15778,
+     "por_mes_mediana": 716,
+     "sin_cobrar_nada_pct": 1.9,
+     "quema_cuenta_pct": 0.9,
+     "recupera_760_pct": 96.8,
+     "dias_al_primer_pago_mediana": 148.0,
+     "caida_max_mediana_pct": 2.22,
+     "caida_max_p95_pct": 4.73
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 261115,
+     "saldo_p10": 107633,
+     "saldo_p90": 734227,
+     "ganancia_mediana_pct": 161.1,
+     "pierde_dinero_pct": 7.8,
+     "caida_max_mediana_pct": 23.4,
+     "caida_max_p95_pct": 30.2,
+     "caida_30_pct": 5.6,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 183534,
+     "saldo_p10": 119002,
+     "saldo_p90": 300443,
+     "ganancia_mediana_pct": 83.5,
+     "pierde_dinero_pct": 3.1,
+     "caida_max_mediana_pct": 12.3,
+     "caida_max_p95_pct": 22.1,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   },
+   "24 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 8000,
+     "cobrado_p10": 6000,
+     "cobrado_p90": 10000,
+     "por_mes_mediana": 333,
+     "sin_cobrar_nada_pct": 1.0,
+     "quema_cuenta_pct": 1.8,
+     "recupera_760_pct": 98.9,
+     "dias_al_primer_pago_mediana": 150.0,
+     "caida_max_mediana_pct": 2.91,
+     "caida_max_p95_pct": 5.55
+    },
+    "GFT $100K 0.9 % (sin tope)": {
+     "cobrado_mediana": 19302,
+     "cobrado_p10": 10133,
+     "cobrado_p90": 28966,
+     "por_mes_mediana": 804,
+     "sin_cobrar_nada_pct": 1.0,
+     "quema_cuenta_pct": 2.9,
+     "recupera_760_pct": 98.9,
+     "dias_al_primer_pago_mediana": 150.0,
+     "caida_max_mediana_pct": 2.91,
+     "caida_max_p95_pct": 5.57
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 639364,
+     "saldo_p10": 173441,
+     "saldo_p90": 2733830,
+     "ganancia_mediana_pct": 539.4,
+     "pierde_dinero_pct": 2.5,
+     "caida_max_mediana_pct": 27.1,
+     "caida_max_p95_pct": 31.7,
+     "caida_30_pct": 12.8,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 343175,
+     "saldo_p10": 177976,
+     "saldo_p90": 672777,
+     "ganancia_mediana_pct": 243.2,
+     "pierde_dinero_pct": 1.0,
+     "caida_max_mediana_pct": 15.0,
+     "caida_max_p95_pct": 24.0,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  },
+  "historia real (16 inicios, 12 meses)": {
+   "12 meses": {
+    "GFT $100K 0.9 % (tope $2K por pago)": {
+     "cobrado_mediana": 2849,
+     "cobrado_p10": 2000,
+     "cobrado_p90": 4000,
+     "por_mes_mediana": 237,
+     "sin_cobrar_nada_pct": 0.0,
+     "quema_cuenta_pct": 0.0,
+     "recupera_760_pct": 100.0,
+     "dias_al_primer_pago_mediana": 167.0,
+     "caida_max_mediana_pct": 3.74,
+     "caida_max_p95_pct": 3.8
+    },
+    "Real $100K 10 % con freno": {
+     "saldo_mediana": 260095,
+     "saldo_p10": 166184,
+     "saldo_p90": 363139,
+     "ganancia_mediana_pct": 160.1,
+     "pierde_dinero_pct": 0.0,
+     "caida_max_mediana_pct": 23.8,
+     "caida_max_p95_pct": 28.9,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    },
+    "Real $100K 5 % con freno": {
+     "saldo_mediana": 162757,
+     "saldo_p10": 131947,
+     "saldo_p90": 200183,
+     "ganancia_mediana_pct": 62.8,
+     "pierde_dinero_pct": 0.0,
+     "caida_max_mediana_pct": 19.4,
+     "caida_max_p95_pct": 20.7,
+     "caida_30_pct": 0.0,
+     "bot_detenido_en_50k_pct": 0.0
+    }
+   }
+  }
+ },
+ "simulaciones_totales": 44000
+}
