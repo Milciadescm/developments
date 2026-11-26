@@ -1,0 +1,455 @@
+{
+ "versiones": 576,
+ "elegidas_en_tramo_1": 0,
+ "sobreviven_validacion_y_prueba": 0,
+ "sobrevivientes": [],
+ "mejores_tramo_1": [
+  {
+   "mercado": "btc",
+   "familia": "BARRIDO",
+   "params": {
+    "horas": "kz"
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 48,
+   "por_semana": 3.9,
+   "eleccion": {
+    "n": 239,
+    "R": -0.097,
+    "aciertos": 31.4,
+    "t": -0.86
+   },
+   "validacion": {
+    "n": 141,
+    "R": -0.027,
+    "aciertos": 31.9,
+    "t": -0.18
+   },
+   "prueba": {
+    "n": 212,
+    "R": -0.498,
+    "aciertos": 21.2,
+    "t": -4.64
+   }
+  },
+  {
+   "mercado": "btc",
+   "familia": "BARRIDO",
+   "params": {
+    "horas": "kz"
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 2.0,
+   "velas_max": 48,
+   "por_semana": 4.0,
+   "eleccion": {
+    "n": 245,
+    "R": -0.116,
+    "aciertos": 38.4,
+    "t": -1.25
+   },
+   "validacion": {
+    "n": 143,
+    "R": -0.194,
+    "aciertos": 35.0,
+    "t": -1.64
+   },
+   "prueba": {
+    "n": 215,
+    "R": -0.477,
+    "aciertos": 27.4,
+    "t": -5.25
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 1.5,
+   "velas_max": 48,
+   "por_semana": 3.1,
+   "eleccion": {
+    "n": 155,
+    "R": -0.137,
+    "aciertos": 38.7,
+    "t": -1.43
+   },
+   "validacion": {
+    "n": 140,
+    "R": -0.002,
+    "aciertos": 43.6,
+    "t": -0.02
+   },
+   "prueba": {
+    "n": 168,
+    "R": -0.078,
+    "aciertos": 39.3,
+    "t": -0.84
+   }
+  },
+  {
+   "mercado": "btc",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 12,
+   "por_semana": 4.0,
+   "eleccion": {
+    "n": 264,
+    "R": -0.123,
+    "aciertos": 38.3,
+    "t": -1.43
+   },
+   "validacion": {
+    "n": 152,
+    "R": -0.069,
+    "aciertos": 37.5,
+    "t": -0.58
+   },
+   "prueba": {
+    "n": 193,
+    "R": -0.109,
+    "aciertos": 38.3,
+    "t": -0.99
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 12,
+   "por_semana": 2.6,
+   "eleccion": {
+    "n": 136,
+    "R": -0.156,
+    "aciertos": 36.0,
+    "t": -1.45
+   },
+   "validacion": {
+    "n": 112,
+    "R": 0.181,
+    "aciertos": 46.4,
+    "t": 1.32
+   },
+   "prueba": {
+    "n": 145,
+    "R": -0.148,
+    "aciertos": 35.2,
+    "t": -1.38
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 48,
+   "por_semana": 2.6,
+   "eleccion": {
+    "n": 136,
+    "R": -0.197,
+    "aciertos": 28.7,
+    "t": -1.56
+   },
+   "validacion": {
+    "n": 112,
+    "R": 0.235,
+    "aciertos": 36.6,
+    "t": 1.41
+   },
+   "prueba": {
+    "n": 145,
+    "R": -0.063,
+    "aciertos": 29.0,
+    "t": -0.48
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 2.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 1.5,
+   "velas_max": 48,
+   "por_semana": 4.8,
+   "eleccion": {
+    "n": 262,
+    "R": -0.124,
+    "aciertos": 38.9,
+    "t": -1.7
+   },
+   "validacion": {
+    "n": 216,
+    "R": 0.006,
+    "aciertos": 44.0,
+    "t": 0.07
+   },
+   "prueba": {
+    "n": 255,
+    "R": -0.056,
+    "aciertos": 40.0,
+    "t": -0.74
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 2.0,
+   "velas_max": 48,
+   "por_semana": 2.8,
+   "eleccion": {
+    "n": 148,
+    "R": -0.189,
+    "aciertos": 32.4,
+    "t": -1.77
+   },
+   "validacion": {
+    "n": 124,
+    "R": 0.108,
+    "aciertos": 41.1,
+    "t": 0.85
+   },
+   "prueba": {
+    "n": 155,
+    "R": -0.132,
+    "aciertos": 32.3,
+    "t": -1.24
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "FLUJO",
+   "params": {
+    "z": 2.5,
+    "con_tendencia": true
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 48,
+   "por_semana": 2.7,
+   "eleccion": {
+    "n": 145,
+    "R": -0.23,
+    "aciertos": 24.8,
+    "t": -1.78
+   },
+   "validacion": {
+    "n": 105,
+    "R": 0.03,
+    "aciertos": 31.4,
+    "t": 0.18
+   },
+   "prueba": {
+    "n": 157,
+    "R": -0.111,
+    "aciertos": 26.1,
+    "t": -0.85
+   }
+  },
+  {
+   "mercado": "btc",
+   "familia": "BARRIDO",
+   "params": {
+    "horas": "kz"
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 2.0,
+   "velas_max": 12,
+   "por_semana": 4.2,
+   "eleccion": {
+    "n": 261,
+    "R": -0.145,
+    "aciertos": 40.6,
+    "t": -1.79
+   },
+   "validacion": {
+    "n": 150,
+    "R": -0.266,
+    "aciertos": 37.3,
+    "t": -2.57
+   },
+   "prueba": {
+    "n": 223,
+    "R": -0.454,
+    "aciertos": 31.8,
+    "t": -5.8
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.0,
+   "objetivo_R": 2.0,
+   "velas_max": 48,
+   "por_semana": 3.6,
+   "eleccion": {
+    "n": 184,
+    "R": -0.186,
+    "aciertos": 32.1,
+    "t": -1.8
+   },
+   "validacion": {
+    "n": 164,
+    "R": 0.115,
+    "aciertos": 41.5,
+    "t": 1.0
+   },
+   "prueba": {
+    "n": 191,
+    "R": -0.037,
+    "aciertos": 34.6,
+    "t": -0.36
+   }
+  },
+  {
+   "mercado": "btc",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 2.0,
+   "velas_max": 12,
+   "por_semana": 4.5,
+   "eleccion": {
+    "n": 294,
+    "R": -0.133,
+    "aciertos": 41.2,
+    "t": -1.83
+   },
+   "validacion": {
+    "n": 170,
+    "R": -0.126,
+    "aciertos": 39.4,
+    "t": -1.33
+   },
+   "prueba": {
+    "n": 211,
+    "R": -0.177,
+    "aciertos": 39.8,
+    "t": -1.92
+   }
+  },
+  {
+   "mercado": "btc",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 48,
+   "por_semana": 4.0,
+   "eleccion": {
+    "n": 264,
+    "R": -0.19,
+    "aciertos": 29.5,
+    "t": -1.85
+   },
+   "validacion": {
+    "n": 152,
+    "R": -0.015,
+    "aciertos": 33.6,
+    "t": -0.11
+   },
+   "prueba": {
+    "n": 193,
+    "R": -0.198,
+    "aciertos": 30.1,
+    "t": -1.61
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 1.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 2.0,
+   "velas_max": 12,
+   "por_semana": 2.8,
+   "eleccion": {
+    "n": 148,
+    "R": -0.174,
+    "aciertos": 37.2,
+    "t": -1.87
+   },
+   "validacion": {
+    "n": 124,
+    "R": 0.154,
+    "aciertos": 49.2,
+    "t": 1.35
+   },
+   "prueba": {
+    "n": 155,
+    "R": -0.129,
+    "aciertos": 38.7,
+    "t": -1.37
+   }
+  },
+  {
+   "mercado": "oro",
+   "familia": "ORB",
+   "params": {
+    "sesion": 9.5,
+    "ventana": 2.0
+   },
+   "stop_atr": 1.5,
+   "objetivo_R": 3.0,
+   "velas_max": 12,
+   "por_semana": 4.7,
+   "eleccion": {
+    "n": 252,
+    "R": -0.152,
+    "aciertos": 37.3,
+    "t": -1.97
+   },
+   "validacion": {
+    "n": 206,
+    "R": 0.091,
+    "aciertos": 45.6,
+    "t": 0.96
+   },
+   "prueba": {
+    "n": 252,
+    "R": -0.097,
+    "aciertos": 38.9,
+    "t": -1.26
+   }
+  }
+ ]
+}
