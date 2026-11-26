@@ -1,0 +1,219 @@
+{
+ "oro $100K sigue": {
+  "versiones": 312,
+  "positivas": 39,
+  "positivas_ambas": 9,
+  "mediana": -23187,
+  "mejores": [
+   {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 4.0,
+    "maxn": 3,
+    "mode": "en contra",
+    "flown": 12,
+    "zones": "todo el d\u00eda",
+    "mitad1": {
+     "canastas": 549,
+     "aciertos": 58.5,
+     "total": 14994,
+     "promedio": 27.3,
+     "t": 1.07,
+     "ganancia_prom": 395.8,
+     "perdida_prom": -491.4,
+     "peor_dia": -2152,
+     "peor_caida": 16331,
+     "peor_flotante": -4628,
+     "entradas_prom": 2.4
+    },
+    "mitad2": {
+     "canastas": 827,
+     "aciertos": 67.8,
+     "total": 20981,
+     "promedio": 25.4,
+     "t": 0.77,
+     "ganancia_prom": 594.9,
+     "perdida_prom": -1175.8,
+     "peor_dia": -5986,
+     "peor_caida": 17061,
+     "peor_flotante": -5120,
+     "entradas_prom": 2.5
+    },
+    "total": 35975
+   },
+   {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 4.0,
+    "maxn": 5,
+    "mode": "en contra",
+    "flown": 12,
+    "zones": "todo el d\u00eda",
+    "mitad1": {
+     "canastas": 594,
+     "aciertos": 64.5,
+     "total": 20207,
+     "promedio": 34.0,
+     "t": 1.21,
+     "ganancia_prom": 401.9,
+     "perdida_prom": -633.7,
+     "peor_dia": -2137,
+     "peor_caida": 10876,
+     "peor_flotante": -5850,
+     "entradas_prom": 3.0
+    },
+    "mitad2": {
+     "canastas": 956,
+     "aciertos": 70.4,
+     "total": 18592,
+     "promedio": 19.4,
+     "t": 0.6,
+     "ganancia_prom": 586.5,
+     "perdida_prom": -1329.1,
+     "peor_dia": -10010,
+     "peor_caida": 31797,
+     "peor_flotante": -5869,
+     "entradas_prom": 3.2
+    },
+    "total": 38799
+   },
+   {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 1.0,
+    "maxn": 3,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "todo el d\u00eda",
+    "mitad1": {
+     "canastas": 612,
+     "aciertos": 50.7,
+     "total": 6426,
+     "promedio": 10.5,
+     "t": 0.41,
+     "ganancia_prom": 493.4,
+     "perdida_prom": -485.2,
+     "peor_dia": -2309,
+     "peor_caida": 20395,
+     "peor_flotante": -3900,
+     "entradas_prom": 2.7
+    },
+    "mitad2": {
+     "canastas": 876,
+     "aciertos": 62.3,
+     "total": 23466,
+     "promedio": 26.8,
+     "t": 0.87,
+     "ganancia_prom": 635.4,
+     "perdida_prom": -980.3,
+     "peor_dia": -4035,
+     "peor_caida": 19961,
+     "peor_flotante": -4882,
+     "entradas_prom": 2.7
+    },
+    "total": 29892
+   },
+   {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "en contra",
+    "flown": 12,
+    "zones": "todo el d\u00eda",
+    "mitad1": {
+     "canastas": 597,
+     "aciertos": 57.5,
+     "total": 20512,
+     "promedio": 34.4,
+     "t": 1.31,
+     "ganancia_prom": 454.6,
+     "perdida_prom": -533.1,
+     "peor_dia": -2295,
+     "peor_caida": 16810,
+     "peor_flotante": -4381,
+     "entradas_prom": 2.7
+    },
+    "mitad2": {
+     "canastas": 883,
+     "aciertos": 66.8,
+     "total": 11517,
+     "promedio": 13.0,
+     "t": 0.4,
+     "ganancia_prom": 607.6,
+     "perdida_prom": -1184.2,
+     "peor_dia": -4992,
+     "peor_caida": 19944,
+     "peor_flotante": -5120,
+     "entradas_prom": 2.6
+    },
+    "total": 32029
+   },
+   {
+    "target": 500,
+    "maxloss": 2000,
+    "step": 1.0,
+    "maxn": 3,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "todo el d\u00eda",
+    "mitad1": {
+     "canastas": 724,
+     "aciertos": 54.3,
+     "total": 6030,
+     "promedio": 8.3,
+     "t": 0.4,
+     "ganancia_prom": 406.1,
+     "perdida_prom": -464.0,
+     "peor_dia": -2309,
+     "peor_caida": 20528,
+     "peor_flotante": -3900,
+     "entradas_prom": 2.7
+    },
+    "mitad2": {
+     "canastas": 1016,
+     "aciertos": 66.6,
+     "total": 9195,
+     "promedio": 9.1,
+     "t": 0.37,
+     "ganancia_prom": 466.2,
+     "perdida_prom": -903.8,
+     "peor_dia": -3871,
+     "peor_caida": 22456,
+     "peor_flotante": -4833,
+     "entradas_prom": 2.6
+    },
+    "total": 15225
+   }
+  ]
+ },
+ "oro $100K invertido": {
+  "versiones": 312,
+  "positivas": 5,
+  "positivas_ambas": 0,
+  "mediana": -34533,
+  "mejores": []
+ },
+ "oro $100": {
+  "versiones": 624,
+  "quemadas": 624,
+  "positivas_ambas_sin_quemar": 0,
+  "mejores": [],
+  "mejor_total": {
+   "direccion": "sigue",
+   "objetivo": 20,
+   "tope": 40,
+   "paso": 1.0,
+   "entradas": 1,
+   "modo": "a favor",
+   "horario": "todo el d\u00eda",
+   "mitad1": 200,
+   "mitad2": 152,
+   "total": 352,
+   "peor_caida": 1188,
+   "quemada": true,
+   "t_min": 0.18,
+   "canastas": 1839
+  }
+ }
+}
