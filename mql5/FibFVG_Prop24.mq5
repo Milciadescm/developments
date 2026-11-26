@@ -44,8 +44,6 @@ input long   Magic             = 7712400;    // A = Magic, B = Magic + 1
 input bool   CompoundOnBalance = false;      // real money: risk is a % of the CURRENT account balance (deposits and profits count)
 input bool   MinLotIfBelow     = false;      // small accounts: open at the broker minimum lot when the % size is smaller...
 input double MaxRiskPctAtMinLot = 3;         // ...but only if that minimum lot risks at most this % of the balance
-input int    EntryFromHourNY   = 8;          // entradas solo desde esta hora de Nueva York (0 y 24 = todo el día)
-input int    EntryToHourNY     = 18;         // ...hasta esta hora (sin incluir). GFT 26 nov 2026: 8 a 18 (pasó los 4 controles)
 
 #define MAXS 6
 const string BOT = "Prop24";
@@ -58,10 +56,6 @@ double   startBal = 0, closedPnL = 0;
 datetime t0 = 0;
 bool     halted = false;
 int      lastDayKey = 0;
-// órdenes "estacionadas" fuera del horario de entrada: se vuelven a poner al abrir el horario
-#define MAXP 20
-string pSym[MAXP]; long pMg[MAXP]; int pDir[MAXP]; double pEntry[MAXP], pSl[MAXP], pTp[MAXP], pLots[MAXP]; datetime pExp[MAXP]; string pCm[MAXP]; int NP = 0;
-bool guardOk = true;
 
 string GV(string k) { return "FFP24_" + IntegerToString(Magic) + "_" + k; }
 bool   Ours(long mg) { return mg == Magic || mg == Magic + 1 || mg == Magic + 9; }
@@ -156,13 +150,6 @@ datetime FridayCloseAfter(datetime server)
    datetime fri = day0 + ((5 - t.day_of_week + 7) % 7) * 86400 + FridayCloseHourNY * 3600;
    if(fri <= ny) fri += 7 * 86400;
    return fri - off * 3600 + so;
-}
-
-bool InEntryWindow()
-{
-   if(EntryFromHourNY <= 0 && EntryToHourNY >= 24) return true;
-   datetime g = TimeGMT(); MqlDateTime t; TimeToStruct(g + NYOffset(g) * 3600, t);
-   return t.hour >= EntryFromHourNY && t.hour < EntryToHourNY;
 }
 
 //=============================================================== symbols
@@ -303,7 +290,6 @@ void ClosePos(ulong tk, int code, string why)
 }
 void CloseAll(string why)
 {
-   NP = 0;                                                                 // las órdenes estacionadas también se descartan
    for(int i = PositionsTotal() - 1; i >= 0; i--) { ulong tk = PositionGetTicket(i); if(PositionSelectByTicket(tk) && Ours(PositionGetInteger(POSITION_MAGIC))) ClosePos(tk, 4, why); }
    for(int k = 0; k < NS; k++) { DeleteOrders(Sym[k], Magic, why); DeleteOrders(Sym[k], Magic + 1, why); }
 }
@@ -329,63 +315,6 @@ bool Guard()
    }
    if(DailyLossPct > 0 && DayStart() - VEq() >= (DailyLossPct - 0.3) / 100.0 * startBal) { CloseAll("daily emergency line"); return false; }
    return true;
-}
-
-//=============================================================== horario de entrada (órdenes estacionadas)
-void Unpark(int i) { for(int j = i; j < NP - 1; j++) { pSym[j] = pSym[j + 1]; pMg[j] = pMg[j + 1]; pDir[j] = pDir[j + 1]; pEntry[j] = pEntry[j + 1]; pSl[j] = pSl[j + 1]; pTp[j] = pTp[j + 1]; pLots[j] = pLots[j + 1]; pExp[j] = pExp[j + 1]; pCm[j] = pCm[j + 1]; } NP--; }
-void DropParked(string s, long mg) { for(int i = NP - 1; i >= 0; i--) if(pSym[i] == s && pMg[i] == mg) Unpark(i); }
-void Park(string s, long mg, int dir, double entry, double sl, double tp, double lots, datetime exp, string cm)
-{
-   DropParked(s, mg);
-   if(NP >= MAXP) return;
-   pSym[NP] = s; pMg[NP] = mg; pDir[NP] = dir; pEntry[NP] = entry; pSl[NP] = sl; pTp[NP] = tp; pLots[NP] = lots; pExp[NP] = exp; pCm[NP] = cm; NP++;
-   Log("PARK", s, StringFormat("setup=%s; reason=outside entry hours %d-%d NY; entry=%s; sl=%s", SetupName(mg), EntryFromHourNY, EntryToHourNY,
-                               DoubleToString(entry, (int)SymbolInfoInteger(s, SYMBOL_DIGITS)), DoubleToString(sl, (int)SymbolInfoInteger(s, SYMBOL_DIGITS))));
-}
-// fuera del horario: las órdenes límite pendientes se quitan y se guardan
-void ParkPending(string s)
-{
-   for(int i = OrdersTotal() - 1; i >= 0; i--)
-   {
-      ulong tk = OrderGetTicket(i); if(!OrderSelect(tk)) continue;
-      long mg = OrderGetInteger(ORDER_MAGIC);
-      if(OrderGetString(ORDER_SYMBOL) != s || !Ours(mg)) continue;
-      int dir = OrderGetInteger(ORDER_TYPE) == ORDER_TYPE_BUY_LIMIT ? 1 : -1;
-      double e = OrderGetDouble(ORDER_PRICE_OPEN), sl = OrderGetDouble(ORDER_SL), tp = OrderGetDouble(ORDER_TP), lots = OrderGetDouble(ORDER_VOLUME_CURRENT);
-      string cm = OrderGetString(ORDER_COMMENT);
-      datetime exp = (datetime)GlobalVariableGet(GV("exp_" + s + "_" + IntegerToString(mg)));
-      if(trade.OrderDelete(tk)) Park(s, mg, dir, e, sl, tp, lots, exp, cm);
-   }
-}
-// dentro del horario: volver a poner lo estacionado si sigue vigente
-void ReleaseParked(string s)
-{
-   for(int i = NP - 1; i >= 0; i--)
-   {
-      if(pSym[i] != s) continue;
-      string tag = SetupName(pMg[i]);
-      double ask = SymbolInfoDouble(s, SYMBOL_ASK), bid = SymbolInfoDouble(s, SYMBOL_BID), px = pDir[i] == 1 ? ask : bid;
-      string why = "";
-      if(pExp[i] > 0 && TimeTradeServer() >= pExp[i]) why = "expired";
-      else if((px - pSl[i]) * pDir[i] <= 0) why = "price went through the stop";
-      else if(PosCount(s, pMg[i]) > 0) why = "a trade of this setup is already open";
-      else if(MaxOpenRiskPct > 0 && pLots[i] * MathAbs(pEntry[i] - pSl[i]) * MoneyPerPrice(s) > (MaxOpenRiskPct - 0.1) / 100.0 * startBal - OpenRisk()) why = "floating-loss limit";
-      if(why != "") { Log("CANCEL", s, StringFormat("setup=%s; parked order; reason=%s", tag, why)); Unpark(i); continue; }
-      trade.SetExpertMagicNumber(pMg[i]); trade.SetTypeFillingBySymbol(s);
-      bool ok; string how;
-      if((px - pEntry[i]) * pDir[i] <= 0)
-      { ok = pDir[i] == 1 ? trade.Buy(pLots[i], s, 0, Norm(s, pSl[i]), pTp[i] > 0 ? Norm(s, pTp[i]) : 0, pCm[i]) : trade.Sell(pLots[i], s, 0, Norm(s, pSl[i]), pTp[i] > 0 ? Norm(s, pTp[i]) : 0, pCm[i]); how = "market"; }
-      else
-      {
-         ok = pDir[i] == 1 ? trade.BuyLimit(pLots[i], Norm(s, pEntry[i]), s, Norm(s, pSl[i]), pTp[i] > 0 ? Norm(s, pTp[i]) : 0, ORDER_TIME_GTC, 0, pCm[i])
-                           : trade.SellLimit(pLots[i], Norm(s, pEntry[i]), s, Norm(s, pSl[i]), pTp[i] > 0 ? Norm(s, pTp[i]) : 0, ORDER_TIME_GTC, 0, pCm[i]);
-         how = "limit";
-         if(ok) GlobalVariableSet(GV("exp_" + s + "_" + IntegerToString(pMg[i])), (double)pExp[i]);
-      }
-      if(ok) Log("ORDER", s, StringFormat("setup=%s; type=%s; parked order released (entry hours %d-%d NY)", tag, how, EntryFromHourNY, EntryToHourNY));
-      else Log("ERROR", s, StringFormat("setup=%s; parked order rejected: %d %s", tag, trade.ResultRetcode(), trade.ResultRetcodeDescription()));
-      Unpark(i);
-   }
 }
 
 //=============================================================== setups A (D1) and B (H4)
@@ -422,13 +351,6 @@ void NewBar(int k, ENUM_TIMEFRAMES tf, long mg)
    if(lots <= 0) { Log("SKIP", s, StringFormat("setup=%s; dir=%d; reason=lot below minimum or no room; room=%.2f", tag, dir, room)); return; }
    double tp = (tf == PERIOD_D1) ? entry + dir * dist : 0;
    DeleteOrders(s, mg, "replaced by a newer setup");
-   DropParked(s, mg);
-   if(!InEntryWindow())
-   {
-      Park(s, mg, dir, entry, sl, tp, lots, TimeTradeServer() + (tf == PERIOD_D1 ? 15 * 86400 : 24 * 3600),
-           StringFormat("P24%s r=%.0f", mg == Magic ? "A" : "B", lots * dist * MoneyPerPrice(s)));
-      return;
-   }
    trade.SetExpertMagicNumber(mg);
    trade.SetTypeFillingBySymbol(s);
    string cm = StringFormat("P24%s r=%.0f", mg == Magic ? "A" : "B", lots * dist * MoneyPerPrice(s));
@@ -458,7 +380,6 @@ void NewBar(int k, ENUM_TIMEFRAMES tf, long mg)
 void Manage(int k)
 {
    string s = Sym[k];
-   if(!InEntryWindow()) ParkPending(s); else if(guardOk && !halted) ReleaseParked(s);
    // pending orders: expiry and price through the stop
    for(int i = OrdersTotal() - 1; i >= 0; i--)
    {
@@ -519,7 +440,7 @@ int OnInit()
    if(!GlobalVariableCheck(GV("last_open"))) GlobalVariableSet(GV("last_open"), (double)TimeCurrent());
    EventSetTimer(5);
    string list = ""; for(int k = 0; k < NS; k++) list += (k ? " " : "") + Sym[k];
-   Log("START", "", StringFormat("profile=%s; risk=%.2f%%; start=%.0f; symbols=%s; server_offset_h=%.1f; entry_hours_NY=%d-%d", RiskProfile, RiskPct, startBal, list, ServerOffset() / 3600.0, EntryFromHourNY, EntryToHourNY));
+   Log("START", "", StringFormat("profile=%s; risk=%.2f%%; start=%.0f; symbols=%s; server_offset_h=%.1f", RiskProfile, RiskPct, startBal, list, ServerOffset() / 3600.0));
    if(NS < 3) Print("FibFVG Prop24: only ", NS, " of 3 markets found. Set SymbolsToTrade to your broker's names.");
    return INIT_SUCCEEDED;
 }
@@ -527,7 +448,7 @@ void OnDeinit(const int r) { EventKillTimer(); Comment(""); Log("STOP", "", Stri
 void OnTick() {}
 void OnTimer()
 {
-   bool ok = Guard(); guardOk = ok;
+   bool ok = Guard();
    KeepAlive();
    for(int k = 0; k < NS; k++)
    {

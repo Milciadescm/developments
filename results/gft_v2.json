@@ -1,0 +1,66 @@
+{
+ "V1 (corre en la demo)": {
+  "operaciones": 68,
+  "saltadas_1pct": 13,
+  "dias_rentables": 22,
+  "cobrado_total": 13663,
+  "pagos": 4,
+  "quemada": null,
+  "ultimos_12m": 1578,
+  "pagos_12m": 1,
+  "mediana_12m": 6003,
+  "peor_12m": 1431,
+  "quemadas": 0,
+  "peor_caida_pct": 5.81,
+  "lista": [
+   [
+    "2024-12-06",
+    5898
+   ],
+   [
+    "2025-06-12",
+    1407
+   ],
+   [
+    "2025-11-07",
+    4780
+   ],
+   [
+    "2026-03-31",
+    1578
+   ]
+  ]
+ },
+ "V2 08-18 NY": {
+  "operaciones": 59,
+  "saltadas_1pct": 11,
+  "dias_rentables": 20,
+  "cobrado_total": 14402,
+  "pagos": 4,
+  "quemada": null,
+  "ultimos_12m": 2486,
+  "pagos_12m": 1,
+  "mediana_12m": 6654,
+  "peor_12m": 3973,
+  "quemadas": 0,
+  "peor_caida_pct": 3.99,
+  "lista": [
+   [
+    "2024-12-06",
+    5898
+   ],
+   [
+    "2025-06-12",
+    2044
+   ],
+   [
+    "2025-11-07",
+    3973
+   ],
+   [
+    "2026-10-01",
+    2486
+   ]
+  ]
+ }
+}
