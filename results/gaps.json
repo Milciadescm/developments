@@ -1,0 +1,880 @@
+{
+ "H1 2024-2026": {
+  "celdas": 1008,
+  "elegidas_mitad1": 32,
+  "sobreviven_mitad2": 9,
+  "sobrevivientes": [
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "2 gaps",
+    "velas": 24,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.359,
+     "aciertos": 95,
+     "t": 4.73
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.118,
+     "aciertos": 79,
+     "t": 1.08
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "2 gaps",
+    "velas": 24,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.834,
+     "aciertos": 95,
+     "t": 8.28
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.122,
+     "aciertos": 61,
+     "t": 0.71
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "2 gaps",
+    "velas": 8,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.32,
+     "aciertos": 80,
+     "t": 6.77
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.055,
+     "aciertos": 70,
+     "t": 0.54
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 24,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.46,
+     "aciertos": 90,
+     "t": 3.73
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.048,
+     "aciertos": 67,
+     "t": 0.34
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "2 gaps",
+    "velas": 4,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.245,
+     "aciertos": 80,
+     "t": 3.45
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.023,
+     "aciertos": 64,
+     "t": 0.25
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "2 gaps",
+    "velas": 8,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.522,
+     "aciertos": 80,
+     "t": 5.5
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.026,
+     "aciertos": 55,
+     "t": 0.19
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 gap",
+    "velas": 8,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.496,
+     "aciertos": 80,
+     "t": 3.0
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.029,
+     "aciertos": 58,
+     "t": 0.18
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 gap",
+    "velas": 24,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.568,
+     "aciertos": 85,
+     "t": 3.45
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.023,
+     "aciertos": 58,
+     "t": 0.14
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 gap",
+    "velas": 4,
+    "condicion": "tamaño 0.5-1 ATR",
+    "mitad1": {
+     "n": 20,
+     "R": 0.382,
+     "aciertos": 75,
+     "t": 2.17
+    },
+    "mitad2": {
+     "n": 33,
+     "R": 0.012,
+     "aciertos": 58,
+     "t": 0.07
+    }
+   }
+  ],
+  "probabilidad_de_llenado": {
+   "US500": {
+    "gaps": 320,
+    "por_tamaño": {
+     "0.1-0.5 ATR": {
+      "1 velas": 71,
+      "4 velas": 82,
+      "8 velas": 88,
+      "24 velas": 96,
+      "n": 209
+     },
+     "0.5-1 ATR": {
+      "1 velas": 19,
+      "4 velas": 34,
+      "8 velas": 42,
+      "24 velas": 70,
+      "n": 53
+     },
+     "1-2 ATR": {
+      "1 velas": 9,
+      "4 velas": 35,
+      "8 velas": 38,
+      "24 velas": 71,
+      "n": 34
+     },
+     ">2 ATR": {
+      "1 velas": 8,
+      "4 velas": 8,
+      "8 velas": 12,
+      "24 velas": 62,
+      "n": 24
+     }
+    }
+   },
+   "NAS100": {
+    "gaps": 317,
+    "por_tamaño": {
+     "0.1-0.5 ATR": {
+      "1 velas": 62,
+      "4 velas": 76,
+      "8 velas": 82,
+      "24 velas": 90,
+      "n": 204
+     },
+     "0.5-1 ATR": {
+      "1 velas": 25,
+      "4 velas": 51,
+      "8 velas": 54,
+      "24 velas": 81,
+      "n": 57
+     },
+     "1-2 ATR": {
+      "1 velas": 13,
+      "4 velas": 32,
+      "8 velas": 39,
+      "24 velas": 71,
+      "n": 31
+     },
+     ">2 ATR": {
+      "1 velas": 8,
+      "4 velas": 12,
+      "8 velas": 20,
+      "24 velas": 64,
+      "n": 25
+     }
+    }
+   },
+   "XAUUSD": {
+    "gaps": 209,
+    "por_tamaño": {
+     "0.1-0.5 ATR": {
+      "1 velas": 76,
+      "4 velas": 83,
+      "8 velas": 86,
+      "24 velas": 94,
+      "n": 139
+     },
+     "0.5-1 ATR": {
+      "1 velas": 29,
+      "4 velas": 57,
+      "8 velas": 64,
+      "24 velas": 68,
+      "n": 28
+     },
+     "1-2 ATR": {
+      "1 velas": 25,
+      "4 velas": 57,
+      "8 velas": 57,
+      "24 velas": 71,
+      "n": 28
+     },
+     ">2 ATR": {
+      "1 velas": 7,
+      "4 velas": 7,
+      "8 velas": 21,
+      "24 velas": 36,
+      "n": 14
+     }
+    }
+   },
+   "XAGUSD": {
+    "gaps": 218,
+    "por_tamaño": {
+     "0.1-0.5 ATR": {
+      "1 velas": 76,
+      "4 velas": 88,
+      "8 velas": 92,
+      "24 velas": 93,
+      "n": 153
+     },
+     "0.5-1 ATR": {
+      "1 velas": 40,
+      "4 velas": 60,
+      "8 velas": 68,
+      "24 velas": 76,
+      "n": 25
+     },
+     "1-2 ATR": {
+      "1 velas": 19,
+      "4 velas": 48,
+      "8 velas": 70,
+      "24 velas": 78,
+      "n": 27
+     },
+     ">2 ATR": {
+      "1 velas": 0,
+      "4 velas": 8,
+      "8 velas": 15,
+      "24 velas": 46,
+      "n": 13
+     }
+    }
+   }
+  },
+  "mejores_por_aciertos": [
+   {
+    "mercado": "NAS100",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 8,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 151,
+     "R": 0.07,
+     "aciertos": 75,
+     "t": 1.14
+    },
+    "mitad2": {
+     "n": 166,
+     "R": -0.163,
+     "aciertos": 63,
+     "t": -3.17
+    }
+   },
+   {
+    "mercado": "NAS100",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 24,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 151,
+     "R": 0.041,
+     "aciertos": 73,
+     "t": 0.56
+    },
+    "mitad2": {
+     "n": 166,
+     "R": -0.155,
+     "aciertos": 63,
+     "t": -2.61
+    }
+   },
+   {
+    "mercado": "NAS100",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 4,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 151,
+     "R": 0.051,
+     "aciertos": 72,
+     "t": 0.86
+    },
+    "mitad2": {
+     "n": 166,
+     "R": -0.168,
+     "aciertos": 61,
+     "t": -3.28
+    }
+   },
+   {
+    "mercado": "XAUUSD",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 8,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 80,
+     "R": -0.12,
+     "aciertos": 72,
+     "t": -1.64
+    },
+    "mitad2": {
+     "n": 129,
+     "R": -0.089,
+     "aciertos": 67,
+     "t": -1.36
+    }
+   },
+   {
+    "mercado": "XAUUSD",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 24,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 80,
+     "R": -0.114,
+     "aciertos": 72,
+     "t": -1.52
+    },
+    "mitad2": {
+     "n": 129,
+     "R": -0.072,
+     "aciertos": 67,
+     "t": -1.01
+    }
+   },
+   {
+    "mercado": "XAUUSD",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 4,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 80,
+     "R": -0.144,
+     "aciertos": 71,
+     "t": -2.03
+    },
+    "mitad2": {
+     "n": 129,
+     "R": -0.085,
+     "aciertos": 68,
+     "t": -1.31
+    }
+   }
+  ]
+ },
+ "D1 2006-2026": {
+  "celdas": 420,
+  "elegidas_mitad1": 18,
+  "sobreviven_mitad2": 11,
+  "sobrevivientes": [
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": 0.14,
+     "aciertos": 86,
+     "t": 9.18
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": 0.043,
+     "aciertos": 59,
+     "t": 3.6
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "gap contra el sesgo",
+    "mitad1": {
+     "n": 275,
+     "R": 0.158,
+     "aciertos": 88,
+     "t": 7.34
+    },
+    "mitad2": {
+     "n": 929,
+     "R": 0.055,
+     "aciertos": 59,
+     "t": 3.04
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "fin de semana",
+    "mitad1": {
+     "n": 111,
+     "R": 0.144,
+     "aciertos": 86,
+     "t": 4.27
+    },
+    "mitad2": {
+     "n": 374,
+     "R": 0.077,
+     "aciertos": 62,
+     "t": 2.72
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "lunes",
+    "mitad1": {
+     "n": 111,
+     "R": 0.144,
+     "aciertos": 86,
+     "t": 4.27
+    },
+    "mitad2": {
+     "n": 374,
+     "R": 0.077,
+     "aciertos": 62,
+     "t": 2.72
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "diario",
+    "mitad1": {
+     "n": 455,
+     "R": 0.139,
+     "aciertos": 86,
+     "t": 8.13
+    },
+    "mitad2": {
+     "n": 1643,
+     "R": 0.036,
+     "aciertos": 59,
+     "t": 2.68
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "gap a favor del sesgo",
+    "mitad1": {
+     "n": 291,
+     "R": 0.123,
+     "aciertos": 84,
+     "t": 5.7
+    },
+    "mitad2": {
+     "n": 1088,
+     "R": 0.034,
+     "aciertos": 59,
+     "t": 2.08
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "tamaño 0.1-0.5 ATR",
+    "mitad1": {
+     "n": 564,
+     "R": 0.14,
+     "aciertos": 86,
+     "t": 9.22
+    },
+    "mitad2": {
+     "n": 1637,
+     "R": 0.013,
+     "aciertos": 59,
+     "t": 1.06
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "2 gaps",
+    "velas": 1,
+    "condicion": "fin de semana",
+    "mitad1": {
+     "n": 111,
+     "R": 0.235,
+     "aciertos": 74,
+     "t": 2.82
+    },
+    "mitad2": {
+     "n": 374,
+     "R": 0.034,
+     "aciertos": 55,
+     "t": 0.85
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "2 gaps",
+    "velas": 1,
+    "condicion": "lunes",
+    "mitad1": {
+     "n": 111,
+     "R": 0.235,
+     "aciertos": 74,
+     "t": 2.82
+    },
+    "mitad2": {
+     "n": 374,
+     "R": 0.034,
+     "aciertos": 55,
+     "t": 0.85
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 gap",
+    "velas": 1,
+    "condicion": "fin de semana",
+    "mitad1": {
+     "n": 111,
+     "R": 0.439,
+     "aciertos": 66,
+     "t": 3.1
+    },
+    "mitad2": {
+     "n": 374,
+     "R": 0.051,
+     "aciertos": 47,
+     "t": 0.79
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 gap",
+    "velas": 1,
+    "condicion": "lunes",
+    "mitad1": {
+     "n": 111,
+     "R": 0.439,
+     "aciertos": 66,
+     "t": 3.1
+    },
+    "mitad2": {
+     "n": 374,
+     "R": 0.051,
+     "aciertos": 47,
+     "t": 0.79
+    }
+   }
+  ],
+  "probabilidad_de_llenado": {
+   "US500": {
+    "gaps": 2583,
+    "llena_el_mismo_dia": {
+     "0.1-0.5 ATR": {
+      "pct": 50,
+      "n": 2201
+     },
+     "0.5-1 ATR": {
+      "pct": 23,
+      "n": 331
+     },
+     "1-2 ATR": {
+      "pct": 8,
+      "n": 48
+     },
+     ">2 ATR": {
+      "pct": 0,
+      "n": 3
+     }
+    }
+   },
+   "NAS100": {
+    "gaps": 4061,
+    "llena_el_mismo_dia": {
+     "0.1-0.5 ATR": {
+      "pct": 63,
+      "n": 2981
+     },
+     "0.5-1 ATR": {
+      "pct": 31,
+      "n": 884
+     },
+     "1-2 ATR": {
+      "pct": 16,
+      "n": 184
+     },
+     ">2 ATR": {
+      "pct": 8,
+      "n": 12
+     }
+    }
+   },
+   "XAUUSD": {
+    "gaps": 3399,
+    "llena_el_mismo_dia": {
+     "0.1-0.5 ATR": {
+      "pct": 58,
+      "n": 2587
+     },
+     "0.5-1 ATR": {
+      "pct": 21,
+      "n": 580
+     },
+     "1-2 ATR": {
+      "pct": 10,
+      "n": 204
+     },
+     ">2 ATR": {
+      "pct": 4,
+      "n": 28
+     }
+    }
+   },
+   "XAGUSD": {
+    "gaps": 4257,
+    "llena_el_mismo_dia": {
+     "0.1-0.5 ATR": {
+      "pct": 41,
+      "n": 2523
+     },
+     "0.5-1 ATR": {
+      "pct": 12,
+      "n": 1100
+     },
+     "1-2 ATR": {
+      "pct": 5,
+      "n": 523
+     },
+     ">2 ATR": {
+      "pct": 2,
+      "n": 111
+     }
+    }
+   }
+  },
+  "mejores_por_aciertos": [
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": 0.028,
+     "aciertos": 90,
+     "t": 2.54
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": 0.011,
+     "aciertos": 70,
+     "t": 1.1
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 ATR",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": 0.14,
+     "aciertos": 86,
+     "t": 9.18
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": 0.043,
+     "aciertos": 59,
+     "t": 3.6
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "2 gaps",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": -0.2,
+     "aciertos": 69,
+     "t": -6.73
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": -0.138,
+     "aciertos": 58,
+     "t": -9.26
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "2 gaps",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": 0.121,
+     "aciertos": 69,
+     "t": 3.09
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": -0.039,
+     "aciertos": 52,
+     "t": -2.14
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "2 x gap",
+    "stop": "1 gap",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": 0.215,
+     "aciertos": 58,
+     "t": 3.35
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": -0.03,
+     "aciertos": 44,
+     "t": -1.05
+    }
+   },
+   {
+    "mercado": "US500",
+    "forma": "seguir",
+    "objetivo": "1 x gap",
+    "stop": "1 gap",
+    "velas": 1,
+    "condicion": "todos",
+    "mitad1": {
+     "n": 566,
+     "R": -0.352,
+     "aciertos": 57,
+     "t": -7.98
+    },
+    "mitad2": {
+     "n": 2017,
+     "R": -0.232,
+     "aciertos": 46,
+     "t": -10.59
+    }
+   }
+  ]
+ }
+}

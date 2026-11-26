@@ -28,3 +28,6 @@ Magic=7712400
 CompoundOnBalance=false
 MinLotIfBelow=false
 MaxRiskPctAtMinLot=3
+; 26 nov 2026: entradas solo de 08:00 a 18:00 hora de Nueva York (analisis de perdidas: Asia y Londres perdian)
+EntryFromHourNY=8
+EntryToHourNY=18

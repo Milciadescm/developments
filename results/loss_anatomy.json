@@ -1,0 +1,3365 @@
+{
+ "prop24": {
+  "resumen": {
+   "n": 130,
+   "ganadoras": 74,
+   "perdedoras": 56,
+   "R": 0.23,
+   "t": 1.75,
+   "numericos": [
+    {
+     "rasgo": "stop_atr_h1",
+     "se_conoce_al_entrar": true,
+     "ganadoras": 2.61,
+     "perdedoras": 2.56,
+     "p": 0.8853
+    },
+    {
+     "rasgo": "vol_pct",
+     "se_conoce_al_entrar": true,
+     "ganadoras": 0.62,
+     "perdedoras": 0.57,
+     "p": 0.2882
+    },
+    {
+     "rasgo": "liq_objetivo_R",
+     "se_conoce_al_entrar": true,
+     "ganadoras": 2.07,
+     "perdedoras": 2.2,
+     "p": 0.7106
+    },
+    {
+     "rasgo": "liq_stop_R",
+     "se_conoce_al_entrar": true,
+     "ganadoras": -0.37,
+     "perdedoras": -0.05,
+     "p": 0.0585
+    },
+    {
+     "rasgo": "pos_rango_ayer",
+     "se_conoce_al_entrar": true,
+     "ganadoras": -0.24,
+     "perdedoras": -0.03,
+     "p": 0.3127
+    },
+    {
+     "rasgo": "liq_semana_obj_R",
+     "se_conoce_al_entrar": true,
+     "ganadoras": 1.96,
+     "perdedoras": 1.96,
+     "p": 0.3577
+    },
+    {
+     "rasgo": "horas_desde_barrido",
+     "se_conoce_al_entrar": true,
+     "ganadoras": 1.0,
+     "perdedoras": 1.0,
+     "p": 0.0947
+    },
+    {
+     "rasgo": "hora",
+     "se_conoce_al_entrar": true,
+     "ganadoras": 12.0,
+     "perdedoras": 8.0,
+     "p": 0.0215
+    },
+    {
+     "rasgo": "horas_abierta",
+     "se_conoce_al_entrar": false,
+     "ganadoras": 24.0,
+     "perdedoras": 12.0,
+     "p": 0.0002
+    },
+    {
+     "rasgo": "mfe",
+     "se_conoce_al_entrar": false,
+     "ganadoras": 1.5,
+     "perdedoras": 1.05,
+     "p": 0.0077
+    },
+    {
+     "rasgo": "mae",
+     "se_conoce_al_entrar": false,
+     "ganadoras": -0.28,
+     "perdedoras": -1.29,
+     "p": 0.0002
+    },
+    {
+     "rasgo": "hora_mfe",
+     "se_conoce_al_entrar": false,
+     "ganadoras": 17.5,
+     "perdedoras": 0.0,
+     "p": 0.0002
+    },
+    {
+     "rasgo": "hora_mae",
+     "se_conoce_al_entrar": false,
+     "ganadoras": 3.0,
+     "perdedoras": 8.0,
+     "p": 0.0017
+    },
+    {
+     "rasgo": "horas_a_05R",
+     "se_conoce_al_entrar": false,
+     "ganadoras": 0.0,
+     "perdedoras": 0.0,
+     "p": 0.0082
+    }
+   ],
+   "comunes_en_perdidas": [
+    {
+     "rasgo": "con_mensual = True",
+     "en_perdedoras": 100,
+     "en_ganadoras": 100,
+     "n": 130,
+     "R": 0.23,
+     "aciertos": 57,
+     "p": null
+    },
+    {
+     "rasgo": "con_semanal = True",
+     "en_perdedoras": 95,
+     "en_ganadoras": 95,
+     "n": 123,
+     "R": 0.24,
+     "aciertos": 57,
+     "p": 0.7046
+    },
+    {
+     "rasgo": "tipo = B 4 horas",
+     "en_perdedoras": 80,
+     "en_ganadoras": 76,
+     "n": 101,
+     "R": 0.25,
+     "aciertos": 55,
+     "p": 0.7716
+    },
+    {
+     "rasgo": "direccion = compra",
+     "en_perdedoras": 79,
+     "en_ganadoras": 80,
+     "n": 103,
+     "R": 0.26,
+     "aciertos": 57,
+     "p": 0.6582
+    },
+    {
+     "rasgo": "barrio_lado_stop = False",
+     "en_perdedoras": 71,
+     "en_ganadoras": 51,
+     "n": 78,
+     "R": -0.07,
+     "aciertos": 49,
+     "p": 0.004
+    },
+    {
+     "rasgo": "barrio_lado_objetivo = False",
+     "en_perdedoras": 57,
+     "en_ganadoras": 50,
+     "n": 69,
+     "R": -0.03,
+     "aciertos": 54,
+     "p": 0.03
+    }
+   ],
+   "opuestos": [
+    {
+     "rasgo": "sesion = NY tarde (12-18)",
+     "en_perdedoras": 21,
+     "en_ganadoras": 43,
+     "n": 44,
+     "R": 0.81,
+     "aciertos": 73,
+     "p": 0.002
+    },
+    {
+     "rasgo": "barrio_lado_stop = True",
+     "en_perdedoras": 29,
+     "en_ganadoras": 49,
+     "n": 52,
+     "R": 0.69,
+     "aciertos": 69,
+     "p": 0.0025
+    },
+    {
+     "rasgo": "barrio_lado_stop = False",
+     "en_perdedoras": 71,
+     "en_ganadoras": 51,
+     "n": 78,
+     "R": -0.07,
+     "aciertos": 49,
+     "p": 0.004
+    },
+    {
+     "rasgo": "sesion = Asia (18-02)",
+     "en_perdedoras": 25,
+     "en_ganadoras": 9,
+     "n": 21,
+     "R": -0.35,
+     "aciertos": 33,
+     "p": 0.0495
+    },
+    {
+     "rasgo": "sesion = Londres (02-08)",
+     "en_perdedoras": 21,
+     "en_ganadoras": 9,
+     "n": 19,
+     "R": -0.28,
+     "aciertos": 37,
+     "p": 0.099
+    },
+    {
+     "rasgo": "mercado = BTCUSD",
+     "en_perdedoras": 16,
+     "en_ganadoras": 27,
+     "n": 29,
+     "R": 0.29,
+     "aciertos": 69,
+     "p": 0.8166
+    },
+    {
+     "rasgo": "mercado = US500",
+     "en_perdedoras": 27,
+     "en_ganadoras": 19,
+     "n": 29,
+     "R": 0.29,
+     "aciertos": 48,
+     "p": 0.8201
+    },
+    {
+     "rasgo": "dia = jue",
+     "en_perdedoras": 29,
+     "en_ganadoras": 22,
+     "n": 32,
+     "R": -0.04,
+     "aciertos": 50,
+     "p": 0.2239
+    },
+    {
+     "rasgo": "barrio_lado_objetivo = False",
+     "en_perdedoras": 57,
+     "en_ganadoras": 50,
+     "n": 69,
+     "R": -0.03,
+     "aciertos": 54,
+     "p": 0.03
+    },
+    {
+     "rasgo": "barrio_lado_objetivo = True",
+     "en_perdedoras": 43,
+     "en_ganadoras": 50,
+     "n": 61,
+     "R": 0.52,
+     "aciertos": 61,
+     "p": 0.028
+    },
+    {
+     "rasgo": "sesion = NY mañana (08-12)",
+     "en_perdedoras": 32,
+     "en_ganadoras": 38,
+     "n": 46,
+     "R": 0.15,
+     "aciertos": 61,
+     "p": 0.6752
+    },
+    {
+     "rasgo": "mercado = XAGUSD",
+     "en_perdedoras": 23,
+     "en_ganadoras": 18,
+     "n": 26,
+     "R": -0.01,
+     "aciertos": 50,
+     "p": 0.3743
+    }
+   ]
+  },
+  "cruces": {
+   "sesion x horas_abierta_g": [
+    {
+     "a": "Asia (18-02)",
+     "b": "0-2 h",
+     "n": 1.0,
+     "R": 1.0,
+     "aciertos": 100.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": "2-6 h",
+     "n": 2.0,
+     "R": -1.02,
+     "aciertos": 0.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": "6-12 h",
+     "n": 6.0,
+     "R": -1.04,
+     "aciertos": 0.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": "12-18 h",
+     "n": 2.0,
+     "R": -1.01,
+     "aciertos": 0.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": "18-24 h",
+     "n": 10.0,
+     "R": 0.2,
+     "aciertos": 60.0
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "2-6 h",
+     "n": 2.0,
+     "R": -1.03,
+     "aciertos": 0.0
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "6-12 h",
+     "n": 5.0,
+     "R": -0.65,
+     "aciertos": 20.0
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "12-18 h",
+     "n": 4.0,
+     "R": -0.28,
+     "aciertos": 25.0
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "18-24 h",
+     "n": 8.0,
+     "R": 0.13,
+     "aciertos": 62.5
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "2-6 h",
+     "n": 4.0,
+     "R": -0.55,
+     "aciertos": 25.0
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "6-12 h",
+     "n": 11.0,
+     "R": -0.4,
+     "aciertos": 27.27
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "12-18 h",
+     "n": 1.0,
+     "R": -1.09,
+     "aciertos": 0.0
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "18-24 h",
+     "n": 30.0,
+     "R": 0.48,
+     "aciertos": 80.0
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "0-2 h",
+     "n": 3.0,
+     "R": -0.18,
+     "aciertos": 66.67
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "2-6 h",
+     "n": 7.0,
+     "R": -0.3,
+     "aciertos": 57.14
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "6-12 h",
+     "n": 4.0,
+     "R": -1.05,
+     "aciertos": 0.0
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "12-18 h",
+     "n": 1.0,
+     "R": -1.04,
+     "aciertos": 0.0
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "18-24 h",
+     "n": 29.0,
+     "R": 1.51,
+     "aciertos": 89.66
+    }
+   ],
+   "sesion x liq_obj_g": [
+    {
+     "a": "Asia (18-02)",
+     "b": "0.5-1R",
+     "n": 1.0,
+     "R": -0.08,
+     "aciertos": 0.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": "1-2R",
+     "n": 5.0,
+     "R": 0.18,
+     "aciertos": 60.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": ">2R",
+     "n": 15.0,
+     "R": -0.54,
+     "aciertos": 26.67
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "0.5-1R",
+     "n": 1.0,
+     "R": -0.1,
+     "aciertos": 0.0
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "1-2R",
+     "n": 7.0,
+     "R": 0.01,
+     "aciertos": 57.14
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": ">2R",
+     "n": 11.0,
+     "R": -0.49,
+     "aciertos": 27.27
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "0.5-1R",
+     "n": 2.0,
+     "R": 0.09,
+     "aciertos": 50.0
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "1-2R",
+     "n": 16.0,
+     "R": -0.13,
+     "aciertos": 50.0
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": ">2R",
+     "n": 28.0,
+     "R": 0.31,
+     "aciertos": 67.86
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "0.5-1R",
+     "n": 4.0,
+     "R": 0.96,
+     "aciertos": 100.0
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "1-2R",
+     "n": 17.0,
+     "R": 0.19,
+     "aciertos": 64.71
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": ">2R",
+     "n": 23.0,
+     "R": 1.25,
+     "aciertos": 73.91
+    }
+   ],
+   "liq_obj_g x horas_abierta_g": [
+    {
+     "a": "0.5-1R",
+     "b": "2-6 h",
+     "n": 1.0,
+     "R": 0.07,
+     "aciertos": 100.0
+    },
+    {
+     "a": "0.5-1R",
+     "b": "6-12 h",
+     "n": 1.0,
+     "R": -0.06,
+     "aciertos": 0.0
+    },
+    {
+     "a": "0.5-1R",
+     "b": "12-18 h",
+     "n": 1.0,
+     "R": -0.1,
+     "aciertos": 0.0
+    },
+    {
+     "a": "0.5-1R",
+     "b": "18-24 h",
+     "n": 5.0,
+     "R": 0.78,
+     "aciertos": 80.0
+    },
+    {
+     "a": "1-2R",
+     "b": "0-2 h",
+     "n": 1.0,
+     "R": 1.0,
+     "aciertos": 100.0
+    },
+    {
+     "a": "1-2R",
+     "b": "2-6 h",
+     "n": 5.0,
+     "R": -0.11,
+     "aciertos": 60.0
+    },
+    {
+     "a": "1-2R",
+     "b": "6-12 h",
+     "n": 7.0,
+     "R": -1.04,
+     "aciertos": 0.0
+    },
+    {
+     "a": "1-2R",
+     "b": "12-18 h",
+     "n": 2.0,
+     "R": 0.0,
+     "aciertos": 50.0
+    },
+    {
+     "a": "1-2R",
+     "b": "18-24 h",
+     "n": 30.0,
+     "R": 0.3,
+     "aciertos": 70.0
+    },
+    {
+     "a": ">2R",
+     "b": "0-2 h",
+     "n": 3.0,
+     "R": -0.18,
+     "aciertos": 66.67
+    },
+    {
+     "a": ">2R",
+     "b": "2-6 h",
+     "n": 9.0,
+     "R": -0.88,
+     "aciertos": 11.11
+    },
+    {
+     "a": ">2R",
+     "b": "6-12 h",
+     "n": 18.0,
+     "R": -0.6,
+     "aciertos": 22.22
+    },
+    {
+     "a": ">2R",
+     "b": "12-18 h",
+     "n": 5.0,
+     "R": -1.04,
+     "aciertos": 0.0
+    },
+    {
+     "a": ">2R",
+     "b": "18-24 h",
+     "n": 42.0,
+     "R": 1.15,
+     "aciertos": 85.71
+    }
+   ],
+   "sesion x barrio_lado_stop": [
+    {
+     "a": "Asia (18-02)",
+     "b": "False",
+     "n": 16.0,
+     "R": -0.51,
+     "aciertos": 25.0
+    },
+    {
+     "a": "Asia (18-02)",
+     "b": "True",
+     "n": 5.0,
+     "R": 0.18,
+     "aciertos": 60.0
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "False",
+     "n": 9.0,
+     "R": -0.79,
+     "aciertos": 11.11
+    },
+    {
+     "a": "Londres (02-08)",
+     "b": "True",
+     "n": 10.0,
+     "R": 0.17,
+     "aciertos": 60.0
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "False",
+     "n": 30.0,
+     "R": 0.1,
+     "aciertos": 63.33
+    },
+    {
+     "a": "NY mañana (08-12)",
+     "b": "True",
+     "n": 16.0,
+     "R": 0.23,
+     "aciertos": 56.25
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "False",
+     "n": 23.0,
+     "R": 0.28,
+     "aciertos": 60.87
+    },
+    {
+     "a": "NY tarde (12-18)",
+     "b": "True",
+     "n": 21.0,
+     "R": 1.4,
+     "aciertos": 85.71
+    }
+   ],
+   "tipo x horas_abierta_g": [
+    {
+     "a": "A diaria",
+     "b": "0-2 h",
+     "n": 4.0,
+     "R": 0.11,
+     "aciertos": 75.0
+    },
+    {
+     "a": "A diaria",
+     "b": "2-6 h",
+     "n": 1.0,
+     "R": 0.85,
+     "aciertos": 100.0
+    },
+    {
+     "a": "A diaria",
+     "b": "6-12 h",
+     "n": 3.0,
+     "R": -0.06,
+     "aciertos": 0.0
+    },
+    {
+     "a": "A diaria",
+     "b": "12-18 h",
+     "n": 3.0,
+     "R": -0.03,
+     "aciertos": 33.33
+    },
+    {
+     "a": "A diaria",
+     "b": "18-24 h",
+     "n": 18.0,
+     "R": 0.2,
+     "aciertos": 72.22
+    },
+    {
+     "a": "B 4 horas",
+     "b": "2-6 h",
+     "n": 14.0,
+     "R": -0.66,
+     "aciertos": 28.57
+    },
+    {
+     "a": "B 4 horas",
+     "b": "6-12 h",
+     "n": 23.0,
+     "R": -0.78,
+     "aciertos": 17.39
+    },
+    {
+     "a": "B 4 horas",
+     "b": "12-18 h",
+     "n": 5.0,
+     "R": -1.04,
+     "aciertos": 0.0
+    },
+    {
+     "a": "B 4 horas",
+     "b": "18-24 h",
+     "n": 59.0,
+     "R": 0.98,
+     "aciertos": 81.36
+    }
+   ],
+   "liq_stop_g x horas_abierta_g": [
+    {
+     "a": "stop más allá",
+     "b": "0-2 h",
+     "n": 4.0,
+     "R": 0.11,
+     "aciertos": 75.0
+    },
+    {
+     "a": "stop más allá",
+     "b": "2-6 h",
+     "n": 5.0,
+     "R": -0.37,
+     "aciertos": 40.0
+    },
+    {
+     "a": "stop más allá",
+     "b": "6-12 h",
+     "n": 14.0,
+     "R": -0.4,
+     "aciertos": 28.57
+    },
+    {
+     "a": "stop más allá",
+     "b": "12-18 h",
+     "n": 5.0,
+     "R": -0.44,
+     "aciertos": 20.0
+    },
+    {
+     "a": "stop más allá",
+     "b": "18-24 h",
+     "n": 52.0,
+     "R": 0.52,
+     "aciertos": 78.85
+    },
+    {
+     "a": "0-1R",
+     "b": "2-6 h",
+     "n": 10.0,
+     "R": -0.66,
+     "aciertos": 30.0
+    },
+    {
+     "a": "0-1R",
+     "b": "6-12 h",
+     "n": 12.0,
+     "R": -1.04,
+     "aciertos": 0.0
+    },
+    {
+     "a": "0-1R",
+     "b": "12-18 h",
+     "n": 3.0,
+     "R": -1.03,
+     "aciertos": 0.0
+    },
+    {
+     "a": "0-1R",
+     "b": "18-24 h",
+     "n": 25.0,
+     "R": 1.37,
+     "aciertos": 80.0
+    }
+   ]
+  },
+  "por_sesion": [
+   {
+    "grupo": "Asia (18-02)",
+    "n": 21,
+    "aciertos": 33,
+    "R": -0.35,
+    "t": -1.73
+   },
+   {
+    "grupo": "Londres (02-08)",
+    "n": 19,
+    "aciertos": 37,
+    "R": -0.28,
+    "t": -1.53
+   },
+   {
+    "grupo": "NY mañana (08-12)",
+    "n": 46,
+    "aciertos": 61,
+    "R": 0.15,
+    "t": 1.21
+   },
+   {
+    "grupo": "NY tarde (12-18)",
+    "n": 44,
+    "aciertos": 73,
+    "R": 0.81,
+    "t": 2.48
+   }
+  ],
+  "por_hora_abierta": [
+   {
+    "grupo": "0-2 h",
+    "n": 4,
+    "aciertos": 75,
+    "R": 0.11,
+    "t": 0.27
+   },
+   {
+    "grupo": "2-6 h",
+    "n": 15,
+    "aciertos": 33,
+    "R": -0.56,
+    "t": -3.02
+   },
+   {
+    "grupo": "6-12 h",
+    "n": 26,
+    "aciertos": 15,
+    "R": -0.7,
+    "t": -5.85
+   },
+   {
+    "grupo": "12-18 h",
+    "n": 8,
+    "aciertos": 12,
+    "R": -0.66,
+    "t": -3.48
+   },
+   {
+    "grupo": "18-24 h",
+    "n": 77,
+    "aciertos": 79,
+    "R": 0.8,
+    "t": 4.23
+   }
+  ],
+  "por_liquidez_objetivo": [
+   {
+    "grupo": "0.5-1R",
+    "n": 8,
+    "aciertos": 62,
+    "R": 0.48,
+    "t": 1.7
+   },
+   {
+    "grupo": "1-2R",
+    "n": 45,
+    "aciertos": 58,
+    "R": 0.05,
+    "t": 0.33
+   },
+   {
+    "grupo": ">2R",
+    "n": 77,
+    "aciertos": 56,
+    "R": 0.31,
+    "t": 1.53
+   }
+  ],
+  "por_dia": [
+   {
+    "grupo": "lun",
+    "n": 14,
+    "aciertos": 57,
+    "R": -0.06,
+    "t": -0.25
+   },
+   {
+    "grupo": "mar",
+    "n": 22,
+    "aciertos": 55,
+    "R": 0.25,
+    "t": 0.84
+   },
+   {
+    "grupo": "mié",
+    "n": 37,
+    "aciertos": 57,
+    "R": 0.57,
+    "t": 1.51
+   },
+   {
+    "grupo": "jue",
+    "n": 32,
+    "aciertos": 50,
+    "R": -0.04,
+    "t": -0.23
+   },
+   {
+    "grupo": "vie",
+    "n": 19,
+    "aciertos": 63,
+    "R": 0.1,
+    "t": 0.82
+   },
+   {
+    "grupo": "sáb",
+    "n": 2,
+    "aciertos": 100,
+    "R": 0.62,
+    "t": null
+   },
+   {
+    "grupo": "dom",
+    "n": 4,
+    "aciertos": 75,
+    "R": 0.6,
+    "t": 1.08
+   }
+  ],
+  "tiempo": {
+   "perdedoras_horas_al_stop": {
+    "mediana": 12.0,
+    "p25": 8.0,
+    "p75": 21.0
+   },
+   "ganadoras_horas_al_cierre": {
+    "mediana": 24.0,
+    "p25": 24.0,
+    "p75": 24.0
+   },
+   "ganadoras_horas_a_05R": 0.0,
+   "perdedoras_que_tocaron_05R": 84,
+   "perdedoras_hora_mfe": 0.0,
+   "ganadoras_hora_mae": 3.0
+  },
+  "flotante_a_la_hora_k": [
+   {
+    "hora": 1,
+    "siguen_abiertas": 128,
+    "a_favor": 99,
+    "en_contra": 29,
+    "R_final_si_a_favor": 0.32,
+    "aciertos_si_a_favor": 60,
+    "R_final_si_en_contra": -0.08,
+    "aciertos_si_en_contra": 45
+   },
+   {
+    "hora": 2,
+    "siguen_abiertas": 126,
+    "a_favor": 80,
+    "en_contra": 46,
+    "R_final_si_a_favor": 0.48,
+    "aciertos_si_a_favor": 68,
+    "R_final_si_en_contra": -0.2,
+    "aciertos_si_en_contra": 37
+   },
+   {
+    "hora": 3,
+    "siguen_abiertas": 126,
+    "a_favor": 66,
+    "en_contra": 60,
+    "R_final_si_a_favor": 0.66,
+    "aciertos_si_a_favor": 71,
+    "R_final_si_en_contra": -0.24,
+    "aciertos_si_en_contra": 40
+   },
+   {
+    "hora": 4,
+    "siguen_abiertas": 112,
+    "a_favor": 72,
+    "en_contra": 40,
+    "R_final_si_a_favor": 0.62,
+    "aciertos_si_a_favor": 69,
+    "R_final_si_en_contra": -0.15,
+    "aciertos_si_en_contra": 42
+   },
+   {
+    "hora": 6,
+    "siguen_abiertas": 111,
+    "a_favor": 70,
+    "en_contra": 41,
+    "R_final_si_a_favor": 0.85,
+    "aciertos_si_a_favor": 80,
+    "R_final_si_en_contra": -0.52,
+    "aciertos_si_en_contra": 24
+   },
+   {
+    "hora": 8,
+    "siguen_abiertas": 96,
+    "a_favor": 66,
+    "en_contra": 30,
+    "R_final_si_a_favor": 0.88,
+    "aciertos_si_a_favor": 79,
+    "R_final_si_en_contra": -0.39,
+    "aciertos_si_en_contra": 37
+   },
+   {
+    "hora": 12,
+    "siguen_abiertas": 85,
+    "a_favor": 64,
+    "en_contra": 21,
+    "R_final_si_a_favor": 0.94,
+    "aciertos_si_a_favor": 80,
+    "R_final_si_en_contra": -0.19,
+    "aciertos_si_en_contra": 52
+   },
+   {
+    "hora": 16,
+    "siguen_abiertas": 77,
+    "a_favor": 60,
+    "en_contra": 17,
+    "R_final_si_a_favor": 1.1,
+    "aciertos_si_a_favor": 90,
+    "R_final_si_en_contra": -0.29,
+    "aciertos_si_en_contra": 41
+   },
+   {
+    "hora": 20,
+    "siguen_abiertas": 73,
+    "a_favor": 57,
+    "en_contra": 16,
+    "R_final_si_a_favor": 1.17,
+    "aciertos_si_a_favor": 93,
+    "R_final_si_en_contra": -0.39,
+    "aciertos_si_en_contra": 38
+   }
+  ],
+  "reglas_de_tiempo": {
+   "base": {
+    "R": 0.23,
+    "t": 1.75,
+    "mitad1": 0.308,
+    "mitad2": 0.154
+   },
+   "todas": [
+    {
+     "regla": "cerrar a la hora 6 si flotante < +0.00R",
+     "R": 0.251,
+     "t": 1.96,
+     "mitad1": 0.295,
+     "mitad2": 0.209,
+     "cerradas": 41
+    },
+    {
+     "regla": "cerrar a la hora 4 si flotante < -0.50R",
+     "R": 0.245,
+     "t": 1.87,
+     "mitad1": 0.325,
+     "mitad2": 0.166,
+     "cerradas": 7
+    },
+    {
+     "regla": "cerrar a la hora 12 si flotante < -0.25R",
+     "R": 0.244,
+     "t": 1.88,
+     "mitad1": 0.33,
+     "mitad2": 0.161,
+     "cerradas": 10
+    },
+    {
+     "regla": "cerrar a la hora 8 si flotante < -0.25R",
+     "R": 0.241,
+     "t": 1.86,
+     "mitad1": 0.288,
+     "mitad2": 0.196,
+     "cerradas": 19
+    },
+    {
+     "regla": "cerrar a la hora 6 si flotante < +0.25R",
+     "R": 0.237,
+     "t": 1.9,
+     "mitad1": 0.254,
+     "mitad2": 0.221,
+     "cerradas": 68
+    },
+    {
+     "regla": "cerrar a la hora 4 si flotante < -0.25R",
+     "R": 0.236,
+     "t": 1.82,
+     "mitad1": 0.313,
+     "mitad2": 0.162,
+     "cerradas": 17
+    },
+    {
+     "regla": "cerrar a la hora 2 si flotante < -0.50R",
+     "R": 0.234,
+     "t": 1.79,
+     "mitad1": 0.319,
+     "mitad2": 0.152,
+     "cerradas": 10
+    },
+    {
+     "regla": "cerrar a la hora 8 si flotante < -0.50R",
+     "R": 0.233,
+     "t": 1.77,
+     "mitad1": 0.316,
+     "mitad2": 0.152,
+     "cerradas": 5
+    },
+    {
+     "regla": "cerrar a la hora 2 si flotante < -0.25R",
+     "R": 0.23,
+     "t": 1.76,
+     "mitad1": 0.323,
+     "mitad2": 0.139,
+     "cerradas": 18
+    },
+    {
+     "regla": "cerrar a la hora 6 si flotante < -0.50R",
+     "R": 0.23,
+     "t": 1.75,
+     "mitad1": 0.293,
+     "mitad2": 0.17,
+     "cerradas": 11
+    },
+    {
+     "regla": "cerrar a la hora 1 si flotante < -0.50R",
+     "R": 0.229,
+     "t": 1.74,
+     "mitad1": 0.312,
+     "mitad2": 0.148,
+     "cerradas": 4
+    },
+    {
+     "regla": "cerrar a la hora 8 si flotante < +0.00R",
+     "R": 0.229,
+     "t": 1.77,
+     "mitad1": 0.278,
+     "mitad2": 0.181,
+     "cerradas": 30
+    },
+    {
+     "regla": "cerrar a la hora 12 si flotante < -0.50R",
+     "R": 0.229,
+     "t": 1.74,
+     "mitad1": 0.308,
+     "mitad2": 0.152,
+     "cerradas": 4
+    },
+    {
+     "regla": "cerrar a la hora 6 si flotante < -0.25R",
+     "R": 0.225,
+     "t": 1.73,
+     "mitad1": 0.291,
+     "mitad2": 0.16,
+     "cerradas": 28
+    },
+    {
+     "regla": "cerrar a la hora 3 si flotante < -0.25R",
+     "R": 0.213,
+     "t": 1.62,
+     "mitad1": 0.282,
+     "mitad2": 0.146,
+     "cerradas": 27
+    },
+    {
+     "regla": "cerrar a la hora 12 si flotante < +0.00R",
+     "R": 0.21,
+     "t": 1.61,
+     "mitad1": 0.269,
+     "mitad2": 0.152,
+     "cerradas": 21
+    },
+    {
+     "regla": "cerrar a la hora 1 si flotante < -0.25R",
+     "R": 0.209,
+     "t": 1.6,
+     "mitad1": 0.261,
+     "mitad2": 0.157,
+     "cerradas": 11
+    },
+    {
+     "regla": "cerrar a la hora 3 si flotante < -0.50R",
+     "R": 0.203,
+     "t": 1.53,
+     "mitad1": 0.266,
+     "mitad2": 0.142,
+     "cerradas": 13
+    },
+    {
+     "regla": "cerrar a la hora 12 si flotante < +0.25R",
+     "R": 0.198,
+     "t": 1.53,
+     "mitad1": 0.241,
+     "mitad2": 0.157,
+     "cerradas": 39
+    },
+    {
+     "regla": "cerrar a la hora 1 si flotante < +0.00R",
+     "R": 0.186,
+     "t": 1.43,
+     "mitad1": 0.23,
+     "mitad2": 0.142,
+     "cerradas": 29
+    },
+    {
+     "regla": "cerrar a la hora 8 si flotante < +0.25R",
+     "R": 0.185,
+     "t": 1.46,
+     "mitad1": 0.202,
+     "mitad2": 0.168,
+     "cerradas": 52
+    },
+    {
+     "regla": "cerrar a la hora 2 si flotante < +0.00R",
+     "R": 0.184,
+     "t": 1.47,
+     "mitad1": 0.289,
+     "mitad2": 0.081,
+     "cerradas": 46
+    },
+    {
+     "regla": "cerrar a la hora 4 si flotante < +0.00R",
+     "R": 0.183,
+     "t": 1.44,
+     "mitad1": 0.243,
+     "mitad2": 0.124,
+     "cerradas": 40
+    },
+    {
+     "regla": "cerrar a la hora 2 si flotante < +0.25R",
+     "R": 0.172,
+     "t": 1.43,
+     "mitad1": 0.242,
+     "mitad2": 0.104,
+     "cerradas": 73
+    },
+    {
+     "regla": "cerrar a la hora 3 si flotante < +0.25R",
+     "R": 0.166,
+     "t": 1.36,
+     "mitad1": 0.188,
+     "mitad2": 0.143,
+     "cerradas": 84
+    },
+    {
+     "regla": "cerrar a la hora 4 si flotante < +0.25R",
+     "R": 0.158,
+     "t": 1.29,
+     "mitad1": 0.204,
+     "mitad2": 0.113,
+     "cerradas": 64
+    },
+    {
+     "regla": "cerrar a la hora 3 si flotante < +0.00R",
+     "R": 0.157,
+     "t": 1.25,
+     "mitad1": 0.228,
+     "mitad2": 0.089,
+     "cerradas": 60
+    },
+    {
+     "regla": "cerrar a la hora 1 si flotante < +0.25R",
+     "R": 0.143,
+     "t": 1.17,
+     "mitad1": 0.242,
+     "mitad2": 0.048,
+     "cerradas": 51
+    }
+   ]
+  },
+  "incidentes_dias_con_2+_perdidas": [
+   {
+    "dia": "2025-04-22",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -2.14,
+    "mercados": [
+     "XAGUSD",
+     "XAUUSD"
+    ]
+   },
+   {
+    "dia": "2025-10-09",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -2.13,
+    "mercados": [
+     "US500",
+     "XAGUSD"
+    ]
+   },
+   {
+    "dia": "2026-01-14",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -2.04,
+    "mercados": [
+     "NAS100",
+     "US500"
+    ]
+   },
+   {
+    "dia": "2025-07-31",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -2.04,
+    "mercados": [
+     "NAS100",
+     "US500"
+    ]
+   },
+   {
+    "dia": "2026-01-29",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -2.01,
+    "mercados": [
+     "XAGUSD",
+     "XAUUSD"
+    ]
+   },
+   {
+    "dia": "2024-07-24",
+    "operaciones": 3,
+    "perdidas": 2,
+    "R": -1.81,
+    "mercados": [
+     "NAS100",
+     "XAUUSD"
+    ]
+   },
+   {
+    "dia": "2026-08-03",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -1.26,
+    "mercados": [
+     "BTCUSD",
+     "XAGUSD"
+    ]
+   },
+   {
+    "dia": "2025-08-01",
+    "operaciones": 2,
+    "perdidas": 2,
+    "R": -0.11,
+    "mercados": [
+     "NAS100",
+     "US500"
+    ]
+   },
+   {
+    "dia": "2025-09-17",
+    "operaciones": 3,
+    "perdidas": 2,
+    "R": 1.72,
+    "mercados": [
+     "XAGUSD",
+     "XAUUSD"
+    ]
+   }
+  ],
+  "peor_racha_perdidas": 8,
+  "disidentes_perdidas_que_estuvieron_a_+0.7R": [
+   {
+    "mercado": "US500",
+    "tipo": "A diaria",
+    "entrada": "2024-12-18 20:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.01,
+    "mfe": 0.73,
+    "mae": -1.18,
+    "horas_abierta": 2.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.11,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "A diaria",
+    "entrada": "2025-08-01 13:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -0.02,
+    "mfe": 0.74,
+    "mae": -0.37,
+    "horas_abierta": 7.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 3.25,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2024-07-24 16:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.05,
+    "mfe": 1.87,
+    "mae": -2.38,
+    "horas_abierta": 12.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.01,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-09-18 00:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.01,
+    "mfe": 0.86,
+    "mae": -1.1,
+    "horas_abierta": 16.0,
+    "hora_mfe": 9.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-01-29 12:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.01,
+    "mfe": 2.15,
+    "mae": -1.05,
+    "horas_abierta": 24.0,
+    "hora_mfe": 2.0,
+    "liq_objetivo_R": 1.49,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-05-28 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.01,
+    "mfe": 2.07,
+    "mae": -1.0,
+    "horas_abierta": 8.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.6,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-07-29 04:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.01,
+    "mfe": 2.08,
+    "mae": -2.77,
+    "horas_abierta": 16.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.33,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-09-17 04:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.01,
+    "mfe": 1.18,
+    "mae": -1.21,
+    "horas_abierta": 12.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2024-07-12 04:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.09,
+    "mfe": 1.0,
+    "mae": -1.23,
+    "horas_abierta": 12.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-04-22 20:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.13,
+    "mfe": 0.92,
+    "mae": -1.19,
+    "horas_abierta": 4.0,
+    "hora_mfe": 4.0,
+    "liq_objetivo_R": 2.17,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-06-19 04:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.1,
+    "mfe": 0.9,
+    "mae": -1.96,
+    "horas_abierta": 24.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-08-14 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -0.14,
+    "mfe": 1.34,
+    "mae": -0.37,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.2,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-09-17 08:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -0.02,
+    "mfe": 1.07,
+    "mae": -0.84,
+    "horas_abierta": 24.0,
+    "hora_mfe": 10.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-01-29 12:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.01,
+    "mfe": 2.61,
+    "mae": -2.18,
+    "horas_abierta": 24.0,
+    "hora_mfe": 2.0,
+    "liq_objetivo_R": 1.86,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-03-11 08:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.09,
+    "mfe": 0.98,
+    "mae": -1.05,
+    "horas_abierta": 8.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-11-04 04:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.03,
+    "mfe": 1.96,
+    "mae": -1.27,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-05-12 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.04,
+    "mfe": 1.27,
+    "mae": -2.36,
+    "horas_abierta": 8.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 1.61,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-05-19 00:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.04,
+    "mfe": 2.89,
+    "mae": -1.47,
+    "horas_abierta": 8.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.88,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-06-30 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.12,
+    "mfe": 1.02,
+    "mae": -1.16,
+    "horas_abierta": 24.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 1.95,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-10-12 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.09,
+    "mfe": 1.41,
+    "mae": -1.74,
+    "horas_abierta": 16.0,
+    "hora_mfe": 15.0,
+    "liq_objetivo_R": 2.2,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-12-02 12:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.03,
+    "mfe": 1.18,
+    "mae": -1.19,
+    "horas_abierta": 16.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-02-25 12:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.02,
+    "mfe": 0.87,
+    "mae": -1.5,
+    "horas_abierta": 8.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-07-01 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.07,
+    "mfe": 1.78,
+    "mae": -1.64,
+    "horas_abierta": 12.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.98,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2026-08-03 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -0.22,
+    "mfe": 2.15,
+    "mae": -0.59,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.63,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2024-07-17 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -0.1,
+    "mfe": 0.75,
+    "mae": -0.64,
+    "horas_abierta": 24.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2024-09-03 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.02,
+    "mfe": 1.44,
+    "mae": -2.44,
+    "horas_abierta": 8.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.2,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2025-02-20 12:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.05,
+    "mfe": 1.27,
+    "mae": -2.09,
+    "horas_abierta": 4.0,
+    "hora_mfe": 2.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2025-07-31 16:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.02,
+    "mfe": 1.28,
+    "mae": -1.31,
+    "horas_abierta": 4.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.28,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2025-10-09 16:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.08,
+    "mfe": 2.09,
+    "mae": -5.9,
+    "horas_abierta": 24.0,
+    "hora_mfe": 21.0,
+    "liq_objetivo_R": 2.16,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2025-12-11 00:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.03,
+    "mfe": 1.29,
+    "mae": -1.58,
+    "horas_abierta": 4.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2025-12-12 12:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.02,
+    "mfe": 1.79,
+    "mae": -1.38,
+    "horas_abierta": 8.0,
+    "hora_mfe": 2.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2026-01-14 08:00:00+00:00",
+    "sesion": "Londres (02-08)",
+    "R": -1.02,
+    "mfe": 0.9,
+    "mae": -1.59,
+    "horas_abierta": 8.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2026-07-16 16:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.06,
+    "mfe": 1.5,
+    "mae": -1.8,
+    "horas_abierta": 12.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.2,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2026-07-23 04:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.03,
+    "mfe": 1.34,
+    "mae": -3.29,
+    "horas_abierta": 12.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2024-07-11 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.02,
+    "mfe": 3.06,
+    "mae": -2.33,
+    "horas_abierta": 4.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2024-10-23 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.02,
+    "mfe": 1.09,
+    "mae": -2.06,
+    "horas_abierta": 4.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2024-10-30 20:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.04,
+    "mfe": 0.79,
+    "mae": -1.62,
+    "horas_abierta": 12.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.16,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2025-07-31 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": -1.01,
+    "mfe": 2.16,
+    "mae": -1.46,
+    "horas_abierta": 8.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 1.31,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2026-06-03 20:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": -1.04,
+    "mfe": 1.33,
+    "mae": -1.67,
+    "horas_abierta": 16.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.11,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2026-08-18 00:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": -1.01,
+    "mfe": 1.13,
+    "mae": -1.39,
+    "horas_abierta": 12.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   }
+  ],
+  "disidentes_ganadoras_que_estuvieron_a_-0.7R": [
+   {
+    "mercado": "BTCUSD",
+    "tipo": "A diaria",
+    "entrada": "2024-12-19 19:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": 0.05,
+    "mfe": 0.45,
+    "mae": -0.94,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.01,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "US500",
+    "tipo": "A diaria",
+    "entrada": "2024-07-24 18:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": 0.12,
+    "mfe": 0.53,
+    "mae": -0.84,
+    "horas_abierta": 24.0,
+    "hora_mfe": 23.0,
+    "liq_objetivo_R": 1.85,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "XAUUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2024-10-31 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": 0.31,
+    "mfe": 1.92,
+    "mae": -0.74,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "XAGUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-09-09 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": 0.29,
+    "mfe": 1.23,
+    "mae": -0.79,
+    "horas_abierta": 24.0,
+    "hora_mfe": 2.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2024-12-05 20:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": 1.69,
+    "mfe": 1.86,
+    "mae": -0.87,
+    "horas_abierta": 24.0,
+    "hora_mfe": 24.0,
+    "liq_objetivo_R": 0.9,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-05-28 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": 0.64,
+    "mfe": 0.98,
+    "mae": -0.92,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "BTCUSD",
+    "tipo": "B 4 horas",
+    "entrada": "2025-07-15 00:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": 0.06,
+    "mfe": 1.03,
+    "mae": -0.78,
+    "horas_abierta": 24.0,
+    "hora_mfe": 0.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2024-07-11 16:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": 1.56,
+    "mfe": 2.02,
+    "mae": -0.75,
+    "horas_abierta": 24.0,
+    "hora_mfe": 23.0,
+    "liq_objetivo_R": 2.1,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "US500",
+    "tipo": "B 4 horas",
+    "entrada": "2025-06-12 00:00:00+00:00",
+    "sesion": "Asia (18-02)",
+    "R": 0.41,
+    "mfe": 1.63,
+    "mae": -1.61,
+    "horas_abierta": 24.0,
+    "hora_mfe": 19.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2024-08-22 16:00:00+00:00",
+    "sesion": "NY tarde (12-18)",
+    "R": 0.27,
+    "mfe": 1.57,
+    "mae": -0.89,
+    "horas_abierta": 24.0,
+    "hora_mfe": 22.0,
+    "liq_objetivo_R": 2.1,
+    "barrio_lado_stop": true
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2024-10-15 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": 0.02,
+    "mfe": 2.23,
+    "mae": -0.88,
+    "horas_abierta": 24.0,
+    "hora_mfe": 1.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": false
+   },
+   {
+    "mercado": "NAS100",
+    "tipo": "B 4 horas",
+    "entrada": "2025-07-16 12:00:00+00:00",
+    "sesion": "NY mañana (08-12)",
+    "R": 1.25,
+    "mfe": 1.81,
+    "mae": -0.75,
+    "horas_abierta": 24.0,
+    "hora_mfe": 18.0,
+    "liq_objetivo_R": 2.39,
+    "barrio_lado_stop": true
+   }
+  ]
+ },
+ "holding": {
+  "Oro + Plata chandelier (Billetera 2)": {
+   "n": 339,
+   "R": 0.227,
+   "t": 2.34,
+   "mitad1": 0.112,
+   "mitad2": 0.329,
+   "perdedoras_dias": 9.0,
+   "ganadoras_dias": 30.5,
+   "ganadoras_dias_a_05R": 3.0,
+   "perdedoras_que_tocaron_05R": 59,
+   "flotante_al_dia_k": [
+    {
+     "dia": 1,
+     "abiertas": 321,
+     "R_si_a_favor": 0.68,
+     "aciertos_si_a_favor": 44,
+     "R_si_en_contra": -0.14,
+     "aciertos_si_en_contra": 27,
+     "n_en_contra": 149
+    },
+    {
+     "dia": 2,
+     "abiertas": 301,
+     "R_si_a_favor": 0.76,
+     "aciertos_si_a_favor": 48,
+     "R_si_en_contra": -0.03,
+     "aciertos_si_en_contra": 28,
+     "n_en_contra": 144
+    },
+    {
+     "dia": 3,
+     "abiertas": 292,
+     "R_si_a_favor": 0.89,
+     "aciertos_si_a_favor": 51,
+     "R_si_en_contra": -0.14,
+     "aciertos_si_en_contra": 25,
+     "n_en_contra": 130
+    },
+    {
+     "dia": 5,
+     "abiertas": 271,
+     "R_si_a_favor": 0.8,
+     "aciertos_si_a_favor": 50,
+     "R_si_en_contra": 0.12,
+     "aciertos_si_en_contra": 31,
+     "n_en_contra": 110
+    },
+    {
+     "dia": 10,
+     "abiertas": 207,
+     "R_si_a_favor": 1.14,
+     "aciertos_si_a_favor": 61,
+     "R_si_en_contra": 0.03,
+     "aciertos_si_en_contra": 25,
+     "n_en_contra": 56
+    },
+    {
+     "dia": 20,
+     "abiertas": 123,
+     "R_si_a_favor": 1.6,
+     "aciertos_si_a_favor": 69,
+     "R_si_en_contra": -0.3,
+     "aciertos_si_en_contra": 11,
+     "n_en_contra": 9
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar el día 1 si flotante < -0.25R",
+     "R": 0.22,
+     "t": 2.35,
+     "mitad1": 0.118,
+     "mitad2": 0.312
+    },
+    {
+     "regla": "cerrar el día 10 si flotante < -0.50R",
+     "R": 0.21,
+     "t": 2.19,
+     "mitad1": 0.087,
+     "mitad2": 0.32
+    },
+    {
+     "regla": "cerrar el día 10 si flotante < -0.25R",
+     "R": 0.19,
+     "t": 2.03,
+     "mitad1": 0.058,
+     "mitad2": 0.308
+    },
+    {
+     "regla": "cerrar el día 1 si flotante < -0.50R",
+     "R": 0.189,
+     "t": 1.98,
+     "mitad1": 0.086,
+     "mitad2": 0.281
+    },
+    {
+     "regla": "cerrar el día 2 si flotante < -0.25R",
+     "R": 0.186,
+     "t": 1.98,
+     "mitad1": 0.081,
+     "mitad2": 0.279
+    },
+    {
+     "regla": "cerrar el día 3 si flotante < -0.25R",
+     "R": 0.185,
+     "t": 1.97,
+     "mitad1": 0.104,
+     "mitad2": 0.256
+    }
+   ]
+  },
+  "S&P + Nasdaq + BTC anual": {
+   "n": 312,
+   "R": 2.028,
+   "t": 2.55,
+   "mitad1": 3.665,
+   "mitad2": 0.73,
+   "perdedoras_dias": 11.5,
+   "ganadoras_dias": 417.5,
+   "ganadoras_dias_a_05R": 2.0,
+   "perdedoras_que_tocaron_05R": 71,
+   "flotante_al_dia_k": [
+    {
+     "dia": 1,
+     "abiertas": 293,
+     "R_si_a_favor": 2.26,
+     "aciertos_si_a_favor": 25,
+     "R_si_en_contra": 2.16,
+     "aciertos_si_en_contra": 13,
+     "n_en_contra": 118
+    },
+    {
+     "dia": 2,
+     "abiertas": 276,
+     "R_si_a_favor": 2.74,
+     "aciertos_si_a_favor": 24,
+     "R_si_en_contra": 1.87,
+     "aciertos_si_en_contra": 17,
+     "n_en_contra": 102
+    },
+    {
+     "dia": 3,
+     "abiertas": 262,
+     "R_si_a_favor": 2.69,
+     "aciertos_si_a_favor": 24,
+     "R_si_en_contra": 2.4,
+     "aciertos_si_en_contra": 17,
+     "n_en_contra": 78
+    },
+    {
+     "dia": 5,
+     "abiertas": 245,
+     "R_si_a_favor": 2.33,
+     "aciertos_si_a_favor": 26,
+     "R_si_en_contra": 4.37,
+     "aciertos_si_en_contra": 16,
+     "n_en_contra": 61
+    },
+    {
+     "dia": 10,
+     "abiertas": 197,
+     "R_si_a_favor": 3.68,
+     "aciertos_si_a_favor": 34,
+     "R_si_en_contra": 3.75,
+     "aciertos_si_en_contra": 14,
+     "n_en_contra": 42
+    },
+    {
+     "dia": 20,
+     "abiertas": 135,
+     "R_si_a_favor": 5.56,
+     "aciertos_si_a_favor": 45,
+     "R_si_en_contra": 7.31,
+     "aciertos_si_en_contra": 25,
+     "n_en_contra": 12
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar el día 5 si flotante < -0.25R",
+     "R": 2.049,
+     "t": 2.58,
+     "mitad1": 3.704,
+     "mitad2": 0.737
+    },
+    {
+     "regla": "cerrar el día 5 si flotante < -0.50R",
+     "R": 2.036,
+     "t": 2.56,
+     "mitad1": 3.691,
+     "mitad2": 0.723
+    },
+    {
+     "regla": "cerrar el día 1 si flotante < -0.25R",
+     "R": 2.01,
+     "t": 2.53,
+     "mitad1": 3.685,
+     "mitad2": 0.681
+    },
+    {
+     "regla": "cerrar el día 1 si flotante < -0.50R",
+     "R": 1.983,
+     "t": 2.5,
+     "mitad1": 3.672,
+     "mitad2": 0.643
+    },
+    {
+     "regla": "cerrar el día 2 si flotante < -0.50R",
+     "R": 1.98,
+     "t": 2.49,
+     "mitad1": 3.682,
+     "mitad2": 0.63
+    },
+    {
+     "regla": "cerrar el día 3 si flotante < -0.50R",
+     "R": 1.977,
+     "t": 2.49,
+     "mitad1": 3.689,
+     "mitad2": 0.618
+    }
+   ]
+  }
+ },
+ "alta_frecuencia": {
+  "oro ORB": {
+   "n": 539,
+   "R": -0.041,
+   "t": -0.67,
+   "perdedoras_minutos": 10.0,
+   "ganadoras_minutos": 20.0,
+   "flotante_a_la_vela_k": [
+    {
+     "vela": 1,
+     "minutos": 5,
+     "abiertas": 425,
+     "R_si_a_favor": 0.59,
+     "aciertos_si_a_favor": 57,
+     "R_si_en_contra": -0.41,
+     "aciertos_si_en_contra": 23
+    },
+    {
+     "vela": 2,
+     "minutos": 10,
+     "abiertas": 323,
+     "R_si_a_favor": 0.57,
+     "aciertos_si_a_favor": 56,
+     "R_si_en_contra": -0.21,
+     "aciertos_si_en_contra": 30
+    },
+    {
+     "vela": 3,
+     "minutos": 15,
+     "abiertas": 257,
+     "R_si_a_favor": 0.69,
+     "aciertos_si_a_favor": 60,
+     "R_si_en_contra": -0.33,
+     "aciertos_si_en_contra": 26
+    },
+    {
+     "vela": 6,
+     "minutos": 30,
+     "abiertas": 151,
+     "R_si_a_favor": 0.69,
+     "aciertos_si_a_favor": 61,
+     "R_si_en_contra": -0.04,
+     "aciertos_si_en_contra": 35
+    },
+    {
+     "vela": 12,
+     "minutos": 60,
+     "abiertas": 70,
+     "R_si_a_favor": 0.86,
+     "aciertos_si_a_favor": 67,
+     "R_si_en_contra": -0.47,
+     "aciertos_si_en_contra": 19
+    },
+    {
+     "vela": 24,
+     "minutos": 120,
+     "abiertas": 25,
+     "R_si_a_favor": 0.35,
+     "aciertos_si_a_favor": 50,
+     "R_si_en_contra": 0.9,
+     "aciertos_si_en_contra": 67
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar a los 5 min si no va a favor",
+     "R": -0.053,
+     "t": -1.01,
+     "mitad1": -0.061,
+     "mitad2": -0.046
+    },
+    {
+     "regla": "cerrar a los 10 min si no va a favor",
+     "R": -0.107,
+     "t": -1.98,
+     "mitad1": -0.128,
+     "mitad2": -0.088
+    },
+    {
+     "regla": "cerrar a los 15 min si no va a favor",
+     "R": -0.058,
+     "t": -1.01,
+     "mitad1": -0.075,
+     "mitad2": -0.043
+    },
+    {
+     "regla": "cerrar a los 30 min si no va a favor",
+     "R": -0.079,
+     "t": -1.34,
+     "mitad1": -0.131,
+     "mitad2": -0.029
+    },
+    {
+     "regla": "cerrar a los 60 min si no va a favor",
+     "R": -0.043,
+     "t": -0.7,
+     "mitad1": -0.096,
+     "mitad2": 0.008
+    }
+   ],
+   "por_hora": [
+    {
+     "grupo": "10",
+     "n": 539,
+     "aciertos": 36,
+     "R": -0.04,
+     "t": -0.67
+    }
+   ]
+  },
+  "oro BARRIDO": {
+   "n": 586,
+   "R": -0.284,
+   "t": -5.09,
+   "perdedoras_minutos": 10.0,
+   "ganadoras_minutos": 15.0,
+   "flotante_a_la_vela_k": [
+    {
+     "vela": 1,
+     "minutos": 5,
+     "abiertas": 467,
+     "R_si_a_favor": 0.2,
+     "aciertos_si_a_favor": 45,
+     "R_si_en_contra": -0.55,
+     "aciertos_si_en_contra": 20
+    },
+    {
+     "vela": 2,
+     "minutos": 10,
+     "abiertas": 366,
+     "R_si_a_favor": 0.46,
+     "aciertos_si_a_favor": 53,
+     "R_si_en_contra": -0.63,
+     "aciertos_si_en_contra": 18
+    },
+    {
+     "vela": 3,
+     "minutos": 15,
+     "abiertas": 281,
+     "R_si_a_favor": 0.37,
+     "aciertos_si_a_favor": 50,
+     "R_si_en_contra": -0.53,
+     "aciertos_si_en_contra": 21
+    },
+    {
+     "vela": 6,
+     "minutos": 30,
+     "abiertas": 151,
+     "R_si_a_favor": 0.34,
+     "aciertos_si_a_favor": 49,
+     "R_si_en_contra": -0.25,
+     "aciertos_si_en_contra": 32
+    },
+    {
+     "vela": 12,
+     "minutos": 60,
+     "abiertas": 70,
+     "R_si_a_favor": 0.47,
+     "aciertos_si_a_favor": 54,
+     "R_si_en_contra": -0.34,
+     "aciertos_si_en_contra": 29
+    },
+    {
+     "vela": 24,
+     "minutos": 120,
+     "abiertas": 23,
+     "R_si_a_favor": 0.48,
+     "aciertos_si_a_favor": 54,
+     "R_si_en_contra": 0.0,
+     "aciertos_si_en_contra": 50
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar a los 5 min si no va a favor",
+     "R": -0.245,
+     "t": -5.28,
+     "mitad1": -0.343,
+     "mitad2": -0.102
+    },
+    {
+     "regla": "cerrar a los 10 min si no va a favor",
+     "R": -0.235,
+     "t": -4.79,
+     "mitad1": -0.306,
+     "mitad2": -0.131
+    },
+    {
+     "regla": "cerrar a los 15 min si no va a favor",
+     "R": -0.27,
+     "t": -5.35,
+     "mitad1": -0.351,
+     "mitad2": -0.152
+    },
+    {
+     "regla": "cerrar a los 30 min si no va a favor",
+     "R": -0.301,
+     "t": -5.64,
+     "mitad1": -0.41,
+     "mitad2": -0.141
+    },
+    {
+     "regla": "cerrar a los 60 min si no va a favor",
+     "R": -0.285,
+     "t": -5.2,
+     "mitad1": -0.386,
+     "mitad2": -0.136
+    }
+   ],
+   "por_hora": [
+    {
+     "grupo": "02",
+     "n": 56,
+     "aciertos": 29,
+     "R": -0.29,
+     "t": -1.61
+    },
+    {
+     "grupo": "03",
+     "n": 47,
+     "aciertos": 32,
+     "R": -0.24,
+     "t": -1.2
+    },
+    {
+     "grupo": "04",
+     "n": 56,
+     "aciertos": 27,
+     "R": -0.37,
+     "t": -2.04
+    },
+    {
+     "grupo": "05",
+     "n": 40,
+     "aciertos": 25,
+     "R": -0.46,
+     "t": -2.28
+    },
+    {
+     "grupo": "06",
+     "n": 40,
+     "aciertos": 32,
+     "R": -0.2,
+     "t": -0.91
+    },
+    {
+     "grupo": "07",
+     "n": 44,
+     "aciertos": 27,
+     "R": -0.35,
+     "t": -1.69
+    },
+    {
+     "grupo": "08",
+     "n": 79,
+     "aciertos": 25,
+     "R": -0.4,
+     "t": -2.74
+    },
+    {
+     "grupo": "09",
+     "n": 93,
+     "aciertos": 26,
+     "R": -0.36,
+     "t": -2.6
+    },
+    {
+     "grupo": "10",
+     "n": 77,
+     "aciertos": 42,
+     "R": 0.12,
+     "t": 0.72
+    },
+    {
+     "grupo": "11",
+     "n": 54,
+     "aciertos": 24,
+     "R": -0.38,
+     "t": -2.22
+    }
+   ]
+  },
+  "oro FLUJO": {
+   "n": 1074,
+   "R": -0.166,
+   "t": -3.87,
+   "perdedoras_minutos": 5.0,
+   "ganadoras_minutos": 15.0,
+   "flotante_a_la_vela_k": [
+    {
+     "vela": 1,
+     "minutos": 5,
+     "abiertas": 784,
+     "R_si_a_favor": 0.41,
+     "aciertos_si_a_favor": 52,
+     "R_si_en_contra": -0.52,
+     "aciertos_si_en_contra": 22
+    },
+    {
+     "vela": 2,
+     "minutos": 10,
+     "abiertas": 571,
+     "R_si_a_favor": 0.44,
+     "aciertos_si_a_favor": 54,
+     "R_si_en_contra": -0.5,
+     "aciertos_si_en_contra": 22
+    },
+    {
+     "vela": 3,
+     "minutos": 15,
+     "abiertas": 441,
+     "R_si_a_favor": 0.4,
+     "aciertos_si_a_favor": 52,
+     "R_si_en_contra": -0.54,
+     "aciertos_si_en_contra": 21
+    },
+    {
+     "vela": 6,
+     "minutos": 30,
+     "abiertas": 232,
+     "R_si_a_favor": 0.31,
+     "aciertos_si_a_favor": 50,
+     "R_si_en_contra": -0.36,
+     "aciertos_si_en_contra": 27
+    },
+    {
+     "vela": 12,
+     "minutos": 60,
+     "abiertas": 88,
+     "R_si_a_favor": 0.37,
+     "aciertos_si_a_favor": 54,
+     "R_si_en_contra": -0.42,
+     "aciertos_si_en_contra": 25
+    },
+    {
+     "vela": 24,
+     "minutos": 120,
+     "abiertas": 38,
+     "R_si_a_favor": 0.66,
+     "aciertos_si_a_favor": 68,
+     "R_si_en_contra": -0.05,
+     "aciertos_si_en_contra": 38
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar a los 5 min si no va a favor",
+     "R": -0.158,
+     "t": -4.23,
+     "mitad1": -0.289,
+     "mitad2": -0.028
+    },
+    {
+     "regla": "cerrar a los 10 min si no va a favor",
+     "R": -0.159,
+     "t": -4.04,
+     "mitad1": -0.29,
+     "mitad2": -0.028
+    },
+    {
+     "regla": "cerrar a los 15 min si no va a favor",
+     "R": -0.153,
+     "t": -3.77,
+     "mitad1": -0.307,
+     "mitad2": 0.0
+    },
+    {
+     "regla": "cerrar a los 30 min si no va a favor",
+     "R": -0.173,
+     "t": -4.16,
+     "mitad1": -0.339,
+     "mitad2": -0.008
+    },
+    {
+     "regla": "cerrar a los 60 min si no va a favor",
+     "R": -0.168,
+     "t": -3.95,
+     "mitad1": -0.333,
+     "mitad2": -0.003
+    }
+   ],
+   "por_hora": [
+    {
+     "grupo": "00",
+     "n": 25,
+     "aciertos": 44,
+     "R": 0.14,
+     "t": 0.45
+    },
+    {
+     "grupo": "01",
+     "n": 43,
+     "aciertos": 42,
+     "R": 0.05,
+     "t": 0.22
+    },
+    {
+     "grupo": "02",
+     "n": 42,
+     "aciertos": 38,
+     "R": 0.0,
+     "t": 0.0
+    },
+    {
+     "grupo": "03",
+     "n": 39,
+     "aciertos": 33,
+     "R": -0.21,
+     "t": -0.93
+    },
+    {
+     "grupo": "04",
+     "n": 64,
+     "aciertos": 33,
+     "R": -0.16,
+     "t": -0.92
+    },
+    {
+     "grupo": "05",
+     "n": 36,
+     "aciertos": 28,
+     "R": -0.33,
+     "t": -1.44
+    },
+    {
+     "grupo": "06",
+     "n": 38,
+     "aciertos": 32,
+     "R": -0.2,
+     "t": -0.86
+    },
+    {
+     "grupo": "07",
+     "n": 36,
+     "aciertos": 39,
+     "R": 0.01,
+     "t": 0.04
+    },
+    {
+     "grupo": "08",
+     "n": 61,
+     "aciertos": 33,
+     "R": -0.16,
+     "t": -0.89
+    },
+    {
+     "grupo": "09",
+     "n": 90,
+     "aciertos": 32,
+     "R": -0.15,
+     "t": -1.02
+    },
+    {
+     "grupo": "10",
+     "n": 92,
+     "aciertos": 35,
+     "R": -0.1,
+     "t": -0.69
+    },
+    {
+     "grupo": "11",
+     "n": 49,
+     "aciertos": 37,
+     "R": -0.02,
+     "t": -0.08
+    },
+    {
+     "grupo": "12",
+     "n": 49,
+     "aciertos": 29,
+     "R": -0.29,
+     "t": -1.46
+    },
+    {
+     "grupo": "13",
+     "n": 34,
+     "aciertos": 18,
+     "R": -0.63,
+     "t": -3.18
+    },
+    {
+     "grupo": "14",
+     "n": 39,
+     "aciertos": 26,
+     "R": -0.43,
+     "t": -1.88
+    },
+    {
+     "grupo": "15",
+     "n": 40,
+     "aciertos": 30,
+     "R": -0.31,
+     "t": -1.37
+    },
+    {
+     "grupo": "16",
+     "n": 25,
+     "aciertos": 36,
+     "R": -0.2,
+     "t": -0.67
+    },
+    {
+     "grupo": "17",
+     "n": 22,
+     "aciertos": 18,
+     "R": -0.72,
+     "t": -2.97
+    },
+    {
+     "grupo": "18",
+     "n": 37,
+     "aciertos": 41,
+     "R": 0.03,
+     "t": 0.12
+    },
+    {
+     "grupo": "19",
+     "n": 41,
+     "aciertos": 22,
+     "R": -0.5,
+     "t": -2.52
+    },
+    {
+     "grupo": "20",
+     "n": 45,
+     "aciertos": 49,
+     "R": 0.34,
+     "t": 1.53
+    },
+    {
+     "grupo": "21",
+     "n": 47,
+     "aciertos": 34,
+     "R": -0.15,
+     "t": -0.71
+    },
+    {
+     "grupo": "22",
+     "n": 46,
+     "aciertos": 33,
+     "R": -0.21,
+     "t": -1.0
+    },
+    {
+     "grupo": "23",
+     "n": 34,
+     "aciertos": 32,
+     "R": -0.22,
+     "t": -0.9
+    }
+   ]
+  },
+  "btc ORB": {
+   "n": 877,
+   "R": -0.282,
+   "t": -5.58,
+   "perdedoras_minutos": 10.0,
+   "ganadoras_minutos": 15.0,
+   "flotante_a_la_vela_k": [
+    {
+     "vela": 1,
+     "minutos": 5,
+     "abiertas": 679,
+     "R_si_a_favor": 0.3,
+     "aciertos_si_a_favor": 54,
+     "R_si_en_contra": -0.55,
+     "aciertos_si_en_contra": 26
+    },
+    {
+     "vela": 2,
+     "minutos": 10,
+     "abiertas": 514,
+     "R_si_a_favor": 0.32,
+     "aciertos_si_a_favor": 55,
+     "R_si_en_contra": -0.58,
+     "aciertos_si_en_contra": 25
+    },
+    {
+     "vela": 3,
+     "minutos": 15,
+     "abiertas": 407,
+     "R_si_a_favor": 0.39,
+     "aciertos_si_a_favor": 56,
+     "R_si_en_contra": -0.56,
+     "aciertos_si_en_contra": 26
+    },
+    {
+     "vela": 6,
+     "minutos": 30,
+     "abiertas": 202,
+     "R_si_a_favor": 0.3,
+     "aciertos_si_a_favor": 54,
+     "R_si_en_contra": -0.5,
+     "aciertos_si_en_contra": 27
+    },
+    {
+     "vela": 12,
+     "minutos": 60,
+     "abiertas": 95,
+     "R_si_a_favor": 0.44,
+     "aciertos_si_a_favor": 58,
+     "R_si_en_contra": -0.61,
+     "aciertos_si_en_contra": 21
+    },
+    {
+     "vela": 24,
+     "minutos": 120,
+     "abiertas": 38,
+     "R_si_a_favor": 0.39,
+     "aciertos_si_a_favor": 59,
+     "R_si_en_contra": -0.53,
+     "aciertos_si_en_contra": 27
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar a los 5 min si no va a favor",
+     "R": -0.33,
+     "t": -7.58,
+     "mitad1": -0.331,
+     "mitad2": -0.329
+    },
+    {
+     "regla": "cerrar a los 10 min si no va a favor",
+     "R": -0.312,
+     "t": -6.71,
+     "mitad1": -0.298,
+     "mitad2": -0.332
+    },
+    {
+     "regla": "cerrar a los 15 min si no va a favor",
+     "R": -0.309,
+     "t": -6.51,
+     "mitad1": -0.289,
+     "mitad2": -0.338
+    },
+    {
+     "regla": "cerrar a los 30 min si no va a favor",
+     "R": -0.297,
+     "t": -5.99,
+     "mitad1": -0.289,
+     "mitad2": -0.307
+    },
+    {
+     "regla": "cerrar a los 60 min si no va a favor",
+     "R": -0.282,
+     "t": -5.64,
+     "mitad1": -0.289,
+     "mitad2": -0.273
+    }
+   ],
+   "por_hora": [
+    {
+     "grupo": "10",
+     "n": 877,
+     "aciertos": 36,
+     "R": -0.28,
+     "t": -5.58
+    }
+   ]
+  },
+  "btc BARRIDO": {
+   "n": 700,
+   "R": -0.427,
+   "t": -7.9,
+   "perdedoras_minutos": 10.0,
+   "ganadoras_minutos": 15.0,
+   "flotante_a_la_vela_k": [
+    {
+     "vela": 1,
+     "minutos": 5,
+     "abiertas": 566,
+     "R_si_a_favor": 0.06,
+     "aciertos_si_a_favor": 49,
+     "R_si_en_contra": -0.8,
+     "aciertos_si_en_contra": 19
+    },
+    {
+     "vela": 2,
+     "minutos": 10,
+     "abiertas": 424,
+     "R_si_a_favor": 0.19,
+     "aciertos_si_a_favor": 52,
+     "R_si_en_contra": -0.95,
+     "aciertos_si_en_contra": 15
+    },
+    {
+     "vela": 3,
+     "minutos": 15,
+     "abiertas": 326,
+     "R_si_a_favor": 0.19,
+     "aciertos_si_a_favor": 52,
+     "R_si_en_contra": -0.77,
+     "aciertos_si_en_contra": 19
+    },
+    {
+     "vela": 6,
+     "minutos": 30,
+     "abiertas": 175,
+     "R_si_a_favor": 0.03,
+     "aciertos_si_a_favor": 47,
+     "R_si_en_contra": -0.73,
+     "aciertos_si_en_contra": 19
+    },
+    {
+     "vela": 12,
+     "minutos": 60,
+     "abiertas": 61,
+     "R_si_a_favor": 0.21,
+     "aciertos_si_a_favor": 49,
+     "R_si_en_contra": -1.05,
+     "aciertos_si_en_contra": 7
+    },
+    {
+     "vela": 24,
+     "minutos": 120,
+     "abiertas": 21,
+     "R_si_a_favor": 0.21,
+     "aciertos_si_a_favor": 47,
+     "R_si_en_contra": -1.03,
+     "aciertos_si_en_contra": 0
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar a los 5 min si no va a favor",
+     "R": -0.41,
+     "t": -8.7,
+     "mitad1": -0.352,
+     "mitad2": -0.475
+    },
+    {
+     "regla": "cerrar a los 10 min si no va a favor",
+     "R": -0.379,
+     "t": -7.53,
+     "mitad1": -0.329,
+     "mitad2": -0.435
+    },
+    {
+     "regla": "cerrar a los 15 min si no va a favor",
+     "R": -0.421,
+     "t": -8.15,
+     "mitad1": -0.361,
+     "mitad2": -0.487
+    },
+    {
+     "regla": "cerrar a los 30 min si no va a favor",
+     "R": -0.419,
+     "t": -7.99,
+     "mitad1": -0.341,
+     "mitad2": -0.505
+    },
+    {
+     "regla": "cerrar a los 60 min si no va a favor",
+     "R": -0.418,
+     "t": -7.76,
+     "mitad1": -0.357,
+     "mitad2": -0.485
+    }
+   ],
+   "por_hora": [
+    {
+     "grupo": "02",
+     "n": 63,
+     "aciertos": 25,
+     "R": -0.78,
+     "t": -4.51
+    },
+    {
+     "grupo": "03",
+     "n": 61,
+     "aciertos": 34,
+     "R": -0.47,
+     "t": -2.49
+    },
+    {
+     "grupo": "04",
+     "n": 64,
+     "aciertos": 33,
+     "R": -0.51,
+     "t": -2.82
+    },
+    {
+     "grupo": "05",
+     "n": 49,
+     "aciertos": 35,
+     "R": -0.43,
+     "t": -2.15
+    },
+    {
+     "grupo": "06",
+     "n": 45,
+     "aciertos": 42,
+     "R": -0.24,
+     "t": -1.08
+    },
+    {
+     "grupo": "07",
+     "n": 43,
+     "aciertos": 26,
+     "R": -0.79,
+     "t": -3.76
+    },
+    {
+     "grupo": "08",
+     "n": 77,
+     "aciertos": 26,
+     "R": -0.64,
+     "t": -4.28
+    },
+    {
+     "grupo": "09",
+     "n": 101,
+     "aciertos": 37,
+     "R": -0.22,
+     "t": -1.5
+    },
+    {
+     "grupo": "10",
+     "n": 110,
+     "aciertos": 37,
+     "R": -0.11,
+     "t": -0.81
+    },
+    {
+     "grupo": "11",
+     "n": 87,
+     "aciertos": 28,
+     "R": -0.44,
+     "t": -3.04
+    }
+   ]
+  },
+  "btc FLUJO": {
+   "n": 2670,
+   "R": -0.412,
+   "t": -14.84,
+   "perdedoras_minutos": 5.0,
+   "ganadoras_minutos": 10.0,
+   "flotante_a_la_vela_k": [
+    {
+     "vela": 1,
+     "minutos": 5,
+     "abiertas": 1722,
+     "R_si_a_favor": 0.21,
+     "aciertos_si_a_favor": 51,
+     "R_si_en_contra": -0.7,
+     "aciertos_si_en_contra": 22
+    },
+    {
+     "vela": 2,
+     "minutos": 10,
+     "abiertas": 1142,
+     "R_si_a_favor": 0.23,
+     "aciertos_si_a_favor": 52,
+     "R_si_en_contra": -0.69,
+     "aciertos_si_en_contra": 22
+    },
+    {
+     "vela": 3,
+     "minutos": 15,
+     "abiertas": 808,
+     "R_si_a_favor": 0.29,
+     "aciertos_si_a_favor": 53,
+     "R_si_en_contra": -0.65,
+     "aciertos_si_en_contra": 23
+    },
+    {
+     "vela": 6,
+     "minutos": 30,
+     "abiertas": 377,
+     "R_si_a_favor": 0.26,
+     "aciertos_si_a_favor": 53,
+     "R_si_en_contra": -0.62,
+     "aciertos_si_en_contra": 22
+    },
+    {
+     "vela": 12,
+     "minutos": 60,
+     "abiertas": 135,
+     "R_si_a_favor": 0.57,
+     "aciertos_si_a_favor": 63,
+     "R_si_en_contra": -0.53,
+     "aciertos_si_en_contra": 24
+    },
+    {
+     "vela": 24,
+     "minutos": 120,
+     "abiertas": 39,
+     "R_si_a_favor": 0.85,
+     "aciertos_si_a_favor": 79,
+     "R_si_en_contra": -0.1,
+     "aciertos_si_en_contra": 30
+    }
+   ],
+   "reglas_de_tiempo": [
+    {
+     "regla": "cerrar a los 5 min si no va a favor",
+     "R": -0.423,
+     "t": -17.1,
+     "mitad1": -0.423,
+     "mitad2": -0.424
+    },
+    {
+     "regla": "cerrar a los 10 min si no va a favor",
+     "R": -0.421,
+     "t": -16.15,
+     "mitad1": -0.415,
+     "mitad2": -0.43
+    },
+    {
+     "regla": "cerrar a los 15 min si no va a favor",
+     "R": -0.419,
+     "t": -15.78,
+     "mitad1": -0.431,
+     "mitad2": -0.4
+    },
+    {
+     "regla": "cerrar a los 30 min si no va a favor",
+     "R": -0.414,
+     "t": -15.14,
+     "mitad1": -0.423,
+     "mitad2": -0.4
+    },
+    {
+     "regla": "cerrar a los 60 min si no va a favor",
+     "R": -0.413,
+     "t": -14.95,
+     "mitad1": -0.423,
+     "mitad2": -0.396
+    }
+   ],
+   "por_hora": [
+    {
+     "grupo": "00",
+     "n": 61,
+     "aciertos": 20,
+     "R": -0.85,
+     "t": -5.11
+    },
+    {
+     "grupo": "01",
+     "n": 75,
+     "aciertos": 39,
+     "R": -0.37,
+     "t": -2.17
+    },
+    {
+     "grupo": "02",
+     "n": 70,
+     "aciertos": 30,
+     "R": -0.64,
+     "t": -3.37
+    },
+    {
+     "grupo": "03",
+     "n": 107,
+     "aciertos": 37,
+     "R": -0.35,
+     "t": -2.3
+    },
+    {
+     "grupo": "04",
+     "n": 111,
+     "aciertos": 32,
+     "R": -0.43,
+     "t": -3.27
+    },
+    {
+     "grupo": "05",
+     "n": 89,
+     "aciertos": 28,
+     "R": -0.65,
+     "t": -4.34
+    },
+    {
+     "grupo": "06",
+     "n": 89,
+     "aciertos": 30,
+     "R": -0.57,
+     "t": -3.94
+    },
+    {
+     "grupo": "07",
+     "n": 75,
+     "aciertos": 32,
+     "R": -0.59,
+     "t": -3.31
+    },
+    {
+     "grupo": "08",
+     "n": 127,
+     "aciertos": 27,
+     "R": -0.59,
+     "t": -5.01
+    },
+    {
+     "grupo": "09",
+     "n": 212,
+     "aciertos": 34,
+     "R": -0.28,
+     "t": -2.81
+    },
+    {
+     "grupo": "10",
+     "n": 216,
+     "aciertos": 37,
+     "R": -0.15,
+     "t": -1.5
+    },
+    {
+     "grupo": "11",
+     "n": 205,
+     "aciertos": 32,
+     "R": -0.3,
+     "t": -3.05
+    },
+    {
+     "grupo": "12",
+     "n": 143,
+     "aciertos": 30,
+     "R": -0.37,
+     "t": -3.22
+    },
+    {
+     "grupo": "13",
+     "n": 102,
+     "aciertos": 29,
+     "R": -0.4,
+     "t": -2.89
+    },
+    {
+     "grupo": "14",
+     "n": 130,
+     "aciertos": 31,
+     "R": -0.45,
+     "t": -3.59
+    },
+    {
+     "grupo": "15",
+     "n": 110,
+     "aciertos": 23,
+     "R": -0.68,
+     "t": -5.29
+    },
+    {
+     "grupo": "16",
+     "n": 74,
+     "aciertos": 30,
+     "R": -0.47,
+     "t": -2.89
+    },
+    {
+     "grupo": "17",
+     "n": 82,
+     "aciertos": 20,
+     "R": -0.8,
+     "t": -5.84
+    },
+    {
+     "grupo": "18",
+     "n": 88,
+     "aciertos": 30,
+     "R": -0.49,
+     "t": -3.28
+    },
+    {
+     "grupo": "19",
+     "n": 101,
+     "aciertos": 37,
+     "R": -0.34,
+     "t": -2.19
+    },
+    {
+     "grupo": "20",
+     "n": 106,
+     "aciertos": 37,
+     "R": -0.23,
+     "t": -1.58
+    },
+    {
+     "grupo": "21",
+     "n": 109,
+     "aciertos": 36,
+     "R": -0.24,
+     "t": -1.75
+    },
+    {
+     "grupo": "22",
+     "n": 103,
+     "aciertos": 42,
+     "R": -0.11,
+     "t": -0.74
+    },
+    {
+     "grupo": "23",
+     "n": 85,
+     "aciertos": 29,
+     "R": -0.53,
+     "t": -3.43
+    }
+   ]
+  }
+ }
+}

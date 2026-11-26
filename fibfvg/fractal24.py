@@ -18,6 +18,15 @@ import pandas as pd
 from .config import SYMBOLS
 from .engines import Trade, atr, htf_bias
 from .levels import load_sym
+
+ENTRY_HOURS_NY = None   # (desde, hasta) hora NY: la orden límite solo está activa en ese horario (None = siempre)
+
+
+def _active(t):
+    if ENTRY_HOURS_NY is None:
+        return True
+    h = t.tz_convert("America/New_York").hour
+    return ENTRY_HOURS_NY[0] <= h < ENTRY_HOURS_NY[1]
 from . import propsim
 from .propsim import Account, run
 from .swaps import RATE
@@ -55,7 +64,7 @@ def engine(sym, daily, h1, tf, stop_kind, exit_kind, L=20):
             if setup is not None and T[i] >= busy_until:
                 if T[i] - setup["t"] > life or o[i] <= setup["stop"]:
                     setup = None
-                elif l[i] <= setup["entry"]:
+                elif l[i] <= setup["entry"] and _active(T[i]):
                     e = min(o[i], setup["entry"]); s = setup["stop"]; risk = e - s
                     setup_ = setup; setup = None
                     if risk <= 3 * spec.spread:

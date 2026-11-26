@@ -53,7 +53,10 @@ def fill(t, h1):
     m = (h1.index >= day0) & (h1.index < day0 + pd.Timedelta(hours=30))
     idx = np.flatnonzero(m)
     d, e = t.direction, t.entry
+    from .fractal24 import _active
     for j in idx:
+        if not _active(h1.index[j]):
+            continue
         lo = h1.Low.values[j] if d == 1 else -h1.High.values[j]
         if lo <= d * e:
             o = h1.Open.values[j]

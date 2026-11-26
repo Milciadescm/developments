@@ -1,0 +1,122 @@
+{
+ "siempre": {
+  "3 mercados (BTC, S&P, Nasdaq)": {
+   "n": 81,
+   "R": 0.346,
+   "t": 1.78,
+   "mitad1": 0.447,
+   "mitad2": 0.248,
+   "peor_caida_pct_075": 4.84,
+   "suma_R": 28.0
+  },
+  "5 mercados": {
+   "n": 130,
+   "R": 0.23,
+   "t": 1.75,
+   "mitad1": 0.308,
+   "mitad2": 0.154,
+   "peor_caida_pct_075": 6.86,
+   "suma_R": 29.9
+  }
+ },
+ "08-18 NY": {
+  "3 mercados (BTC, S&P, Nasdaq)": {
+   "n": 70,
+   "R": 0.464,
+   "t": 2.12,
+   "mitad1": 0.453,
+   "mitad2": 0.477,
+   "peor_caida_pct_075": 3.33,
+   "suma_R": 32.5
+  },
+  "5 mercados": {
+   "n": 112,
+   "R": 0.349,
+   "t": 2.38,
+   "mitad1": 0.318,
+   "mitad2": 0.384,
+   "peor_caida_pct_075": 3.5,
+   "suma_R": 39.1
+  }
+ },
+ "08-17 NY": {
+  "3 mercados (BTC, S&P, Nasdaq)": {
+   "n": 69,
+   "R": 0.467,
+   "t": 2.1,
+   "mitad1": 0.453,
+   "mitad2": 0.484,
+   "peor_caida_pct_075": 3.52,
+   "suma_R": 32.2
+  },
+  "5 mercados": {
+   "n": 111,
+   "R": 0.35,
+   "t": 2.37,
+   "mitad1": 0.318,
+   "mitad2": 0.387,
+   "peor_caida_pct_075": 3.7,
+   "suma_R": 38.8
+  }
+ },
+ "09-18 NY": {
+  "3 mercados (BTC, S&P, Nasdaq)": {
+   "n": 60,
+   "R": 0.534,
+   "t": 2.1,
+   "mitad1": 0.535,
+   "mitad2": 0.534,
+   "peor_caida_pct_075": 3.6,
+   "suma_R": 32.1
+  },
+  "5 mercados": {
+   "n": 92,
+   "R": 0.434,
+   "t": 2.47,
+   "mitad1": 0.391,
+   "mitad2": 0.483,
+   "peor_caida_pct_075": 4.6,
+   "suma_R": 39.9
+  }
+ },
+ "07-18 NY": {
+  "3 mercados (BTC, S&P, Nasdaq)": {
+   "n": 76,
+   "R": 0.41,
+   "t": 1.99,
+   "mitad1": 0.415,
+   "mitad2": 0.405,
+   "peor_caida_pct_075": 3.33,
+   "suma_R": 31.2
+  },
+  "5 mercados": {
+   "n": 120,
+   "R": 0.289,
+   "t": 2.07,
+   "mitad1": 0.293,
+   "mitad2": 0.285,
+   "peor_caida_pct_075": 3.67,
+   "suma_R": 34.7
+  }
+ },
+ "10-18 NY": {
+  "3 mercados (BTC, S&P, Nasdaq)": {
+   "n": 58,
+   "R": 0.531,
+   "t": 2.02,
+   "mitad1": 0.524,
+   "mitad2": 0.538,
+   "peor_caida_pct_075": 3.52,
+   "suma_R": 30.8
+  },
+  "5 mercados": {
+   "n": 89,
+   "R": 0.421,
+   "t": 2.32,
+   "mitad1": 0.389,
+   "mitad2": 0.459,
+   "peor_caida_pct_075": 5.1,
+   "suma_R": 37.5
+  }
+ }
+}
