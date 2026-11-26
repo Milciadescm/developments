@@ -1,0 +1,9935 @@
+[
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 746,
+   "multiplo": 7.46,
+   "anual": 22.3,
+   "peor_caida": 27.6,
+   "operaciones": 96,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 133,
+   "multiplo": 1.33,
+   "anual": 2.6,
+   "peor_caida": 24.0,
+   "operaciones": 83,
+   "saltadas": 81,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1172,
+   "multiplo": 11.72,
+   "anual": 12.5,
+   "peor_caida": 31.7,
+   "operaciones": 203,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 88,
+   "multiplo": 0.88,
+   "anual": -5.2,
+   "peor_caida": 12.1,
+   "operaciones": 15,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 745,
+   "multiplo": 7.45,
+   "anual": 22.3,
+   "peor_caida": 31.4,
+   "operaciones": 130,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 125,
+   "multiplo": 1.25,
+   "anual": 2.1,
+   "peor_caida": 30.8,
+   "operaciones": 87,
+   "saltadas": 81,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1137,
+   "multiplo": 11.37,
+   "anual": 12.3,
+   "peor_caida": 44.0,
+   "operaciones": 278,
+   "saltadas": 83,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.0,
+   "peor_caida": 15.9,
+   "operaciones": 17,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 742,
+   "multiplo": 7.42,
+   "anual": 22.2,
+   "peor_caida": 32.8,
+   "operaciones": 139,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 120,
+   "multiplo": 1.2,
+   "anual": 1.7,
+   "peor_caida": 34.4,
+   "operaciones": 88,
+   "saltadas": 81,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1217,
+   "multiplo": 12.17,
+   "anual": 12.7,
+   "peor_caida": 46.2,
+   "operaciones": 302,
+   "saltadas": 74,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.0,
+   "peor_caida": 15.9,
+   "operaciones": 17,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1051,
+   "multiplo": 10.51,
+   "anual": 26.5,
+   "peor_caida": 30.5,
+   "operaciones": 58,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 177,
+   "multiplo": 1.77,
+   "anual": 5.4,
+   "peor_caida": 23.8,
+   "operaciones": 66,
+   "saltadas": 77,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1741,
+   "multiplo": 17.41,
+   "anual": 14.7,
+   "peor_caida": 36.6,
+   "operaciones": 130,
+   "saltadas": 68,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 87,
+   "multiplo": 0.87,
+   "anual": -5.8,
+   "peor_caida": 13.4,
+   "operaciones": 15,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1218,
+   "multiplo": 12.18,
+   "anual": 28.4,
+   "peor_caida": 44.5,
+   "operaciones": 98,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 146,
+   "multiplo": 1.46,
+   "anual": 3.5,
+   "peor_caida": 34.0,
+   "operaciones": 84,
+   "saltadas": 81,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3525,
+   "multiplo": 35.25,
+   "anual": 18.6,
+   "peor_caida": 49.4,
+   "operaciones": 217,
+   "saltadas": 63,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 83,
+   "multiplo": 0.83,
+   "anual": -7.6,
+   "peor_caida": 17.2,
+   "operaciones": 17,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1210,
+   "multiplo": 12.1,
+   "anual": 28.3,
+   "peor_caida": 50.0,
+   "operaciones": 130,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 140,
+   "multiplo": 1.4,
+   "anual": 3.1,
+   "peor_caida": 42.4,
+   "operaciones": 88,
+   "saltadas": 81,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1377,
+   "multiplo": 13.77,
+   "anual": 13.4,
+   "peor_caida": 62.1,
+   "operaciones": 293,
+   "saltadas": 66,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 83,
+   "multiplo": 0.83,
+   "anual": -7.6,
+   "peor_caida": 17.2,
+   "operaciones": 17,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1058,
+   "multiplo": 10.58,
+   "anual": 26.6,
+   "peor_caida": 27.2,
+   "operaciones": 38,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 381,
+   "multiplo": 3.81,
+   "anual": 13.1,
+   "peor_caida": 18.8,
+   "operaciones": 48,
+   "saltadas": 69,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2757,
+   "multiplo": 27.57,
+   "anual": 17.2,
+   "peor_caida": 40.9,
+   "operaciones": 96,
+   "saltadas": 55,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.2,
+   "peor_caida": 16.3,
+   "operaciones": 11,
+   "saltadas": 20,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1597,
+   "multiplo": 15.97,
+   "anual": 31.9,
+   "peor_caida": 42.8,
+   "operaciones": 63,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 179,
+   "multiplo": 1.79,
+   "anual": 5.5,
+   "peor_caida": 38.8,
+   "operaciones": 72,
+   "saltadas": 71,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2244,
+   "multiplo": 22.44,
+   "anual": 16.1,
+   "peor_caida": 68.2,
+   "operaciones": 162,
+   "saltadas": 55,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 79,
+   "multiplo": 0.79,
+   "anual": -9.4,
+   "peor_caida": 21.1,
+   "operaciones": 16,
+   "saltadas": 23,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1620,
+   "multiplo": 16.2,
+   "anual": 32.1,
+   "peor_caida": 61.5,
+   "operaciones": 103,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 154,
+   "multiplo": 1.54,
+   "anual": 4.0,
+   "peor_caida": 48.5,
+   "operaciones": 87,
+   "saltadas": 79,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3459,
+   "multiplo": 34.59,
+   "anual": 18.5,
+   "peor_caida": 74.7,
+   "operaciones": 229,
+   "saltadas": 63,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 68,
+   "multiplo": 0.68,
+   "anual": -14.7,
+   "peor_caida": 31.6,
+   "operaciones": 19,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2184,
+   "multiplo": 21.84,
+   "anual": 36.1,
+   "peor_caida": 41.4,
+   "operaciones": 38,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 353,
+   "multiplo": 3.53,
+   "anual": 12.3,
+   "peor_caida": 37.5,
+   "operaciones": 49,
+   "saltadas": 65,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4857,
+   "multiplo": 48.57,
+   "anual": 20.4,
+   "peor_caida": 68.8,
+   "operaciones": 98,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 75,
+   "multiplo": 0.75,
+   "anual": -11.1,
+   "peor_caida": 24.6,
+   "operaciones": 11,
+   "saltadas": 16,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1857,
+   "multiplo": 18.57,
+   "anual": 33.9,
+   "peor_caida": 60.5,
+   "operaciones": 56,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 362,
+   "multiplo": 3.62,
+   "anual": 12.5,
+   "peor_caida": 49.2,
+   "operaciones": 66,
+   "saltadas": 69,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2201,
+   "multiplo": 22.01,
+   "anual": 15.9,
+   "peor_caida": 78.9,
+   "operaciones": 149,
+   "saltadas": 56,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 66,
+   "multiplo": 0.66,
+   "anual": -16.0,
+   "peor_caida": 34.1,
+   "operaciones": 15,
+   "saltadas": 16,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 3463,
+   "multiplo": 6.93,
+   "anual": 21.4,
+   "peor_caida": 33.0,
+   "operaciones": 109,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1119,
+   "multiplo": 2.24,
+   "anual": 7.7,
+   "peor_caida": 27.2,
+   "operaciones": 112,
+   "saltadas": 52,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5594,
+   "multiplo": 11.19,
+   "anual": 12.3,
+   "peor_caida": 41.3,
+   "operaciones": 272,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 412,
+   "multiplo": 0.82,
+   "anual": -7.7,
+   "peor_caida": 17.6,
+   "operaciones": 28,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2733,
+   "multiplo": 5.47,
+   "anual": 18.5,
+   "peor_caida": 38.4,
+   "operaciones": 140,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1126,
+   "multiplo": 2.25,
+   "anual": 7.7,
+   "peor_caida": 44.1,
+   "operaciones": 145,
+   "saltadas": 56,
+   "quemada": false
+  },
+  "largo": {
+   "final": 9778,
+   "multiplo": 19.56,
+   "anual": 15.3,
+   "peor_caida": 43.6,
+   "operaciones": 347,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 356,
+   "multiplo": 0.71,
+   "anual": -13.2,
+   "peor_caida": 28.7,
+   "operaciones": 37,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 2657,
+   "multiplo": 5.31,
+   "anual": 18.2,
+   "peor_caida": 39.0,
+   "operaciones": 142,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1294,
+   "multiplo": 2.59,
+   "anual": 9.1,
+   "peor_caida": 46.5,
+   "operaciones": 156,
+   "saltadas": 48,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10616,
+   "multiplo": 21.23,
+   "anual": 15.7,
+   "peor_caida": 52.9,
+   "operaciones": 384,
+   "saltadas": 48,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 347,
+   "multiplo": 0.69,
+   "anual": -14.1,
+   "peor_caida": 30.5,
+   "operaciones": 38,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 3673,
+   "multiplo": 7.35,
+   "anual": 22.1,
+   "peor_caida": 35.9,
+   "operaciones": 58,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1134,
+   "multiplo": 2.27,
+   "anual": 7.8,
+   "peor_caida": 32.5,
+   "operaciones": 82,
+   "saltadas": 56,
+   "quemada": false
+  },
+  "largo": {
+   "final": 8825,
+   "multiplo": 17.65,
+   "anual": 14.7,
+   "peor_caida": 46.8,
+   "operaciones": 146,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 417,
+   "multiplo": 0.83,
+   "anual": -7.3,
+   "peor_caida": 16.5,
+   "operaciones": 18,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 6213,
+   "multiplo": 12.43,
+   "anual": 28.7,
+   "peor_caida": 51.8,
+   "operaciones": 97,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1186,
+   "multiplo": 2.37,
+   "anual": 8.3,
+   "peor_caida": 43.7,
+   "operaciones": 118,
+   "saltadas": 51,
+   "quemada": false
+  },
+  "largo": {
+   "final": 13019,
+   "multiplo": 26.04,
+   "anual": 16.9,
+   "peor_caida": 60.2,
+   "operaciones": 231,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 342,
+   "multiplo": 0.68,
+   "anual": -14.6,
+   "peor_caida": 31.5,
+   "operaciones": 30,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 5735,
+   "multiplo": 11.47,
+   "anual": 27.6,
+   "peor_caida": 57.7,
+   "operaciones": 125,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1149,
+   "multiplo": 2.3,
+   "anual": 7.9,
+   "peor_caida": 53.1,
+   "operaciones": 149,
+   "saltadas": 46,
+   "quemada": false
+  },
+  "largo": {
+   "final": 14252,
+   "multiplo": 28.5,
+   "anual": 17.4,
+   "peor_caida": 67.2,
+   "operaciones": 314,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 311,
+   "multiplo": 0.62,
+   "anual": -18.0,
+   "peor_caida": 37.8,
+   "operaciones": 34,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2815,
+   "multiplo": 5.63,
+   "anual": 18.9,
+   "peor_caida": 33.3,
+   "operaciones": 43,
+   "saltadas": 24,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2187,
+   "multiplo": 4.37,
+   "anual": 14.5,
+   "peor_caida": 33.7,
+   "operaciones": 55,
+   "saltadas": 37,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3755,
+   "multiplo": 7.51,
+   "anual": 10.1,
+   "peor_caida": 58.2,
+   "operaciones": 117,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 392,
+   "multiplo": 0.78,
+   "anual": -9.6,
+   "peor_caida": 21.5,
+   "operaciones": 15,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 34915,
+   "multiplo": 69.83,
+   "anual": 52.9,
+   "peor_caida": 26.4,
+   "operaciones": 50,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2108,
+   "multiplo": 4.22,
+   "anual": 14.1,
+   "peor_caida": 57.5,
+   "operaciones": 103,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "largo": {
+   "final": 41656,
+   "multiplo": 83.31,
+   "anual": 23.6,
+   "peor_caida": 68.7,
+   "operaciones": 150,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 355,
+   "multiplo": 0.71,
+   "anual": -13.3,
+   "peor_caida": 29.0,
+   "operaciones": 21,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 48995,
+   "multiplo": 97.99,
+   "anual": 58.2,
+   "peor_caida": 31.6,
+   "operaciones": 79,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3277,
+   "multiplo": 6.55,
+   "anual": 18.8,
+   "peor_caida": 58.3,
+   "operaciones": 124,
+   "saltadas": 42,
+   "quemada": false
+  },
+  "largo": {
+   "final": 67732,
+   "multiplo": 135.46,
+   "anual": 26.5,
+   "peor_caida": 81.3,
+   "operaciones": 213,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 300,
+   "multiplo": 0.6,
+   "anual": -19.2,
+   "peor_caida": 40.1,
+   "operaciones": 29,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 18975,
+   "multiplo": 37.95,
+   "anual": 43.9,
+   "peor_caida": 25.9,
+   "operaciones": 38,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2655,
+   "multiplo": 5.31,
+   "anual": 16.6,
+   "peor_caida": 58.6,
+   "operaciones": 72,
+   "saltadas": 20,
+   "quemada": false
+  },
+  "largo": {
+   "final": 51900,
+   "multiplo": 103.8,
+   "anual": 24.9,
+   "peor_caida": 64.9,
+   "operaciones": 92,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 327,
+   "multiplo": 0.65,
+   "anual": -16.3,
+   "peor_caida": 34.6,
+   "operaciones": 15,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 22477,
+   "multiplo": 44.95,
+   "anual": 46.3,
+   "peor_caida": 38.4,
+   "operaciones": 64,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2311,
+   "multiplo": 4.62,
+   "anual": 15.1,
+   "peor_caida": 72.8,
+   "operaciones": 102,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "largo": {
+   "final": 45022,
+   "multiplo": 90.04,
+   "anual": 24.0,
+   "peor_caida": 78.6,
+   "operaciones": 148,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 285,
+   "multiplo": 0.57,
+   "anual": -20.9,
+   "peor_caida": 43.1,
+   "operaciones": 20,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 15223,
+   "multiplo": 15.22,
+   "anual": 31.3,
+   "peor_caida": 25.3,
+   "operaciones": 104,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1523,
+   "multiplo": 1.52,
+   "anual": 3.9,
+   "peor_caida": 28.2,
+   "operaciones": 135,
+   "saltadas": 29,
+   "quemada": false
+  },
+  "largo": {
+   "final": 33828,
+   "multiplo": 33.83,
+   "anual": 18.4,
+   "peor_caida": 40.4,
+   "operaciones": 262,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 801,
+   "multiplo": 0.8,
+   "anual": -8.9,
+   "peor_caida": 19.9,
+   "operaciones": 35,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 15186,
+   "multiplo": 15.19,
+   "anual": 31.3,
+   "peor_caida": 23.9,
+   "operaciones": 154,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1442,
+   "multiplo": 1.44,
+   "anual": 3.4,
+   "peor_caida": 51.4,
+   "operaciones": 174,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "largo": {
+   "final": 41498,
+   "multiplo": 41.5,
+   "anual": 19.5,
+   "peor_caida": 48.9,
+   "operaciones": 380,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 779,
+   "multiplo": 0.78,
+   "anual": -9.9,
+   "peor_caida": 22.1,
+   "operaciones": 38,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 15038,
+   "multiplo": 15.04,
+   "anual": 31.1,
+   "peor_caida": 31.8,
+   "operaciones": 182,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1306,
+   "multiplo": 1.31,
+   "anual": 2.5,
+   "peor_caida": 53.2,
+   "operaciones": 199,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "largo": {
+   "final": 42622,
+   "multiplo": 42.62,
+   "anual": 19.7,
+   "peor_caida": 49.5,
+   "operaciones": 451,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 779,
+   "multiplo": 0.78,
+   "anual": -9.9,
+   "peor_caida": 22.1,
+   "operaciones": 38,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 17942,
+   "multiplo": 17.94,
+   "anual": 33.5,
+   "peor_caida": 21.3,
+   "operaciones": 53,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2992,
+   "multiplo": 2.99,
+   "anual": 10.6,
+   "peor_caida": 39.6,
+   "operaciones": 95,
+   "saltadas": 22,
+   "quemada": false
+  },
+  "largo": {
+   "final": 23108,
+   "multiplo": 23.11,
+   "anual": 16.2,
+   "peor_caida": 52.1,
+   "operaciones": 149,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 808,
+   "multiplo": 0.81,
+   "anual": -8.5,
+   "peor_caida": 19.2,
+   "operaciones": 20,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 66294,
+   "multiplo": 66.29,
+   "anual": 52.1,
+   "peor_caida": 22.3,
+   "operaciones": 85,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3811,
+   "multiplo": 3.81,
+   "anual": 13.1,
+   "peor_caida": 56.8,
+   "operaciones": 143,
+   "saltadas": 24,
+   "quemada": false
+  },
+  "largo": {
+   "final": 112636,
+   "multiplo": 112.64,
+   "anual": 25.4,
+   "peor_caida": 64.2,
+   "operaciones": 218,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 698,
+   "multiplo": 0.7,
+   "anual": -14.0,
+   "peor_caida": 30.2,
+   "operaciones": 31,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 35085,
+   "multiplo": 35.08,
+   "anual": 42.7,
+   "peor_caida": 32.9,
+   "operaciones": 139,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3451,
+   "multiplo": 3.45,
+   "anual": 12.0,
+   "peor_caida": 65.0,
+   "operaciones": 179,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "largo": {
+   "final": 90307,
+   "multiplo": 90.31,
+   "anual": 24.1,
+   "peor_caida": 69.8,
+   "operaciones": 320,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 627,
+   "multiplo": 0.63,
+   "anual": -17.7,
+   "peor_caida": 37.3,
+   "operaciones": 37,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 14064,
+   "multiplo": 14.06,
+   "anual": 30.3,
+   "peor_caida": 17.0,
+   "operaciones": 41,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3770,
+   "multiplo": 3.77,
+   "anual": 13.0,
+   "peor_caida": 45.2,
+   "operaciones": 77,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "largo": {
+   "final": 26911,
+   "multiplo": 26.91,
+   "anual": 17.1,
+   "peor_caida": 54.5,
+   "operaciones": 107,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 712,
+   "multiplo": 0.71,
+   "anual": -13.2,
+   "peor_caida": 28.8,
+   "operaciones": 16,
+   "saltadas": 15,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 34914,
+   "multiplo": 34.91,
+   "anual": 42.7,
+   "peor_caida": 26.5,
+   "operaciones": 73,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2701,
+   "multiplo": 2.7,
+   "anual": 9.6,
+   "peor_caida": 58.3,
+   "operaciones": 115,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "largo": {
+   "final": 41657,
+   "multiplo": 41.66,
+   "anual": 19.5,
+   "peor_caida": 68.7,
+   "operaciones": 173,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 676,
+   "multiplo": 0.68,
+   "anual": -15.1,
+   "peor_caida": 32.4,
+   "operaciones": 21,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 76749,
+   "multiplo": 76.75,
+   "anual": 54.4,
+   "peor_caida": 36.6,
+   "operaciones": 101,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3499,
+   "multiplo": 3.5,
+   "anual": 12.2,
+   "peor_caida": 74.0,
+   "operaciones": 146,
+   "saltadas": 24,
+   "quemada": false
+  },
+  "largo": {
+   "final": 103728,
+   "multiplo": 103.73,
+   "anual": 24.9,
+   "peor_caida": 81.4,
+   "operaciones": 233,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 569,
+   "multiplo": 0.57,
+   "anual": -21.0,
+   "peor_caida": 43.1,
+   "operaciones": 30,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 9638,
+   "multiplo": 9.64,
+   "anual": 25.4,
+   "peor_caida": 33.9,
+   "operaciones": 53,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3316,
+   "multiplo": 3.32,
+   "anual": 11.6,
+   "peor_caida": 65.2,
+   "operaciones": 71,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 20306,
+   "multiplo": 20.31,
+   "anual": 15.5,
+   "peor_caida": 71.5,
+   "operaciones": 113,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 512,
+   "multiplo": 0.51,
+   "anual": -24.4,
+   "peor_caida": 48.8,
+   "operaciones": 18,
+   "saltadas": 5,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 31596,
+   "multiplo": 31.6,
+   "anual": 41.2,
+   "peor_caida": 49.7,
+   "operaciones": 72,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2551,
+   "multiplo": 2.55,
+   "anual": 9.0,
+   "peor_caida": 73.9,
+   "operaciones": 107,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "largo": {
+   "final": 45161,
+   "multiplo": 45.16,
+   "anual": 20.0,
+   "peor_caida": 79.7,
+   "operaciones": 155,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 393,
+   "multiplo": 0.39,
+   "anual": -32.3,
+   "peor_caida": 60.7,
+   "operaciones": 24,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 195,
+   "multiplo": 1.95,
+   "anual": 6.9,
+   "peor_caida": 23.0,
+   "operaciones": 144,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 190,
+   "multiplo": 1.9,
+   "anual": 6.0,
+   "peor_caida": 20.5,
+   "operaciones": 88,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "largo": {
+   "final": 880,
+   "multiplo": 8.8,
+   "anual": 11.0,
+   "peor_caida": 37.8,
+   "operaciones": 262,
+   "saltadas": 108,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 103,
+   "multiplo": 1.03,
+   "anual": 1.4,
+   "peor_caida": 4.4,
+   "operaciones": 13,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 164,
+   "multiplo": 1.64,
+   "anual": 5.1,
+   "peor_caida": 32.2,
+   "operaciones": 163,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 180,
+   "multiplo": 1.8,
+   "anual": 5.6,
+   "peor_caida": 20.5,
+   "operaciones": 97,
+   "saltadas": 85,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1088,
+   "multiplo": 10.88,
+   "anual": 12.1,
+   "peor_caida": 45.3,
+   "operaciones": 311,
+   "saltadas": 104,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 103,
+   "multiplo": 1.03,
+   "anual": 1.4,
+   "peor_caida": 4.4,
+   "operaciones": 13,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 164,
+   "multiplo": 1.64,
+   "anual": 5.1,
+   "peor_caida": 32.2,
+   "operaciones": 163,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 174,
+   "multiplo": 1.74,
+   "anual": 5.2,
+   "peor_caida": 20.5,
+   "operaciones": 100,
+   "saltadas": 85,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1068,
+   "multiplo": 10.68,
+   "anual": 12.0,
+   "peor_caida": 46.2,
+   "operaciones": 330,
+   "saltadas": 105,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 103,
+   "multiplo": 1.03,
+   "anual": 1.4,
+   "peor_caida": 4.4,
+   "operaciones": 13,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 81,
+   "multiplo": 0.81,
+   "anual": -2.1,
+   "peor_caida": 35.7,
+   "operaciones": 92,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 259,
+   "multiplo": 2.59,
+   "anual": 9.1,
+   "peor_caida": 19.3,
+   "operaciones": 61,
+   "saltadas": 76,
+   "quemada": false
+  },
+  "largo": {
+   "final": 210,
+   "multiplo": 2.1,
+   "anual": 3.6,
+   "peor_caida": 40.2,
+   "operaciones": 158,
+   "saltadas": 123,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 105,
+   "multiplo": 1.05,
+   "anual": 2.3,
+   "peor_caida": 4.7,
+   "operaciones": 13,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 48,
+   "multiplo": 0.48,
+   "anual": -7.0,
+   "peor_caida": 51.7,
+   "operaciones": 140,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 267,
+   "multiplo": 2.67,
+   "anual": 9.4,
+   "peor_caida": 31.2,
+   "operaciones": 91,
+   "saltadas": 77,
+   "quemada": false
+  },
+  "largo": {
+   "final": 156,
+   "multiplo": 1.56,
+   "anual": 2.1,
+   "peor_caida": 67.2,
+   "operaciones": 216,
+   "saltadas": 133,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 105,
+   "multiplo": 1.05,
+   "anual": 2.3,
+   "peor_caida": 4.7,
+   "operaciones": 13,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 38,
+   "multiplo": 0.38,
+   "anual": -9.1,
+   "peor_caida": 61.6,
+   "operaciones": 160,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 278,
+   "multiplo": 2.78,
+   "anual": 9.8,
+   "peor_caida": 37.4,
+   "operaciones": 105,
+   "saltadas": 78,
+   "quemada": false
+  },
+  "largo": {
+   "final": 147,
+   "multiplo": 1.47,
+   "anual": 1.9,
+   "peor_caida": 74.2,
+   "operaciones": 240,
+   "saltadas": 139,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 105,
+   "multiplo": 1.05,
+   "anual": 2.3,
+   "peor_caida": 4.7,
+   "operaciones": 13,
+   "saltadas": 21,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 225,
+   "multiplo": 2.25,
+   "anual": 8.5,
+   "peor_caida": 27.5,
+   "operaciones": 55,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 413,
+   "multiplo": 4.13,
+   "anual": 13.9,
+   "peor_caida": 23.8,
+   "operaciones": 54,
+   "saltadas": 68,
+   "quemada": false
+  },
+  "largo": {
+   "final": 840,
+   "multiplo": 8.4,
+   "anual": 10.7,
+   "peor_caida": 45.6,
+   "operaciones": 117,
+   "saltadas": 96,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 123,
+   "multiplo": 1.23,
+   "anual": 9.2,
+   "peor_caida": 2.6,
+   "operaciones": 8,
+   "saltadas": 24,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 189,
+   "multiplo": 1.89,
+   "anual": 6.6,
+   "peor_caida": 36.4,
+   "operaciones": 90,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 875,
+   "multiplo": 8.75,
+   "anual": 22.0,
+   "peor_caida": 27.3,
+   "operaciones": 82,
+   "saltadas": 62,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1105,
+   "multiplo": 11.05,
+   "anual": 12.2,
+   "peor_caida": 54.9,
+   "operaciones": 191,
+   "saltadas": 97,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 119,
+   "multiplo": 1.19,
+   "anual": 7.6,
+   "peor_caida": 5.4,
+   "operaciones": 13,
+   "saltadas": 24,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 137,
+   "multiplo": 1.37,
+   "anual": 3.2,
+   "peor_caida": 52.5,
+   "operaciones": 128,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 446,
+   "multiplo": 4.46,
+   "anual": 14.7,
+   "peor_caida": 45.4,
+   "operaciones": 117,
+   "saltadas": 68,
+   "quemada": false
+  },
+  "largo": {
+   "final": 967,
+   "multiplo": 9.67,
+   "anual": 11.5,
+   "peor_caida": 73.6,
+   "operaciones": 259,
+   "saltadas": 104,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 123,
+   "multiplo": 1.23,
+   "anual": 9.1,
+   "peor_caida": 9.0,
+   "operaciones": 16,
+   "saltadas": 24,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 213,
+   "multiplo": 2.13,
+   "anual": 7.9,
+   "peor_caida": 42.0,
+   "operaciones": 58,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 680,
+   "multiplo": 6.8,
+   "anual": 19.2,
+   "peor_caida": 39.6,
+   "operaciones": 69,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1406,
+   "multiplo": 14.06,
+   "anual": 13.5,
+   "peor_caida": 64.9,
+   "operaciones": 138,
+   "saltadas": 70,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 111,
+   "multiplo": 1.11,
+   "anual": 4.5,
+   "peor_caida": 10.0,
+   "operaciones": 8,
+   "saltadas": 16,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 127,
+   "multiplo": 1.27,
+   "anual": 2.4,
+   "peor_caida": 55.6,
+   "operaciones": 82,
+   "saltadas": 46,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 627,
+   "multiplo": 6.27,
+   "anual": 18.4,
+   "peor_caida": 49.6,
+   "operaciones": 88,
+   "saltadas": 58,
+   "quemada": false
+  },
+  "largo": {
+   "final": 805,
+   "multiplo": 8.05,
+   "anual": 10.5,
+   "peor_caida": 77.8,
+   "operaciones": 182,
+   "saltadas": 89,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 101,
+   "multiplo": 1.01,
+   "anual": 0.4,
+   "peor_caida": 15.7,
+   "operaciones": 12,
+   "saltadas": 16,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 485,
+   "multiplo": 0.97,
+   "anual": -0.3,
+   "peor_caida": 30.4,
+   "operaciones": 144,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1500,
+   "multiplo": 3.0,
+   "anual": 10.6,
+   "peor_caida": 20.6,
+   "operaciones": 142,
+   "saltadas": 52,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1465,
+   "multiplo": 2.93,
+   "anual": 5.3,
+   "peor_caida": 39.6,
+   "operaciones": 284,
+   "saltadas": 99,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 467,
+   "multiplo": 0.93,
+   "anual": -2.8,
+   "peor_caida": 9.4,
+   "operaciones": 27,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 392,
+   "multiplo": 0.78,
+   "anual": -2.4,
+   "peor_caida": 35.9,
+   "operaciones": 166,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1506,
+   "multiplo": 3.01,
+   "anual": 10.7,
+   "peor_caida": 22.1,
+   "operaciones": 192,
+   "saltadas": 43,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1403,
+   "multiplo": 2.81,
+   "anual": 5.1,
+   "peor_caida": 48.3,
+   "operaciones": 346,
+   "saltadas": 102,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 427,
+   "multiplo": 0.85,
+   "anual": -6.4,
+   "peor_caida": 14.7,
+   "operaciones": 33,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 392,
+   "multiplo": 0.78,
+   "anual": -2.4,
+   "peor_caida": 35.9,
+   "operaciones": 166,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1471,
+   "multiplo": 2.94,
+   "anual": 10.4,
+   "peor_caida": 27.7,
+   "operaciones": 202,
+   "saltadas": 42,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1350,
+   "multiplo": 2.7,
+   "anual": 4.9,
+   "peor_caida": 48.3,
+   "operaciones": 350,
+   "saltadas": 103,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 425,
+   "multiplo": 0.85,
+   "anual": -6.6,
+   "peor_caida": 15.1,
+   "operaciones": 34,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 706,
+   "multiplo": 1.41,
+   "anual": 3.5,
+   "peor_caida": 33.6,
+   "operaciones": 90,
+   "saltadas": 40,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1798,
+   "multiplo": 3.6,
+   "anual": 12.5,
+   "peor_caida": 17.2,
+   "operaciones": 97,
+   "saltadas": 38,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1981,
+   "multiplo": 3.96,
+   "anual": 6.8,
+   "peor_caida": 49.1,
+   "operaciones": 190,
+   "saltadas": 67,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 515,
+   "multiplo": 1.03,
+   "anual": 1.2,
+   "peor_caida": 8.1,
+   "operaciones": 16,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 485,
+   "multiplo": 0.97,
+   "anual": -0.3,
+   "peor_caida": 47.6,
+   "operaciones": 134,
+   "saltadas": 47,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1658,
+   "multiplo": 3.32,
+   "anual": 11.6,
+   "peor_caida": 30.1,
+   "operaciones": 143,
+   "saltadas": 47,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1585,
+   "multiplo": 3.17,
+   "anual": 5.7,
+   "peor_caida": 59.5,
+   "operaciones": 281,
+   "saltadas": 94,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 464,
+   "multiplo": 0.93,
+   "anual": -3.1,
+   "peor_caida": 16.2,
+   "operaciones": 28,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 380,
+   "multiplo": 0.76,
+   "anual": -2.7,
+   "peor_caida": 54.2,
+   "operaciones": 161,
+   "saltadas": 47,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3907,
+   "multiplo": 7.81,
+   "anual": 20.8,
+   "peor_caida": 41.9,
+   "operaciones": 199,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1478,
+   "multiplo": 2.96,
+   "anual": 5.3,
+   "peor_caida": 70.5,
+   "operaciones": 343,
+   "saltadas": 97,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 451,
+   "multiplo": 0.9,
+   "anual": -4.2,
+   "peor_caida": 19.7,
+   "operaciones": 34,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1565,
+   "multiplo": 3.13,
+   "anual": 12.1,
+   "peor_caida": 36.6,
+   "operaciones": 61,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 980,
+   "multiplo": 1.96,
+   "anual": 6.4,
+   "peor_caida": 25.8,
+   "operaciones": 62,
+   "saltadas": 45,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2155,
+   "multiplo": 4.31,
+   "anual": 7.2,
+   "peor_caida": 42.3,
+   "operaciones": 147,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 504,
+   "multiplo": 1.01,
+   "anual": 0.3,
+   "peor_caida": 10.3,
+   "operaciones": 14,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2385,
+   "multiplo": 4.77,
+   "anual": 16.9,
+   "peor_caida": 49.9,
+   "operaciones": 97,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 7434,
+   "multiplo": 14.87,
+   "anual": 28.1,
+   "peor_caida": 34.0,
+   "operaciones": 116,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "largo": {
+   "final": 23803,
+   "multiplo": 47.61,
+   "anual": 20.3,
+   "peor_caida": 61.0,
+   "operaciones": 225,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 478,
+   "multiplo": 0.96,
+   "anual": -1.9,
+   "peor_caida": 16.4,
+   "operaciones": 22,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 332,
+   "multiplo": 0.66,
+   "anual": -4.0,
+   "peor_caida": 66.5,
+   "operaciones": 143,
+   "saltadas": 40,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 11982,
+   "multiplo": 23.96,
+   "anual": 33.9,
+   "peor_caida": 40.2,
+   "operaciones": 167,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1287,
+   "multiplo": 2.57,
+   "anual": 4.6,
+   "peor_caida": 75.0,
+   "operaciones": 296,
+   "saltadas": 74,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 488,
+   "multiplo": 0.98,
+   "anual": -1.0,
+   "peor_caida": 17.1,
+   "operaciones": 28,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2194,
+   "multiplo": 4.39,
+   "anual": 15.9,
+   "peor_caida": 51.5,
+   "operaciones": 67,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 760,
+   "multiplo": 1.52,
+   "anual": 3.9,
+   "peor_caida": 54.7,
+   "operaciones": 76,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 9464,
+   "multiplo": 18.93,
+   "anual": 15.1,
+   "peor_caida": 60.8,
+   "operaciones": 147,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 416,
+   "multiplo": 0.83,
+   "anual": -7.4,
+   "peor_caida": 27.4,
+   "operaciones": 14,
+   "saltadas": 12,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1276,
+   "multiplo": 2.55,
+   "anual": 9.8,
+   "peor_caida": 71.2,
+   "operaciones": 102,
+   "saltadas": 10,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3435,
+   "multiplo": 6.87,
+   "anual": 19.4,
+   "peor_caida": 43.5,
+   "operaciones": 119,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "largo": {
+   "final": 7140,
+   "multiplo": 14.28,
+   "anual": 13.6,
+   "peor_caida": 79.8,
+   "operaciones": 229,
+   "saltadas": 10,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 485,
+   "multiplo": 0.97,
+   "anual": -1.3,
+   "peor_caida": 18.2,
+   "operaciones": 17,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2233,
+   "multiplo": 2.23,
+   "anual": 8.4,
+   "peor_caida": 37.8,
+   "operaciones": 151,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 4895,
+   "multiplo": 4.89,
+   "anual": 15.7,
+   "peor_caida": 21.4,
+   "operaciones": 155,
+   "saltadas": 18,
+   "quemada": false
+  },
+  "largo": {
+   "final": 11159,
+   "multiplo": 11.16,
+   "anual": 12.2,
+   "peor_caida": 49.4,
+   "operaciones": 327,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 955,
+   "multiplo": 0.95,
+   "anual": -1.9,
+   "peor_caida": 9.9,
+   "operaciones": 33,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1822,
+   "multiplo": 1.82,
+   "anual": 6.2,
+   "peor_caida": 51.9,
+   "operaciones": 217,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 9906,
+   "multiplo": 9.91,
+   "anual": 23.4,
+   "peor_caida": 24.2,
+   "operaciones": 214,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 14304,
+   "multiplo": 14.3,
+   "anual": 13.6,
+   "peor_caida": 64.7,
+   "operaciones": 463,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 961,
+   "multiplo": 0.96,
+   "anual": -1.7,
+   "peor_caida": 9.9,
+   "operaciones": 34,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 2878,
+   "multiplo": 2.88,
+   "anual": 11.2,
+   "peor_caida": 49.8,
+   "operaciones": 251,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 12889,
+   "multiplo": 12.89,
+   "anual": 26.4,
+   "peor_caida": 24.9,
+   "operaciones": 246,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 18574,
+   "multiplo": 18.57,
+   "anual": 15.0,
+   "peor_caida": 68.0,
+   "operaciones": 567,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 961,
+   "multiplo": 0.96,
+   "anual": -1.7,
+   "peor_caida": 9.9,
+   "operaciones": 34,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2914,
+   "multiplo": 2.91,
+   "anual": 11.3,
+   "peor_caida": 34.6,
+   "operaciones": 93,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 7499,
+   "multiplo": 7.5,
+   "anual": 20.3,
+   "peor_caida": 23.7,
+   "operaciones": 104,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10131,
+   "multiplo": 10.13,
+   "anual": 11.7,
+   "peor_caida": 43.1,
+   "operaciones": 217,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1050,
+   "multiplo": 1.05,
+   "anual": 2.1,
+   "peor_caida": 7.5,
+   "operaciones": 18,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2619,
+   "multiplo": 2.62,
+   "anual": 10.1,
+   "peor_caida": 53.9,
+   "operaciones": 157,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 14257,
+   "multiplo": 14.26,
+   "anual": 27.6,
+   "peor_caida": 28.8,
+   "operaciones": 164,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "largo": {
+   "final": 25987,
+   "multiplo": 25.99,
+   "anual": 16.9,
+   "peor_caida": 67.3,
+   "operaciones": 332,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1005,
+   "multiplo": 1.0,
+   "anual": 0.2,
+   "peor_caida": 9.9,
+   "operaciones": 28,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1688,
+   "multiplo": 1.69,
+   "anual": 5.4,
+   "peor_caida": 70.9,
+   "operaciones": 216,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 12882,
+   "multiplo": 12.88,
+   "anual": 26.4,
+   "peor_caida": 42.1,
+   "operaciones": 232,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "largo": {
+   "final": 14225,
+   "multiplo": 14.22,
+   "anual": 13.6,
+   "peor_caida": 83.7,
+   "operaciones": 462,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 987,
+   "multiplo": 0.99,
+   "anual": -0.5,
+   "peor_caida": 14.2,
+   "operaciones": 34,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 3703,
+   "multiplo": 3.7,
+   "anual": 14.0,
+   "peor_caida": 39.9,
+   "operaciones": 67,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2093,
+   "multiplo": 2.09,
+   "anual": 7.0,
+   "peor_caida": 33.3,
+   "operaciones": 73,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "largo": {
+   "final": 7869,
+   "multiplo": 7.87,
+   "anual": 10.4,
+   "peor_caida": 43.1,
+   "operaciones": 152,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 888,
+   "multiplo": 0.89,
+   "anual": -4.8,
+   "peor_caida": 15.9,
+   "operaciones": 15,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 4877,
+   "multiplo": 4.88,
+   "anual": 17.2,
+   "peor_caida": 46.0,
+   "operaciones": 103,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 6824,
+   "multiplo": 6.82,
+   "anual": 19.3,
+   "peor_caida": 28.0,
+   "operaciones": 124,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "largo": {
+   "final": 31925,
+   "multiplo": 31.92,
+   "anual": 18.0,
+   "peor_caida": 60.4,
+   "operaciones": 221,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 955,
+   "multiplo": 0.95,
+   "anual": -1.9,
+   "peor_caida": 17.5,
+   "operaciones": 21,
+   "saltadas": 16,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1965,
+   "multiplo": 1.97,
+   "anual": 7.0,
+   "peor_caida": 71.2,
+   "operaciones": 170,
+   "saltadas": 2,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 14194,
+   "multiplo": 14.19,
+   "anual": 27.6,
+   "peor_caida": 42.9,
+   "operaciones": 173,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "largo": {
+   "final": 32304,
+   "multiplo": 32.3,
+   "anual": 18.1,
+   "peor_caida": 82.6,
+   "operaciones": 340,
+   "saltadas": 2,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 939,
+   "multiplo": 0.94,
+   "anual": -2.6,
+   "peor_caida": 17.0,
+   "operaciones": 28,
+   "saltadas": 13,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 6936,
+   "multiplo": 6.94,
+   "anual": 21.4,
+   "peor_caida": 59.1,
+   "operaciones": 58,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 4964,
+   "multiplo": 4.96,
+   "anual": 15.8,
+   "peor_caida": 53.1,
+   "operaciones": 80,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 31244,
+   "multiplo": 31.24,
+   "anual": 17.9,
+   "peor_caida": 61.3,
+   "operaciones": 133,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1248,
+   "multiplo": 1.25,
+   "anual": 9.7,
+   "peor_caida": 28.7,
+   "operaciones": 17,
+   "saltadas": 5,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Los 5",
+  "salida": "mensual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 4818,
+   "multiplo": 4.82,
+   "anual": 17.0,
+   "peor_caida": 66.3,
+   "operaciones": 96,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 15794,
+   "multiplo": 15.79,
+   "anual": 28.8,
+   "peor_caida": 40.0,
+   "operaciones": 115,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 42793,
+   "multiplo": 42.79,
+   "anual": 19.7,
+   "peor_caida": 75.3,
+   "operaciones": 197,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 799,
+   "multiplo": 0.8,
+   "anual": -8.9,
+   "peor_caida": 35.3,
+   "operaciones": 23,
+   "saltadas": 5,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 746,
+   "multiplo": 7.46,
+   "anual": 22.3,
+   "peor_caida": 25.5,
+   "operaciones": 96,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 133,
+   "multiplo": 1.33,
+   "anual": 2.6,
+   "peor_caida": 24.0,
+   "operaciones": 83,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1165,
+   "multiplo": 11.65,
+   "anual": 12.5,
+   "peor_caida": 25.5,
+   "operaciones": 199,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 88,
+   "multiplo": 0.88,
+   "anual": -5.2,
+   "peor_caida": 12.1,
+   "operaciones": 15,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 813,
+   "multiplo": 8.13,
+   "anual": 23.3,
+   "peor_caida": 29.6,
+   "operaciones": 131,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 125,
+   "multiplo": 1.25,
+   "anual": 2.1,
+   "peor_caida": 30.8,
+   "operaciones": 87,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1138,
+   "multiplo": 11.38,
+   "anual": 12.3,
+   "peor_caida": 29.6,
+   "operaciones": 274,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.0,
+   "peor_caida": 15.9,
+   "operaciones": 17,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 744,
+   "multiplo": 7.44,
+   "anual": 22.2,
+   "peor_caida": 31.0,
+   "operaciones": 138,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 120,
+   "multiplo": 1.2,
+   "anual": 1.7,
+   "peor_caida": 34.4,
+   "operaciones": 88,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1103,
+   "multiplo": 11.03,
+   "anual": 12.2,
+   "peor_caida": 31.0,
+   "operaciones": 283,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.0,
+   "peor_caida": 15.9,
+   "operaciones": 17,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1113,
+   "multiplo": 11.13,
+   "anual": 27.2,
+   "peor_caida": 29.3,
+   "operaciones": 57,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 177,
+   "multiplo": 1.77,
+   "anual": 5.4,
+   "peor_caida": 23.8,
+   "operaciones": 66,
+   "saltadas": 28,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2137,
+   "multiplo": 21.37,
+   "anual": 15.8,
+   "peor_caida": 29.3,
+   "operaciones": 120,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 87,
+   "multiplo": 0.87,
+   "anual": -5.8,
+   "peor_caida": 13.4,
+   "operaciones": 15,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1218,
+   "multiplo": 12.18,
+   "anual": 28.4,
+   "peor_caida": 44.5,
+   "operaciones": 98,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 146,
+   "multiplo": 1.46,
+   "anual": 3.5,
+   "peor_caida": 34.0,
+   "operaciones": 84,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1732,
+   "multiplo": 17.32,
+   "anual": 14.6,
+   "peor_caida": 44.5,
+   "operaciones": 195,
+   "saltadas": 4,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 83,
+   "multiplo": 0.83,
+   "anual": -7.6,
+   "peor_caida": 17.2,
+   "operaciones": 17,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1210,
+   "multiplo": 12.1,
+   "anual": 28.3,
+   "peor_caida": 50.0,
+   "operaciones": 130,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 140,
+   "multiplo": 1.4,
+   "anual": 3.1,
+   "peor_caida": 42.4,
+   "operaciones": 88,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1466,
+   "multiplo": 14.66,
+   "anual": 13.7,
+   "peor_caida": 50.0,
+   "operaciones": 262,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 83,
+   "multiplo": 0.83,
+   "anual": -7.6,
+   "peor_caida": 17.2,
+   "operaciones": 17,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1137,
+   "multiplo": 11.37,
+   "anual": 27.5,
+   "peor_caida": 25.9,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 381,
+   "multiplo": 3.81,
+   "anual": 13.1,
+   "peor_caida": 18.8,
+   "operaciones": 48,
+   "saltadas": 20,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2525,
+   "multiplo": 25.25,
+   "anual": 16.7,
+   "peor_caida": 25.9,
+   "operaciones": 83,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.2,
+   "peor_caida": 16.3,
+   "operaciones": 11,
+   "saltadas": 14,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1862,
+   "multiplo": 18.62,
+   "anual": 34.0,
+   "peor_caida": 41.6,
+   "operaciones": 56,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 179,
+   "multiplo": 1.79,
+   "anual": 5.5,
+   "peor_caida": 38.8,
+   "operaciones": 72,
+   "saltadas": 22,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3753,
+   "multiplo": 37.53,
+   "anual": 18.9,
+   "peor_caida": 41.6,
+   "operaciones": 117,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 79,
+   "multiplo": 0.79,
+   "anual": -9.4,
+   "peor_caida": 21.1,
+   "operaciones": 16,
+   "saltadas": 17,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1814,
+   "multiplo": 18.14,
+   "anual": 33.6,
+   "peor_caida": 59.7,
+   "operaciones": 103,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 154,
+   "multiplo": 1.54,
+   "anual": 4.0,
+   "peor_caida": 48.5,
+   "operaciones": 87,
+   "saltadas": 30,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2469,
+   "multiplo": 24.69,
+   "anual": 16.6,
+   "peor_caida": 59.7,
+   "operaciones": 192,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 68,
+   "multiplo": 0.68,
+   "anual": -14.7,
+   "peor_caida": 31.6,
+   "operaciones": 19,
+   "saltadas": 15,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2185,
+   "multiplo": 21.85,
+   "anual": 36.1,
+   "peor_caida": 40.2,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 385,
+   "multiplo": 3.85,
+   "anual": 13.2,
+   "peor_caida": 37.5,
+   "operaciones": 49,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4779,
+   "multiplo": 47.79,
+   "anual": 20.3,
+   "peor_caida": 40.2,
+   "operaciones": 81,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 75,
+   "multiplo": 0.75,
+   "anual": -11.1,
+   "peor_caida": 24.6,
+   "operaciones": 11,
+   "saltadas": 10,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1858,
+   "multiplo": 18.58,
+   "anual": 33.9,
+   "peor_caida": 59.8,
+   "operaciones": 54,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 352,
+   "multiplo": 3.52,
+   "anual": 12.2,
+   "peor_caida": 49.2,
+   "operaciones": 65,
+   "saltadas": 22,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3049,
+   "multiplo": 30.49,
+   "anual": 17.8,
+   "peor_caida": 59.8,
+   "operaciones": 115,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 66,
+   "multiplo": 0.66,
+   "anual": -16.0,
+   "peor_caida": 34.1,
+   "operaciones": 15,
+   "saltadas": 10,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 3539,
+   "multiplo": 7.08,
+   "anual": 21.6,
+   "peor_caida": 29.1,
+   "operaciones": 107,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1074,
+   "multiplo": 2.15,
+   "anual": 7.3,
+   "peor_caida": 23.6,
+   "operaciones": 109,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5177,
+   "multiplo": 10.35,
+   "anual": 11.8,
+   "peor_caida": 29.1,
+   "operaciones": 220,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 412,
+   "multiplo": 0.82,
+   "anual": -7.7,
+   "peor_caida": 17.6,
+   "operaciones": 28,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 3450,
+   "multiplo": 6.9,
+   "anual": 21.3,
+   "peor_caida": 32.6,
+   "operaciones": 134,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1020,
+   "multiplo": 2.04,
+   "anual": 6.8,
+   "peor_caida": 29.1,
+   "operaciones": 139,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4723,
+   "multiplo": 9.45,
+   "anual": 11.3,
+   "peor_caida": 32.6,
+   "operaciones": 291,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 356,
+   "multiplo": 0.71,
+   "anual": -13.2,
+   "peor_caida": 28.7,
+   "operaciones": 37,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 3236,
+   "multiplo": 6.47,
+   "anual": 20.5,
+   "peor_caida": 33.1,
+   "operaciones": 138,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1011,
+   "multiplo": 2.02,
+   "anual": 6.7,
+   "peor_caida": 29.7,
+   "operaciones": 144,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3712,
+   "multiplo": 7.42,
+   "anual": 10.1,
+   "peor_caida": 35.9,
+   "operaciones": 307,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 347,
+   "multiplo": 0.69,
+   "anual": -14.1,
+   "peor_caida": 30.5,
+   "operaciones": 38,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 6033,
+   "multiplo": 12.07,
+   "anual": 28.3,
+   "peor_caida": 31.5,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1296,
+   "multiplo": 2.59,
+   "anual": 9.1,
+   "peor_caida": 25.7,
+   "operaciones": 78,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "largo": {
+   "final": 11769,
+   "multiplo": 23.54,
+   "anual": 16.3,
+   "peor_caida": 31.5,
+   "operaciones": 116,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 417,
+   "multiplo": 0.83,
+   "anual": -7.3,
+   "peor_caida": 16.5,
+   "operaciones": 18,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 7350,
+   "multiplo": 14.7,
+   "anual": 30.8,
+   "peor_caida": 47.2,
+   "operaciones": 89,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1074,
+   "multiplo": 2.15,
+   "anual": 7.3,
+   "peor_caida": 40.4,
+   "operaciones": 109,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 11092,
+   "multiplo": 22.18,
+   "anual": 16.0,
+   "peor_caida": 47.2,
+   "operaciones": 177,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 342,
+   "multiplo": 0.68,
+   "anual": -14.6,
+   "peor_caida": 31.5,
+   "operaciones": 30,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 6200,
+   "multiplo": 12.4,
+   "anual": 28.6,
+   "peor_caida": 53.8,
+   "operaciones": 122,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 973,
+   "multiplo": 1.95,
+   "anual": 6.3,
+   "peor_caida": 49.7,
+   "operaciones": 130,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "largo": {
+   "final": 7284,
+   "multiplo": 14.57,
+   "anual": 13.7,
+   "peor_caida": 53.8,
+   "operaciones": 251,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 311,
+   "multiplo": 0.62,
+   "anual": -18.0,
+   "peor_caida": 37.8,
+   "operaciones": 34,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 6371,
+   "multiplo": 12.74,
+   "anual": 29.0,
+   "peor_caida": 27.2,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1556,
+   "multiplo": 3.11,
+   "anual": 11.0,
+   "peor_caida": 22.7,
+   "operaciones": 60,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "largo": {
+   "final": 13684,
+   "multiplo": 27.37,
+   "anual": 17.2,
+   "peor_caida": 27.2,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 392,
+   "multiplo": 0.78,
+   "anual": -9.6,
+   "peor_caida": 21.5,
+   "operaciones": 15,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 9345,
+   "multiplo": 18.69,
+   "anual": 34.0,
+   "peor_caida": 43.7,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1502,
+   "multiplo": 3.0,
+   "anual": 10.6,
+   "peor_caida": 38.4,
+   "operaciones": 87,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "largo": {
+   "final": 18902,
+   "multiplo": 37.8,
+   "anual": 19.0,
+   "peor_caida": 43.7,
+   "operaciones": 116,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 355,
+   "multiplo": 0.71,
+   "anual": -13.3,
+   "peor_caida": 29.0,
+   "operaciones": 21,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 9427,
+   "multiplo": 18.85,
+   "anual": 34.1,
+   "peor_caida": 62.5,
+   "operaciones": 84,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 877,
+   "multiplo": 1.75,
+   "anual": 5.3,
+   "peor_caida": 54.8,
+   "operaciones": 118,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "largo": {
+   "final": 11962,
+   "multiplo": 23.92,
+   "anual": 16.4,
+   "peor_caida": 62.5,
+   "operaciones": 169,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 300,
+   "multiplo": 0.6,
+   "anual": -19.2,
+   "peor_caida": 40.1,
+   "operaciones": 29,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 5425,
+   "multiplo": 10.85,
+   "anual": 26.9,
+   "peor_caida": 41.7,
+   "operaciones": 36,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1969,
+   "multiplo": 3.94,
+   "anual": 13.4,
+   "peor_caida": 37.1,
+   "operaciones": 60,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 9612,
+   "multiplo": 19.22,
+   "anual": 15.2,
+   "peor_caida": 44.5,
+   "operaciones": 80,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 327,
+   "multiplo": 0.65,
+   "anual": -16.3,
+   "peor_caida": 34.6,
+   "operaciones": 15,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 10445,
+   "multiplo": 20.89,
+   "anual": 35.5,
+   "peor_caida": 62.6,
+   "operaciones": 54,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1480,
+   "multiplo": 2.96,
+   "anual": 10.5,
+   "peor_caida": 53.1,
+   "operaciones": 81,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "largo": {
+   "final": 11994,
+   "multiplo": 23.99,
+   "anual": 16.4,
+   "peor_caida": 62.6,
+   "operaciones": 114,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 285,
+   "multiplo": 0.57,
+   "anual": -20.9,
+   "peor_caida": 43.1,
+   "operaciones": 20,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 7265,
+   "multiplo": 7.27,
+   "anual": 21.9,
+   "peor_caida": 29.8,
+   "operaciones": 106,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1742,
+   "multiplo": 1.74,
+   "anual": 5.2,
+   "peor_caida": 24.4,
+   "operaciones": 123,
+   "saltadas": 2,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10149,
+   "multiplo": 10.15,
+   "anual": 11.7,
+   "peor_caida": 29.8,
+   "operaciones": 219,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 801,
+   "multiplo": 0.8,
+   "anual": -8.9,
+   "peor_caida": 19.9,
+   "operaciones": 35,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 6884,
+   "multiplo": 6.88,
+   "anual": 21.3,
+   "peor_caida": 33.3,
+   "operaciones": 134,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1366,
+   "multiplo": 1.37,
+   "anual": 2.9,
+   "peor_caida": 29.2,
+   "operaciones": 152,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "largo": {
+   "final": 9320,
+   "multiplo": 9.32,
+   "anual": 11.3,
+   "peor_caida": 33.3,
+   "operaciones": 293,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 779,
+   "multiplo": 0.78,
+   "anual": -9.9,
+   "peor_caida": 22.1,
+   "operaciones": 38,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 6514,
+   "multiplo": 6.51,
+   "anual": 20.6,
+   "peor_caida": 34.0,
+   "operaciones": 138,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1486,
+   "multiplo": 1.49,
+   "anual": 3.7,
+   "peor_caida": 31.4,
+   "operaciones": 161,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "largo": {
+   "final": 8438,
+   "multiplo": 8.44,
+   "anual": 10.7,
+   "peor_caida": 34.0,
+   "operaciones": 308,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 779,
+   "multiplo": 0.78,
+   "anual": -9.9,
+   "peor_caida": 22.1,
+   "operaciones": 38,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 8299,
+   "multiplo": 8.3,
+   "anual": 23.6,
+   "peor_caida": 30.3,
+   "operaciones": 53,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3023,
+   "multiplo": 3.02,
+   "anual": 10.7,
+   "peor_caida": 24.8,
+   "operaciones": 84,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "largo": {
+   "final": 17862,
+   "multiplo": 17.86,
+   "anual": 14.8,
+   "peor_caida": 30.3,
+   "operaciones": 112,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 808,
+   "multiplo": 0.81,
+   "anual": -8.5,
+   "peor_caida": 19.2,
+   "operaciones": 20,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 14821,
+   "multiplo": 14.82,
+   "anual": 30.9,
+   "peor_caida": 47.7,
+   "operaciones": 89,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2109,
+   "multiplo": 2.11,
+   "anual": 7.1,
+   "peor_caida": 41.0,
+   "operaciones": 119,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "largo": {
+   "final": 22538,
+   "multiplo": 22.54,
+   "anual": 16.1,
+   "peor_caida": 47.7,
+   "operaciones": 174,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 698,
+   "multiplo": 0.7,
+   "anual": -14.0,
+   "peor_caida": 30.2,
+   "operaciones": 31,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 12861,
+   "multiplo": 12.86,
+   "anual": 29.1,
+   "peor_caida": 54.0,
+   "operaciones": 121,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1812,
+   "multiplo": 1.81,
+   "anual": 5.6,
+   "peor_caida": 48.4,
+   "operaciones": 142,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "largo": {
+   "final": 15421,
+   "multiplo": 15.42,
+   "anual": 14.0,
+   "peor_caida": 54.0,
+   "operaciones": 250,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 627,
+   "multiplo": 0.63,
+   "anual": -17.7,
+   "peor_caida": 37.3,
+   "operaciones": 37,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 6139,
+   "multiplo": 6.14,
+   "anual": 19.9,
+   "peor_caida": 27.5,
+   "operaciones": 36,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3123,
+   "multiplo": 3.12,
+   "anual": 11.0,
+   "peor_caida": 25.0,
+   "operaciones": 60,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 13660,
+   "multiplo": 13.66,
+   "anual": 13.3,
+   "peor_caida": 27.5,
+   "operaciones": 80,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 712,
+   "multiplo": 0.71,
+   "anual": -13.2,
+   "peor_caida": 28.8,
+   "operaciones": 16,
+   "saltadas": 9,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 18815,
+   "multiplo": 18.82,
+   "anual": 34.1,
+   "peor_caida": 44.0,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3070,
+   "multiplo": 3.07,
+   "anual": 10.8,
+   "peor_caida": 35.6,
+   "operaciones": 84,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 38157,
+   "multiplo": 38.16,
+   "anual": 19.0,
+   "peor_caida": 44.0,
+   "operaciones": 116,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 676,
+   "multiplo": 0.68,
+   "anual": -15.1,
+   "peor_caida": 32.4,
+   "operaciones": 21,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 18851,
+   "multiplo": 18.85,
+   "anual": 34.1,
+   "peor_caida": 62.8,
+   "operaciones": 84,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2214,
+   "multiplo": 2.21,
+   "anual": 7.6,
+   "peor_caida": 55.2,
+   "operaciones": 115,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 24458,
+   "multiplo": 24.46,
+   "anual": 16.5,
+   "peor_caida": 62.8,
+   "operaciones": 168,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 569,
+   "multiplo": 0.57,
+   "anual": -21.0,
+   "peor_caida": 43.1,
+   "operaciones": 30,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 11223,
+   "multiplo": 11.22,
+   "anual": 27.4,
+   "peor_caida": 40.3,
+   "operaciones": 35,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3751,
+   "multiplo": 3.75,
+   "anual": 12.9,
+   "peor_caida": 39.3,
+   "operaciones": 59,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 20186,
+   "multiplo": 20.19,
+   "anual": 15.5,
+   "peor_caida": 42.5,
+   "operaciones": 79,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 519,
+   "multiplo": 0.52,
+   "anual": -24.0,
+   "peor_caida": 48.1,
+   "operaciones": 18,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq + BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 21748,
+   "multiplo": 21.75,
+   "anual": 36.1,
+   "peor_caida": 60.7,
+   "operaciones": 53,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2992,
+   "multiplo": 2.99,
+   "anual": 10.6,
+   "peor_caida": 54.3,
+   "operaciones": 80,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 37091,
+   "multiplo": 37.09,
+   "anual": 18.9,
+   "peor_caida": 60.7,
+   "operaciones": 112,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 405,
+   "multiplo": 0.41,
+   "anual": -31.4,
+   "peor_caida": 59.5,
+   "operaciones": 25,
+   "saltadas": 5,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 49,
+   "quemada": false
+  },
+  "largo": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.1,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 80,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 91,
+   "multiplo": 0.91,
+   "anual": -0.9,
+   "peor_caida": 9.3,
+   "operaciones": 1,
+   "saltadas": 48,
+   "quemada": false
+  },
+  "largo": {
+   "final": 89,
+   "multiplo": 0.89,
+   "anual": -0.6,
+   "peor_caida": 11.3,
+   "operaciones": 2,
+   "saltadas": 79,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 98,
+   "multiplo": 0.98,
+   "anual": -0.2,
+   "peor_caida": 2.0,
+   "operaciones": 1,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 91,
+   "multiplo": 0.91,
+   "anual": -0.9,
+   "peor_caida": 9.3,
+   "operaciones": 1,
+   "saltadas": 48,
+   "quemada": false
+  },
+  "largo": {
+   "final": 89,
+   "multiplo": 0.89,
+   "anual": -0.6,
+   "peor_caida": 11.3,
+   "operaciones": 2,
+   "saltadas": 79,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 471,
+   "multiplo": 0.94,
+   "anual": -0.6,
+   "peor_caida": 5.9,
+   "operaciones": 4,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 796,
+   "multiplo": 1.59,
+   "anual": 4.4,
+   "peor_caida": 11.5,
+   "operaciones": 6,
+   "saltadas": 50,
+   "quemada": false
+  },
+  "largo": {
+   "final": 767,
+   "multiplo": 1.53,
+   "anual": 2.1,
+   "peor_caida": 17.4,
+   "operaciones": 10,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 459,
+   "multiplo": 0.92,
+   "anual": -0.9,
+   "peor_caida": 8.3,
+   "operaciones": 5,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 796,
+   "multiplo": 1.59,
+   "anual": 4.4,
+   "peor_caida": 11.5,
+   "operaciones": 6,
+   "saltadas": 50,
+   "quemada": false
+  },
+  "largo": {
+   "final": 783,
+   "multiplo": 1.57,
+   "anual": 2.2,
+   "peor_caida": 14.2,
+   "operaciones": 10,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 459,
+   "multiplo": 0.92,
+   "anual": -0.9,
+   "peor_caida": 8.3,
+   "operaciones": 5,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 796,
+   "multiplo": 1.59,
+   "anual": 4.4,
+   "peor_caida": 11.5,
+   "operaciones": 6,
+   "saltadas": 50,
+   "quemada": false
+  },
+  "largo": {
+   "final": 783,
+   "multiplo": 1.57,
+   "anual": 2.2,
+   "peor_caida": 14.2,
+   "operaciones": 10,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 467,
+   "multiplo": 0.93,
+   "anual": -0.7,
+   "peor_caida": 6.7,
+   "operaciones": 4,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 796,
+   "multiplo": 1.59,
+   "anual": 4.4,
+   "peor_caida": 11.5,
+   "operaciones": 6,
+   "saltadas": 50,
+   "quemada": false
+  },
+  "largo": {
+   "final": 763,
+   "multiplo": 1.53,
+   "anual": 2.0,
+   "peor_caida": 18.2,
+   "operaciones": 10,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 455,
+   "multiplo": 0.91,
+   "anual": -0.9,
+   "peor_caida": 9.1,
+   "operaciones": 5,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 796,
+   "multiplo": 1.59,
+   "anual": 4.4,
+   "peor_caida": 11.5,
+   "operaciones": 6,
+   "saltadas": 50,
+   "quemada": false
+  },
+  "largo": {
+   "final": 779,
+   "multiplo": 1.56,
+   "anual": 2.1,
+   "peor_caida": 15.0,
+   "operaciones": 10,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 455,
+   "multiplo": 0.91,
+   "anual": -0.9,
+   "peor_caida": 9.1,
+   "operaciones": 5,
+   "saltadas": 32,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 796,
+   "multiplo": 1.59,
+   "anual": 4.4,
+   "peor_caida": 11.5,
+   "operaciones": 6,
+   "saltadas": 50,
+   "quemada": false
+  },
+  "largo": {
+   "final": 779,
+   "multiplo": 1.56,
+   "anual": 2.1,
+   "peor_caida": 15.0,
+   "operaciones": 10,
+   "saltadas": 82,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 452,
+   "multiplo": 0.9,
+   "anual": -1.0,
+   "peor_caida": 9.7,
+   "operaciones": 6,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 692,
+   "multiplo": 1.38,
+   "anual": 3.0,
+   "peor_caida": 20.7,
+   "operaciones": 12,
+   "saltadas": 41,
+   "quemada": false
+  },
+  "largo": {
+   "final": 648,
+   "multiplo": 1.3,
+   "anual": 1.3,
+   "peor_caida": 29.4,
+   "operaciones": 17,
+   "saltadas": 69,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1314,
+   "multiplo": 2.63,
+   "anual": 10.1,
+   "peor_caida": 29.0,
+   "operaciones": 37,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 860,
+   "multiplo": 1.72,
+   "anual": 5.1,
+   "peor_caida": 27.6,
+   "operaciones": 20,
+   "saltadas": 39,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1019,
+   "multiplo": 2.04,
+   "anual": 3.5,
+   "peor_caida": 73.9,
+   "operaciones": 92,
+   "saltadas": 34,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1389,
+   "multiplo": 2.78,
+   "anual": 10.8,
+   "peor_caida": 31.2,
+   "operaciones": 44,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 651,
+   "multiplo": 1.3,
+   "anual": 2.5,
+   "peor_caida": 35.2,
+   "operaciones": 17,
+   "saltadas": 46,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1010,
+   "multiplo": 2.02,
+   "anual": 3.4,
+   "peor_caida": 79.8,
+   "operaciones": 113,
+   "saltadas": 31,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 911,
+   "multiplo": 1.82,
+   "anual": 6.2,
+   "peor_caida": 27.1,
+   "operaciones": 32,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 456,
+   "multiplo": 0.91,
+   "anual": -0.8,
+   "peor_caida": 52.8,
+   "operaciones": 20,
+   "saltadas": 37,
+   "quemada": false
+  },
+  "largo": {
+   "final": 598,
+   "multiplo": 1.2,
+   "anual": 0.9,
+   "peor_caida": 71.5,
+   "operaciones": 72,
+   "saltadas": 22,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1750,
+   "multiplo": 3.5,
+   "anual": 13.4,
+   "peor_caida": 23.1,
+   "operaciones": 36,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 470,
+   "multiplo": 0.94,
+   "anual": -0.6,
+   "peor_caida": 63.5,
+   "operaciones": 23,
+   "saltadas": 44,
+   "quemada": false
+  },
+  "largo": {
+   "final": 694,
+   "multiplo": 1.39,
+   "anual": 1.6,
+   "peor_caida": 76.6,
+   "operaciones": 106,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2383,
+   "multiplo": 2.38,
+   "anual": 9.1,
+   "peor_caida": 15.5,
+   "operaciones": 42,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1314,
+   "multiplo": 1.31,
+   "anual": 2.5,
+   "peor_caida": 33.9,
+   "operaciones": 25,
+   "saltadas": 36,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1916,
+   "multiplo": 1.92,
+   "anual": 3.2,
+   "peor_caida": 51.4,
+   "operaciones": 119,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 4802,
+   "multiplo": 4.8,
+   "anual": 17.0,
+   "peor_caida": 11.9,
+   "operaciones": 55,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1299,
+   "multiplo": 1.3,
+   "anual": 2.4,
+   "peor_caida": 43.8,
+   "operaciones": 38,
+   "saltadas": 33,
+   "quemada": false
+  },
+  "largo": {
+   "final": 12915,
+   "multiplo": 12.92,
+   "anual": 13.0,
+   "peor_caida": 36.3,
+   "operaciones": 181,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 5974,
+   "multiplo": 5.97,
+   "anual": 19.6,
+   "peor_caida": 15.0,
+   "operaciones": 65,
+   "saltadas": 10,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1273,
+   "multiplo": 1.27,
+   "anual": 2.2,
+   "peor_caida": 45.6,
+   "operaciones": 49,
+   "saltadas": 28,
+   "quemada": false
+  },
+  "largo": {
+   "final": 16476,
+   "multiplo": 16.48,
+   "anual": 14.4,
+   "peor_caida": 41.4,
+   "operaciones": 202,
+   "saltadas": 10,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2330,
+   "multiplo": 2.33,
+   "anual": 8.8,
+   "peor_caida": 17.2,
+   "operaciones": 40,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1305,
+   "multiplo": 1.31,
+   "anual": 2.5,
+   "peor_caida": 34.8,
+   "operaciones": 25,
+   "saltadas": 37,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3596,
+   "multiplo": 3.6,
+   "anual": 6.3,
+   "peor_caida": 54.8,
+   "operaciones": 117,
+   "saltadas": 27,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 4042,
+   "multiplo": 4.04,
+   "anual": 15.0,
+   "peor_caida": 19.9,
+   "operaciones": 51,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1304,
+   "multiplo": 1.3,
+   "anual": 2.5,
+   "peor_caida": 43.4,
+   "operaciones": 37,
+   "saltadas": 33,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10363,
+   "multiplo": 10.36,
+   "anual": 11.8,
+   "peor_caida": 56.1,
+   "operaciones": 160,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 5916,
+   "multiplo": 5.92,
+   "anual": 19.5,
+   "peor_caida": 25.7,
+   "operaciones": 64,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1258,
+   "multiplo": 1.26,
+   "anual": 2.1,
+   "peor_caida": 47.1,
+   "operaciones": 49,
+   "saltadas": 28,
+   "quemada": false
+  },
+  "largo": {
+   "final": 14338,
+   "multiplo": 14.34,
+   "anual": 13.6,
+   "peor_caida": 60.9,
+   "operaciones": 193,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2559,
+   "multiplo": 2.56,
+   "anual": 9.9,
+   "peor_caida": 10.8,
+   "operaciones": 20,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1038,
+   "multiplo": 1.04,
+   "anual": 0.3,
+   "peor_caida": 44.2,
+   "operaciones": 31,
+   "saltadas": 17,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5121,
+   "multiplo": 5.12,
+   "anual": 8.1,
+   "peor_caida": 48.1,
+   "operaciones": 78,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 3055,
+   "multiplo": 3.05,
+   "anual": 11.8,
+   "peor_caida": 20.4,
+   "operaciones": 48,
+   "saltadas": 4,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 839,
+   "multiplo": 0.84,
+   "anual": -1.6,
+   "peor_caida": 59.1,
+   "operaciones": 40,
+   "saltadas": 29,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5824,
+   "multiplo": 5.82,
+   "anual": 8.8,
+   "peor_caida": 64.1,
+   "operaciones": 130,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 3592,
+   "multiplo": 3.59,
+   "anual": 13.6,
+   "peor_caida": 33.6,
+   "operaciones": 65,
+   "saltadas": 7,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 648,
+   "multiplo": 0.65,
+   "anual": -3.9,
+   "peor_caida": 67.9,
+   "operaciones": 36,
+   "saltadas": 37,
+   "quemada": false
+  },
+  "largo": {
+   "final": 8169,
+   "multiplo": 8.17,
+   "anual": 10.6,
+   "peor_caida": 72.0,
+   "operaciones": 173,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 6,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2262,
+   "multiplo": 2.26,
+   "anual": 8.5,
+   "peor_caida": 21.9,
+   "operaciones": 27,
+   "saltadas": 2,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 598,
+   "multiplo": 0.6,
+   "anual": -4.6,
+   "peor_caida": 64.2,
+   "operaciones": 43,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2669,
+   "multiplo": 2.67,
+   "anual": 4.8,
+   "peor_caida": 70.7,
+   "operaciones": 83,
+   "saltadas": 8,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 2618,
+   "multiplo": 2.62,
+   "anual": 49.4,
+   "peor_caida": 6.2,
+   "operaciones": 4,
+   "saltadas": 4,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "Oro + Plata",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 2338,
+   "multiplo": 2.34,
+   "anual": 8.9,
+   "peor_caida": 32.4,
+   "operaciones": 47,
+   "saltadas": 3,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 560,
+   "multiplo": 0.56,
+   "anual": -5.2,
+   "peor_caida": 75.6,
+   "operaciones": 47,
+   "saltadas": 20,
+   "quemada": false
+  },
+  "largo": {
+   "final": 762,
+   "multiplo": 0.76,
+   "anual": -1.3,
+   "peor_caida": 79.7,
+   "operaciones": 120,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 5064,
+   "multiplo": 5.06,
+   "anual": 96.8,
+   "peor_caida": 6.2,
+   "operaciones": 8,
+   "saltadas": 3,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 329,
+   "multiplo": 3.29,
+   "anual": 12.7,
+   "peor_caida": 11.4,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "largo": {
+   "final": 836,
+   "multiplo": 8.36,
+   "anual": 10.7,
+   "peor_caida": 11.4,
+   "operaciones": 22,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 329,
+   "multiplo": 3.29,
+   "anual": 12.7,
+   "peor_caida": 11.4,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "largo": {
+   "final": 774,
+   "multiplo": 7.74,
+   "anual": 10.3,
+   "peor_caida": 14.1,
+   "operaciones": 27,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 329,
+   "multiplo": 3.29,
+   "anual": 12.7,
+   "peor_caida": 11.4,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "largo": {
+   "final": 774,
+   "multiplo": 7.74,
+   "anual": 10.3,
+   "peor_caida": 14.1,
+   "operaciones": 27,
+   "saltadas": 15,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 570,
+   "multiplo": 5.7,
+   "anual": 19.0,
+   "peor_caida": 11.4,
+   "operaciones": 5,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1102,
+   "multiplo": 11.02,
+   "anual": 12.2,
+   "peor_caida": 17.6,
+   "operaciones": 27,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 738,
+   "multiplo": 7.38,
+   "anual": 22.1,
+   "peor_caida": 22.8,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1308,
+   "multiplo": 13.08,
+   "anual": 13.1,
+   "peor_caida": 30.3,
+   "operaciones": 41,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 738,
+   "multiplo": 7.38,
+   "anual": 22.1,
+   "peor_caida": 22.8,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 19,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1308,
+   "multiplo": 13.08,
+   "anual": 13.1,
+   "peor_caida": 30.3,
+   "operaciones": 41,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 573,
+   "multiplo": 5.73,
+   "anual": 19.1,
+   "peor_caida": 9.2,
+   "operaciones": 3,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 95,
+   "multiplo": 0.95,
+   "anual": -0.5,
+   "peor_caida": 4.9,
+   "operaciones": 1,
+   "saltadas": 18,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1144,
+   "multiplo": 11.44,
+   "anual": 12.4,
+   "peor_caida": 26.2,
+   "operaciones": 25,
+   "saltadas": 4,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 737,
+   "multiplo": 7.37,
+   "anual": 22.1,
+   "peor_caida": 25.0,
+   "operaciones": 6,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 95,
+   "multiplo": 0.95,
+   "anual": -0.5,
+   "peor_caida": 4.9,
+   "operaciones": 1,
+   "saltadas": 18,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1186,
+   "multiplo": 11.86,
+   "anual": 12.6,
+   "peor_caida": 51.9,
+   "operaciones": 46,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 908,
+   "multiplo": 9.08,
+   "anual": 24.7,
+   "peor_caida": 33.1,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 95,
+   "multiplo": 0.95,
+   "anual": -0.5,
+   "peor_caida": 4.9,
+   "operaciones": 1,
+   "saltadas": 18,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1175,
+   "multiplo": 11.75,
+   "anual": 12.5,
+   "peor_caida": 58.0,
+   "operaciones": 53,
+   "saltadas": 6,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 868,
+   "multiplo": 8.68,
+   "anual": 24.1,
+   "peor_caida": 15.4,
+   "operaciones": 3,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 284,
+   "multiplo": 2.84,
+   "anual": 10.1,
+   "peor_caida": 5.7,
+   "operaciones": 6,
+   "saltadas": 16,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1427,
+   "multiplo": 14.27,
+   "anual": 13.6,
+   "peor_caida": 57.9,
+   "operaciones": 35,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1155,
+   "multiplo": 11.55,
+   "anual": 27.7,
+   "peor_caida": 27.8,
+   "operaciones": 5,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 349,
+   "multiplo": 3.49,
+   "anual": 12.1,
+   "peor_caida": 28.9,
+   "operaciones": 15,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1597,
+   "multiplo": 15.97,
+   "anual": 14.2,
+   "peor_caida": 71.5,
+   "operaciones": 48,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 100,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 2362,
+   "multiplo": 4.72,
+   "anual": 16.8,
+   "peor_caida": 12.2,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 944,
+   "multiplo": 1.89,
+   "anual": 6.0,
+   "peor_caida": 12.0,
+   "operaciones": 19,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2925,
+   "multiplo": 5.85,
+   "anual": 8.8,
+   "peor_caida": 31.3,
+   "operaciones": 55,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2362,
+   "multiplo": 4.72,
+   "anual": 16.8,
+   "peor_caida": 12.2,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 913,
+   "multiplo": 1.83,
+   "anual": 5.7,
+   "peor_caida": 14.8,
+   "operaciones": 20,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2679,
+   "multiplo": 5.36,
+   "anual": 8.4,
+   "peor_caida": 37.0,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 2362,
+   "multiplo": 4.72,
+   "anual": 16.8,
+   "peor_caida": 12.2,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 913,
+   "multiplo": 1.83,
+   "anual": 5.7,
+   "peor_caida": 14.8,
+   "operaciones": 20,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2679,
+   "multiplo": 5.36,
+   "anual": 8.4,
+   "peor_caida": 37.0,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 3269,
+   "multiplo": 6.54,
+   "anual": 20.7,
+   "peor_caida": 11.8,
+   "operaciones": 5,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 938,
+   "multiplo": 1.88,
+   "anual": 5.9,
+   "peor_caida": 12.0,
+   "operaciones": 19,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5509,
+   "multiplo": 11.02,
+   "anual": 12.2,
+   "peor_caida": 38.0,
+   "operaciones": 48,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 3749,
+   "multiplo": 7.5,
+   "anual": 22.3,
+   "peor_caida": 23.4,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 908,
+   "multiplo": 1.82,
+   "anual": 5.6,
+   "peor_caida": 14.8,
+   "operaciones": 20,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5695,
+   "multiplo": 11.39,
+   "anual": 12.3,
+   "peor_caida": 43.1,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 3749,
+   "multiplo": 7.5,
+   "anual": 22.3,
+   "peor_caida": 23.4,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 908,
+   "multiplo": 1.82,
+   "anual": 5.6,
+   "peor_caida": 14.8,
+   "operaciones": 20,
+   "saltadas": 14,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5695,
+   "multiplo": 11.39,
+   "anual": 12.3,
+   "peor_caida": 43.1,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 3225,
+   "multiplo": 6.45,
+   "anual": 20.5,
+   "peor_caida": 9.3,
+   "operaciones": 3,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 890,
+   "multiplo": 1.78,
+   "anual": 5.4,
+   "peor_caida": 30.2,
+   "operaciones": 21,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "largo": {
+   "final": 5325,
+   "multiplo": 10.65,
+   "anual": 12.0,
+   "peor_caida": 41.2,
+   "operaciones": 34,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 4044,
+   "multiplo": 8.09,
+   "anual": 23.3,
+   "peor_caida": 25.4,
+   "operaciones": 6,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 882,
+   "multiplo": 1.76,
+   "anual": 5.3,
+   "peor_caida": 46.6,
+   "operaciones": 34,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "largo": {
+   "final": 6406,
+   "multiplo": 12.81,
+   "anual": 13.0,
+   "peor_caida": 56.4,
+   "operaciones": 49,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 4659,
+   "multiplo": 9.32,
+   "anual": 25.0,
+   "peor_caida": 33.8,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 861,
+   "multiplo": 1.72,
+   "anual": 5.1,
+   "peor_caida": 47.4,
+   "operaciones": 36,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "largo": {
+   "final": 6126,
+   "multiplo": 12.25,
+   "anual": 12.7,
+   "peor_caida": 62.7,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 500,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2112,
+   "multiplo": 4.22,
+   "anual": 15.5,
+   "peor_caida": 15.5,
+   "operaciones": 2,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1054,
+   "multiplo": 2.11,
+   "anual": 7.1,
+   "peor_caida": 55.0,
+   "operaciones": 34,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3286,
+   "multiplo": 6.57,
+   "anual": 9.4,
+   "peor_caida": 60.5,
+   "operaciones": 33,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 454,
+   "multiplo": 0.91,
+   "anual": -3.9,
+   "peor_caida": 9.1,
+   "operaciones": 1,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 4035,
+   "multiplo": 8.07,
+   "anual": 23.2,
+   "peor_caida": 28.2,
+   "operaciones": 4,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 891,
+   "multiplo": 1.78,
+   "anual": 5.4,
+   "peor_caida": 71.7,
+   "operaciones": 46,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4993,
+   "multiplo": 9.99,
+   "anual": 11.6,
+   "peor_caida": 75.8,
+   "operaciones": 46,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 454,
+   "multiplo": 0.91,
+   "anual": -3.9,
+   "peor_caida": 9.1,
+   "operaciones": 1,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 4784,
+   "multiplo": 4.78,
+   "anual": 16.9,
+   "peor_caida": 12.3,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1386,
+   "multiplo": 1.39,
+   "anual": 3.0,
+   "peor_caida": 25.4,
+   "operaciones": 33,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "largo": {
+   "final": 6637,
+   "multiplo": 6.64,
+   "anual": 9.5,
+   "peor_caida": 24.3,
+   "operaciones": 58,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 4784,
+   "multiplo": 4.78,
+   "anual": 16.9,
+   "peor_caida": 12.3,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1375,
+   "multiplo": 1.38,
+   "anual": 3.0,
+   "peor_caida": 28.5,
+   "operaciones": 38,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "largo": {
+   "final": 6877,
+   "multiplo": 6.88,
+   "anual": 9.7,
+   "peor_caida": 24.0,
+   "operaciones": 60,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 4784,
+   "multiplo": 4.78,
+   "anual": 16.9,
+   "peor_caida": 12.3,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1375,
+   "multiplo": 1.38,
+   "anual": 3.0,
+   "peor_caida": 28.5,
+   "operaciones": 38,
+   "saltadas": 11,
+   "quemada": false
+  },
+  "largo": {
+   "final": 7086,
+   "multiplo": 7.09,
+   "anual": 9.8,
+   "peor_caida": 24.0,
+   "operaciones": 62,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 6659,
+   "multiplo": 6.66,
+   "anual": 20.9,
+   "peor_caida": 11.8,
+   "operaciones": 5,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1866,
+   "multiplo": 1.87,
+   "anual": 5.9,
+   "peor_caida": 34.2,
+   "operaciones": 39,
+   "saltadas": 4,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10984,
+   "multiplo": 10.98,
+   "anual": 12.2,
+   "peor_caida": 41.2,
+   "operaciones": 47,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 7616,
+   "multiplo": 7.62,
+   "anual": 22.5,
+   "peor_caida": 23.5,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1831,
+   "multiplo": 1.83,
+   "anual": 5.7,
+   "peor_caida": 40.2,
+   "operaciones": 48,
+   "saltadas": 4,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10726,
+   "multiplo": 10.73,
+   "anual": 12.0,
+   "peor_caida": 47.7,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 7616,
+   "multiplo": 7.62,
+   "anual": 22.5,
+   "peor_caida": 23.5,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1831,
+   "multiplo": 1.83,
+   "anual": 5.7,
+   "peor_caida": 40.2,
+   "operaciones": 48,
+   "saltadas": 4,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10726,
+   "multiplo": 10.73,
+   "anual": 12.0,
+   "peor_caida": 47.7,
+   "operaciones": 58,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1000,
+   "multiplo": 1.0,
+   "anual": 0.0,
+   "peor_caida": 0.0,
+   "operaciones": 0,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 6510,
+   "multiplo": 6.51,
+   "anual": 20.6,
+   "peor_caida": 9.4,
+   "operaciones": 3,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1869,
+   "multiplo": 1.87,
+   "anual": 5.9,
+   "peor_caida": 34.1,
+   "operaciones": 31,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 10610,
+   "multiplo": 10.61,
+   "anual": 12.0,
+   "peor_caida": 42.8,
+   "operaciones": 34,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 863,
+   "multiplo": 0.86,
+   "anual": -5.9,
+   "peor_caida": 13.7,
+   "operaciones": 4,
+   "saltadas": 11,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 8087,
+   "multiplo": 8.09,
+   "anual": 23.3,
+   "peor_caida": 25.5,
+   "operaciones": 6,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1874,
+   "multiplo": 1.87,
+   "anual": 5.9,
+   "peor_caida": 51.7,
+   "operaciones": 48,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 12832,
+   "multiplo": 12.83,
+   "anual": 13.0,
+   "peor_caida": 56.3,
+   "operaciones": 48,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 863,
+   "multiplo": 0.86,
+   "anual": -5.9,
+   "peor_caida": 13.7,
+   "operaciones": 4,
+   "saltadas": 11,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 9436,
+   "multiplo": 9.44,
+   "anual": 25.2,
+   "peor_caida": 33.9,
+   "operaciones": 8,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1560,
+   "multiplo": 1.56,
+   "anual": 4.2,
+   "peor_caida": 59.2,
+   "operaciones": 54,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 11734,
+   "multiplo": 11.73,
+   "anual": 12.5,
+   "peor_caida": 64.4,
+   "operaciones": 58,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 863,
+   "multiplo": 0.86,
+   "anual": -5.9,
+   "peor_caida": 13.7,
+   "operaciones": 4,
+   "saltadas": 11,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 4224,
+   "multiplo": 4.22,
+   "anual": 15.5,
+   "peor_caida": 15.6,
+   "operaciones": 2,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1932,
+   "multiplo": 1.93,
+   "anual": 6.2,
+   "peor_caida": 58.7,
+   "operaciones": 34,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 6467,
+   "multiplo": 6.47,
+   "anual": 9.3,
+   "peor_caida": 62.2,
+   "operaciones": 34,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 703,
+   "multiplo": 0.7,
+   "anual": -13.7,
+   "peor_caida": 29.7,
+   "operaciones": 8,
+   "saltadas": 4,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "BTC",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 8069,
+   "multiplo": 8.07,
+   "anual": 23.2,
+   "peor_caida": 28.2,
+   "operaciones": 4,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1722,
+   "multiplo": 1.72,
+   "anual": 5.1,
+   "peor_caida": 72.6,
+   "operaciones": 46,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 9738,
+   "multiplo": 9.74,
+   "anual": 11.5,
+   "peor_caida": 76.9,
+   "operaciones": 47,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 540,
+   "multiplo": 0.54,
+   "anual": -22.7,
+   "peor_caida": 46.0,
+   "operaciones": 11,
+   "saltadas": 4,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 0.2,
+   "peor_caida": 13.5,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 152,
+   "multiplo": 1.52,
+   "anual": 3.9,
+   "peor_caida": 7.3,
+   "operaciones": 100,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 155,
+   "multiplo": 1.55,
+   "anual": 2.1,
+   "peor_caida": 18.3,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 101,
+   "multiplo": 1.01,
+   "anual": 0.3,
+   "peor_caida": 8.9,
+   "operaciones": 26,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 0.2,
+   "peor_caida": 13.5,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 152,
+   "multiplo": 1.52,
+   "anual": 3.9,
+   "peor_caida": 7.3,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 155,
+   "multiplo": 1.55,
+   "anual": 2.1,
+   "peor_caida": 18.3,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 101,
+   "multiplo": 1.01,
+   "anual": 0.5,
+   "peor_caida": 8.9,
+   "operaciones": 27,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 0.2,
+   "peor_caida": 13.5,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 152,
+   "multiplo": 1.52,
+   "anual": 3.9,
+   "peor_caida": 7.3,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 155,
+   "multiplo": 1.55,
+   "anual": 2.1,
+   "peor_caida": 18.3,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 101,
+   "multiplo": 1.01,
+   "anual": 0.5,
+   "peor_caida": 8.9,
+   "operaciones": 27,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 0.2,
+   "peor_caida": 21.6,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 213,
+   "multiplo": 2.13,
+   "anual": 7.2,
+   "peor_caida": 10.8,
+   "operaciones": 82,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 215,
+   "multiplo": 2.15,
+   "anual": 3.7,
+   "peor_caida": 29.0,
+   "operaciones": 170,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 1.0,
+   "peor_caida": 8.7,
+   "operaciones": 27,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 92,
+   "multiplo": 0.92,
+   "anual": -0.8,
+   "peor_caida": 28.3,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 232,
+   "multiplo": 2.32,
+   "anual": 8.0,
+   "peor_caida": 16.3,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 216,
+   "multiplo": 2.16,
+   "anual": 3.8,
+   "peor_caida": 38.4,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 1.0,
+   "peor_caida": 8.7,
+   "operaciones": 27,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 92,
+   "multiplo": 0.92,
+   "anual": -0.8,
+   "peor_caida": 28.3,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 232,
+   "multiplo": 2.32,
+   "anual": 8.0,
+   "peor_caida": 16.3,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 216,
+   "multiplo": 2.16,
+   "anual": 3.8,
+   "peor_caida": 38.4,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 102,
+   "multiplo": 1.02,
+   "anual": 1.0,
+   "peor_caida": 8.7,
+   "operaciones": 27,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 107,
+   "multiplo": 1.07,
+   "anual": 0.7,
+   "peor_caida": 25.8,
+   "operaciones": 63,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 222,
+   "multiplo": 2.22,
+   "anual": 7.6,
+   "peor_caida": 10.4,
+   "operaciones": 61,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 242,
+   "multiplo": 2.42,
+   "anual": 4.3,
+   "peor_caida": 33.2,
+   "operaciones": 124,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 109,
+   "multiplo": 1.09,
+   "anual": 3.6,
+   "peor_caida": 6.7,
+   "operaciones": 17,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 94,
+   "multiplo": 0.94,
+   "anual": -0.6,
+   "peor_caida": 33.0,
+   "operaciones": 89,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 278,
+   "multiplo": 2.78,
+   "anual": 9.8,
+   "peor_caida": 16.7,
+   "operaciones": 82,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 276,
+   "multiplo": 2.76,
+   "anual": 5.0,
+   "peor_caida": 42.6,
+   "operaciones": 171,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 103,
+   "multiplo": 1.03,
+   "anual": 1.3,
+   "peor_caida": 13.9,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 74,
+   "multiplo": 0.74,
+   "anual": -3.0,
+   "peor_caida": 41.8,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 305,
+   "multiplo": 3.05,
+   "anual": 10.8,
+   "peor_caida": 24.5,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 223,
+   "multiplo": 2.23,
+   "anual": 3.9,
+   "peor_caida": 52.3,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 103,
+   "multiplo": 1.03,
+   "anual": 1.3,
+   "peor_caida": 13.9,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 101,
+   "multiplo": 1.01,
+   "anual": 0.1,
+   "peor_caida": 40.1,
+   "operaciones": 63,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 338,
+   "multiplo": 3.38,
+   "anual": 11.8,
+   "peor_caida": 19.7,
+   "operaciones": 61,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 355,
+   "multiplo": 3.55,
+   "anual": 6.2,
+   "peor_caida": 49.9,
+   "operaciones": 124,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 119,
+   "multiplo": 1.19,
+   "anual": 7.6,
+   "peor_caida": 11.4,
+   "operaciones": 16,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 74,
+   "multiplo": 0.74,
+   "anual": -2.9,
+   "peor_caida": 47.4,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 491,
+   "multiplo": 4.91,
+   "anual": 15.7,
+   "peor_caida": 27.4,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 342,
+   "multiplo": 3.42,
+   "anual": 6.1,
+   "peor_caida": 60.8,
+   "operaciones": 169,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 114,
+   "multiplo": 1.14,
+   "anual": 5.8,
+   "peor_caida": 16.6,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 499,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 16.2,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 819,
+   "multiplo": 1.64,
+   "anual": 4.6,
+   "peor_caida": 8.8,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 818,
+   "multiplo": 1.64,
+   "anual": 2.4,
+   "peor_caida": 21.8,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 513,
+   "multiplo": 1.03,
+   "anual": 1.0,
+   "peor_caida": 5.8,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 499,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 16.2,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 819,
+   "multiplo": 1.64,
+   "anual": 4.6,
+   "peor_caida": 8.8,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 818,
+   "multiplo": 1.64,
+   "anual": 2.4,
+   "peor_caida": 21.8,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 513,
+   "multiplo": 1.03,
+   "anual": 1.0,
+   "peor_caida": 5.8,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 499,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 16.2,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 819,
+   "multiplo": 1.64,
+   "anual": 4.6,
+   "peor_caida": 8.8,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 818,
+   "multiplo": 1.64,
+   "anual": 2.4,
+   "peor_caida": 21.8,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 513,
+   "multiplo": 1.03,
+   "anual": 1.0,
+   "peor_caida": 5.8,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 506,
+   "multiplo": 1.01,
+   "anual": 0.1,
+   "peor_caida": 23.3,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1113,
+   "multiplo": 2.23,
+   "anual": 7.6,
+   "peor_caida": 11.5,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1122,
+   "multiplo": 2.24,
+   "anual": 3.9,
+   "peor_caida": 31.2,
+   "operaciones": 169,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 536,
+   "multiplo": 1.07,
+   "anual": 2.9,
+   "peor_caida": 7.4,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 459,
+   "multiplo": 0.92,
+   "anual": -0.8,
+   "peor_caida": 30.4,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1266,
+   "multiplo": 2.53,
+   "anual": 8.9,
+   "peor_caida": 17.4,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1143,
+   "multiplo": 2.29,
+   "anual": 4.0,
+   "peor_caida": 39.9,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 513,
+   "multiplo": 1.03,
+   "anual": 1.1,
+   "peor_caida": 12.5,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 459,
+   "multiplo": 0.92,
+   "anual": -0.8,
+   "peor_caida": 30.4,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1266,
+   "multiplo": 2.53,
+   "anual": 8.9,
+   "peor_caida": 17.4,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1143,
+   "multiplo": 2.29,
+   "anual": 4.0,
+   "peor_caida": 39.9,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 513,
+   "multiplo": 1.03,
+   "anual": 1.1,
+   "peor_caida": 12.5,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 543,
+   "multiplo": 1.09,
+   "anual": 0.8,
+   "peor_caida": 26.4,
+   "operaciones": 63,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1181,
+   "multiplo": 2.36,
+   "anual": 8.2,
+   "peor_caida": 11.9,
+   "operaciones": 61,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1290,
+   "multiplo": 2.58,
+   "anual": 4.6,
+   "peor_caida": 33.9,
+   "operaciones": 124,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 566,
+   "multiplo": 1.13,
+   "anual": 5.3,
+   "peor_caida": 7.3,
+   "operaciones": 16,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 472,
+   "multiplo": 0.94,
+   "anual": -0.6,
+   "peor_caida": 33.2,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1537,
+   "multiplo": 3.07,
+   "anual": 10.9,
+   "peor_caida": 17.2,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1461,
+   "multiplo": 2.92,
+   "anual": 5.3,
+   "peor_caida": 43.5,
+   "operaciones": 169,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 552,
+   "multiplo": 1.1,
+   "anual": 4.2,
+   "peor_caida": 11.1,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 387,
+   "multiplo": 0.77,
+   "anual": -2.5,
+   "peor_caida": 42.6,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1765,
+   "multiplo": 3.53,
+   "anual": 12.3,
+   "peor_caida": 25.6,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1354,
+   "multiplo": 2.71,
+   "anual": 4.9,
+   "peor_caida": 54.2,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 518,
+   "multiplo": 1.04,
+   "anual": 1.5,
+   "peor_caida": 18.2,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 512,
+   "multiplo": 1.02,
+   "anual": 0.2,
+   "peor_caida": 40.4,
+   "operaciones": 62,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1811,
+   "multiplo": 3.62,
+   "anual": 12.5,
+   "peor_caida": 19.7,
+   "operaciones": 61,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1859,
+   "multiplo": 3.72,
+   "anual": 6.5,
+   "peor_caida": 50.4,
+   "operaciones": 123,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 606,
+   "multiplo": 1.21,
+   "anual": 8.3,
+   "peor_caida": 12.0,
+   "operaciones": 16,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 367,
+   "multiplo": 0.73,
+   "anual": -3.1,
+   "peor_caida": 47.9,
+   "operaciones": 86,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2558,
+   "multiplo": 5.12,
+   "anual": 16.2,
+   "peor_caida": 28.3,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1891,
+   "multiplo": 3.78,
+   "anual": 6.6,
+   "peor_caida": 62.6,
+   "operaciones": 167,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 570,
+   "multiplo": 1.14,
+   "anual": 5.6,
+   "peor_caida": 18.4,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 997,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 16.5,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1650,
+   "multiplo": 1.65,
+   "anual": 4.7,
+   "peor_caida": 8.8,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1646,
+   "multiplo": 1.65,
+   "anual": 2.4,
+   "peor_caida": 22.2,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1020,
+   "multiplo": 1.02,
+   "anual": 0.8,
+   "peor_caida": 6.2,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 997,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 16.5,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1650,
+   "multiplo": 1.65,
+   "anual": 4.7,
+   "peor_caida": 8.8,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1646,
+   "multiplo": 1.65,
+   "anual": 2.4,
+   "peor_caida": 22.2,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1020,
+   "multiplo": 1.02,
+   "anual": 0.8,
+   "peor_caida": 6.2,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 997,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 16.5,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1650,
+   "multiplo": 1.65,
+   "anual": 4.7,
+   "peor_caida": 8.8,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1646,
+   "multiplo": 1.65,
+   "anual": 2.4,
+   "peor_caida": 22.2,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1020,
+   "multiplo": 1.02,
+   "anual": 0.8,
+   "peor_caida": 6.2,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 997,
+   "multiplo": 1.0,
+   "anual": -0.0,
+   "peor_caida": 23.5,
+   "operaciones": 87,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2255,
+   "multiplo": 2.25,
+   "anual": 7.7,
+   "peor_caida": 11.6,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2237,
+   "multiplo": 2.24,
+   "anual": 3.9,
+   "peor_caida": 31.4,
+   "operaciones": 168,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1073,
+   "multiplo": 1.07,
+   "anual": 3.0,
+   "peor_caida": 7.7,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 917,
+   "multiplo": 0.92,
+   "anual": -0.9,
+   "peor_caida": 30.7,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2527,
+   "multiplo": 2.53,
+   "anual": 8.9,
+   "peor_caida": 17.4,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2306,
+   "multiplo": 2.31,
+   "anual": 4.1,
+   "peor_caida": 40.2,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1028,
+   "multiplo": 1.03,
+   "anual": 1.1,
+   "peor_caida": 12.9,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 917,
+   "multiplo": 0.92,
+   "anual": -0.9,
+   "peor_caida": 30.7,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2527,
+   "multiplo": 2.53,
+   "anual": 8.9,
+   "peor_caida": 17.4,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2306,
+   "multiplo": 2.31,
+   "anual": 4.1,
+   "peor_caida": 40.2,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1028,
+   "multiplo": 1.03,
+   "anual": 1.1,
+   "peor_caida": 12.9,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1090,
+   "multiplo": 1.09,
+   "anual": 0.9,
+   "peor_caida": 26.4,
+   "operaciones": 63,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 2373,
+   "multiplo": 2.37,
+   "anual": 8.3,
+   "peor_caida": 12.0,
+   "operaciones": 61,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2596,
+   "multiplo": 2.6,
+   "anual": 4.7,
+   "peor_caida": 34.0,
+   "operaciones": 124,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1129,
+   "multiplo": 1.13,
+   "anual": 5.2,
+   "peor_caida": 7.4,
+   "operaciones": 16,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 944,
+   "multiplo": 0.94,
+   "anual": -0.6,
+   "peor_caida": 33.4,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3119,
+   "multiplo": 3.12,
+   "anual": 11.0,
+   "peor_caida": 17.3,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2940,
+   "multiplo": 2.94,
+   "anual": 5.3,
+   "peor_caida": 43.7,
+   "operaciones": 169,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1103,
+   "multiplo": 1.1,
+   "anual": 4.2,
+   "peor_caida": 11.5,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 776,
+   "multiplo": 0.78,
+   "anual": -2.5,
+   "peor_caida": 42.9,
+   "operaciones": 108,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3580,
+   "multiplo": 3.58,
+   "anual": 12.4,
+   "peor_caida": 25.6,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2767,
+   "multiplo": 2.77,
+   "anual": 5.0,
+   "peor_caida": 54.5,
+   "operaciones": 209,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1028,
+   "multiplo": 1.03,
+   "anual": 1.2,
+   "peor_caida": 19.0,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1189,
+   "multiplo": 1.19,
+   "anual": 1.7,
+   "peor_caida": 34.5,
+   "operaciones": 59,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 3639,
+   "multiplo": 3.64,
+   "anual": 12.6,
+   "peor_caida": 19.8,
+   "operaciones": 61,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4334,
+   "multiplo": 4.33,
+   "anual": 7.3,
+   "peor_caida": 44.7,
+   "operaciones": 120,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1207,
+   "multiplo": 1.21,
+   "anual": 8.2,
+   "peor_caida": 12.3,
+   "operaciones": 16,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P",
+  "salida": "BE2",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 859,
+   "multiplo": 0.86,
+   "anual": -1.5,
+   "peor_caida": 48.0,
+   "operaciones": 83,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 5188,
+   "multiplo": 5.19,
+   "anual": 16.3,
+   "peor_caida": 28.4,
+   "operaciones": 81,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4440,
+   "multiplo": 4.44,
+   "anual": 7.4,
+   "peor_caida": 62.7,
+   "operaciones": 164,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 1142,
+   "multiplo": 1.14,
+   "anual": 5.7,
+   "peor_caida": 18.7,
+   "operaciones": 22,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 144,
+   "multiplo": 1.44,
+   "anual": 3.7,
+   "peor_caida": 25.5,
+   "operaciones": 93,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 133,
+   "multiplo": 1.33,
+   "anual": 2.6,
+   "peor_caida": 24.0,
+   "operaciones": 83,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 182,
+   "multiplo": 1.82,
+   "anual": 2.9,
+   "peor_caida": 25.5,
+   "operaciones": 178,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 88,
+   "multiplo": 0.88,
+   "anual": -5.2,
+   "peor_caida": 12.1,
+   "operaciones": 15,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 155,
+   "multiplo": 1.55,
+   "anual": 4.5,
+   "peor_caida": 29.6,
+   "operaciones": 126,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 125,
+   "multiplo": 1.25,
+   "anual": 2.1,
+   "peor_caida": 30.8,
+   "operaciones": 87,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 199,
+   "multiplo": 1.99,
+   "anual": 3.4,
+   "peor_caida": 29.6,
+   "operaciones": 217,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.0,
+   "peor_caida": 15.9,
+   "operaciones": 17,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 153,
+   "multiplo": 1.53,
+   "anual": 4.3,
+   "peor_caida": 31.0,
+   "operaciones": 130,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 120,
+   "multiplo": 1.2,
+   "anual": 1.7,
+   "peor_caida": 34.4,
+   "operaciones": 88,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 180,
+   "multiplo": 1.8,
+   "anual": 2.9,
+   "peor_caida": 31.0,
+   "operaciones": 222,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.0,
+   "peor_caida": 15.9,
+   "operaciones": 17,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 147,
+   "multiplo": 1.47,
+   "anual": 3.9,
+   "peor_caida": 29.3,
+   "operaciones": 57,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 177,
+   "multiplo": 1.77,
+   "anual": 5.4,
+   "peor_caida": 23.8,
+   "operaciones": 66,
+   "saltadas": 9,
+   "quemada": false
+  },
+  "largo": {
+   "final": 261,
+   "multiplo": 2.61,
+   "anual": 4.7,
+   "peor_caida": 29.3,
+   "operaciones": 125,
+   "saltadas": 10,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 87,
+   "multiplo": 0.87,
+   "anual": -5.8,
+   "peor_caida": 13.4,
+   "operaciones": 15,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 131,
+   "multiplo": 1.31,
+   "anual": 2.7,
+   "peor_caida": 44.5,
+   "operaciones": 97,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 146,
+   "multiplo": 1.46,
+   "anual": 3.5,
+   "peor_caida": 34.0,
+   "operaciones": 84,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 218,
+   "multiplo": 2.18,
+   "anual": 3.8,
+   "peor_caida": 44.5,
+   "operaciones": 181,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 83,
+   "multiplo": 0.83,
+   "anual": -7.6,
+   "peor_caida": 17.2,
+   "operaciones": 17,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 130,
+   "multiplo": 1.3,
+   "anual": 2.6,
+   "peor_caida": 50.0,
+   "operaciones": 125,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 140,
+   "multiplo": 1.4,
+   "anual": 3.1,
+   "peor_caida": 42.4,
+   "operaciones": 88,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 212,
+   "multiplo": 2.12,
+   "anual": 3.7,
+   "peor_caida": 50.0,
+   "operaciones": 216,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 83,
+   "multiplo": 0.83,
+   "anual": -7.6,
+   "peor_caida": 17.2,
+   "operaciones": 17,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 171,
+   "multiplo": 1.71,
+   "anual": 5.5,
+   "peor_caida": 25.9,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 193,
+   "multiplo": 1.93,
+   "anual": 6.2,
+   "peor_caida": 23.4,
+   "operaciones": 46,
+   "saltadas": 2,
+   "quemada": false
+  },
+  "largo": {
+   "final": 308,
+   "multiplo": 3.08,
+   "anual": 5.5,
+   "peor_caida": 25.9,
+   "operaciones": 87,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 84,
+   "multiplo": 0.84,
+   "anual": -7.2,
+   "peor_caida": 16.3,
+   "operaciones": 11,
+   "saltadas": 7,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 171,
+   "multiplo": 1.71,
+   "anual": 5.5,
+   "peor_caida": 41.6,
+   "operaciones": 56,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 179,
+   "multiplo": 1.79,
+   "anual": 5.5,
+   "peor_caida": 38.8,
+   "operaciones": 72,
+   "saltadas": 5,
+   "quemada": false
+  },
+  "largo": {
+   "final": 297,
+   "multiplo": 2.97,
+   "anual": 5.4,
+   "peor_caida": 41.6,
+   "operaciones": 126,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 79,
+   "multiplo": 0.79,
+   "anual": -9.4,
+   "peor_caida": 21.1,
+   "operaciones": 16,
+   "saltadas": 10,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 123,
+   "multiplo": 1.23,
+   "anual": 2.1,
+   "peor_caida": 59.7,
+   "operaciones": 103,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 154,
+   "multiplo": 1.54,
+   "anual": 4.0,
+   "peor_caida": 48.5,
+   "operaciones": 87,
+   "saltadas": 13,
+   "quemada": false
+  },
+  "largo": {
+   "final": 168,
+   "multiplo": 1.68,
+   "anual": 2.5,
+   "peor_caida": 59.7,
+   "operaciones": 194,
+   "saltadas": 12,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 68,
+   "multiplo": 0.68,
+   "anual": -14.7,
+   "peor_caida": 31.6,
+   "operaciones": 19,
+   "saltadas": 8,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 193,
+   "multiplo": 1.93,
+   "anual": 6.8,
+   "peor_caida": 40.2,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 188,
+   "multiplo": 1.88,
+   "anual": 6.0,
+   "peor_caida": 40.7,
+   "operaciones": 50,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 385,
+   "multiplo": 3.85,
+   "anual": 6.7,
+   "peor_caida": 40.2,
+   "operaciones": 89,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 75,
+   "multiplo": 0.75,
+   "anual": -11.1,
+   "peor_caida": 24.6,
+   "operaciones": 11,
+   "saltadas": 3,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 100,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 163,
+   "multiplo": 1.63,
+   "anual": 5.0,
+   "peor_caida": 59.8,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 165,
+   "multiplo": 1.65,
+   "anual": 4.7,
+   "peor_caida": 54.7,
+   "operaciones": 69,
+   "saltadas": 1,
+   "quemada": false
+  },
+  "largo": {
+   "final": 229,
+   "multiplo": 2.29,
+   "anual": 4.1,
+   "peor_caida": 59.8,
+   "operaciones": 127,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 66,
+   "multiplo": 0.66,
+   "anual": -16.0,
+   "peor_caida": 34.1,
+   "operaciones": 15,
+   "saltadas": 3,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 644,
+   "multiplo": 1.29,
+   "anual": 2.6,
+   "peor_caida": 29.1,
+   "operaciones": 105,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 677,
+   "multiplo": 1.35,
+   "anual": 2.8,
+   "peor_caida": 24.6,
+   "operaciones": 109,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 929,
+   "multiplo": 1.86,
+   "anual": 3.0,
+   "peor_caida": 29.1,
+   "operaciones": 215,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 412,
+   "multiplo": 0.82,
+   "anual": -7.7,
+   "peor_caida": 17.6,
+   "operaciones": 28,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 649,
+   "multiplo": 1.3,
+   "anual": 2.6,
+   "peor_caida": 32.6,
+   "operaciones": 128,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 680,
+   "multiplo": 1.36,
+   "anual": 2.9,
+   "peor_caida": 26.4,
+   "operaciones": 120,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 910,
+   "multiplo": 1.82,
+   "anual": 2.9,
+   "peor_caida": 32.6,
+   "operaciones": 248,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 356,
+   "multiplo": 0.71,
+   "anual": -13.2,
+   "peor_caida": 28.7,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 644,
+   "multiplo": 1.29,
+   "anual": 2.6,
+   "peor_caida": 33.1,
+   "operaciones": 130,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 680,
+   "multiplo": 1.36,
+   "anual": 2.9,
+   "peor_caida": 26.4,
+   "operaciones": 120,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 922,
+   "multiplo": 1.84,
+   "anual": 3.0,
+   "peor_caida": 33.1,
+   "operaciones": 250,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 347,
+   "multiplo": 0.69,
+   "anual": -14.1,
+   "peor_caida": 30.5,
+   "operaciones": 38,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 781,
+   "multiplo": 1.56,
+   "anual": 4.6,
+   "peor_caida": 31.5,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 799,
+   "multiplo": 1.6,
+   "anual": 4.4,
+   "peor_caida": 29.0,
+   "operaciones": 73,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1283,
+   "multiplo": 2.57,
+   "anual": 4.6,
+   "peor_caida": 31.5,
+   "operaciones": 126,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 417,
+   "multiplo": 0.83,
+   "anual": -7.3,
+   "peor_caida": 16.5,
+   "operaciones": 18,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 710,
+   "multiplo": 1.42,
+   "anual": 3.6,
+   "peor_caida": 47.2,
+   "operaciones": 89,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 767,
+   "multiplo": 1.53,
+   "anual": 4.0,
+   "peor_caida": 41.7,
+   "operaciones": 102,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1039,
+   "multiplo": 2.08,
+   "anual": 3.6,
+   "peor_caida": 47.2,
+   "operaciones": 191,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 342,
+   "multiplo": 0.68,
+   "anual": -14.6,
+   "peor_caida": 31.5,
+   "operaciones": 30,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 611,
+   "multiplo": 1.22,
+   "anual": 2.0,
+   "peor_caida": 53.8,
+   "operaciones": 119,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 668,
+   "multiplo": 1.34,
+   "anual": 2.7,
+   "peor_caida": 48.7,
+   "operaciones": 118,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 862,
+   "multiplo": 1.72,
+   "anual": 2.6,
+   "peor_caida": 53.8,
+   "operaciones": 236,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 311,
+   "multiplo": 0.62,
+   "anual": -18.0,
+   "peor_caida": 37.8,
+   "operaciones": 34,
+   "saltadas": 1,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 876,
+   "multiplo": 1.75,
+   "anual": 5.8,
+   "peor_caida": 27.2,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 908,
+   "multiplo": 1.82,
+   "anual": 5.6,
+   "peor_caida": 26.5,
+   "operaciones": 51,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1592,
+   "multiplo": 3.18,
+   "anual": 5.7,
+   "peor_caida": 27.2,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 392,
+   "multiplo": 0.78,
+   "anual": -9.6,
+   "peor_caida": 21.5,
+   "operaciones": 15,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 833,
+   "multiplo": 1.67,
+   "anual": 5.2,
+   "peor_caida": 43.7,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 832,
+   "multiplo": 1.66,
+   "anual": 4.8,
+   "peor_caida": 40.3,
+   "operaciones": 72,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1393,
+   "multiplo": 2.79,
+   "anual": 5.0,
+   "peor_caida": 43.7,
+   "operaciones": 126,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 355,
+   "multiplo": 0.71,
+   "anual": -13.3,
+   "peor_caida": 29.0,
+   "operaciones": 21,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 612,
+   "multiplo": 1.22,
+   "anual": 2.0,
+   "peor_caida": 62.5,
+   "operaciones": 84,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 646,
+   "multiplo": 1.29,
+   "anual": 2.4,
+   "peor_caida": 56.0,
+   "operaciones": 102,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 785,
+   "multiplo": 1.57,
+   "anual": 2.2,
+   "peor_caida": 62.5,
+   "operaciones": 185,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 300,
+   "multiplo": 0.6,
+   "anual": -19.2,
+   "peor_caida": 40.1,
+   "operaciones": 29,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1054,
+   "multiplo": 2.11,
+   "anual": 7.7,
+   "peor_caida": 41.7,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 963,
+   "multiplo": 1.93,
+   "anual": 6.2,
+   "peor_caida": 41.0,
+   "operaciones": 51,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2095,
+   "multiplo": 4.19,
+   "anual": 7.1,
+   "peor_caida": 41.7,
+   "operaciones": 87,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 327,
+   "multiplo": 0.65,
+   "anual": -16.3,
+   "peor_caida": 34.6,
+   "operaciones": 15,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 500,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 876,
+   "multiplo": 1.75,
+   "anual": 5.8,
+   "peor_caida": 62.6,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 735,
+   "multiplo": 1.47,
+   "anual": 3.6,
+   "peor_caida": 59.8,
+   "operaciones": 71,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1286,
+   "multiplo": 2.57,
+   "anual": 4.6,
+   "peor_caida": 62.6,
+   "operaciones": 125,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 285,
+   "multiplo": 0.57,
+   "anual": -20.9,
+   "peor_caida": 43.1,
+   "operaciones": 20,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1295,
+   "multiplo": 1.29,
+   "anual": 2.6,
+   "peor_caida": 29.8,
+   "operaciones": 104,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1384,
+   "multiplo": 1.38,
+   "anual": 3.0,
+   "peor_caida": 24.5,
+   "operaciones": 112,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1819,
+   "multiplo": 1.82,
+   "anual": 2.9,
+   "peor_caida": 29.8,
+   "operaciones": 213,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 801,
+   "multiplo": 0.8,
+   "anual": -8.9,
+   "peor_caida": 19.9,
+   "operaciones": 35,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1285,
+   "multiplo": 1.28,
+   "anual": 2.5,
+   "peor_caida": 33.3,
+   "operaciones": 128,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1342,
+   "multiplo": 1.34,
+   "anual": 2.7,
+   "peor_caida": 27.5,
+   "operaciones": 120,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1808,
+   "multiplo": 1.81,
+   "anual": 2.9,
+   "peor_caida": 33.3,
+   "operaciones": 248,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 779,
+   "multiplo": 0.78,
+   "anual": -9.9,
+   "peor_caida": 22.1,
+   "operaciones": 38,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.01,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1271,
+   "multiplo": 1.27,
+   "anual": 2.4,
+   "peor_caida": 34.0,
+   "operaciones": 130,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1342,
+   "multiplo": 1.34,
+   "anual": 2.7,
+   "peor_caida": 27.5,
+   "operaciones": 120,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1775,
+   "multiplo": 1.77,
+   "anual": 2.8,
+   "peor_caida": 34.0,
+   "operaciones": 250,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 779,
+   "multiplo": 0.78,
+   "anual": -9.9,
+   "peor_caida": 22.1,
+   "operaciones": 38,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1577,
+   "multiplo": 1.58,
+   "anual": 4.7,
+   "peor_caida": 30.3,
+   "operaciones": 54,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1578,
+   "multiplo": 1.58,
+   "anual": 4.3,
+   "peor_caida": 29.4,
+   "operaciones": 71,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2566,
+   "multiplo": 2.57,
+   "anual": 4.6,
+   "peor_caida": 30.3,
+   "operaciones": 125,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 808,
+   "multiplo": 0.81,
+   "anual": -8.5,
+   "peor_caida": 19.2,
+   "operaciones": 20,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1418,
+   "multiplo": 1.42,
+   "anual": 3.6,
+   "peor_caida": 47.7,
+   "operaciones": 89,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1449,
+   "multiplo": 1.45,
+   "anual": 3.5,
+   "peor_caida": 42.3,
+   "operaciones": 100,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1993,
+   "multiplo": 1.99,
+   "anual": 3.4,
+   "peor_caida": 47.7,
+   "operaciones": 190,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 698,
+   "multiplo": 0.7,
+   "anual": -14.0,
+   "peor_caida": 30.2,
+   "operaciones": 31,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.02,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1261,
+   "multiplo": 1.26,
+   "anual": 2.3,
+   "peor_caida": 54.0,
+   "operaciones": 118,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1373,
+   "multiplo": 1.37,
+   "anual": 3.0,
+   "peor_caida": 47.4,
+   "operaciones": 115,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1754,
+   "multiplo": 1.75,
+   "anual": 2.7,
+   "peor_caida": 54.0,
+   "operaciones": 233,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 627,
+   "multiplo": 0.63,
+   "anual": -17.7,
+   "peor_caida": 37.3,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.06,
+  "mitad1": {
+   "final": 1768,
+   "multiplo": 1.77,
+   "anual": 5.9,
+   "peor_caida": 27.5,
+   "operaciones": 37,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1831,
+   "multiplo": 1.83,
+   "anual": 5.7,
+   "peor_caida": 26.7,
+   "operaciones": 50,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 3161,
+   "multiplo": 3.16,
+   "anual": 5.7,
+   "peor_caida": 27.5,
+   "operaciones": 88,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 782,
+   "multiplo": 0.78,
+   "anual": -9.8,
+   "peor_caida": 21.8,
+   "operaciones": 14,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 1670,
+   "multiplo": 1.67,
+   "anual": 5.3,
+   "peor_caida": 44.0,
+   "operaciones": 55,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1696,
+   "multiplo": 1.7,
+   "anual": 5.0,
+   "peor_caida": 41.3,
+   "operaciones": 71,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2792,
+   "multiplo": 2.79,
+   "anual": 5.0,
+   "peor_caida": 44.0,
+   "operaciones": 126,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 724,
+   "multiplo": 0.72,
+   "anual": -12.6,
+   "peor_caida": 27.6,
+   "operaciones": 19,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.03,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1221,
+   "multiplo": 1.22,
+   "anual": 2.0,
+   "peor_caida": 62.8,
+   "operaciones": 84,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1244,
+   "multiplo": 1.24,
+   "anual": 2.0,
+   "peor_caida": 57.9,
+   "operaciones": 101,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 1561,
+   "multiplo": 1.56,
+   "anual": 2.2,
+   "peor_caida": 62.8,
+   "operaciones": 183,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 583,
+   "multiplo": 0.58,
+   "anual": -20.2,
+   "peor_caida": 41.7,
+   "operaciones": 29,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.1,
+  "mitad1": {
+   "final": 2178,
+   "multiplo": 2.18,
+   "anual": 8.1,
+   "peor_caida": 40.3,
+   "operaciones": 36,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1900,
+   "multiplo": 1.9,
+   "anual": 6.1,
+   "peor_caida": 41.6,
+   "operaciones": 51,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 4335,
+   "multiplo": 4.33,
+   "anual": 7.3,
+   "peor_caida": 41.8,
+   "operaciones": 86,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 664,
+   "multiplo": 0.66,
+   "anual": -15.7,
+   "peor_caida": 33.6,
+   "operaciones": 14,
+   "saltadas": 0,
+   "quemada": false
+  }
+ },
+ {
+  "mercados": "S&P + Nasdaq",
+  "salida": "anual",
+  "saldo": 1000,
+  "riesgo": 0.05,
+  "tope_abierto": 0.15,
+  "mitad1": {
+   "final": 1821,
+   "multiplo": 1.82,
+   "anual": 6.2,
+   "peor_caida": 60.7,
+   "operaciones": 54,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "mitad2": {
+   "final": 1393,
+   "multiplo": 1.39,
+   "anual": 3.1,
+   "peor_caida": 61.3,
+   "operaciones": 71,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "largo": {
+   "final": 2662,
+   "multiplo": 2.66,
+   "anual": 4.8,
+   "peor_caida": 61.3,
+   "operaciones": 124,
+   "saltadas": 0,
+   "quemada": false
+  },
+  "reciente": {
+   "final": 556,
+   "multiplo": 0.56,
+   "anual": -21.7,
+   "peor_caida": 44.4,
+   "operaciones": 19,
+   "saltadas": 0,
+   "quemada": false
+  }
+ }
+]

@@ -40,6 +40,10 @@ from .config import SYMBOLS
 BUMP_MIN_LOT = False
 # When set (e.g. 0.05), every trade and every add opens at this fixed lot size instead of a % of the balance.
 FIXED_LOT = None
+# With BUMP_MIN_LOT: only bump when the minimum lot risks at most this share of the balance (None = no cap).
+BUMP_CAP = None
+# Real money: skip a trade if all open stop-risk plus this trade would exceed this share of the balance (None = no cap).
+OPEN_CAP = None
 
 MODES = {
     "Conservative": dict(p1=0.0015, p3=0.0005),
@@ -216,10 +220,12 @@ def run(trades, acct: Account, mode: str, start=None, end=None, guard=True, sche
             if FIXED_LOT:
                 lots = FIXED_LOT
             if lots < spec.min_lot:
-                if not BUMP_MIN_LOT:
+                if not BUMP_MIN_LOT or (BUMP_CAP is not None and spec.min_lot * dist * spec.contract > BUMP_CAP * bal):
                     skipped["min_lot"] += 1; continue
                 lots = spec.min_lot
             risk = lots * dist * spec.contract
+            if OPEN_CAP is not None and orisk() + risk > OPEN_CAP * bal:
+                skipped["guard"] += 1; continue
             ref = peak if acct.trailing else cap
             room = []
             if budget is not None:
