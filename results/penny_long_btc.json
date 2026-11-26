@@ -1,0 +1,219 @@
+{
+ "btc $100K sigue": {
+  "versiones": 312,
+  "positivas": 0,
+  "positivas_ambas": 0,
+  "mediana": -75394,
+  "mejores": []
+ },
+ "btc $100K invertido": {
+  "versiones": 312,
+  "positivas": 8,
+  "positivas_ambas": 8,
+  "mediana": -62996,
+  "mejores": [
+   {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 100.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "24/7",
+    "mitad1": {
+     "canastas": 717,
+     "aciertos": 51.0,
+     "total": 13326,
+     "promedio": 18.6,
+     "t": 1.09,
+     "ganancia_prom": 360.0,
+     "perdida_prom": -337.5,
+     "peor_dia": -2015,
+     "peor_caida": 8525,
+     "peor_flotante": -2063,
+     "entradas_prom": 1.0
+    },
+    "mitad2": {
+     "canastas": 545,
+     "aciertos": 52.8,
+     "total": 8508,
+     "promedio": 15.6,
+     "t": 0.82,
+     "ganancia_prom": 326.9,
+     "perdida_prom": -333.2,
+     "peor_dia": -1964,
+     "peor_caida": 8970,
+     "peor_flotante": -2102,
+     "entradas_prom": 1.0
+    },
+    "total": 21834
+   },
+   {
+    "target": 700,
+    "maxloss": 900,
+    "step": 100.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "24/7",
+    "mitad1": {
+     "canastas": 774,
+     "aciertos": 50.8,
+     "total": 14419,
+     "promedio": 18.6,
+     "t": 1.17,
+     "ganancia_prom": 359.1,
+     "perdida_prom": -332.5,
+     "peor_dia": -1881,
+     "peor_caida": 9424,
+     "peor_flotante": -2009,
+     "entradas_prom": 1.0
+    },
+    "mitad2": {
+     "canastas": 577,
+     "aciertos": 52.7,
+     "total": 8041,
+     "promedio": 13.9,
+     "t": 0.8,
+     "ganancia_prom": 317.7,
+     "perdida_prom": -324.3,
+     "peor_dia": -1775,
+     "peor_caida": 8796,
+     "peor_flotante": -1213,
+     "entradas_prom": 1.0
+    },
+    "total": 22460
+   },
+   {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 100.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "24/7",
+    "mitad1": {
+     "canastas": 714,
+     "aciertos": 51.1,
+     "total": 12247,
+     "promedio": 17.2,
+     "t": 1.0,
+     "ganancia_prom": 360.2,
+     "perdida_prom": -341.7,
+     "peor_dia": -2015,
+     "peor_caida": 9246,
+     "peor_flotante": -2063,
+     "entradas_prom": 1.0
+    },
+    "mitad2": {
+     "canastas": 541,
+     "aciertos": 52.3,
+     "total": 6033,
+     "promedio": 11.2,
+     "t": 0.58,
+     "ganancia_prom": 326.0,
+     "perdida_prom": -334.2,
+     "peor_dia": -1964,
+     "peor_caida": 7566,
+     "peor_flotante": -2102,
+     "entradas_prom": 1.0
+    },
+    "total": 18280
+   },
+   {
+    "target": 700,
+    "maxloss": 900,
+    "step": 100.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "24/7",
+    "mitad1": {
+     "canastas": 775,
+     "aciertos": 51.2,
+     "total": 12813,
+     "promedio": 16.5,
+     "t": 1.04,
+     "ganancia_prom": 355.0,
+     "perdida_prom": -339.0,
+     "peor_dia": -1895,
+     "peor_caida": 9929,
+     "peor_flotante": -2009,
+     "entradas_prom": 1.0
+    },
+    "mitad2": {
+     "canastas": 574,
+     "aciertos": 51.6,
+     "total": 5380,
+     "promedio": 9.4,
+     "t": 0.54,
+     "ganancia_prom": 319.5,
+     "perdida_prom": -320.8,
+     "peor_dia": -1775,
+     "peor_caida": 7502,
+     "peor_flotante": -1202,
+     "entradas_prom": 1.0
+    },
+    "total": 18193
+   },
+   {
+    "target": 500,
+    "maxloss": 2000,
+    "step": 100.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "24/7",
+    "mitad1": {
+     "canastas": 818,
+     "aciertos": 52.0,
+     "total": 7068,
+     "promedio": 8.6,
+     "t": 0.59,
+     "ganancia_prom": 320.2,
+     "perdida_prom": -328.3,
+     "peor_dia": -1778,
+     "peor_caida": 8977,
+     "peor_flotante": -2063,
+     "entradas_prom": 1.0
+    },
+    "mitad2": {
+     "canastas": 616,
+     "aciertos": 53.6,
+     "total": 4494,
+     "promedio": 7.3,
+     "t": 0.44,
+     "ganancia_prom": 294.3,
+     "perdida_prom": -323.9,
+     "peor_dia": -1964,
+     "peor_caida": 8712,
+     "peor_flotante": -2102,
+     "entradas_prom": 1.0
+    },
+    "total": 11562
+   }
+  ]
+ },
+ "btc $100": {
+  "versiones": 624,
+  "quemadas": 624,
+  "positivas_ambas_sin_quemar": 0,
+  "mejores": [],
+  "mejor_total": {
+   "direccion": "invertido",
+   "objetivo": 20,
+   "tope": 40,
+   "paso": 100.0,
+   "entradas": 1,
+   "modo": "a favor",
+   "horario": "24/7",
+   "mitad1": 294,
+   "mitad2": 137,
+   "total": 431,
+   "peor_caida": 442,
+   "quemada": true,
+   "t_min": 0.35,
+   "canastas": 1492
+  }
+ }
+}
