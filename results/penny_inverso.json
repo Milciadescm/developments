@@ -1,0 +1,232 @@
+{
+ "1. Original": {
+  "versiones": 36,
+  "positivas": 11,
+  "positivas_ambas": 4,
+  "mediana": -2574,
+  "mejor": 5175,
+  "peor": -12235,
+  "mas_estable": {
+   "total": 1667,
+   "mitad1": 770,
+   "mitad2": 897,
+   "canastas": 113,
+   "config": {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "todo el d\u00eda"
+   }
+  }
+ },
+ "2. Original sin costos (\u00bfhay ventaja bruta?)": {
+  "versiones": 36,
+  "positivas": 12,
+  "positivas_ambas": 5,
+  "mediana": -1260,
+  "mejor": 7510,
+  "peor": -9199,
+  "mas_estable": {
+   "total": 3370,
+   "mitad1": 1425,
+   "mitad2": 1945,
+   "canastas": 113,
+   "config": {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "todo el d\u00eda"
+   }
+  }
+ },
+ "3. Direcci\u00f3n invertida (vender donde compraba)": {
+  "versiones": 36,
+  "positivas": 22,
+  "positivas_ambas": 12,
+  "mediana": 2916,
+  "mejor": 13269,
+  "peor": -7967,
+  "mas_estable": {
+   "total": 13269,
+   "mitad1": 3907,
+   "mitad2": 9362,
+   "canastas": 118,
+   "config": {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "en contra",
+    "flown": 12,
+    "zones": "kill zones"
+   }
+  }
+ },
+ "4. Direcci\u00f3n invertida sin costos": {
+  "versiones": 36,
+  "positivas": 29,
+  "positivas_ambas": 15,
+  "mediana": 4026,
+  "mejor": 14942,
+  "peor": -5674,
+  "mas_estable": {
+   "total": 11424,
+   "mitad1": 6736,
+   "mitad2": 4688,
+   "canastas": 128,
+   "config": {
+    "target": 500,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "en contra",
+    "flown": 12,
+    "zones": "kill zones"
+   }
+  }
+ },
+ "5. Salida invertida (objetivo grande, tope chico)": {
+  "versiones": 36,
+  "positivas": 3,
+  "positivas_ambas": 0,
+  "mediana": -4763,
+  "mejor": 3164,
+  "peor": -15423,
+  "mas_estable": {
+   "total": -446,
+   "mitad1": -1605,
+   "mitad2": 1159,
+   "canastas": 62,
+   "config": {
+    "target": 700,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "todo el d\u00eda"
+   }
+  }
+ },
+ "6. Direcci\u00f3n y salida invertidas": {
+  "versiones": 36,
+  "positivas": 11,
+  "positivas_ambas": 7,
+  "mediana": -1112,
+  "mejor": 7119,
+  "peor": -9705,
+  "mas_estable": {
+   "total": 7119,
+   "mitad1": 2315,
+   "mitad2": 4804,
+   "canastas": 173,
+   "config": {
+    "target": 300,
+    "maxloss": 1000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "kill zones"
+   }
+  }
+ },
+ "7. Mantener 30 min (6 velas) sin objetivo": {
+  "versiones": 36,
+  "positivas": 0,
+  "positivas_ambas": 0,
+  "mediana": -5447,
+  "mejor": -3517,
+  "peor": -12729,
+  "mas_estable": {
+   "total": -3708,
+   "mitad1": -3643,
+   "mitad2": -65,
+   "canastas": 358,
+   "config": {
+    "target": 300,
+    "maxloss": 1000,
+    "step": 2.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "kill zones"
+   }
+  }
+ },
+ "8. Mantener 2 horas (24 velas) sin objetivo": {
+  "versiones": 36,
+  "positivas": 6,
+  "positivas_ambas": 0,
+  "mediana": -4042,
+  "mejor": 2322,
+  "peor": -13808,
+  "mas_estable": {
+   "total": 392,
+   "mitad1": -218,
+   "mitad2": 610,
+   "canastas": 310,
+   "config": {
+    "target": 300,
+    "maxloss": 1000,
+    "step": 2.0,
+    "maxn": 3,
+    "mode": "en contra",
+    "flown": 6,
+    "zones": "todo el d\u00eda"
+   }
+  }
+ },
+ "9. Mantener 4 horas (48 velas) sin objetivo": {
+  "versiones": 36,
+  "positivas": 0,
+  "positivas_ambas": 0,
+  "mediana": -4474,
+  "mejor": -1479,
+  "peor": -14820,
+  "mas_estable": {
+   "total": -1479,
+   "mitad1": -1188,
+   "mitad2": -291,
+   "canastas": 185,
+   "config": {
+    "target": 300,
+    "maxloss": 1000,
+    "step": 2.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 12,
+    "zones": "todo el d\u00eda"
+   }
+  }
+ },
+ "10. Entrar 15 min despu\u00e9s (3 velas de retraso)": {
+  "versiones": 36,
+  "positivas": 14,
+  "positivas_ambas": 5,
+  "mediana": -1995,
+  "mejor": 4774,
+  "peor": -8631,
+  "mas_estable": {
+   "total": 2458,
+   "mitad1": 625,
+   "mitad2": 1833,
+   "canastas": 74,
+   "config": {
+    "target": 500,
+    "maxloss": 2000,
+    "step": 2.0,
+    "maxn": 1,
+    "mode": "a favor",
+    "flown": 6,
+    "zones": "todo el d\u00eda"
+   }
+  }
+ }
+}

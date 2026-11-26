@@ -39,7 +39,8 @@ def load(path):
     return d[(d.High > 0) & (d.Low > 0)]
 
 
-def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=None):
+def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=None, flip=False, hold=None, delay=0, cost=None):
+    cst = COST if cost is None else cost
     O, H, L, C, V = (d[c].values for c in ("Open", "High", "Low", "Close", "Volume"))
     T = d.index
     tr = np.maximum(H - L, np.maximum(np.abs(H - np.roll(C, 1)), np.abs(L - np.roll(C, 1))))
@@ -64,7 +65,7 @@ def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=N
     baskets = []                # resultado en $ de cada canasta
     eq_day = {}
     worst_float = 0.0
-    pend = None
+    pend = None; pend_age = 0; opened = 0
     for i in range(20, len(T)):
         if start is not None and T[i] < start:
             continue
@@ -74,19 +75,22 @@ def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=N
         if zone_id[i] != zone_prev:
             origin = O[i]; zone_prev = zone_id[i]
         if pend is not None:
-            pos.append((O[i], pend)); pend = None
+            if delay and pend_age < delay:
+                pend_age += 1
+            else:
+                pos.append((O[i], pend)); pend = None; pend_age = 0; opened = i if len(pos) == 1 else opened
         if pos:
             dr = pos[0][1]
             worst = sum((L[i] - p) * dr * OZ if dr > 0 else (H[i] - p) * dr * OZ for p, _ in pos)
             best = sum((H[i] - p) * dr * OZ if dr > 0 else (L[i] - p) * dr * OZ for p, _ in pos)
             worst_float = min(worst_float, worst)
-            cost = COST * len(pos)
+            cost = cst * len(pos)
             res = None
             if worst <= -maxloss:
                 res = -maxloss
             elif best >= target:
                 res = target
-            elif close_at[i] or zone_id[i] == 0:
+            elif close_at[i] or zone_id[i] == 0 or (hold is not None and i - opened >= hold):
                 res = sum((O[i] - p) * dr * OZ for p, _ in pos)
             if res is not None:
                 baskets.append((T[i], res - cost, len(pos)))
@@ -103,7 +107,7 @@ def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=N
             continue
         imp = C[i] - origin
         if abs(imp) >= k * atr[i] and np.sign(delta[i]) == np.sign(imp) and delta[i] != 0:
-            pend = int(np.sign(imp))
+            pend = -int(np.sign(imp)) if flip else int(np.sign(imp))
     r = np.array([b[1] for b in baskets])
     if len(r) == 0:
         return None
@@ -117,7 +121,7 @@ def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=N
                 peor_flotante=round(worst_float), entradas_prom=round(float(np.mean([b[2] for b in baskets])), 1))
 
 
-def main():
+def main(flip=False):
     d5 = load("data/XAUUSD_M5_GC.csv")
     grid = list(itertools.product((300, 500, 700), (1_000, 2_000), (1.0, 2.0, 4.0), (1, 3, 5), ("a favor", "en contra"),
                                   (6, 12), ("kill zones", "todo el día")))
@@ -125,9 +129,9 @@ def main():
     for target, ml, step, mn, mode, fn, zones in grid:
         if mn == 1 and (step != 1.0 or mode != "a favor"):
             continue
-        a = run(d5, target, ml, step, mn, mode, fn, 1.0, zones, end=SPLIT)
-        b = run(d5, target, ml, step, mn, mode, fn, 1.0, zones, start=SPLIT)
-        full = run(d5, target, ml, step, mn, mode, fn, 1.0, zones)
+        a = run(d5, target, ml, step, mn, mode, fn, 1.0, zones, end=SPLIT, flip=flip)
+        b = run(d5, target, ml, step, mn, mode, fn, 1.0, zones, start=SPLIT, flip=flip)
+        full = run(d5, target, ml, step, mn, mode, fn, 1.0, zones, flip=flip)
         if a and b and full:
             rows.append(dict(objetivo=target, tope=ml, paso=step, entradas=mn, modo=mode, flujo_velas=fn, horario=zones,
                              primera=a, segunda=b, completo=full))
@@ -140,9 +144,9 @@ def main():
     best = rows[0]
     d1 = load("data/XAUUSD_M1_GC.csv")
     out["mejor_en_1_minuto"] = run(d1, best["objetivo"], best["tope"], best["paso"], best["entradas"], best["modo"],
-                                   best["flujo_velas"] * 5, 1.0, best["horario"])
+                                   best["flujo_velas"] * 5, 1.0, best["horario"], flip=flip)
     out["misma_en_5_minutos_misma_semana"] = run(d5, best["objetivo"], best["tope"], best["paso"], best["entradas"], best["modo"],
-                                                best["flujo_velas"], 1.0, best["horario"], start=d1.index[0])
+                                                best["flujo_velas"], 1.0, best["horario"], start=d1.index[0], flip=flip)
     print("versiones", out["versiones"], "| positivas en ambas mitades", out["positivas_ambas_mitades"],
           "| positivas en total", out["positivas_completo"])
     for x in rows[:5]:
@@ -152,7 +156,51 @@ def main():
         print("AMBAS", {k: x[k] for k in ("objetivo", "tope", "paso", "entradas", "modo", "flujo_velas", "horario")},
               "1a", x["primera"]["total"], "2a", x["segunda"]["total"], "| completo", x["completo"])
     print("1 minuto:", out["mejor_en_1_minuto"], "| 5 min misma semana:", out["misma_en_5_minutos_misma_semana"])
-    json.dump(out, open("results/penny.json", "w"), indent=1, default=str)
+    gft_ok = [x for x in out["mejores_ambas"] if x["completo"]["peor_dia"] > -3_000 and x["completo"]["peor_flotante"] > -1_000]
+    out["ambas_mitades_y_reglas_gft"] = gft_ok
+    for x in gft_ok[:3]:
+        print("GFT OK", {k: x[k] for k in ("objetivo", "tope", "paso", "entradas", "modo", "flujo_velas", "horario")}, x["completo"])
+    json.dump(out, open("results/penny_invertido.json" if flip else "results/penny.json", "w"), indent=1, default=str)
+
+
+def main_inverse():
+    """análisis inverso en oro, $100K, 0.13 lote: qué eje habría que invertir para que gane"""
+    d = load("data/XAUUSD_M5_GC.csv")
+    base = [dict(target=t, maxloss=m, step=2.0, maxn=n, mode=mo, flown=f, zones=z)
+            for t, m in ((300, 1_000), (500, 2_000), (700, 2_000)) for n in (1, 3) for mo in ("a favor", "en contra")
+            for f in (6, 12) for z in ("kill zones", "todo el día") if not (n == 1 and mo == "en contra")]
+    variants = {
+        "1. Original": lambda c: dict(),
+        "2. Original sin costos (¿hay ventaja bruta?)": lambda c: dict(cost=0.0),
+        "3. Dirección invertida (vender donde compraba)": lambda c: dict(flip=True),
+        "4. Dirección invertida sin costos": lambda c: dict(flip=True, cost=0.0),
+        "5. Salida invertida (objetivo grande, tope chico)": lambda c: dict(target=c["maxloss"] * 1.5, maxloss=c["target"]),
+        "6. Dirección y salida invertidas": lambda c: dict(flip=True, target=c["maxloss"] * 1.5, maxloss=c["target"]),
+        "7. Mantener 30 min (6 velas) sin objetivo": lambda c: dict(target=1e9, maxloss=2_000, hold=6),
+        "8. Mantener 2 horas (24 velas) sin objetivo": lambda c: dict(target=1e9, maxloss=2_000, hold=24),
+        "9. Mantener 4 horas (48 velas) sin objetivo": lambda c: dict(target=1e9, maxloss=2_000, hold=48),
+        "10. Entrar 15 min después (3 velas de retraso)": lambda c: dict(delay=3),
+    }
+    out = {}
+    for name, f in variants.items():
+        tot, ah, bh, gross_trades, rows = [], [], [], [], []
+        for c in base:
+            kw = dict(c); kw.update(f(c))
+            a = run(d, kw["target"], kw["maxloss"], kw["step"], kw["maxn"], kw["mode"], kw["flown"], 1.0, kw["zones"], end=SPLIT,
+                    **{k: v for k, v in kw.items() if k in ("flip", "hold", "delay", "cost")})
+            b = run(d, kw["target"], kw["maxloss"], kw["step"], kw["maxn"], kw["mode"], kw["flown"], 1.0, kw["zones"], start=SPLIT,
+                    **{k: v for k, v in kw.items() if k in ("flip", "hold", "delay", "cost")})
+            if a and b:
+                ah.append(a["total"]); bh.append(b["total"]); tot.append(a["total"] + b["total"])
+                rows.append((a["total"] + b["total"], a["total"], b["total"], a["canastas"] + b["canastas"], c))
+        tot = np.array(tot); ah = np.array(ah); bh = np.array(bh)
+        best = max(rows, key=lambda r: min(r[1], r[2]))
+        out[name] = dict(versiones=len(tot), positivas=int((tot > 0).sum()), positivas_ambas=int(((ah > 0) & (bh > 0)).sum()),
+                         mediana=int(np.median(tot)), mejor=int(tot.max()), peor=int(tot.min()),
+                         mas_estable=dict(total=best[0], mitad1=best[1], mitad2=best[2], canastas=best[3], config=best[4]))
+        print(f"{name:55s} positivas {out[name]['positivas']:>2}/{len(tot)} ambas {out[name]['positivas_ambas']:>2} "
+              f"mediana {out[name]['mediana']:>7} mejor {out[name]['mejor']:>7} peor {out[name]['peor']:>7} | más estable {best[1]}/{best[2]}")
+    json.dump(out, open("results/penny_inverso.json", "w"), indent=1, default=str)
 
 
 def configure(contract, lot, cost_per_unit):
@@ -204,4 +252,11 @@ def main_small():
 
 if __name__ == "__main__":
     import sys
-    main_small() if "100" in sys.argv[1:] else main()
+    if "invertido" in sys.argv[1:]:
+        main(flip=True)
+    elif "inverso" in sys.argv[1:]:
+        main_inverse()
+    elif "100" in sys.argv[1:]:
+        main_small()
+    else:
+        main()

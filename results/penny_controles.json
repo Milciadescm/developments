@@ -1,0 +1,187 @@
+{
+ "mejor_ambas_1min_semana": {
+  "canastas": 32,
+  "aciertos": 78.1,
+  "total": 9351,
+  "promedio": 292.2,
+  "t": 2.44,
+  "ganancia_prom": 633.4,
+  "perdida_prom": -926.3,
+  "peor_dia": 15,
+  "peor_caida": 2058,
+  "peor_flotante": -2666,
+  "entradas_prom": 3.9
+ },
+ "mejor_ambas_5min_misma_semana": {
+  "canastas": 20,
+  "aciertos": 80.0,
+  "total": 5538,
+  "promedio": 276.9,
+  "t": 1.8,
+  "ganancia_prom": 602.3,
+  "perdida_prom": -1024.9,
+  "peor_dia": -495,
+  "peor_caida": 1029,
+  "peor_flotante": -1331,
+  "entradas_prom": 3.0
+ },
+ "mejor_ambas_sin_invertir": {
+  "canastas": 158,
+  "aciertos": 54.4,
+  "total": -17235,
+  "promedio": -109.1,
+  "t": -1.82,
+  "ganancia_prom": 536.9,
+  "perdida_prom": -880.7,
+  "peor_dia": -3218,
+  "peor_caida": 21283,
+  "peor_flotante": -2617,
+  "entradas_prom": 3.9
+ },
+ "gft_tope_900": [
+  {
+   "objetivo": 500,
+   "entradas": 3,
+   "paso": 4.0,
+   "modo": "en contra",
+   "mitad1": 5158,
+   "mitad2": 6670,
+   "completo": {
+    "canastas": 135,
+    "aciertos": 72.6,
+    "total": 11828,
+    "promedio": 87.6,
+    "t": 2.01,
+    "ganancia_prom": 361.9,
+    "perdida_prom": -638.9,
+    "peor_dia": -2124,
+    "peor_caida": 5135,
+    "peor_flotante": -1765,
+    "entradas_prom": 2.1
+   }
+  },
+  {
+   "objetivo": 300,
+   "entradas": 3,
+   "paso": 4.0,
+   "modo": "en contra",
+   "mitad1": 5594,
+   "mitad2": 4080,
+   "completo": {
+    "canastas": 159,
+    "aciertos": 78.0,
+    "total": 9674,
+    "promedio": 60.8,
+    "t": 1.85,
+    "ganancia_prom": 259.1,
+    "perdida_prom": -641.5,
+    "peor_dia": -1882,
+    "peor_caida": 3410,
+    "peor_flotante": -1765,
+    "entradas_prom": 2.1
+   }
+  },
+  {
+   "objetivo": 700,
+   "entradas": 3,
+   "paso": 2.0,
+   "modo": "en contra",
+   "mitad1": 3484,
+   "mitad2": 8312,
+   "completo": {
+    "canastas": 132,
+    "aciertos": 68.2,
+    "total": 11796,
+    "promedio": 89.4,
+    "t": 1.7,
+    "ganancia_prom": 457.1,
+    "perdida_prom": -698.7,
+    "peor_dia": -1723,
+    "peor_caida": 4537,
+    "peor_flotante": -1911,
+    "entradas_prom": 2.4
+   }
+  },
+  {
+   "objetivo": 500,
+   "entradas": 3,
+   "paso": 2.0,
+   "modo": "en contra",
+   "mitad1": 5712,
+   "mitad2": 4892,
+   "completo": {
+    "canastas": 141,
+    "aciertos": 68.8,
+    "total": 10604,
+    "promedio": 75.2,
+    "t": 1.62,
+    "ganancia_prom": 413.6,
+    "perdida_prom": -670.9,
+    "peor_dia": -2258,
+    "peor_caida": 5513,
+    "peor_flotante": -1911,
+    "entradas_prom": 2.4
+   }
+  },
+  {
+   "objetivo": 300,
+   "entradas": 3,
+   "paso": 2.0,
+   "modo": "a favor",
+   "mitad1": 4167,
+   "mitad2": 3161,
+   "completo": {
+    "canastas": 176,
+    "aciertos": 67.0,
+    "total": 7328,
+    "promedio": 41.6,
+    "t": 1.46,
+    "ganancia_prom": 274.9,
+    "perdida_prom": -432.9,
+    "peor_dia": -1838,
+    "peor_caida": 3975,
+    "peor_flotante": -1344,
+    "entradas_prom": 2.6
+   }
+  },
+  {
+   "objetivo": 500,
+   "entradas": 3,
+   "paso": 1.0,
+   "modo": "en contra",
+   "mitad1": 3189,
+   "mitad2": 6294,
+   "completo": {
+    "canastas": 148,
+    "aciertos": 68.2,
+    "total": 9483,
+    "promedio": 64.1,
+    "t": 1.39,
+    "ganancia_prom": 414.0,
+    "perdida_prom": -687.9,
+    "peor_dia": -2753,
+    "peor_caida": 5541,
+    "peor_flotante": -1911,
+    "entradas_prom": 2.6
+   }
+  }
+ ],
+ "gft_tope_900_resumen": {
+  "versiones": 21,
+  "positivas_ambas": 14
+ },
+ "oro_1_hora_2024_2026": {
+  "original": {
+   "versiones": 48,
+   "positivas_total": 42,
+   "positivas_ambas": 41,
+   "mediana": 11005
+  },
+  "invertido": {
+   "versiones": 48,
+   "positivas_total": 3,
+   "positivas_ambas": 0,
+   "mediana": -11246
+  }
+ }
+}
