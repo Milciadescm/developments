@@ -19,6 +19,12 @@ El bot cambia solo si una regla nueva supera a la mejor actual en los cuatro con
 4. Peor caída en una cuenta de $100K < 5 % (línea de la firma 6 %).
 Todo lo que falle se registra como rechazado u opcional y queda fuera del preset por defecto.
 
+## Dos carteras (decisión del 26 nov 2026)
+- **Cueto & Co. Prop**: SIEMPRE Goat Funded Trader (GFT), única firma de fondeo. Cuenta Instant Premium $100K a $760 (precio
+  confirmado), pagos cada 14 días (comprobado). Reglas: 6 % trailing, 3 % diario, 1 % flotante, sin VPS/VPN, sin HFT.
+- **Cueto & Co. Real – Live funds**: siempre inversión personal. Saldos a comparar: $100, $200, $500 y $1,000 (vs los $760 de GFT).
+- Cada resultado se presenta separado para las dos carteras.
+
 ## Dos tipos de dinero
 - Regla de mercados: un mercado se queda en una billetera solo si es rentable en ambas mitades de los datos.
 - Cuentas de fondeo (Billetera 1): ninguna operación más de 24 horas ni durante el fin de semana. Mercados BTC, US500, NAS100 al 0.75 %. Señales: `fibfvg/prop24.py`
