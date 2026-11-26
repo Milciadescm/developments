@@ -1,0 +1,1532 @@
+{
+ "Fijo 0.9 % (el actual)": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 0,
+   "meses_mediana": null,
+   "meses_mas_rapido": null,
+   "meses_mas_lento": null,
+   "peor_caida_max": 6.2,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": null,
+     "final": 639,
+     "peor_caida": 5.6
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": null,
+     "final": 640,
+     "peor_caida": 5.6
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": null,
+     "final": 636,
+     "peor_caida": 5.5
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": null,
+     "final": 560,
+     "peor_caida": 5.8
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": null,
+     "final": 564,
+     "peor_caida": 5.7
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": null,
+     "final": 564,
+     "peor_caida": 5.7
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": null,
+     "final": 568,
+     "peor_caida": 5.7
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": null,
+     "final": 567,
+     "peor_caida": 5.7
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": null,
+     "final": 572,
+     "peor_caida": 5.6
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": null,
+     "final": 572,
+     "peor_caida": 5.6
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": null,
+     "final": 560,
+     "peor_caida": 5.8
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": null,
+     "final": 574,
+     "peor_caida": 5.6
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": null,
+     "final": 572,
+     "peor_caida": 5.6
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": null,
+     "final": 583,
+     "peor_caida": 5.9
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": null,
+     "final": 563,
+     "peor_caida": 5.7
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": null,
+     "final": 512,
+     "peor_caida": 6.1
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 497,
+     "peor_caida": 5.9
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 494,
+     "peor_caida": 6.0
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 490,
+     "peor_caida": 6.0
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 497,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 496,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 484,
+     "peor_caida": 6.0
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 484,
+     "peor_caida": 6.0
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 45.3,
+   "meses_mediana": null,
+   "meses_10pct_rapido": 16.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 682,
+   "saldo_3_a\u00f1os_peor_10pct": 542,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 20.5,
+   "meses_mediana": null,
+   "meses_10pct_rapido": 20.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 612,
+   "saldo_3_a\u00f1os_peor_10pct": 503,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "Fijo 2 %": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 3,
+   "meses_mediana": 13.6,
+   "meses_mas_rapido": 13.2,
+   "meses_mas_lento": 14.6,
+   "peor_caida_max": 11.5,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 14.6,
+     "final": 782,
+     "peor_caida": 11.0
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 13.6,
+     "final": 780,
+     "peor_caida": 11.1
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 13.2,
+     "final": 759,
+     "peor_caida": 10.8
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": null,
+     "final": 575,
+     "peor_caida": 11.3
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": null,
+     "final": 568,
+     "peor_caida": 11.4
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": null,
+     "final": 568,
+     "peor_caida": 11.4
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": null,
+     "final": 573,
+     "peor_caida": 11.3
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": null,
+     "final": 573,
+     "peor_caida": 11.3
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": null,
+     "final": 582,
+     "peor_caida": 11.2
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": null,
+     "final": 582,
+     "peor_caida": 11.2
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": null,
+     "final": 573,
+     "peor_caida": 11.3
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": null,
+     "final": 583,
+     "peor_caida": 11.2
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": null,
+     "final": 574,
+     "peor_caida": 11.3
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": null,
+     "final": 593,
+     "peor_caida": 11.1
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": null,
+     "final": 568,
+     "peor_caida": 11.4
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": null,
+     "final": 536,
+     "peor_caida": 11.1
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 472,
+     "peor_caida": 11.4
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 465,
+     "peor_caida": 11.5
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 472,
+     "peor_caida": 11.4
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 491,
+     "peor_caida": 11.1
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 489,
+     "peor_caida": 11.2
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 476,
+     "peor_caida": 11.4
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 476,
+     "peor_caida": 11.4
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 75.9,
+   "meses_mediana": 19.0,
+   "meses_10pct_rapido": 8.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 841,
+   "saldo_3_a\u00f1os_peor_10pct": 559,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 50.6,
+   "meses_mediana": 23.0,
+   "meses_10pct_rapido": 11.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 680,
+   "saldo_3_a\u00f1os_peor_10pct": 488,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "Fijo 3 %": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 4,
+   "meses_mediana": 2.1,
+   "meses_mas_rapido": 0.6,
+   "meses_mas_lento": 9.3,
+   "peor_caida_max": 18.7,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 2.6,
+     "final": 1024,
+     "peor_caida": 17.3
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 1.6,
+     "final": 1025,
+     "peor_caida": 17.3
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 0.6,
+     "final": 957,
+     "peor_caida": 16.6
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": null,
+     "final": 529,
+     "peor_caida": 18.7
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": null,
+     "final": 548,
+     "peor_caida": 18.3
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": null,
+     "final": 548,
+     "peor_caida": 18.3
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": null,
+     "final": 562,
+     "peor_caida": 17.4
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": null,
+     "final": 562,
+     "peor_caida": 17.4
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": null,
+     "final": 583,
+     "peor_caida": 17.3
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": null,
+     "final": 583,
+     "peor_caida": 17.3
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": null,
+     "final": 565,
+     "peor_caida": 17.4
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": null,
+     "final": 582,
+     "peor_caida": 17.3
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": null,
+     "final": 566,
+     "peor_caida": 17.4
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": 9.3,
+     "final": 625,
+     "peor_caida": 16.6
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": null,
+     "final": 533,
+     "peor_caida": 18.6
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": null,
+     "final": 534,
+     "peor_caida": 18.6
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 488,
+     "peor_caida": 16.1
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 481,
+     "peor_caida": 16.0
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 459,
+     "peor_caida": 16.4
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 489,
+     "peor_caida": 15.8
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 499,
+     "peor_caida": 15.9
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 465,
+     "peor_caida": 16.3
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 465,
+     "peor_caida": 16.3
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 87.5,
+   "meses_mediana": 14.0,
+   "meses_10pct_rapido": 5.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 1107,
+   "saldo_3_a\u00f1os_peor_10pct": 610,
+   "caida_50": 0.1,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 70.8,
+   "meses_mediana": 17.0,
+   "meses_10pct_rapido": 7.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 812,
+   "saldo_3_a\u00f1os_peor_10pct": 501,
+   "caida_50": 0.1,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "Fijo 5 %": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 16,
+   "meses_mediana": 6.7,
+   "meses_mas_rapido": 0.6,
+   "meses_mas_lento": 12.2,
+   "peor_caida_max": 28.3,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 2.6,
+     "final": 1377,
+     "peor_caida": 28.3
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 1.6,
+     "final": 1506,
+     "peor_caida": 27.7
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 0.6,
+     "final": 1359,
+     "peor_caida": 28.0
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": 12.2,
+     "final": 683,
+     "peor_caida": 27.6
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": 11.2,
+     "final": 713,
+     "peor_caida": 27.7
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": 10.2,
+     "final": 713,
+     "peor_caida": 27.7
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": 9.2,
+     "final": 667,
+     "peor_caida": 27.9
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": 8.2,
+     "final": 643,
+     "peor_caida": 27.9
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": 7.2,
+     "final": 663,
+     "peor_caida": 27.9
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": 6.2,
+     "final": 663,
+     "peor_caida": 27.9
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": 5.2,
+     "final": 651,
+     "peor_caida": 27.7
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": 4.2,
+     "final": 666,
+     "peor_caida": 27.9
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": 3.2,
+     "final": 647,
+     "peor_caida": 27.8
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": 2.2,
+     "final": 709,
+     "peor_caida": 27.7
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": 8.3,
+     "final": 594,
+     "peor_caida": 27.2
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": 7.3,
+     "final": 533,
+     "peor_caida": 26.7
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 433,
+     "peor_caida": 27.1
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 430,
+     "peor_caida": 25.4
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 429,
+     "peor_caida": 27.0
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 477,
+     "peor_caida": 27.8
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 484,
+     "peor_caida": 28.0
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 449,
+     "peor_caida": 26.8
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 437,
+     "peor_caida": 27.0
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 93.2,
+   "meses_mediana": 9.0,
+   "meses_10pct_rapido": 2.0,
+   "meses_90pct": 23.0,
+   "saldo_3_a\u00f1os_mediana": 1794,
+   "saldo_3_a\u00f1os_peor_10pct": 682,
+   "caida_50": 3.5,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 84.7,
+   "meses_mediana": 12.0,
+   "meses_10pct_rapido": 4.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 1101,
+   "saldo_3_a\u00f1os_peor_10pct": 498,
+   "caida_50": 5.7,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "Fijo 10 %": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 20,
+   "meses_mediana": 3.0,
+   "meses_mas_rapido": 0.2,
+   "meses_mas_lento": 11.5,
+   "peor_caida_max": 50.0,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 2.6,
+     "final": 3061,
+     "peor_caida": 49.7
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 1.6,
+     "final": 3197,
+     "peor_caida": 49.7
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 0.6,
+     "final": 2752,
+     "peor_caida": 49.6
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": 11.5,
+     "final": 814,
+     "peor_caida": 49.6
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": 10.5,
+     "final": 935,
+     "peor_caida": 50.0
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": 9.5,
+     "final": 935,
+     "peor_caida": 50.0
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": 8.5,
+     "final": 880,
+     "peor_caida": 49.7
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": 7.5,
+     "final": 768,
+     "peor_caida": 49.7
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": 6.6,
+     "final": 772,
+     "peor_caida": 49.6
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": 5.6,
+     "final": 772,
+     "peor_caida": 49.6
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": 5.2,
+     "final": 745,
+     "peor_caida": 49.7
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": 3.6,
+     "final": 844,
+     "peor_caida": 49.3
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": 2.6,
+     "final": 765,
+     "peor_caida": 49.8
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": 0.9,
+     "final": 975,
+     "peor_caida": 49.2
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": 1.2,
+     "final": 663,
+     "peor_caida": 49.9
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": 0.2,
+     "final": 571,
+     "peor_caida": 49.4
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 335,
+     "peor_caida": 49.9
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 329,
+     "peor_caida": 49.8
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 328,
+     "peor_caida": 49.9
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": 3.3,
+     "final": 430,
+     "peor_caida": 49.0
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": 2.4,
+     "final": 440,
+     "peor_caida": 49.5
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": 1.3,
+     "final": 372,
+     "peor_caida": 49.3
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": 0.7,
+     "final": 362,
+     "peor_caida": 49.2
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 95.7,
+   "meses_mediana": 5.0,
+   "meses_10pct_rapido": 1.0,
+   "meses_90pct": 19.0,
+   "saldo_3_a\u00f1os_mediana": 4419,
+   "saldo_3_a\u00f1os_peor_10pct": 723,
+   "caida_50": 54.7,
+   "cae_bajo_100": 0.8
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 90.3,
+   "meses_mediana": 7.0,
+   "meses_10pct_rapido": 2.0,
+   "meses_90pct": 22.0,
+   "saldo_3_a\u00f1os_mediana": 1881,
+   "saldo_3_a\u00f1os_peor_10pct": 400,
+   "caida_50": 60.6,
+   "cae_bajo_100": 1.5
+  }
+ },
+ "Cascada que baja al crecer (5 % -> 3 % -> 2 % -> 1.5 %)": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 16,
+   "meses_mediana": 6.7,
+   "meses_mas_rapido": 0.6,
+   "meses_mas_lento": 12.2,
+   "peor_caida_max": 28.0,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 2.6,
+     "final": 1202,
+     "peor_caida": 11.6
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 1.6,
+     "final": 1089,
+     "peor_caida": 11.0
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 0.6,
+     "final": 1174,
+     "peor_caida": 11.6
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": 12.2,
+     "final": 738,
+     "peor_caida": 16.3
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": 11.2,
+     "final": 770,
+     "peor_caida": 16.0
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": 10.2,
+     "final": 770,
+     "peor_caida": 16.0
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": 9.2,
+     "final": 727,
+     "peor_caida": 16.2
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": 8.2,
+     "final": 643,
+     "peor_caida": 19.7
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": 7.2,
+     "final": 724,
+     "peor_caida": 16.2
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": 6.2,
+     "final": 724,
+     "peor_caida": 16.2
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": 5.2,
+     "final": 697,
+     "peor_caida": 16.1
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": 4.2,
+     "final": 727,
+     "peor_caida": 16.2
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": 3.2,
+     "final": 709,
+     "peor_caida": 15.9
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": 2.2,
+     "final": 764,
+     "peor_caida": 16.1
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": 8.3,
+     "final": 628,
+     "peor_caida": 19.8
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": 7.3,
+     "final": 555,
+     "peor_caida": 23.2
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 433,
+     "peor_caida": 27.1
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 430,
+     "peor_caida": 25.4
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 429,
+     "peor_caida": 27.0
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 477,
+     "peor_caida": 27.8
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 484,
+     "peor_caida": 28.0
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 449,
+     "peor_caida": 26.8
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 437,
+     "peor_caida": 27.0
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 93.5,
+   "meses_mediana": 9.0,
+   "meses_10pct_rapido": 2.0,
+   "meses_90pct": 23.0,
+   "saldo_3_a\u00f1os_mediana": 1271,
+   "saldo_3_a\u00f1os_peor_10pct": 734,
+   "caida_50": 2.1,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 85.2,
+   "meses_mediana": 11.0,
+   "meses_10pct_rapido": 3.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 1012,
+   "saldo_3_a\u00f1os_peor_10pct": 515,
+   "caida_50": 4.1,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "Cascada que sube al crecer (1 % -> 2 % -> 3 %)": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 0,
+   "meses_mediana": null,
+   "meses_mas_rapido": null,
+   "meses_mas_lento": null,
+   "peor_caida_max": 7.2,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": null,
+     "final": 650,
+     "peor_caida": 7.2
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": null,
+     "final": 651,
+     "peor_caida": 7.2
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": null,
+     "final": 642,
+     "peor_caida": 6.4
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": null,
+     "final": 562,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": null,
+     "final": 565,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": null,
+     "final": 565,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": null,
+     "final": 569,
+     "peor_caida": 6.1
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": null,
+     "final": 569,
+     "peor_caida": 6.1
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": null,
+     "final": 575,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": null,
+     "final": 575,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": null,
+     "final": 562,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": null,
+     "final": 577,
+     "peor_caida": 6.1
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": null,
+     "final": 575,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": null,
+     "final": 585,
+     "peor_caida": 6.5
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": null,
+     "final": 565,
+     "peor_caida": 6.2
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": null,
+     "final": 538,
+     "peor_caida": 6.4
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 494,
+     "peor_caida": 6.4
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 490,
+     "peor_caida": 6.5
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 488,
+     "peor_caida": 6.5
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 497,
+     "peor_caida": 6.4
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 496,
+     "peor_caida": 6.5
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 483,
+     "peor_caida": 6.5
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 483,
+     "peor_caida": 6.5
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 49.3,
+   "meses_mediana": null,
+   "meses_10pct_rapido": 15.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 688,
+   "saldo_3_a\u00f1os_peor_10pct": 545,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 23.3,
+   "meses_mediana": null,
+   "meses_10pct_rapido": 19.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 618,
+   "saldo_3_a\u00f1os_peor_10pct": 502,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "3 % con freno (mitad tras 2 p\u00e9rdidas seguidas)": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 3,
+   "meses_mediana": 1.6,
+   "meses_mas_rapido": 0.6,
+   "meses_mas_lento": 2.6,
+   "peor_caida_max": 15.0,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 2.6,
+     "final": 971,
+     "peor_caida": 14.6
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 1.6,
+     "final": 973,
+     "peor_caida": 14.6
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 0.6,
+     "final": 913,
+     "peor_caida": 15.0
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": null,
+     "final": 564,
+     "peor_caida": 14.5
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": null,
+     "final": 566,
+     "peor_caida": 13.0
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": null,
+     "final": 566,
+     "peor_caida": 13.0
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": null,
+     "final": 571,
+     "peor_caida": 13.1
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": null,
+     "final": 570,
+     "peor_caida": 13.1
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": null,
+     "final": 586,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": null,
+     "final": 586,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": null,
+     "final": 577,
+     "peor_caida": 13.0
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": null,
+     "final": 586,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": null,
+     "final": 586,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": null,
+     "final": 602,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": null,
+     "final": 582,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": null,
+     "final": 583,
+     "peor_caida": 12.9
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 518,
+     "peor_caida": 13.1
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 517,
+     "peor_caida": 11.8
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 497,
+     "peor_caida": 11.8
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 514,
+     "peor_caida": 11.5
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 524,
+     "peor_caida": 11.6
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 490,
+     "peor_caida": 11.9
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 490,
+     "peor_caida": 11.9
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 83.8,
+   "meses_mediana": 15.0,
+   "meses_10pct_rapido": 5.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 1029,
+   "saldo_3_a\u00f1os_peor_10pct": 581,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 66.2,
+   "meses_mediana": 18.0,
+   "meses_10pct_rapido": 7.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 773,
+   "saldo_3_a\u00f1os_peor_10pct": 491,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  }
+ },
+ "5 % con freno (mitad tras 2 p\u00e9rdidas, 1 % si cae 20 %)": {
+  "historia": {
+   "inicios": 23,
+   "llegaron": 16,
+   "meses_mediana": 7.2,
+   "meses_mas_rapido": 0.6,
+   "meses_mas_lento": 15.3,
+   "peor_caida_max": 24.0,
+   "detalle": [
+    {
+     "inicio": "2024-07-01",
+     "meses": 2.6,
+     "final": 1450,
+     "peor_caida": 21.2
+    },
+    {
+     "inicio": "2024-08-01",
+     "meses": 1.6,
+     "final": 1456,
+     "peor_caida": 21.2
+    },
+    {
+     "inicio": "2024-09-01",
+     "meses": 0.6,
+     "final": 1393,
+     "peor_caida": 21.3
+    },
+    {
+     "inicio": "2024-10-01",
+     "meses": 12.2,
+     "final": 707,
+     "peor_caida": 21.0
+    },
+    {
+     "inicio": "2024-11-01",
+     "meses": 11.2,
+     "final": 726,
+     "peor_caida": 21.1
+    },
+    {
+     "inicio": "2024-12-01",
+     "meses": 10.2,
+     "final": 726,
+     "peor_caida": 21.1
+    },
+    {
+     "inicio": "2025-01-01",
+     "meses": 9.2,
+     "final": 701,
+     "peor_caida": 22.1
+    },
+    {
+     "inicio": "2025-02-01",
+     "meses": 15.3,
+     "final": 642,
+     "peor_caida": 21.6
+    },
+    {
+     "inicio": "2025-03-01",
+     "meses": 7.2,
+     "final": 698,
+     "peor_caida": 22.2
+    },
+    {
+     "inicio": "2025-04-01",
+     "meses": 6.2,
+     "final": 698,
+     "peor_caida": 22.2
+    },
+    {
+     "inicio": "2025-05-01",
+     "meses": 12.4,
+     "final": 630,
+     "peor_caida": 21.9
+    },
+    {
+     "inicio": "2025-06-01",
+     "meses": 4.2,
+     "final": 702,
+     "peor_caida": 21.0
+    },
+    {
+     "inicio": "2025-07-01",
+     "meses": 3.2,
+     "final": 657,
+     "peor_caida": 24.0
+    },
+    {
+     "inicio": "2025-08-01",
+     "meses": 2.2,
+     "final": 703,
+     "peor_caida": 22.1
+    },
+    {
+     "inicio": "2025-09-01",
+     "meses": 8.3,
+     "final": 639,
+     "peor_caida": 21.7
+    },
+    {
+     "inicio": "2025-10-01",
+     "meses": 7.3,
+     "final": 581,
+     "peor_caida": 20.1
+    },
+    {
+     "inicio": "2025-11-01",
+     "meses": null,
+     "final": 480,
+     "peor_caida": 21.0
+    },
+    {
+     "inicio": "2025-12-01",
+     "meses": null,
+     "final": 465,
+     "peor_caida": 21.2
+    },
+    {
+     "inicio": "2026-01-01",
+     "meses": null,
+     "final": 475,
+     "peor_caida": 20.9
+    },
+    {
+     "inicio": "2026-02-01",
+     "meses": null,
+     "final": 526,
+     "peor_caida": 20.4
+    },
+    {
+     "inicio": "2026-03-01",
+     "meses": null,
+     "final": 533,
+     "peor_caida": 20.6
+    },
+    {
+     "inicio": "2026-04-01",
+     "meses": null,
+     "final": 486,
+     "peor_caida": 20.8
+    },
+    {
+     "inicio": "2026-05-01",
+     "meses": null,
+     "final": 473,
+     "peor_caida": 20.9
+    }
+   ]
+  },
+  "simulacion": {
+   "llega_en_3_a\u00f1os": 82.8,
+   "meses_mediana": 9.0,
+   "meses_10pct_rapido": 2.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 1313,
+   "saldo_3_a\u00f1os_peor_10pct": 484,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  },
+  "simulacion_sin_mejor": {
+   "llega_en_3_a\u00f1os": 69.7,
+   "meses_mediana": 11.0,
+   "meses_10pct_rapido": 3.0,
+   "meses_90pct": null,
+   "saldo_3_a\u00f1os_mediana": 835,
+   "saldo_3_a\u00f1os_peor_10pct": 417,
+   "caida_50": 0.0,
+   "cae_bajo_100": 0.0
+  }
+ }
+}
