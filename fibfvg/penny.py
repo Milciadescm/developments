@@ -45,7 +45,11 @@ def run(d, target, maxloss, step, maxn, mode, flown, k, zones, start=None, end=N
     T = d.index
     tr = np.maximum(H - L, np.maximum(np.abs(H - np.roll(C, 1)), np.abs(L - np.roll(C, 1))))
     atr = pd.Series(tr).rolling(14).mean().values
-    delta = pd.Series(np.sign(C - O) * V).rolling(flown).sum().values
+    if "TakerBuy" in d.columns:                       # flujo real: compras a mercado menos ventas a mercado
+        tb = d["TakerBuy"].values
+        delta = pd.Series(2 * tb - V).rolling(flown).sum().values
+    else:
+        delta = pd.Series(np.sign(C - O) * V).rolling(flown).sum().values
     hour = T.hour + T.minute / 60
     if zones == "kill zones":
         inz = ((hour >= 2) & (hour < 5)) | ((hour >= 7) & (hour < 10))
