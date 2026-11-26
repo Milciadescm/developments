@@ -1,0 +1,35 @@
+; FibFVG Prop24 V2 - Goat Funded Trader INSTANT PREMIUM $100K ($760). Cartera: Cueto & Co. Prop.
+; V2 = el mismo bot de 24 horas + entradas solo de 08:00 a 18:00 hora de Nueva York (fuera de ese horario la orden
+; limite se estaciona y se vuelve a poner a las 08:00 si sigue vigente).
+; RIESGO FIJO 0.9 % de los $100K ($900), una operacion abierta a la vez (1 % flotante de GFT). Sin freno, sin compuesto.
+; Mercados: BTC, S&P 500, Nasdaq 100. Todo cerrado en 24 h y antes del viernes 16:00 NY.
+; Backtest con reglas GFT jul 2024 - nov 2026: V2 $14,402 cobrados (V1 $13,663), ultimos 12 meses $2,486 (V1 $1,578),
+; peor ano $3,973 (V1 $1,431), peor caida 4.0 % (V1 5.8 %, casi en la linea del 6 %). Sin quemar la cuenta.
+; Correr en tu propia PC con Windows: GFT prohibe VPS, VPN y proxies.
+RiskProfile=GFT-InstantPremium-V2
+RiskPct=0.9
+StartBalance=100000
+MaxLossPct=6
+TrailingMaxLoss=true
+TrailOnEquity=true
+GuardBufferPct=1
+DailyLossPct=3
+MaxOpenRiskPct=1
+KeepAliveDays=0
+CompoundOnBalance=false
+MinLotIfBelow=false
+MaxRiskPctAtMinLot=3
+BrakeAfterLosses=0
+BrakeFactor=0.5
+DDBrakePct=0
+DDBrakeRiskPct=1
+SymbolsToTrade=AUTO
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+WriteLog=true
+ShowPanel=true
+Magic=7712400
+EntryFromHourNY=8
+EntryToHourNY=18

@@ -1,0 +1,35 @@
+; FibFVG Prop24 V2 - CUENTA REAL (RECOMENDADO). Cartera: Cueto & Co. Real - Live funds. Saldos $100, $200, $500, $1,000 o mas.
+; Backtest 5 anos sin aportes: $1,000 -> mediana $11,306 (peor 10 %: $2,844); con $200/mes: mediana $80,789.
+; Riesgo 5 % del saldo ACTUAL (aportes y ganancias cuentan: interes compuesto).
+; Freno: tras 2 perdidas seguidas el riesgo baja a la mitad; si el saldo cae 20 % desde su maximo, riesgo 1 % hasta recuperarse.
+; Lote minimo: si el % da menos de 0.01 lote, abre 0.01 solo si eso arriesga 7.5 % o menos; si no, salta la operacion.
+; Linea de proteccion: el bot se detiene si la cuenta vuelve a la mitad del deposito inicial (MaxLossPct 50, nunca por encima del deposito).
+; Mercados: BTC, S&P 500, Nasdaq 100 (por debajo de $5K nada de oro ni plata). Entradas 08:00-18:00 NY, todo cerrado en 24 h.
+; Exness: si AUTO no encuentra los mercados, poner SymbolsToTrade=BTCUSDm,US500m,USTECm
+RiskProfile=Real-V2-5pct-freno
+RiskPct=5
+StartBalance=0
+MaxLossPct=50
+TrailingMaxLoss=true
+TrailOnEquity=false
+GuardBufferPct=1
+DailyLossPct=0
+MaxOpenRiskPct=0
+KeepAliveDays=0
+CompoundOnBalance=true
+MinLotIfBelow=true
+MaxRiskPctAtMinLot=7.5
+BrakeAfterLosses=2
+BrakeFactor=0.5
+DDBrakePct=20
+DDBrakeRiskPct=1
+SymbolsToTrade=AUTO
+UseDailySetups=true
+UseH4Setups=true
+MaxHoldHours=24
+FridayCloseHourNY=16
+WriteLog=true
+ShowPanel=true
+Magic=7712400
+EntryFromHourNY=8
+EntryToHourNY=18
