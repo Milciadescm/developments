@@ -1,0 +1,66 @@
+{
+ "XAUUSD 0.01 lote": {
+  "versiones": 312,
+  "positivas_ambas": 0,
+  "positivas_total": 0,
+  "quemadas": 312,
+  "mejor_primera": {
+   "objetivo": 5,
+   "tope": 20,
+   "paso": 1.0,
+   "entradas": 3,
+   "modo": "en contra",
+   "flujo_velas": 12,
+   "horario": "kill zones",
+   "primera": -70,
+   "segunda": -664,
+   "completo": {
+    "canastas": 544,
+    "aciertos": 78.1,
+    "total": -734,
+    "promedio": -1.3,
+    "t": -2.98,
+    "ganancia_prom": 4.2,
+    "perdida_prom": -21.3,
+    "peor_dia": -110,
+    "peor_caida": 812,
+    "peor_flotante": -60,
+    "entradas_prom": 2.0
+   },
+   "quemada": true
+  },
+  "mejores_ambas": []
+ },
+ "BTCUSD 0.01 lote": {
+  "versiones": 468,
+  "positivas_ambas": 0,
+  "positivas_total": 5,
+  "quemadas": 467,
+  "mejor_primera": {
+   "objetivo": 5,
+   "tope": 20,
+   "paso": 100.0,
+   "entradas": 1,
+   "modo": "a favor",
+   "flujo_velas": 6,
+   "horario": "todo el d\u00eda",
+   "primera": 30,
+   "segunda": -14,
+   "completo": {
+    "canastas": 173,
+    "aciertos": 66.5,
+    "total": 33,
+    "promedio": 0.2,
+    "t": 0.37,
+    "ganancia_prom": 4.2,
+    "perdida_prom": -7.7,
+    "peor_dia": -37,
+    "peor_caida": 90,
+    "peor_flotante": -24,
+    "entradas_prom": 1.0
+   },
+   "quemada": false
+  },
+  "mejores_ambas": []
+ }
+}
